@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
     "babel-plugin-styled-components": "^1.8.0",
     "bulma": "^0.7.0",
     "gatsby": "^2.0.0",
