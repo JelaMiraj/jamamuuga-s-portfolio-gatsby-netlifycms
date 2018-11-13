@@ -1,17 +1,49 @@
 {
-  "name": "gatsby-starter-netlify-cms",
-  "description": "Example Gatsby, and Netlify CMS project",
-  "version": "1.1.3",
-  "author": "Austin Green",
+  "name": "jamamuuga-s-portfolio-gatsby-netlifycms",
+  "description": "Jason Cady's Portfolio in Netlify CMS & Gatsby",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Jason Cady <jamamuuga@gmail.com> (https://jasoncadydesigns.netlify.com)",
+  "keywords": [
+    "gatsby",
+    "netlify-cms",
+    "netlfiy",
+    "babel",
+    "react",
+    "styled-components"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jamamuuga/jamamuuga-s-portfolio-gatsby-netlifycms/issues"
+  },
+  "homepage": "https://github.com/Jamamuuga/jamamuuga-s-portfolio-gatsby-netlifycms#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jamamuuga/jamamuuga-s-portfolio-gatsby-netlifycms.git"
+  },
+  "main": "n/a",
+  "scripts": {
+    "start": "yarn develop",
+    "clean": "rimraf .cache public",
+    "build": "yarn clean && gatsby build",
+    "develop": "yarn clean && gatsby develop",
+    "serve": "gatsby serve",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
+    "@babel/core": "^7.0.0",
+    "babel-plugin-styled-components": "^1.8.0",
     "bulma": "^0.7.0",
     "gatsby": "^2.0.0",
     "gatsby-image": "^2.0.10",
+    "gatsby-plugin-compile-es6-packages": "^1.0.6",
     "gatsby-plugin-netlify": "^2.0.4",
     "gatsby-plugin-netlify-cms": "^3.0.0",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sass": "^2.0.1",
     "gatsby-plugin-sharp": "^2.0.5",
+    "gatsby-plugin-styled-components": "^3.0.1",
     "gatsby-remark-images": "^2.0.1",
     "gatsby-remark-relative-images": "^0.2.0",
     "gatsby-source-filesystem": "^2.0.1",
@@ -26,23 +58,13 @@
     "react": "^16.2.0",
     "react-dom": "^16.4.1",
     "react-helmet": "^5.2.0",
+    "styled-components": "^4.1.1",
     "uuid": "^3.2.1"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "main": "n/a",
-  "scripts": {
-    "start": "npm run develop",
-    "clean": "rimraf .cache public",
-    "build": "npm run clean && gatsby build",
-    "develop": "npm run clean && gatsby develop",
-    "serve": "gatsby serve",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.5",
     "prettier": "^1.15.2",
     "rimraf": "^2.6.2"
   }
