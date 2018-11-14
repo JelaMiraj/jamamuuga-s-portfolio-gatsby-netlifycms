@@ -24,7 +24,7 @@
   "main": "n/a",
   "scripts": {
     "start": "yarn develop",
-    "clean": "rimraf .cache public",
+    "clean": "rimraf .cache/.??* .cache/* public/.??* public/*",
     "build": "yarn clean && gatsby build",
     "develop": "yarn clean && gatsby develop",
     "serve": "gatsby serve",
