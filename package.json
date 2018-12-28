@@ -4,15 +4,6 @@
   "version": "0.1.0",
   "private": true,
   "author": "Jason Cady <jamamuuga@gmail.com> (https://jasoncadydesigns.netlify.com)",
-  "keywords": [
-    "gatsby",
-    "netlify-cms",
-    "netlify",
-    "babel",
-    "react",
-    "styled-components"
-  ],
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Jamamuuga/jamamuuga-s-portfolio-gatsby-netlifycms/issues"
   },
