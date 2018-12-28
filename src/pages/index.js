@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
+/* FIXME: Somehow refer to color names from style variables instead of repeating here. */
 
 export default class IndexPage extends React.Component {
   render() {
@@ -19,7 +20,6 @@ export default class IndexPage extends React.Component {
               .map(({ node: post }) => (
                 <div
                   className="content"
-                  {/* FIXME: Somehow refer to color names from style variables instead of repeating here. */}
                   style={{ border: '1px solid #333', padding: '2em 4em' }}
                   key={post.id}
                 >
