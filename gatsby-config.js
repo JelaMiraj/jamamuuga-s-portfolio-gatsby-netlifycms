@@ -19,9 +19,9 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-sass`,
-      options: {
-        implementation: require("sass"),
-      },
+      // options: {
+      //   implementation: require("sass"),
+      // },
     },
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
