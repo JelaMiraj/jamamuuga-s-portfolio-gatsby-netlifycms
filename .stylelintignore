@@ -1,0 +1,10 @@
+# NOTE: ! patterns must usually come before ** patterns or all js dotfiles in folders like node_modules will get either linted or even *modified* by fixing/beautifying.
+!**/.*.js
+**/.cache/**
+**/build/**
+**/docs/**
+**/dist/**
+**/coverage/**
+**/node_modules/**
+**/public/**
+**/tmp/**
