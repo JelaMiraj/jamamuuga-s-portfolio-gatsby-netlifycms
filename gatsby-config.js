@@ -1,4 +1,5 @@
 require("@babel/register")
+
 module.exports = {
   siteMetadata: {
     title: 'Gatsby + Netlify CMS Starter',
