@@ -19,9 +19,15 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-sass`,
-      // options: {
-      //   implementation: require("sass"),
-      // },
+      options: {
+        // TODO: Switch to Dart Sass from Node Sass when it works reliably without messing around.
+        // implementation: require("sass"),
+        // Explicitly include root style path just in case.
+        includePaths: [
+          // `${__dirname}/src/styles`,
+          './src/styles',
+        ],
+      },
     },
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
