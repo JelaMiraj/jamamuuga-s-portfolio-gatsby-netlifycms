@@ -18,7 +18,7 @@ module.exports = {
     },
     'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-plugin-sass`,
+      resolve: 'gatsby-plugin-sass',
       options: {
         // TODO: Switch to Dart Sass from Node Sass when it works reliably without messing around.
         // implementation: require("sass"),
