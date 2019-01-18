@@ -1,4 +1,5 @@
 require("@babel/register")
+const manifestConfig = require('./.manifest.config.js')
 
 module.exports = {
   siteMetadata: {
@@ -30,6 +31,23 @@ module.exports = {
           './src/styles',
         ],
       },
+    },
+    {
+      resolve: 'gatsby-plugin-sass-resources',
+      options: {
+        // TODO: Make sure filename uses actual expected root folder & filename based module style.
+        // TODO: Find out which Scss module controls filename preferences here: gatsby-plugin-sass or sass-resources-loader.
+        resources: [
+          // `${__dirname}/src/styles/abstract/_variables.module.scss`,
+          // TODO: Find out if this is a better way to resolve the folder path.
+          // resolveFromRootDir('src/styles/abstract/_variables.module.scss'),
+          './src/styles/abstracts/_variables.module.scss',
+        ],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: manifestConfig,
     },
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
@@ -89,6 +107,7 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
+    'gatsby-plugin-offline',
     'gatsby-plugin-purgecss', // must be after other CSS plugins
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
