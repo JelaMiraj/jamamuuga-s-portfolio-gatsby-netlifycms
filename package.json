@@ -106,6 +106,7 @@
     "sass-extract": "^2.1.0",
     "sass-extract-js": "^0.4.0",
     "sass-extract-loader": "^1.1.0",
+    "stylelint": "^9.10.0",
     "stylelint-config-airbnb": "^0.0.0",
     "stylelint-config-idiomatic-sass": "^1.0.0",
     "stylelint-config-pack": "^1.5.0",
@@ -113,6 +114,8 @@
     "stylelint-config-recommended-scss": "^3.2.0",
     "stylelint-config-standard-scss": "^1.0.1",
     "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-processor-styled-components": "^1.5.2"
+    "stylelint-processor-styled-components": "^1.5.2",
+    "stylelint-scss": "^3.5.1",
+    "webpack": "^4.28.4"
   }
 }
