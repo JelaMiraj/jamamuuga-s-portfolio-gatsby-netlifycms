@@ -45,6 +45,7 @@
     "reboot.css": "^1.0.4",
     "styled-bootstrap-components": "^3.0.1",
     "styled-components": "^4.1.1",
+    "styled-components-theme": "^1.0.5",
     "styled-reboot": "^3.0.2",
     "uuid": "^3.2.1"
   },
