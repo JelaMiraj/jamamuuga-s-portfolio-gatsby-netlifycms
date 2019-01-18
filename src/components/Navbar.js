@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import github from '../img/github-icon.svg'
 import logo from '../img/logo.svg'
+// TODO: Convert to extending or using Rebass's Navbar.
 
 const Navbar = class extends React.Component {
 
