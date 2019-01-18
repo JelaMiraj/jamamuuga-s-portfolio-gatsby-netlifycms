@@ -7,8 +7,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-compile-es6-packages',
       options: {
-        modules: ['query-string']
-      }
+        // modules: ['query-string'],
+      },
     },
     {
       resolve: 'gatsby-plugin-styled-components',
@@ -70,8 +70,8 @@ module.exports = {
             resolve: 'gatsby-remark-copy-linked-files',
             options: {
               destinationDir: 'static',
-            }
-          }
+            },
+          },
         ],
       },
     },
