@@ -5,7 +5,10 @@ module.exports = {
   env: {
     es6: true,
   },
-  // plugins: [
-  //   'json'
-  // ],
+  extends: [
+    'eslint-config-with-prettier',
+  ],
+  plugins: [
+    'json'
+  ],
 }
