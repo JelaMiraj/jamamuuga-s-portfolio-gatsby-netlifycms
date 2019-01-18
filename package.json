@@ -42,11 +42,13 @@
     "react": "^16.2.0",
     "react-dom": "^16.4.1",
     "react-helmet": "^5.2.0",
+    "rebass": "^3.0.0",
     "reboot.css": "^1.0.4",
     "styled-bootstrap-components": "^3.0.1",
     "styled-components": "^4.1.1",
     "styled-components-theme": "^1.0.5",
     "styled-reboot": "^3.0.2",
+    "styled-system": "^3.2.1",
     "uuid": "^3.2.1"
   },
   "keywords": [
