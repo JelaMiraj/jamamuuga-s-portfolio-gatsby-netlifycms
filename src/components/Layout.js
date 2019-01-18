@@ -1,8 +1,11 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
+// TODO: Minimize or phase out this import.
+import styled, { createGlobalStyle } from "styled-components"
 
 import Navbar from '../components/Navbar'
+// TODO: Switch to Rebass or Styled System which uses Styled Components instead of Scss. Use a Mate & Cara Gatsby starters as inspiration.
 import '../styles/main.module.scss'
 
 const TemplateWrapper = ({ children }) => (
