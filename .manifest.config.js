@@ -1,3 +1,5 @@
+import '@babel/polyfill'
+import '@babel/register'
 import { colors } from './src/styles/themes/colors'
 
 export const manifestConfig = {
