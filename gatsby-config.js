@@ -1,5 +1,5 @@
-require("@babel/register")
-const manifestConfig = require('./.manifest.config.js')
+// require("@babel/register")
+// const manifestConfig = require('./.manifest.config.js')
 
 module.exports = {
   siteMetadata: {
@@ -47,7 +47,19 @@ module.exports = {
     },
     {
       resolve: 'gatsby-plugin-manifest',
-      options: manifestConfig,
+      // options: manifestConfig,
+      options: {
+        name: 'Jason Cady Portfolio',
+        short_name: 'Jason Cady Portfolio',
+        start_url: '/',
+        // background_color: colors.background,
+        // FIXME: Go back to DRY when sane. Currently repeating theme color variables here to avoid import issues & extra dependencies. Specifically, @babel/register has cache resolve failure issues on Netlify platform.
+        background_color: '#D64000',
+        // theme_color: colors.primary,
+        theme_color: 'white',
+        display: 'browser',
+        icon: 'src/img/logo.svg',
+      }
     },
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
