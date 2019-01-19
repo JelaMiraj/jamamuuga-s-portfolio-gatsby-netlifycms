@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <radialGradient id="gradient-0" gradientUnits="userSpaceOnUse" cx="225" cy="170.364" r="195.567" gradientTransform="matrix(0.972616, 0, 0, 0.972616, 6.162008, 5.203428)">
+      <stop offset="0" style="stop-color: rgb(255, 251, 0);"/>
+      <stop offset="1" style="stop-color: rgb(255, 166, 0);"/>
+    </radialGradient>
+    <radialGradient id="gradient-6" gradientUnits="userSpaceOnUse" cx="225" cy="170.364" r="195.567" gradientTransform="matrix(0.972616, 0, 0, 0.972616, 6.162008, 5.203428)">
+      <stop offset="0" style="stop-color: rgb(255, 200, 0);"/>
+      <stop offset="1" style="stop-color: rgb(255, 159, 107);"/>
+    </radialGradient>
+  </defs>
+  <path d="M 225 -10 L 254.264 42.882 L 301.537 5.224 L 308.336 65.28 L 366.421 48.579 L 349.72 106.664 L 409.776 113.463 L 372.118 160.736 L 425 190 L 372.118 219.264 L 409.776 266.537 L 349.72 273.336 L 366.421 331.421 L 308.336 314.72 L 301.537 374.776 L 254.264 337.118 L 225 390 L 195.736 337.118 L 148.463 374.776 L 141.664 314.72 L 83.579 331.421 L 100.28 273.336 L 40.224 266.537 L 77.882 219.264 L 25 190 L 77.882 160.736 L 40.224 113.463 L 100.28 106.664 L 83.579 48.579 L 141.664 65.28 L 148.463 5.224 L 195.736 42.882 Z" transform="matrix(1, -0.000031, 0.000031, 1, 19.141688, 25.013174)" style="fill: url(#gradient-0); stroke-width: 8px; stroke: url(#gradient-6); stroke-linejoin: round;" bx:shape="star 225 190 200 200 0.75 16 1@82d3f694" bx:origin="0.489629 0.562484"/>
+</svg>
