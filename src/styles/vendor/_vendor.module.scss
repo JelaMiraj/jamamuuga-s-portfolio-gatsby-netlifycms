@@ -1,3 +1,5 @@
 @import '~reboot.css/dist/reboot.min';
+// TODO: At some point we may consider Bulma not relevant when using Rebass.
+// FIXME: Make PurgeCSS properly target only Bulma.
 @import "~bulma/sass/utilities/initial-variables";
 @import "~bulma";
