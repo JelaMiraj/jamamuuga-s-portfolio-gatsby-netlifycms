@@ -22,3 +22,4 @@ const helperStyle = styled.div`
   margin-top: 0 !important;
 }
 `
+export default helperStyle

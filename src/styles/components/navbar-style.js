@@ -6,3 +6,5 @@ const navbarStyle = styled.div`
 .navbar .navbar-menu {
   box-shadow:none !important {}
 }`
+
+export default navbarStyle
