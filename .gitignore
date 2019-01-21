@@ -8,6 +8,7 @@
 /build
 /.cache
 /dist
+/.eslintcache
 /public
 static/admin/*.bundle.*
 
