@@ -12,6 +12,7 @@
 static/admin/*.bundle.*
 
 # Temporary
+/temp
 /tmp
 
 # Miscellaneous

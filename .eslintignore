@@ -1,11 +1,12 @@
 # NOTE: ! patterns must usually come before ** patterns or all js dotfiles in folders like node_modules will get either linted or even *modified* by fixing/beautifying.
-# Allow all js dotfiles instead of just .eslintrc.js
+# Allow all js dotfiles.
 !**/.*.js
-**/.cache/**
 **/build/**
-**/docs/**
-**/dist/**
+**/.cache/**
 **/coverage/**
+**/dist/**
+**/docs/**
 **/node_modules/**
 **/public/**
+**/temp/**
 **/tmp/**
