@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "diagnostics": true,
+    "jsx": "preserve",
+    "module": "commonjs",
+    "target": "es2015",
+    "watch": true,
+    "checkJs": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["src/*"],
+      "__tests__/*": ["__tests__/*"],
+      "__mocks__/*": ["__mocks__/*"],
+      "underscore": ["lodash"]
+    },
+  },
+  "exclude": [
+    "build",
+    ".cache",
+    "coverage",
+    "dist",
+    "docs",
+    "node_modules",
+    "**/node_modules/*",
+    "public",
+    "tmp",
+    "temp"
+  ]
+}
