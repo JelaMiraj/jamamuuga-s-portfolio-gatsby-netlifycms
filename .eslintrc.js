@@ -9,6 +9,6 @@ module.exports = {
     'eslint-config-with-prettier',
   ],
   plugins: [
-    'json'
+    'json',
   ],
 }
