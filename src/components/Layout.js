@@ -1,11 +1,13 @@
 import React from 'react'
-// import Helmet from 'react-helmet'
+// TODO: Use our factored out helmet component instead.
+import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
 // TODO: Minimize or phase out this import.
 import styled, { createGlobalStyle } from "styled-components"
 
 import colors from '../styles/themes/colors'
-import Helmet from './Helmet'
+// TODO: Actually port header over so this can be switched over.
+// import Helmet from './Helmet'
 // TODO: Why is this navigating down & back up to same folder?
 import Navbar from '../components/Navbar'
 // TODO: Switch to Rebass or Styled System which uses Styled Components instead of Scss. Use a Mate & Cara Gatsby starters as inspiration.
