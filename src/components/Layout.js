@@ -2,18 +2,16 @@ import React from 'react'
 // TODO: Use our factored out helmet component instead.
 import Helmet from 'react-helmet'
 import {StaticQuery, graphql} from 'gatsby'
-// TODO: Minimize or phase out this import.
-import styled, {createGlobalStyle} from 'styled-components'
-
-import colors from '../styles/themes/colors'
+import GlobalStyle from '../styles/global-style'
 // TODO: Actually port header over so this can be switched over.
 // import Helmet from './Helmet'
 // TODO: Why is this navigating down & back up to same folder?
 import Navbar from './Navbar'
 // TODO: Switch to Rebass or Styled System which uses Styled Components instead of Scss. Use a Mate & Cara Gatsby starters as inspiration.
-import '../styles/main.module.scss'
+// import '../styles/main.module.scss'
 
-const TemplateWrapper = ({children}) => (
+// TODO: Either Layout should be called "Layout", or else "TemplateWrapper" should be a separate file.
+const Layout = ({children}) => (
   <StaticQuery
     query={graphql`
       query HeadingQuery {
@@ -72,4 +70,4 @@ const TemplateWrapper = ({children}) => (
   />
 )
 
-export default TemplateWrapper
+export default Layout
