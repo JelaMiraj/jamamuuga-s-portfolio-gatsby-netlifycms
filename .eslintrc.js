@@ -7,6 +7,7 @@ module.exports = {
   },
   extends: [
     'eslint-config-with-prettier',
+    'eslint-config-gatsby-standard',
   ],
   plugins: [
     'json',
