@@ -111,6 +111,8 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
     "jest": "^23.6.0",
+    "jest-environment-enzyme": "^7.0.1",
+    "jest-enzyme": "^7.0.1",
     "prettier": "^1.15.3",
     "react-test-renderer": "^16.7.0",
     "regenerator-runtime": "^0.13.1",
