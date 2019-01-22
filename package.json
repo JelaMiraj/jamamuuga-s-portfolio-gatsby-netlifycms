@@ -100,6 +100,7 @@
     "enzyme-to-json": "^3.3.5",
     "eslint": "^5.12.0",
     "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-gatsby-standard": "^2.1.1",
     "eslint-config-prettier": "^3.6.0",
     "eslint-config-with-prettier": "^5.0.0",
     "eslint-plugin-dollar-sign": "^1.0.1",
