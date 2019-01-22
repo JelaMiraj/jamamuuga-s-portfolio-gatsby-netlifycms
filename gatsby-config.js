@@ -4,7 +4,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Gatsby + Netlify CMS Starter',
-    description: 'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+    description:
+      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
   },
   plugins: [
     {
@@ -59,7 +60,7 @@ module.exports = {
         theme_color: 'white',
         display: 'browser',
         icon: 'src/img/logo.svg',
-      }
+      },
     },
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
@@ -121,9 +122,9 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     {
-      resolve:'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
+      resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
       options: {
-        develop: true,            // Activates purging in npm run develop
+        develop: true, // Activates purging in npm run develop
         // FIXME: I doubt this works right in our multiple file setup. There is no more all.scss. The "bulma css file" is supposed to get purging.
         purgeOnly: ['/vendor/vendor.scss'], // applies purging only on the bulma css file
       },

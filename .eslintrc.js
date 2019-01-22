@@ -5,11 +5,6 @@ module.exports = {
   env: {
     es6: true,
   },
-  extends: [
-    'eslint-config-with-prettier',
-    'eslint-config-gatsby-standard',
-  ],
-  plugins: [
-    'json',
-  ],
+  extends: ['eslint-config-with-prettier', 'eslint-config-gatsby-standard'],
+  plugins: ['json'],
 }

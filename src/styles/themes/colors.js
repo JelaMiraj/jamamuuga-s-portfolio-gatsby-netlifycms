@@ -7,8 +7,8 @@
 const kaldiRed = '#D64000'
 const kaldiRedInvert = 'white'
 export const colors = {
-  kaldiRed: kaldiRed,
-  kaldiRedInvert: kaldiRedInvert,
+  kaldiRed,
+  kaldiRedInvert,
   primary: kaldiRed,
   primaryInvert: kaldiRedInvert,
   background: kaldiRedInvert,

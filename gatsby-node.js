@@ -1,10 +1,10 @@
 const _ = require('lodash')
 const path = require('path')
-const { createFilePath } = require('gatsby-source-filesystem')
-const { fmImagesToRelative } = require('gatsby-remark-relative-images')
+const {createFilePath} = require('gatsby-source-filesystem')
+const {fmImagesToRelative} = require('gatsby-remark-relative-images')
 
-exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
+exports.createPages = ({actions, graphql}) => {
+  const {createPage} = actions
 
   return graphql(`
     {
@@ -26,6 +26,7 @@ exports.createPages = ({ actions, graphql }) => {
   `).then(result => {
     if (result.errors) {
       result.errors.forEach(e => console.error(e.toString()))
+
       return Promise.reject(result.errors)
     }
 
@@ -37,7 +38,7 @@ exports.createPages = ({ actions, graphql }) => {
         path: edge.node.fields.slug,
         tags: edge.node.frontmatter.tags,
         component: path.resolve(
-          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
+          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`,
         ),
         // additional data can be passed via context
         context: {
@@ -72,12 +73,12 @@ exports.createPages = ({ actions, graphql }) => {
   })
 }
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
+exports.onCreateNode = ({node, actions, getNode}) => {
+  const {createNodeField} = actions
   fmImagesToRelative(node) // convert image paths for gatsby images
 
   if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
+    const value = createFilePath({node, getNode})
     createNodeField({
       name: `slug`,
       node,
@@ -86,13 +87,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 }
 
-exports.onCreateWebpackConfig = ({
-  stage,
-  rules,
-  loaders,
-  plugins,
-  actions,
-}) => {
+exports.onCreateWebpackConfig = ({stage, rules, loaders, plugins, actions}) => {
   actions.setWebpackConfig({
     module: {
       rules: [
@@ -103,7 +98,7 @@ exports.onCreateWebpackConfig = ({
             // because gatsby already includes it and makes sure its only
             // run at the appropriate stages, e.g. not in development
             loaders.miniCssExtract(),
-            loaders.css({ importLoaders: 1 }),
+            loaders.css({importLoaders: 1}),
             // the postcss loader comes with some nice defaults
             // including autoprefixer for our configured browsers
             loaders.postcss(),
@@ -112,9 +107,7 @@ exports.onCreateWebpackConfig = ({
               loader: 'sass-extract-loader',
               options: {
                 includePaths: './src/styles',
-                plugins: [
-                  'sass-extract-js',
-                ],
+                plugins: ['sass-extract-js'],
               },
             },
           ],
@@ -122,7 +115,7 @@ exports.onCreateWebpackConfig = ({
       ],
     },
     // plugins: [
-     //   plugins.define({
+    //   plugins.define({
     //     __DEVELOPMENT__: stage === `develop` || stage === `develop-html`,
     //   }),
     // ],
