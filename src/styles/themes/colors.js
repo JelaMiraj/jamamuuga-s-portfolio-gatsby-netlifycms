@@ -7,12 +7,24 @@
 const kaldiRed = '#D64000'
 const kaldiRedInvert = 'white'
 export const colors = {
+  background: 'white',
+  backgroundDark: '#f0e6f6',
+  bodyColor: '#333',
+
   kaldiRed,
   kaldiRedInvert,
-  primary: kaldiRed,
-  primaryInvert: kaldiRedInvert,
-  background: kaldiRedInvert,
-  bodyColor: '#333',
+
+  // primary: kaldiRed,
+  primary: '#7c37ad',
+  primaryDark: '#4b007d',
+  // TODO: Maybe remove primaryInvert.
+  // primaryInvert: kaldiRedInvert,
+  primaryInvert: '#83C852',
+  primaryLight: '#ae66df',
+
+  secondary: '#ff4081',
+  secondaryDark: '#c60055',
+  secondaryLight: '#ff79b0',
 }
 
 export default colors
