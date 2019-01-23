@@ -1,4 +1,4 @@
-{
+module.exports = {
   // An important note is that babelrc does not merge presets or plugins
   presets: [
     [
