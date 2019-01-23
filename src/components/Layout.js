@@ -1,73 +1,31 @@
-import React from 'react'
-// TODO: Use our factored out helmet component instead.
-import Helmet from 'react-helmet'
-import {StaticQuery, graphql} from 'gatsby'
+import React, {Fragment} from 'react'
+import {ThemeProvider} from 'styled-components'
+import PropTypes from 'prop-types'
+import {ScrollingProvider} from 'react-scroll-section'
 import GlobalStyle from '../styles/global-style'
-// TODO: Actually port header over so this can be switched over.
-// import Helmet from './Helmet'
+// TODO: Import a proper Styled System theme here instead of a separate pure color object.
+import colors from '../styles/themes/colors'
+import Helmet from './Helmet'
 // TODO: Why is this navigating down & back up to same folder?
 import Navbar from './Navbar'
-// TODO: Switch to Rebass or Styled System which uses Styled Components instead of Scss. Use a Mate & Cara Gatsby starters as inspiration.
-// import '../styles/main.module.scss'
 
-// TODO: Either Layout should be called "Layout", or else "TemplateWrapper" should be a separate file.
 const Layout = ({children}) => (
-  <StaticQuery
-    query={graphql`
-      query HeadingQuery {
-        site {
-          siteMetadata {
-            title
-            description
-          }
-        }
-      }
-    `}
-    render={data => (
-      <div>
-        <Helmet>
-          <html lang="en" />
-          <title>{data.site.siteMetadata.title}</title>
-          <meta
-            name="description"
-            content={data.site.siteMetadata.description}
-          />
-
-          <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="/img/apple-touch-icon.png"
-          />
-          <link
-            rel="icon"
-            type="image/png"
-            href="/img/favicon-32x32.png"
-            sizes="32x32"
-          />
-          <link
-            rel="icon"
-            type="image/png"
-            href="/img/favicon-16x16.png"
-            sizes="16x16"
-          />
-
-          <link
-            rel="mask-icon"
-            href="/img/safari-pinned-tab.svg"
-            color="#ff4400"
-          />
-          <meta name="theme-color" content="#fff" />
-
-          <meta property="og:type" content="business.business" />
-          <meta property="og:title" content={data.site.siteMetadata.title} />
-          <meta property="og:url" content="/" />
-          <meta property="og:image" content="/img/og-image.jpg" />
-        </Helmet>
-        <Navbar />
-        <div>{children}</div>
-      </div>
-    )}
-  />
+  <Fragment>
+    <GlobalStyle />
+    <ThemeProvider theme={{colors}}>
+      <ScrollingProvider>
+        <div>
+          <Helmet />
+          <Navbar />
+          <div>{children}</div>
+        </div>
+      </ScrollingProvider>
+    </ThemeProvider>
+  </Fragment>
 )
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+}
 
 export default Layout
