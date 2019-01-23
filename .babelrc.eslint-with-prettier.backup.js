@@ -16,14 +16,10 @@ module.exports = {
   ],
   env: {
     production: {
-      plugins: [
-        'lodash',
-      ],
+      plugins: ['lodash'],
     },
     development: {
-      plugins: [
-        'react-hot-loader/babel',
-      ],
+      plugins: ['react-hot-loader/babel'],
     },
     test: {
       presets: [
