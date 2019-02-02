@@ -20,14 +20,9 @@ module.exports = {
   ],
   snapshotSerializers: ['enzyme-to-json/serializer'],
   testEnvironment: 'enzyme',
-  testPathIgnorePatterns: [
-    'node_modules',
-    '/.cache/',
-  ],
+  testPathIgnorePatterns: ['node_modules', '/.cache/'],
   // transform: {
   //   '^.+\\.jsx?$': '<rootDir>/jest-preprocess.js',
   // },
-  transformIgnorePatterns: [
-    'node_modules/(?!(gatsby)/)',
-  ],
+  transformIgnorePatterns: ['node_modules/(?!(gatsby)/)'],
 }
