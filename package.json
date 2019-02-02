@@ -72,7 +72,7 @@
     "develop": "yarn clean && gatsby develop",
     "serve": "gatsby serve",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "test:changed": "yarn test --onlyChanged --passWithNoTests --silent --runInBand",
     "test:watch": "yarn test --watch",
     "test:update": "yarn test --update",
