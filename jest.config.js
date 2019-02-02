@@ -12,12 +12,12 @@ module.exports = {
   setupFiles: [
     // '<rootDir>/scripts/loader-shim.js',
     // 'raf/polyfill',
-  ],
-  setupFilesAfterEnv: [
+    // NOTE: These 2 are meant more as setupFilesAfterEnv...
     // '<rootDir>/scripts/setupTests.js',
     // '<rootDir>/scripts/jest.setup.js',
-    'jest-enzyme',
   ],
+  // TODO: Upgrade to Jest 24+ & rename this to setupFilesAfterEnv.
+  setupTestFrameworkScriptFile: 'jest-enzyme',
   snapshotSerializers: ['enzyme-to-json/serializer'],
   testEnvironment: 'enzyme',
   testPathIgnorePatterns: ['node_modules', '/.cache/'],
