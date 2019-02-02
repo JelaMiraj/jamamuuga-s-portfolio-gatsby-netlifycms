@@ -127,7 +127,6 @@
     "sass-extract-js": "^0.4.0",
     "sass-extract-loader": "^1.1.0",
     "stylelint": "^9.10.0",
-    "stylelint-config-airbnb": "^0.0.0",
     "stylelint-config-idiomatic-sass": "^1.0.0",
     "stylelint-config-pack": "^1.5.0",
     "stylelint-config-prettier": "^4.0.0",
