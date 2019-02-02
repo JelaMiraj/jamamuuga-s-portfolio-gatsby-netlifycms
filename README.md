@@ -2,6 +2,8 @@
 
 Based on Gatsby-Starter-Netlify-CMS.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/057d4f6c-3de1-43ab-a5b3-c901ac60a85d/deploy-status)](https://app.netlify.com/sites/jasoncadydesigns/deploys)
+
 # Gatsby + Netlify CMS Starter
 
 **Note:** This starter uses the [Gatsby v2 Beta](https://www.gatsbyjs.org/blog/2018-06-16-announcing-gatsby-v2-beta-launch/).
