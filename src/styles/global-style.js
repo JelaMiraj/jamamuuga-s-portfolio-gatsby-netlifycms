@@ -9,7 +9,6 @@ const rebootCss = reboot(/* options */)
 
 const GlobalStyle = createGlobalStyle`
   ${rebootCss}
-
 `
 
 export default GlobalStyle
