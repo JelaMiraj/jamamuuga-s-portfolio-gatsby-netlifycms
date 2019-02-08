@@ -71,6 +71,7 @@
     "start": "yarn develop",
     "clean": "rimraf '.cache/.??*' '.cache/*' 'public/.??*' 'public/*'",
     "build": "yarn clean && gatsby build",
+    "debug:chrome": "node --inspect-brk --no-lazy node_modules/gatsby/dist/bin/gatsby develop",
     "develop": "yarn clean && gatsby develop",
     "serve": "gatsby serve",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
