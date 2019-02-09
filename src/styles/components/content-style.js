@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 // FIXME: what is the right constructor?
-const contentStyle = styled.div`
+const ContentStyle = styled.div`
   .content .taglist {
     list-style: none;
     margin-bottom: 0;
@@ -21,4 +21,4 @@ const contentStyle = styled.div`
   }
 `
 
-export default contentStyle
+export default ContentStyle

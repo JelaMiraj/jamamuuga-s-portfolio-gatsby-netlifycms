@@ -1,18 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import contentStyle from '../styles/components/content-style'
+import ContentStyle from '../styles/components/content-style'
 
 // TODO: Should we use an alternative to dangerouslySetInnerHTML?
 export const HTMLContent = ({content, className}) => (
-  <contentStyle>
+  <ContentStyle>
     <div className={className} dangerouslySetInnerHTML={{__html: content}} />
-  </contentStyle>
+  </ContentStyle>
 )
 
 const Content = ({content, className}) => (
-  <contentStyle>
+  <ContentStyle>
     <div className={className}>{content}</div>
-  </contentStyle>
+  </ContentStyle>
 )
 
 Content.propTypes = {

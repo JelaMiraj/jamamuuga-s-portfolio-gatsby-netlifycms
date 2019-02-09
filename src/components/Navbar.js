@@ -3,7 +3,7 @@ import {Link} from 'gatsby'
 import github from '../img/github-icon.svg'
 import logo from '../img/logo.svg'
 // TODO: Convert to extending or using Rebass's Navbar.
-import navbarStyle from '../styles/components/navbar-style'
+import NavbarStyle from '../styles/components/navbar-style'
 
 const Navbar = class extends React.Component {
   componentDidMount() {
@@ -31,7 +31,7 @@ const Navbar = class extends React.Component {
 
   render() {
     return (
-      <navbarStyle>
+      <NavbarStyle>
         <nav
           className="navbar is-transparent"
           role="navigation"
@@ -79,7 +79,7 @@ const Navbar = class extends React.Component {
             </div>
           </div>
         </nav>
-      </navbarStyle>
+      </NavbarStyle>
     )
   }
 }
