@@ -58,7 +58,7 @@ const Helmet = ({theme = {}}) => (
   />
 )
 
-Helmet.PropTypes = {
+Helmet.propTypes = {
   // eslint-disable-next-line
   theme: PropTypes.object,
 }
