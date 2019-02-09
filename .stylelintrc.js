@@ -1,6 +1,8 @@
 module.exports = {
   processors: ['stylelint-processor-styled-components'],
   extends: [
+    // TODO: Maybe use regular recommended with Styled Components.
+    // 'stylelint-config-recommended',
     // 'stylelint-config-recommended-scss',
     'stylelint-config-standard-scss',
     'stylelint-config-prettier',
