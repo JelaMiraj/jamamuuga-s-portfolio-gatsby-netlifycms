@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+// TODO: Should we use an alternative to dangerouslySetInnerHTML?
 export const HTMLContent = ({content, className}) => (
   <div className={className} dangerouslySetInnerHTML={{__html: content}} />
 )
