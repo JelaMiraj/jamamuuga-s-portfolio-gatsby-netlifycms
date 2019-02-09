@@ -60,6 +60,7 @@ module.exports = {
         theme_color: 'white',
         display: 'browser',
         icon: 'src/img/logo.svg',
+        sizes: '48x11 72x16 96x21 144x32 192x42 256x56 384x85 512x113',
       },
     },
     {
