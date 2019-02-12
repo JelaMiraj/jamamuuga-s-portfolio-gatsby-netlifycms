@@ -12,7 +12,9 @@
 //   background_color: colors.background,
 //   theme_color: colors.primary,
 //   display: 'browser',
+//   // TODO: Use icon with equal-sided image borders because chrome dev console complains if it is not.
 //   icon: 'src/img/logo.svg',
+//   // TODO: Below line is not needed when switched to a equal sided SVG icon.
 //   sizes: '48x11 72x16 96x21 144x32 192x42 256x56 384x85 512x113',
 // }
 // module.exports manifestConfig
