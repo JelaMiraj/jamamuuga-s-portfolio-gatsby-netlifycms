@@ -1,8 +1,9 @@
 import React from 'react'
 import {Link} from 'gatsby'
+// import {Heading, Image, Text} from 'rebass'
 import github from '../img/github-icon.svg'
 import logo from '../img/logo.svg'
-// TODO: Convert to extending or using Rebass's Navbar.
+// TODO: Convert to extending or using Material UI's Navbar.
 import NavbarStyle from '../styles/components/navbar-style'
 
 const Navbar = class extends React.Component {
