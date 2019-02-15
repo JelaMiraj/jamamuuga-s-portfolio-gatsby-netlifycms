@@ -1,6 +1,6 @@
 // Config vars
 
-// TODO: Port this to Rebass maybe using styled-system and/or styled-components-theme
+// TODO: Port this to Material UI maybe using styled-system and/or styled-components-theme
 
 // Kaldi logo brand color: #FD461E
 
