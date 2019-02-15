@@ -21,31 +21,31 @@ module.exports = {
       },
     },
     'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-plugin-sass',
-      options: {
-        // TODO: Switch to Dart Sass from Node Sass when it works reliably without messing around.
-        // implementation: require("sass"),
-        // Explicitly include root style path just in case.
-        includePaths: [
-          // `${__dirname}/src/styles`,
-          './src/styles',
-        ],
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-sass-resources',
-      options: {
-        // TODO: Make sure filename uses actual expected root folder & filename based module style.
-        // TODO: Find out which Scss module controls filename preferences here: gatsby-plugin-sass or sass-resources-loader.
-        resources: [
-          // `${__dirname}/src/styles/abstract/_variables.module.scss`,
-          // TODO: Find out if this is a better way to resolve the folder path.
-          // resolveFromRootDir('src/styles/abstract/_variables.module.scss'),
-          './src/styles/abstracts/_variables.module.scss',
-        ],
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-sass',
+    //   options: {
+    //     // TODO: Switch to Dart Sass from Node Sass when it works reliably without messing around.
+    //     // implementation: require("sass"),
+    //     // Explicitly include root style path just in case.
+    //     includePaths: [
+    //       // `${__dirname}/src/styles`,
+    //       './src/styles',
+    //     ],
+    //   },
+    // },
+    // {
+    //   resolve: 'gatsby-plugin-sass-resources',
+    //   options: {
+    //     // TODO: Make sure filename uses actual expected root folder & filename based module style.
+    //     // TODO: Find out which Scss module controls filename preferences here: gatsby-plugin-sass or sass-resources-loader.
+    //     resources: [
+    //       // `${__dirname}/src/styles/abstract/_variables.module.scss`,
+    //       // TODO: Find out if this is a better way to resolve the folder path.
+    //       // resolveFromRootDir('src/styles/abstract/_variables.module.scss'),
+    //       './src/styles/abstracts/_variables.module.scss',
+    //     ],
+    //   },
+    // },
     {
       resolve: 'gatsby-plugin-manifest',
       // options: manifestConfig,
