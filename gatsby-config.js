@@ -123,15 +123,15 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
-   {
-     resolve: 'gatsby-plugin-material-ui',
-     options: {
-       // FIXME: Pass external theme object used by rest of project.
-       theme: {
-         primaryColor: '#9c27b0',
-       },
-     },
-   },
+    {
+      resolve: 'gatsby-plugin-material-ui',
+      options: {
+        // FIXME: Pass external theme object used by rest of project.
+        theme: {
+          primaryColor: '#9c27b0',
+        },
+      },
+    },
     'gatsby-plugin-offline',
     {
       resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
