@@ -1,23 +1,23 @@
 // See https://github.com/mui-org/material-ui/tree/master/examples/gatsby
-import React from "react";
-import { MuiThemeProvider } from "@material-ui/core/styles";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import JssProvider from "react-jss/lib/JssProvider";
-import getPageContext from "./getPageContext";
-import Hidden from "@material-ui/core/Hidden";
+import React from 'react'
+import {MuiThemeProvider} from '@material-ui/core/styles'
+import CssBaseline from '@material-ui/core/CssBaseline'
+import JssProvider from 'react-jss/lib/JssProvider'
+import Hidden from '@material-ui/core/Hidden'
+import getPageContext from './getPageContext'
 
 function withRoot(Component) {
   class WithRoot extends React.Component {
     constructor(props) {
-      super(props);
-      this.muiPageContext = getPageContext();
+      super(props)
+      this.muiPageContext = getPageContext()
     }
 
     componentDidMount() {
       // Remove the server-side injected CSS.
-      const jssStyles = document.querySelector("#jss-server-side");
+      const jssStyles = document.querySelector('#jss-server-side')
       if (jssStyles && jssStyles.parentNode) {
-        jssStyles.parentNode.removeChild(jssStyles);
+        jssStyles.parentNode.removeChild(jssStyles)
       }
     }
 
@@ -37,11 +37,11 @@ function withRoot(Component) {
             </Hidden>
           </MuiThemeProvider>
         </JssProvider>
-      );
+      )
     }
   }
 
-  return WithRoot;
+  return WithRoot
 }
 
-export default withRoot;
+export default withRoot
