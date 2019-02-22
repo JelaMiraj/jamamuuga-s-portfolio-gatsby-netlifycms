@@ -1,7 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {Link, graphql} from 'gatsby'
+// import {Link, graphql} from 'gatsby'
+import {graphql} from 'gatsby'
 import Layout from '../components/Layout'
+import Link from '../components/Link'
 /* FIXME: Somehow refer to color names from style variables instead of repeating here. */
 
 export default class IndexPage extends React.Component {

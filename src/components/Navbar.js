@@ -1,5 +1,6 @@
 import React from 'react'
-import {Link} from 'gatsby'
+// import {Link} from 'gatsby'
+import Link from './Link'
 // import {Heading, Image, Text} from 'rebass'
 import github from '../img/github-icon.svg'
 import logo from '../img/logo.svg'
