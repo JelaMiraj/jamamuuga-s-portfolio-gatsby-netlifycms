@@ -1,4 +1,5 @@
 import React from 'react'
+// TODO: Make sure this works well with Material UI Link & our combined custom Link.
 import {navigate} from 'gatsby-link'
 import Layout from '../../components/Layout'
 
