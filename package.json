@@ -52,10 +52,11 @@
     "uuid": "^3.2.1"
   },
   "keywords": [
+    "babel",
     "gatsby",
+    "material-ui",
     "netlify-cms",
     "netlify",
-    "babel",
     "react",
     "styled-components"
   ],
