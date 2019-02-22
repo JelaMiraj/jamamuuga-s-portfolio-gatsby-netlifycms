@@ -1,7 +1,7 @@
 // It's not ready yet: https://github.com/gatsbyjs/gatsby/issues/8237.
 //
 // import React from 'react';
-// import withRoot from './src/withRoot';
+// import withRoot from './src/utils/withRoot'
 
 // const WithRoot = withRoot(props => props.children);
 
