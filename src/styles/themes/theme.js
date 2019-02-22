@@ -4,6 +4,7 @@ import purple from 'material-ui/colors/purple';
 import green from 'material-ui/colors/green';
 import red from 'material-ui/colors/red';
 import grey from 'material-ui/colors/grey';
+// TODO: Update this Material UI Them from v1 to v3 & v4 compatible.
 
 const headlineFont = `Merriweather, Georgia, serif`;
 const bodyFont = `"Open Sans", Roboto, "Helvetica Neue", Arial, sans-serif`;
