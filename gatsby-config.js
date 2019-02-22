@@ -127,9 +127,10 @@ module.exports = {
       resolve: 'gatsby-plugin-material-ui',
       options: {
         // FIXME: Pass external theme object used by rest of project.
-        theme: {
-          primaryColor: '#9c27b0',
-        },
+        // theme: {
+        //   primaryColor: '#9c27b0',
+        // },
+        pathToTheme: 'src/styles/themes/theme.js',
       },
     },
     'gatsby-plugin-offline',
