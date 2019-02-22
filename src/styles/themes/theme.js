@@ -1,13 +1,13 @@
 // Setup base Material-UI theme
-import createMuiTheme from 'material-ui/styles/createMuiTheme';
-import purple from 'material-ui/colors/purple';
-import green from 'material-ui/colors/green';
-import red from 'material-ui/colors/red';
-import grey from 'material-ui/colors/grey';
+import createMuiTheme from 'material-ui/styles/createMuiTheme'
+import purple from 'material-ui/colors/purple'
+import green from 'material-ui/colors/green'
+import red from 'material-ui/colors/red'
+import grey from 'material-ui/colors/grey'
 // TODO: Update this Material UI Them from v1 to v3 & v4 compatible.
 
-const headlineFont = `Merriweather, Georgia, serif`;
-const bodyFont = `"Open Sans", Roboto, "Helvetica Neue", Arial, sans-serif`;
+const headlineFont = `Merriweather, Georgia, serif`
+const bodyFont = `"Open Sans", Roboto, "Helvetica Neue", Arial, sans-serif`
 
 export default createMuiTheme({
   palette: {
@@ -26,19 +26,19 @@ export default createMuiTheme({
       fontFamily: headlineFont,
       color: grey[900],
     },
-    display2: { fontFamily: headlineFont, color: grey[900] },
-    display3: { fontFamily: headlineFont, color: grey[900] },
-    display4: { fontFamily: headlineFont, color: grey[900] },
-    headline: { fontFamily: headlineFont, color: grey[900] },
-    subheading: { fontFamily: headlineFont, color: grey[900] },
-    title: { fontFamily: headlineFont, color: grey[900], fontWeight: 400 },
+    display2: {fontFamily: headlineFont, color: grey[900]},
+    display3: {fontFamily: headlineFont, color: grey[900]},
+    display4: {fontFamily: headlineFont, color: grey[900]},
+    headline: {fontFamily: headlineFont, color: grey[900]},
+    subheading: {fontFamily: headlineFont, color: grey[900]},
+    title: {fontFamily: headlineFont, color: grey[900], fontWeight: 400},
     body1: {
       fontFamily: bodyFont,
       color: grey[700],
       fontWeight: 400,
       margin: '1em 0',
-      '& h2': { fontFamily: headlineFont, color: grey[900], fontWeight: 400 },
-      '& h3': { fontFamily: headlineFont, color: grey[900], fontWeight: 400 },
+      '& h2': {fontFamily: headlineFont, color: grey[900], fontWeight: 400},
+      '& h3': {fontFamily: headlineFont, color: grey[900], fontWeight: 400},
     },
   },
   overrides: {
@@ -51,4 +51,4 @@ export default createMuiTheme({
       },
     },
   },
-});
+})
