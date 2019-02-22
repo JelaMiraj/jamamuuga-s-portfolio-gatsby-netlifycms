@@ -1,7 +1,7 @@
 /* eslint-disable react/no-danger */
 
 const React = require('react')
-const { renderToString } = require('react-dom/server')
+const {renderToString} = require('react-dom/server')
 const JssProvider = require('react-jss/lib/JssProvider').default
 const getPageContext = require('./src/utils/getPageContext').default
 
@@ -34,11 +34,10 @@ function replaceRenderer({
 
 exports.replaceRenderer = replaceRenderer
 
-// It's not ready yet: https://github.com/gatsbyjs/gatsby/issues/8237.
-//
-// const withRoot = require('./src/utils/withRoot').default
-// const WithRoot = withRoot(props => props.children);
+// // It's not ready yet: https://github.com/gatsbyjs/gatsby/issues/8237.
 
-// exports.wrapRootElement = ({ element }) => {
-//   return <WithRoot>{element}</WithRoot>;
-// };
+// const withRoot = require('./src/utils/withRoot').default
+
+// const WithRoot = withRoot(props => props.children)
+
+// exports.wrapRootElement = ({element}) => <WithRoot>{element}</WithRoot>
