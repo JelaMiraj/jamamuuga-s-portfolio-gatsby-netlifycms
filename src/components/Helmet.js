@@ -53,6 +53,13 @@ const Helmet = ({theme = {}}) => (
         <meta property="og:title" content={data.site.siteMetadata.title} />
         <meta property="og:url" content="/" />
         <meta property="og:image" content="/img/og-image.jpg" />
+        <meta
+          name="viewport"
+          content="minimum-scale=1,
+            initial-scale=1,
+            width=device-width,
+            shrink-to-fit=no"
+        />
       </ReactHelmet>
     )}
   />
