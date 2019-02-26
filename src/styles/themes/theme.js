@@ -44,6 +44,7 @@ const theme = createMuiTheme({
     },
   },
   overrides: {
+    // TODO: Refer to MuiGrid & 'spacing-xs-16' in a proper modern way & verify the appropriate places.
     MuiGrid: {
       'spacing-xs-16': {
         margin: '0 -8px',
