@@ -3,10 +3,10 @@ import Layout from '../components/Layout'
 import withRoot from '../utils/withRoot'
 
 const NotFoundPage = () => (
-  <Layout>
+  <Layout title="Not Found">
     <div>
-      <h1>NOT FOUND</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+      <h1>Not Found</h1>
+      <p>You just hit a route that doesn&#39;t exist...</p>
     </div>
   </Layout>
 )
