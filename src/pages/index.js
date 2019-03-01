@@ -2,9 +2,16 @@ import React from 'react'
 import PropTypes from 'prop-types'
 // import {Link, graphql} from 'gatsby'
 import {graphql} from 'gatsby'
+// import Button from '@material-ui/core/Button'
+// import Grid from '@material-ui/core/Grid'
+// import Avatar from '@material-ui/core/Avatar'
+// import {Gift} from 'mdi-material-ui'
+// import { withStyles } from "@material-ui/core/styles";
 import withRoot from '../utils/withRoot'
 import Layout from '../components/Layout'
 import Link from '../components/Link'
+// import Card from '../components/Card'
+// import Carousel from '../components/Carousel'
 /* FIXME: Somehow refer to color names from style variables instead of repeating here. */
 
 class IndexPage extends React.Component {
