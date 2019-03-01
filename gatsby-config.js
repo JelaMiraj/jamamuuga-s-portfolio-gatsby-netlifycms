@@ -3,9 +3,37 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Jason Cady Designs Portfolio',
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      "Jason Cady's Portfolio Website. Based mostly on Gatsby Starter Netlify CMS & Gatsby Material UI Business Starter.",
+    contact: {
+      // NOTE: Always play it safe...
+      // TODO: Maybe just link to LinkedIn.
+      phone: 'Phone Number',
+      email: 'Email Address',
+    },
+    menuLinks: [
+      {
+        name: 'About',
+        link: '/about',
+      },
+      {
+        name: 'Products',
+        link: '/products',
+      },
+      {
+        name: 'Blog',
+        link: '/blog',
+      },
+      {
+        name: 'Contact',
+        link: '/contact',
+      },
+      {
+        name: 'Form Examples',
+        link: '/examples',
+      },
+    ],
   },
   plugins: [
     {
