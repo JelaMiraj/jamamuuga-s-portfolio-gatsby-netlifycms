@@ -7,6 +7,7 @@ import {graphql} from 'gatsby'
 import Layout from '../components/Layout'
 import Link from '../components/Link'
 import Content, {HTMLContent} from '../components/Content'
+import withRoot from '../utils/withRoot'
 
 export const BlogPostTemplate = ({
   content,
@@ -87,7 +88,7 @@ BlogPost.propTypes = {
   }),
 }
 
-export default BlogPost
+export default withRoot(BlogPost)
 
 export const pageQuery = graphql`
   query BlogPostByID($id: String!) {

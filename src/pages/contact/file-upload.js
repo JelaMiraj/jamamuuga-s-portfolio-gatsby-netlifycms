@@ -2,6 +2,7 @@ import React from 'react'
 // TODO: Make sure this works well with Material UI Link & our combined custom Link.
 import {navigate} from 'gatsby-link'
 import Layout from '../../components/Layout'
+import withRoot from '../../utils/withRoot'
 
 function encode(data) {
   const formData = new FormData()
@@ -13,7 +14,7 @@ function encode(data) {
   return formData
 }
 
-export default class Contact extends React.Component {
+class Contact extends React.Component {
   constructor(props) {
     super(props)
     this.state = {}
@@ -107,3 +108,5 @@ export default class Contact extends React.Component {
     )
   }
 }
+
+export default withRoot(Contact)

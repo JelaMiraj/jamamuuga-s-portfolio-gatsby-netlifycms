@@ -6,6 +6,7 @@ import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import withRoot from '../utils/withRoot'
 
 export const ProductPageTemplate = ({
   image,
@@ -160,7 +161,7 @@ ProductPage.propTypes = {
   }),
 }
 
-export default ProductPage
+export default withRoot(ProductPage)
 
 export const productPageQuery = graphql`
   query ProductPage($id: String!) {

@@ -2,6 +2,7 @@ import React from 'react'
 // TODO: Make sure this works well with Material UI Link & our combined custom Link.
 import {navigate} from 'gatsby-link'
 import Layout from '../../components/Layout'
+import withRoot from '../../utils/withRoot'
 
 function encode(data) {
   return Object.keys(data)
@@ -9,7 +10,7 @@ function encode(data) {
     .join('&')
 }
 
-export default class Index extends React.Component {
+class Index extends React.Component {
   constructor(props) {
     super(props)
     this.state = {isValidated: false}
@@ -114,3 +115,5 @@ export default class Index extends React.Component {
     )
   }
 }
+
+export default withRoot(Index)
