@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react'
+// FIXME: Switch to MUI Themes.
 import {ThemeProvider} from 'styled-components'
 import PropTypes from 'prop-types'
 import {ScrollingProvider} from 'react-scroll-section'
