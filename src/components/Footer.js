@@ -21,7 +21,7 @@ const Footer = props => {
             <Hidden only={['xl', 'lg', 'md']}>
               <br />
             </Hidden>{' '}
-            {email} – {phone}
+            {/* {email} – {phone} */}
             <br />
             &middot;
             <br />
