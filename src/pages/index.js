@@ -13,7 +13,7 @@ import Link from '../components/Link'
 // import Card from '../components/Card'
 // import Carousel from '../components/Carousel'
 import mytheme from '../styles/themes/theme'
-/* FIXME: Somehow refer to color names from style variables instead of repeating here. */
+// FIXME: Somehow refer to color names from style variables instead of repeating here.
 
 class IndexPage extends React.Component {
   render() {
