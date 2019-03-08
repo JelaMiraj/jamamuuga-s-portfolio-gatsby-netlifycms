@@ -7,6 +7,7 @@ import ClickAwayListener from '@material-ui/core/ClickAwayListener'
 import IconButton from '@material-ui/core/IconButton'
 import {DotsVertical} from 'mdi-material-ui'
 import Link from './Link'
+// import logo from '../img/logo.svg'
 
 class MenuMobile extends React.Component {
   state = {
