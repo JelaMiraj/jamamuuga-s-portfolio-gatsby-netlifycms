@@ -7,7 +7,7 @@ import logo from '../img/logo.svg'
 // TODO: Convert to extending or using Material UI's Navbar.
 import NavbarStyle from '../styles/components/navbar-style'
 
-const Navbar = class extends React.Component {
+class Navbar extends React.Component {
   componentDidMount() {
     // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(
