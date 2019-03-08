@@ -14,6 +14,7 @@ import Link from '../components/Link'
 // import Carousel from '../components/Carousel'
 import mytheme from '../styles/themes/theme'
 // FIXME: Somehow refer to color names from style variables instead of repeating here.
+// FIXME: Many page links broken using current setup.
 
 class IndexPage extends React.Component {
   render() {
