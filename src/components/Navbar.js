@@ -1,4 +1,7 @@
 import React from 'react'
+import Button from '@material-ui/core/Button'
+import IconButton from '@material-ui/core/IconButton'
+import {GithubCircle} from 'mdi-material-ui'
 // import {Link} from 'gatsby'
 import Link from './Link'
 // import {Heading, Image, Text} from 'rebass'
@@ -73,9 +76,14 @@ class Navbar extends React.Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="icon">
+                  {/*
+                    <span className="icon">
                     <img src={github} alt="Github" />
-                  </span>
+                    </span>
+                  */}
+                  <IconButton className="icon" style={{color: '#fff'}}>
+                    <GithubCircle />
+                  </IconButton>
                 </a>
               </div>
             </div>

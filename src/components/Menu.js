@@ -18,11 +18,12 @@ const Menu = props => {
         </Link>
       ))}
       <a
-        href="https://github.com/bluepeter/gatsby-material-ui-business-starter"
+        className="navbar-item"
+        href="https://github.com/Jamamuuga/jamamuuga-s-portfolio-gatsby-netlifycms"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <IconButton style={{color: '#fff'}}>
+        <IconButton className="icon" style={{color: '#fff'}}>
           <GithubCircle />
         </IconButton>
       </a>

@@ -44,11 +44,12 @@ class MenuMobile extends React.Component {
               </Link>
             ))}
             <a
-              href="https://github.com/bluepeter/gatsby-material-ui-business-starter"
+              className="navbar-item"
+              href="https://github.com/Jamamuuga/jamamuuga-s-portfolio-gatsby-netlifycms"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <MenuItem>Fork me on Github</MenuItem>
+              <MenuItem>Github Repository</MenuItem>
             </a>
           </Menu>
         </ClickAwayListener>
