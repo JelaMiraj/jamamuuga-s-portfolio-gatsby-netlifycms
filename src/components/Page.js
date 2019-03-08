@@ -8,7 +8,8 @@ import Typography from '@material-ui/core/Typography'
 import Header from './Header'
 import Footer from './Footer'
 import theme from '../styles/themes/theme'
-//TODO: Using MUIThemeProvider & styling here might not be the right thing with Material UI. Probably best to add theme only from the page level & not this layout level.
+// TODO: Using MUIThemeProvider & styling here might not be the right thing with Material UI. Probably best to add theme only from the page level & not this layout level.
+// FIXME: using MUIThemeProvider here breaks things...
 
 class Page extends React.Component {
   render() {
@@ -16,26 +17,26 @@ class Page extends React.Component {
 
     return (
       <>
-        <MUIThemeProvider theme={theme}>
-          <Header />
-          <Grid container style={{marginTop: '94px'}}>
-            <Grid item container direction="row">
-              <Grid item container direction="column" xs={12}>
-                {title ? (
-                  <Typography
-                    variant="h2"
-                    gutterBottom
-                    style={{textAlign: 'center'}}
-                  >
-                    {title}
-                  </Typography>
-                ) : null}
-                {children}
-                <Footer />
-              </Grid>
+        {/* <MUIThemeProvider theme={theme}> */}
+        <Header />
+        <Grid container style={{marginTop: '94px'}}>
+          <Grid item container direction="row">
+            <Grid item container direction="column" xs={12}>
+              {title ? (
+                <Typography
+                  variant="h2"
+                  gutterBottom
+                  style={{textAlign: 'center'}}
+                >
+                  {title}
+                </Typography>
+              ) : null}
+              {children}
+              <Footer />
             </Grid>
           </Grid>
-        </MUIThemeProvider>
+        </Grid>
+        {/* </MUIThemeProvider> */}
       </>
     )
   }

@@ -89,4 +89,6 @@ export const pageQuery = graphql`
   }
 `
 
+// FIXME: Somehow, trying to use withStyles this way fails
 export default withRoot(withStyles(mytheme)(IndexPage))
+// export default withRoot(IndexPage)
