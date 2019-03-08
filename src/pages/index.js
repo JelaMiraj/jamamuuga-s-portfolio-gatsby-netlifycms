@@ -6,12 +6,13 @@ import {graphql} from 'gatsby'
 // import Grid from '@material-ui/core/Grid'
 // import Avatar from '@material-ui/core/Avatar'
 // import {Gift} from 'mdi-material-ui'
-// import { withStyles } from "@material-ui/core/styles";
+import {withStyles} from '@material-ui/core/styles'
 import withRoot from '../utils/withRoot'
 import Layout from '../components/Layout'
 import Link from '../components/Link'
 // import Card from '../components/Card'
 // import Carousel from '../components/Carousel'
+import mytheme from '../styles/themes/theme'
 /* FIXME: Somehow refer to color names from style variables instead of repeating here. */
 
 class IndexPage extends React.Component {
@@ -88,4 +89,4 @@ export const pageQuery = graphql`
   }
 `
 
-export default withRoot(IndexPage)
+export default withRoot(withStyles(mytheme)(IndexPage))
