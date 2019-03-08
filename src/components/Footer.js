@@ -25,8 +25,7 @@ const Footer = props => {
             <br />
             &middot;
             <br />
-            Starter created by{' '}
-            <a href="https://foxandgeese.com">Fox and Geese</a>
+            By <a href="https://jasoncadydesigns.netlify.com">Jason Cady</a>
           </Typography>
         </span>
       </footer>
