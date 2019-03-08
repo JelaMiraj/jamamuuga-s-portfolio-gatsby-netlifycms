@@ -1,10 +1,12 @@
 import React from 'react'
-import {StaticQuery, Link, graphql} from 'gatsby'
+// import {StaticQuery, Link, graphql} from 'gatsby'
+import {StaticQuery, graphql} from 'gatsby'
 import Menu from '@material-ui/core/Menu'
 import MenuItem from '@material-ui/core/MenuItem'
 import ClickAwayListener from '@material-ui/core/ClickAwayListener'
 import IconButton from '@material-ui/core/IconButton'
 import {DotsVertical} from 'mdi-material-ui'
+import Link from './Link'
 
 class MenuMobile extends React.Component {
   state = {
