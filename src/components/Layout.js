@@ -1,7 +1,7 @@
 import React from 'react'
 // FIXME: Switch to MUI Themes.
 // import {ThemeProvider} from 'styled-components'
-import {MUIThemeProvider, withStyles} from '@material-ui/core/styles'
+// import {MUIThemeProvider, withStyles} from '@material-ui/core/styles'
 import PropTypes from 'prop-types'
 import {ScrollingProvider} from 'react-scroll-section'
 import Grid from '@material-ui/core/Grid'
@@ -14,7 +14,7 @@ import Header from './Header'
 import Helmet from './Helmet'
 // TODO: Why is this navigating down & back up to same folder?
 import Navbar from './Navbar'
-import mytheme from '../styles/themes/theme'
+// import mytheme from '../styles/themes/theme'
 // FIXME: using MUIThemeProvider here breaks things...
 
 // TODO: Find out if we need any <GlobalStyle />

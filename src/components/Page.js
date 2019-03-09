@@ -1,13 +1,13 @@
 import React from 'react'
 // import {Grid, Row, Col} from 'react-flexbox-grid'
 import PropTypes from 'prop-types'
-import {MUIThemeProvider, withStyles} from '@material-ui/core/styles'
+// import {MUIThemeProvider, withStyles} from '@material-ui/core/styles'
 import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import Header from './Header'
 import Footer from './Footer'
-import theme from '../styles/themes/theme'
+// import theme from '../styles/themes/theme'
 // TODO: Using MUIThemeProvider & styling here might not be the right thing with Material UI. Probably best to add theme only from the page level & not this layout level.
 // FIXME: using MUIThemeProvider here breaks things...
 
