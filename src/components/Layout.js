@@ -13,7 +13,7 @@ import Footer from './Footer'
 import Header from './Header'
 import Helmet from './Helmet'
 // TODO: Why is this navigating down & back up to same folder?
-import Navbar from './Navbar'
+// import Navbar from './Navbar'
 // import mytheme from '../styles/themes/theme'
 // FIXME: using MUIThemeProvider here breaks things...
 
