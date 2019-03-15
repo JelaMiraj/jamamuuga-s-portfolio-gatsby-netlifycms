@@ -13,6 +13,7 @@ const theme = createMuiTheme({
   palette: {
     primary: purple,
     secondary: green,
+    tertiary: grey,
     error: red,
   },
   typography: {
