@@ -32,7 +32,7 @@ module.exports = {
       },
       {
         name: 'Form Examples',
-        link: '/examples',
+        link: '/contact/examples',
       },
     ],
   },
