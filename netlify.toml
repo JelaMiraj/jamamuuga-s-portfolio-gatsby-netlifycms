@@ -2,6 +2,7 @@
   publish = "public"
   command = "yarn build"
   context = "production"
+  functions = "lambda"
 [build.environment]
   # YARN_VERSION = "1.9.4"
   # YARN_VERSION = "1.13.0"
