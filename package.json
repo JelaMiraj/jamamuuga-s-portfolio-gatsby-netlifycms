@@ -41,7 +41,7 @@
     "lodash": "^4.17.5",
     "lodash-webpack-plugin": "^0.11.4",
     "mdi-material-ui": "^5.9.0",
-    "netlify-cms": "^2.3.3",
+    "netlify-cms": "^2.6.1",
     "parcel-bundler": "^1.9.4",
     "prop-types": "^15.7.2",
     "react": "^16.8.2",
