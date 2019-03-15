@@ -11,6 +11,7 @@ export const colors = {
   backgroundDark: '#f0e6f6',
   bodyColor: '#333',
 
+  darkMono: '#2b2523',
   kaldiRed,
   kaldiRedInvert,
 
