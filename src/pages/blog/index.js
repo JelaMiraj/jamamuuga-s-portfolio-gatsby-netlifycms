@@ -1,7 +1,8 @@
 import React from 'react'
-
+import {withStyles} from '@material-ui/core/styles'
 import Layout from '../../components/Layout'
 import BlogRoll from '../../components/BlogRoll'
+import mytheme from '../../styles/themes/theme'
 import withRoot from '../../utils/withRoot'
 
 class BlogIndexPage extends React.Component {
@@ -38,4 +39,6 @@ class BlogIndexPage extends React.Component {
   }
 }
 
+// FIXME: Somehow, trying to use withStyles this way fails
+// export default withRoot(withStyles(mytheme)(BlogIndexPage))
 export default withRoot(BlogIndexPage)
