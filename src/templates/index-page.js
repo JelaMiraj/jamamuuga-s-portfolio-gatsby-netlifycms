@@ -2,10 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 // import {Link, graphql} from 'gatsby'
 import {graphql} from 'gatsby'
+import Typography from '@material-ui/core/Typography'
+import {withStyles} from '@material-ui/core/styles'
 import Layout from '../components/Layout'
 import Link from '../components/Link'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import mytheme from '../styles/themes/theme'
 import withRoot from '../utils/withRoot'
 
 export const IndexPageTemplate = ({
@@ -156,6 +159,7 @@ IndexPage.propTypes = {
 }
 
 // FIXME: Somehow, trying to use withStyles this way fails
+// export default withRoot(withStyles(mytheme)(IndexPage))
 export default withRoot(IndexPage)
 
 export const pageQuery = graphql`
