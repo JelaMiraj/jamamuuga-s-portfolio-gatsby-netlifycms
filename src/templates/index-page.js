@@ -6,6 +6,7 @@ import Layout from '../components/Layout'
 import Link from '../components/Link'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import withRoot from '../utils/withRoot'
 
 export const IndexPageTemplate = ({
   image,
@@ -154,7 +155,8 @@ IndexPage.propTypes = {
   }),
 }
 
-export default IndexPage
+// FIXME: Somehow, trying to use withStyles this way fails
+export default withRoot(IndexPage)
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
