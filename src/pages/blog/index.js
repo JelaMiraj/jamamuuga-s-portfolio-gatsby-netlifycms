@@ -2,8 +2,9 @@ import React from 'react'
 
 import Layout from '../../components/Layout'
 import BlogRoll from '../../components/BlogRoll'
+import withRoot from '../../utils/withRoot'
 
-export default class BlogIndexPage extends React.Component {
+class BlogIndexPage extends React.Component {
   render() {
     return (
       <Layout>
@@ -36,3 +37,5 @@ export default class BlogIndexPage extends React.Component {
     )
   }
 }
+
+export default withRoot(BlogIndexPage)
