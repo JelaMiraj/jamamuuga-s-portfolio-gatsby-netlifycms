@@ -54,7 +54,11 @@ class Carousel extends React.Component {
               const {
                 node: {
                   excerpt,
-                  frontmatter: {path, title, image},
+                  frontmatter: {
+                    path,
+                    title,
+                    image: {publicURL},
+                  },
                 },
               } = item
 
@@ -64,7 +68,7 @@ class Carousel extends React.Component {
                     <Card>
                       <CardMedia
                         style={{height: '200px'}}
-                        image={withPrefix(image)}
+                        image={withPrefix(publicURL)}
                       />
                       <CardContent>
                         <Typography gutterBottom variant="h5" component="h2">

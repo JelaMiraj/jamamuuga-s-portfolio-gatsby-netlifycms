@@ -20,14 +20,14 @@ const List = props => (
       const {
         node: {
           excerpt,
-          frontmatter: {path, title, image},
+          frontmatter: {path, title, image: { publicURL },
         },
       } = edge
 
       return (
         <Grid item xs={12} md={6} key={path}>
           <Card>
-            <CardMedia style={{height: '200px'}} image={withPrefix(image)} />
+            <CardMedia style={{height: '200px'}} image={withPrefix(publicURL)} />
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
                 <Link to={path}>{title}</Link>
