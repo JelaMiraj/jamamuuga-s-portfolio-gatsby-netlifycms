@@ -21,8 +21,12 @@ const styles = theme => ({
   featureGrid: {
     marginBottom: '25px',
   },
-  avi: {width: '40px', height: '40px', color: '#fff',
-      backgroundColor: theme.palette.secondary.light,},
+  avi: {
+    width: '40px',
+    height: '40px',
+    color: '#fff',
+    backgroundColor: theme.palette.secondary.light,
+  },
 })
 
 const HomeFeatures = props => (
