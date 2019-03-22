@@ -40,7 +40,7 @@ const HomeFeatures = props => (
         avatar={
           <Avatar
             className={props.classes.avi}
-            {/* style={{backgroundColor: props.theme.palette.secondary.light}} */}
+            style={{backgroundColor: props.theme.palette.secondary.light}}
           >
             <Robot />
           </Avatar>
@@ -54,7 +54,7 @@ const HomeFeatures = props => (
         avatar={
           <Avatar
             className={props.classes.avi}
-            {/* style={{backgroundColor: props.theme.palette.secondary.light}} */}
+            style={{backgroundColor: props.theme.palette.secondary.light}}
           >
             <Robot />
           </Avatar>
