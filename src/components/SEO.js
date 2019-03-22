@@ -14,7 +14,7 @@ const SEO = props => (
             lang: 'en',
           }}
           title={title}
-          titleTemplate={`%s - ${title}`}
+          titleTemplate={`%s - ${data.site.siteMetadata.title}`}
         >
           {props.children}
         </Helmet>
