@@ -12,12 +12,13 @@ import BlogRoll from '../components/BlogRoll'
 import mytheme from '../styles/themes/theme'
 import withRoot from '../utils/withRoot'
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    textAlign: 'center',
-    paddingTop: theme.spacing(20),
-  },
-}))
+// FIXME: complains about object is not a function....
+// const useStyles = makeStyles(theme => ({
+//   root: {
+//     textAlign: 'center',
+//     paddingTop: theme.spacing(20),
+//   },
+// }))
 export const IndexPageTemplate = ({
   image,
   title,
@@ -28,10 +29,12 @@ export const IndexPageTemplate = ({
   intro,
   main,
 }) => {
-  const classes = useStyles()
+  // TODO: Delete this null variable when eslint stops reformatting and breaking this function.
+  const noOp = null
+  /* const classes = useStyles() */
 
   return (
-    <div className={classes.root}>
+    <div>
       <div
         className="full-width-image margin-top-0"
         style={{
