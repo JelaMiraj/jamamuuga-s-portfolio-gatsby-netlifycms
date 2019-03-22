@@ -21,7 +21,8 @@ const styles = theme => ({
   featureGrid: {
     marginBottom: '25px',
   },
-  avi: {width: '40px', height: '40px', color: '#fff'},
+  avi: {width: '40px', height: '40px', color: '#fff',
+      backgroundColor: theme.palette.secondary.light,},
 })
 
 const HomeFeatures = props => (
@@ -39,7 +40,7 @@ const HomeFeatures = props => (
         avatar={
           <Avatar
             className={props.classes.avi}
-            style={{backgroundColor: props.theme.palette.secondary.light}}
+            {/* style={{backgroundColor: props.theme.palette.secondary.light}} */}
           >
             <Robot />
           </Avatar>
@@ -53,7 +54,7 @@ const HomeFeatures = props => (
         avatar={
           <Avatar
             className={props.classes.avi}
-            style={{backgroundColor: props.theme.palette.secondary.light}}
+            {/* style={{backgroundColor: props.theme.palette.secondary.light}} */}
           >
             <Robot />
           </Avatar>
