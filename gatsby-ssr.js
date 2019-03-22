@@ -1,5 +1,5 @@
 // See https://github.com/mui-org/material-ui/tree/master/examples/gatsby
-/* eslint-disable react/no-danger */
+// /* no-op eslint-disable react/no-danger */
 
 const React = require('react')
 const { renderToString } = require('react-dom/server')
