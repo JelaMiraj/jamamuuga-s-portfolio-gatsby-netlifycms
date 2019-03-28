@@ -1,7 +1,7 @@
 import React from 'react'
 // TODO: Make sure this works well with Material UI Link & our combined custom Link.
 // import {navigate} from 'gatsby-link'
-import {navigate} from 'gatsby'
+import { navigate } from 'gatsby'
 import Layout from '../../components/Layout'
 import withRoot from '../../utils/withRoot'
 
@@ -14,11 +14,11 @@ function encode(data) {
 class Index extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {isValidated: false}
+    this.state = { isValidated: false }
   }
 
   handleChange = e => {
-    this.setState({[e.target.name]: e.target.value})
+    this.setState({ [e.target.name]: e.target.value })
   }
 
   handleSubmit = e => {
@@ -26,7 +26,7 @@ class Index extends React.Component {
     const form = e.target
     fetch('/', {
       method: 'POST',
-      headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
         'form-name': form.getAttribute('name'),
         ...this.state,

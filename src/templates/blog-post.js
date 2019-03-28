@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {kebabCase} from 'lodash'
+import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 // import {Link, graphql} from 'gatsby'
-import {graphql} from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Link from '../components/Link'
-import Content, {HTMLContent} from '../components/Content'
+import Content, { HTMLContent } from '../components/Content'
 import withRoot from '../utils/withRoot'
 
 export const BlogPostTemplate = ({
@@ -31,7 +31,7 @@ export const BlogPostTemplate = ({
             <p>{description}</p>
             <PostContent content={content} />
             {tags && tags.length ? (
-              <div style={{marginTop: `4rem`}}>
+              <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
                 <ul className="taglist">
                   {tags.map(tag => (
@@ -57,8 +57,8 @@ BlogPostTemplate.propTypes = {
   helmet: PropTypes.object,
 }
 
-const BlogPost = ({data}) => {
-  const {markdownRemark: post} = data
+const BlogPost = ({ data }) => {
+  const { markdownRemark: post } = data
 
   return (
     <Layout>
@@ -92,7 +92,7 @@ export default withRoot(BlogPost)
 
 export const pageQuery = graphql`
   query BlogPostByID($id: String!) {
-    markdownRemark(id: {eq: $id}) {
+    markdownRemark(id: { eq: $id }) {
       id
       html
       frontmatter {

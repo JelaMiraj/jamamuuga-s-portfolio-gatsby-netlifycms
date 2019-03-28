@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {ProductPageTemplate} from '../../templates/product-page'
+import { ProductPageTemplate } from '../../templates/product-page'
 // TODO: Does Netlify CMS preview pages need withRoot util too?
 
-const ProductPagePreview = ({entry, getAsset}) => {
+const ProductPagePreview = ({ entry, getAsset }) => {
   const entryBlurbs = entry.getIn(['data', 'intro', 'blurbs'])
   const blurbs = entryBlurbs ? entryBlurbs.toJS() : []
 
@@ -19,7 +19,7 @@ const ProductPagePreview = ({entry, getAsset}) => {
       title={entry.getIn(['data', 'title'])}
       heading={entry.getIn(['data', 'heading'])}
       description={entry.getIn(['data', 'description'])}
-      intro={{blurbs}}
+      intro={{ blurbs }}
       main={{
         heading: entry.getIn(['data', 'main', 'heading']),
         description: entry.getIn(['data', 'main', 'description']),

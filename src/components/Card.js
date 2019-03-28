@@ -4,7 +4,7 @@ import CardHeader from '@material-ui/core/CardHeader'
 import CardContent from '@material-ui/core/CardContent'
 import CardActions from '@material-ui/core/CardActions'
 
-const MyCard = ({children, title, subheader, avatar, action, style = {}}) => (
+const MyCard = ({ children, title, subheader, avatar, action, style = {} }) => (
   <Card style={style}>
     <CardHeader
       avatar={avatar || null}
@@ -12,7 +12,7 @@ const MyCard = ({children, title, subheader, avatar, action, style = {}}) => (
       subheader={subheader || null}
     />
     <CardContent>{children}</CardContent>
-    <CardActions style={{float: 'right'}}>{action}</CardActions>
+    <CardActions style={{ float: 'right' }}>{action}</CardActions>
   </Card>
 )
 

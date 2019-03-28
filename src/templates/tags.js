@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 // import {Link, graphql} from 'gatsby'
-import {graphql} from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Link from '../components/Link'
 import withRoot from '../utils/withRoot'
@@ -31,7 +31,7 @@ class TagRoute extends React.Component {
             <div className="columns">
               <div
                 className="column is-10 is-offset-1"
-                style={{marginBottom: '6rem'}}
+                style={{ marginBottom: '6rem' }}
               >
                 <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
                 <ul className="taglist">{postLinks}</ul>
@@ -58,8 +58,8 @@ export const tagPageQuery = graphql`
     }
     allMarkdownRemark(
       limit: 1000
-      sort: {fields: [frontmatter___date], order: DESC}
-      filter: {frontmatter: {tags: {in: [$tag]}}}
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { tags: { in: [$tag] } } }
     ) {
       totalCount
       edges {

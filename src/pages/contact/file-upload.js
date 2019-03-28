@@ -1,7 +1,7 @@
 import React from 'react'
 // TODO: Make sure this works well with Material UI Link & our combined custom Link.
 // import {navigate} from 'gatsby-link'
-import {navigate} from 'gatsby'
+import { navigate } from 'gatsby'
 import Layout from '../../components/Layout'
 import withRoot from '../../utils/withRoot'
 
@@ -22,11 +22,11 @@ class Contact extends React.Component {
   }
 
   handleChange = e => {
-    this.setState({[e.target.name]: e.target.value})
+    this.setState({ [e.target.name]: e.target.value })
   }
 
   handleAttachment = e => {
-    this.setState({[e.target.name]: e.target.files[0]})
+    this.setState({ [e.target.name]: e.target.files[0] })
   }
 
   handleSubmit = e => {

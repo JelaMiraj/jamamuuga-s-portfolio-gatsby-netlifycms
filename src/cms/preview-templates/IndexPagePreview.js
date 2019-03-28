@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {IndexPageTemplate} from '../../templates/index-page'
+import { IndexPageTemplate } from '../../templates/index-page'
 
-const IndexPagePreview = ({entry, getAsset}) => {
+const IndexPagePreview = ({ entry, getAsset }) => {
   const entryBlurbs = entry.getIn(['data', 'intro', 'blurbs'])
   const blurbs = entryBlurbs ? entryBlurbs.toJS() : []
 
@@ -13,7 +13,7 @@ const IndexPagePreview = ({entry, getAsset}) => {
       heading={entry.getIn(['data', 'heading'])}
       subheading={entry.getIn(['data', 'subheading'])}
       description={entry.getIn(['data', 'description'])}
-      intro={{blurbs}}
+      intro={{ blurbs }}
       main={{
         heading: entry.getIn(['data', 'main', 'heading']),
         description: entry.getIn(['data', 'main', 'description']),

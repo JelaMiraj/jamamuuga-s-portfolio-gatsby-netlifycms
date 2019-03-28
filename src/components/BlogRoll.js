@@ -1,19 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 // import {Link, graphql, StaticQuery} from 'gatsby'
-import {graphql, StaticQuery} from 'gatsby'
-import {Button, Grid, Typography} from '@material-ui/core'
+import { graphql, StaticQuery } from 'gatsby'
+import { Button, Grid, Typography } from '@material-ui/core'
 import Link from './Link'
 
 class BlogRoll extends React.Component {
   render() {
-    const {data} = this.props
-    const {edges: posts} = data.allMarkdownRemark
+    const { data } = this.props
+    const { edges: posts } = data.allMarkdownRemark
 
     return (
       <div className="columns is-multiline">
         {posts &&
-          posts.map(({node: post}) => (
+          posts.map(({ node: post }) => (
             <div className="is-parent column is-6" key={post.id}>
               <article className="tile is-child box notification">
                 <Typography component="p">
@@ -59,8 +59,8 @@ export default () => (
     query={graphql`
       query BlogRollQuery {
         allMarkdownRemark(
-          sort: {order: DESC, fields: [frontmatter___date]}
-          filter: {frontmatter: {templateKey: {eq: "blog-post"}}}
+          sort: { order: DESC, fields: [frontmatter___date] }
+          filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
         ) {
           edges {
             node {

@@ -1,5 +1,5 @@
 import React from 'react'
-import {StaticQuery, graphql} from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 // import { Link } from "gatsby";
 import Hidden from '@material-ui/core/Hidden'
 import Grid from '@material-ui/core/Grid'
@@ -8,7 +8,7 @@ import AppBar from '@material-ui/core/AppBar'
 import Typography from '@material-ui/core/Typography'
 import Chip from '@material-ui/core/Chip'
 import Avatar from '@material-ui/core/Avatar'
-import {MaterialUi} from 'mdi-material-ui'
+import { MaterialUi } from 'mdi-material-ui'
 import MenuMobile from './MenuMobile'
 import Menu from './Menu'
 import Link from './Link'
@@ -34,7 +34,7 @@ const Header = props => (
         <Grid item>
           <Hidden smDown>
             <Typography
-              style={{color: '#efefef', flex: 1}}
+              style={{ color: '#efefef', flex: 1 }}
               component="span"
               variant="caption"
             >

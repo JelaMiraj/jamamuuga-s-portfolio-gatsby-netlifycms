@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 // import {Link, graphql} from 'gatsby'
-import {graphql} from 'gatsby'
+import { graphql } from 'gatsby'
 import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
 // import {withStyles} from '@material-ui/core/styles'
-import {makeStyles, withStyles} from '@material-ui/core/styles'
+import { makeStyles, withStyles } from '@material-ui/core/styles'
 import Layout from '../components/Layout'
 import Link from '../components/Link'
 import Features from '../components/Features'
@@ -118,10 +118,10 @@ export const IndexPageTemplate = ({
                   <Features gridItems={intro.blurbs} />
                   <div className="columns">
                     <div className="column is-12 has-text-centered">
-                    <Button variant="contained" color="secondary">
-                      <Link className="btn" to="/products">
-                        See all products
-                      </Link>
+                      <Button variant="contained" color="secondary">
+                        <Link className="btn" to="/products">
+                          See all products
+                        </Link>
                       </Button>
                     </div>
                   </div>
@@ -163,8 +163,8 @@ IndexPageTemplate.propTypes = {
   }),
 }
 
-const IndexPage = ({data}) => {
-  const {frontmatter} = data.markdownRemark
+const IndexPage = ({ data }) => {
+  const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
@@ -195,7 +195,7 @@ export default withRoot(IndexPage)
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
-    markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
+    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
         image {

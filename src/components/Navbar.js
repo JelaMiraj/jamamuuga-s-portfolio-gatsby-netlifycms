@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from '@material-ui/core/Button'
 import IconButton from '@material-ui/core/IconButton'
-import {GithubCircle} from 'mdi-material-ui'
+import { GithubCircle } from 'mdi-material-ui'
 // import {Link} from 'gatsby'
 import Link from './Link'
 // import {Heading, Image, Text} from 'rebass'
@@ -45,7 +45,7 @@ class Navbar extends React.Component {
           <div className="container">
             <div className="navbar-brand">
               <Link to="/" className="navbar-item" title="Logo">
-                <img src={logo} alt="Kaldi" style={{width: '88px'}} />
+                <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
               </Link>
               {/* Hamburger menu */}
               <div className="navbar-burger burger" data-target="navMenu">
@@ -81,7 +81,7 @@ class Navbar extends React.Component {
                     <img src={github} alt="Github" />
                     </span>
                   */}
-                  <IconButton className="icon" style={{color: '#fff'}}>
+                  <IconButton className="icon" style={{ color: '#fff' }}>
                     <GithubCircle />
                   </IconButton>
                 </a>

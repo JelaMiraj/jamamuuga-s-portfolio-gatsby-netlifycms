@@ -1,5 +1,5 @@
 import React from 'react'
-import {StaticQuery, graphql} from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 import Divider from '@material-ui/core/Divider'
 import Typography from '@material-ui/core/Typography'
 import Hidden from '@material-ui/core/Hidden'
@@ -7,13 +7,16 @@ import Hidden from '@material-ui/core/Hidden'
 const Footer = props => {
   const {
     title,
-    contact: {email, phone},
+    contact: { email, phone },
   } = props.data.site.siteMetadata
 
   return (
     <>
-      <Divider style={{marginTop: '48px', marginBottom: '24px'}} />
-      <footer style={{marginBottom: '24px', whiteSpace: 'nowrap'}} id="footer">
+      <Divider style={{ marginTop: '48px', marginBottom: '24px' }} />
+      <footer
+        style={{ marginBottom: '24px', whiteSpace: 'nowrap' }}
+        id="footer"
+      >
         <span>
           <Typography variant="caption" component="span">
             ©{new Date().getFullYear()} {title}{' '}

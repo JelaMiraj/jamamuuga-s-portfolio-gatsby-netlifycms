@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
-const FeatureGrid = ({gridItems}) => (
+const FeatureGrid = ({ gridItems }) => (
   <div className="columns is-multiline">
     {gridItems.map(item => (
       <div key={item.text} className="column is-6">

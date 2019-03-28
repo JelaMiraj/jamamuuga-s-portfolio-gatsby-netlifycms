@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 // import {Link, graphql} from 'gatsby'
-import {graphql} from 'gatsby'
+import { graphql } from 'gatsby'
 // import Button from '@material-ui/core/Button'
 // import Grid from '@material-ui/core/Grid'
 // import Avatar from '@material-ui/core/Avatar'
 // import {Gift} from 'mdi-material-ui'
-import {withStyles} from '@material-ui/core/styles'
+import { withStyles } from '@material-ui/core/styles'
 import withRoot from '../utils/withRoot'
 import Layout from '../components/Layout'
 import Link from '../components/Link'
@@ -18,8 +18,8 @@ import mytheme from '../styles/themes/theme'
 
 class IndexPage extends React.Component {
   render() {
-    const {data} = this.props
-    const {edges: posts} = data.allMarkdownRemark
+    const { data } = this.props
+    const { edges: posts } = data.allMarkdownRemark
 
     return (
       <Layout>
@@ -28,10 +28,10 @@ class IndexPage extends React.Component {
             <div className="content">
               <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
             </div>
-            {posts.map(({node: post}) => (
+            {posts.map(({ node: post }) => (
               <div
                 className="content"
-                style={{border: '1px solid #333', padding: '2em 4em'}}
+                style={{ border: '1px solid #333', padding: '2em 4em' }}
                 key={post.id}
               >
                 <p>
@@ -69,8 +69,8 @@ IndexPage.propTypes = {
 export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
-      sort: {order: DESC, fields: [frontmatter___date]}
-      filter: {frontmatter: {templateKey: {eq: "blog-post"}}}
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
     ) {
       edges {
         node {

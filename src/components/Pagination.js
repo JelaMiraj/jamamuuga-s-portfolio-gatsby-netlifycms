@@ -18,7 +18,7 @@ const lkstyle = (i, currentPage) => ({
   background: i + 1 === currentPage ? '#D64000' : '',
 })
 
-const Pagination = ({currentPage, numPages}) => {
+const Pagination = ({ currentPage, numPages }) => {
   const isFirst = currentPage === 1
   const prevPage = currentPage - 1 === 1 ? '/' : (currentPage - 1).toString()
   const isLast = currentPage === numPages
@@ -31,7 +31,7 @@ const Pagination = ({currentPage, numPages}) => {
           ← Previous Page
         </Link>
       )}
-      {Array.from({length: numPages}, (_, i) => (
+      {Array.from({ length: numPages }, (_, i) => (
         <li
           key={`pagination-number${i + 1}`}
           style={{

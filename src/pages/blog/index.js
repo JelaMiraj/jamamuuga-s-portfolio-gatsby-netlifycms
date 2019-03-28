@@ -1,5 +1,5 @@
 import React from 'react'
-import {withStyles} from '@material-ui/core/styles'
+import { withStyles } from '@material-ui/core/styles'
 import Layout from '../../components/Layout'
 import BlogRoll from '../../components/BlogRoll'
 import mytheme from '../../styles/themes/theme'

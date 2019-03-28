@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactHelmet from 'react-helmet'
-import {StaticQuery, graphql} from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 // import {withTheme} from 'styled-components'
 // import {withStyles} from '@material-ui/core/styles'
 import PropTypes from 'prop-types'

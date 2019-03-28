@@ -13,20 +13,20 @@ import Footer from './Footer'
 
 class Page extends React.Component {
   render() {
-    const {title, children} = this.props
+    const { title, children } = this.props
 
     return (
       <>
         {/* <MUIThemeProvider theme={theme}> */}
         <Header />
-        <Grid container style={{marginTop: '94px'}}>
+        <Grid container style={{ marginTop: '94px' }}>
           <Grid item container direction="row">
             <Grid item container direction="column" xs={12}>
               {title ? (
                 <Typography
                   variant="h2"
                   gutterBottom
-                  style={{textAlign: 'center'}}
+                  style={{ textAlign: 'center' }}
                 >
                   {title}
                 </Typography>

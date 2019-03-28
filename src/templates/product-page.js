@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {graphql} from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
@@ -133,8 +133,8 @@ ProductPageTemplate.propTypes = {
   }),
 }
 
-const ProductPage = ({data}) => {
-  const {frontmatter} = data.markdownRemark
+const ProductPage = ({ data }) => {
+  const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
@@ -165,7 +165,7 @@ export default withRoot(ProductPage)
 
 export const productPageQuery = graphql`
   query ProductPage($id: String!) {
-    markdownRemark(id: {eq: $id}) {
+    markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
         image {

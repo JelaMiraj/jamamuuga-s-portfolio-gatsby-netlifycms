@@ -1,5 +1,5 @@
 // Setup base Material-UI theme
-import {createMuiTheme} from '@material-ui/core/styles'
+import { createMuiTheme } from '@material-ui/core/styles'
 import purple from '@material-ui/core/colors/purple'
 import green from '@material-ui/core/colors/green'
 import red from '@material-ui/core/colors/red'
@@ -29,19 +29,19 @@ const theme = createMuiTheme({
       fontFamily: headlineFont,
       color: grey[900],
     },
-    h3: {fontFamily: headlineFont, color: grey[900]},
-    h2: {fontFamily: headlineFont, color: grey[900]},
-    h1: {fontFamily: headlineFont, color: grey[900]},
-    h5: {fontFamily: headlineFont, color: grey[900]},
-    subtitle1: {fontFamily: headlineFont, color: grey[900]},
-    h6: {fontFamily: headlineFont, color: grey[900], fontWeight: 400},
+    h3: { fontFamily: headlineFont, color: grey[900] },
+    h2: { fontFamily: headlineFont, color: grey[900] },
+    h1: { fontFamily: headlineFont, color: grey[900] },
+    h5: { fontFamily: headlineFont, color: grey[900] },
+    subtitle1: { fontFamily: headlineFont, color: grey[900] },
+    h6: { fontFamily: headlineFont, color: grey[900], fontWeight: 400 },
     body2: {
       fontFamily: bodyFont,
       color: grey[700],
       fontWeight: 400,
       margin: '1em 0',
-      '& h2': {fontFamily: headlineFont, color: grey[900], fontWeight: 400},
-      '& h3': {fontFamily: headlineFont, color: grey[900], fontWeight: 400},
+      '& h2': { fontFamily: headlineFont, color: grey[900], fontWeight: 400 },
+      '& h3': { fontFamily: headlineFont, color: grey[900], fontWeight: 400 },
     },
   },
   overrides: {
