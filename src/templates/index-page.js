@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 // import {Link, graphql} from 'gatsby'
 import {graphql} from 'gatsby'
+import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
 // import {withStyles} from '@material-ui/core/styles'
 import {makeStyles, withStyles} from '@material-ui/core/styles'
@@ -55,7 +56,8 @@ export const IndexPageTemplate = ({
             flexDirection: 'column',
           }}
         >
-          <h1
+          <Typography
+            variant="h1"
             className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
             style={{
               boxShadow:
@@ -67,8 +69,9 @@ export const IndexPageTemplate = ({
             }}
           >
             {title}
-          </h1>
-          <h3
+          </Typography>
+          <Typography
+            variant="h3"
             className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
             style={{
               boxShadow:
@@ -80,7 +83,7 @@ export const IndexPageTemplate = ({
             }}
           >
             {subheading}
-          </h3>
+          </Typography>
         </div>
       </div>
       <section className="section section--gradient">
@@ -91,37 +94,51 @@ export const IndexPageTemplate = ({
                 <div className="content">
                   <div className="content">
                     <div className="tile">
-                      <h1 className="title">{mainpitch.title}</h1>
+                      <Typography variant="h1" className="title">
+                        {mainpitch.title}
+                      </Typography>
                     </div>
                     <div className="tile">
-                      <h3 className="subtitle">{mainpitch.description}</h3>
+                      <Typography variant="h3" className="subtitle">
+                        {mainpitch.description}
+                      </Typography>
                     </div>
                   </div>
                   <div className="columns">
                     <div className="column is-12">
-                      <h3 className="has-text-weight-semibold is-size-2">
+                      <Typography
+                        variant="h3"
+                        className="has-text-weight-semibold is-size-2"
+                      >
                         {heading}
-                      </h3>
-                      <p>{description}</p>
+                      </Typography>
+                      <Typography component="p">{description}</Typography>
                     </div>
                   </div>
                   <Features gridItems={intro.blurbs} />
                   <div className="columns">
                     <div className="column is-12 has-text-centered">
+                    <Button variant="contained" color="secondary">
                       <Link className="btn" to="/products">
                         See all products
                       </Link>
+                      </Button>
                     </div>
                   </div>
                   <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
+                    <Typography
+                      variant="h3"
+                      className="has-text-weight-semibold is-size-2"
+                    >
                       Latest stories
-                    </h3>
+                    </Typography>
                     <BlogRoll />
                     <div className="column is-12 has-text-centered">
-                      <Link className="btn" to="/blog">
-                        Read more
-                      </Link>
+                      <Button variant="contained" color="secondary">
+                        <Link className="btn" to="/blog">
+                          Read more
+                        </Link>
+                      </Button>
                     </div>
                   </div>
                 </div>

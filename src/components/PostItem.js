@@ -1,5 +1,6 @@
 import React from 'react'
 // import {Link} from 'gatsby'
+import Typography from '@material-ui/core'
 import Link from './Link'
 // Intended for use in site or blog index page.
 

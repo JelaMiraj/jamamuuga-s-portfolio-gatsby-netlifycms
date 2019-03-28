@@ -1,5 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Grid from '@material-ui/core/Grid'
+import Typography from '@material-ui/core/Typography'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 const FeatureGrid = ({gridItems}) => (
@@ -17,7 +19,7 @@ const FeatureGrid = ({gridItems}) => (
               <PreviewCompatibleImage imageInfo={item} />
             </div>
           </div>
-          <p>{item.text}</p>
+          <Typography component="p">{item.text}</Typography>
         </section>
       </div>
     ))}

@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 // import {Link, graphql, StaticQuery} from 'gatsby'
 import {graphql, StaticQuery} from 'gatsby'
+import {Button, Grid, Typography} from '@material-ui/core'
 import Link from './Link'
 
 class BlogRoll extends React.Component {
@@ -15,7 +16,7 @@ class BlogRoll extends React.Component {
           posts.map(({node: post}) => (
             <div className="is-parent column is-6" key={post.id}>
               <article className="tile is-child box notification">
-                <p>
+                <Typography component="p">
                   <Link
                     className="title has-text-primary is-size-4"
                     to={post.fields.slug}
@@ -26,15 +27,17 @@ class BlogRoll extends React.Component {
                   <span className="subtitle is-size-5 is-block">
                     {post.frontmatter.date}
                   </span>
-                </p>
-                <p>
+                </Typography>
+                <Typography component="p">
                   {post.excerpt}
                   <br />
                   <br />
-                  <Link className="button" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
-                </p>
+                  <Button variant="contained" color="secondary">
+                    <Link className="button" to={post.fields.slug}>
+                      Keep Reading →
+                    </Link>
+                  </Button>
+                </Typography>
               </article>
             </div>
           ))}
