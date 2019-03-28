@@ -80,7 +80,7 @@
     "debug:chrome": "node --inspect-brk --no-lazy node_modules/gatsby/dist/bin/gatsby develop",
     "develop": "yarn clean && gatsby develop",
     "serve": "gatsby serve",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
+    "format": "prettier --write \"**/*.{js,jsx,html,md,mdx,yaml,json,css,scss,less}\"",
     "test": "jest --passWithNoTests",
     "test:changed": "yarn test --onlyChanged --passWithNoTests --silent --runInBand",
     "test:watch": "yarn test --watch",
@@ -91,8 +91,7 @@
     "lint:img": "find src -iname *.gif -o -iname *.jpg -o -iname *.png -o -iname *.jpeg -o -iname *.svg | xargs imagemin-lint-staged",
     "lint:md": "remark .",
     "lint:staged": "eslint --fix --max-warnings=0",
-    "lint:style": "stylelint src/**/*.{js,jsx,scss,css}",
-    "prettier": "prettier --write *.{js,jsx,html,md,mdx,yaml,json,css,scss,less}"
+    "lint:style": "stylelint src/**/*.{js,jsx,scss,css}"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
