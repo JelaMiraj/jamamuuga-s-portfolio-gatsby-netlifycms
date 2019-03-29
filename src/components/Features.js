@@ -1,13 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Grid from '@material-ui/core/Grid'
+import Paper from '@material-ui/core/Paper'
 import Typography from '@material-ui/core/Typography'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 const FeatureGrid = ({ gridItems }) => (
-  <div className="columns is-multiline">
+  <Grid container className="columns is-multiline">
     {gridItems.map(item => (
-      <div key={item.text} className="column is-6">
+      <Grid item xs={6} key={item.text} className="column is-6">
+      <Paper>
         <section className="section">
           <div className="has-text-centered">
             <div
@@ -21,9 +23,10 @@ const FeatureGrid = ({ gridItems }) => (
           </div>
           <Typography component="p">{item.text}</Typography>
         </section>
-      </div>
+        </Paper>
+      </Grid>
     ))}
-  </div>
+  </Grid>
 )
 
 FeatureGrid.propTypes = {
