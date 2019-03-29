@@ -116,7 +116,12 @@ export const IndexPageTemplate = ({
                   </div>
                   <Features gridItems={intro.blurbs} />
                   <Grid container className="columns">
-                    <Grid item xs={12} justify="center" className="column is-12 has-text-centered">
+                    <Grid
+                      item
+                      xs={12}
+                      justify="center"
+                      className="column is-12 has-text-centered"
+                    >
                       <Button variant="contained" color="secondary">
                         <Link className="btn" to="/products">
                           See all products
@@ -137,7 +142,7 @@ export const IndexPageTemplate = ({
                         <Link className="btn" to="/blog">
                           Read more
                         </Link>
-                        </Button>
+                      </Button>
                     </div>
                   </Grid>
                 </div>
