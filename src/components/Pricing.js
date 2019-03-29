@@ -19,7 +19,7 @@ const Pricing = ({ data }) => (
           >
             ${price.price}
           </Typography>
-          <Typography component="p" className="has-text-weight-semibold">
+          <Typography paragraph className="has-text-weight-semibold">
             {price.description}
           </Typography>
           <List>

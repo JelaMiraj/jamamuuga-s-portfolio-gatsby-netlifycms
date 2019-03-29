@@ -71,10 +71,10 @@ class Carousel extends React.Component {
                         image={withPrefix(publicURL)}
                       />
                       <CardContent>
-                        <Typography gutterBottom variant="h5" component="h2">
+                        <Typography variant="h5" gutterBottom>
                           <Link to={path}>{title}</Link>
                         </Typography>
-                        <Typography component="p">{excerpt}</Typography>
+                        <Typography paragraph>{excerpt}</Typography>
                       </CardContent>
                     </Card>
                   ) : null}

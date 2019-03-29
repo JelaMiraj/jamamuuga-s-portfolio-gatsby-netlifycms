@@ -35,8 +35,8 @@ const Header = props => (
           <Hidden smDown>
             <Typography
               style={{ color: '#efefef', flex: 1 }}
-              component="span"
               variant="caption"
+              component="span"
             >
               <Menu />
             </Typography>

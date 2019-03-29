@@ -111,20 +111,20 @@ export const IndexPageTemplate = ({
                       >
                         {heading}
                       </Typography>
-                      <Typography component="p">{description}</Typography>
+                      <Typography paragraph>{description}</Typography>
                     </div>
                   </div>
                   <Features gridItems={intro.blurbs} />
-                  <div className="columns">
-                    <div className="column is-12 has-text-centered">
+                  <Grid container className="columns">
+                    <Grid item xs={12} justify="center" className="column is-12 has-text-centered">
                       <Button variant="contained" color="secondary">
                         <Link className="btn" to="/products">
                           See all products
                         </Link>
                       </Button>
-                    </div>
-                  </div>
-                  <div className="column is-12">
+                    </Grid>
+                  </Grid>
+                  <Grid item xs={12} className="column is-12">
                     <Typography
                       variant="h3"
                       className="has-text-weight-semibold is-size-2"
@@ -137,9 +137,9 @@ export const IndexPageTemplate = ({
                         <Link className="btn" to="/blog">
                           Read more
                         </Link>
-                      </Button>
+                        </Button>
                     </div>
-                  </div>
+                  </Grid>
                 </div>
               </div>
             </div>

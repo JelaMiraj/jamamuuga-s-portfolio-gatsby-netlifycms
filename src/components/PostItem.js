@@ -23,7 +23,7 @@ const PostItem = ({ post, logged }) => {
         alt="post thumbnail"
       />
       <div className="post-item">
-        <p className="post-title">
+        <Typography paragraph variant="h4" className="post-title">
           <Link
             className={logged ? 'has-text-primary' : 'has-text-unlogin'}
             to={logged ? post.fields.slug : '/login'}
@@ -32,8 +32,8 @@ const PostItem = ({ post, logged }) => {
           </Link>
           <span> &bull; </span>
           <small>{post.frontmatter.date}</small>
-        </p>
-        <p>
+        </Typography>
+        <Typography paragraph>
           <span className="post-excerpt">{post.excerpt}</span>
           <Link
             className={logged ? 'button is-small orange' : 'button is-small'}
@@ -41,7 +41,7 @@ const PostItem = ({ post, logged }) => {
           >
             Keep Reading →
           </Link>
-        </p>
+        </Typography>
       </div>
     </div>
   )

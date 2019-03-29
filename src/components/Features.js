@@ -21,7 +21,7 @@ const FeatureGrid = ({ gridItems }) => (
                 <PreviewCompatibleImage imageInfo={item} />
               </div>
             </div>
-            <Typography component="p">{item.text}</Typography>
+            <Typography paragraph>{item.text}</Typography>
           </section>
         </Paper>
       </Grid>

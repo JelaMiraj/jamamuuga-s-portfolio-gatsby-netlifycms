@@ -57,7 +57,7 @@ export const ProductPageTemplate = ({
                   >
                     {heading}
                   </Typography>
-                  <Typography component="p">{description}</Typography>
+                  <Typography paragraph>{description}</Typography>
                 </Grid>
               </Grid>
               <Features gridItems={intro.blurbs} />
@@ -69,7 +69,7 @@ export const ProductPageTemplate = ({
                   >
                     {main.heading}
                   </Typography>
-                  <Typography component="p">{main.description}</Typography>
+                  <Typography paragraph>{main.description}</Typography>
                 </Grid>
               </Grid>
               <div className="tile is-ancestor">
@@ -105,12 +105,12 @@ export const ProductPageTemplate = ({
                 }}
               />
               <Typography
-                component="h2"
+                variant="h2"
                 className="has-text-weight-semibold is-size-2"
               >
                 {pricing.heading}
               </Typography>
-              <Typography component="p" className="is-size-5">
+              <Typography paragraph className="is-size-5">
                 {pricing.description}
               </Typography>
               <Pricing data={pricing.plans} />

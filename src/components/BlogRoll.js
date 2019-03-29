@@ -17,7 +17,7 @@ class BlogRoll extends React.Component {
             <Grid item xs={6} className="is-parent column is-6" key={post.id}>
               <Paper>
                 <article className="tile is-child box notification">
-                  <Typography component="p">
+                  <Typography paragraph>
                     <Link
                       className="title has-text-primary is-size-4"
                       to={post.fields.slug}
@@ -29,7 +29,7 @@ class BlogRoll extends React.Component {
                       {post.frontmatter.date}
                     </span>
                   </Typography>
-                  <Typography component="p">
+                  <Typography paragraph>
                     {post.excerpt}
                     <br />
                     <br />
