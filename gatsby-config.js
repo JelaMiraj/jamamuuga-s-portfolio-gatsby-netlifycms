@@ -183,7 +183,7 @@ module.exports = {
         pathRewrite: {
           '/.netlify/functions/': '',
         },
-      })
+      }),
     )
   },
 }
