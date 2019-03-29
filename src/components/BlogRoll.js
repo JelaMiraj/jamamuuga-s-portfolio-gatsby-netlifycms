@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 // import {Link, graphql, StaticQuery} from 'gatsby'
 import { graphql, StaticQuery } from 'gatsby'
-import { Button, Grid, Typography } from '@material-ui/core'
+import { Button, Grid, Paper, Typography } from '@material-ui/core'
 import Link from './Link'
 
 class BlogRoll extends React.Component {
@@ -11,37 +11,39 @@ class BlogRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div className="columns is-multiline">
+      <Grid container className="columns is-multiline">
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="is-parent column is-6" key={post.id}>
-              <article className="tile is-child box notification">
-                <Typography component="p">
-                  <Link
-                    className="title has-text-primary is-size-4"
-                    to={post.fields.slug}
-                  >
-                    {post.frontmatter.title}
-                  </Link>
-                  <span> &bull; </span>
-                  <span className="subtitle is-size-5 is-block">
-                    {post.frontmatter.date}
-                  </span>
-                </Typography>
-                <Typography component="p">
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Button variant="contained" color="secondary">
-                    <Link className="button" to={post.fields.slug}>
-                      Keep Reading →
+            <Grid item xs={6} className="is-parent column is-6" key={post.id}>
+              <Paper>
+                <article className="tile is-child box notification">
+                  <Typography component="p">
+                    <Link
+                      className="title has-text-primary is-size-4"
+                      to={post.fields.slug}
+                    >
+                      {post.frontmatter.title}
                     </Link>
-                  </Button>
-                </Typography>
-              </article>
-            </div>
+                    <span> &bull; </span>
+                    <span className="subtitle is-size-5 is-block">
+                      {post.frontmatter.date}
+                    </span>
+                  </Typography>
+                  <Typography component="p">
+                    {post.excerpt}
+                    <br />
+                    <br />
+                    <Button variant="contained" color="secondary">
+                      <Link className="button" to={post.fields.slug}>
+                        Keep Reading →
+                      </Link>
+                    </Button>
+                  </Typography>
+                </article>
+              </Paper>
+            </Grid>
           ))}
-      </div>
+      </Grid>
     )
   }
 }

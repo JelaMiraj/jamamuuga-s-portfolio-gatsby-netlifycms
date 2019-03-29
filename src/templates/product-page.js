@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import { Grid, Paper, Typography } from '@material-ui/core'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
@@ -22,8 +23,8 @@ export const ProductPageTemplate = ({
   <section className="section section--gradient">
     <div className="container">
       <div className="section">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
+        <Grid container className="columns">
+          <Grid item xs={10} className="column is-10 is-offset-1">
             <div className="content">
               <div
                 className="full-width-image-container margin-top-0"
@@ -35,7 +36,8 @@ export const ProductPageTemplate = ({
                   })`,
                 }}
               >
-                <h2
+                <Typography
+                  component="h2"
                   className="has-text-weight-bold is-size-1"
                   style={{
                     boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
@@ -45,25 +47,31 @@ export const ProductPageTemplate = ({
                   }}
                 >
                   {title}
-                </h2>
+                </Typography>
               </div>
-              <div className="columns">
-                <div className="column is-7">
-                  <h3 className="has-text-weight-semibold is-size-2">
+              <Grid container className="columns">
+                <Grid item xs={7} className="column is-7">
+                  <Typography
+                    component="h3"
+                    className="has-text-weight-semibold is-size-2"
+                  >
                     {heading}
-                  </h3>
-                  <p>{description}</p>
-                </div>
-              </div>
+                  </Typography>
+                  <Typography component="p">{description}</Typography>
+                </Grid>
+              </Grid>
               <Features gridItems={intro.blurbs} />
-              <div className="columns">
-                <div className="column is-7">
-                  <h3 className="has-text-weight-semibold is-size-3">
+              <Grid container className="columns">
+                <Grid item xs={7} className="column is-7">
+                  <Typography
+                    component="h3"
+                    className="has-text-weight-semibold is-size-3"
+                  >
                     {main.heading}
-                  </h3>
-                  <p>{main.description}</p>
-                </div>
-              </div>
+                  </Typography>
+                  <Typography component="p">{main.description}</Typography>
+                </Grid>
+              </Grid>
               <div className="tile is-ancestor">
                 <div className="tile is-vertical">
                   <div className="tile">
@@ -96,14 +104,19 @@ export const ProductPageTemplate = ({
                   })`,
                 }}
               />
-              <h2 className="has-text-weight-semibold is-size-2">
+              <Typography
+                component="h2"
+                className="has-text-weight-semibold is-size-2"
+              >
                 {pricing.heading}
-              </h2>
-              <p className="is-size-5">{pricing.description}</p>
+              </Typography>
+              <Typography component="p" className="is-size-5">
+                {pricing.description}
+              </Typography>
               <Pricing data={pricing.plans} />
             </div>
-          </div>
-        </div>
+          </Grid>
+        </Grid>
       </div>
     </div>
   </section>

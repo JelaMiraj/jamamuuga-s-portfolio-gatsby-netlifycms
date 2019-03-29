@@ -1,29 +1,38 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Grid, List, ListItem, Paper, Typography } from '@material-ui/core'
 
 const Pricing = ({ data }) => (
-  <div className="columns">
+  <Grid container className="columns">
     {data.map(price => (
-      <div key={price.plan} className="column">
+      <Grid item xs={4} key={price.plan} className="column">
         <section className="section">
-          <h4 className="has-text-centered has-text-weight-semibold">
+          <Typography
+            component="h4"
+            className="has-text-centered has-text-weight-semibold"
+          >
             {price.plan}
-          </h4>
-          <h2 className="is-size-1 has-text-weight-bold has-text-primary has-text-centered">
+          </Typography>
+          <Typography
+            component="h2"
+            className="is-size-1 has-text-weight-bold has-text-primary has-text-centered"
+          >
             ${price.price}
-          </h2>
-          <p className="has-text-weight-semibold">{price.description}</p>
-          <ul>
+          </Typography>
+          <Typography component="p" className="has-text-weight-semibold">
+            {price.description}
+          </Typography>
+          <List>
             {price.items.map(item => (
-              <li key={item} className="is-size-5">
+              <ListItem key={item} className="is-size-5">
                 {item}
-              </li>
+              </ListItem>
             ))}
-          </ul>
+          </List>
         </section>
-      </div>
+      </Grid>
     ))}
-  </div>
+  </Grid>
 )
 
 Pricing.propTypes = {
