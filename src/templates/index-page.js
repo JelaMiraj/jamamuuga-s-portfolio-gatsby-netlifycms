@@ -119,7 +119,6 @@ export const IndexPageTemplate = ({
                     <Grid
                       item
                       xs={12}
-                      justify="center"
                       className="column is-12 has-text-centered"
                     >
                       <Button variant="contained" color="secondary">
