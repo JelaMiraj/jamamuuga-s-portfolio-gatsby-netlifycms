@@ -11,6 +11,6 @@ module.exports = {
     // // Uncomment this if related styled components or other css-in-js stuff causes linting errors.
     // 'no-unused-expressions': ['error', { allowTaggedTemplates: true }],
     // Force object curly spacing to match Prettier config. Somehow eslint-config-with-prettier misses this.
-    // 'object-curly-spacing': ['error', 'always'],
+    'object-curly-spacing': ['error', 'always'],
   },
 }
