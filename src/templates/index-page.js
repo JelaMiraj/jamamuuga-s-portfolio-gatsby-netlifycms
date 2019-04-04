@@ -12,6 +12,8 @@ import BlogRoll from "../components/BlogRoll"
 import mytheme from "../styles/themes/theme"
 import withRoot from "../utils/withRoot"
 
+// TODO: Convert everything to use React Hooks (Don't forget the ESLint plugin), Babel-Blade (DRY GraphQL), & functions not classes.
+
 // FIXME: complains about object is not a function....
 // const useStyles = makeStyles(theme => ({
 //   root: {
