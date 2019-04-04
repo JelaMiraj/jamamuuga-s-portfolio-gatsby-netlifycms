@@ -1,9 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
-// import {Link, graphql} from 'gatsby'
+// import {Link, graphql} from "gatsby"
 import {graphql} from "gatsby"
 import {Button, Grid, Typography} from "@material-ui/core"
-// import {withStyles} from '@material-ui/core/styles'
+// import {withStyles} from "@material-ui/core/styles"
 import {makeStyles, withStyles} from "@material-ui/core/styles"
 import Layout from "../components/Layout"
 import Link from "../components/Link"
@@ -15,7 +15,7 @@ import withRoot from "../utils/withRoot"
 // FIXME: complains about object is not a function....
 // const useStyles = makeStyles(theme => ({
 //   root: {
-//     textAlign: 'center',
+//     textAlign: "center",
 //     paddingTop: theme.spacing(20),
 //   },
 // }))

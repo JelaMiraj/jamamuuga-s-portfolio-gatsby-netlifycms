@@ -37,7 +37,7 @@ exports.replaceRenderer = replaceRenderer
 
 // // It's not ready yet: https://github.com/gatsbyjs/gatsby/issues/8237.
 
-// const withRoot = require('./src/utils/withRoot').default
+// const withRoot = require("./src/utils/withRoot").default
 
 // const WithRoot = withRoot(props => props.children)
 

@@ -1,6 +1,6 @@
 // require("@babel/register")
 const proxy = require("http-proxy-middleware")
-// const manifestConfig = require('./.manifest.config.js')
+// const manifestConfig = require("./.manifest.config.js")
 
 module.exports = {
   siteMetadata: {
@@ -40,7 +40,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-compile-es6-packages",
       options: {
-        // modules: ['query-string'],
+        // modules: ["query-string"],
       },
     },
     {
@@ -51,27 +51,27 @@ module.exports = {
     },
     "gatsby-plugin-react-helmet",
     // {
-    //   resolve: 'gatsby-plugin-sass',
+    //   resolve: "gatsby-plugin-sass",
     //   options: {
     //     // TODO: Switch to Dart Sass from Node Sass when it works reliably without messing around.
     //     // implementation: require("sass"),
     //     // Explicitly include root style path just in case.
     //     includePaths: [
     //       // `${__dirname}/src/styles`,
-    //       './src/styles',
+    //       "./src/styles",
     //     ],
     //   },
     // },
     // {
-    //   resolve: 'gatsby-plugin-sass-resources',
+    //   resolve: "gatsby-plugin-sass-resources",
     //   options: {
     //     // TODO: Make sure filename uses actual expected root folder & filename based module style.
     //     // TODO: Find out which Scss module controls filename preferences here: gatsby-plugin-sass or sass-resources-loader.
     //     resources: [
     //       // `${__dirname}/src/styles/abstract/_variables.module.scss`,
     //       // TODO: Find out if this is a better way to resolve the folder path.
-    //       // resolveFromRootDir('src/styles/abstract/_variables.module.scss'),
-    //       './src/styles/abstracts/_variables.module.scss',
+    //       // resolveFromRootDir("src/styles/abstract/_variables.module.scss"),
+    //       "./src/styles/abstracts/_variables.module.scss",
     //     ],
     //   },
     // },
@@ -157,7 +157,7 @@ module.exports = {
       options: {
         // FIXME: Pass external theme object used by rest of project.
         // theme: {
-        //   primaryColor: '#9c27b0',
+        //   primaryColor: "#9c27b0",
         // },
         pathToTheme: "src/styles/themes/theme.js",
       },

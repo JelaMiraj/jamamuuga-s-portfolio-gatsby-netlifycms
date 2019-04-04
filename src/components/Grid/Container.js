@@ -1,6 +1,6 @@
-// import PropTypes from 'prop-types'
-// import styled from 'styled-components'
-// import {Box} from '@rebass/grid'
+// import PropTypes from "prop-types"
+// import styled from "styled-components"
+// import {Box} from "@rebass/grid"
 
 // // TODO: Shouldn't we just use Material UI's Container?
 // const Container = styled(Box)`
@@ -16,8 +16,8 @@
 // }
 
 // Container.defaultProps = {
-//   mx: 'auto',
-//   maxWidth: '700px',
+//   mx: "auto",
+//   maxWidth: "700px",
 // }
 
 // export default Container

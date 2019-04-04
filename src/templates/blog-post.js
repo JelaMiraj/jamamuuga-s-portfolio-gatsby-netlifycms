@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import {kebabCase} from "lodash"
 import Helmet from "react-helmet"
-// import {Link, graphql} from 'gatsby'
+// import {Link, graphql} from "gatsby"
 import {graphql} from "gatsby"
 import Layout from "../components/Layout"
 import Link from "../components/Link"

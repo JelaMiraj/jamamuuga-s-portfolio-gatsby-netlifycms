@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-// import {Link, graphql, StaticQuery} from 'gatsby'
+// import {Link, graphql, StaticQuery} from "gatsby"
 import {graphql, StaticQuery} from "gatsby"
 import {Button, Grid, Paper, Typography} from "@material-ui/core"
 import Link from "./Link"

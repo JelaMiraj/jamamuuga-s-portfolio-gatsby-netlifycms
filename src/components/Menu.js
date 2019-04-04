@@ -1,11 +1,11 @@
 import React from "react"
-// import {StaticQuery, Link, graphql} from 'gatsby'
+// import {StaticQuery, Link, graphql} from "gatsby"
 import {StaticQuery, graphql} from "gatsby"
 import Button from "@material-ui/core/Button"
 import IconButton from "@material-ui/core/IconButton"
 import {GithubCircle} from "mdi-material-ui"
 import Link from "./Link"
-// import logo from '../img/logo.svg'
+// import logo from "../img/logo.svg"
 
 const Menu = props => {
   const {menuLinks} = props.data.site.siteMetadata

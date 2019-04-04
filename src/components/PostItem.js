@@ -1,12 +1,12 @@
 import React from "react"
-// import {Link} from 'gatsby'
+// import {Link} from "gatsby"
 import Typography from "@material-ui/core"
 import Link from "./Link"
 // Intended for use in site or blog index page.
 
 const PostItem = ({post, logged}) => {
   const cntBorder = {
-    // border: '1px solid #888',
+    // border: "1px solid #888",
     borderBottomWidth: 1,
     borderBottomColor: "#888",
     borderBottomStyle: "solid", // this attribute doesn't auto complete???

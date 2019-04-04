@@ -2,9 +2,9 @@ import React from "react"
 import Button from "@material-ui/core/Button"
 import IconButton from "@material-ui/core/IconButton"
 import {GithubCircle} from "mdi-material-ui"
-// import {Link} from 'gatsby'
+// import {Link} from "gatsby"
 import Link from "./Link"
-// import {Heading, Image, Text} from 'rebass'
+// import {Heading, Image, Text} from "rebass"
 import github from "../img/github-icon.svg"
 import logo from "../img/logo.svg"
 // TODO: Convert to extending or using Material UI's Navbar.

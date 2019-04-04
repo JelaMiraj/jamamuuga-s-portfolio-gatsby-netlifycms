@@ -8,11 +8,11 @@ module.exports = {
       },
     ],
     "@babel/preset-react",
-    // '@babel/preset-flow',
+    // "@babel/preset-flow",
   ],
   plugins: [
-    // 'babel-plugin-emotion', // yarn add emotion react-emotion && yarn add babel-plugin-emotion --dev --exact
-    // ['babel-plugin-styled-components', { displayName: true }] // yarn add styled-components && yarn add babel-plugin-emotion --dev --exact
+    // "babel-plugin-emotion", // yarn add emotion react-emotion && yarn add babel-plugin-emotion --dev --exact
+    // ["babel-plugin-styled-components", { displayName: true }] // yarn add styled-components && yarn add babel-plugin-emotion --dev --exact
   ],
   env: {
     production: {
@@ -32,7 +32,7 @@ module.exports = {
           },
         ],
         "@babel/preset-react",
-        // '@babel/preset-flow',
+        // "@babel/preset-flow",
       ],
       compact: false,
     },

@@ -1,12 +1,12 @@
-// import React from 'react'
-// import PropTypes from 'prop-types'
-// import {graphql} from 'gatsby'
+// import React from "react"
+// import PropTypes from "prop-types"
+// import {graphql} from "gatsby"
 // // include NLI ...to init first
-// import netlifyIdentity from 'netlify-identity-widget'
-// import BasePage from '../base/BasePage'
-// import Pagination from '../components/Pagination'
-// import PostItem from '../components/PostItem'
-// import {isLoggedIn} from '../services/auth'
+// import netlifyIdentity from "netlify-identity-widget"
+// import BasePage from "../base/BasePage"
+// import Pagination from "../components/Pagination"
+// import PostItem from "../components/PostItem"
+// import {isLoggedIn} from "../services/auth"
 
 // // Init netlify identity ...
 // // FIX for build test @2018/12/13
@@ -19,7 +19,7 @@
 //     const logged = isLoggedIn()
 
 //     return (
-//       <BasePage location={{pathname: '/'}}>
+//       <BasePage location={{pathname: "/"}}>
 //         <section className="section">
 //           <div className="container">
 //             <div className="content hide-in-mobile">

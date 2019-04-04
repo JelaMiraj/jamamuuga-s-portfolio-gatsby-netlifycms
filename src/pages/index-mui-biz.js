@@ -1,5 +1,5 @@
 import React from "react"
-// import {graphql, Link} from 'gatsby'
+// import {graphql, Link} from "gatsby"
 import {graphql} from "gatsby"
 import PropTypes from "prop-types"
 import Button from "@material-ui/core/Button"
@@ -41,7 +41,7 @@ const Home = props => (
       justify="center"
     >
       {/*
-        <Grid item xs={12} md={10} style={{minHeight: '523px'}}>
+        <Grid item xs={12} md={10} style={{minHeight: "523px"}}>
           <Card
             title="Our Products"
             avatar={
