@@ -64,4 +64,4 @@ npm config set python python2.7
 npm install --global --production windows-build-tools
 ```
 
-[Full details here](https://www.npmjs.com/package/node-gyp 'NPM node-gyp page')
+[Full details here](https://www.npmjs.com/package/node-gyp "NPM node-gyp page")

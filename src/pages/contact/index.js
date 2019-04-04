@@ -1,38 +1,38 @@
-import React from 'react'
+import React from "react"
 // TODO: Make sure this works well with Material UI Link & our combined custom Link.
 // import {navigate} from 'gatsby-link'
-import { navigate } from 'gatsby'
-import Layout from '../../components/Layout'
-import withRoot from '../../utils/withRoot'
+import {navigate} from "gatsby"
+import Layout from "../../components/Layout"
+import withRoot from "../../utils/withRoot"
 
 function encode(data) {
   return Object.keys(data)
     .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
-    .join('&')
+    .join("&")
 }
 
 class Index extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { isValidated: false }
+    this.state = {isValidated: false}
   }
 
   handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value })
+    this.setState({[e.target.name]: e.target.value})
   }
 
   handleSubmit = e => {
     e.preventDefault()
     const form = e.target
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    fetch("/", {
+      method: "POST",
+      headers: {"Content-Type": "application/x-www-form-urlencoded"},
       body: encode({
-        'form-name': form.getAttribute('name'),
+        "form-name": form.getAttribute("name"),
         ...this.state,
       }),
     })
-      .then(() => navigate(form.getAttribute('action')))
+      .then(() => navigate(form.getAttribute("action")))
       .catch(error => alert(error))
   }
 
@@ -55,7 +55,7 @@ class Index extends React.Component {
                 <input type="hidden" name="form-name" value="contact" />
                 <div hidden>
                   <label>
-                    Don’t fill this out:{' '}
+                    Don’t fill this out:{" "}
                     <input name="bot-field" onChange={this.handleChange} />
                   </label>
                 </div>

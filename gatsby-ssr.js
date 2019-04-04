@@ -1,10 +1,10 @@
 // See https://github.com/mui-org/material-ui/tree/master/examples/gatsby
 // /* no-op eslint-disable react/no-danger */
 
-const React = require('react')
-const { renderToString } = require('react-dom/server')
-const JssProvider = require('react-jss/lib/JssProvider').default
-const getPageContext = require('./src/utils/getPageContext').default
+const React = require("react")
+const {renderToString} = require("react-dom/server")
+const JssProvider = require("react-jss/lib/JssProvider").default
+const getPageContext = require("./src/utils/getPageContext").default
 
 function replaceRenderer({
   bodyComponent,

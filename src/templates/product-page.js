@@ -1,13 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import { Grid, Paper, Typography } from '@material-ui/core'
-import Layout from '../components/Layout'
-import Features from '../components/Features'
-import Testimonials from '../components/Testimonials'
-import Pricing from '../components/Pricing'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
-import withRoot from '../utils/withRoot'
+import React from "react"
+import PropTypes from "prop-types"
+import {graphql} from "gatsby"
+import {Grid, Paper, Typography} from "@material-ui/core"
+import Layout from "../components/Layout"
+import Features from "../components/Features"
+import Testimonials from "../components/Testimonials"
+import Pricing from "../components/Pricing"
+import PreviewCompatibleImage from "../components/PreviewCompatibleImage"
+import withRoot from "../utils/withRoot"
 
 export const ProductPageTemplate = ({
   image,
@@ -40,10 +40,10 @@ export const ProductPageTemplate = ({
                   component="h2"
                   className="has-text-weight-bold is-size-1"
                   style={{
-                    boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-                    backgroundColor: '#f40',
-                    color: 'white',
-                    padding: '1rem',
+                    boxShadow: "0.5rem 0 0 #f40, -0.5rem 0 0 #f40",
+                    backgroundColor: "#f40",
+                    color: "white",
+                    padding: "1rem",
                   }}
                 >
                   {title}
@@ -146,8 +146,8 @@ ProductPageTemplate.propTypes = {
   }),
 }
 
-const ProductPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+const ProductPage = ({data}) => {
+  const {frontmatter} = data.markdownRemark
 
   return (
     <Layout>
@@ -178,7 +178,7 @@ export default withRoot(ProductPage)
 
 export const productPageQuery = graphql`
   query ProductPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+    markdownRemark(id: {eq: $id}) {
       frontmatter {
         title
         image {

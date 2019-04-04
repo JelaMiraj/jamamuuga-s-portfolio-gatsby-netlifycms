@@ -1,10 +1,10 @@
 // See https://github.com/mui-org/material-ui/tree/master/examples/gatsby
-import React from 'react'
-import { MuiThemeProvider } from '@material-ui/core/styles'
-import CssBaseline from '@material-ui/core/CssBaseline'
-import JssProvider from 'react-jss/lib/JssProvider'
-import Hidden from '@material-ui/core/Hidden'
-import getPageContext from './getPageContext'
+import React from "react"
+import {MuiThemeProvider} from "@material-ui/core/styles"
+import CssBaseline from "@material-ui/core/CssBaseline"
+import JssProvider from "react-jss/lib/JssProvider"
+import Hidden from "@material-ui/core/Hidden"
+import getPageContext from "./getPageContext"
 
 function withRoot(Component) {
   class WithRoot extends React.Component {
@@ -15,7 +15,7 @@ function withRoot(Component) {
 
     componentDidMount() {
       // Remove the server-side injected CSS.
-      const jssStyles = document.querySelector('#jss-server-side')
+      const jssStyles = document.querySelector("#jss-server-side")
       if (jssStyles && jssStyles.parentNode) {
         jssStyles.parentNode.removeChild(jssStyles)
       }

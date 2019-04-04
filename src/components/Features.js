@@ -1,11 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Grid from '@material-ui/core/Grid'
-import Paper from '@material-ui/core/Paper'
-import Typography from '@material-ui/core/Typography'
-import PreviewCompatibleImage from './PreviewCompatibleImage'
+import React from "react"
+import PropTypes from "prop-types"
+import Grid from "@material-ui/core/Grid"
+import Paper from "@material-ui/core/Paper"
+import Typography from "@material-ui/core/Typography"
+import PreviewCompatibleImage from "./PreviewCompatibleImage"
 
-const FeatureGrid = ({ gridItems }) => (
+const FeatureGrid = ({gridItems}) => (
   <Grid container className="columns is-multiline">
     {gridItems.map(item => (
       <Grid item xs={6} key={item.text} className="column is-6">
@@ -14,8 +14,8 @@ const FeatureGrid = ({ gridItems }) => (
             <div className="has-text-centered">
               <div
                 style={{
-                  width: '240px',
-                  display: 'inline-block',
+                  width: "240px",
+                  display: "inline-block",
                 }}
               >
                 <PreviewCompatibleImage imageInfo={item} />

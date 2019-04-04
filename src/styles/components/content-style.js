@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
 // FIXME: what is the right constructor?
 const ContentStyle = styled.div`

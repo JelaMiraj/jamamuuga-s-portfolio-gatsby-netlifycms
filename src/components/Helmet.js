@@ -1,9 +1,9 @@
-import React from 'react'
-import ReactHelmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
+import React from "react"
+import ReactHelmet from "react-helmet"
+import {StaticQuery, graphql} from "gatsby"
 // import {withTheme} from 'styled-components'
 // import {withStyles} from '@material-ui/core/styles'
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types"
 
 // TODO: Actually port the header over.
 // TODO: Make sure this still works with Material UI's style system instead of styled-components directly.
@@ -20,7 +20,7 @@ const Helmet = props => (
       return (
         <ReactHelmet
           htmlAttributes={{
-            lang: 'en',
+            lang: "en",
           }}
           title={title}
           titleTemplate={`%s - ${title}`}
@@ -76,7 +76,7 @@ Helmet.propTypes = {
 }
 
 Helmet.defaultProps = {
-  lang: 'en',
+  lang: "en",
   meta: [],
   keywords: [],
 }

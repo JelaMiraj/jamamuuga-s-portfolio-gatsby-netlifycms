@@ -1,9 +1,9 @@
-import React from 'react'
-import { withStyles } from '@material-ui/core/styles'
-import Layout from '../../components/Layout'
-import BlogRoll from '../../components/BlogRoll'
-import mytheme from '../../styles/themes/theme'
-import withRoot from '../../utils/withRoot'
+import React from "react"
+import {withStyles} from "@material-ui/core/styles"
+import Layout from "../../components/Layout"
+import BlogRoll from "../../components/BlogRoll"
+import mytheme from "../../styles/themes/theme"
+import withRoot from "../../utils/withRoot"
 
 class BlogIndexPage extends React.Component {
   render() {
@@ -21,10 +21,10 @@ class BlogIndexPage extends React.Component {
                 <h1
                   className="has-text-weight-bold is-size-1"
                   style={{
-                    boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-                    backgroundColor: '#f40',
-                    color: 'white',
-                    padding: '1rem',
+                    boxShadow: "0.5rem 0 0 #f40, -0.5rem 0 0 #f40",
+                    backgroundColor: "#f40",
+                    color: "white",
+                    padding: "1rem",
                   }}
                 >
                   Latest Stories

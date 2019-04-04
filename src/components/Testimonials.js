@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { v4 } from 'uuid'
-import { Grid, Paper, Typography } from '@material-ui/core'
+import React from "react"
+import PropTypes from "prop-types"
+import {v4} from "uuid"
+import {Grid, Paper, Typography} from "@material-ui/core"
 // TODO: Normalize the component use & hierarchy to best practices so it is less likely to end up hacky.
 
-const Testimonials = ({ testimonials }) => (
+const Testimonials = ({testimonials}) => (
   <Grid container>
     {testimonials.map(testimonial => (
       <Grid item xs={12} key={v4()}>

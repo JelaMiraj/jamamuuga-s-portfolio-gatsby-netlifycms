@@ -1,17 +1,17 @@
-import React from 'react'
+import React from "react"
 // import {Link} from 'gatsby'
-import Typography from '@material-ui/core'
-import Link from './Link'
+import Typography from "@material-ui/core"
+import Link from "./Link"
 // Intended for use in site or blog index page.
 
-const PostItem = ({ post, logged }) => {
+const PostItem = ({post, logged}) => {
   const cntBorder = {
     // border: '1px solid #888',
     borderBottomWidth: 1,
-    borderBottomColor: '#888',
-    borderBottomStyle: 'solid', // this attribute doesn't auto complete???
-    padding: '1em 0',
-    display: 'flex', // horizontal align thumbnail and text ...
+    borderBottomColor: "#888",
+    borderBottomStyle: "solid", // this attribute doesn't auto complete???
+    padding: "1em 0",
+    display: "flex", // horizontal align thumbnail and text ...
   }
 
   return (
@@ -25,8 +25,8 @@ const PostItem = ({ post, logged }) => {
       <div className="post-item">
         <Typography paragraph variant="h4" className="post-title">
           <Link
-            className={logged ? 'has-text-primary' : 'has-text-unlogin'}
-            to={logged ? post.fields.slug : '/login'}
+            className={logged ? "has-text-primary" : "has-text-unlogin"}
+            to={logged ? post.fields.slug : "/login"}
           >
             {post.frontmatter.title}
           </Link>
@@ -36,8 +36,8 @@ const PostItem = ({ post, logged }) => {
         <Typography paragraph>
           <span className="post-excerpt">{post.excerpt}</span>
           <Link
-            className={logged ? 'button is-small orange' : 'button is-small'}
-            to={logged ? post.fields.slug : '/login'}
+            className={logged ? "button is-small orange" : "button is-small"}
+            to={logged ? post.fields.slug : "/login"}
           >
             Keep Reading →
           </Link>

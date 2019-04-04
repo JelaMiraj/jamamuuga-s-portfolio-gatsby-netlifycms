@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
 // TODO: Make sure this style will work well with Styled System themes on a Material UI Navbar.
 // FIXME: What is the right constructor?

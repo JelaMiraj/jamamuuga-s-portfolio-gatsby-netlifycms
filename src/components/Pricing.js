@@ -1,8 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Grid, List, ListItem, Paper, Typography } from '@material-ui/core'
+import React from "react"
+import PropTypes from "prop-types"
+import {Grid, List, ListItem, Paper, Typography} from "@material-ui/core"
 
-const Pricing = ({ data }) => (
+const Pricing = ({data}) => (
   <Grid container className="columns">
     {data.map(price => (
       <Grid item xs={4} key={price.plan} className="column">

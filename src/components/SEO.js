@@ -1,6 +1,6 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
+import React from "react"
+import Helmet from "react-helmet"
+import {StaticQuery, graphql} from "gatsby"
 
 const SEO = props => (
   <StaticQuery
@@ -11,7 +11,7 @@ const SEO = props => (
       return (
         <Helmet
           htmlAttributes={{
-            lang: 'en',
+            lang: "en",
           }}
           title={title}
           titleTemplate={`%s - ${data.site.siteMetadata.title}`}
@@ -24,7 +24,7 @@ const SEO = props => (
 )
 
 SEO.defaultProps = {
-  lang: 'en',
+  lang: "en",
   meta: [],
   keywords: [],
 }

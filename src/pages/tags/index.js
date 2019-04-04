@@ -1,16 +1,16 @@
-import React from 'react'
-import { kebabCase } from 'lodash'
-import Helmet from 'react-helmet'
+import React from "react"
+import {kebabCase} from "lodash"
+import Helmet from "react-helmet"
 // import {Link, graphql} from 'gatsby'
-import { graphql } from 'gatsby'
-import Layout from '../../components/Layout'
-import Link from '../../components/Link'
+import {graphql} from "gatsby"
+import Layout from "../../components/Layout"
+import Link from "../../components/Link"
 
 const TagsPage = ({
   data: {
-    allMarkdownRemark: { group },
+    allMarkdownRemark: {group},
     site: {
-      siteMetadata: { title },
+      siteMetadata: {title},
     },
   },
 }) => (
@@ -21,7 +21,7 @@ const TagsPage = ({
         <div className="columns">
           <div
             className="column is-10 is-offset-1"
-            style={{ marginBottom: '6rem' }}
+            style={{marginBottom: "6rem"}}
           >
             <h1 className="title is-size-2 is-bold-light">Tags</h1>
             <ul className="taglist">

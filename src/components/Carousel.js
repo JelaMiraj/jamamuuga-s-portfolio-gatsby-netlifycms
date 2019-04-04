@@ -1,14 +1,14 @@
-import React from 'react'
-import { withPrefix, Link } from 'gatsby'
-import MobileStepper from '@material-ui/core/MobileStepper'
-import Paper from '@material-ui/core/Paper'
-import Typography from '@material-ui/core/Typography'
-import Button from '@material-ui/core/Button'
-import SwipeableViews from 'react-swipeable-views'
-import Card from '@material-ui/core/Card'
-import CardContent from '@material-ui/core/CardContent'
-import CardMedia from '@material-ui/core/CardMedia'
-import { autoPlay } from 'react-swipeable-views-utils'
+import React from "react"
+import {withPrefix, Link} from "gatsby"
+import MobileStepper from "@material-ui/core/MobileStepper"
+import Paper from "@material-ui/core/Paper"
+import Typography from "@material-ui/core/Typography"
+import Button from "@material-ui/core/Button"
+import SwipeableViews from "react-swipeable-views"
+import Card from "@material-ui/core/Card"
+import CardContent from "@material-ui/core/CardContent"
+import CardMedia from "@material-ui/core/CardMedia"
+import {autoPlay} from "react-swipeable-views-utils"
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews)
 
@@ -30,13 +30,13 @@ class Carousel extends React.Component {
   }
 
   handleStepChange = activeStep => {
-    this.setState({ activeStep })
+    this.setState({activeStep})
   }
 
   render() {
-    const { activeStep } = this.state
+    const {activeStep} = this.state
 
-    const { items } = this.props
+    const {items} = this.props
 
     const maxSteps = items.length
 
@@ -57,7 +57,7 @@ class Carousel extends React.Component {
                   frontmatter: {
                     path,
                     title,
-                    image: { publicURL },
+                    image: {publicURL},
                   },
                 },
               } = item
@@ -67,7 +67,7 @@ class Carousel extends React.Component {
                   {Math.abs(activeStep - index) <= 2 ? (
                     <Card>
                       <CardMedia
-                        style={{ height: '200px' }}
+                        style={{height: "200px"}}
                         image={withPrefix(publicURL)}
                       />
                       <CardContent>

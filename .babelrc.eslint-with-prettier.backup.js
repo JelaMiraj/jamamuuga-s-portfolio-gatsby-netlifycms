@@ -2,12 +2,12 @@ module.exports = {
   // An important note is that babelrc does not merge presets or plugins
   presets: [
     [
-      '@babel/preset-env',
+      "@babel/preset-env",
       {
-        targets: '> 0.25%, not dead',
+        targets: "> 0.25%, not dead",
       },
     ],
-    '@babel/preset-react',
+    "@babel/preset-react",
     // '@babel/preset-flow',
   ],
   plugins: [
@@ -16,22 +16,22 @@ module.exports = {
   ],
   env: {
     production: {
-      plugins: ['lodash'],
+      plugins: ["lodash"],
     },
     development: {
-      plugins: ['react-hot-loader/babel'],
+      plugins: ["react-hot-loader/babel"],
     },
     test: {
       presets: [
         [
-          '@babel/env',
+          "@babel/env",
           {
             targets: {
-              node: 'current',
+              node: "current",
             },
           },
         ],
-        '@babel/preset-react',
+        "@babel/preset-react",
         // '@babel/preset-flow',
       ],
       compact: false,

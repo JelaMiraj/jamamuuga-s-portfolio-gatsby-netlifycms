@@ -16,13 +16,13 @@ module.exports = {
   setupFilesAfterEnv: [
     // '<rootDir>/scripts/setupTests.js',
     // '<rootDir>/scripts/jest.setup.js',
-    'jest-enzyme',
+    "jest-enzyme",
   ],
-  snapshotSerializers: ['enzyme-to-json/serializer'],
-  testEnvironment: 'enzyme',
-  testPathIgnorePatterns: ['node_modules', '/.cache/'],
+  snapshotSerializers: ["enzyme-to-json/serializer"],
+  testEnvironment: "enzyme",
+  testPathIgnorePatterns: ["node_modules", "/.cache/"],
   // transform: {
   //   '^.+\\.jsx?$': '<rootDir>/jest-preprocess.js',
   // },
-  transformIgnorePatterns: ['node_modules/(?!(gatsby)/)'],
+  transformIgnorePatterns: ["node_modules/(?!(gatsby)/)"],
 }

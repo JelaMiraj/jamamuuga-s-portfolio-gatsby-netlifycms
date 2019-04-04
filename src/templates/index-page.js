@@ -1,16 +1,16 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react"
+import PropTypes from "prop-types"
 // import {Link, graphql} from 'gatsby'
-import { graphql } from 'gatsby'
-import { Button, Grid, Typography } from '@material-ui/core'
+import {graphql} from "gatsby"
+import {Button, Grid, Typography} from "@material-ui/core"
 // import {withStyles} from '@material-ui/core/styles'
-import { makeStyles, withStyles } from '@material-ui/core/styles'
-import Layout from '../components/Layout'
-import Link from '../components/Link'
-import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
-import mytheme from '../styles/themes/theme'
-import withRoot from '../utils/withRoot'
+import {makeStyles, withStyles} from "@material-ui/core/styles"
+import Layout from "../components/Layout"
+import Link from "../components/Link"
+import Features from "../components/Features"
+import BlogRoll from "../components/BlogRoll"
+import mytheme from "../styles/themes/theme"
+import withRoot from "../utils/withRoot"
 
 // FIXME: complains about object is not a function....
 // const useStyles = makeStyles(theme => ({
@@ -47,12 +47,12 @@ export const IndexPageTemplate = ({
       >
         <div
           style={{
-            display: 'flex',
-            height: '150px',
-            lineHeight: '1',
-            justifyContent: 'space-around',
-            alignItems: 'left',
-            flexDirection: 'column',
+            display: "flex",
+            height: "150px",
+            lineHeight: "1",
+            justifyContent: "space-around",
+            alignItems: "left",
+            flexDirection: "column",
           }}
         >
           <Typography
@@ -60,11 +60,11 @@ export const IndexPageTemplate = ({
             className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
             style={{
               boxShadow:
-                'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-              backgroundColor: 'rgb(255, 68, 0)',
-              color: 'white',
-              lineHeight: '1',
-              padding: '0.25em',
+                "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
+              backgroundColor: "rgb(255, 68, 0)",
+              color: "white",
+              lineHeight: "1",
+              padding: "0.25em",
             }}
           >
             {title}
@@ -74,11 +74,11 @@ export const IndexPageTemplate = ({
             className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
             style={{
               boxShadow:
-                'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-              backgroundColor: 'rgb(255, 68, 0)',
-              color: 'white',
-              lineHeight: '1',
-              padding: '0.25em',
+                "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
+              backgroundColor: "rgb(255, 68, 0)",
+              color: "white",
+              lineHeight: "1",
+              padding: "0.25em",
             }}
           >
             {subheading}
@@ -170,8 +170,8 @@ IndexPageTemplate.propTypes = {
   }),
 }
 
-const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+const IndexPage = ({data}) => {
+  const {frontmatter} = data.markdownRemark
 
   return (
     <Layout>
@@ -202,7 +202,7 @@ export default withRoot(IndexPage)
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+    markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
       frontmatter {
         title
         image {

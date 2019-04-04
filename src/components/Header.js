@@ -1,17 +1,17 @@
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import React from "react"
+import {StaticQuery, graphql} from "gatsby"
 // import { Link } from "gatsby";
-import Hidden from '@material-ui/core/Hidden'
-import Grid from '@material-ui/core/Grid'
-import Toolbar from '@material-ui/core/Toolbar'
-import AppBar from '@material-ui/core/AppBar'
-import Typography from '@material-ui/core/Typography'
-import Chip from '@material-ui/core/Chip'
-import Avatar from '@material-ui/core/Avatar'
-import { MaterialUi } from 'mdi-material-ui'
-import MenuMobile from './MenuMobile'
-import Menu from './Menu'
-import Link from './Link'
+import Hidden from "@material-ui/core/Hidden"
+import Grid from "@material-ui/core/Grid"
+import Toolbar from "@material-ui/core/Toolbar"
+import AppBar from "@material-ui/core/AppBar"
+import Typography from "@material-ui/core/Typography"
+import Chip from "@material-ui/core/Chip"
+import Avatar from "@material-ui/core/Avatar"
+import {MaterialUi} from "mdi-material-ui"
+import MenuMobile from "./MenuMobile"
+import Menu from "./Menu"
+import Link from "./Link"
 
 const Header = props => (
   <AppBar id="appBar">
@@ -34,7 +34,7 @@ const Header = props => (
         <Grid item>
           <Hidden smDown>
             <Typography
-              style={{ color: '#efefef', flex: 1 }}
+              style={{color: "#efefef", flex: 1}}
               variant="caption"
               component="span"
             >

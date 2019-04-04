@@ -1,19 +1,19 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react"
+import PropTypes from "prop-types"
 // import {Link, graphql, StaticQuery} from 'gatsby'
-import { graphql, StaticQuery } from 'gatsby'
-import { Button, Grid, Paper, Typography } from '@material-ui/core'
-import Link from './Link'
+import {graphql, StaticQuery} from "gatsby"
+import {Button, Grid, Paper, Typography} from "@material-ui/core"
+import Link from "./Link"
 
 class BlogRoll extends React.Component {
   render() {
-    const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
+    const {data} = this.props
+    const {edges: posts} = data.allMarkdownRemark
 
     return (
       <Grid container className="columns is-multiline">
         {posts &&
-          posts.map(({ node: post }) => (
+          posts.map(({node: post}) => (
             <Grid item xs={6} className="is-parent column is-6" key={post.id}>
               <Paper>
                 <article className="tile is-child box notification">
@@ -61,8 +61,8 @@ export default () => (
     query={graphql`
       query BlogRollQuery {
         allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+          sort: {order: DESC, fields: [frontmatter___date]}
+          filter: {frontmatter: {templateKey: {eq: "blog-post"}}}
         ) {
           edges {
             node {
