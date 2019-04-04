@@ -88,8 +88,8 @@ export const IndexPageTemplate = ({
       <section className="section section--gradient">
         <div className="container">
           <div className="section">
-            <div className="columns">
-              <div className="column is-10 is-offset-1">
+            <Grid container className="columns">
+              <Grid item xs={10} className="column is-10 is-offset-1">
                 <div className="content">
                   <div className="content">
                     <div className="tile">
@@ -103,8 +103,8 @@ export const IndexPageTemplate = ({
                       </Typography>
                     </div>
                   </div>
-                  <div className="columns">
-                    <div className="column is-12">
+                  <Grid container className="columns">
+                    <Grid item xs={12} className="column is-12">
                       <Typography
                         variant="h3"
                         className="has-text-weight-semibold is-size-2"
@@ -112,8 +112,8 @@ export const IndexPageTemplate = ({
                         {heading}
                       </Typography>
                       <Typography paragraph>{description}</Typography>
-                    </div>
-                  </div>
+                    </Grid>
+                  </Grid>
                   <Features gridItems={intro.blurbs} />
                   <Grid container className="columns">
                     <Grid
@@ -136,17 +136,21 @@ export const IndexPageTemplate = ({
                       Latest stories
                     </Typography>
                     <BlogRoll />
-                    <div className="column is-12 has-text-centered">
+                    <Grid
+                      item
+                      xs={12}
+                      className="column is-12 has-text-centered"
+                    >
                       <Button variant="contained" color="secondary">
                         <Link className="btn" to="/blog">
                           Read more
                         </Link>
                       </Button>
-                    </div>
+                    </Grid>
                   </Grid>
                 </div>
-              </div>
-            </div>
+              </Grid>
+            </Grid>
           </div>
         </div>
       </section>
