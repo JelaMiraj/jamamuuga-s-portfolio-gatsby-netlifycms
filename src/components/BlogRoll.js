@@ -11,35 +11,28 @@ class BlogRoll extends React.Component {
     const {edges: posts} = data.allMarkdownRemark
 
     return (
-      <Grid container className="columns is-multiline">
+      <Grid container wrap>
         {posts &&
           posts.map(({node: post}) => (
-            <Grid item xs={6} className="is-parent column is-6" key={post.id}>
-              <Paper>
-                <article className="tile is-child box notification">
-                  <Typography paragraph>
-                    <Link
-                      className="title has-text-primary is-size-4"
-                      to={post.fields.slug}
-                    >
-                      {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.date}
-                    </span>
-                  </Typography>
-                  <Typography paragraph>
-                    {post.excerpt}
-                    <br />
-                    <br />
+            <Grid item xs={6} key={post.id}>
+              <Paper component="article">
+                <Typography paragraph>
+                  <Link variant="h2" to={post.fields.slug}>
+                    {post.frontmatter.title}
+                  </Link>
+                  <Typography inline> &bull; </Typography>
+                  <Typography variant="h3">{post.frontmatter.date}</Typography>
+                </Typography>
+                <Typography paragraph>
+                  {post.excerpt}
+                  <br />
+                  <br />
+                  <Link to={post.fields.slug}>
                     <Button variant="contained" color="secondary">
-                      <Link className="button" to={post.fields.slug}>
-                        Keep Reading →
-                      </Link>
+                      Keep Reading →
                     </Button>
-                  </Typography>
-                </article>
+                  </Link>
+                </Typography>
               </Paper>
             </Grid>
           ))}

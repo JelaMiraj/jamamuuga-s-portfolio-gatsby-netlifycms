@@ -4,21 +4,16 @@ import {Box, Grid, Paper, Typography} from "@material-ui/core"
 import PreviewCompatibleImage from "./PreviewCompatibleImage"
 
 const FeatureGrid = ({gridItems}) => (
-  <Grid container className="columns is-multiline">
+  <Grid container wrap>
     {gridItems.map(item => (
-      <Grid item xs={6} key={item.text} className="column is-6">
+      <Grid item xs={6} key={item.text}>
         <Paper>
           <section className="section">
-            <div className="has-text-centered">
-              <div
-                style={{
-                  width: "240px",
-                  display: "inline-block",
-                }}
-              >
+            <Typography align="center">
+              <Box width="240px" display="inline-block">
                 <PreviewCompatibleImage imageInfo={item} />
-              </div>
-            </div>
+              </Box>
+            </Typography>
             <Typography paragraph>{item.text}</Typography>
           </section>
         </Paper>
