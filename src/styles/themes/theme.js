@@ -20,11 +20,19 @@ const theme = createMuiTheme({
     // TODO: Stop repeating greys, font weights, & font families.
     useNextVariants: true,
     fontFamily: bodyFont,
-    fontSize: 14, // default
+    // fontSize: 14, // default
     // color: grey[500],
+    fontWeightThin: 100,
+    fontWeightExtraLight: 200,
     fontWeightLight: 300,
+    fontWeightNormal: 400,
     fontWeightRegular: 400,
-    fontWeightMedium: 600,
+    // fontWeightMedium: 600,
+    fontWeightMedium: 500,
+    fontWeightSemiBold: 600,
+    fontWeightBold: 700,
+    fontWeightExtraBold: 800,
+    fontWeightBlack: 900,
     h4: {
       fontFamily: headlineFont,
       color: grey[900],
@@ -34,26 +42,27 @@ const theme = createMuiTheme({
     h1: {fontFamily: headlineFont, color: grey[900]},
     h5: {fontFamily: headlineFont, color: grey[900]},
     subtitle1: {fontFamily: headlineFont, color: grey[900]},
-    h6: {fontFamily: headlineFont, color: grey[900], fontWeight: 400},
+    // h6: {fontFamily: headlineFont, color: grey[900], fontWeight: 400},
+    h6: {fontFamily: headlineFont, color: grey[900]},
     body2: {
       fontFamily: bodyFont,
       color: grey[700],
-      fontWeight: 400,
-      margin: "1em 0",
-      "& h2": {fontFamily: headlineFont, color: grey[900], fontWeight: 400},
-      "& h3": {fontFamily: headlineFont, color: grey[900], fontWeight: 400},
+      // fontWeight: 400,
+      // margin: "1em 0",
+      // "& h2": {fontFamily: headlineFont, color: grey[900], fontWeight: 400},
+      // "& h3": {fontFamily: headlineFont, color: grey[900], fontWeight: 400},
     },
   },
   overrides: {
     // TODO: Refer to MuiGrid & "spacing-xs-16" in a proper modern way & verify the appropriate places.
-    MuiGrid: {
-      "spacing-xs-16": {
-        margin: "0 -8px",
-        "& > *[class^=MuiGrid-typeItem]": {
-          padding: "0 8px",
-        },
-      },
-    },
+    // MuiGrid: {
+    //   "spacing-xs-16": {
+    //     margin: "0 -8px",
+    //     "& > *[class^=MuiGrid-typeItem]": {
+    //       padding: "0 8px",
+    //     },
+    //   },
+    // },
   },
 })
 
