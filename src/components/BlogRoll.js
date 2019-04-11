@@ -3,6 +3,9 @@ import PropTypes from "prop-types"
 // import {Link, graphql, StaticQuery} from "gatsby"
 import {graphql, StaticQuery} from "gatsby"
 import {Button, Grid, Paper, Typography} from "@material-ui/core"
+// TODO: Use our custom Card (hopefully with proper Material UI Card support) instead of Paper component.
+// TODO: Fix card usage so underlying Material UI Card subcomponents like CardAction are actually used.
+import Card from "./Card"
 import Link from "./Link"
 
 class BlogRoll extends React.Component {
@@ -15,7 +18,7 @@ class BlogRoll extends React.Component {
         {posts &&
           posts.map(({node: post}) => (
             <Grid item xs={6} key={post.id}>
-              <Paper component="article">
+              <Card component="article">
                 <Typography component="div" paragraph>
                   <Link variant="h2" to={post.fields.slug}>
                     {post.frontmatter.title}
@@ -33,7 +36,7 @@ class BlogRoll extends React.Component {
                     </Button>
                   </Link>
                 </Typography>
-              </Paper>
+              </Card>
             </Grid>
           ))}
       </Grid>

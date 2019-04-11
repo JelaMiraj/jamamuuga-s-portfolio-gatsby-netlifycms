@@ -3,7 +3,7 @@ import React from "react"
 import Link from "./Link"
 // Pagination for posts.
 
-const ulstyle = {
+const unorderedListStyle = {
   display: "flex",
   flexWrap: "wrap",
   justifyContent: "space-between",
@@ -11,7 +11,7 @@ const ulstyle = {
   listStyle: "none",
 }
 
-const lkstyle = (i, currentPage) => ({
+const linkStyle = (i, currentPage) => ({
   padding: 10,
   textDecoration: "none",
   color: i + 1 === currentPage ? "#ffffff" : "#D64000",
@@ -25,7 +25,7 @@ const Pagination = ({currentPage, numPages}) => {
   const nextPage = (currentPage + 1).toString()
 
   return (
-    <ul style={ulstyle}>
+    <ul style={unorderedListStyle}>
       {!isFirst && (
         <Link to={prevPage} rel="prev" className="has-text-primary">
           ← Previous Page
@@ -38,7 +38,10 @@ const Pagination = ({currentPage, numPages}) => {
             margin: 0,
           }}
         >
-          <Link to={`/${i === 0 ? "" : i + 1}`} style={lkstyle(i, currentPage)}>
+          <Link
+            to={`/${i === 0 ? "" : i + 1}`}
+            style={linkStyle(i, currentPage)}
+          >
             {i + 1}
           </Link>
         </li>
