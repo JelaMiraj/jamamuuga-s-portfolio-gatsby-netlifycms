@@ -59,11 +59,11 @@
     "yarn-run-all": "^3.1.1"
   },
   "keywords": [
-    "react",
+    "css-in-js",
     "gatsby",
     "material-ui",
-    "netlify",
-    "css-in-js"
+    "netlify-cms",
+    "react"
   ],
   "license": "MIT",
   "main": "n/a",
