@@ -2,7 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 // import {Link, graphql} from "gatsby"
 import {graphql} from "gatsby"
-import {Button, Grid, Typography} from "@material-ui/core"
+import {Card, Button, Grid, Paper, Typography} from "@material-ui/core"
+import {unstable_Box as Box} from "@material-ui/core/Box"
 // import {withStyles} from "@material-ui/core/styles"
 import {makeStyles, withStyles} from "@material-ui/core/styles"
 import Layout from "../components/Layout"
@@ -88,28 +89,29 @@ export const IndexPageTemplate = ({
         </div>
       </div>
       <section className="section section--gradient">
-        <div className="container">
-          <div className="section">
+        <Box className="container">
+          <section className="section">
             <Grid container className="columns">
               <Grid item xs={10} className="column is-10 is-offset-1">
-                <div className="content">
-                  <div className="content">
-                    <div className="tile">
+                <Box className="content">
+                  <Box className="content">
+                    <Paper className="tile">
                       <Typography variant="h1" className="title">
                         {mainpitch.title}
                       </Typography>
-                    </div>
-                    <div className="tile">
+                    </Paper>
+                    <Paper className="tile">
                       <Typography variant="h3" className="subtitle">
                         {mainpitch.description}
                       </Typography>
-                    </div>
-                  </div>
+                    </Paper>
+                  </Box>
                   <Grid container className="columns">
-                    <Grid item xs={12} className="column is-12">
+                    <Grid item xs={12} className="column">
                       <Typography
                         variant="h3"
-                        className="has-text-weight-semibold is-size-2"
+                        fontWeight="fontWeightSemiBold"
+                        className="is-size-2"
                       >
                         {heading}
                       </Typography>
@@ -118,11 +120,7 @@ export const IndexPageTemplate = ({
                   </Grid>
                   <Features gridItems={intro.blurbs} />
                   <Grid container className="columns">
-                    <Grid
-                      item
-                      xs={12}
-                      className="column is-12 has-text-centered"
-                    >
+                    <Grid item xs={12} align="center" className="column">
                       <Button variant="contained" color="secondary">
                         <Link className="btn" to="/products">
                           See all products
@@ -130,19 +128,16 @@ export const IndexPageTemplate = ({
                       </Button>
                     </Grid>
                   </Grid>
-                  <Grid item xs={12} className="column is-12">
+                  <Grid item xs={12} className="column">
                     <Typography
                       variant="h3"
-                      className="has-text-weight-semibold is-size-2"
+                      fontWeight="fontWeightSemiBold"
+                      className="is-size-2"
                     >
                       Latest stories
                     </Typography>
                     <BlogRoll />
-                    <Grid
-                      item
-                      xs={12}
-                      className="column is-12 has-text-centered"
-                    >
+                    <Grid item xs={12} align="center" className="column">
                       <Button variant="contained" color="secondary">
                         <Link className="btn" to="/blog">
                           Read more
@@ -150,11 +145,11 @@ export const IndexPageTemplate = ({
                       </Button>
                     </Grid>
                   </Grid>
-                </div>
+                </Box>
               </Grid>
             </Grid>
-          </div>
-        </div>
+          </section>
+        </Box>
       </section>
     </div>
   )
