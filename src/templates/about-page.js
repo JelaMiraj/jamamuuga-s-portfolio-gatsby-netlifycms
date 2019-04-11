@@ -1,6 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import {graphql} from "gatsby"
+import {Card, Button, Grid, Paper, Typography} from "@material-ui/core"
+import {unstable_Box as Box} from "@material-ui/core/Box"
 import Layout from "../components/Layout"
 import Content, {HTMLContent} from "../components/Content"
 import withRoot from "../utils/withRoot"
@@ -10,18 +12,22 @@ export const AboutPageTemplate = ({title, content, contentComponent}) => {
 
   return (
     <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+      <Box className="container">
+        <Grid className="columns">
+          <Grid item xs={10} className="column is-10 is-offset-1">
+            <section className="section">
+              <Typography
+                variant="h4"
+                fontWeight="fontWeightSemiBold"
+                className="title is-size-3 has-text-weight-bold is-bold-light"
+              >
                 {title}
-              </h2>
+              </Typography>
               <PageContent className="content" content={content} />
-            </div>
-          </div>
-        </div>
-      </div>
+            </section>
+          </Grid>
+        </Grid>
+      </Box>
     </section>
   )
 }
