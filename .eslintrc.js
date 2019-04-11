@@ -17,6 +17,6 @@ module.exports = {
     // "no-unused-expressions": ["error", { allowTaggedTemplates: true }],
     // Object curly spacing setting here since neither eslint-config-with-prettier, nor Prettier VSCode extension handles this properly.
     "object-curly-spacing": ["error", "never"],
-    quotes: "double",
+    quotes: ["error", "double"],
   },
 }
