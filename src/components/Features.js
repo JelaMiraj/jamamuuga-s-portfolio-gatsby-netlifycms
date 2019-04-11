@@ -10,7 +10,7 @@ const FeatureGrid = ({ gridItems }) => (
       <Grid item xs={6} key={item.text}>
         <Paper>
           <section className="section">
-            <Typography component="span" paragraph align="center" inline>
+            <Typography component="div" paragraph align="center">
               <Box width="240px" display="inline-block">
                 <PreviewCompatibleImage imageInfo={item} />
               </Box>
