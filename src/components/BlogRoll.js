@@ -11,12 +11,12 @@ class BlogRoll extends React.Component {
     const {edges: posts} = data.allMarkdownRemark
 
     return (
-      <Grid container wrap>
+      <Grid container wrap="wrap">
         {posts &&
           posts.map(({node: post}) => (
             <Grid item xs={6} key={post.id}>
               <Paper component="article">
-                <Typography paragraph>
+                <Typography component="div" paragraph>
                   <Link variant="h2" to={post.fields.slug}>
                     {post.frontmatter.title}
                   </Link>
