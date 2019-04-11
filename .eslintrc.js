@@ -5,7 +5,11 @@ module.exports = {
   env: {
     es6: true,
   },
-  extends: ["eslint-config-with-prettier", "eslint-config-gatsby-standard"],
+  extends: [
+    "plugin:prettier/recommended",
+    "eslint-config-with-prettier",
+    "eslint-config-gatsby-standard",
+  ],
   plugins: ["json"],
   rules: {
     // "func-names": [
@@ -22,5 +26,6 @@ module.exports = {
       "double",
       {avoidEscape: true, allowTemplateLiterals: true},
     ],
+    semi: ["error", "never", {beforeStatementContinuationChars: "never"}],
   },
 }
