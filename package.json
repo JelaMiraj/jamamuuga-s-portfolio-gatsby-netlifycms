@@ -20,7 +20,7 @@
     "babel-plugin-named-params": "^0.9.13",
     "babel-plugin-styled-components": "^1.10.0",
     "babel-runtime-named-params": "^0.9.14",
-    "gatsby": "^2.3.16",
+    "gatsby": "^2.3.17",
     "gatsby-image": "^2.0.37",
     "gatsby-plugin-compile-es6-packages": "^1.1.0",
     "gatsby-plugin-manifest": "^2.0.29",
