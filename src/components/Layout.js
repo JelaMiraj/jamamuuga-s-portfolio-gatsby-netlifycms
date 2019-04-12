@@ -5,7 +5,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import {ScrollingProvider} from "react-scroll-section"
 import {Grid, Typography} from "@material-ui/core"
-import GlobalStyle from "../styles/global-style"
+// import GlobalStyle from "../styles/global-style"
 // TODO: Import a proper Styled System theme here instead of a separate pure color object.
 // import colors from "../styles/themes/colors"
 import Footer from "./Footer"
@@ -25,7 +25,7 @@ const Layout = props => (
     <ScrollingProvider>
       <div>
         <Helmet />
-        <GlobalStyle />
+        {/* <GlobalStyle /> */}
         <Header />
         {/* <div>{props.children}</div> */}
         <Grid container style={{marginTop: "94px"}}>

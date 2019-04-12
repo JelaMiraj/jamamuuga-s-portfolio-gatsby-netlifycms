@@ -1,10 +1,11 @@
 // See https://github.com/mui-org/material-ui/tree/master/examples/gatsby
 import React from "react"
 import {MuiThemeProvider} from "@material-ui/core/styles"
-import CssBaseline from "@material-ui/core/CssBaseline"
+// import CssBaseline from "@material-ui/core/CssBaseline"
 import JssProvider from "react-jss/lib/JssProvider"
 import Hidden from "@material-ui/core/Hidden"
 import getPageContext from "./getPageContext"
+import GlobalStyle from "../styles/global-style"
 import myTheme from "../styles/themes/theme"
 
 function withRoot(Component) {
@@ -35,8 +36,8 @@ function withRoot(Component) {
             theme={myTheme}
             sheetsManager={this.muiPageContext.sheetsManager}
           >
-            {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-            <CssBaseline />
+            {/* CssBaseline kickstarts an elegant, consistent, and simple baseline to build upon. Currently loaded from custom GlobalStyle component. */}
+            <GlobalStyle />
             <Hidden implementation="css">
               <Component {...this.props} />
             </Hidden>
