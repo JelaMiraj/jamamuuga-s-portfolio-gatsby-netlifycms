@@ -6,9 +6,13 @@ module.exports = {
     es6: true,
   },
   extends: [
-    "plugin:prettier/recommended",
-    "eslint-config-with-prettier",
+    "eslint:recommended",
+    "airbnb",
     "eslint-config-gatsby-standard",
+    "plugin:jest/recommended",
+    "plugin:prettier/recommended",
+    "prettier/react",
+    "eslint-config-with-prettier",
   ],
   plugins: ["json"],
   rules: {
