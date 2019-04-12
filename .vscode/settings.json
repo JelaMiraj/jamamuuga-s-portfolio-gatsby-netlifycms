@@ -4,7 +4,7 @@
   "eslint.autoFixOnSave": true,
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.formatOnPaste": true,
-  "editor.formatOnType": true,
+  "editor.formatOnType": true
 
   // Using Prettier for JS is unnecessary as ESLint already handles formatting
   // "prettier.disableLanguages": ["javascript", "javascriptreact"],
