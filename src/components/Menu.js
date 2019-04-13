@@ -1,10 +1,10 @@
 import React from "react"
 // import {StaticQuery, Link, graphql} from "gatsby"
 import {StaticQuery, graphql} from "gatsby"
-import Button from "@material-ui/core/Button"
-import IconButton from "@material-ui/core/IconButton"
+import {Button, IconButton} from "@material-ui/core"
 import {GithubCircle} from "mdi-material-ui"
 import Link from "./Link"
+import LinkExternal from "./LinkExternal"
 // import logo from "../img/logo.svg"
 
 const Menu = props => {
@@ -17,21 +17,19 @@ const Menu = props => {
           <Button style={{color: "#fff"}}>{link.name}</Button>
         </Link>
       ))}
-      <a
+      <LinkExternal
         className="navbar-item"
         href="https://github.com/Jamamuuga/jamamuuga-s-portfolio-gatsby-netlifycms"
-        target="_blank"
-        rel="noopener noreferrer"
       >
         <IconButton className="icon" style={{color: "#fff"}}>
           <GithubCircle />
         </IconButton>
-      </a>
+      </LinkExternal>
     </>
   )
 }
 
-export default props => (
+const MenuQuery = props => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -48,3 +46,6 @@ export default props => (
     render={data => <Menu data={data} />}
   />
 )
+
+export default MenuQuery
+export {MenuQuery as Menu}
