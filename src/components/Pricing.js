@@ -1,35 +1,40 @@
 import React from "react"
 import PropTypes from "prop-types"
-import {Grid, List, ListItem, Paper, Typography} from "@material-ui/core"
+import {Grid, List, ListItem, Typography} from "@material-ui/core"
+import {unstable_Box as Box} from "@material-ui/core/Box"
 
 const Pricing = ({data}) => (
-  <Grid container className="columns">
+  <Grid container>
     {data.map(price => (
-      <Grid item xs={4} key={price.plan} className="column">
-        <section className="section">
+      <Grid item xs={4} key={price.plan}>
+        <Box component="section">
           <Typography
             component="h4"
-            className="has-text-centered has-text-weight-semibold"
+            align="center"
+            fontWeight="fontWeightSemiBold"
           >
             {price.plan}
           </Typography>
           <Typography
-            component="h2"
-            className="is-size-1 has-text-weight-bold has-text-primary has-text-centered"
+            variant="h2"
+            fontSize="fontSize1"
+            fontWeight="fontWeightBold"
+            color="textPrimary"
+            align="center"
           >
             ${price.price}
           </Typography>
-          <Typography paragraph className="has-text-weight-semibold">
+          <Typography paragraph fontWeight="fontWeightSemiBold">
             {price.description}
           </Typography>
           <List>
             {price.items.map(item => (
-              <ListItem key={item} className="is-size-5">
+              <ListItem key={item} fontSize="fontSize5">
                 {item}
               </ListItem>
             ))}
           </List>
-        </section>
+        </Box>
       </Grid>
     ))}
   </Grid>
@@ -47,3 +52,4 @@ Pricing.propTypes = {
 }
 
 export default Pricing
+export {Pricing}
