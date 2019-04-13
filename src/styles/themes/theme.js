@@ -1,9 +1,9 @@
 // Setup base Material-UI theme
 import {createMuiTheme, install} from "@material-ui/styles"
-import purple from "@material-ui/core/colors/purple"
-import green from "@material-ui/core/colors/green"
-import red from "@material-ui/core/colors/red"
-import grey from "@material-ui/core/colors/grey"
+
+install()
+
+import {green, grey, purple, red} from "@material-ui/core/colors"
 // TODO: Update this Material UI Them from v1 to v3 & v4 compatible.
 
 const headlineFont = `Merriweather, Georgia, serif`
