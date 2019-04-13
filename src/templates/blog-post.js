@@ -1,15 +1,25 @@
+// eslint-disable-next-line
+import withRoot from "../tools/withRoot"
+// eslint-disable-next-line
 import React from "react"
 import PropTypes from "prop-types"
+import {
+  Container,
+  Grid,
+  List,
+  ListItem,
+  ListItemText,
+  Typography,
+} from "@material-ui/core"
+import {unstable_Box as Box} from "@material-ui/core/Box"
 import {kebabCase} from "lodash"
-import Helmet from "react-helmet"
-// import {Link, graphql} from "gatsby"
 import {graphql} from "gatsby"
+import Helmet from "../components/Helmet"
 import Layout from "../components/Layout"
 import Link from "../components/Link"
-import Content, {HTMLContent} from "../components/Content"
-import withRoot from "../utils/withRoot"
+import {Content, HTMLContent} from "../components/Content"
 
-export const BlogPostTemplate = ({
+const BlogPostTemplate = ({
   content,
   contentComponent,
   description,
@@ -20,32 +30,37 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
-    <section className="section">
+    <Box component="section">
       {helmet || ""}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+      <Container>
+        <Grid container>
+          <Grid item xs={10} className="is-offset-1">
+            <Typography
+              variant="h1"
+              fontSize="fontSize2"
+              fontWeight="fontWeightSemiBold"
+              className="title"
+            >
               {title}
-            </h1>
-            <p>{description}</p>
+            </Typography>
+            <Typography paragraph>{description}</Typography>
             <PostContent content={content} />
             {tags && tags.length ? (
-              <div style={{marginTop: `4rem`}}>
-                <h4>Tags</h4>
-                <ul className="taglist">
+              <Box style={{marginTop: `4rem`}}>
+                <Typography variant="h4">Tags</Typography>
+                <List className="taglist">
                   {tags.map(tag => (
-                    <li key={`${tag}tag`}>
+                    <ListItem key={`${tag}tag`}>
                       <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
+                    </ListItem>
                   ))}
-                </ul>
-              </div>
+                </List>
+              </Box>
             ) : null}
-          </div>
-        </div>
-      </div>
-    </section>
+          </Grid>
+        </Grid>
+      </Container>
+    </Box>
   )
 }
 
@@ -88,9 +103,9 @@ BlogPost.propTypes = {
   }),
 }
 
-export default withRoot(BlogPost)
+const BlogPostWrapped = withRoot(BlogPost)
 
-export const pageQuery = graphql`
+const PageQuery = graphql`
   query BlogPostByID($id: String!) {
     markdownRemark(id: {eq: $id}) {
       id
@@ -104,3 +119,6 @@ export const pageQuery = graphql`
     }
   }
 `
+
+export default BlogPostWrapped
+export {BlogPostWrapped as BlogPost, BlogPostTemplate, PageQuery}
