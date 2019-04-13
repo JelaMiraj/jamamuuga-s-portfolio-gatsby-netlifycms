@@ -1,11 +1,15 @@
 import React from "react"
-import Card from "@material-ui/core/Card"
-import CardHeader from "@material-ui/core/CardHeader"
-import CardContent from "@material-ui/core/CardContent"
-import CardActions from "@material-ui/core/CardActions"
+// import {Card} from "mdi-material-ui"
+import {
+  Card as InnerCard,
+  CardActions,
+  CardContent,
+  CardHeader,
+} from "@material-ui/core"
+// TODO: Only use custom Card everywhere.
 
-const MyCard = ({children, title, subheader, avatar, action, style = {}}) => (
-  <Card style={style}>
+const Card = ({children, title, subheader, avatar, action, style = {}}) => (
+  <InnerCard style={style}>
     <CardHeader
       avatar={avatar || null}
       title={title}
@@ -13,7 +17,8 @@ const MyCard = ({children, title, subheader, avatar, action, style = {}}) => (
     />
     <CardContent>{children}</CardContent>
     <CardActions style={{float: "right"}}>{action}</CardActions>
-  </Card>
+  </InnerCard>
 )
 
-export default MyCard
+export default Card
+export {Card}
