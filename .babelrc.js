@@ -1,5 +1,14 @@
 module.exports = {
-  presets: ["@babel/preset-env", "@babel/preset-react", "babel-preset-gatsby"],
+  presets: [
+    "@babel/preset-env",
+    [
+      "@babel/preset-react",
+      {
+        development: process.env.BABEL_ENV === "development",
+      },
+    ],
+    "babel-preset-gatsby",
+  ],
   plugins: [
     "@babel/plugin-proposal-decorators",
     "@babel/plugin-proposal-class-properties",
