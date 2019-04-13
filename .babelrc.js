@@ -1,7 +1,9 @@
 module.exports = {
   presets: ["@babel/preset-env", "@babel/preset-react", "babel-preset-gatsby"],
   plugins: [
+    "@babel/plugin-proposal-decorators",
     "@babel/plugin-proposal-class-properties",
+    "babel-plugin-root-import",
     "babel-plugin-transform-imports",
     "@babel/plugin-syntax-dynamic-import",
     [
