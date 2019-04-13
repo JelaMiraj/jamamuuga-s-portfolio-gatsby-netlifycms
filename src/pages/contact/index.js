@@ -1,9 +1,25 @@
-import React from "react"
-// TODO: Make sure this works well with Material UI Link & our combined custom Link.
-// import {navigate} from "gatsby-link"
+// eslint-disable-next-line
+import withRoot from "../../tools/withRoot"
+// eslint-disable-next-line
+import React, {Component} from "react"
+// TODO: Use the meta component TextField for applicable input & forms.
+import {
+  Button,
+  Container,
+  Form,
+  FormControl,
+  FormGroup,
+  FormLabel,
+  Hidden,
+  Icon,
+  Input,
+  InputLabel,
+  OutlinedInput,
+  Typography,
+} from "@material-ui/core"
+import {unstable_Box as Box} from "@material-ui/core/Box"
 import {navigate} from "gatsby"
 import Layout from "../../components/Layout"
-import withRoot from "../../utils/withRoot"
 
 function encode(data) {
   return Object.keys(data)
@@ -39,11 +55,11 @@ class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <section className="section">
-          <div className="container">
-            <div className="content">
-              <h1>Contact</h1>
-              <form
+        <Box component="section">
+          <Container>
+            <Box>
+              <Typography variant="h1">Contact</Typography>
+              <Form
                 name="contact"
                 method="post"
                 action="/contact/thanks/"
@@ -52,19 +68,19 @@ class Index extends React.Component {
                 onSubmit={this.handleSubmit}
               >
                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-                <input type="hidden" name="form-name" value="contact" />
-                <div hidden>
-                  <label>
+                <Input type="hidden" name="form-name" value="contact" />
+                <Hidden>
+                  <InputLabel>
                     Don’t fill this out:{" "}
-                    <input name="bot-field" onChange={this.handleChange} />
-                  </label>
-                </div>
-                <div className="field">
-                  <label className="label" htmlFor="name">
+                    <Input name="bot-field" onChange={this.handleChange} />
+                  </InputLabel>
+                </Hidden>
+                <FormGroup className="field">
+                  <InputLabel className="label" htmlFor="name">
                     Your name
-                  </label>
-                  <div className="control">
-                    <input
+                  </InputLabel>
+                  <FormControl>
+                    <Input
                       className="input"
                       type="text"
                       name="name"
@@ -72,14 +88,14 @@ class Index extends React.Component {
                       id="name"
                       required
                     />
-                  </div>
-                </div>
-                <div className="field">
-                  <label className="label" htmlFor="email">
+                  </FormControl>
+                </FormGroup>
+                <FormGroup className="field">
+                  <InputLabel className="label" htmlFor="email">
                     Email
-                  </label>
-                  <div className="control">
-                    <input
+                  </InputLabel>
+                  <FormControl>
+                    <Input
                       className="input"
                       type="email"
                       name="email"
@@ -87,34 +103,38 @@ class Index extends React.Component {
                       id="email"
                       required
                     />
-                  </div>
-                </div>
-                <div className="field">
-                  <label className="label" htmlFor="message">
+                  </FormControl>
+                </FormGroup>
+                <FormGroup className="field">
+                  <InputLabel className="label" htmlFor="message">
                     Message
-                  </label>
-                  <div className="control">
-                    <textarea
+                  </InputLabel>
+                  <FormControl>
+                    <OutlinedInput
                       className="textarea"
                       name="message"
                       onChange={this.handleChange}
                       id="message"
                       required
                     />
-                  </div>
-                </div>
-                <div className="field">
-                  <button className="button is-link" type="submit">
+                  </FormControl>
+                </FormGroup>
+                <FormGroup className="field">
+                  <Button variant="contained" className="is-link" type="submit">
                     Send
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </section>
+                    <Icon>send</Icon>
+                  </Button>
+                </FormGroup>
+              </Form>
+            </Box>
+          </Container>
+        </Box>
       </Layout>
     )
   }
 }
 
-export default withRoot(Index)
+const IndexWrapped = withRoot(Index)
+
+export default IndexWrapped
+export {IndexWrapped as Index}

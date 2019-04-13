@@ -1,54 +1,63 @@
-import React from "react"
-// import Link from "gatsby-link"
+// eslint-disable-next-line
+import withRoot from "../../tools/withRoot"
+// eslint-disable-next-line
+import {React, Component} from "react"
+import {Container, List, ListItem, Typography} from "@material-ui/core"
+import {unstable_Box as Box} from "@material-ui/core/Box"
 import Link from "../../components/Link"
+import LinkExternal from "../../components/LinkExternal"
 import Layout from "../../components/Layout"
-import withRoot from "../../utils/withRoot"
 
-class Index extends React.Component {
+class Index extends Component {
   render() {
     return (
       <Layout>
-        <section className="section">
-          <div className="container">
-            <div className="content">
-              <h1>Hi people</h1>
-              <p>
+        <Box component="section">
+          <Container>
+            <Box>
+              <Typography variant="h1">Hi people,</Typography>
+              <Typography paragraph>
                 This is an example site integrating Netlify’s form handling with
-                Gatsby
-              </p>
-              <ul>
-                <li>
+                Gatsby.
+              </Typography>
+              <List>
+                <ListItem>
                   <Link to="/contact">Basic contact form</Link>
-                </li>
-                <li>
+                </ListItem>
+                <ListItem>
                   <Link to="/contact/file-upload/">Form with file upload</Link>
-                </li>
-              </ul>
+                </ListItem>
+              </List>
 
-              <h2>Troubleshooting</h2>
-              <h3>Forms stop working after upgrading to Gatsby v2</h3>
-              <p>
-                This can be caused by the offline-plugin.{" "}
-                <a href="https://github.com/gatsbyjs/gatsby/issues/7997#issuecomment-419749232">
+              <Typography variant="h2">Troubleshooting</Typography>
+              <Typography variant="h3">
+                Forms stop working after upgrading to Gatsby v2.
+              </Typography>
+              <Typography paragraph>
+                This can be caused by the offline-plugin{" "}
+                <LinkExternal href="https://github.com/gatsbyjs/gatsby/issues/7997#issuecomment-419749232">
                   Workaround
-                </a>{" "}
+                </LinkExternal>{" "}
                 is to use <code>?no-cache=1</code> in the POST url to prevent
                 the service worker from handling form submissions
-              </p>
-              <h3>Adding reCAPTCHA</h3>
-              <p>
+              </Typography>
+              <Typography variant="h3">Adding reCAPTCHA</Typography>
+              <Typography paragraph>
                 If you are planning to add reCAPTCHA please go to{" "}
-                <a href="https://github.com/imorente/gatsby-netlify-form-example">
+                <LinkExternal href="https://github.com/imorente/gatsby-netlify-form-example">
                   imorente/gatsby-netlify-form-example
-                </a>{" "}
+                </LinkExternal>{" "}
                 for a working example.
-              </p>
-            </div>
-          </div>
-        </section>
+              </Typography>
+            </Box>
+          </Container>
+        </Box>
       </Layout>
     )
   }
 }
 
-export default withRoot(Index)
+const IndexWrapped = withRoot(Index)
+
+export default IndexWrapped
+export {IndexWrapped as Examples}
