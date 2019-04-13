@@ -1,16 +1,14 @@
-import React from "react"
-import Button from "@material-ui/core/Button"
-import IconButton from "@material-ui/core/IconButton"
+import React, {Component} from "react"
+import {Button, IconButton} from "@material-ui/core"
 import {GithubCircle} from "mdi-material-ui"
-// import {Link} from "gatsby"
 import Link from "./Link"
-// import {Heading, Image, Text} from "rebass"
-import github from "../img/github-icon.svg"
+import LinkExternal from "./LinkExternal"
+// import github from "../img/github-icon.svg"
 import logo from "../img/logo.svg"
 // TODO: Convert to extending or using Material UI's Navbar.
 import NavbarStyle from "../styles/components/navbar-style"
 
-class Navbar extends React.Component {
+class Navbar extends Component {
   componentDidMount() {
     // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(
@@ -70,11 +68,9 @@ class Navbar extends React.Component {
                 </Link>
               </div>
               <div className="navbar-end has-text-centered">
-                <a
+                <LinkExternal
                   className="navbar-item"
                   href="https://github.com/Jamamuuga/jamamuuga-s-portfolio-gatsby-netlifycms"
-                  target="_blank"
-                  rel="noopener noreferrer"
                 >
                   {/*
                     <span className="icon">
@@ -84,7 +80,7 @@ class Navbar extends React.Component {
                   <IconButton className="icon" style={{color: "#fff"}}>
                     <GithubCircle />
                   </IconButton>
-                </a>
+                </LinkExternal>
               </div>
             </div>
           </div>
@@ -95,3 +91,4 @@ class Navbar extends React.Component {
 }
 
 export default Navbar
+export {Navbar}
