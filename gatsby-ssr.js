@@ -4,7 +4,7 @@
 const React = require("react")
 const {renderToString} = require("react-dom/server")
 const JssProvider = require("react-jss/lib/JssProvider").default
-const getPageContext = require("./src/utils/getPageContext").default
+const getPageContext = require("./src/tools/getPageContext").default
 
 function replaceRenderer({
   bodyComponent,
@@ -37,7 +37,7 @@ exports.replaceRenderer = replaceRenderer
 
 // // It's not ready yet: https://github.com/gatsbyjs/gatsby/issues/8237.
 
-// const withRoot = require("./src/utils/withRoot").default
+// const withRoot = require("./src/tools/withRoot").default
 
 // const WithRoot = withRoot(props => props.children)
 
