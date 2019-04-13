@@ -1,25 +1,29 @@
-import React from "react"
-import {withStyles} from "@material-ui/core/styles"
+// eslint-disable-next-line
+import withRoot from "../../tools/withRoot"
+// eslint-disable-next-line
+import React, {Component} from "react"
+import {Container, Typography} from "@material-ui/core"
+import {unstable_Box as Box} from "@material-ui/core/Box"
 import Layout from "../../components/Layout"
 import BlogRoll from "../../components/BlogRoll"
-import mytheme from "../../styles/themes/theme"
-import withRoot from "../../utils/withRoot"
 
-class BlogIndexPage extends React.Component {
+class BlogIndexPage extends Component {
   render() {
     return (
       <Layout>
-        <section className="section">
-          <div className="container">
-            <div className="content">
-              <div
+        <Box component="section">
+          <Container>
+            <Box>
+              <Box
                 className="full-width-image-container margin-top-0"
                 style={{
                   backgroundImage: `url("/img/blog-index.jpg")`,
                 }}
               >
-                <h1
-                  className="has-text-weight-bold is-size-1"
+                <Typography
+                  variant="h1"
+                  fontWeight="fontWeightBold"
+                  fontSize="fontSize1"
                   style={{
                     boxShadow: "0.5rem 0 0 #f40, -0.5rem 0 0 #f40",
                     backgroundColor: "#f40",
@@ -28,17 +32,18 @@ class BlogIndexPage extends React.Component {
                   }}
                 >
                   Latest Stories
-                </h1>
-              </div>
-            </div>
+                </Typography>
+              </Box>
+            </Box>
             <BlogRoll />
-          </div>
-        </section>
+          </Container>
+        </Box>
       </Layout>
     )
   }
 }
 
-// FIXME: Somehow, trying to use withStyles this way fails
-// export default withRoot(withStyles(mytheme)(BlogIndexPage))
-export default withRoot(BlogIndexPage)
+const BlogIndexPageWrapped = withRoot(BlogIndexPage)
+
+export default BlogIndexPageWrapped
+export {BlogIndexPageWrapped as Blog}
