@@ -43,6 +43,7 @@ module.exports = {
         // modules: ["query-string"],
       },
     },
+    "gatsby-plugin-transform-imports",
     {
       resolve: "gatsby-plugin-styled-components",
       options: {
