@@ -1,8 +1,8 @@
 import React from "react"
 import {StaticQuery, graphql} from "gatsby"
-import Divider from "@material-ui/core/Divider"
-import Typography from "@material-ui/core/Typography"
-import Hidden from "@material-ui/core/Hidden"
+import {Divider, Hidden, Typography} from "@material-ui/core"
+import {unstable_Box as Box} from "@material-ui/core/Box"
+import Link from "./Link"
 
 const Footer = props => {
   const {
@@ -13,8 +13,12 @@ const Footer = props => {
   return (
     <>
       <Divider style={{marginTop: "48px", marginBottom: "24px"}} />
-      <footer style={{marginBottom: "24px", whiteSpace: "nowrap"}} id="footer">
-        <span>
+      <Box
+        component="footer"
+        style={{marginBottom: "24px", whiteSpace: "nowrap"}}
+        id="footer"
+      >
+        <Box component="span">
           <Typography variant="caption" component="span">
             ©{new Date().getFullYear()} {title}{" "}
             <Hidden only={["xs", "sm"]}>–</Hidden>
@@ -25,15 +29,15 @@ const Footer = props => {
             <br />
             &middot;
             <br />
-            By <a href="https://jasoncadydesigns.netlify.com">Jason Cady</a>
+            By <Link to="/">Jason Cady</Link>
           </Typography>
-        </span>
-      </footer>
+        </Box>
+      </Box>
     </>
   )
 }
 
-export default props => (
+const FooterQuery = props => (
   <StaticQuery
     query={graphql`
       query {
@@ -51,3 +55,6 @@ export default props => (
     render={data => <Footer data={data} />}
   />
 )
+
+export default FooterQuery
+export {FooterQuery}
