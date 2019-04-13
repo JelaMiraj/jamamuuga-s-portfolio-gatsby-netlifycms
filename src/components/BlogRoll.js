@@ -1,14 +1,12 @@
-import React from "react"
+import React, {Component} from "react"
 import PropTypes from "prop-types"
-// import {Link, graphql, StaticQuery} from "gatsby"
 import {graphql, StaticQuery} from "gatsby"
+// TODO: Use CardContent & CardAction as well.
 import {Button, Grid, Paper, Typography} from "@material-ui/core"
-// TODO: Use our custom Card (hopefully with proper Material UI Card support) instead of Paper component.
-// TODO: Fix card usage so underlying Material UI Card subcomponents like CardAction are actually used.
 import Card from "./Card"
 import Link from "./Link"
 
-class BlogRoll extends React.Component {
+class BlogRoll extends Component {
   render() {
     const {data} = this.props
     const {edges: posts} = data.allMarkdownRemark
@@ -20,11 +18,17 @@ class BlogRoll extends React.Component {
             <Grid item xs={6} key={post.id}>
               <Card component="article">
                 <Typography component="div" paragraph>
-                  <Link variant="h2" to={post.fields.slug}>
+                  <Link variant="h2" fontSize="fontSize4" to={post.fields.slug}>
                     {post.frontmatter.title}
                   </Link>
                   <Typography inline> &bull; </Typography>
-                  <Typography variant="h3">{post.frontmatter.date}</Typography>
+                  <Typography
+                    variant="h3"
+                    fontSize="fontSize5"
+                    className="subtitle"
+                  >
+                    {post.frontmatter.date}
+                  </Typography>
                 </Typography>
                 <Typography paragraph>
                   {post.excerpt}
@@ -52,7 +56,7 @@ BlogRoll.propTypes = {
   }),
 }
 
-export default () => (
+const BlogRollQuery = () => (
   <StaticQuery
     query={graphql`
       query BlogRollQuery {
@@ -80,3 +84,6 @@ export default () => (
     render={(data, count) => <BlogRoll data={data} count={count} />}
   />
 )
+
+export default BlogRollQuery
+export {BlogRollQuery as BlogRoll}
