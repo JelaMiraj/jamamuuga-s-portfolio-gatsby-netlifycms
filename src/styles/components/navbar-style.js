@@ -10,3 +10,4 @@ const NavbarStyle = styled.div`
 `
 
 export default NavbarStyle
+export {NavbarStyle}
