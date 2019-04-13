@@ -1,12 +1,9 @@
 import React from "react"
-// import {Link, withPrefix} from "gatsby"
 import {withPrefix} from "gatsby"
-import Grid from "@material-ui/core/Grid"
-import Card from "@material-ui/core/Card"
-import CardContent from "@material-ui/core/CardContent"
-import CardMedia from "@material-ui/core/CardMedia"
-import Typography from "@material-ui/core/Typography"
+import {CardContent, CardMedia, Grid, Typography} from "@material-ui/core"
+import Card from "./Card"
 import Link from "./Link"
+// TODO: Find out when & if this custom List component should be used.
 
 const List = props => (
   <Grid
@@ -49,3 +46,4 @@ const List = props => (
 )
 
 export default List
+export {List}
