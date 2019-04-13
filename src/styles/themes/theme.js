@@ -22,6 +22,13 @@ const theme = createMuiTheme({
     fontFamily: bodyFont,
     // fontSize: 14, // default
     // color: grey[500],
+    fontSize1: "3rem",
+    fontSize2: "2.5rem",
+    fontSize3: "2rem",
+    fontSize4: "1.5rem",
+    fontSize5: "1.25rem",
+    fontSize6: "1rem",
+    fontSize7: "0.75rem",
     fontWeightThin: 100,
     fontWeightExtraLight: 200,
     fontWeightLight: 300,
