@@ -1,13 +1,14 @@
 import React from "react"
 import {StaticQuery, graphql} from "gatsby"
-// import { Link } from "gatsby";
-import Hidden from "@material-ui/core/Hidden"
-import Grid from "@material-ui/core/Grid"
-import Toolbar from "@material-ui/core/Toolbar"
-import AppBar from "@material-ui/core/AppBar"
-import Typography from "@material-ui/core/Typography"
-import Chip from "@material-ui/core/Chip"
-import Avatar from "@material-ui/core/Avatar"
+import {
+  AppBar,
+  Avatar,
+  Chip,
+  Grid,
+  Hidden,
+  Toolbar,
+  Typography,
+} from "@material-ui/core"
 import {MaterialUi} from "mdi-material-ui"
 import MenuMobile from "./MenuMobile"
 import Menu from "./Menu"
@@ -51,7 +52,7 @@ const Header = props => (
   </AppBar>
 )
 
-export default props => (
+const HeaderQuery = props => (
   <StaticQuery
     query={graphql`
       query {
@@ -69,3 +70,6 @@ export default props => (
     render={data => <Header data={data} />}
   />
 )
+
+export default HeaderQuery
+export {HeaderQuery as Header}
