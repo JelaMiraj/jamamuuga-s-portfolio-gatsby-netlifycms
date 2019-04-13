@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Img from "gatsby-image"
+import {Image as GatsbyImage} from "gatsby-image"
 
 const PreviewCompatibleImage = ({imageInfo}) => {
   const imageStyle = {borderRadius: "5px"}
@@ -8,12 +8,18 @@ const PreviewCompatibleImage = ({imageInfo}) => {
 
   if (!!image && !!image.childImageSharp) {
     return (
-      <Img style={imageStyle} fluid={image.childImageSharp.fluid} alt={alt} />
+      <GatsbyImage
+        style={imageStyle}
+        fluid={image.childImageSharp.fluid}
+        alt={alt}
+      />
     )
   }
 
   if (childImageSharp) {
-    return <Img style={imageStyle} fluid={childImageSharp.fluid} alt={alt} />
+    return (
+      <GatsbyImage style={imageStyle} fluid={childImageSharp.fluid} alt={alt} />
+    )
   }
 
   if (!!image && typeof image === "string") {
@@ -33,3 +39,4 @@ PreviewCompatibleImage.propTypes = {
 }
 
 export default PreviewCompatibleImage
+export {PreviewCompatibleImage}
