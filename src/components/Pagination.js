@@ -1,5 +1,5 @@
 import React from "react"
-// import {Link} from "gatsby"
+import {List, ListItem} from "@material-ui/core"
 import Link from "./Link"
 // Pagination for posts.
 
@@ -25,14 +25,14 @@ const Pagination = ({currentPage, numPages}) => {
   const nextPage = (currentPage + 1).toString()
 
   return (
-    <ul style={unorderedListStyle}>
+    <List style={unorderedListStyle}>
       {!isFirst && (
         <Link to={prevPage} rel="prev" className="has-text-primary">
           ← Previous Page
         </Link>
       )}
       {Array.from({length: numPages}, (_, i) => (
-        <li
+        <ListItem
           key={`pagination-number${i + 1}`}
           style={{
             margin: 0,
@@ -44,14 +44,14 @@ const Pagination = ({currentPage, numPages}) => {
           >
             {i + 1}
           </Link>
-        </li>
+        </ListItem>
       ))}
       {!isLast && (
         <Link to={nextPage} rel="next" className="has-text-primary">
           Next Page →
         </Link>
       )}
-    </ul>
+    </List>
   )
 }
 
@@ -59,3 +59,4 @@ const Pagination = ({currentPage, numPages}) => {
 // Pagination.propTypes = {}
 
 export default Pagination
+export {Pagination}
