@@ -1,9 +1,13 @@
-import React from "react"
-import {Link} from "gatsby"
-import github from "../img/github-icon.svg"
+import React, {Component} from "react"
+import {Container, Button, IconButton} from "@material-ui/core"
+import {GithubCircle} from "mdi-material-ui"
+import {PreviewCompatibleImage as Image} from "./PreviewCompatibleImage"
+import Link from "./Link"
+import LinkExternal from "./LinkExternal"
 import logo from "../img/logo.svg"
 
-const Navbar = class extends React.Component {
+class Navbar extends Component {
+  // TODO: Use Babel Plugin Proposal Class Properties instead of constructor.
   constructor(props) {
     super(props)
     this.state = {
@@ -31,7 +35,6 @@ const Navbar = class extends React.Component {
       },
     )
   }
-
   render() {
     return (
       <nav
@@ -39,10 +42,10 @@ const Navbar = class extends React.Component {
         role="navigation"
         aria-label="main-navigation"
       >
-        <div className="container">
+        <Container>
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{width: "88px"}} />
+              <Image src={logo} alt="Kaldi" style={{width: "88px"}} />
             </Link>
             {/* Hamburger menu */}
             <div
@@ -77,22 +80,27 @@ const Navbar = class extends React.Component {
               </Link>
             </div>
             <div className="navbar-end has-text-centered">
-              <a
+              <LinkExternal
                 className="navbar-item"
                 href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
-                target="_blank"
-                rel="noopener noreferrer"
               >
+                {/*
                 <span className="icon">
                   <img src={github} alt="Github" />
                 </span>
-              </a>
+              */}
+                <IconButton className="icon" style={{color: "#fff"}}>
+                    <GithubCircle />
+                  </IconButton>
+
+              </LinkExternal>
             </div>
           </div>
-        </div>
+        </Container>
       </nav>
     )
   }
 }
 
 export default Navbar
+export {Navbar as NavbarBaseNew}
