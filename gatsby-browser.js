@@ -1,5 +1,5 @@
 // import React from "react"
-// import withRoot from "./src/utils/withRoot"
+// import withRoot from "./src/tools/withRoot"
 // import ReactDOM from "react-dom"
 
 // Begin Mui Gatsby Example Body
