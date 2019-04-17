@@ -43,8 +43,13 @@ module.exports = {
         // modules: ["query-string"],
       },
     },
-    "gatsby-plugin-root-import",
-    "gatsby-plugin-transform-imports",
+    // {
+    //   resolve: "gatsby-plugin-root-import",
+    //   options: {
+    //     src: path.join(__dirname, 'src'),
+    //   },
+    // },
+    // "gatsby-plugin-transform-imports",
     {
       resolve: "gatsby-plugin-styled-components",
       options: {
