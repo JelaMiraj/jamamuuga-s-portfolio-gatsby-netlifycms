@@ -118,7 +118,7 @@ class Contact extends Component {
                 <FormGroup className="field">
                   <Button variant="contained" className="is-link" type="submit">
                     Upload
-                    <CloudUploadIcon />
+                    <CloudUpload />
                   </Button>
                 </FormGroup>
               </Form>
