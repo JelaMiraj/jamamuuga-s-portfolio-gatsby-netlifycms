@@ -5,9 +5,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import {graphql} from "gatsby"
 import {Button, Grid, Paper, Typography} from "@material-ui/core"
+// import {Container} from "@material-ui/core"
 import {unstable_Box as Box} from "@material-ui/core/Box"
-import Card from "../components/Card"
-import Layout from "../components/Layout"
+import {Card, Layout} from "../components"
 import {Content, HTMLContent} from "../components/Content"
 
 const AboutPageTemplate = ({title, content, contentComponent}) => {
@@ -15,7 +15,7 @@ const AboutPageTemplate = ({title, content, contentComponent}) => {
 
   return (
     <Box component="section" className="section--gradient">
-      <Box className="container">
+      <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
         <Grid container>
           <Grid item xs={10} className="is-offset-1">
             <Box component="section">

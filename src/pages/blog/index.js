@@ -2,17 +2,17 @@
 import withRoot from "../../tools/withRoot"
 // eslint-disable-next-line
 import React, {Component} from "react"
-import {Container, Typography} from "@material-ui/core"
+import {Typography} from "@material-ui/core"
+// import {Container} from "@material-ui/core"
 import {unstable_Box as Box} from "@material-ui/core/Box"
-import Layout from "../../components/Layout"
-import BlogRoll from "../../components/BlogRoll"
+import {BlogRoll, Layout} from "../../components"
 
 class BlogIndexPage extends Component {
   render() {
     return (
       <Layout>
         <Box component="section">
-          <Container>
+          <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
             <Box>
               <Box
                 className="full-width-image-container margin-top-0"
@@ -36,7 +36,7 @@ class BlogIndexPage extends Component {
               </Box>
             </Box>
             <BlogRoll />
-          </Container>
+          </Box>
         </Box>
       </Layout>
     )

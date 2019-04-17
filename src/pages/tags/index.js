@@ -3,7 +3,7 @@ import withRoot from "../../tools/withRoot"
 // eslint-disable-next-line
 import React from "react"
 import {
-  Container,
+  // Container,
   Grid,
   List,
   ListItem,
@@ -13,9 +13,7 @@ import {
 import {unstable_Box as Box} from "@material-ui/core/Box"
 import {kebabCase} from "lodash"
 import {graphql} from "gatsby"
-import Helmet from "../../components/Helmet"
-import Layout from "../../components/Layout"
-import Link from "../../components/Link"
+import {Helmet, Layout, Link} from "../../components"
 
 const TagsPage = ({
   data: {
@@ -28,7 +26,13 @@ const TagsPage = ({
   <Layout>
     <Box component="section">
       <Helmet title={`Tags | ${title}`} />
-      <Box component="Container" justify="center">
+      <Box
+        px={[2, 3, 4]}
+        mx="auto"
+        maxWidth={1280}
+        className="container"
+        justify="center"
+      >
         <Grid container>
           <Grid
             item

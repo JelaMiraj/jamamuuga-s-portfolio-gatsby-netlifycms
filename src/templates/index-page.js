@@ -5,7 +5,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import {graphql} from "gatsby"
 import {
-  Container,
+  // Container,
   CardAction,
   CardContent,
   Button,
@@ -14,11 +14,7 @@ import {
   Typography,
 } from "@material-ui/core"
 import {unstable_Box as Box} from "@material-ui/core/Box"
-import Card from "../components/Card"
-import Layout from "../components/Layout"
-import Link from "../components/Link"
-import Features from "../components/Features"
-import BlogRoll from "../components/BlogRoll"
+import {BlogRoll, Card, Features, Layout, Link} from "../components"
 
 // TODO: Convert everything to use Babel-Blade (DRY GraphQL).
 
@@ -98,7 +94,7 @@ const IndexPageTemplate = ({
         </Box>
       </Box>
       <Box component="section" className="section--gradient">
-        <Container>
+        <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
           <Box component="section">
             <Grid container>
               <Grid item xs={10} className="is-offset-1">
@@ -160,7 +156,7 @@ const IndexPageTemplate = ({
               </Grid>
             </Grid>
           </Box>
-        </Container>
+        </Box>
       </Box>
     </Box>
   )

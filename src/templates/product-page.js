@@ -4,13 +4,8 @@ import withRoot from "../tools/withRoot"
 import React from "react"
 import PropTypes from "prop-types"
 import {graphql} from "gatsby"
-import {
-  Container,
-  CardContent,
-  Grid,
-  Paper,
-  Typography,
-} from "@material-ui/core"
+import {CardContent, Grid, Paper, Typography} from "@material-ui/core"
+// import {Container} from "@material-ui/core"
 import {unstable_Box as Box} from "@material-ui/core/Box"
 import {
   Card,
@@ -33,7 +28,7 @@ const ProductPageTemplate = ({
   pricing,
 }) => (
   <Box component="section" className="section--gradient">
-    <Container>
+    <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
       <Box component="section">
         <Grid container>
           <Grid item xs={10} className="is-offset-1">
@@ -143,7 +138,7 @@ const ProductPageTemplate = ({
           </Grid>
         </Grid>
       </Box>
-    </Container>
+    </Box>
   </Box>
 )
 

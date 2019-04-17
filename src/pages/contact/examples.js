@@ -2,7 +2,8 @@
 import withRoot from "../../tools/withRoot"
 // eslint-disable-next-line
 import {React, Component} from "react"
-import {Container, List, ListItem, Typography} from "@material-ui/core"
+import {List, ListItem, Typography} from "@material-ui/core"
+// import {Container} from "@material-ui/core"
 import {unstable_Box as Box} from "@material-ui/core/Box"
 import Link from "../../components/Link"
 import LinkExternal from "../../components/LinkExternal"
@@ -13,7 +14,7 @@ class Index extends Component {
     return (
       <Layout>
         <Box component="section">
-          <Container>
+          <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
             <Box>
               <Typography variant="h1">Hi people,</Typography>
               <Typography paragraph>
@@ -50,7 +51,7 @@ class Index extends Component {
                 for a working example.
               </Typography>
             </Box>
-          </Container>
+          </Box>
         </Box>
       </Layout>
     )

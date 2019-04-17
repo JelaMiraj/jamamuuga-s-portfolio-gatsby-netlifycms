@@ -3,13 +3,12 @@ import withRoot from "../tools/withRoot"
 // eslint-disable-next-line
 import React, {Component} from "react"
 import PropTypes from "prop-types"
-import {Button, Container, Typography} from "@material-ui/core"
+import {Button, Typography} from "@material-ui/core"
+// import {Container} from "@material-ui/core"
 import {unstable_Box as Box} from "@material-ui/core/Box"
 import {graphql} from "gatsby"
-import Layout from "../components/Layout"
-import Link from "../components/Link"
-// import Card from "../components/Card"
-// import Carousel from "../components/Carousel"
+import {Layout, Link} from "../components"
+// import {Card, Carousel} from "../components"
 
 class IndexPage extends Component {
   render() {
@@ -19,7 +18,7 @@ class IndexPage extends Component {
     return (
       <Layout>
         <Box component="section">
-          <Container>
+          <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
             <Box>
               <Typography
                 variant="h1"
@@ -53,7 +52,7 @@ class IndexPage extends Component {
                 </Typography>
               </Box>
             ))}
-          </Container>
+          </Box>
         </Box>
       </Layout>
     )

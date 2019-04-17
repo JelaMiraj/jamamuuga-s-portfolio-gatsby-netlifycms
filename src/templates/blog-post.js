@@ -4,7 +4,7 @@ import withRoot from "../tools/withRoot"
 import React from "react"
 import PropTypes from "prop-types"
 import {
-  Container,
+  // Container,
   Grid,
   List,
   ListItem,
@@ -14,9 +14,7 @@ import {
 import {unstable_Box as Box} from "@material-ui/core/Box"
 import {kebabCase} from "lodash"
 import {graphql} from "gatsby"
-import Helmet from "../components/Helmet"
-import Layout from "../components/Layout"
-import Link from "../components/Link"
+import {Helmet, Layout, Link} from "../components"
 import {Content, HTMLContent} from "../components/Content"
 
 const BlogPostTemplate = ({
@@ -32,7 +30,7 @@ const BlogPostTemplate = ({
   return (
     <Box component="section">
       {helmet || ""}
-      <Container>
+      <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
         <Grid container>
           <Grid item xs={10} className="is-offset-1">
             <Typography
@@ -59,7 +57,7 @@ const BlogPostTemplate = ({
             ) : null}
           </Grid>
         </Grid>
-      </Container>
+      </Box>
     </Box>
   )
 }

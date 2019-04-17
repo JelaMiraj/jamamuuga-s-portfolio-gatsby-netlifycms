@@ -1,7 +1,7 @@
-import React from "react"
+import React, {Component} from "react"
 // import {Link} from "gatsby"
 import {
-  Container,
+  // Container,
   Grid,
   List,
   ListItem,
@@ -14,17 +14,15 @@ import {
 import {unstable_Box as Box} from "@material-ui/core/Box"
 // TODO: Maybe try using CardMedia, GridList, Gatsby-Image or PreviewCompatibleImage instead.
 // import Image from "material-ui-image"
-import {PreviewCompatibleImage as Image} from "./PreviewCompatibleImage"
-import Link from "./Link"
-import LinkExternal from "./LinkExternal"
+import {Link, LinkExternal, PreviewCompatibleImage as Image} from "."
 import logo from "../img/logo.svg"
 import facebook from "../img/social/facebook.svg"
 import instagram from "../img/social/instagram.svg"
 import twitter from "../img/social/twitter.svg"
 import vimeo from "../img/social/vimeo.svg"
 // TODO: Triple nested Typography components seems like a code smell even if a variety of underlying root components are chosen.
-
-class Footer extends React.Component {
+// TODO: Replace Typography (only with className container) as Box with as Container when migrating to stable Material UI v4. Don't forget to leave the other instances as Box.
+class Footer extends Component {
   render() {
     return (
       <Typography
@@ -44,8 +42,11 @@ class Footer extends React.Component {
           className="has-background-black has-text-white-ter"
         >
           <Typography
-            component="Container"
-            className="has-background-black has-text-white-ter"
+            component="Box"
+            px={[2, 3, 4]}
+            mx="auto"
+            maxWidth={1280}
+            className="container has-background-black has-text-white-ter"
           >
             <Grid container>
               <Grid item xs={4}>

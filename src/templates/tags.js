@@ -4,7 +4,7 @@ import withRoot from "../tools/withRoot"
 import React, {Component} from "react"
 import {graphql} from "gatsby"
 import {
-  Container,
+  // Container,
   Grid,
   List,
   ListItem,
@@ -12,9 +12,7 @@ import {
   Typography,
 } from "@material-ui/core"
 import {unstable_Box as Box} from "@material-ui/core/Box"
-import Helmet from "../components/Helmet"
-import Layout from "../components/Layout"
-import Link from "../components/Link"
+import {Helmet, Layout, Link} from "../components"
 
 class TagRoute extends Component {
   render() {
@@ -39,7 +37,7 @@ class TagRoute extends Component {
       <Layout>
         <Box component="section">
           <Helmet title={`${tag} | ${title}`} />
-          <Container>
+          <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
             <Grid container>
               <Grid
                 item
@@ -61,7 +59,7 @@ class TagRoute extends Component {
                 </Typography>
               </Grid>
             </Grid>
-          </Container>
+          </Box>
         </Box>
       </Layout>
     )

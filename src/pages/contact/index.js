@@ -5,7 +5,7 @@ import React, {Component} from "react"
 // TODO: Use the meta component TextField for applicable input & forms.
 import {
   Button,
-  Container,
+  // Container,
   Form,
   FormControl,
   FormGroup,
@@ -19,7 +19,7 @@ import {
 } from "@material-ui/core"
 import {unstable_Box as Box} from "@material-ui/core/Box"
 import {navigate} from "gatsby"
-import Layout from "../../components/Layout"
+import {Layout} from "../../components"
 
 function encode(data) {
   return Object.keys(data)
@@ -56,7 +56,7 @@ class Index extends React.Component {
     return (
       <Layout>
         <Box component="section">
-          <Container>
+          <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
             <Box>
               <Typography variant="h1">Contact</Typography>
               <Form
@@ -127,7 +127,7 @@ class Index extends React.Component {
                 </FormGroup>
               </Form>
             </Box>
-          </Container>
+          </Box>
         </Box>
       </Layout>
     )

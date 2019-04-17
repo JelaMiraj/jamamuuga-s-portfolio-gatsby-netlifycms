@@ -5,7 +5,7 @@ import React, {Component} from "react"
 // TODO: Use the meta component TextField for applicable input & forms.
 import {
   Button,
-  Container,
+  // Container,
   Form,
   FormControl,
   FormGroup,
@@ -20,7 +20,7 @@ import {unstable_Box as Box} from "@material-ui/core/Box"
 import {CloudUpload} from "@material-ui/icons"
 // import {Upload} from "mdi-material-ui"
 import {navigate} from "gatsby"
-import Layout from "../../components/Layout"
+import {Layout} from "../../components"
 
 function encode(data) {
   const formData = new FormData()
@@ -64,7 +64,7 @@ class Contact extends Component {
     return (
       <Layout>
         <Box component="section">
-          <Container>
+          <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
             <Box>
               <Typography variant="h1">File Upload</Typography>
               {/* FIXME: Make sure this is the right component. was originally a <form></form> */}
@@ -123,7 +123,7 @@ class Contact extends Component {
                 </FormGroup>
               </Form>
             </Box>
-          </Container>
+          </Box>
         </Box>
       </Layout>
     )

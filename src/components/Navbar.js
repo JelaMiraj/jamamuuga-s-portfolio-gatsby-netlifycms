@@ -1,9 +1,9 @@
 import React, {Component} from "react"
-import {Container, Button, IconButton} from "@material-ui/core"
+import {Button, IconButton} from "@material-ui/core"
+// import {Container} from "@material-ui"
+import {unstable_Box as Box} from "@material-ui/core/Box"
 import {GithubCircle} from "mdi-material-ui"
-import {PreviewCompatibleImage as Image} from "./PreviewCompatibleImage"
-import Link from "./Link"
-import LinkExternal from "./LinkExternal"
+import {Link, LinkExternal, PreviewCompatibleImage as Image} from "."
 import logo from "../img/logo.svg"
 // TODO: Convert to extending or using Material UI's Navbar.
 import NavbarStyle from "../styles/components/navbar-style"
@@ -40,7 +40,7 @@ class Navbar extends Component {
           role="navigation"
           aria-label="main-navigation"
         >
-          <Container>
+          <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
             <div className="navbar-brand">
               <Link to="/" className="navbar-item" title="Logo">
                 <Image src={logo} alt="Kaldi" style={{width: "88px"}} />
@@ -83,7 +83,7 @@ class Navbar extends Component {
                 </LinkExternal>
               </div>
             </div>
-          </Container>
+          </Box>
         </nav>
       </NavbarStyle>
     )

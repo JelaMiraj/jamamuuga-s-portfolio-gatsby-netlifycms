@@ -3,15 +3,14 @@
 // // eslint-disable-next-line
 // import React, {Component} from "react"
 // import PropTypes from "prop-types"
-// import {Container, Typography} from "@material-ui/core"
+// import {Typography} from "@material-ui/core"
+// // import {Container} from "@material-ui/core"
 // import {unstable_Box as Box} from "@material-ui/core/Box"
 // import {graphql} from "gatsby"
 // // include NLI ...to init first
 // import netlifyIdentity from "netlify-identity-widget"
 // // import BasePage from "../base/BasePage"
-// import "Page" from "../components/Page"
-// import Pagination from "../components/Pagination"
-// import PostItem from "../components/PostItem"
+// import {Page, Pagination, PostItem} from "../components"
 // import {isLoggedIn} from "../services/auth"
 
 // // Init netlify identity ...
@@ -27,14 +26,14 @@
 //     return (
 //       <BasePage location={{pathname: "/"}}>
 //         <Box component="section">
-//           <Container>
+//           <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
 //             <Box className="hide-in-mobile">
 //               <Typography variant="h1" fontWeight="fontWeightBold" fontSize="fontSize3">Latest</Typography>
 //             </Box>
 //             {posts.map(({node: post}) => (
 //               <PostItem post={post} logged={logged} />
 //             ))}
-//           </Container>
+//           </Box>
 //         </Box>
 //         {/** pagination row */}
 //         <Box component="section">
