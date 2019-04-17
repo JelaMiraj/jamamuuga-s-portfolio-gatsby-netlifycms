@@ -90,9 +90,8 @@ class Navbar extends Component {
                 </span>
               */}
                 <IconButton className="icon" style={{color: "#fff"}}>
-                    <GithubCircle />
-                  </IconButton>
-
+                  <GithubCircle />
+                </IconButton>
               </LinkExternal>
             </div>
           </div>
