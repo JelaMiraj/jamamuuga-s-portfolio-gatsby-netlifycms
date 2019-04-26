@@ -3,7 +3,8 @@
 
 const React = require("react")
 const {renderToString} = require("react-dom/server")
-const JssProvider = require("react-jss/lib/JssProvider").default
+// const JssProvider = require("react-jss/lib/JssProvider").default
+const StylesProvider = require("@material-ui/styles/StylesProvider").default
 const getPageContext = require("./src/tools/getPageContext").default
 
 function replaceRenderer({
@@ -14,10 +15,15 @@ function replaceRenderer({
   // Get the context of the page to collected side effects.
   const muiPageContext = getPageContext()
 
+  // const bodyHTML = renderToString(
+  //   <JssProvider registry={muiPageContext.sheetsRegistry}>
+  //     {bodyComponent}
+  //   </JssProvider>,
+  // )
   const bodyHTML = renderToString(
-    <JssProvider registry={muiPageContext.sheetsRegistry}>
+    <StylesProvider sheetsRegistry={muiPageContext.sheetsRegistry}>
       {bodyComponent}
-    </JssProvider>,
+    </StylesProvider>,
   )
 
   replaceBodyHTMLString(bodyHTML)
