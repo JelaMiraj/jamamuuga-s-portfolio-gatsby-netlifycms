@@ -15,11 +15,10 @@ class Index extends Component {
       <Layout>
         <Box component="section">
           <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
-            <Box>
+            <Box className="content">
               <Typography variant="h1">Hi people,</Typography>
               <Typography paragraph>
-                This is an example site integrating Netlify’s form handling with
-                Gatsby.
+                This is an example site integrating Netlify’s form handling with Gatsby.
               </Typography>
               <List>
                 <ListItem>
