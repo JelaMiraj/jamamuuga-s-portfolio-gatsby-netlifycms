@@ -62,7 +62,7 @@ AboutPage.propTypes = {
 
 const AboutPageWrapped = withRoot(AboutPage)
 
-const AboutPageQuery = graphql`
+const aboutPageQuery = graphql`
   query AboutPage($id: String!) {
     markdownRemark(id: {eq: $id}) {
       html
@@ -74,4 +74,4 @@ const AboutPageQuery = graphql`
 `
 
 export default AboutPageWrapped
-export {AboutPageWrapped as AboutPage, AboutPageQuery, AboutPageTemplate}
+export {AboutPageWrapped as AboutPage, aboutPageQuery, AboutPageTemplate}
