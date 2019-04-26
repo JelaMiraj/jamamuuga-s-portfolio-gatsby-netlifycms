@@ -65,7 +65,7 @@ const Team = props => {
   )
 }
 
-export const query = graphql`
+const teamIndexQuery = graphql`
   query TeamQuery {
     allMarkdownRemark(
       filter: {fileAbsolutePath: {regex: "/team/"}}
@@ -88,4 +88,7 @@ export const query = graphql`
   }
 `
 
-export default withRoot(Team)
+const TeamWrapped = withRoot(Team)
+
+export default TeamWrapped
+export {TeamWrapped as Team, teamIndexQuery}
