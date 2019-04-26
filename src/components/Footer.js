@@ -12,19 +12,19 @@ const styles = theme => ({
   },
   footer: {
     marginBottom: theme.spacing.unit * 3,
-    whiteSpace: 'nowrap',
-  }
+    whiteSpace: "nowrap",
+  },
 })
 
 // FIXME: Many levels of indirection is a code smell & needs to be seperated into abstractions.
 const Footer = withStyles(styles)(props => {
-const {
+  const {
     classes,
     data: {
       site: {
         siteMetadata: {
           title,
-          contact: { email, phone },
+          contact: {email, phone},
         },
       },
     },
@@ -33,11 +33,7 @@ const {
   return (
     <>
       <Divider className={classes.divider} />
-      <Box
-        component="footer"
-        className={classes.footer
-        id="footer"
-      >
+      <Box component="footer" className={classes.footer} id="footer">
         <Box component="span">
           <Typography variant="caption" component="span">
             ©{new Date().getFullYear()} {title}{" "}

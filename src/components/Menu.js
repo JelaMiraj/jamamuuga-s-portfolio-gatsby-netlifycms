@@ -9,8 +9,8 @@ import LinkExternal from "./LinkExternal"
 
 const styles = theme => ({
   menuButton: {
-    color: theme.palette.primary.contrastText
-  }
+    color: theme.palette.primary.contrastText,
+  },
 })
 
 const Menu = withStyles(styles)(props => {
@@ -19,9 +19,9 @@ const Menu = withStyles(styles)(props => {
     classes,
     data: {
       site: {
-        siteMetadata: { menuLinks }
-      }
-    }
+        siteMetadata: {menuLinks},
+      },
+    },
   } = props
 
   return (
@@ -41,7 +41,7 @@ const Menu = withStyles(styles)(props => {
       </LinkExternal>
     </>
   )
-}
+})
 
 const MenuQuery = props => (
   <StaticQuery
