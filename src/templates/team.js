@@ -1,7 +1,6 @@
 import React from "react"
-import {graphql} from "gatsby"
+import {graphql, withPrefix} from "gatsby"
 import {Grid, Paper, Typography} from "@material-ui/core"
-import {withPrefix} from "gatsby"
 import {withStyles} from "@material-ui/styles"
 import {Page, SEO} from "../components"
 // Another helper tool somehow made it possible to put this here instead of top & need eslint disable line.
