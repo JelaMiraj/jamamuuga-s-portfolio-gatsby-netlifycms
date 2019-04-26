@@ -15,6 +15,15 @@ import {
   Pricing,
   Testimonials,
 } from "../components"
+// TODO: Factor out styling into reusable classes.
+// TODO: Apply styling classes to components that don't yet have them.
+// TODO: Either use or make section & content components & use them here.
+// FIXME: Figure out the right way to sort out invalid attribute errors in Material UI component styling attributes.
+// TODO: Factor out hard coded Container as Box component.
+// TODO: Replace hard coded custom Container use with (possibly external wrapped custom) Material UI v4 stable's one.
+// TODO: Convert full-width-image-container to Material UI Image Component with proper attributes set.
+// TODO: Find out if Bulma's content component is actually something like Typography potentially as div.
+// TODO: Perhaps reconsider naming of things because their is an implicit "Template" added meaning to all template components. This means that ProductPageTemplate really means ProductPageTemplateTemplate & ProductPage is what really means ProductPageTemplate. Make sure the "Query" & "Wrapped" versions have the correct base name if you change the names of the template & meta template. Perhaps adopt a different & clearer naming concept that may have been used by other components.
 
 const ProductPageTemplate = ({
   image,
