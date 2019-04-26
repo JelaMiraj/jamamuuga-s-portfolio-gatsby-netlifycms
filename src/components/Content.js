@@ -6,19 +6,13 @@ import ContentStyle from "../styles/components/content-style"
 // TODO: Should we use an alternative to dangerouslySetInnerHTML?
 const HTMLContent = ({content, className}) => (
   <ContentStyle>
-    <Box
-      component="div"
-      className={className}
-      dangerouslySetInnerHTML={{__html: content}}
-    />
+    <Box className={className} dangerouslySetInnerHTML={{__html: content}} />
   </ContentStyle>
 )
 
 const Content = ({content, className}) => (
   <ContentStyle>
-    <Box component="div" className={className}>
-      {content}
-    </Box>
+    <Box className={className}>{content}</Box>
   </ContentStyle>
 )
 
