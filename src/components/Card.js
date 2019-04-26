@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 // import {Card} from "mdi-material-ui"
 import {
   Card as InnerCard,
@@ -27,7 +28,15 @@ const Card = ({children, title, subheader, avatar, action, style = {}}) => (
   </InnerCard>
 )
 
-const CardStyled = withStyles(styles)(InnerCard)
+// Card.PropTypes = {
+//   children: PropTypes.node.isRequired,
+//   title: PropTypes.string,
+//   // subheader: PropTypes.any,
+//   // avatar: PropTypes.any,
+//   // action: PropTYpes.any,
+// }
+
+const CardStyled = withStyles(styles)(Card)
 
 export default CardStyled
 export {CardStyled as Card}
