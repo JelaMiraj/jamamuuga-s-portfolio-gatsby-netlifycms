@@ -11,7 +11,7 @@ import {Footer, Header, Helmet} from "."
 const Layout = props => (
   <>
     <ScrollingProvider>
-      <Box component="div">
+      <Box>
         <Helmet />
         <Header />
         <Grid container style={{marginTop: "94px"}}>
