@@ -68,8 +68,8 @@ class Contact extends Component {
           <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
             <Box className="content">
               <Typography variant="h1">File Upload</Typography>
-              {/* FIXME: Make sure this is the right component. was originally a <form></form> */}
-              <Form
+              {/* TODO: Migrate to any appropriate Material UI Component */}
+              <form
                 name="file-upload"
                 method="post"
                 action="/contact/thanks/"
@@ -122,7 +122,7 @@ class Contact extends Component {
                     <CloudUpload />
                   </Button>
                 </FormGroup>
-              </Form>
+              </form>
             </Box>
           </Box>
         </Box>
