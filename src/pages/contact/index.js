@@ -28,7 +28,7 @@ function encode(data) {
     .join("&")
 }
 
-class Index extends React.Component {
+class Index extends Component {
   constructor(props) {
     super(props)
     this.state = {isValidated: false}
