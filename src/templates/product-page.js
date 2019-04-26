@@ -205,7 +205,7 @@ ProductPage.propTypes = {
 
 const ProductPageWrapped = withRoot(ProductPage)
 
-const ProductPageQuery = graphql`
+const productPageQuery = graphql`
   query ProductPage($id: String!) {
     markdownRemark(id: {eq: $id}) {
       frontmatter {
@@ -296,6 +296,6 @@ const ProductPageQuery = graphql`
 export default ProductPageWrapped
 export {
   ProductPageWrapped as ProductPage,
-  ProductPageQuery,
+  productPageQuery,
   ProductPageTemplate,
 }
