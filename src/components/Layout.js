@@ -8,7 +8,7 @@ import {Footer, Header, Helmet} from "."
 // import {FooterHugeNew as Footer} from "."
 // TODO: Maybe this Box based div like wrapper should be Container equivalent instead.
 
-const Layout = props => (
+const Layout = ({children, title}) => (
   <>
     <ScrollingProvider>
       <Box>
@@ -17,16 +17,16 @@ const Layout = props => (
         <Grid container style={{marginTop: "94px"}}>
           <Grid item container direction="row">
             <Grid item container direction="column" xs={12}>
-              {props.title ? (
+              {title ? (
                 <Typography
                   variant="h2"
                   gutterBottom
                   style={{textAlign: "center"}}
                 >
-                  {props.title}
+                  {title}
                 </Typography>
               ) : null}
-              {props.children}
+              {children}
               <Footer />
             </Grid>
           </Grid>
@@ -38,6 +38,7 @@ const Layout = props => (
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  title: PropTypes.string,
 }
 
 export default Layout
