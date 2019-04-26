@@ -3,8 +3,7 @@ import PropTypes from "prop-types"
 import {graphql, StaticQuery} from "gatsby"
 // TODO: Use CardContent & CardAction as well.
 import {Button, Grid, Paper, Typography} from "@material-ui/core"
-import Card from "./Card"
-import Link from "./Link"
+import {Card, Link} from "."
 
 class BlogRoll extends Component {
   render() {
