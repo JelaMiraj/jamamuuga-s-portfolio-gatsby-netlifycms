@@ -1,6 +1,7 @@
 import React, {Component} from "react"
-import {Box, Button, IconButton} from "@material-ui/core"
+import {Button, IconButton} from "@material-ui/core"
 // import {Container} from "@material-ui/core"
+import {unstable_Box as Box} from "@material-ui/core/Box"
 import {GithubCircle} from "mdi-material-ui"
 import {Link, LinkExternal, PreviewCompatibleImage as Image} from "."
 import logo from "../img/logo.svg"
