@@ -67,7 +67,7 @@ IndexPage.propTypes = {
   }),
 }
 
-const pageQuery = graphql`
+const indexPageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
       sort: {order: DESC, fields: [frontmatter___date]}
@@ -94,4 +94,4 @@ const pageQuery = graphql`
 const IndexPageWrapped = withRoot(IndexPage)
 
 export default IndexPageWrapped
-export {IndexPageWrapped as Index, pageQuery}
+export {IndexPageWrapped as Index, indexPageQuery}
