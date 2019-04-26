@@ -36,55 +36,53 @@ const ProductPageTemplate = ({
   fullImage,
   pricing,
 }) => (
-  <Box component="section" className="section--gradient">
-    <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
-      <Box component="section">
-        <Grid container>
-          <Grid item xs={10} className="is-offset-1">
-            <Box>
-              <Box
-                className="full-width-image-container margin-top-0"
-                style={{
-                  backgroundImage: `url(${
-                    image.childImageSharp
-                      ? image.childImageSharp.fluid.src
-                      : image
-                  })`,
-                }}
+  <Box className="content">
+    <Box
+      className="full-width-image-container margin-top-0"
+      style={{
+        backgroundImage: `url(${
+          image.childImageSharp ? image.childImageSharp.fluid.src : image
+        })`,
+      }}
+    >
+      <Typography
+        variant="h2"
+        fontWeight="fontWeightBold"
+        fontSize="fontSize1"
+        style={{
+          boxShadow: "0.5rem 0 0 #f40, -0.5rem 0 0 #f40",
+          backgroundColor: "#f40",
+          color: "white",
+          padding: "1rem",
+        }}
+      >
+        {title}
+      </Typography>
+    </Box>
+    <Box component="section" className="section section--gradient">
+      <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
+        <Box component="section" className="section">
+          <Grid container>
+            <Grid item xs={7} className="is-offset-1">
+              <Typography
+                variant="h3"
+                fontWeight="fontWeightSemiBold"
+                fontSize="fontSize2"
               >
-                <Typography
-                  variant="h2"
-                  fontWeight="fontWeightBold"
-                  fontSize="fontSize1"
-                  style={{
-                    boxShadow: "0.5rem 0 0 #f40, -0.5rem 0 0 #f40",
-                    backgroundColor: "#f40",
-                    color: "white",
-                    padding: "1rem",
-                  }}
-                >
-                  {title}
-                </Typography>
-              </Box>
-              <Grid container>
-                <Grid item xs={7}>
-                  <Typography
-                    variant="h3"
-                    fontWeight="fontWeightSemiBold"
-                    fontSize="fontSize2"
-                  >
-                    {heading}
-                  </Typography>
-                  <Typography paragraph>{description}</Typography>
-                </Grid>
-              </Grid>
+                {heading}
+              </Typography>
+              <Typography paragraph>{description}</Typography>
+            </Grid>
+          </Grid>
+          <Grid container>
+            <Grid item xs={10} className="is-offset-1">
               <Features gridItems={intro.blurbs} />
               <Grid container>
                 <Grid item xs={7}>
                   <Typography
                     variant="h3"
                     fontWeight="fontWeightSemiBold"
-                    fontSize="fontSize1"
+                    fontSize="fontSize3"
                   >
                     {main.heading}
                   </Typography>
@@ -139,13 +137,13 @@ const ProductPageTemplate = ({
               >
                 {pricing.heading}
               </Typography>
-              <Typography paragraph className="fontSize5">
+              <Typography paragraph fontSize="fontSize5">
                 {pricing.description}
               </Typography>
               <Pricing data={pricing.plans} />
-            </Box>
+            </Grid>
           </Grid>
-        </Grid>
+        </Box>
       </Box>
     </Box>
   </Box>
