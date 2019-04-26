@@ -1,10 +1,10 @@
 import React from "react"
-import {graphql} from "gatsby"
+import PropTypes from "prop-types"
+import {graphql, withPrefix} from "gatsby"
 import {CardContent, CardMedia, Typography} from "@material-ui/core"
-import {withPrefix} from "gatsby"
 import {withStyles} from "@material-ui/styles"
-import {Card, Page, SEO} from "../components"
-import withRoot from "../utils/withRoot"
+import {Card, Layout} from "../components"
+import withRoot from "../tools/withRoot"
 
 const styles = {
   cardMedia: {
@@ -20,8 +20,8 @@ const Detail = ({classes, data}) => {
   const {html} = data.markdownRemark
 
   return (
-    <Page>
-      <SEO title={title} />
+    <Layout>
+      {/* <SEO title={title} /> */}
       <Card>
         <CardMedia
           className={classes.cardMedia}
@@ -34,7 +34,7 @@ const Detail = ({classes, data}) => {
           <Typography dangerouslySetInnerHTML={{__html: html}} />
         </CardContent>
       </Card>
-    </Page>
+    </Layout>
   )
 }
 
