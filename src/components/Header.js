@@ -10,9 +10,7 @@ import {
   Typography,
 } from "@material-ui/core"
 import {MaterialUi} from "mdi-material-ui"
-import MenuMobile from "./MenuMobile"
-import Menu from "./Menu"
-import Link from "./Link"
+import {Link, Menu, MenuMobile} from "."
 
 const Header = props => (
   <AppBar id="appBar">
