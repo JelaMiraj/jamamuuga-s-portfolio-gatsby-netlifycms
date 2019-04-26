@@ -54,7 +54,7 @@ const Home = ({classes, data}) => {
   )
 }
 
-const query = graphql`
+const indexQuery = graphql`
   query {
     allFile(filter: {extension: {eq: "jpg"}}) {
       edges {
@@ -92,4 +92,4 @@ Home.propTypes = {
 const HomeWrapped = withRoot(withStyles(styles)(Home))
 
 export default HomeWrapped
-export {HomeWrapped as IndexMUIBiz, query}
+export {HomeWrapped as IndexMUIBiz, indexQuery}
