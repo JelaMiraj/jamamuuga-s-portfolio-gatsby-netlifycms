@@ -1,8 +1,8 @@
 import React from "react"
 import {withPrefix} from "gatsby"
 import {CardContent, CardMedia, Grid, Typography} from "@material-ui/core"
-import Card from "./Card"
-import Link from "./Link"
+import {withStyles} from "@material-ui/styles"
+import {Card, Link} from "."
 // TODO: Find out when & if this custom List component should be used.
 
 const List = props => (
