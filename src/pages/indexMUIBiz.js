@@ -4,10 +4,10 @@ import withRoot from "../tools/withRoot"
 import React from "react"
 import {graphql} from "gatsby"
 import PropTypes from "prop-types"
-import {Avatar, Button, Carousel} from "@material-ui/core"
+import {Avatar, Button} from "@material-ui/core"
 import {Gift} from "mdi-material-ui"
 import {withStyles} from "@material-ui/styles"
-import {Card, HomeFeatures, Link, Page, SEO} from "../components"
+import {Card, Carousel, HomeFeatures, Link, Page, SEO} from "../components"
 
 const styles = theme => ({
   root: {
