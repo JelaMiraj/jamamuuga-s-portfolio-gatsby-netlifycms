@@ -53,7 +53,7 @@ const Footer = withStyles(styles)(props => {
   )
 })
 
-const FooterQuery = props => (
+const footerQuery = props => (
   <StaticQuery
     query={graphql`
       query {
@@ -76,5 +76,5 @@ const FooterQuery = props => (
 // TODO: Make sure this doesn't not get used and break styles because FooterQuery is the one being exported as default.
 // const FooterStyled = withStyles(styles)(Footer)
 
-export default FooterQuery
-export {FooterQuery as Footer}
+export default footerQuery
+export {footerQuery as Footer}
