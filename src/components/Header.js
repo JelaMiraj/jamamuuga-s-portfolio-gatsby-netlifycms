@@ -20,9 +20,11 @@ const Header = props => (
           <Chip
             id="logo"
             variant="outlined"
-            avatar=<Avatar id="logoIcon">
-              <MaterialUi />
-            </Avatar>
+            avatar={
+              <Avatar id="logoIcon">
+                <MaterialUi />
+              </Avatar>
+            }
             label={
               <Link to="/">
                 {props.data.site.siteMetadata.title.toUpperCase()}
@@ -32,11 +34,7 @@ const Header = props => (
         </Grid>
         <Grid item>
           <Hidden smDown>
-            <Typography
-              style={{color: "#efefef", flex: 1}}
-              variant="caption"
-              component="span"
-            >
+            <Typography component="span" variant="caption">
               <Menu />
             </Typography>
           </Hidden>
