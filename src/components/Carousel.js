@@ -15,6 +15,12 @@ import {Card, Link} from "."
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews)
 
+const styles = {
+  cardMedia: {
+    height: "200px",
+  },
+}
+
 class Carousel extends React.Component {
   state = {
     activeStep: 0,
@@ -39,7 +45,7 @@ class Carousel extends React.Component {
   render() {
     const {activeStep} = this.state
 
-    const {items} = this.props
+    const {classes, items} = this.props
 
     const maxSteps = items.length
 
@@ -70,14 +76,14 @@ class Carousel extends React.Component {
                   {Math.abs(activeStep - index) <= 2 ? (
                     <Card>
                       <CardMedia
-                        style={{height: "200px"}}
+                        className={classes.cardMedia}
                         image={withPrefix(publicURL)}
                       />
                       <CardContent>
-                        <Typography variant="h5" gutterBottom>
+                        <Typography gutterBottom variant="h5" component="h2">
                           <Link to={path}>{title}</Link>
                         </Typography>
-                        <Typography paragraph>{excerpt}</Typography>
+                        <Typography component="p">{excerpt}</Typography>
                       </CardContent>
                     </Card>
                   ) : null}
@@ -114,5 +120,7 @@ class Carousel extends React.Component {
   }
 }
 
-export default Carousel
-export {Carousel}
+const CarouselStyled = withStyles(styles)(Carousel)
+
+export default CarouselStyled
+export {CarouselStyled as Carousel}
