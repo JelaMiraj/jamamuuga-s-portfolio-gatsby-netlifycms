@@ -31,33 +31,25 @@ const HomeFeatures = props => (
   <Grid
     spacing={24}
     container
-    direction="row"
-    alignItems="flex-start"
     justify="center"
     className={props.classes.featureGrid}
   >
-    <Grid item xs={6}>
+    <Grid item md={6}>
       <Chip
         className={props.classes.featureChipRight}
         avatar={
-          <Avatar
-            className={props.classes.avi}
-            style={{backgroundColor: props.theme.palette.secondary.light}}
-          >
+          <Avatar className={props.classes.avi}>
             <Robot />
           </Avatar>
         }
         label="Uses Material UI"
       />
     </Grid>
-    <Grid item xs={6}>
+    <Grid item md={6}>
       <Chip
         className={props.classes.featureChip}
         avatar={
-          <Avatar
-            className={props.classes.avi}
-            style={{backgroundColor: props.theme.palette.secondary.light}}
-          >
+          <Avatar className={props.classes.avi}>
             <Robot />
           </Avatar>
         }
@@ -69,10 +61,9 @@ const HomeFeatures = props => (
 
 HomeFeatures.propTypes = {
   classes: PropTypes.object.isRequired,
-  theme: PropTypes.object.isRequired,
 }
 
-const HomeFeaturesStyled = withStyles(styles, {withTheme: true})(HomeFeatures)
+const HomeFeaturesStyled = withStyles(styles)(HomeFeatures)
 
 export default HomeFeaturesStyled
 export {HomeFeaturesStyled as HomeFeatures}
