@@ -12,8 +12,8 @@ import {Rocket} from "mdi-material-ui"
 import {Helmet, Layout, Link, Page, SEO} from "../../components"
 import withRoot from "../../tools/withRoot"
 
-const Team = props => {
-  const teams = props.data.allMarkdownRemark.edges
+const Team = ({data}) => {
+  const teams = data.allMarkdownRemark.edges
 
   return (
     <Page title="Meet the Team">
