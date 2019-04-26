@@ -1,7 +1,7 @@
 // eslint-disable-next-line
 import withRoot from "../tools/withRoot"
 // eslint-disable-next-line
-import React from "react"
+import React from 'react'
 import PropTypes from "prop-types"
 import {graphql} from "gatsby"
 import {CardContent, Grid, Paper, Typography} from "@material-ui/core"
