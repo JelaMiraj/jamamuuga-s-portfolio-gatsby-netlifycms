@@ -2,7 +2,7 @@ import React from "react"
 import {graphql, withPrefix} from "gatsby"
 import {Grid, Paper, Typography} from "@material-ui/core"
 import {withStyles} from "@material-ui/styles"
-import {Page, SEO} from "../components"
+import {PreviewCompatibleImage as Image, Layout} from "../components"
 // Another helper tool somehow made it possible to put this here instead of top & need eslint disable line.
 import withRoot from "../tools/withRoot"
 
@@ -24,8 +24,8 @@ const Team = ({classes, data}) => {
   const {html} = data.markdownRemark
 
   return (
-    <Page>
-      <SEO title={title} />
+    <Layout>
+      {/* <SEO title={title} /> */}
       <Paper className={classes.paper}>
         <Grid
           spacing={24}
@@ -35,6 +35,7 @@ const Team = ({classes, data}) => {
           justify="center"
         >
           <Grid item xs={12} md={4}>
+            {/* FIXME: Switch to a preview compatible image component. */}
             <img className={classes.image} src={withPrefix(publicURL)} alt="" />
           </Grid>
           <Grid item xs={12} md={8}>
@@ -48,7 +49,7 @@ const Team = ({classes, data}) => {
           </Grid>
         </Grid>
       </Paper>
-    </Page>
+    </Layout>
   )
 }
 
