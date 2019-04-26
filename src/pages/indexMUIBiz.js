@@ -1,44 +1,33 @@
 // eslint-disable-next-line
 import withRoot from "../tools/withRoot"
 // eslint-disable-next-line
-import React from "react"
-import {graphql} from "gatsby"
-import PropTypes from "prop-types"
-import {Avatar, Button, Grid} from "@material-ui/core"
-import {Gift} from "mdi-material-ui"
-import SEO from "../components/SEO"
-import Card from "../components/Card"
-import Page from "../components/Page"
-import HomeFeatures from "../components/HomeFeatures"
-import Carousel from "../components/Carousel"
-import Link from "../components/Link"
+import React from "react";
+import {graphql} from "gatsby";
+import PropTypes from "prop-types";
+import {Avatar, Button, Carousel} from "@material-ui/core";
+import { Gift } from "mdi-material-ui";
+import {withStyles} from "@material-ui/styles";
+import {Card, HomeFeatures, Link, Page, SEO} from "../components"
 
 const styles = theme => ({
-  root: {
-    backgroundColor: "#9c27b0",
-  },
-})
+    root: {
+      fontWeight: "bold",
+    },
+  })
 
-const Home = props => (
-  // const products = props.data.allMarkdownRemark.edges
+const Home = props => {
+    const products = props.data.allMarkdownRemark.edges
 
-  <Page title="Gatsby Material UI Business Starter">
-    <SEO title="Home">
-      <meta
-        name="description"
-        content="Beautiful Gatsby Material UI Business Starter. Tiny code. Well organized. Ready to customize and go."
-      />
-    </SEO>
+    return (
+      <Page title="Gatsby Material UI Business Starter">
+        <SEO title="Home">
+          <meta
+            name="description"
+            content="Beautiful Gatsby Material UI Business Starter. Tiny code. Well organized. Ready to customize and go."
+          />
+        </SEO>
 
-    <HomeFeatures />
-    <Grid
-      spacing={24}
-      container
-      direction="row"
-      alignItems="flex-start"
-      justify="center"
-    >
-      <Grid item xs={12} md={10} style={{minHeight: "523px"}}>
+        <HomeFeatures />
         <Card
           title="Our Products"
           avatar={
@@ -47,51 +36,61 @@ const Home = props => (
             </Avatar>
           }
           action={
-            <>
-              <Button
-                variant="contained"
-                color="secondary"
-                className={props.classes.root}
-              >
-                <Link to="/products">View All Products</Link>
-              </Button>
-            </>
+            <Button
+              variant="contained"
+              color="secondary"
+              className={props.classes.root}
+              component={Link}
+              to="/products"
+            >
+              View All Products
+            </Button>
           }
+          style={{ minHeight: 523 }}
         >
           <Carousel items={products} />
         </Card>
-      </Grid>
-    </Grid>
-  </Page>
-)
+      </Page>
+    );
+  };
 
-const query = graphql`
+export const query = graphql`
   query {
+    allFile(filter: { extension: { eq: "jpg" } }) {
+      edges {
+        node {
+          publicURL
+        }
+      }
+    }
     allMarkdownRemark(
-      filter: {fileAbsolutePath: {regex: "/products/"}}
-      sort: {fields: [frontmatter___date], order: DESC}
+      filter: { fileAbsolutePath: { regex: "/products/" } }
+      sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
         node {
           id
           frontmatter {
+            image {
+              publicURL
+            }
             path
             title
             date(formatString: "DD MMMM YYYY")
-            image
           }
           excerpt
         }
       }
     }
   }
-`
+`;
 
 Home.propTypes = {
   classes: PropTypes.object.isRequired,
-}
+};
 
-const HomeWrapped = withRoot(Home)
+const HomeWrapped = withRoot(withStyles(styles)(Home));
 
 export default HomeWrapped
 export {HomeWrapped as IndexMUIBiz, query}
+
