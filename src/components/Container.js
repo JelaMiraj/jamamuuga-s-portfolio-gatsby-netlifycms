@@ -22,7 +22,7 @@
 // // }
 
 // const Container = ({children, attributes}) => (
-//   <Box px={[2, 3, 4]} mx="auto" maxWidth={1280}>
+//   <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
 //     {children}
 //   </Box>
 // )
