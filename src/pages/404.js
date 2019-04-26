@@ -4,11 +4,11 @@ import withRoot from "../tools/withRoot"
 import React from "react"
 import {Typography} from "@material-ui/core"
 import {unstable_Box as Box} from "@material-ui/core/Box"
-import Layout from "../components/Layout"
+import {Layout} from "../components"
 
 const NotFoundPage = () => (
   <Layout title="Not Found">
-    <Box>
+    <Box className="content">
       <Typography variant="h1">Not Found</Typography>
       <Typography paragraph>
         You just hit a route that doesn&#39;t exist...
