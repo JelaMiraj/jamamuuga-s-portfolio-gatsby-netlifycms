@@ -66,7 +66,7 @@ class Contact extends Component {
       <Layout>
         <Box component="section">
           <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
-            <Box>
+            <Box className="content">
               <Typography variant="h1">File Upload</Typography>
               {/* FIXME: Make sure this is the right component. was originally a <form></form> */}
               <Form
