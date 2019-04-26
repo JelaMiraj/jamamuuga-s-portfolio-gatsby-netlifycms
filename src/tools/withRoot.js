@@ -1,12 +1,8 @@
 // See https://github.com/mui-org/material-ui/tree/master/examples/gatsby
-// eslint-disable-next-line
-import {install, ThemeProvider} from "@material-ui/styles"
-
-install()
-
-// eslint-disable-next-line
+import "./installMuiStyles"
 import React, {Component} from "react"
-import {JssProvider} from "react-jss/lib"
+import {StylesProvider, ThemeProvider} from "@material-ui/styles"
+// import {JssProvider} from "react-jss/lib"
 import {Hidden} from "@material-ui/core"
 import getPageContext from "./getPageContext"
 import GlobalStyle from "../styles/global-style"
@@ -28,19 +24,19 @@ function withRoot(InnerComponent) {
 
     render() {
       return (
-        <JssProvider generateClassName={this.muiPageContext.generateClassName}>
+        <StylesProvider
+          generateClassName={this.muiPageContext.generateClassName}
+          sheetsManager={this.muiPageContext.sheetsManager}
+        >
           {/* Material UI's ThemeProvider makes the theme available down the React tree thanks to React context. */}
-          <ThemeProvider
-            theme={this.muiPageContext.theme}
-            sheetsManager={this.muiPageContext.sheetsManager}
-          >
+          <ThemeProvider theme={this.muiPageContext.theme}>
             {/* CssBaseline kickstarts an elegant, consistent, and simple baseline to build upon. Currently loaded from custom GlobalStyle component. */}
             <GlobalStyle />
             <Hidden implementation="css">
               <InnerComponent {...this.props} />
             </Hidden>
           </ThemeProvider>
-        </JssProvider>
+        </StylesProvider>
       )
     }
   }
