@@ -103,7 +103,7 @@ BlogPost.propTypes = {
 
 const BlogPostWrapped = withRoot(BlogPost)
 
-const PageQuery = graphql`
+const blogPostPageQuery = graphql`
   query BlogPostByID($id: String!) {
     markdownRemark(id: {eq: $id}) {
       id
@@ -119,4 +119,4 @@ const PageQuery = graphql`
 `
 
 export default BlogPostWrapped
-export {BlogPostWrapped as BlogPost, BlogPostTemplate, PageQuery}
+export {BlogPostWrapped as BlogPost, BlogPostTemplate, blogPostPageQuery}
