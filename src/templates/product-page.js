@@ -11,7 +11,7 @@ import {
   Card,
   Features,
   Layout,
-  PreviewCompatibleImage,
+  PreviewCompatibleImage as Image,
   Pricing,
   Testimonials,
 } from "../components"
@@ -102,7 +102,7 @@ const ProductPageTemplate = ({
                         component="article"
                         className="tile is-child"
                       >
-                        <PreviewCompatibleImage imageInfo={main.image1} />
+                        <Image imageInfo={main.image1} />
                       </CardContent>
                     </Card>
                     <Card className="tile is-parent">
@@ -110,13 +110,13 @@ const ProductPageTemplate = ({
                         component="article"
                         className="tile is-child"
                       >
-                        <PreviewCompatibleImage imageInfo={main.image2} />
+                        <Image imageInfo={main.image2} />
                       </CardContent>
                     </Card>
                   </Card>
                   <Card className="tile is-parent">
                     <CardContent component="article" className="tile is-child">
-                      <PreviewCompatibleImage imageInfo={main.image3} />
+                      <Image imageInfo={main.image3} />
                     </CardContent>
                   </Card>
                 </Card>
