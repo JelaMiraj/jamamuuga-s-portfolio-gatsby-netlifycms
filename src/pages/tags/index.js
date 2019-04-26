@@ -64,7 +64,7 @@ const TagsPage = ({
   </Layout>
 )
 
-const TagPageQuery = graphql`
+const tagPageQuery = graphql`
   query TagsQuery {
     site {
       siteMetadata {
@@ -83,4 +83,4 @@ const TagPageQuery = graphql`
 const TagsPageWrapped = withRoot(TagsPage)
 
 export default TagsPageWrapped
-export {TagsPageWrapped as Index, TagPageQuery}
+export {TagsPageWrapped as Index, tagPageQuery}
