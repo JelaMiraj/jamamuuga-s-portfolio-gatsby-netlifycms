@@ -19,12 +19,12 @@ const Team = ({data}) => {
     <Page title="Meet the Team">
       <SEO title="Meet the Team" />
       <Typography paragraph>
-        We are here to help! Let us know what we can do. And we're of course
+        We are here to help! Let us know what we can do. And we&#39;re of course
         always interested to find new recruits to join our amazing team. We are
-        here to help! Let us know what we can do. And we're of course always
+        here to help! Let us know what we can do. And we&#39;re of course always
         interested to find new recruits to join our amazing team. We are here to
-        help! Let us know what we can do. And we're of course always interested
-        to find new recruits to join our amazing team.
+        help! Let us know what we can do. And we&#39;re of course always
+        interested to find new recruits to join our amazing team.
       </Typography>
 
       <GridList cellHeight={500} cols={3}>
