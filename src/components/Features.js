@@ -2,8 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import {CardContent, Grid, Paper, Typography} from "@material-ui/core"
 import {unstable_Box as Box} from "@material-ui/core/Box"
-import Card from "./Card"
-import PreviewCompatibleImage from "./PreviewCompatibleImage"
+import {Card, PreviewCompatibleImage as Image} from "."
 
 const FeatureGrid = ({gridItems}) => (
   <Grid container wrap="wrap">
@@ -13,7 +12,7 @@ const FeatureGrid = ({gridItems}) => (
           <CardContent>
             <Typography component="div" paragraph align="center">
               <Box width="240px" display="inline-block">
-                <PreviewCompatibleImage imageInfo={item} />
+                <Image imageInfo={item} />
               </Box>
             </Typography>
           </CardContent>
