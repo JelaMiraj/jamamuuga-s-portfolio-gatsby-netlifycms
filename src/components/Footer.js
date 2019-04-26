@@ -2,7 +2,8 @@ import React from "react"
 import {StaticQuery, graphql} from "gatsby"
 import {Divider, Hidden, Typography} from "@material-ui/core"
 import {unstable_Box as Box} from "@material-ui/core/Box"
-import Link from "./Link"
+import {withStyles} from "@material-ui/styles"
+import {Link} from "."
 
 const Footer = props => {
   const {
