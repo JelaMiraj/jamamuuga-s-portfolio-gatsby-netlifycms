@@ -64,10 +64,11 @@ const Helmet = props => (
   />
 )
 
-Helmet.propTypes = {
-  // eslint-disable-next-line
-  theme: PropTypes.object,
-}
+// Helmet.propTypes = {
+//   // children: PropTypes.node,
+//   // eslint-disable-next-line
+//   // theme: PropTypes.object,
+// }
 
 Helmet.defaultProps = {
   lang: "en",
