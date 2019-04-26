@@ -6,7 +6,14 @@ import {
   CardContent,
   CardHeader,
 } from "@material-ui/core"
+import {withStyles} from "@material-ui/styles"
 // TODO: Only use custom Card everywhere.
+
+const styles = {
+  cardActions: {
+    float: "right",
+  },
+}
 
 const Card = ({children, title, subheader, avatar, action, style = {}}) => (
   <InnerCard style={style}>
@@ -16,9 +23,11 @@ const Card = ({children, title, subheader, avatar, action, style = {}}) => (
       subheader={subheader || null}
     />
     <CardContent>{children}</CardContent>
-    <CardActions style={{float: "right"}}>{action}</CardActions>
+    <CardActions className={classes.cardActions}>{action}</CardActions>
   </InnerCard>
 )
 
-export default Card
-export {Card}
+const CardStyled = withStyles(styles)(InnerCard)
+
+export default CardStyled
+export {CardStyled as Card}
