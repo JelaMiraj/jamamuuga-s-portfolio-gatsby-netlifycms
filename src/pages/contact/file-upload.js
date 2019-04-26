@@ -6,14 +6,15 @@ import React, {Component} from "react"
 import {
   Button,
   // Container,
-  Form,
   FormControl,
+  FormControlLabel,
   FormGroup,
   FormLabel,
   Hidden,
   Icon,
   Input,
   InputLabel,
+  TextField,
   Typography,
 } from "@material-ui/core"
 import {unstable_Box as Box} from "@material-ui/core/Box"
@@ -25,9 +26,9 @@ import {Layout} from "../../components"
 function encode(data) {
   const formData = new FormData()
 
-  for (const key of Object.keys(data)) {
-    formData.append(key, data[key])
-  }
+  Object.entries(data).forEach(([key, value]) => {
+    formData.append(key, value)
+  })
 
   return formData
 }
