@@ -58,4 +58,4 @@ const FooterQuery = props => (
 )
 
 export default FooterQuery
-export {FooterQuery}
+export {FooterQuery as Footer}
