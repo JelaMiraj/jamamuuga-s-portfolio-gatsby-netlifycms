@@ -1,5 +1,5 @@
 import React from "react"
-import {withPrefix, Link} from "gatsby"
+import {withPrefix} from "gatsby"
 import {
   CardContent,
   CardMedia,
@@ -10,7 +10,8 @@ import {
 } from "@material-ui/core"
 import SwipeableViews from "react-swipeable-views"
 import {autoPlay} from "react-swipeable-views-utils"
-import Card from "./Card"
+import withStyles from "@material-ui/styles/withStyles"
+import {Card, Link} from "."
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews)
 
