@@ -5,18 +5,37 @@ import {unstable_Box as Box} from "@material-ui/core/Box"
 import {withStyles} from "@material-ui/styles"
 import {Link} from "."
 
-const Footer = props => {
-  const {
-    title,
-    contact: {email, phone},
-  } = props.data.site.siteMetadata
+const styles = theme => ({
+  divider: {
+    marginTop: theme.spacing.unit * 6,
+    marginBottom: theme.spacing.unit * 3,
+  },
+  footer: {
+    marginBottom: theme.spacing.unit * 3,
+    whiteSpace: 'nowrap',
+  }
+})
+
+// FIXME: Many levels of indirection is a code smell & needs to be seperated into abstractions.
+const Footer = withStyles(styles)(props => {
+const {
+    classes,
+    data: {
+      site: {
+        siteMetadata: {
+          title,
+          contact: { email, phone },
+        },
+      },
+    },
+  } = props
 
   return (
     <>
-      <Divider style={{marginTop: "48px", marginBottom: "24px"}} />
+      <Divider className={classes.divider} />
       <Box
         component="footer"
-        style={{marginBottom: "24px", whiteSpace: "nowrap"}}
+        className={classes.footer
         id="footer"
       >
         <Box component="span">
@@ -36,7 +55,7 @@ const Footer = props => {
       </Box>
     </>
   )
-}
+})
 
 const FooterQuery = props => (
   <StaticQuery
@@ -56,6 +75,10 @@ const FooterQuery = props => (
     render={data => <Footer data={data} />}
   />
 )
+
+// TODO: Convert this into one of the right abstractions for this concept.
+// TODO: Make sure this doesn't not get used and break styles because FooterQuery is the one being exported as default.
+// const FooterStyled = withStyles(styles)(Footer)
 
 export default FooterQuery
 export {FooterQuery as Footer}
