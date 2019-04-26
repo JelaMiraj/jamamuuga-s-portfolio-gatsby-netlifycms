@@ -27,18 +27,13 @@ const styles = theme => ({
   },
 })
 
-const HomeFeatures = props => (
-  <Grid
-    spacing={24}
-    container
-    justify="center"
-    className={props.classes.featureGrid}
-  >
+const HomeFeatures = ({classes}) => (
+  <Grid spacing={24} container justify="center" className={classes.featureGrid}>
     <Grid item md={6}>
       <Chip
-        className={props.classes.featureChipRight}
+        className={classes.featureChipRight}
         avatar={
-          <Avatar className={props.classes.avi}>
+          <Avatar className={classes.avi}>
             <Robot />
           </Avatar>
         }
@@ -47,9 +42,9 @@ const HomeFeatures = props => (
     </Grid>
     <Grid item md={6}>
       <Chip
-        className={props.classes.featureChip}
+        className={classes.featureChip}
         avatar={
-          <Avatar className={props.classes.avi}>
+          <Avatar className={classes.avi}>
             <Robot />
           </Avatar>
         }
