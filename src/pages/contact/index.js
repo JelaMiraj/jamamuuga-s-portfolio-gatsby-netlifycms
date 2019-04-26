@@ -60,7 +60,8 @@ class Index extends Component {
           <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
             <Box className="content">
               <Typography variant="h1">Contact</Typography>
-              <Form
+              {/* TODO: Migrate to any appropriate Material UI Component */}
+              <form
                 name="contact"
                 method="post"
                 action="/contact/thanks/"
@@ -126,7 +127,7 @@ class Index extends Component {
                     <Icon>send</Icon>
                   </Button>
                 </FormGroup>
-              </Form>
+              </form>
             </Box>
           </Box>
         </Box>
