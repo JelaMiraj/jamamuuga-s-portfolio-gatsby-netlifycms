@@ -14,7 +14,7 @@ const AboutPageTemplate = ({title, content, contentComponent}) => {
   const PageContent = contentComponent || Content
 
   return (
-    <Box component="section" className="section--gradient">
+    <Box component="section" className="section section--gradient">
       <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
         <Grid container>
           <Grid item xs={10} className="is-offset-1">
