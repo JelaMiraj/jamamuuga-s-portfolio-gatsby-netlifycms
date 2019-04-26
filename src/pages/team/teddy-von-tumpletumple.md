@@ -1,4 +1,5 @@
 ---
+templateKey: "team"
 path: "/team/teddy-von-tumpletumple"
 title: "Teddy von TumpleTumple"
 date: 2018-11-19T10:47:58+10:00

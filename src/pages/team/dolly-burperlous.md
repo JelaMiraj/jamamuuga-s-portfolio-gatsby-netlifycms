@@ -1,4 +1,5 @@
 ---
+templateKey: "team"
 path: "/team/dolly-burperlous"
 title: "Dolly Burperlous"
 date: 2018-11-19T10:47:58+10:00
