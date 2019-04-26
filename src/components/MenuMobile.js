@@ -1,13 +1,20 @@
-import React from "react"
+import React, {Component} from "react"
 import {StaticQuery, graphql} from "gatsby"
 import {ClickAwayListener, IconButton, Menu, MenuItem} from "@material-ui/core"
+import {withStyles} from "@material-ui/styles"
 import {DotsVertical} from "mdi-material-ui"
 import Link from "./Link"
 import LinkExternal from "./LinkExternal"
 // import logo from "../img/logo.svg"
 // TODO: Switch to 3rd party automated event handling as suggested in Material UI Menu docs.
 
-class MenuMobile extends React.Component {
+const styles = {
+  dotsVerticalIcon: {
+    color: "#efefef",
+  },
+}
+
+class MenuMobile extends Component {
   state = {
     anchorEl: null,
   }
@@ -23,12 +30,20 @@ class MenuMobile extends React.Component {
   render() {
     const {anchorEl} = this.state
 
-    const {menuLinks} = this.props.data.site.siteMetadata
+    // const {menuLinks} = this.props.data.site.siteMetadata
+    const {
+      classes,
+      data: {
+        site: {
+          siteMetadata: {menuLinks},
+        },
+      },
+    } = this.props
 
     return (
       <>
         <IconButton onClick={this.handleOpen}>
-          <DotsVertical style={{color: "#efefef"}} />
+          <DotsVertical className={classes.dotsVerticalIcon} />
         </IconButton>
         <ClickAwayListener onClickAway={this.handleClose}>
           <Menu
@@ -54,6 +69,8 @@ class MenuMobile extends React.Component {
   }
 }
 
+const StyledMenuMobile = withStyles(styles)(MenuMobile)
+
 const MenuMobileQuery = props => (
   <StaticQuery
     query={graphql`
@@ -68,7 +85,7 @@ const MenuMobileQuery = props => (
         }
       }
     `}
-    render={data => <MenuMobile active={props.active} data={data} />}
+    render={data => <StyledMenuMobile active={props.active} data={data} />}
   />
 )
 
