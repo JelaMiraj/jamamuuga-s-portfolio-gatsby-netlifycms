@@ -3,11 +3,10 @@ import PropTypes from "prop-types"
 import {ScrollingProvider} from "react-scroll-section"
 import {Grid, Typography} from "@material-ui/core"
 import {unstable_Box as Box} from "@material-ui/core/Box"
-import Footer from "./Footer"
-import Header from "./Header"
-import Helmet from "./Helmet"
-// import Navbar from "./Navbar"
-// import {FooterHugeNew as Footer} from "./FooterHugeNew"
+import {Footer, Header, Helmet} from "."
+// import {Navbar} from "."
+// import {FooterHugeNew as Footer} from "."
+// TODO: Maybe this Box based div like wrapper should be Container equivalent instead.
 
 const Layout = props => (
   <>
