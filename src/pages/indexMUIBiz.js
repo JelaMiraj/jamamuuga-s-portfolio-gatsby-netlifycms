@@ -15,8 +15,8 @@ const styles = theme => ({
   },
 })
 
-const Home = props => {
-  const products = props.data.allMarkdownRemark.edges
+const Home = ({classes, data}) => {
+  const products = data.allMarkdownRemark.edges
 
   return (
     <Page title="Gatsby Material UI Business Starter">
@@ -39,7 +39,7 @@ const Home = props => {
           <Button
             variant="contained"
             color="secondary"
-            className={props.classes.root}
+            className={classes.root}
             component={Link}
             to="/products"
           >
