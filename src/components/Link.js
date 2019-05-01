@@ -1,6 +1,6 @@
 // See https://github.com/mui-org/material-ui/tree/next/examples/gatsby-next
 import React from "react"
-import MuiLink from "@material-ui/core/Link"
+import {Link as MuiLink} from "@material-ui/core"
 import {Link as GatsbyLink} from "gatsby"
 
 function Link(props) {
@@ -8,3 +8,4 @@ function Link(props) {
 }
 
 export default Link
+export {Link}

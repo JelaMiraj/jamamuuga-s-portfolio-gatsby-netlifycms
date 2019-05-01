@@ -1,10 +1,19 @@
+// eslint-disable-next-line
+import withRoot from "../../tools/withRoot"
+// eslint-disable-next-line
 import React from "react"
+import {
+  // Container,
+  Grid,
+  List,
+  ListItem,
+  ListItemText,
+  Typography,
+} from "@material-ui/core"
+import {unstable_Box as Box} from "@material-ui/core/Box"
 import {kebabCase} from "lodash"
-import Helmet from "react-helmet"
-// import {Link, graphql} from "gatsby"
 import {graphql} from "gatsby"
-import Layout from "../../components/Layout"
-import Link from "../../components/Link"
+import {Helmet, Layout, Link} from "../../components"
 
 const TagsPage = ({
   data: {
@@ -15,34 +24,47 @@ const TagsPage = ({
   },
 }) => (
   <Layout>
-    <section className="section">
+    <Box component="section">
       <Helmet title={`Tags | ${title}`} />
-      <div className="container content">
-        <div className="columns">
-          <div
-            className="column is-10 is-offset-1"
+      <Box
+        px={[2, 3, 4]}
+        mx="auto"
+        maxWidth={1280}
+        className="container"
+        justify="center"
+      >
+        <Grid container>
+          <Grid
+            item
+            xs={10}
+            className="is-offset-1"
             style={{marginBottom: "6rem"}}
           >
-            <h1 className="title is-size-2 is-bold-light">Tags</h1>
-            <ul className="taglist">
+            <Typography
+              variant="h1"
+              fontSize="fontSize2"
+              fontWeight="fontWeightSemiBold"
+              className="title"
+            >
+              Tags
+            </Typography>
+            <List className="taglist">
               {group.map(tag => (
-                <li key={tag.fieldValue}>
+                <ListItem key={tag.fieldValue}>
                   <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
                     {tag.fieldValue} ({tag.totalCount})
                   </Link>
-                </li>
+                </ListItem>
               ))}
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+            </List>
+          </Grid>
+        </Grid>
+      </Box>
+    </Box>
   </Layout>
 )
 
-export default TagsPage
-
-export const tagPageQuery = graphql`
+const tagPageQuery = graphql`
   query TagsQuery {
     site {
       siteMetadata {
@@ -57,3 +79,8 @@ export const tagPageQuery = graphql`
     }
   }
 `
+
+const TagsPageWrapped = withRoot(TagsPage)
+
+export default TagsPageWrapped
+export {TagsPageWrapped as Index, tagPageQuery}

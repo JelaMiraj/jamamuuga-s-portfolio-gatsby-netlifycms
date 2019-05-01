@@ -1,10 +1,14 @@
-// Setup base Material-UI theme
+// Setup custom Material-UI theme
+// eslint-disable-next-line rule
+import {install} from "@material-ui/styles"
+
+install()
+
+// eslint-disable-next-line rule
+import React from "react"
 import {createMuiTheme} from "@material-ui/core/styles"
-import purple from "@material-ui/core/colors/purple"
-import green from "@material-ui/core/colors/green"
-import red from "@material-ui/core/colors/red"
-import grey from "@material-ui/core/colors/grey"
-// TODO: Update this Material UI Them from v1 to v3 & v4 compatible.
+import {green, grey, purple, red} from "@material-ui/core/colors"
+// TODO: Update this Material UI Theme from v1 to v3 & v4 compatible.
 
 const headlineFont = `Merriweather, Georgia, serif`
 const bodyFont = `"Open Sans", Roboto, "Helvetica Neue", Arial, sans-serif`
@@ -22,6 +26,13 @@ const theme = createMuiTheme({
     fontFamily: bodyFont,
     // fontSize: 14, // default
     // color: grey[500],
+    fontSize1: "3rem",
+    fontSize2: "2.5rem",
+    fontSize3: "2rem",
+    fontSize4: "1.5rem",
+    fontSize5: "1.25rem",
+    fontSize6: "1rem",
+    fontSize7: "0.75rem",
     fontWeightThin: 100,
     fontWeightExtraLight: 200,
     fontWeightLight: 300,
@@ -67,3 +78,4 @@ const theme = createMuiTheme({
 })
 
 export default theme
+export {theme}

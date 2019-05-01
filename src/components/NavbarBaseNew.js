@@ -1,9 +1,13 @@
-import React from "react"
-import {Link} from "gatsby"
-import github from "../img/github-icon.svg"
+import React, {Component} from "react"
+import {Button, IconButton} from "@material-ui/core"
+// import {Container} from "@material-ui/core"
+import {unstable_Box as Box} from "@material-ui/core/Box"
+import {GithubCircle} from "mdi-material-ui"
+import {Link, LinkExternal, PreviewCompatibleImage as Image} from "."
 import logo from "../img/logo.svg"
 
-const Navbar = class extends React.Component {
+class Navbar extends Component {
+  // TODO: Use Babel Plugin Proposal Class Properties instead of constructor.
   constructor(props) {
     super(props)
     this.state = {
@@ -39,10 +43,10 @@ const Navbar = class extends React.Component {
         role="navigation"
         aria-label="main-navigation"
       >
-        <div className="container">
+        <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{width: "88px"}} />
+              <Image src={logo} alt="Kaldi" style={{width: "88px"}} />
             </Link>
             {/* Hamburger menu */}
             <div
@@ -77,22 +81,26 @@ const Navbar = class extends React.Component {
               </Link>
             </div>
             <div className="navbar-end has-text-centered">
-              <a
+              <LinkExternal
                 className="navbar-item"
                 href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
-                target="_blank"
-                rel="noopener noreferrer"
               >
+                {/*
                 <span className="icon">
                   <img src={github} alt="Github" />
                 </span>
-              </a>
+              */}
+                <IconButton className="icon" style={{color: "#fff"}}>
+                  <GithubCircle />
+                </IconButton>
+              </LinkExternal>
             </div>
           </div>
-        </div>
+        </Box>
       </nav>
     )
   }
 }
 
 export default Navbar
+export {Navbar as NavbarBaseNew}

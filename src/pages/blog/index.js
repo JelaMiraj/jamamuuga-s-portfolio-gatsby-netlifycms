@@ -1,44 +1,45 @@
-import React from "react"
-import {withStyles} from "@material-ui/core/styles"
-import Layout from "../../components/Layout"
-import BlogRoll from "../../components/BlogRoll"
-import mytheme from "../../styles/themes/theme"
-import withRoot from "../../utils/withRoot"
+// eslint-disable-next-line
+import withRoot from "../../tools/withRoot"
+// eslint-disable-next-line
+import React, {Component} from "react"
+import {Typography} from "@material-ui/core"
+// import {Container} from "@material-ui/core"
+import {unstable_Box as Box} from "@material-ui/core/Box"
+import {BlogRoll, Layout} from "../../components"
 
-class BlogIndexPage extends React.Component {
-  render() {
-    return (
-      <Layout>
-        <section className="section">
-          <div className="container">
-            <div className="content">
-              <div
-                className="full-width-image-container margin-top-0"
-                style={{
-                  backgroundImage: `url("/img/blog-index.jpg")`,
-                }}
-              >
-                <h1
-                  className="has-text-weight-bold is-size-1"
-                  style={{
-                    boxShadow: "0.5rem 0 0 #f40, -0.5rem 0 0 #f40",
-                    backgroundColor: "#f40",
-                    color: "white",
-                    padding: "1rem",
-                  }}
-                >
-                  Latest Stories
-                </h1>
-              </div>
-            </div>
-            <BlogRoll />
-          </div>
-        </section>
-      </Layout>
-    )
-  }
-}
+const BlogIndexPage = () => (
+  <Layout>
+    <Box
+      className="full-width-image-container margin-top-0"
+      style={{
+        backgroundImage: `url('/img/blog-index.jpg')`,
+      }}
+    >
+      <Typography
+        variant="h1"
+        fontWeight="fontWeightBold"
+        fontSize="fontSize1"
+        style={{
+          boxShadow: "0.5rem 0 0 #f40, -0.5rem 0 0 #f40",
+          backgroundColor: "#f40",
+          color: "white",
+          padding: "1rem",
+        }}
+      >
+        Latest Stories
+      </Typography>
+    </Box>
+    <Box component="section" className="section">
+      <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
+        <Box className="content">
+          <BlogRoll />
+        </Box>
+      </Box>
+    </Box>
+  </Layout>
+)
 
-// FIXME: Somehow, trying to use withStyles this way fails
-// export default withRoot(withStyles(mytheme)(BlogIndexPage))
-export default withRoot(BlogIndexPage)
+const BlogIndexPageWrapped = withRoot(BlogIndexPage)
+
+export default BlogIndexPageWrapped
+export {BlogIndexPageWrapped as Blog}

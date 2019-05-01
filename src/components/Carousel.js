@@ -1,16 +1,25 @@
 import React from "react"
-import {withPrefix, Link} from "gatsby"
-import MobileStepper from "@material-ui/core/MobileStepper"
-import Paper from "@material-ui/core/Paper"
-import Typography from "@material-ui/core/Typography"
-import Button from "@material-ui/core/Button"
+import {withPrefix} from "gatsby"
+import {
+  CardContent,
+  CardMedia,
+  Button,
+  MobileStepper,
+  Paper,
+  Typography,
+} from "@material-ui/core"
 import SwipeableViews from "react-swipeable-views"
-import Card from "@material-ui/core/Card"
-import CardContent from "@material-ui/core/CardContent"
-import CardMedia from "@material-ui/core/CardMedia"
 import {autoPlay} from "react-swipeable-views-utils"
+import withStyles from "@material-ui/styles/withStyles"
+import {Card, Link} from "."
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews)
+
+const styles = {
+  cardMedia: {
+    height: "200px",
+  },
+}
 
 class Carousel extends React.Component {
   state = {
@@ -36,7 +45,7 @@ class Carousel extends React.Component {
   render() {
     const {activeStep} = this.state
 
-    const {items} = this.props
+    const {classes, items} = this.props
 
     const maxSteps = items.length
 
@@ -67,11 +76,11 @@ class Carousel extends React.Component {
                   {Math.abs(activeStep - index) <= 2 ? (
                     <Card>
                       <CardMedia
-                        style={{height: "200px"}}
+                        className={classes.cardMedia}
                         image={withPrefix(publicURL)}
                       />
                       <CardContent>
-                        <Typography variant="h5" gutterBottom>
+                        <Typography gutterBottom variant="h5" component="h2">
                           <Link to={path}>{title}</Link>
                         </Typography>
                         <Typography paragraph>{excerpt}</Typography>
@@ -111,4 +120,7 @@ class Carousel extends React.Component {
   }
 }
 
-export default Carousel
+const CarouselStyled = withStyles(styles)(Carousel)
+
+export default CarouselStyled
+export {CarouselStyled as Carousel}

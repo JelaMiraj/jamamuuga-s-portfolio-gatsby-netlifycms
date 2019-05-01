@@ -1,8 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Chip from "@material-ui/core/Chip"
-import Grid from "@material-ui/core/Grid"
-import Avatar from "@material-ui/core/Avatar"
+import {Avatar, Chip, Grid} from "@material-ui/core"
 import {withStyles} from "@material-ui/core/styles"
 import {Robot} from "mdi-material-ui"
 
@@ -29,37 +27,24 @@ const styles = theme => ({
   },
 })
 
-const HomeFeatures = props => (
-  <Grid
-    spacing={24}
-    container
-    direction="row"
-    alignItems="flex-start"
-    justify="center"
-    className={props.classes.featureGrid}
-  >
-    <Grid item xs={6}>
+const HomeFeatures = ({classes}) => (
+  <Grid spacing={24} container justify="center" className={classes.featureGrid}>
+    <Grid item md={6}>
       <Chip
-        className={props.classes.featureChipRight}
+        className={classes.featureChipRight}
         avatar={
-          <Avatar
-            className={props.classes.avi}
-            style={{backgroundColor: props.theme.palette.secondary.light}}
-          >
+          <Avatar className={classes.avi}>
             <Robot />
           </Avatar>
         }
         label="Uses Material UI"
       />
     </Grid>
-    <Grid item xs={6}>
+    <Grid item md={6}>
       <Chip
-        className={props.classes.featureChip}
+        className={classes.featureChip}
         avatar={
-          <Avatar
-            className={props.classes.avi}
-            style={{backgroundColor: props.theme.palette.secondary.light}}
-          >
+          <Avatar className={classes.avi}>
             <Robot />
           </Avatar>
         }
@@ -71,7 +56,9 @@ const HomeFeatures = props => (
 
 HomeFeatures.propTypes = {
   classes: PropTypes.object.isRequired,
-  theme: PropTypes.object.isRequired,
 }
 
-export default withStyles(styles, {withTheme: true})(HomeFeatures)
+const HomeFeaturesStyled = withStyles(styles)(HomeFeatures)
+
+export default HomeFeaturesStyled
+export {HomeFeaturesStyled as HomeFeatures}

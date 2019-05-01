@@ -1,14 +1,8 @@
 import React from "react"
 import ReactHelmet from "react-helmet"
 import {StaticQuery, graphql} from "gatsby"
-// import {withTheme} from "styled-components"
-// import {withStyles} from "@material-ui/core/styles"
 import PropTypes from "prop-types"
 
-// TODO: Actually port the header over.
-// TODO: Make sure this still works with Material UI's style system instead of styled-components directly.
-// const Helmet = ({Theme = {}})
-// const Helmet = ({theme = {}}) => (
 const Helmet = props => (
   <StaticQuery
     query={detailsQuery}
@@ -70,10 +64,11 @@ const Helmet = props => (
   />
 )
 
-Helmet.propTypes = {
-  // eslint-disable-next-line
-  theme: PropTypes.object,
-}
+// Helmet.propTypes = {
+//   // children: PropTypes.node,
+//   // eslint-disable-next-line
+//   // theme: PropTypes.object,
+// }
 
 Helmet.defaultProps = {
   lang: "en",
@@ -92,5 +87,5 @@ const detailsQuery = graphql`
   }
 `
 
-// export default withStyles(Helmet)
 export default Helmet
+export {Helmet}

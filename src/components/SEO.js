@@ -29,8 +29,6 @@ SEO.defaultProps = {
   keywords: [],
 }
 
-export default SEO
-
 const detailsQuery = graphql`
   query DefaultSEOQuery {
     site {
@@ -40,3 +38,6 @@ const detailsQuery = graphql`
     }
   }
 `
+
+export default SEO
+export {SEO}
