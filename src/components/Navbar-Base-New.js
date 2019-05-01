@@ -1,13 +1,9 @@
-import React, {Component} from "react"
-import {Button, IconButton} from "@material-ui/core"
-// import {Container} from "@material-ui/core"
-import {unstable_Box as Box} from "@material-ui/core/Box"
-import {GithubCircle} from "mdi-material-ui"
-import {Link, LinkExternal, PreviewCompatibleImage as Image} from "."
+import React from "react"
+import {Link} from "gatsby"
+import github from "../img/github-icon.svg"
 import logo from "../img/logo.svg"
 
-class Navbar extends Component {
-  // TODO: Use Babel Plugin Proposal Class Properties instead of constructor.
+const Navbar = class extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -43,10 +39,10 @@ class Navbar extends Component {
         role="navigation"
         aria-label="main-navigation"
       >
-        <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
+        <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <Image src={logo} alt="Kaldi" style={{width: "88px"}} />
+              <img src={logo} alt="Kaldi" style={{width: "88px"}} />
             </Link>
             {/* Hamburger menu */}
             <div
@@ -81,26 +77,22 @@ class Navbar extends Component {
               </Link>
             </div>
             <div className="navbar-end has-text-centered">
-              <LinkExternal
+              <a
                 className="navbar-item"
                 href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                {/*
                 <span className="icon">
                   <img src={github} alt="Github" />
                 </span>
-              */}
-                <IconButton className="icon" style={{color: "#fff"}}>
-                  <GithubCircle />
-                </IconButton>
-              </LinkExternal>
+              </a>
             </div>
           </div>
-        </Box>
+        </div>
       </nav>
     )
   }
 }
 
 export default Navbar
-export {Navbar as NavbarBaseNew}

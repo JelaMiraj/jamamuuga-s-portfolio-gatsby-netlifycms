@@ -1,26 +1,9 @@
-// eslint-disable-next-line
-import withRoot from "../../tools/withRoot"
-// eslint-disable-next-line
-import React, {Component} from "react"
-// TODO: Use the meta component TextField for applicable input & forms.
-import {
-  Button,
-  // Container,
-  FormControl,
-  FormControlLabel,
-  FormGroup,
-  FormLabel,
-  Hidden,
-  Icon,
-  Input,
-  InputLabel,
-  OutlinedInput,
-  TextField,
-  Typography,
-} from "@material-ui/core"
-import {unstable_Box as Box} from "@material-ui/core/Box"
+import React from "react"
+// TODO: Make sure this works well with Material UI Link & our combined custom Link.
+// import {navigate} from "gatsby-link"
 import {navigate} from "gatsby"
-import {Layout} from "../../components"
+import Layout from "../../components/Layout"
+import withRoot from "../../utils/withRoot"
 
 function encode(data) {
   return Object.keys(data)
@@ -28,7 +11,7 @@ function encode(data) {
     .join("&")
 }
 
-class Index extends Component {
+class Index extends React.Component {
   constructor(props) {
     super(props)
     this.state = {isValidated: false}
@@ -56,11 +39,10 @@ class Index extends Component {
   render() {
     return (
       <Layout>
-        <Box component="section">
-          <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
-            <Box className="content">
-              <Typography variant="h1">Contact</Typography>
-              {/* TODO: Migrate to any appropriate Material UI Component */}
+        <section className="section">
+          <div className="container">
+            <div className="content">
+              <h1>Contact</h1>
               <form
                 name="contact"
                 method="post"
@@ -70,19 +52,19 @@ class Index extends Component {
                 onSubmit={this.handleSubmit}
               >
                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-                <Input type="hidden" name="form-name" value="contact" />
-                <Hidden>
-                  <InputLabel>
+                <input type="hidden" name="form-name" value="contact" />
+                <div hidden>
+                  <label>
                     Don’t fill this out:{" "}
-                    <Input name="bot-field" onChange={this.handleChange} />
-                  </InputLabel>
-                </Hidden>
-                <FormGroup className="field">
-                  <InputLabel className="label" htmlFor="name">
+                    <input name="bot-field" onChange={this.handleChange} />
+                  </label>
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor="name">
                     Your name
-                  </InputLabel>
-                  <FormControl>
-                    <Input
+                  </label>
+                  <div className="control">
+                    <input
                       className="input"
                       type="text"
                       name="name"
@@ -90,14 +72,14 @@ class Index extends Component {
                       id="name"
                       required
                     />
-                  </FormControl>
-                </FormGroup>
-                <FormGroup className="field">
-                  <InputLabel className="label" htmlFor="email">
+                  </div>
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor="email">
                     Email
-                  </InputLabel>
-                  <FormControl>
-                    <Input
+                  </label>
+                  <div className="control">
+                    <input
                       className="input"
                       type="email"
                       name="email"
@@ -105,38 +87,34 @@ class Index extends Component {
                       id="email"
                       required
                     />
-                  </FormControl>
-                </FormGroup>
-                <FormGroup className="field">
-                  <InputLabel className="label" htmlFor="message">
+                  </div>
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor="message">
                     Message
-                  </InputLabel>
-                  <FormControl>
-                    <OutlinedInput
+                  </label>
+                  <div className="control">
+                    <textarea
                       className="textarea"
                       name="message"
                       onChange={this.handleChange}
                       id="message"
                       required
                     />
-                  </FormControl>
-                </FormGroup>
-                <FormGroup className="field">
-                  <Button variant="contained" className="is-link" type="submit">
+                  </div>
+                </div>
+                <div className="field">
+                  <button className="button is-link" type="submit">
                     Send
-                    <Icon>send</Icon>
-                  </Button>
-                </FormGroup>
+                  </button>
+                </div>
               </form>
-            </Box>
-          </Box>
-        </Box>
+            </div>
+          </div>
+        </section>
       </Layout>
     )
   }
 }
 
-const IndexWrapped = withRoot(Index)
-
-export default IndexWrapped
-export {IndexWrapped as Index}
+export default withRoot(Index)

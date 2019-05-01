@@ -1,10 +1,8 @@
 import React from "react"
-import {Typography} from "@material-ui/core"
-import {unstable_Box as Box} from "@material-ui/core/Box"
-import {PreviewCompatibleImage as Image} from "./PreviewCompatibleImage"
+// import {Link} from "gatsby"
+import Typography from "@material-ui/core"
 import Link from "./Link"
 // Intended for use in site or blog index page.
-// TODO: Maybe use Card if not wrapped by caller.
 
 const PostItem = ({post, logged}) => {
   const cntBorder = {
@@ -17,14 +15,14 @@ const PostItem = ({post, logged}) => {
   }
 
   return (
-    <Box className="content" style={cntBorder} key={post.id}>
+    <div className="content" style={cntBorder} key={post.id}>
       {/** @2018/12/17 */}
-      <Image
+      <img
         src={post.frontmatter.image.childImageSharp.fluid.src}
         className="thumbnail-img"
         alt="post thumbnail"
       />
-      <Box className="post-item">
+      <div className="post-item">
         <Typography paragraph variant="h4" className="post-title">
           <Link
             className={logged ? "has-text-primary" : "has-text-unlogin"}
@@ -32,13 +30,11 @@ const PostItem = ({post, logged}) => {
           >
             {post.frontmatter.title}
           </Link>
-          <Typography component="span"> &bull; </Typography>
-          <Typography component="small">{post.frontmatter.date}</Typography>
+          <span> &bull; </span>
+          <small>{post.frontmatter.date}</small>
         </Typography>
         <Typography paragraph>
-          <Typography component="span" className="post-excerpt">
-            {post.excerpt}
-          </Typography>
+          <span className="post-excerpt">{post.excerpt}</span>
           <Link
             className={logged ? "button is-small orange" : "button is-small"}
             to={logged ? post.fields.slug : "/login"}
@@ -46,10 +42,9 @@ const PostItem = ({post, logged}) => {
             Keep Reading →
           </Link>
         </Typography>
-      </Box>
-    </Box>
+      </div>
+    </div>
   )
 }
 
 export default PostItem
-export {PostItem}

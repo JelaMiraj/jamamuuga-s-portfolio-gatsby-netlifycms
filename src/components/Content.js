@@ -4,15 +4,21 @@ import {unstable_Box as Box} from "@material-ui/core/Box"
 import ContentStyle from "../styles/components/content-style"
 
 // TODO: Should we use an alternative to dangerouslySetInnerHTML?
-const HTMLContent = ({content, className}) => (
+export const HTMLContent = ({content, className}) => (
   <ContentStyle>
-    <Box className={className} dangerouslySetInnerHTML={{__html: content}} />
+    <Box
+      component="div"
+      className={className}
+      dangerouslySetInnerHTML={{__html: content}}
+    />
   </ContentStyle>
 )
 
 const Content = ({content, className}) => (
   <ContentStyle>
-    <Box className={className}>{content}</Box>
+    <Box component="div" className={className}>
+      {content}
+    </Box>
   </ContentStyle>
 )
 
@@ -24,4 +30,3 @@ Content.propTypes = {
 HTMLContent.propTypes = Content.propTypes
 
 export default Content
-export {Content, HTMLContent}

@@ -1,42 +1,19 @@
 import React from "react"
-import PropTypes from "prop-types"
-// import {Card} from "mdi-material-ui"
-import {
-  Card as InnerCard,
-  CardActions,
-  CardContent,
-  CardHeader,
-} from "@material-ui/core"
-import {withStyles} from "@material-ui/styles"
-// TODO: Only use custom Card everywhere.
+import Card from "@material-ui/core/Card"
+import CardHeader from "@material-ui/core/CardHeader"
+import CardContent from "@material-ui/core/CardContent"
+import CardActions from "@material-ui/core/CardActions"
 
-const styles = {
-  cardActions: {
-    float: "right",
-  },
-}
-
-const Card = ({children, title, subheader, avatar, action, style = {}}) => (
-  <InnerCard style={style}>
+const MyCard = ({children, title, subheader, avatar, action, style = {}}) => (
+  <Card style={style}>
     <CardHeader
       avatar={avatar || null}
       title={title}
       subheader={subheader || null}
     />
     <CardContent>{children}</CardContent>
-    <CardActions className={classes.cardActions}>{action}</CardActions>
-  </InnerCard>
+    <CardActions style={{float: "right"}}>{action}</CardActions>
+  </Card>
 )
 
-// Card.PropTypes = {
-//   children: PropTypes.node.isRequired,
-//   title: PropTypes.string,
-//   // subheader: PropTypes.any,
-//   // avatar: PropTypes.any,
-//   // action: PropTYpes.any,
-// }
-
-const CardStyled = withStyles(styles)(Card)
-
-export default CardStyled
-export {CardStyled as Card}
+export default MyCard

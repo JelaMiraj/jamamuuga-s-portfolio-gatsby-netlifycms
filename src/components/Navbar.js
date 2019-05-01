@@ -1,14 +1,16 @@
-import React, {Component} from "react"
-import {Button, IconButton} from "@material-ui/core"
-// import {Container} from "@material-ui"
-import {unstable_Box as Box} from "@material-ui/core/Box"
+import React from "react"
+import Button from "@material-ui/core/Button"
+import IconButton from "@material-ui/core/IconButton"
 import {GithubCircle} from "mdi-material-ui"
-import {Link, LinkExternal, PreviewCompatibleImage as Image} from "."
+// import {Link} from "gatsby"
+import Link from "./Link"
+// import {Heading, Image, Text} from "rebass"
+import github from "../img/github-icon.svg"
 import logo from "../img/logo.svg"
 // TODO: Convert to extending or using Material UI's Navbar.
 import NavbarStyle from "../styles/components/navbar-style"
 
-class Navbar extends Component {
+class Navbar extends React.Component {
   componentDidMount() {
     // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(
@@ -40,10 +42,10 @@ class Navbar extends Component {
           role="navigation"
           aria-label="main-navigation"
         >
-          <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
+          <div className="container">
             <div className="navbar-brand">
               <Link to="/" className="navbar-item" title="Logo">
-                <Image src={logo} alt="Kaldi" style={{width: "88px"}} />
+                <img src={logo} alt="Kaldi" style={{width: "88px"}} />
               </Link>
               {/* Hamburger menu */}
               <div className="navbar-burger burger" data-target="navMenu">
@@ -68,9 +70,11 @@ class Navbar extends Component {
                 </Link>
               </div>
               <div className="navbar-end has-text-centered">
-                <LinkExternal
+                <a
                   className="navbar-item"
                   href="https://github.com/Jamamuuga/jamamuuga-s-portfolio-gatsby-netlifycms"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {/*
                     <span className="icon">
@@ -80,10 +84,10 @@ class Navbar extends Component {
                   <IconButton className="icon" style={{color: "#fff"}}>
                     <GithubCircle />
                   </IconButton>
-                </LinkExternal>
+                </a>
               </div>
             </div>
-          </Box>
+          </div>
         </nav>
       </NavbarStyle>
     )
@@ -91,4 +95,3 @@ class Navbar extends Component {
 }
 
 export default Navbar
-export {Navbar}

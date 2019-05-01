@@ -1,16 +1,17 @@
 import React from "react"
 import {StaticQuery, graphql} from "gatsby"
-import {
-  AppBar,
-  Avatar,
-  Chip,
-  Grid,
-  Hidden,
-  Toolbar,
-  Typography,
-} from "@material-ui/core"
+// import { Link } from "gatsby";
+import Hidden from "@material-ui/core/Hidden"
+import Grid from "@material-ui/core/Grid"
+import Toolbar from "@material-ui/core/Toolbar"
+import AppBar from "@material-ui/core/AppBar"
+import Typography from "@material-ui/core/Typography"
+import Chip from "@material-ui/core/Chip"
+import Avatar from "@material-ui/core/Avatar"
 import {MaterialUi} from "mdi-material-ui"
-import {Link, Menu, MenuMobile} from "."
+import MenuMobile from "./MenuMobile"
+import Menu from "./Menu"
+import Link from "./Link"
 
 const Header = props => (
   <AppBar id="appBar">
@@ -20,11 +21,9 @@ const Header = props => (
           <Chip
             id="logo"
             variant="outlined"
-            avatar={
-              <Avatar id="logoIcon">
-                <MaterialUi />
-              </Avatar>
-            }
+            avatar=<Avatar id="logoIcon">
+              <MaterialUi />
+            </Avatar>
             label={
               <Link to="/">
                 {props.data.site.siteMetadata.title.toUpperCase()}
@@ -34,7 +33,11 @@ const Header = props => (
         </Grid>
         <Grid item>
           <Hidden smDown>
-            <Typography component="span" variant="caption">
+            <Typography
+              style={{color: "#efefef", flex: 1}}
+              variant="caption"
+              component="span"
+            >
               <Menu />
             </Typography>
           </Hidden>
@@ -48,7 +51,7 @@ const Header = props => (
   </AppBar>
 )
 
-const HeaderQuery = props => (
+export default props => (
   <StaticQuery
     query={graphql`
       query {
@@ -66,6 +69,3 @@ const HeaderQuery = props => (
     render={data => <Header data={data} />}
   />
 )
-
-export default HeaderQuery
-export {HeaderQuery as Header}

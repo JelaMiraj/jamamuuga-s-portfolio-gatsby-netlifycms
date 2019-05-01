@@ -6,7 +6,7 @@
 
 const kaldiRed = "#D64000"
 const kaldiRedInvert = "white"
-const colors = {
+export const colors = {
   background: "white",
   backgroundDark: "#f0e6f6",
   bodyColor: "#333",
@@ -29,4 +29,3 @@ const colors = {
 }
 
 export default colors
-export {colors}

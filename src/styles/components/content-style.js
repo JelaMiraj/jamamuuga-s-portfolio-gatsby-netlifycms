@@ -22,4 +22,3 @@ const ContentStyle = styled.div`
 `
 
 export default ContentStyle
-export {ContentStyle}

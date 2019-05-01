@@ -1,20 +1,15 @@
-import React, {Component} from "react"
+import React from "react"
+// import {StaticQuery, Link, graphql} from "gatsby"
 import {StaticQuery, graphql} from "gatsby"
-import {ClickAwayListener, IconButton, Menu, MenuItem} from "@material-ui/core"
-import {withStyles} from "@material-ui/styles"
+import Menu from "@material-ui/core/Menu"
+import MenuItem from "@material-ui/core/MenuItem"
+import ClickAwayListener from "@material-ui/core/ClickAwayListener"
+import IconButton from "@material-ui/core/IconButton"
 import {DotsVertical} from "mdi-material-ui"
 import Link from "./Link"
-import LinkExternal from "./LinkExternal"
 // import logo from "../img/logo.svg"
-// TODO: Switch to 3rd party automated event handling as suggested in Material UI Menu docs.
 
-const styles = {
-  dotsVerticalIcon: {
-    color: "#efefef",
-  },
-}
-
-class MenuMobile extends Component {
+class MenuMobile extends React.Component {
   state = {
     anchorEl: null,
   }
@@ -30,20 +25,12 @@ class MenuMobile extends Component {
   render() {
     const {anchorEl} = this.state
 
-    // const {menuLinks} = this.props.data.site.siteMetadata
-    const {
-      classes,
-      data: {
-        site: {
-          siteMetadata: {menuLinks},
-        },
-      },
-    } = this.props
+    const {menuLinks} = this.props.data.site.siteMetadata
 
     return (
       <>
         <IconButton onClick={this.handleOpen}>
-          <DotsVertical className={classes.dotsVerticalIcon} />
+          <DotsVertical style={{color: "#efefef"}} />
         </IconButton>
         <ClickAwayListener onClickAway={this.handleClose}>
           <Menu
@@ -56,12 +43,14 @@ class MenuMobile extends Component {
                 <MenuItem>{link.name}</MenuItem>
               </Link>
             ))}
-            <LinkExternal
+            <a
               className="navbar-item"
               href="https://github.com/Jamamuuga/jamamuuga-s-portfolio-gatsby-netlifycms"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <MenuItem>Github Repository</MenuItem>
-            </LinkExternal>
+            </a>
           </Menu>
         </ClickAwayListener>
       </>
@@ -69,9 +58,7 @@ class MenuMobile extends Component {
   }
 }
 
-const StyledMenuMobile = withStyles(styles)(MenuMobile)
-
-const MenuMobileQuery = props => (
+export default props => (
   <StaticQuery
     query={graphql`
       query MenuMobileQuery {
@@ -85,9 +72,6 @@ const MenuMobileQuery = props => (
         }
       }
     `}
-    render={data => <StyledMenuMobile active={props.active} data={data} />}
+    render={data => <MenuMobile active={props.active} data={data} />}
   />
 )
-
-export default MenuMobileQuery
-export {MenuMobileQuery as MenuMobile}

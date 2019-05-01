@@ -1,53 +1,45 @@
-import React, {Component} from "react"
-// import PropTypes from "prop-types"
-import {Grid, Typography} from "@material-ui/core"
-import withStyles from "@material-ui/styles/withStyles"
+import React from "react"
+// import {Grid, Row, Col} from "react-flexbox-grid"
+import PropTypes from "prop-types"
+// import {MUIThemeProvider, withStyles} from "@material-ui/core/styles"
+import Paper from "@material-ui/core/Paper"
+import Grid from "@material-ui/core/Grid"
+import Typography from "@material-ui/core/Typography"
 import Header from "./Header"
 import Footer from "./Footer"
-// import "../css/style.styl"
+// import theme from "../styles/themes/theme"
+// TODO: Using MUIThemeProvider & styling here might not be the right thing with Material UI. Probably best to add theme only from the page level & not this layout level.
+// FIXME: using MUIThemeProvider here breaks things...
 
-const styles = {
-  container: {
-    marginTop: 94,
-  },
-  contentBox: {
-    maxWidth: "calc(1136px - 60px)",
-    width: "calc(100% - 60px)",
-  },
-  title: {
-    textAlign: "center",
-  },
-}
-
-class Page extends Component {
+class Page extends React.Component {
   render() {
-    const {classes, title, children} = this.props
+    const {title, children} = this.props
 
     return (
       <>
+        {/* <MUIThemeProvider theme={theme}> */}
         <Header />
-        <Grid
-          className={classes.container}
-          container
-          direction="row"
-          justify="center"
-        >
-          <Grid className={classes.contentBox} item>
-            {title ? (
-              <Typography className={classes.title} variant="h2" gutterBottom>
-                {title}
-              </Typography>
-            ) : null}
-            {children}
-            <Footer />
+        <Grid container style={{marginTop: "94px"}}>
+          <Grid item container direction="row">
+            <Grid item container direction="column" xs={12}>
+              {title ? (
+                <Typography
+                  variant="h2"
+                  gutterBottom
+                  style={{textAlign: "center"}}
+                >
+                  {title}
+                </Typography>
+              ) : null}
+              {children}
+              <Footer />
+            </Grid>
           </Grid>
         </Grid>
+        {/* </MUIThemeProvider> */}
       </>
     )
   }
 }
 
-const PageWrapped = withStyles(styles)(Page)
-
-export default PageWrapped
-export {PageWrapped as Page}
+export default Page

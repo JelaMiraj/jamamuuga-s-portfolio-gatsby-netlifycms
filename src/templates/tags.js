@@ -1,30 +1,20 @@
-// eslint-disable-next-line
-import withRoot from "../tools/withRoot"
-// eslint-disable-next-line
-import React, {Component} from "react"
+import React from "react"
+import Helmet from "react-helmet"
+// import {Link, graphql} from "gatsby"
 import {graphql} from "gatsby"
-import {
-  // Container,
-  Grid,
-  List,
-  ListItem,
-  ListItemText,
-  Typography,
-} from "@material-ui/core"
-import {unstable_Box as Box} from "@material-ui/core/Box"
-import {Helmet, Layout, Link} from "../components"
+import Layout from "../components/Layout"
+import Link from "../components/Link"
+import withRoot from "../utils/withRoot"
 
-class TagRoute extends Component {
+class TagRoute extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges
     const postLinks = posts.map(post => (
-      <ListItem key={post.node.fields.slug}>
+      <li key={post.node.fields.slug}>
         <Link to={post.node.fields.slug}>
-          <Typography variant="h2" fontSize="fontSize2">
-            {post.node.frontmatter.title}
-          </Typography>
+          <h2 className="is-size-2">{post.node.frontmatter.title}</h2>
         </Link>
-      </ListItem>
+      </li>
     ))
     const {tag} = this.props.pageContext
     const {title} = this.props.data.site.siteMetadata
@@ -35,40 +25,31 @@ class TagRoute extends Component {
 
     return (
       <Layout>
-        <Box component="section">
+        <section className="section">
           <Helmet title={`${tag} | ${title}`} />
-          <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
-            <Grid container>
-              <Grid
-                item
-                xs={10}
-                className="is-offset-1"
+          <div className="container content">
+            <div className="columns">
+              <div
+                className="column is-10 is-offset-1"
                 style={{marginBottom: "6rem"}}
               >
-                <Typography
-                  variant="h3"
-                  fontSize="fontSize4"
-                  fontWeight="fontWeightSemiBold"
-                  className="title"
-                >
-                  {tagHeader}
-                </Typography>
-                <List className="taglist">{postLinks}</List>
-                <Typography paragraph>
+                <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
+                <ul className="taglist">{postLinks}</ul>
+                <p>
                   <Link to="/tags/">Browse all tags</Link>
-                </Typography>
-              </Grid>
-            </Grid>
-          </Box>
-        </Box>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </Layout>
     )
   }
 }
 
-const TagRouteWrapped = withRoot(TagRoute)
+export default withRoot(TagRoute)
 
-const TagPageQuery = graphql`
+export const tagPageQuery = graphql`
   query TagPage($tag: String) {
     site {
       siteMetadata {
@@ -94,6 +75,3 @@ const TagPageQuery = graphql`
     }
   }
 `
-
-export default TagRouteWrapped
-export {TagRouteWrapped as Tags, TagPageQuery}

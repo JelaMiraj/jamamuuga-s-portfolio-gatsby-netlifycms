@@ -1,40 +1,20 @@
 import React from "react"
 import {StaticQuery, graphql} from "gatsby"
-import {Divider, Hidden, Typography} from "@material-ui/core"
-import {unstable_Box as Box} from "@material-ui/core/Box"
-import {withStyles} from "@material-ui/styles"
-import {Link} from "."
+import Divider from "@material-ui/core/Divider"
+import Typography from "@material-ui/core/Typography"
+import Hidden from "@material-ui/core/Hidden"
 
-const styles = theme => ({
-  divider: {
-    marginTop: theme.spacing.unit * 6,
-    marginBottom: theme.spacing.unit * 3,
-  },
-  footer: {
-    marginBottom: theme.spacing.unit * 3,
-    whiteSpace: "nowrap",
-  },
-})
-
-// FIXME: Many levels of indirection is a code smell & needs to be seperated into abstractions.
-const Footer = withStyles(styles)(props => {
+const Footer = props => {
   const {
-    classes,
-    data: {
-      site: {
-        siteMetadata: {
-          title,
-          contact: {email, phone},
-        },
-      },
-    },
-  } = props
+    title,
+    contact: {email, phone},
+  } = props.data.site.siteMetadata
 
   return (
     <>
-      <Divider className={classes.divider} />
-      <Box component="footer" className={classes.footer} id="footer">
-        <Box component="span">
+      <Divider style={{marginTop: "48px", marginBottom: "24px"}} />
+      <footer style={{marginBottom: "24px", whiteSpace: "nowrap"}} id="footer">
+        <span>
           <Typography variant="caption" component="span">
             ©{new Date().getFullYear()} {title}{" "}
             <Hidden only={["xs", "sm"]}>–</Hidden>
@@ -45,15 +25,15 @@ const Footer = withStyles(styles)(props => {
             <br />
             &middot;
             <br />
-            By <Link to="/">Jason Cady</Link>
+            By <a href="https://jasoncadydesigns.netlify.com">Jason Cady</a>
           </Typography>
-        </Box>
-      </Box>
+        </span>
+      </footer>
     </>
   )
-})
+}
 
-const footerQuery = props => (
+export default props => (
   <StaticQuery
     query={graphql`
       query {
@@ -71,10 +51,3 @@ const footerQuery = props => (
     render={data => <Footer data={data} />}
   />
 )
-
-// TODO: Convert this into one of the right abstractions for this concept.
-// TODO: Make sure this doesn't not get used and break styles because FooterQuery is the one being exported as default.
-// const FooterStyled = withStyles(styles)(Footer)
-
-export default footerQuery
-export {footerQuery as Footer}

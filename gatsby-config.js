@@ -26,10 +26,6 @@ module.exports = {
         name: "Blog",
         link: "/blog",
       },
-      // {
-      //   name: "Team",
-      //   link: "/team",
-      // },
       {
         name: "Contact",
         link: "/contact",
@@ -47,13 +43,6 @@ module.exports = {
         // modules: ["query-string"],
       },
     },
-    // {
-    //   resolve: "gatsby-plugin-root-import",
-    //   options: {
-    //     src: path.join(__dirname, 'src'),
-    //   },
-    // },
-    // "gatsby-plugin-transform-imports",
     {
       resolve: "gatsby-plugin-styled-components",
       options: {
@@ -190,7 +179,6 @@ module.exports = {
     app.use(
       "/.netlify/functions/",
       proxy({
-        // TODO: Find out if using SSL is viable for Netlify functions.
         target: "http://localhost:9000",
         pathRewrite: {
           "/.netlify/functions/": "",

@@ -1,23 +1,18 @@
-// // eslint-disable-next-line
-// import withRoot from "../tools/withRoot"
-// // eslint-disable-next-line
-// import React, {Component} from "react"
+// import React from "react"
 // import PropTypes from "prop-types"
-// import {Typography} from "@material-ui/core"
-// // import {Container} from "@material-ui/core"
-// import {unstable_Box as Box} from "@material-ui/core/Box"
 // import {graphql} from "gatsby"
 // // include NLI ...to init first
 // import netlifyIdentity from "netlify-identity-widget"
-// // import BasePage from "../base/BasePage"
-// import {Page, Pagination, PostItem} from "../components"
+// import BasePage from "../base/BasePage"
+// import Pagination from "../components/Pagination"
+// import PostItem from "../components/PostItem"
 // import {isLoggedIn} from "../services/auth"
 
 // // Init netlify identity ...
 // // FIX for build test @2018/12/13
-// if (typeof netlifyIdentity.init !== `undefined`) {netlifyIdentity.init()}
+// if (typeof netlifyIdentity.init !== `undefined`) netlifyIdentity.init()
 
-// export default class IndexPage extends Component {
+// export default class IndexPage extends React.Component {
 //   render() {
 //     const posts = this.props.data.allMarkdownRemark.edges
 //     const {currentPage, numPages} = this.props.pageContext
@@ -25,20 +20,20 @@
 
 //     return (
 //       <BasePage location={{pathname: "/"}}>
-//         <Box component="section">
-//           <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
-//             <Box className="hide-in-mobile">
-//               <Typography variant="h1" fontWeight="fontWeightBold" fontSize="fontSize3">Latest</Typography>
-//             </Box>
+//         <section className="section">
+//           <div className="container">
+//             <div className="content hide-in-mobile">
+//               <h1 className="has-text-weight-bold is-size-3">Latest</h1>
+//             </div>
 //             {posts.map(({node: post}) => (
 //               <PostItem post={post} logged={logged} />
 //             ))}
-//           </Box>
-//         </Box>
+//           </div>
+//         </section>
 //         {/** pagination row */}
-//         <Box component="section">
+//         <section className="section">
 //           <Pagination currentPage={currentPage} numPages={numPages} />
-//         </Box>
+//         </section>
 //       </BasePage>
 //     )
 //   }

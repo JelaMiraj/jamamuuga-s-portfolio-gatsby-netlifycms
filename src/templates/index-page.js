@@ -1,23 +1,19 @@
-// eslint-disable-next-line
-import withRoot from "../tools/withRoot"
-// eslint-disable-next-line
 import React from "react"
 import PropTypes from "prop-types"
+// import {Link, graphql} from "gatsby"
 import {graphql} from "gatsby"
-import {
-  // Container,
-  CardAction,
-  CardContent,
-  Button,
-  Grid,
-  Paper,
-  Typography,
-} from "@material-ui/core"
+import {Card, Button, Grid, Paper, Typography} from "@material-ui/core"
 import {unstable_Box as Box} from "@material-ui/core/Box"
-import {BlogRoll, Card, Features, Layout, Link} from "../components"
-// TODO: Convert everything to use Babel-Blade (DRY GraphQL).
-// TODO: Findout if a React fragment should be used instead of Box or div as wrapper component in template.
-// TODO: Maybe this Box based div like wrapper should be Container equivalent instead.
+// import {withStyles} from "@material-ui/core/styles"
+import {makeStyles, withStyles} from "@material-ui/core/styles"
+import Layout from "../components/Layout"
+import Link from "../components/Link"
+import Features from "../components/Features"
+import BlogRoll from "../components/BlogRoll"
+import mytheme from "../styles/themes/theme"
+import withRoot from "../utils/withRoot"
+
+// TODO: Convert everything to use React Hooks (Don't forget the ESLint plugin), Babel-Blade (DRY GraphQL), & functions not classes.
 
 // FIXME: complains about object is not a function....
 // const useStyles = makeStyles(theme => ({
@@ -26,7 +22,7 @@ import {BlogRoll, Card, Features, Layout, Link} from "../components"
 //     paddingTop: theme.spacing(20),
 //   },
 // }))
-const IndexPageTemplate = ({
+export const IndexPageTemplate = ({
   image,
   title,
   heading,
@@ -34,129 +30,130 @@ const IndexPageTemplate = ({
   mainpitch,
   description,
   intro,
-}) => (
-  <Box>
-    <Box
-      className="full-width-image margin-top-0"
-      style={{
-        backgroundImage: `url(${
-          image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
-      }}
-    >
-      <Box
+  main,
+}) => {
+  // TODO: Delete this null variable when eslint stops reformatting and breaking this function.
+  const noOp = null
+  /* const classes = useStyles() */
+
+  return (
+    <div>
+      <div
+        className="full-width-image margin-top-0"
         style={{
-          display: "flex",
-          height: "150px",
-          lineHeight: "1",
-          justifyContent: "space-around",
-          alignItems: "left",
-          flexDirection: "column",
+          backgroundImage: `url(${
+            image.childImageSharp ? image.childImageSharp.fluid.src : image
+          })`,
+          backgroundPosition: `top left`,
+          backgroundAttachment: `fixed`,
         }}
       >
-        <Typography
-          variant="h1"
-          fontWeight="fontWeightBold"
-          className="is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+        <div
           style={{
-            boxShadow:
-              "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-            backgroundColor: "rgb(255, 68, 0)",
-            color: "white",
+            display: "flex",
+            height: "150px",
             lineHeight: "1",
-            padding: "0.25em",
+            justifyContent: "space-around",
+            alignItems: "left",
+            flexDirection: "column",
           }}
         >
-          {title}
-        </Typography>
-        <Typography
-          variant="h3"
-          fontWeight="fontWeightBold"
-          className="is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            boxShadow:
-              "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-            backgroundColor: "rgb(255, 68, 0)",
-            color: "white",
-            lineHeight: "1",
-            padding: "0.25em",
-          }}
-        >
-          {subheading}
-        </Typography>
-      </Box>
-    </Box>
-    <Box component="section" className="section section--gradient">
-      <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
-        <Box component="section" className="section">
-          <Grid container>
-            <Grid item xs={10} className="is-offset-1">
-              <Box className="content">
+          <Typography
+            variant="h1"
+            className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+            style={{
+              boxShadow:
+                "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
+              backgroundColor: "rgb(255, 68, 0)",
+              color: "white",
+              lineHeight: "1",
+              padding: "0.25em",
+            }}
+          >
+            {title}
+          </Typography>
+          <Typography
+            variant="h3"
+            className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+            style={{
+              boxShadow:
+                "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
+              backgroundColor: "rgb(255, 68, 0)",
+              color: "white",
+              lineHeight: "1",
+              padding: "0.25em",
+            }}
+          >
+            {subheading}
+          </Typography>
+        </div>
+      </div>
+      <section className="section section--gradient">
+        <Box className="container">
+          <section className="section">
+            <Grid container className="columns">
+              <Grid item xs={10} className="column is-10 is-offset-1">
                 <Box className="content">
-                  <Card className="tile">
-                    <CardContent>
+                  <Box className="content">
+                    <Paper className="tile">
                       <Typography variant="h1" className="title">
                         {mainpitch.title}
                       </Typography>
-                    </CardContent>
-                  </Card>
-                  <Card className="tile">
-                    <CardContent>
+                    </Paper>
+                    <Paper className="tile">
                       <Typography variant="h3" className="subtitle">
                         {mainpitch.description}
                       </Typography>
-                    </CardContent>
-                  </Card>
-                </Box>
-                <Grid container>
-                  <Grid item xs={12}>
+                    </Paper>
+                  </Box>
+                  <Grid container className="columns">
+                    <Grid item xs={12} className="column">
+                      <Typography
+                        variant="h3"
+                        fontWeight="fontWeightSemiBold"
+                        className="is-size-2"
+                      >
+                        {heading}
+                      </Typography>
+                      <Typography paragraph>{description}</Typography>
+                    </Grid>
+                  </Grid>
+                  <Features gridItems={intro.blurbs} />
+                  <Grid container className="columns">
+                    <Grid item xs={12} align="center" className="column">
+                      <Button variant="contained" color="secondary">
+                        <Link className="btn" to="/products">
+                          See all products
+                        </Link>
+                      </Button>
+                    </Grid>
+                  </Grid>
+                  <Grid item xs={12} className="column">
                     <Typography
                       variant="h3"
                       fontWeight="fontWeightSemiBold"
-                      fontSize="fontSize2"
+                      className="is-size-2"
                     >
-                      {heading}
+                      Latest stories
                     </Typography>
-                    <Typography paragraph>{description}</Typography>
+                    <BlogRoll />
+                    <Grid item xs={12} align="center" className="column">
+                      <Button variant="contained" color="secondary">
+                        <Link className="btn" to="/blog">
+                          Read more
+                        </Link>
+                      </Button>
+                    </Grid>
                   </Grid>
-                </Grid>
-                <Features gridItems={intro.blurbs} />
-                <Grid container>
-                  <Grid item xs={12} align="center">
-                    <Button variant="contained" color="secondary">
-                      <Link className="btn" to="/products">
-                        See all products
-                      </Link>
-                    </Button>
-                  </Grid>
-                </Grid>
-                <Grid item xs={12}>
-                  <Typography
-                    variant="h3"
-                    fontWeight="fontWeightSemiBold"
-                    fontSize="fontSize2"
-                  >
-                    Latest stories
-                  </Typography>
-                  <BlogRoll />
-                  <Grid item xs={12} align="center">
-                    <Button variant="contained" color="secondary">
-                      <Link className="btn" to="/blog">
-                        Read more
-                      </Link>
-                    </Button>
-                  </Grid>
-                </Grid>
-              </Box>
+                </Box>
+              </Grid>
             </Grid>
-          </Grid>
+          </section>
         </Box>
-      </Box>
-    </Box>
-  </Box>
-)
+      </section>
+    </div>
+  )
+}
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -196,9 +193,11 @@ IndexPage.propTypes = {
   }),
 }
 
-const IndexPageWrapped = withRoot(IndexPage)
+// FIXME: Somehow, trying to use withStyles this way fails
+// export default withRoot(withStyles(mytheme)(IndexPage))
+export default withRoot(IndexPage)
 
-const indexPageQuery = graphql`
+export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
       frontmatter {
@@ -235,6 +234,3 @@ const indexPageQuery = graphql`
     }
   }
 `
-
-export default IndexPageWrapped
-export {IndexPageWrapped as IndexPage, IndexPageTemplate, indexPageQuery}

@@ -1,25 +1,23 @@
 import React from "react"
 import PropTypes from "prop-types"
-import {CardContent, Grid, Paper, Typography} from "@material-ui/core"
+import {Grid, Paper, Typography} from "@material-ui/core"
 import {unstable_Box as Box} from "@material-ui/core/Box"
-import {Card, PreviewCompatibleImage as Image} from "."
+import PreviewCompatibleImage from "./PreviewCompatibleImage"
 
 const FeatureGrid = ({gridItems}) => (
   <Grid container wrap="wrap">
     {gridItems.map(item => (
       <Grid item xs={6} key={item.text}>
-        <Card component="section">
-          <CardContent>
+        <Paper>
+          <section className="section">
             <Typography component="div" paragraph align="center">
               <Box width="240px" display="inline-block">
-                <Image imageInfo={item} />
+                <PreviewCompatibleImage imageInfo={item} />
               </Box>
             </Typography>
-          </CardContent>
-          <CardContent>
             <Typography paragraph>{item.text}</Typography>
-          </CardContent>
-        </Card>
+          </section>
+        </Paper>
       </Grid>
     ))}
   </Grid>
@@ -35,4 +33,3 @@ FeatureGrid.propTypes = {
 }
 
 export default FeatureGrid
-export {FeatureGrid as Features}

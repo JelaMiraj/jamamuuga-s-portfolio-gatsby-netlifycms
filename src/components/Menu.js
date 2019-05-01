@@ -1,49 +1,37 @@
 import React from "react"
+// import {StaticQuery, Link, graphql} from "gatsby"
 import {StaticQuery, graphql} from "gatsby"
-import {Button, IconButton} from "@material-ui/core"
+import Button from "@material-ui/core/Button"
+import IconButton from "@material-ui/core/IconButton"
 import {GithubCircle} from "mdi-material-ui"
-import {withStyles} from "@material-ui/styles"
 import Link from "./Link"
-import LinkExternal from "./LinkExternal"
 // import logo from "../img/logo.svg"
 
-const styles = theme => ({
-  menuButton: {
-    color: theme.palette.primary.contrastText,
-  },
-})
-
-const Menu = withStyles(styles)(props => {
-  // const {menuLinks} = props.data.site.siteMetadata
-  const {
-    classes,
-    data: {
-      site: {
-        siteMetadata: {menuLinks},
-      },
-    },
-  } = props
+const Menu = props => {
+  const {menuLinks} = props.data.site.siteMetadata
 
   return (
     <>
       {menuLinks.map(link => (
         <Link key={link.name} to={link.link}>
-          <Button className={classes.menuButton}>{link.name}</Button>
+          <Button style={{color: "#fff"}}>{link.name}</Button>
         </Link>
       ))}
-      <LinkExternal
+      <a
         className="navbar-item"
         href="https://github.com/Jamamuuga/jamamuuga-s-portfolio-gatsby-netlifycms"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        <IconButton className={classes.menuButton}>
+        <IconButton className="icon" style={{color: "#fff"}}>
           <GithubCircle />
         </IconButton>
-      </LinkExternal>
+      </a>
     </>
   )
-})
+}
 
-const MenuQuery = props => (
+export default props => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -60,6 +48,3 @@ const MenuQuery = props => (
     render={data => <Menu data={data} />}
   />
 )
-
-export default MenuQuery
-export {MenuQuery as Menu}

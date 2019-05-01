@@ -1,31 +1,15 @@
-// eslint-disable-next-line
-import withRoot from "../tools/withRoot"
-// eslint-disable-next-line
-import React from 'react'
+import React from "react"
 import PropTypes from "prop-types"
 import {graphql} from "gatsby"
-import {CardContent, Grid, Paper, Typography} from "@material-ui/core"
-// import {Container} from "@material-ui/core"
-import {unstable_Box as Box} from "@material-ui/core/Box"
-import {
-  Card,
-  Features,
-  Layout,
-  PreviewCompatibleImage as Image,
-  Pricing,
-  Testimonials,
-} from "../components"
-// TODO: Factor out styling into reusable classes.
-// TODO: Apply styling classes to components that don't yet have them.
-// TODO: Either use or make section & content components & use them here.
-// FIXME: Figure out the right way to sort out invalid attribute errors in Material UI component styling attributes.
-// TODO: Factor out hard coded Container as Box component.
-// TODO: Replace hard coded custom Container use with (possibly external wrapped custom) Material UI v4 stable's one.
-// TODO: Convert full-width-image-container to Material UI Image Component with proper attributes set.
-// TODO: Find out if Bulma's content component is actually something like Typography potentially as div.
-// TODO: Perhaps reconsider naming of things because their is an implicit "Template" added meaning to all template components. This means that ProductPageTemplate really means ProductPageTemplateTemplate & ProductPage is what really means ProductPageTemplate. Make sure the "Query" & "Wrapped" versions have the correct base name if you change the names of the template & meta template. Perhaps adopt a different & clearer naming concept that may have been used by other components.
+import {Grid, Paper, Typography} from "@material-ui/core"
+import Layout from "../components/Layout"
+import Features from "../components/Features"
+import Testimonials from "../components/Testimonials"
+import Pricing from "../components/Pricing"
+import PreviewCompatibleImage from "../components/PreviewCompatibleImage"
+import withRoot from "../utils/withRoot"
 
-const ProductPageTemplate = ({
+export const ProductPageTemplate = ({
   image,
   title,
   heading,
@@ -36,91 +20,81 @@ const ProductPageTemplate = ({
   fullImage,
   pricing,
 }) => (
-  <Box className="content">
-    <Box
-      className="full-width-image-container margin-top-0"
-      style={{
-        backgroundImage: `url(${
-          image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-      }}
-    >
-      <Typography
-        variant="h2"
-        fontWeight="fontWeightBold"
-        fontSize="fontSize1"
-        style={{
-          boxShadow: "0.5rem 0 0 #f40, -0.5rem 0 0 #f40",
-          backgroundColor: "#f40",
-          color: "white",
-          padding: "1rem",
-        }}
-      >
-        {title}
-      </Typography>
-    </Box>
-    <Box component="section" className="section section--gradient">
-      <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
-        <Box component="section" className="section">
-          <Grid container>
-            <Grid item xs={7} className="is-offset-1">
-              <Typography
-                variant="h3"
-                fontWeight="fontWeightSemiBold"
-                fontSize="fontSize2"
+  <section className="section section--gradient">
+    <div className="container">
+      <div className="section">
+        <Grid container className="columns">
+          <Grid item xs={10} className="column is-10 is-offset-1">
+            <div className="content">
+              <div
+                className="full-width-image-container margin-top-0"
+                style={{
+                  backgroundImage: `url(${
+                    image.childImageSharp
+                      ? image.childImageSharp.fluid.src
+                      : image
+                  })`,
+                }}
               >
-                {heading}
-              </Typography>
-              <Typography paragraph>{description}</Typography>
-            </Grid>
-          </Grid>
-          <Grid container>
-            <Grid item xs={10} className="is-offset-1">
-              <Features gridItems={intro.blurbs} />
-              <Grid container>
-                <Grid item xs={7}>
+                <Typography
+                  component="h2"
+                  className="has-text-weight-bold is-size-1"
+                  style={{
+                    boxShadow: "0.5rem 0 0 #f40, -0.5rem 0 0 #f40",
+                    backgroundColor: "#f40",
+                    color: "white",
+                    padding: "1rem",
+                  }}
+                >
+                  {title}
+                </Typography>
+              </div>
+              <Grid container className="columns">
+                <Grid item xs={7} className="column is-7">
                   <Typography
-                    variant="h3"
-                    fontWeight="fontWeightSemiBold"
-                    fontSize="fontSize3"
+                    component="h3"
+                    className="has-text-weight-semibold is-size-2"
+                  >
+                    {heading}
+                  </Typography>
+                  <Typography paragraph>{description}</Typography>
+                </Grid>
+              </Grid>
+              <Features gridItems={intro.blurbs} />
+              <Grid container className="columns">
+                <Grid item xs={7} className="column is-7">
+                  <Typography
+                    component="h3"
+                    className="has-text-weight-semibold is-size-3"
                   >
                     {main.heading}
                   </Typography>
                   <Typography paragraph>{main.description}</Typography>
                 </Grid>
               </Grid>
-              <Card className="tile is-ancestor">
-                <Card direction="column" className="tile is-vertical">
-                  <Card className="tile">
-                    <Card
-                      direction="column"
-                      className="tile is-parent is-vertical"
-                    >
-                      <CardContent
-                        component="article"
-                        className="tile is-child"
-                      >
-                        <Image imageInfo={main.image1} />
-                      </CardContent>
-                    </Card>
-                    <Card className="tile is-parent">
-                      <CardContent
-                        component="article"
-                        className="tile is-child"
-                      >
-                        <Image imageInfo={main.image2} />
-                      </CardContent>
-                    </Card>
-                  </Card>
-                  <Card className="tile is-parent">
-                    <CardContent component="article" className="tile is-child">
-                      <Image imageInfo={main.image3} />
-                    </CardContent>
-                  </Card>
-                </Card>
-              </Card>
+              <div className="tile is-ancestor">
+                <div className="tile is-vertical">
+                  <div className="tile">
+                    <div className="tile is-parent is-vertical">
+                      <article className="tile is-child">
+                        <PreviewCompatibleImage imageInfo={main.image1} />
+                      </article>
+                    </div>
+                    <div className="tile is-parent">
+                      <article className="tile is-child">
+                        <PreviewCompatibleImage imageInfo={main.image2} />
+                      </article>
+                    </div>
+                  </div>
+                  <div className="tile is-parent">
+                    <article className="tile is-child">
+                      <PreviewCompatibleImage imageInfo={main.image3} />
+                    </article>
+                  </div>
+                </div>
+              </div>
               <Testimonials testimonials={testimonials} />
-              <Box
+              <div
                 className="full-width-image-container"
                 style={{
                   backgroundImage: `url(${
@@ -132,21 +106,20 @@ const ProductPageTemplate = ({
               />
               <Typography
                 variant="h2"
-                fontWeight="fontWeightSemiBold"
-                fontSize="fontSize2"
+                className="has-text-weight-semibold is-size-2"
               >
                 {pricing.heading}
               </Typography>
-              <Typography paragraph fontSize="fontSize5">
+              <Typography paragraph className="is-size-5">
                 {pricing.description}
               </Typography>
               <Pricing data={pricing.plans} />
-            </Grid>
+            </div>
           </Grid>
-        </Box>
-      </Box>
-    </Box>
-  </Box>
+        </Grid>
+      </div>
+    </div>
+  </section>
 )
 
 ProductPageTemplate.propTypes = {
@@ -201,9 +174,9 @@ ProductPage.propTypes = {
   }),
 }
 
-const ProductPageWrapped = withRoot(ProductPage)
+export default withRoot(ProductPage)
 
-const productPageQuery = graphql`
+export const productPageQuery = graphql`
   query ProductPage($id: String!) {
     markdownRemark(id: {eq: $id}) {
       frontmatter {
@@ -290,10 +263,3 @@ const productPageQuery = graphql`
     }
   }
 `
-
-export default ProductPageWrapped
-export {
-  ProductPageWrapped as ProductPage,
-  productPageQuery,
-  ProductPageTemplate,
-}

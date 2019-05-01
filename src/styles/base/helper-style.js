@@ -3,7 +3,7 @@ import styled from "styled-components"
 // Helper Classes
 // TODO: Maybe separate out into separate classes, files, or at least variables.
 // FIXME: What is the right constructor?
-const HelperStyle = styled.div`
+const helperStyle = styled.div`
   .full-width-image-container {
     width: 100vw;
     height: 400px;
@@ -22,5 +22,4 @@ const HelperStyle = styled.div`
     margin-top: 0 !important;
   }
 `
-export default HelperStyle
-export {HelperStyle}
+export default helperStyle

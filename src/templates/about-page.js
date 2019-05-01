@@ -1,38 +1,34 @@
-// eslint-disable-next-line
-import withRoot from "../tools/withRoot"
-// eslint-disable-next-line
 import React from "react"
 import PropTypes from "prop-types"
 import {graphql} from "gatsby"
-import {Button, Grid, Paper, Typography} from "@material-ui/core"
-// import {Container} from "@material-ui/core"
+import {Card, Button, Grid, Paper, Typography} from "@material-ui/core"
 import {unstable_Box as Box} from "@material-ui/core/Box"
-import {Card, Layout} from "../components"
-import {Content, HTMLContent} from "../components/Content"
+import Layout from "../components/Layout"
+import Content, {HTMLContent} from "../components/Content"
+import withRoot from "../utils/withRoot"
 
-const AboutPageTemplate = ({title, content, contentComponent}) => {
+export const AboutPageTemplate = ({title, content, contentComponent}) => {
   const PageContent = contentComponent || Content
 
   return (
-    <Box component="section" className="section section--gradient">
-      <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
-        <Grid container>
-          <Grid item xs={10} className="is-offset-1">
-            <Box component="section">
+    <section className="section section--gradient">
+      <Box className="container">
+        <Grid className="columns">
+          <Grid item xs={10} className="column is-10 is-offset-1">
+            <section className="section">
               <Typography
-                variant="h2"
+                variant="h4"
                 fontWeight="fontWeightSemiBold"
-                fontSize="fontSize3"
-                className="title"
+                className="title is-size-3 has-text-weight-bold is-bold-light"
               >
                 {title}
               </Typography>
               <PageContent className="content" content={content} />
-            </Box>
+            </section>
           </Grid>
         </Grid>
       </Box>
-    </Box>
+    </section>
   )
 }
 
@@ -60,9 +56,9 @@ AboutPage.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
-const AboutPageWrapped = withRoot(AboutPage)
+export default withRoot(AboutPage)
 
-const aboutPageQuery = graphql`
+export const aboutPageQuery = graphql`
   query AboutPage($id: String!) {
     markdownRemark(id: {eq: $id}) {
       html
@@ -72,6 +68,3 @@ const aboutPageQuery = graphql`
     }
   }
 `
-
-export default AboutPageWrapped
-export {AboutPageWrapped as AboutPage, aboutPageQuery, AboutPageTemplate}

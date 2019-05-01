@@ -1,23 +1,22 @@
 import React from "react"
 import PropTypes from "prop-types"
 import {v4} from "uuid"
-import {CardContent, Grid, Typography} from "@material-ui/core"
-import {unstable_Box as Box} from "@material-ui/core/Box"
-import Card from "./Card"
+import {Grid, Paper, Typography} from "@material-ui/core"
+// TODO: Normalize the component use & hierarchy to best practices so it is less likely to end up hacky.
 
 const Testimonials = ({testimonials}) => (
   <Grid container>
     {testimonials.map(testimonial => (
       <Grid item xs={12} key={v4()}>
-        <Card component="article" key={v4()} className="message">
-          <CardContent>
+        <article key={v4()} className="message">
+          <Paper>
             <Typography className="message-body">
               {testimonial.quote}
               <br />
-              <Typography component="cite"> – {testimonial.author}</Typography>
+              <cite> – {testimonial.author}</cite>
             </Typography>
-          </CardContent>
-        </Card>
+          </Paper>
+        </article>
       </Grid>
     ))}
   </Grid>
@@ -33,4 +32,3 @@ Testimonials.propTypes = {
 }
 
 export default Testimonials
-export {Testimonials}
