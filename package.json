@@ -139,7 +139,7 @@
     "jest-enzyme": "^7.0.2",
     "netlify-cli": "^2.11.14",
     "netlify-lambda": "^1.4.5",
-    "prettier": "^1.16.4",
+    "prettier": "^1.17.0",
     "react-test-renderer": "^16.8.6",
     "regenerator-runtime": "^0.13.2",
     "remark-cli": "^6.0.1",
