@@ -12,7 +12,7 @@ import Card from "../components/Card"
 import Page from "../components/Page"
 import HomeFeatures from "../components/HomeFeatures"
 import Carousel from "../components/Carousel"
-import withRoot from "../utils/withRoot"
+import withRoot from "../tools/withRoot"
 import Link from "../components/Link"
 
 const styles = theme => ({

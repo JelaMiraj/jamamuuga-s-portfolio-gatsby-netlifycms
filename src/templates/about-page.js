@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import {graphql} from "gatsby"
 import Layout from "../components/Layout"
 import Content, {HTMLContent} from "../components/Content"
-import withRoot from "../utils/withRoot"
+import withRoot from "../tools/withRoot"
 
 export const AboutPageTemplate = ({title, content, contentComponent}) => {
   const PageContent = contentComponent || Content

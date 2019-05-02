@@ -3,7 +3,7 @@ import {withStyles} from "@material-ui/core/styles"
 import Layout from "../../components/Layout"
 import BlogRoll from "../../components/BlogRoll"
 import mytheme from "../../styles/themes/theme"
-import withRoot from "../../utils/withRoot"
+import withRoot from "../../tools/withRoot"
 
 class BlogIndexPage extends React.Component {
   render() {
