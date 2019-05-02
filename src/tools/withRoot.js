@@ -1,15 +1,14 @@
 // See https://github.com/mui-org/material-ui/tree/master/examples/gatsby
-import React from "react"
-import {MuiThemeProvider} from "@material-ui/core/styles"
-// import CssBaseline from "@material-ui/core/CssBaseline"
-import JssProvider from "react-jss/lib/JssProvider"
-import Hidden from "@material-ui/core/Hidden"
+import "./installMuiStyles"
+import React, {Component} from "react"
+import {StylesProvider, ThemeProvider} from "@material-ui/styles"
+// import {JssProvider} from "react-jss/lib"
+import {Hidden} from "@material-ui/core"
 import getPageContext from "./getPageContext"
 import GlobalStyle from "../styles/global-style"
-import myTheme from "../styles/themes/theme"
 
-function withRoot(Component) {
-  class WithRoot extends React.Component {
+function withRoot(InnerComponent) {
+  class WithRoot extends Component {
     constructor(props) {
       super(props)
       this.muiPageContext = getPageContext()
@@ -25,24 +24,19 @@ function withRoot(Component) {
 
     render() {
       return (
-        <JssProvider generateClassName={this.muiPageContext.generateClassName}>
-          {/* MuiThemeProvider makes the theme available down the React
-              tree thanks to React context. */}
-          {/* <MuiThemeProvider
-            theme={this.muiPageContext.theme}
-            sheetsManager={this.muiPageContext.sheetsManager}
-          > */}
-          <MuiThemeProvider
-            theme={myTheme}
-            sheetsManager={this.muiPageContext.sheetsManager}
-          >
+        <StylesProvider
+          generateClassName={this.muiPageContext.generateClassName}
+          sheetsManager={this.muiPageContext.sheetsManager}
+        >
+          {/* Material UI's ThemeProvider makes the theme available down the React tree thanks to React context. */}
+          <ThemeProvider theme={this.muiPageContext.theme}>
             {/* CssBaseline kickstarts an elegant, consistent, and simple baseline to build upon. Currently loaded from custom GlobalStyle component. */}
             <GlobalStyle />
             <Hidden implementation="css">
-              <Component {...this.props} />
+              <InnerComponent {...this.props} />
             </Hidden>
-          </MuiThemeProvider>
-        </JssProvider>
+          </ThemeProvider>
+        </StylesProvider>
       )
     }
   }
@@ -51,3 +45,4 @@ function withRoot(Component) {
 }
 
 export default withRoot
+export {withRoot}
