@@ -4689,15 +4689,15 @@ commander@2.17.x:
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.17.1.tgz#bd77ab7de6de94205ceacc72f1716d29f20a77bf"
   integrity sha512-wPMUt6FnH2yzG95SA6mzjQOEKUU3aLaDEmzs1ti+1E9h+CsrZghRlqEM/EJ4KscsQVG8uNN4uVreUeT8+drlgg==
 
-commander@^2.11.0, commander@^2.17.1, commander@^2.19.0, commander@^2.8.1, commander@^2.9.0, commander@~2.19.0:
-  version "2.19.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-2.19.0.tgz#f6198aa84e5b83c46054b94ddedbfed5ee9ff12a"
-  integrity sha512-6tvAOO+D6OENvRAh524Dh9jcfKTYDQAqvqezbCW82xj5X0pSrcpxtvRKHLG0yBY6SD7PSDrJaj+0AiOcKVd1Xg==
-
-commander@^2.3.0:
+commander@^2.11.0, commander@^2.17.1, commander@^2.19.0, commander@^2.3.0, commander@^2.8.1, commander@^2.9.0:
   version "2.20.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.0.tgz#d58bb2b5c1ee8f87b0d340027e9e94e222c5a422"
   integrity sha512-7j2y+40w61zy6YC2iRNpUe/NwhNyoXrYpHMrSunaMG64nRnaf96zO/KMQR4OyN/UnE5KLyEBnKHd4aG3rskjpQ==
+
+commander@~2.19.0:
+  version "2.19.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.19.0.tgz#f6198aa84e5b83c46054b94ddedbfed5ee9ff12a"
+  integrity sha512-6tvAOO+D6OENvRAh524Dh9jcfKTYDQAqvqezbCW82xj5X0pSrcpxtvRKHLG0yBY6SD7PSDrJaj+0AiOcKVd1Xg==
 
 commander@~2.8.1:
   version "2.8.1"
@@ -13091,10 +13091,10 @@ netlify-identity-widget@^1.4.11:
   resolved "https://registry.yarnpkg.com/netlify-identity-widget/-/netlify-identity-widget-1.5.2.tgz#c3bc18e275ebb4e8030bba31dfc38c9f2a540346"
   integrity sha512-A1Pwnk+Bun+Xb0hO8w9g8plrhJah3jNomqWLFnd6GvGQ4jfhUS5jCzh/Cn6uHhuGNnriSUV0lFCKb3VJBsiZeQ==
 
-netlify-lambda@^1.4.3:
-  version "1.4.3"
-  resolved "https://registry.yarnpkg.com/netlify-lambda/-/netlify-lambda-1.4.3.tgz#99f4999e31b54bbab8dd167382a3e2e73f749911"
-  integrity sha512-mxZiSeuAW0K9s41RFr1Fw2ZmX/786pUOx0AJbyEpKamtl+CyviRohj8id+fZEkAZqwCd+HkVxYqCcCjShNBsZQ==
+netlify-lambda@^1.4.7:
+  version "1.4.7"
+  resolved "https://registry.yarnpkg.com/netlify-lambda/-/netlify-lambda-1.4.7.tgz#a03e4a4c6f6f8d27abb7986891b11b4a74d82e82"
+  integrity sha512-tTS1Vm6sDky8lTi6SZgAwrOWz9sLhlwUpoh5Vg3L/Iz6oR03XAdIxXAoSZjbRD2OHhLzATh0LsBpCN1BlFF2ug==
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/plugin-proposal-class-properties" "^7.0.0"
