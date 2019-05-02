@@ -12091,10 +12091,10 @@ markdown-table@^1.1.0:
   resolved "https://registry.yarnpkg.com/markdown-table/-/markdown-table-1.1.2.tgz#c78db948fa879903a41bce522e3b96f801c63786"
   integrity sha512-NcWuJFHDA8V3wkDgR/j4+gZx+YQwstPgfQDV8ndUeWWzta3dnDTBxpVzqS9lkmJAuV5YX35lmyojl6HO5JXAgw==
 
-material-ui-image@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/material-ui-image/-/material-ui-image-3.1.0.tgz#b97385103aa42d9c32a6d46d466521840c2d9381"
-  integrity sha512-kmsSgYl+Oq3X/e8zfNUwA6asojLbCxuQbPZjjGDZezoU7E3f+F/MT1j0C4CPfnWi9RWZixQXLm+hIisASLgJLQ==
+material-ui-image@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/material-ui-image/-/material-ui-image-3.2.0.tgz#557a2838c33a975a223947707736f90439bd47c1"
+  integrity sha512-4eee8BOEXLqAVqj+Vlck7b8+vdlo+8UzuxOGFO3/7w8lnJv7fdy0c6pAXnB5A5rsy3S3JzTKrhzpceN2nPKxLQ==
   dependencies:
     prop-types "^15.5.8"
 
