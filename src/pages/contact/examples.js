@@ -2,7 +2,7 @@ import React from "react"
 // import Link from "gatsby-link"
 import Link from "../../components/Link"
 import Layout from "../../components/Layout"
-import withRoot from "../../utils/withRoot"
+import withRoot from "../../tools/withRoot"
 
 class Index extends React.Component {
   render() {

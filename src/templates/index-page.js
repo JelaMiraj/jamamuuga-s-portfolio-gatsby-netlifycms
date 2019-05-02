@@ -11,7 +11,7 @@ import Link from "../components/Link"
 import Features from "../components/Features"
 import BlogRoll from "../components/BlogRoll"
 import mytheme from "../styles/themes/theme"
-import withRoot from "../utils/withRoot"
+import withRoot from "../tools/withRoot"
 
 // TODO: Convert everything to use React Hooks (Don't forget the ESLint plugin), Babel-Blade (DRY GraphQL), & functions not classes.
 

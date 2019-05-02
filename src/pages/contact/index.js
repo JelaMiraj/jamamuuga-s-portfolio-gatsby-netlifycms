@@ -3,7 +3,7 @@ import React from "react"
 // import {navigate} from "gatsby-link"
 import {navigate} from "gatsby"
 import Layout from "../../components/Layout"
-import withRoot from "../../utils/withRoot"
+import withRoot from "../../tools/withRoot"
 
 function encode(data) {
   return Object.keys(data)
