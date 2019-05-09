@@ -2,7 +2,6 @@
 import "./installMuiStyles"
 import React, {Component} from "react"
 import {StylesProvider, ThemeProvider} from "@material-ui/styles"
-// import {JssProvider} from "react-jss/lib"
 import {Hidden} from "@material-ui/core"
 import getPageContext from "./getPageContext"
 import GlobalStyle from "../styles/global-style"
