@@ -7,4 +7,4 @@ function LinkExternal(props) {
 }
 
 export default LinkExternal
-export {LinkExternal}
+// export {LinkExternal}
