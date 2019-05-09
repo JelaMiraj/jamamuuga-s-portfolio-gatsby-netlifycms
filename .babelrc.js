@@ -3,14 +3,16 @@ module.exports = {
   plugins: [
     "@babel/plugin-proposal-class-properties",
     "@babel/plugin-syntax-dynamic-import",
-    [
-      "named-params",
-      {
-        options: true,
-        caching: true,
-      },
-    ],
+    // [
+    //   "named-params",
+    //   {
+    //     options: true,
+    //     caching: true,
+    //   },
+    // ],
     // "add-module-exports",
-    "styled-components",
+    // "styled-components",
+    // "babel-plugin-add-module-exports",
+    "babel-plugin-styled-components",
   ],
 }
