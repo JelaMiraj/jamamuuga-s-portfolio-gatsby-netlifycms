@@ -1,42 +1,42 @@
-import React from "react"
-import Helmet from "react-helmet"
-import {StaticQuery, graphql} from "gatsby"
+// import React from "react"
+// import Helmet from "react-helmet"
+// import {StaticQuery, graphql} from "gatsby"
 
-const SEO = props => (
-  <StaticQuery
-    query={detailsQuery}
-    render={data => {
-      const title = props.title || data.site.siteMetadata.title
+// const SEO = props => (
+//   <StaticQuery
+//     query={detailsQuery}
+//     render={data => {
+//       const title = props.title || data.site.siteMetadata.title
 
-      return (
-        <Helmet
-          htmlAttributes={{
-            lang: "en",
-          }}
-          title={title}
-          titleTemplate={`%s - ${data.site.siteMetadata.title}`}
-        >
-          {props.children}
-        </Helmet>
-      )
-    }}
-  />
-)
+//       return (
+//         <Helmet
+//           htmlAttributes={{
+//             lang: "en",
+//           }}
+//           title={title}
+//           titleTemplate={`%s - ${data.site.siteMetadata.title}`}
+//         >
+//           {props.children}
+//         </Helmet>
+//       )
+//     }}
+//   />
+// )
 
-SEO.defaultProps = {
-  lang: "en",
-  meta: [],
-  keywords: [],
-}
+// SEO.defaultProps = {
+//   lang: "en",
+//   meta: [],
+//   keywords: [],
+// }
 
-export default SEO
+// export default SEO
 
-const detailsQuery = graphql`
-  query DefaultSEOQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
+// const detailsQuery = graphql`
+//   query DefaultSEOQuery {
+//     site {
+//       siteMetadata {
+//         title
+//       }
+//     }
+//   }
+// `

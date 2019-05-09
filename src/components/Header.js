@@ -13,43 +13,48 @@ import MenuMobile from "./MenuMobile"
 import Menu from "./Menu"
 import Link from "./Link"
 
-const Header = props => (
-  <AppBar id="appBar">
-    <Toolbar>
-      <Grid container justify="space-between" alignItems="center" spacing={16}>
-        <Grid item>
-          <Chip
-            id="logo"
-            variant="outlined"
-            avatar=<Avatar id="logoIcon">
-              <MaterialUi />
-            </Avatar>
-            label={
-              <Link to="/">
-                {props.data.site.siteMetadata.title.toUpperCase()}
-              </Link>
-            }
-          />
+const Header = props => {
+  return (
+    <AppBar id="appBar">
+      <Toolbar>
+        <Grid
+          container
+          justify="space-between"
+          alignItems="center"
+          spacing={16}
+        >
+          <Grid item>
+            <Chip
+              id="logo"
+              variant="outlined"
+              avatar={
+                <Avatar id="logoIcon">
+                  <MaterialUi />
+                </Avatar>
+              }
+              label={
+                <Link to="/">
+                  {props.data.site.siteMetadata.title.toUpperCase()}
+                </Link>
+              }
+            />
+          </Grid>
+          <Grid item>
+            <Hidden smDown>
+              <Typography component="span" variant="caption">
+                <Menu />
+              </Typography>
+            </Hidden>
+            <Hidden mdUp>
+              <MenuMobile />
+            </Hidden>
+          </Grid>
         </Grid>
-        <Grid item>
-          <Hidden smDown>
-            <Typography
-              style={{color: "#efefef", flex: 1}}
-              variant="caption"
-              component="span"
-            >
-              <Menu />
-            </Typography>
-          </Hidden>
-          <Hidden mdUp>
-            <MenuMobile />
-          </Hidden>
-        </Grid>
-      </Grid>
-      <Grid item />
-    </Toolbar>
-  </AppBar>
-)
+        <Grid item />
+      </Toolbar>
+    </AppBar>
+  )
+}
 
 export default props => (
   <StaticQuery

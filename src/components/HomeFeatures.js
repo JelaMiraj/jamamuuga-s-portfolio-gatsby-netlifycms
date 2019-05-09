@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import Chip from "@material-ui/core/Chip"
 import Grid from "@material-ui/core/Grid"
 import Avatar from "@material-ui/core/Avatar"
-import {withStyles} from "@material-ui/core/styles"
+import withStyles from "@material-ui/styles/withStyles"
 import {Robot} from "mdi-material-ui"
 
 const styles = theme => ({
@@ -28,50 +28,42 @@ const styles = theme => ({
     backgroundColor: theme.palette.secondary.light,
   },
 })
-
-const HomeFeatures = props => (
-  <Grid
-    spacing={24}
-    container
-    direction="row"
-    alignItems="flex-start"
-    justify="center"
-    className={props.classes.featureGrid}
-  >
-    <Grid item xs={6}>
-      <Chip
-        className={props.classes.featureChipRight}
-        avatar={
-          <Avatar
-            className={props.classes.avi}
-            style={{backgroundColor: props.theme.palette.secondary.light}}
-          >
-            <Robot />
-          </Avatar>
-        }
-        label="Uses Material UI"
-      />
+const HomeFeatures = props => {
+  return (
+    <Grid
+      spacing={24}
+      container
+      justify="center"
+      className={props.classes.featureGrid}
+    >
+      <Grid item md={6}>
+        <Chip
+          className={props.classes.featureChipRight}
+          avatar={
+            <Avatar className={props.classes.avi}>
+              <Robot />
+            </Avatar>
+          }
+          label="Uses Material UI"
+        />
+      </Grid>
+      <Grid item md={6}>
+        <Chip
+          className={props.classes.featureChip}
+          avatar={
+            <Avatar className={props.classes.avi}>
+              <Robot />
+            </Avatar>
+          }
+          label="Uses Material Icons"
+        />
+      </Grid>
     </Grid>
-    <Grid item xs={6}>
-      <Chip
-        className={props.classes.featureChip}
-        avatar={
-          <Avatar
-            className={props.classes.avi}
-            style={{backgroundColor: props.theme.palette.secondary.light}}
-          >
-            <Robot />
-          </Avatar>
-        }
-        label="Uses Material Icons"
-      />
-    </Grid>
-  </Grid>
-)
+  )
+}
 
 HomeFeatures.propTypes = {
   classes: PropTypes.object.isRequired,
-  theme: PropTypes.object.isRequired,
 }
 
-export default withStyles(styles, {withTheme: true})(HomeFeatures)
+export default withStyles(styles)(HomeFeatures)

@@ -3,17 +3,36 @@ import {StaticQuery, graphql} from "gatsby"
 import Divider from "@material-ui/core/Divider"
 import Typography from "@material-ui/core/Typography"
 import Hidden from "@material-ui/core/Hidden"
+import withStyles from "@material-ui/styles/withStyles"
 
-const Footer = props => {
+const styles = theme => ({
+  divider: {
+    marginTop: theme.spacing.unit * 6,
+    marginBottom: theme.spacing.unit * 3,
+  },
+  footer: {
+    marginBottom: theme.spacing.unit * 3,
+    whiteSpace: "nowrap",
+  },
+})
+
+const Footer = withStyles(styles)(props => {
   const {
-    title,
-    contact: {email, phone},
-  } = props.data.site.siteMetadata
+    classes,
+    data: {
+      site: {
+        siteMetadata: {
+          title,
+          contact: {email, phone},
+        },
+      },
+    },
+  } = props
 
   return (
     <>
-      <Divider style={{marginTop: "48px", marginBottom: "24px"}} />
-      <footer style={{marginBottom: "24px", whiteSpace: "nowrap"}} id="footer">
+      <Divider className={classes.divider} />
+      <footer className={classes.footer} id="footer">
         <span>
           <Typography variant="caption" component="span">
             ©{new Date().getFullYear()} {title}{" "}
@@ -31,7 +50,7 @@ const Footer = props => {
       </footer>
     </>
   )
-}
+})
 
 export default props => (
   <StaticQuery

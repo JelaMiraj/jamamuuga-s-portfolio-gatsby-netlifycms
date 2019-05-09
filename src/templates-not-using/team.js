@@ -1,10 +1,12 @@
+// // Another helper tool somehow made it possible to put this at bottom instead of top & need eslint disable line.
+// // eslint-disable-next-line
+// import withRoot from "../tools/withRoot"
+// // eslint-disable-next-line
 // import React from "react"
 // import {graphql, withPrefix} from "gatsby"
 // import {Grid, Paper, Typography} from "@material-ui/core"
-// import {withStyles} from "@material-ui/styles"
+// import withStyles from "@material-ui/styles/withStyles"
 // import {PreviewCompatibleImage as Image, Layout} from "../components"
-// // Another helper tool somehow made it possible to put this here instead of top & need eslint disable line.
-// import withRoot from "../tools/withRoot"
 
 // const styles = {
 //   paper: {
@@ -23,7 +25,7 @@
 //   } = data.markdownRemark.frontmatter
 //   const {html} = data.markdownRemark
 
-//   return (
+// return (
 //     <Layout>
 //       {/* <SEO title={title} /> */}
 //       <Paper className={classes.paper}>
@@ -69,7 +71,8 @@
 //   }
 // `
 
-// const TeamWrapped = withRoot(withStyles(styles)(Team))
+// // const TeamWrapped = withRoot(withStyles(styles)(Team))
 
-// export default TeamWrapped
-// export {TeamWrapped as Team}
+// // export default TeamWrapped
+// export default withRoot(withStyles(styles)(Team))
+// // export {TeamWrapped as Team}

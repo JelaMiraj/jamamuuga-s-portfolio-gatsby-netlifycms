@@ -4,32 +4,45 @@ import {StaticQuery, graphql} from "gatsby"
 import Button from "@material-ui/core/Button"
 import IconButton from "@material-ui/core/IconButton"
 import {GithubCircle} from "mdi-material-ui"
+import withStyles from "@material-ui/styles/withStyles"
 import Link from "./Link"
 // import logo from "../img/logo.svg"
 
-const Menu = props => {
-  const {menuLinks} = props.data.site.siteMetadata
+const styles = theme => ({
+  menuButton: {
+    color: theme.palette.primary.contrastText,
+  },
+})
+
+const Menu = withStyles(styles)(props => {
+  const {
+    classes,
+    data: {
+      site: {
+        siteMetadata: {menuLinks},
+      },
+    },
+  } = props
 
   return (
     <>
       {menuLinks.map(link => (
         <Link key={link.name} to={link.link}>
-          <Button style={{color: "#fff"}}>{link.name}</Button>
+          <Button className={classes.menuButton}>{link.name}</Button>
         </Link>
       ))}
       <a
-        className="navbar-item"
         href="https://github.com/Jamamuuga/jamamuuga-s-portfolio-gatsby-netlifycms"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <IconButton className="icon" style={{color: "#fff"}}>
+        <IconButton className={classes.menuButton}>
           <GithubCircle />
         </IconButton>
       </a>
     </>
   )
-}
+})
 
 export default props => (
   <StaticQuery

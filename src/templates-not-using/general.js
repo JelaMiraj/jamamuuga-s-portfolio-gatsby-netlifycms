@@ -1,10 +1,12 @@
+// // eslint-disable-next-line
+// import withRoot from "../tools/withRoot"
+// // eslint-disable-next-line
 // import React from "react"
-// import PropTypes from "prop-types"
+// // import PropTypes from "prop-types"
 // import {graphql, withPrefix} from "gatsby"
 // import {CardContent, CardMedia, Typography} from "@material-ui/core"
-// import {withStyles} from "@material-ui/styles"
+// import withStyles from "@material-ui/styles/withStyles"
 // import {Card, Layout} from "../components"
-// import withRoot from "../tools/withRoot"
 
 // const styles = {
 //   cardMedia: {
