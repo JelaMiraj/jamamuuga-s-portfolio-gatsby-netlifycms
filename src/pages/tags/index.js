@@ -1,10 +1,9 @@
 import React from "react"
 import {kebabCase} from "lodash"
-import Helmet from "react-helmet"
+// import Helmet from "react-helmet"
 // import {Link, graphql} from "gatsby"
 import {graphql} from "gatsby"
-import Layout from "../../components/Layout"
-import Link from "../../components/Link"
+import {Helmet, Layout, Link} from "../../components"
 
 const TagsPage = ({
   data: {
