@@ -1,12 +1,11 @@
-import React from "react"
-import Helmet from "react-helmet"
+import React, {Component} from "react"
+// import Helmet from "react-helmet"
 // import {Link, graphql} from "gatsby"
 import {graphql} from "gatsby"
-import Layout from "../components/Layout"
-import Link from "../components/Link"
+import {Helmet, Layout, Link} from "../components"
 import withRoot from "../tools/withRoot"
 
-class TagRoute extends React.Component {
+class TagRoute extends Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges
     const postLinks = posts.map(post => (
