@@ -1,8 +1,8 @@
 // Setup custom Material-UI theme
 // eslint-disable-next-line rule
-import {install} from "@material-ui/styles"
+// import {install} from "@material-ui/styles"
 
-install()
+// install()
 
 // eslint-disable-next-line rule
 import React from "react"
@@ -33,17 +33,17 @@ const theme = createMuiTheme({
     // fontSize5: "1.25rem",
     // fontSize6: "1rem",
     // fontSize7: "0.75rem",
-    fontWeightThin: 100,
-    fontWeightExtraLight: 200,
+    // fontWeightThin: 100,
+    // fontWeightExtraLight: 200,
     fontWeightLight: 300,
-    fontWeightNormal: 400,
+    // fontWeightNormal: 400,
     fontWeightRegular: 400,
     // fontWeightMedium: 600,
     fontWeightMedium: 500,
-    fontWeightSemiBold: 600,
-    fontWeightBold: 700,
-    fontWeightExtraBold: 800,
-    fontWeightBlack: 900,
+    // fontWeightSemiBold: 600,
+    // fontWeightBold: 700,
+    // fontWeightExtraBold: 800,
+    // fontWeightBlack: 900,
     h4: {
       fontFamily: headlineFont,
       color: grey[900],
