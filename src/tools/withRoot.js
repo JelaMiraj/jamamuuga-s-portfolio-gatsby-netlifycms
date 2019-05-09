@@ -44,4 +44,4 @@ function withRoot(InnerComponent) {
 }
 
 export default withRoot
-export {withRoot}
+// export {withRoot}

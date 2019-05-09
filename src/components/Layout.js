@@ -56,3 +56,4 @@ Layout.propTypes = {
 }
 
 export default Layout
+// export {Layout}

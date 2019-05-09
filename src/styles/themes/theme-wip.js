@@ -6,4 +6,4 @@ const Theme = {
 }
 
 export default Theme
-export {Theme as ThemeWIP}
+// export {Theme as ThemeWIP}

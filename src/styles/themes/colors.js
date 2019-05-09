@@ -29,4 +29,4 @@ const colors = {
 }
 
 export default colors
-export {colors}
+// export {colors}

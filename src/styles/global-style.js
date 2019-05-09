@@ -19,3 +19,4 @@ const GlobalStyle = () => (
 )
 
 export default GlobalStyle
+// export {GlobalStyle}
