@@ -1,6 +1,8 @@
+// eslint-disable-next-line
+import withRoot from "../tools/withRoot"
+// eslint-disable-next-line
 import React from "react"
 import Layout from "../components/Layout"
-import withRoot from "../tools/withRoot"
 
 const NotFoundPage = () => (
   <Layout title="Not Found">
