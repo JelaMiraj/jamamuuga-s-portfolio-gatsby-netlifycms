@@ -132,7 +132,7 @@
     "jest": "^24.7.1",
     "jest-environment-enzyme": "^7.0.2",
     "jest-enzyme": "^7.0.2",
-    "netlify-cli": "^2.11.14",
+    "netlify-cli": "^2.11.18",
     "netlify-lambda": "^1.4.7",
     "prettier": "^1.16.4",
     "react-test-renderer": "^16.8.6",
