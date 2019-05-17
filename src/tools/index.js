@@ -1,4 +1,4 @@
-import getPageContext from "./getPageContext"
 import withRoot from "./withRoot"
+import getPageContext from "./getPageContext"
 
-export {getPageContext, withRoot}
+export {withRoot, getPageContext}
