@@ -1,11 +1,13 @@
+// eslint-disable-next-line
+import {withRoot} from "../tools"
+// eslint-disable-next-line
 import React from "react"
 import PropTypes from "prop-types"
 import {graphql} from "gatsby"
 import {Card, Button, Grid, Paper, Typography} from "@material-ui/core"
 import {unstable_Box as Box} from "@material-ui/core/Box"
-import Layout from "../components/Layout"
-import Content, {HTMLContent} from "../components/Content"
-import withRoot from "../tools/withRoot"
+import {Content, Layout} from "../components"
+import {HTMLContent} from "../components/Content"
 
 export const AboutPageTemplate = ({title, content, contentComponent}) => {
   const PageContent = contentComponent || Content
