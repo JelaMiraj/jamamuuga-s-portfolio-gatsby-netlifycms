@@ -1,10 +1,12 @@
+// eslint-disable-next-line
+import {withRoot} from "../tools"
+// eslint-disable-next-line
 import React, {Component} from "react"
-// import Helmet from "react-helmet"
-// import {Link, graphql} from "gatsby"
 import {graphql} from "gatsby"
 import {Helmet, Layout, Link} from "../components"
-import withRoot from "../tools/withRoot"
 
+// TODO: Find out if withStyles should be used here like Gatsby Material UI Business Starter does.
+// TODO: Find out if withRoot ends up not working. (If so, perhaps withStyles like MUI Biz Starter).
 class TagRoute extends Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges
