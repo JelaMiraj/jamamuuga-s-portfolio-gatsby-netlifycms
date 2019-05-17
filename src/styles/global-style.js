@@ -3,7 +3,7 @@ import {CssBaseline} from "@material-ui/core"
 // import styled, {createGlobalStyle} from "styled-components"
 // import reboot from "styled-reboot"
 // TODO: Import a proper Styled System theme here instead of a separate pure color object.
-import colors from "./themes/colors"
+// import colors from "./themes/colors"
 
 const options = {}
 
