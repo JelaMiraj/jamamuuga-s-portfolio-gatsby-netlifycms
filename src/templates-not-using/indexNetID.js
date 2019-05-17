@@ -4,8 +4,7 @@
 // // include NLI ...to init first
 // import netlifyIdentity from "netlify-identity-widget"
 // import BasePage from "../base/BasePage"
-// import Pagination from "../components/Pagination"
-// import PostItem from "../components/PostItem"
+// import {Pagination, PostItem} from "../components"
 // import {isLoggedIn} from "../services/auth"
 
 // // Init netlify identity ...
