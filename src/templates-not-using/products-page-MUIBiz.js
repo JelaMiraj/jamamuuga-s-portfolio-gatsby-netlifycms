@@ -1,25 +1,26 @@
-// import withRoot from "../../utils/withRoot";
-// import React from "react";
-// import { graphql } from "gatsby";
-// import SEO from "../../components/SEO";
-// import Page from "../../components/Page";
-// import List from "../../components/List";
+// // eslint-disable-next-line
+// import {withRoot} from "../tools"
+// // eslint-disable-next-line
+// import React from "react"
+// import {graphql} from "gatsby"
+// import {List, Page, SEO} from "../components"
 
 // const Products = props => {
-//   const products = props.data.allMarkdownRemark.edges;
+//   const products = props.data.allMarkdownRemark.edges
+
 //   return (
 //     <Page title="Products">
 //       <SEO title="Products" />
 //       <List items={products} />
 //     </Page>
-//   );
-// };
+//   )
+// }
 
 // export const query = graphql`
 //   query ProductsQuery {
 //     allMarkdownRemark(
-//       filter: { fileAbsolutePath: { regex: "/products/" } }
-//       sort: { fields: [frontmatter___date], order: DESC }
+//       filter: {fileAbsolutePath: {regex: "/products/"}}
+//       sort: {fields: [frontmatter___date], order: DESC}
 //     ) {
 //       edges {
 //         node {
@@ -35,6 +36,6 @@
 //       }
 //     }
 //   }
-// `;
+// `
 
-// export default withRoot(Products);
+// export default withRoot(Products)
