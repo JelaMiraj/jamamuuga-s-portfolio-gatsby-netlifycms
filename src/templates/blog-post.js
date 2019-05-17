@@ -1,13 +1,12 @@
 import React from "react"
+// eslint-disable-next-line
+import {withRoot} from "../tools"
+// eslint-disable-next-line
 import PropTypes from "prop-types"
 import {kebabCase} from "lodash"
-import Helmet from "react-helmet"
-// import {Link, graphql} from "gatsby"
 import {graphql} from "gatsby"
-import Layout from "../components/Layout"
-import Link from "../components/Link"
-import Content, {HTMLContent} from "../components/Content"
-import withRoot from "../tools/withRoot"
+import {Content, Helmet, Layout, Link} from "../components"
+import {HTMLContent} from "../components/Content"
 
 export const BlogPostTemplate = ({
   content,
