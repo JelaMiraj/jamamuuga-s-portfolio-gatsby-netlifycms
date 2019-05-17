@@ -1,13 +1,17 @@
+// eslint-disable-next-line
+import {withRoot} from "../tools"
+// eslint-disable-next-line
 import React from "react"
 import PropTypes from "prop-types"
 import {graphql} from "gatsby"
 import {Grid, Paper, Typography} from "@material-ui/core"
-import Layout from "../components/Layout"
-import Features from "../components/Features"
-import Testimonials from "../components/Testimonials"
-import Pricing from "../components/Pricing"
-import PreviewCompatibleImage from "../components/PreviewCompatibleImage"
-import withRoot from "../tools/withRoot"
+import {
+  Features,
+  Layout,
+  Pricing,
+  PreviewCompatibleImage,
+  Testimonials,
+} from "../components"
 
 export const ProductPageTemplate = ({
   image,
