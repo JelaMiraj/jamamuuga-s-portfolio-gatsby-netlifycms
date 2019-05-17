@@ -20,7 +20,7 @@ import Pagination from "./Pagination"
 import PostItem from "./PostItem"
 import PreviewCompatibleImage from "./PreviewCompatibleImage"
 import Pricing from "./Pricing"
-import SEO from "./SEO"
+// import SEO from "./SEO"
 import Testimonials from "./Testimonials"
 
 export {
@@ -41,11 +41,11 @@ export {
   Menu,
   MenuMobile,
   Navbar,
-  // Page,
+  Layout as Page,
   Pagination,
   PostItem,
   PreviewCompatibleImage,
   Pricing,
-  SEO,
+  Helmet as SEO,
   Testimonials,
 }
