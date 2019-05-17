@@ -5,7 +5,7 @@
 // import React from "react"
 // import {graphql, withPrefix} from "gatsby"
 // import {Grid, Paper, Typography} from "@material-ui/core"
-// import withStyles from "@material-ui/styles/withStyles"
+// import {withStyles} from "@material-ui/styles"
 // import {PreviewCompatibleImage as Image, Layout} from "../components"
 
 // const styles = {
@@ -25,7 +25,7 @@
 //   } = data.markdownRemark.frontmatter
 //   const {html} = data.markdownRemark
 
-// return (
+//   return (
 //     <Layout>
 //       {/* <SEO title={title} /> */}
 //       <Paper className={classes.paper}>
