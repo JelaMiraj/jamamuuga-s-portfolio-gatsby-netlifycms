@@ -1,8 +1,8 @@
 // import React, {Component} from "react"
 // import {Grid, Typography} from "@material-ui/core"
-// import withStyles from "@material-ui/styles/withStyles"
-// import Header from "./Header"
+// import {withStyles} from "@material-ui/styles"
 // import Footer from "./Footer"
+// import Header from "./Header"
 // // import "../css/style.styl"
 
 // const styles = {
@@ -20,7 +20,8 @@
 
 // class Page extends Component {
 //   render() {
-//     const { classes, title, children } = this.props;
+//     const {classes, title, children} = this.props
+
 //     return (
 //       <>
 //         <Header />
