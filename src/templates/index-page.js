@@ -1,17 +1,15 @@
+// eslint-disable-next-line
+import {withRoot} from "../tools"
+// eslint-disable-next-line
 import React from "react"
 import PropTypes from "prop-types"
-// import {Link, graphql} from "gatsby"
 import {graphql} from "gatsby"
-import {Card, Button, Grid, Paper, Typography} from "@material-ui/core"
+import {CardContent, CardMedia, Button, Grid, Paper, Typography} from "@material-ui/core"
 import {unstable_Box as Box} from "@material-ui/core/Box"
-// import {withStyles} from "@material-ui/core/styles"
-import {makeStyles, withStyles} from "@material-ui/core/styles"
-import Layout from "../components/Layout"
-import Link from "../components/Link"
-import Features from "../components/Features"
-import BlogRoll from "../components/BlogRoll"
-import mytheme from "../styles/themes/theme"
-import withRoot from "../tools/withRoot"
+// import {makeStyles, withStyles} from "@material-ui/styles"
+import {withStyles} from "@material-ui/styles"
+import {Card, BlogRoll, Features, Layout, Link} from "../components"
+// import mytheme from "../styles/themes/theme"
 
 // TODO: Convert everything to use React Hooks (Don't forget the ESLint plugin), Babel-Blade (DRY GraphQL), & functions not classes.
 
@@ -22,7 +20,16 @@ import withRoot from "../tools/withRoot"
 //     paddingTop: theme.spacing(20),
 //   },
 // }))
-export const IndexPageTemplate = ({
+
+const styles = {
+  cardMedia: {
+    height: "200px",
+  },
+}
+
+const IndexPageTemplate = ({
+  classes,
+  data,
   image,
   title,
   heading,
@@ -167,7 +174,7 @@ IndexPageTemplate.propTypes = {
   }),
 }
 
-const IndexPage = ({data}) => {
+const IndexPage = ({classes, data}) => {
   const {frontmatter} = data.markdownRemark
 
   return (
@@ -193,11 +200,7 @@ IndexPage.propTypes = {
   }),
 }
 
-// FIXME: Somehow, trying to use withStyles this way fails
-// export default withRoot(withStyles(mytheme)(IndexPage))
-export default withRoot(IndexPage)
-
-export const pageQuery = graphql`
+const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
       frontmatter {
@@ -234,3 +237,9 @@ export const pageQuery = graphql`
     }
   }
 `
+
+// FIXME: Somehow, trying to use withStyles this way fails
+export default withRoot(withStyles(styles)(IndexPage))
+// export default withRoot(IndexPage)
+export {IndexPageTemplate, pageQuery}
+// export {IndexPage}
