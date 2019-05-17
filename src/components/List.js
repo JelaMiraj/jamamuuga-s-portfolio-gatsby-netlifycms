@@ -10,6 +10,8 @@ const styles = {
   },
 }
 
+// TODO: If this custom list is not generic like Material UI List, then rename it.
+// TODO: Find out if Material UI List should be used in here.
 const List = props => {
   const {classes} = props
 
