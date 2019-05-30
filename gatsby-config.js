@@ -3,6 +3,7 @@ const proxy = require("http-proxy-middleware")
 // const manifestConfig = require("./.manifest.config.js")
 
 module.exports = {
+  __experimentalThemes: [`gatsby-theme-material-ui`],
   siteMetadata: {
     title: "Jason Cady Designs Portfolio",
     description:
