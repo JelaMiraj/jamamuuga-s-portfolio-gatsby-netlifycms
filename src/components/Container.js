@@ -1,6 +1,6 @@
 // import React, {Component} from "react"
 // import PropTypes from "prop-types"
-// import {unstable_Box as Box} from "@material-ui/core/Box"
+// import {Box} from "@material-ui/core"
 // // import styled from "styled-components"
 // // TODO: When Material UI v4 is stable, migrate & use its Container.
 

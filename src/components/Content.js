@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import {unstable_Box as Box} from "@material-ui/core/Box"
+import {Box} from "@material-ui/core"
 import ContentStyle from "../styles/components/content-style"
 
 // TODO: Should we use an alternative to dangerouslySetInnerHTML?

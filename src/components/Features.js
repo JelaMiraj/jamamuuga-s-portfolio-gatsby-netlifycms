@@ -1,7 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import {Grid, Paper, Typography} from "@material-ui/core"
-import {unstable_Box as Box} from "@material-ui/core/Box"
+import {Box, Grid, Paper, Typography} from "@material-ui/core"
 import PreviewCompatibleImage from "./PreviewCompatibleImage"
 
 const FeatureGrid = ({gridItems}) => (
