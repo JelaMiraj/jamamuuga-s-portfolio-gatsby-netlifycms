@@ -15,7 +15,7 @@ It follows the [JAMstack architecture](https://jamstack.org) by using Git as a s
 ## Features ##
 
 - A simple landing page with blog functionality built with Netlify CMS
-- Editabe Pages: Landing, About, Product, Blog-Collection and Contact page with Netlify Form support
+- Editable Pages: Landing, About, Product, Blog-Collection and Contact page with Netlify Form support
 - Create Blog posts from Netlify CMS
 - Tags: Separate page for posts under each tag
 - Basic directory organization
@@ -106,7 +106,7 @@ npm install --global --production windows-build-tools
 [Full details here](https://www.npmjs.com/package/node-gyp "NPM node-gyp page")
 
 <!-- ## Purgecss
-This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gatsby-plugin-purgecss/) and [bulma](https://bulma.io/). The bulma builds are usually ~170K but reduced 90% by purgecss. -->
+This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gatsby-plugin-purgecss/) and [Bulma](https://bulma.io/). The Bulma builds are usually ~170K but reduced 90% by purgecss. -->
 
 <!--# CONTRIBUTING
 
