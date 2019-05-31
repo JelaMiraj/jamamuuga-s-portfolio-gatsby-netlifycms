@@ -25,6 +25,8 @@
     "**/node_modules/*",
     ".pnp",
     "**/.pnp/*",
+    ".pnp.js",
+    "**/.pnp.js",
     "public",
     "tmp",
     "temp"

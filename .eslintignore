@@ -10,6 +10,7 @@
 /functions/**
 **/node_modules/**
 **/.pnp/**
+**/.pnp.js
 **/public/**
 **/static/**
 **/temp/**
