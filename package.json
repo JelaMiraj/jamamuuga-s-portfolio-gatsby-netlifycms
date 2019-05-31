@@ -129,7 +129,7 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
     "http-proxy-middleware": "^0.19.1",
-    "jest": "^24.7.1",
+    "jest": "^24.8.0",
     "jest-environment-enzyme": "^7.0.2",
     "jest-enzyme": "^7.0.2",
     "netlify-cli": "^2.11.18",
