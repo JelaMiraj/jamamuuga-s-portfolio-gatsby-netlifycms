@@ -1,6 +1,6 @@
 // import React, {Component} from "react"
 // import PropTypes from "prop-types"
-// import {Box} from "@material-ui/core"
+// import {Box, Container as MuiContainer} from "@material-ui/core"
 // // import styled from "styled-components"
 // // TODO: When Material UI v4 is stable, migrate & use its Container.
 
@@ -21,10 +21,16 @@
 // //   maxWidth: "700px",
 // // }
 
+// // const Container = ({children, attributes}) => (
+// //   <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
+// //     {children}
+// //   </Box>
+// // )
+
 // const Container = ({children, attributes}) => (
-//   <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
+//   <MuiContainer px={[2, 3, 4]} mx="auto" className="container">
 //     {children}
-//   </Box>
+//   </MuiContainer>
 // )
 
 // Container.propTypes = {
