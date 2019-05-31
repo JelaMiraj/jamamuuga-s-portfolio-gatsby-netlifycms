@@ -15,6 +15,6 @@ import ReactDOM from "react-dom"
 // Begin Gatsby MUI Business Starter Body
 // NOTE: Hopefully this isn't needed anymore. Re-enable if styles get messed up on page refresh.
 // From: https://github.com/bluepeter/gatsby-material-ui-business-starter/blob/master/gatsby-browser.js
-export const replaceHydrateFunction = () => (element, container, callback) =>
-  ReactDOM.render(element, container, callback)
+// export const replaceHydrateFunction = () => (element, container, callback) =>
+//   ReactDOM.render(element, container, callback)
 // End Gatsby MUI Business Starter Body
