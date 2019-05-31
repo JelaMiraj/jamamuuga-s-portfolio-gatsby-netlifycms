@@ -9,6 +9,7 @@
 **/docs/**
 /functions/**
 **/node_modules/**
+**/.pnp/**
 **/public/**
 **/static/**
 **/temp/**
