@@ -12,6 +12,22 @@ This repo contains an example business website that is built with [Gatsby](https
 
 It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.
 
+## Features ##
+
+- A simple landing page with blog functionality built with Netlify CMS
+- Editabe Pages: Landing, About, Product, Blog-Collection and Contact page with Netlify Form support
+- Create Blog posts from Netlify CMS
+- Tags: Separate page for posts under each tag
+- Basic directory organization
+- Uses Material UI for styling.
+- Blazing fast loading times thanks to pre-rendered HTML and automatic chunk loading of JS files
+- Uses `gatbsy-image` with Netlify-CMS preview support
+- Separate components for everything
+- Netlify deploy configuration
+- Netlify function support, see `src/lambda` folder
+- Perfect score on Lighthouse for SEO, Accessibility and Performance (wip:PWA)
+- ..and more
+
 ## Prerequisites
 
 - Node (I recommend using v8.2.0 or higher)
@@ -41,6 +57,29 @@ $ npm run build
 $ npm run serve
 ```
 
+### Media Libraries (installed, but optional)
+
+Media Libraries have been included in this starter as a default. If you are not planning to use `Uploadcare` or `Cloudinary` in your project, you **can** remove them from module import and registration in `src/cms/cms.js`. Here is an example of the lines to comment or remove them your project.
+```javascript
+import CMS from 'netlify-cms-app'
+// import uploadcare from 'netlify-cms-media-library-uploadcare'
+// import cloudinary from 'netlify-cms-media-library-cloudinary'
+
+import AboutPagePreview from './preview-templates/AboutPagePreview'
+import BlogPostPreview from './preview-templates/BlogPostPreview'
+import ProductPagePreview from './preview-templates/ProductPagePreview'
+import IndexPagePreview from './preview-templates/IndexPagePreview'
+
+// CMS.registerMediaLibrary(uploadcare);
+// CMS.registerMediaLibrary(cloudinary);
+
+CMS.registerPreviewTemplate('index', IndexPagePreview)
+CMS.registerPreviewTemplate('about', AboutPagePreview)
+CMS.registerPreviewTemplate('products', ProductPagePreview)
+CMS.registerPreviewTemplate('blog', BlogPostPreview)
+
+```
+
 ## Getting Started (Without Netlify)
 
 ```
@@ -65,3 +104,11 @@ npm install --global --production windows-build-tools
 ```
 
 [Full details here](https://www.npmjs.com/package/node-gyp "NPM node-gyp page")
+
+<!-- ## Purgecss
+This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gatsby-plugin-purgecss/) and [bulma](https://bulma.io/). The bulma builds are usually ~170K but reduced 90% by purgecss. -->
+
+<!--# CONTRIBUTING
+
+Contributions are always welcome, no matter how large or small. Before contributing,
+please read the [code of conduct](CODE_OF_CONDUCT.md).-->
