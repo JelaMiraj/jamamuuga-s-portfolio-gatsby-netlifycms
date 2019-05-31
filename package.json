@@ -149,5 +149,8 @@
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.6.0",
     "webpack": "^4.29.6"
+  },
+  "installConfig": {
+    "pnp": true
   }
 }
