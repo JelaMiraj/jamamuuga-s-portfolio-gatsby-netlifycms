@@ -22,7 +22,6 @@ const theme = createMuiTheme({
   },
   typography: {
     // TODO: Stop repeating greys, font weights, & font families.
-    useNextVariants: true,
     fontFamily: bodyFont,
     // fontSize: 14, // default
     // color: grey[500],
