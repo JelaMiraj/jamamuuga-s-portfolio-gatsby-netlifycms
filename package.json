@@ -134,6 +134,7 @@
     "jest": "^24.8.0",
     "jest-environment-enzyme": "^7.0.2",
     "jest-enzyme": "^7.0.2",
+    "micromatch": "^4.0.2",
     "netlify-cli": "^2.11.19",
     "netlify-lambda": "^1.4.13",
     "prettier": "^1.17.1",
