@@ -5,20 +5,20 @@ import React from "react"
 import PropTypes from "prop-types"
 import {graphql} from "gatsby"
 import {Box, CardContent, CardMedia, Button, Grid, Paper, Typography} from "@material-ui/core"
-// import {makeStyles, withStyles} from "@material-ui/styles"
-import {withStyles} from "@material-ui/styles"
+import {makeStyles, withStyles} from "@material-ui/styles"
+// import {withStyles} from "@material-ui/styles"
 import {Card, BlogRoll, Features, Layout, Link} from "../components"
-// import mytheme from "../styles/themes/theme"
+import mytheme from "../styles/themes/theme"
 
 // TODO: Convert everything to use React Hooks (Don't forget the ESLint plugin), Babel-Blade (DRY GraphQL), & functions not classes.
 
 // FIXME: complains about object is not a function....
-// const useStyles = makeStyles(theme => ({
-//   root: {
-//     textAlign: "center",
-//     paddingTop: theme.spacing(20),
-//   },
-// }))
+const useStyles = makeStyles(theme => ({
+  root: {
+    textAlign: "center",
+    paddingTop: theme.spacing(20),
+  },
+}))
 
 const styles = {
   cardMedia: {
@@ -27,8 +27,8 @@ const styles = {
 }
 
 const IndexPageTemplate = ({
-  classes,
-  data,
+  // classes,
+  // data,
   image,
   title,
   heading,
@@ -36,11 +36,11 @@ const IndexPageTemplate = ({
   mainpitch,
   description,
   intro,
-  main,
+  // main,
 }) => {
   // TODO: Delete this null variable when eslint stops reformatting and breaking this function.
   const noOp = null
-  /* const classes = useStyles() */
+  const classes = useStyles()
 
   return (
     <div>
@@ -173,7 +173,8 @@ IndexPageTemplate.propTypes = {
   }),
 }
 
-const IndexPage = ({classes, data}) => {
+// const IndexPage = ({classes, data}) => {
+const IndexPage = ({data}) => {
   const {frontmatter} = data.markdownRemark
 
   return (
