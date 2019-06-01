@@ -1,6 +1,6 @@
-// // eslint-disable-next-line
-// import {withRoot} from "../tools"
-// // eslint-disable-next-line
+// // // eslint-disable-next-line
+// // import {withRoot} from "../tools"
+// // // eslint-disable-next-line
 // import React, {Component} from "react"
 // import PropTypes from "prop-types"
 // import {graphql} from "gatsby"
@@ -88,5 +88,6 @@
 // `
 
 // // FIXME: Somehow, trying to use withStyles this way fails
-// export default withRoot(withStyles(myTheme)(IndexPage))
+// // export default withRoot(withStyles(myTheme)(IndexPage))
 // // export default withRoot(IndexPage)
+// export default withStyles(myTheme)(IndexPage)

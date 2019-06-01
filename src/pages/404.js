@@ -1,6 +1,6 @@
-// eslint-disable-next-line
-import {withRoot} from "../tools"
-// eslint-disable-next-line
+// // eslint-disable-next-line
+// import {withRoot} from "../tools"
+// // eslint-disable-next-line
 import React from "react"
 import {Layout} from "../components"
 
@@ -14,4 +14,5 @@ const NotFoundPage = () => (
 )
 
 // TODO: Make sure withRoot call isn't breaking stuff.
-export default withRoot(NotFoundPage)
+// export default withRoot(NotFoundPage)
+export default NotFoundPage
