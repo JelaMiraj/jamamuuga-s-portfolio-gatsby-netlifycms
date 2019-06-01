@@ -1,9 +1,12 @@
+// eslint-disable-next-line
+import {withRoot} from "../tools"
+// eslint-disable-next-line
 import React from "react"
 import {kebabCase} from "lodash"
-// import {Helmet} from "react-helmet"
-// import {Link, graphql} from "gatsby"
 import {graphql} from "gatsby"
+import {withStyles} from "@material-ui/styles"
 import {Helmet, Layout, Link} from "../../components"
+import myTheme from "../../styles/themes/theme"
 
 const TagsPage = ({
   data: {
@@ -39,9 +42,7 @@ const TagsPage = ({
   </Layout>
 )
 
-export default TagsPage
-
-export const tagPageQuery = graphql`
+const tagPageQuery = graphql`
   query TagsQuery {
     site {
       siteMetadata {
@@ -56,3 +57,8 @@ export const tagPageQuery = graphql`
     }
   }
 `
+
+// FIXME: Somehow, trying to use withStyles this way fails
+export default withRoot(withStyles(myTheme)(TagsPage))
+// export default withRoot(TagsPage)
+export {tagPageQuery}

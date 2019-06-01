@@ -1,11 +1,12 @@
-import React from "react"
-import {withStyles} from "@material-ui/core/styles"
-import Layout from "../../components/Layout"
-import BlogRoll from "../../components/BlogRoll"
-import mytheme from "../../styles/themes/theme"
-import withRoot from "../../tools/withRoot"
+// eslint-disable-next-line
+import {withRoot} from "../tools"
+// eslint-disable-next-line
+import React, {Component} from "react"
+import {withStyles} from "@material-ui/styles"
+import {BlogRoll, Layout} from "../../components"
+import myTheme from "../../styles/themes/theme"
 
-class BlogIndexPage extends React.Component {
+class BlogIndexPage extends Component {
   render() {
     return (
       <Layout>
@@ -40,5 +41,5 @@ class BlogIndexPage extends React.Component {
 }
 
 // FIXME: Somehow, trying to use withStyles this way fails
-// export default withRoot(withStyles(mytheme)(BlogIndexPage))
-export default withRoot(BlogIndexPage)
+export default withRoot(withStyles(myTheme)(BlogIndexPage))
+// export default withRoot(BlogIndexPage)

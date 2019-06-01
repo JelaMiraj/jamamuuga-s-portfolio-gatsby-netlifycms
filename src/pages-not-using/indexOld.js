@@ -12,7 +12,7 @@
 // import Link from "../components/Link"
 // // import Card from "../components/Card"
 // // import Carousel from "../components/Carousel"
-// import mytheme from "../styles/themes/theme"
+// import myTheme from "../styles/themes/theme"
 // // FIXME: Somehow refer to color names from style variables instead of repeating here.
 // // FIXME: Many page links broken using current setup.
 
@@ -91,5 +91,5 @@
 // `
 
 // // FIXME: Somehow, trying to use withStyles this way fails
-// export default withRoot(withStyles(mytheme)(IndexPage))
+// export default withRoot(withStyles(myTheme)(IndexPage))
 // // export default withRoot(IndexPage)

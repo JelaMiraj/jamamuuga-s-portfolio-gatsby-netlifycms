@@ -1,9 +1,11 @@
-import React from "react"
-// TODO: Make sure this works well with Material UI Link & our combined custom Link.
-// import {navigate} from "gatsby-link"
+// eslint-disable-next-line
+import {withRoot} from "../tools"
+// eslint-disable-next-line
+import React, {Component} from "react"
 import {navigate} from "gatsby"
-import Layout from "../../components/Layout"
-import withRoot from "../../tools/withRoot"
+import {withStyles} from "@material-ui/styles"
+import {Layout} from "../../components"
+import myTheme from "../../styles/themes/theme"
 
 function encode(data) {
   return Object.keys(data)
@@ -66,40 +68,40 @@ class Index extends React.Component {
                   <div className="control">
                     <input
                       className="input"
-                      type="text"
-                      name="name"
+                      type={'text'}
+                      name={'name'}
                       onChange={this.handleChange}
-                      id="name"
-                      required
+                      id={'name'}
+                      required={true}
                     />
                   </div>
                 </div>
                 <div className="field">
-                  <label className="label" htmlFor="email">
+                  <label className="label" htmlFor={'email'}>
                     Email
                   </label>
                   <div className="control">
                     <input
                       className="input"
-                      type="email"
-                      name="email"
+                      type={'email'}
+                      name={'email'}
                       onChange={this.handleChange}
-                      id="email"
-                      required
+                      id={'email'}
+                      required={true}
                     />
                   </div>
                 </div>
                 <div className="field">
-                  <label className="label" htmlFor="message">
+                  <label className="label" htmlFor={'message'}>
                     Message
                   </label>
                   <div className="control">
                     <textarea
                       className="textarea"
-                      name="message"
+                      name={'message'}
                       onChange={this.handleChange}
-                      id="message"
-                      required
+                      id={'message'}
+                      required={true}
                     />
                   </div>
                 </div>
@@ -117,4 +119,6 @@ class Index extends React.Component {
   }
 }
 
-export default withRoot(Index)
+// FIXME: Somehow, trying to use withStyles this way fails
+export default withRoot(withStyles(myTheme)(Index))
+// export default withRoot(Index)

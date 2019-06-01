@@ -16,7 +16,7 @@ import {
 import {makeStyles, withStyles} from "@material-ui/styles"
 // import {withStyles} from "@material-ui/styles"
 import {Card, BlogRoll, Features, Layout, Link} from "../components"
-import mytheme from "../styles/themes/theme"
+import myTheme from "../styles/themes/theme"
 
 // TODO: Convert everything to use React Hooks (Don't forget the ESLint plugin), Babel-Blade (DRY GraphQL), & functions not classes.
 
