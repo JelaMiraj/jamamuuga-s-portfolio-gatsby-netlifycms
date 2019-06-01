@@ -34,7 +34,7 @@ const styles = {
   },
 }
 
-const IndexPageTemplate = ({
+export const IndexPageTemplate = ({
   // classes,
   // data,
   image,
@@ -208,7 +208,7 @@ IndexPage.propTypes = {
   }),
 }
 
-const pageQuery = graphql`
+export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
       frontmatter {
@@ -249,5 +249,5 @@ const pageQuery = graphql`
 // FIXME: Somehow, trying to use withStyles this way fails
 export default withRoot(withStyles(styles)(IndexPage))
 // export default withRoot(IndexPage)
-export {IndexPageTemplate, pageQuery}
+// export {IndexPageTemplate, pageQuery}
 // export {IndexPage}
