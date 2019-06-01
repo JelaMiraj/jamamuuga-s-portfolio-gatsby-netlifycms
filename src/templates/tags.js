@@ -1,6 +1,6 @@
-// eslint-disable-next-line
-import {withRoot} from "../tools"
-// eslint-disable-next-line
+// // eslint-disable-next-line
+// import {withRoot} from "../tools"
+// // eslint-disable-next-line
 import React, {Component} from "react"
 import {graphql} from "gatsby"
 import {Helmet, Layout, Link} from "../components"
@@ -48,7 +48,8 @@ class TagRoute extends Component {
   }
 }
 
-export default withRoot(TagRoute)
+// export default withRoot(TagRoute)
+export default TagRoute
 
 export const tagPageQuery = graphql`
   query TagPage($tag: String) {
