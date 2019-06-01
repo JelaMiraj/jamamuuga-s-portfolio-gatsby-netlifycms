@@ -9,6 +9,7 @@ import Header from "./Header"
 import Helmet from "./Helmet"
 // import Navbar from "./Navbar"
 // import Footer from "./FooterHugeNew"
+import useSiteMetadata from './SiteMetadata'
 
 const styles = {
   container: {

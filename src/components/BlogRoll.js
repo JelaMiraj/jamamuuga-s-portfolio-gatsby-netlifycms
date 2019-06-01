@@ -18,14 +18,30 @@ class BlogRoll extends React.Component {
         {posts &&
           posts.map(({node: post}) => (
             <Grid item xs={6} key={post.id}>
-              <Card component="article">
-                <Typography component="div" paragraph>
-                  <Link variant="h2" to={post.fields.slug}>
+              <Card component="article" className={`blog-list-item tile is-child box notification ${
+                  post.frontmatter.featuredpost ? 'is-featured' : ''
+                }`}>
+                <header>
+                  {post.frontmatter.featuredimage ? (
+                    <div className="featured-thumbnail">
+                      <PreviewCompatibleImage
+                        imageInfo={{
+                          image: post.frontmatter.featuredimage,
+                          alt: `featured image thumbnail for post ${
+                            post.title
+                          }`,
+                        }}
+                      />
+                    </div>
+                  ) : null}
+                <Typography component="div" paragraph className="post-meta">
+                  <Link variant="h2" className="title has-text-primary is-size-4" to={post.fields.slug}>
                     {post.frontmatter.title}
                   </Link>
                   <Typography inline> &bull; </Typography>
-                  <Typography variant="h3">{post.frontmatter.date}</Typography>
+                  <Typography variant="h3" className="subtitle is-size-5 is-block">{post.frontmatter.date}</Typography>
                 </Typography>
+                </header>
                 <Typography paragraph>
                   {post.excerpt}
                   <br />
@@ -71,6 +87,14 @@ export default () => (
                 title
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
+                featuredpost
+                featuredimage {
+                  childImageSharp {
+                    fluid(maxWidth: 120, quality: 100) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
               }
             }
           }
