@@ -2,6 +2,7 @@ const _ = require("lodash")
 const path = require("path")
 const {createFilePath} = require("gatsby-source-filesystem")
 const {fmImagesToRelative} = require("gatsby-remark-relative-images")
+const PnpWebpackPlugin = require("pnp-webpack-plugin")
 
 exports.createPages = ({actions, graphql}) => {
   const {createPage} = actions
@@ -93,6 +94,16 @@ exports.onCreateNode = ({node, actions, getNode}) => {
 
 exports.onCreateWebpackConfig = ({stage, rules, loaders, plugins, actions}) => {
   actions.setWebpackConfig({
+    resolveLoader: {
+      plugins: [PnpWebpackPlugin.moduleLoader(module)],
+    },
+    resolve: {
+      plugins: [
+        PnpWebpackPlugin.bind(`${__dirname}/.cache`, module, `gatsby`),
+        PnpWebpackPlugin.bind(`${__dirname}/public`, module, `gatsby`),
+        PnpWebpackPlugin,
+      ],
+    },
     module: {
       rules: [
         {
