@@ -2,7 +2,7 @@
 // import {withRoot} from "../../tools"
 // // eslint-disable-next-line
 import React, {Component} from "react"
-import {Link} from "../../components"
+import {Link, Layout} from "../../components"
 
 class Index extends Component {
   render() {
