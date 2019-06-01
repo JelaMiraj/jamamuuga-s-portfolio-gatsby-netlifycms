@@ -1,5 +1,9 @@
 module.exports = {
-  presets: [require.resolve(`@babel/preset-env`), require.resolve(`@babel/preset-react`), require.resolve(`babel-preset-gatsby`)],
+  presets: [
+    require.resolve(`@babel/preset-env`),
+    require.resolve(`@babel/preset-react`),
+    require.resolve(`babel-preset-gatsby`),
+  ],
   plugins: [
     require.resolve(`@babel/plugin-proposal-class-properties`),
     require.resolve(`@babel/plugin-syntax-dynamic-import`),

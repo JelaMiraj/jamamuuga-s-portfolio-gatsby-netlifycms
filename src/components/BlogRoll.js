@@ -15,9 +15,12 @@ class BlogRoll extends Component {
         {posts &&
           posts.map(({node: post}) => (
             <Grid item xs={6} key={post.id}>
-              <Card component="article" className={`blog-list-item tile is-child box notification ${
-                  post.frontmatter.featuredpost ? 'is-featured' : ''
-                }`}>
+              <Card
+                component="article"
+                className={`blog-list-item tile is-child box notification ${
+                  post.frontmatter.featuredpost ? "is-featured" : ""
+                }`}
+              >
                 <header>
                   {post.frontmatter.featuredimage ? (
                     <div className="featured-thumbnail">
@@ -31,13 +34,22 @@ class BlogRoll extends Component {
                       />
                     </div>
                   ) : null}
-                <Typography component="div" paragraph className="post-meta">
-                  <Link variant="h2" className="title has-text-primary is-size-4" to={post.fields.slug}>
-                    {post.frontmatter.title}
-                  </Link>
-                  <Typography inline> &bull; </Typography>
-                  <Typography variant="h3" className="subtitle is-size-5 is-block">{post.frontmatter.date}</Typography>
-                </Typography>
+                  <Typography component="div" paragraph className="post-meta">
+                    <Link
+                      variant="h2"
+                      className="title has-text-primary is-size-4"
+                      to={post.fields.slug}
+                    >
+                      {post.frontmatter.title}
+                    </Link>
+                    <Typography inline> &bull; </Typography>
+                    <Typography
+                      variant="h3"
+                      className="subtitle is-size-5 is-block"
+                    >
+                      {post.frontmatter.date}
+                    </Typography>
+                  </Typography>
                 </header>
                 <Typography paragraph>
                   {post.excerpt}
