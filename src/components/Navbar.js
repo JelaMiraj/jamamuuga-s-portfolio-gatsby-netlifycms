@@ -13,7 +13,7 @@ class Navbar extends Component {
     super(props)
     this.state = {
       active: false,
-      navBarActiveClass: '',
+      navBarActiveClass: "",
     }
   }
 
@@ -28,12 +28,12 @@ class Navbar extends Component {
         // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
-              navBarActiveClass: 'is-active',
+              navBarActiveClass: "is-active",
             })
           : this.setState({
-              navBarActiveClass: '',
+              navBarActiveClass: "",
             })
-      }
+      },
     )
   }
 
@@ -47,7 +47,7 @@ class Navbar extends Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+              <img src={logo} alt="Kaldi" style={{width: "88px"}} />
             </Link>
             {/* Hamburger menu */}
             <div

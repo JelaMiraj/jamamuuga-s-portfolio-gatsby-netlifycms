@@ -1,6 +1,14 @@
 import React from "react"
 import {StaticQuery, graphql} from "gatsby"
-import {AppBar, Avatar, Chip, Grid, Hidden, Toolbar, Typography} from "@material-ui/core"
+import {
+  AppBar,
+  Avatar,
+  Chip,
+  Grid,
+  Hidden,
+  Toolbar,
+  Typography,
+} from "@material-ui/core"
 import {MaterialUi} from "mdi-material-ui"
 import {Link, Menu, MenuMobile} from "."
 

@@ -1,6 +1,13 @@
 import React, {Component} from "react"
 import {withPrefix} from "gatsby"
-import {CardContent, CardMedia, Button, MobileStepper, Paper, Typography} from "@material-ui/core"
+import {
+  CardContent,
+  CardMedia,
+  Button,
+  MobileStepper,
+  Paper,
+  Typography,
+} from "@material-ui/core"
 import SwipeableViews from "react-swipeable-views"
 import {autoPlay} from "react-swipeable-views-utils"
 import {withStyles} from "@material-ui/core/styles"
