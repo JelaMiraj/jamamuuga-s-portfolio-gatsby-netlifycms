@@ -4,7 +4,15 @@ import {withRoot} from "../tools"
 import React from "react"
 import PropTypes from "prop-types"
 import {graphql} from "gatsby"
-import {Box, CardContent, CardMedia, Button, Grid, Paper, Typography} from "@material-ui/core"
+import {
+  Box,
+  CardContent,
+  CardMedia,
+  Button,
+  Grid,
+  Paper,
+  Typography,
+} from "@material-ui/core"
 import {makeStyles, withStyles} from "@material-ui/styles"
 // import {withStyles} from "@material-ui/styles"
 import {Card, BlogRoll, Features, Layout, Link} from "../components"
