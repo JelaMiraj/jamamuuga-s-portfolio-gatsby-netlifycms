@@ -6,7 +6,7 @@
 // import PropTypes from "prop-types"
 // import {Avatar, Button} from "@material-ui/core"
 // import {Gift} from "mdi-material-ui"
-// import {withStyles} from "@material-ui/styles"
+// import {withStyles} from "@material-ui/core/styles"
 // import {Card, Carousel, HomeFeatures, Page, SEO} from "../components"
 
 // const styles = theme => ({

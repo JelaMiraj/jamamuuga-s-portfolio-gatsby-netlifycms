@@ -1,19 +1,13 @@
+// // eslint-disable-next-line
+// import {withRoot} from "../tools"
+// // eslint-disable-next-line
 // import React from "react"
-// // import {graphql, Link} from "gatsby"
 // import {graphql} from "gatsby"
 // import PropTypes from "prop-types"
-// import Button from "@material-ui/core/Button"
-// import Grid from "@material-ui/core/Grid"
-// import Avatar from "@material-ui/core/Avatar"
+// import {Avatar, Button, Grid} from "@material-ui/core"
 // import {Gift} from "mdi-material-ui"
 // import {withStyles} from "@material-ui/core/styles"
-// import SEO from "../components/SEO"
-// import Card from "../components/Card"
-// import Page from "../components/Page"
-// import HomeFeatures from "../components/HomeFeatures"
-// import Carousel from "../components/Carousel"
-// import withRoot from "../tools/withRoot"
-// import Link from "../components/Link"
+// import {Card, Carousel, HomeFeatures, Link, Page, SEO} from "../components"
 
 // const styles = theme => ({
 //   root: {

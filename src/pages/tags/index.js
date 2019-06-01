@@ -4,7 +4,7 @@ import {withRoot} from "../../tools"
 import React from "react"
 import {kebabCase} from "lodash"
 import {graphql} from "gatsby"
-import {withStyles} from "@material-ui/styles"
+import {withStyles} from "@material-ui/core/styles"
 import {Helmet, Layout, Link} from "../../components"
 import myTheme from "../../styles/themes/theme"
 

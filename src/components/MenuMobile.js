@@ -1,13 +1,9 @@
-import React from "react"
-// import {StaticQuery, Link, graphql} from "gatsby"
+import React, {Component} from "react"
 import {StaticQuery, graphql} from "gatsby"
-import Menu from "@material-ui/core/Menu"
-import MenuItem from "@material-ui/core/MenuItem"
-import ClickAwayListener from "@material-ui/core/ClickAwayListener"
-import IconButton from "@material-ui/core/IconButton"
+import {ClickAwayListener, IconButton, Menu, MenuItem} from "@material-ui/core"
 import {DotsVertical} from "mdi-material-ui"
-import withStyles from "@material-ui/styles/withStyles"
-import Link from "./Link"
+import {withStyles} from "@material-ui/core/styles"
+import {Link} from "."
 // import logo from "../img/logo.svg"
 
 const styles = {
@@ -16,7 +12,7 @@ const styles = {
   },
 }
 
-class MenuMobile extends React.Component {
+class MenuMobile extends Component {
   state = {
     anchorEl: null,
   }

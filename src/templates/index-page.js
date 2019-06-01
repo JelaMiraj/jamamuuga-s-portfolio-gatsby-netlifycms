@@ -13,8 +13,8 @@ import {
   Paper,
   Typography,
 } from "@material-ui/core"
-import {makeStyles, withStyles} from "@material-ui/styles"
-// import {withStyles} from "@material-ui/styles"
+import {makeStyles, withStyles} from "@material-ui/core/styles"
+// import {withStyles} from "@material-ui/core/styles"
 import {Card, BlogRoll, Features, Layout, Link} from "../components"
 import myTheme from "../styles/themes/theme"
 

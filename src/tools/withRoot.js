@@ -1,7 +1,7 @@
 // See https://github.com/mui-org/material-ui/tree/master/examples/gatsby
 // import "./installMuiStyles"
 import React, {Component} from "react"
-import {StylesProvider, ThemeProvider} from "@material-ui/styles"
+import {StylesProvider, ThemeProvider} from "@material-ui/core/styles"
 import {Hidden} from "@material-ui/core"
 import getPageContext from "./getPageContext"
 import GlobalStyle from "../styles/global-style"

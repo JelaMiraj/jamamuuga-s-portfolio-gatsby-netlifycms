@@ -1,7 +1,7 @@
 import React from "react"
 import {withPrefix} from "gatsby"
 import {Card, CardContent, CardMedia, Grid, Typography} from "@material-ui/core"
-import {withStyles} from "@material-ui/styles"
+import {withStyles} from "@material-ui/core/styles"
 import Link from "./Link"
 
 const styles = {

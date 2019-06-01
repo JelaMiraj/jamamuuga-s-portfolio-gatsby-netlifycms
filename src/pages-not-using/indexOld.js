@@ -1,22 +1,19 @@
-// import React from "react"
+// // eslint-disable-next-line
+// import {withRoot} from "../tools"
+// // eslint-disable-next-line
+// import React, {Component} from "react"
 // import PropTypes from "prop-types"
-// // import {Link, graphql} from "gatsby"
 // import {graphql} from "gatsby"
-// // import Button from "@material-ui/core/Button"
-// // import Grid from "@material-ui/core/Grid"
-// // import Avatar from "@material-ui/core/Avatar"
+// // import {Avatar, Button, Grid} from "@material-ui/core"
 // // import {Gift} from "mdi-material-ui"
 // import {withStyles} from "@material-ui/core/styles"
-// import withRoot from "../tools/withRoot"
-// import Layout from "../components/Layout"
-// import Link from "../components/Link"
-// // import Card from "../components/Card"
-// // import Carousel from "../components/Carousel"
+// import {Layout, Link} from "../components"
+// // import {Card, Carousel} from "../components"
 // import myTheme from "../styles/themes/theme"
 // // FIXME: Somehow refer to color names from style variables instead of repeating here.
 // // FIXME: Many page links broken using current setup.
 
-// class IndexPage extends React.Component {
+// class IndexPage extends Component {
 //   render() {
 //     const {data} = this.props
 //     const {edges: posts} = data.allMarkdownRemark

@@ -1,6 +1,6 @@
 // import React, {Component} from "react"
 // import Typography from "@material-ui/core"
-// import styled from "@material-ui/styles"
+// import styled from "@material-ui/core/styles"
 // // Originally from: https://github.com/danielmahon/gatsby-starter-procyon/blob/netlifycms/src/components/Content.js
 
 // const StyledTypography = styled(Typography)(theme => ({

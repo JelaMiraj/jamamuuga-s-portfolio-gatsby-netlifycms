@@ -1,17 +1,8 @@
 import React from "react"
 import {StaticQuery, graphql} from "gatsby"
-// import { Link } from "gatsby";
-import Hidden from "@material-ui/core/Hidden"
-import Grid from "@material-ui/core/Grid"
-import Toolbar from "@material-ui/core/Toolbar"
-import AppBar from "@material-ui/core/AppBar"
-import Typography from "@material-ui/core/Typography"
-import Chip from "@material-ui/core/Chip"
-import Avatar from "@material-ui/core/Avatar"
+import {AppBar, Avatar, Chip, Grid, Hidden, Toolbar, Typography} from "@material-ui/core"
 import {MaterialUi} from "mdi-material-ui"
-import MenuMobile from "./MenuMobile"
-import Menu from "./Menu"
-import Link from "./Link"
+import {Link, Menu, MenuMobile} from "."
 
 const Header = props => {
   return (

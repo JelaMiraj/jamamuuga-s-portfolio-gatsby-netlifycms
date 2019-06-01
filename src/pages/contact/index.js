@@ -3,7 +3,7 @@ import {withRoot} from "../../tools"
 // eslint-disable-next-line
 import React, {Component} from "react"
 import {navigate} from "gatsby"
-import {withStyles} from "@material-ui/styles"
+import {withStyles} from "@material-ui/core/styles"
 import {Layout} from "../../components"
 import myTheme from "../../styles/themes/theme"
 
@@ -13,7 +13,7 @@ function encode(data) {
     .join("&")
 }
 
-class Index extends React.Component {
+class Index extends Component {
   constructor(props) {
     super(props)
     this.state = {isValidated: false}

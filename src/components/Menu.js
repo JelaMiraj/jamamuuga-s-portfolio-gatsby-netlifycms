@@ -1,11 +1,9 @@
 import React from "react"
-// import {StaticQuery, Link, graphql} from "gatsby"
 import {StaticQuery, graphql} from "gatsby"
-import Button from "@material-ui/core/Button"
-import IconButton from "@material-ui/core/IconButton"
+import {Button, IconButton} from "@material-ui/core"
 import {GithubCircle} from "mdi-material-ui"
-import withStyles from "@material-ui/styles/withStyles"
-import Link from "./Link"
+import {withStyles} from "@material-ui/core/styles"
+import {Link} from "."
 // import logo from "../img/logo.svg"
 
 const styles = theme => ({

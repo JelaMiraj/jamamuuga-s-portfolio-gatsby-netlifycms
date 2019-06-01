@@ -1,9 +1,9 @@
-import React from "react"
-// TODO: Make sure this works well with Material UI Link & our combined custom Link.
-// import {navigate} from "gatsby-link"
+// eslint-disable-next-line
+import {withRoot} from "../../tools"
+// eslint-disable-next-line
+import React, {Component} from "react"
 import {navigate} from "gatsby"
-import Layout from "../../components/Layout"
-import withRoot from "../../tools/withRoot"
+import {Layout} from "../../components"
 
 function encode(data) {
   const formData = new FormData()
@@ -15,7 +15,7 @@ function encode(data) {
   return formData
 }
 
-class Contact extends React.Component {
+class Contact extends Component {
   constructor(props) {
     super(props)
     this.state = {}

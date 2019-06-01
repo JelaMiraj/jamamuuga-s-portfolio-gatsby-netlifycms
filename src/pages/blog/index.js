@@ -2,7 +2,7 @@
 import {withRoot} from "../../tools"
 // eslint-disable-next-line
 import React, {Component} from "react"
-import {withStyles} from "@material-ui/styles"
+import {withStyles} from "@material-ui/core/styles"
 import {BlogRoll, Layout} from "../../components"
 import myTheme from "../../styles/themes/theme"
 

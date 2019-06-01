@@ -1,6 +1,8 @@
+// eslint-disable-next-line
+import {withRoot} from "../../tools"
+// eslint-disable-next-line
 import React from "react"
-import Layout from "../../components/Layout"
-import withRoot from "../../tools/withRoot"
+import {Layout} from "../../components"
 
 const Thanks = () => (
   <Layout>

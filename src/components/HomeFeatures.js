@@ -1,9 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Chip from "@material-ui/core/Chip"
-import Grid from "@material-ui/core/Grid"
-import Avatar from "@material-ui/core/Avatar"
-import withStyles from "@material-ui/styles/withStyles"
+import {Avatar, Chip, Grid} from "@material-ui/core"
+import {withStyles} from "@material-ui/core/styles"
 import {Robot} from "mdi-material-ui"
 
 const styles = theme => ({

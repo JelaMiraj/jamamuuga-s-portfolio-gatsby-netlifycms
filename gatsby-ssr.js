@@ -3,7 +3,7 @@
 
 // const React = require("react")
 // const {renderToString} = require("react-dom/server")
-// const StylesProvider = require("@material-ui/styles/StylesProvider").default
+// const StylesProvider = require("@material-ui/core/styles/StylesProvider").default
 // const getPageContext = require("./src/tools/getPageContext").default
 
 // function replaceRenderer({

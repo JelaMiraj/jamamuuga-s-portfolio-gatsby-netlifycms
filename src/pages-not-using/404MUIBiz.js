@@ -1,8 +1,10 @@
-// import React from "react"
-// import Page from "../components/Page"
-// import withRoot from "../tools/withRoot"
+// // eslint-disable-next-line
+// import {withRoot} from "../tools"
+// // eslint-disable-next-line
+// import React, {Component} from "react"
+// import {Page} from "../components"
 
-// class NotFoundPage extends React.Component {
+// class NotFoundPage extends Component {
 //   render() {
 //     return (
 //       <Page title="Not Found">

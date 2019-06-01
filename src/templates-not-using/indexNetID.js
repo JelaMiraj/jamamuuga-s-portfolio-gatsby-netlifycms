@@ -1,4 +1,7 @@
-// import React from "react"
+// // eslint-disable-next-line
+// import {withRoot} from "../../tools"
+// // eslint-disable-next-line
+// import React, {Component} from "react"
 // import PropTypes from "prop-types"
 // import {graphql} from "gatsby"
 // // include NLI ...to init first
@@ -11,7 +14,7 @@
 // // FIX for build test @2018/12/13
 // if (typeof netlifyIdentity.init !== `undefined`) netlifyIdentity.init()
 
-// export default class IndexPage extends React.Component {
+// export default class IndexPage extends Component {
 //   render() {
 //     const posts = this.props.data.allMarkdownRemark.edges
 //     const {currentPage, numPages} = this.props.pageContext

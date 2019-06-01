@@ -1,11 +1,11 @@
 // // Another helper tool somehow made it possible to put this at bottom instead of top & need eslint disable line.
 // // eslint-disable-next-line
-// import withRoot from "../tools/withRoot"
+// import {withRoot} from "../tools"
 // // eslint-disable-next-line
 // import React from "react"
 // import {graphql, withPrefix} from "gatsby"
 // import {Grid, Paper, Typography} from "@material-ui/core"
-// import {withStyles} from "@material-ui/styles"
+// import {withStyles} from "@material-ui/core/styles"
 // import {PreviewCompatibleImage as Image, Layout} from "../components"
 
 // const styles = {

@@ -5,8 +5,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import {graphql} from "gatsby"
 import {Box, Card, Button, Grid, Paper, Typography} from "@material-ui/core"
-import {Content, Layout} from "../components"
-import {HTMLContent} from "../components/Content"
+import {Content, HTMLContent, Layout} from "../components"
 
 export const AboutPageTemplate = ({title, content, contentComponent}) => {
   const PageContent = contentComponent || Content

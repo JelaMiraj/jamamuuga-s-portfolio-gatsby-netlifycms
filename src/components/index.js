@@ -2,7 +2,7 @@ import BlogRoll from "./BlogRoll"
 import Card from "./Card"
 import Carousel from "./Carousel"
 // import Container from "./Container"
-import Content from "./Content"
+import Content, {HTMLContent} from "./Content"
 import Features from "./Features"
 import Footer from "./Footer"
 import Header from "./Header"
@@ -34,6 +34,7 @@ export {
   Header,
   Helmet,
   HomeFeatures,
+  HTMLContent,
   Layout,
   Link,
   LinkExternal,
@@ -45,6 +46,7 @@ export {
   Pagination,
   PostItem,
   PreviewCompatibleImage,
+  PreviewCompatibleImage as Image,
   Pricing,
   Helmet as SEO,
   Testimonials,

@@ -5,8 +5,7 @@ import {withRoot} from "../tools"
 import PropTypes from "prop-types"
 import {kebabCase} from "lodash"
 import {graphql} from "gatsby"
-import {Content, Helmet, Layout, Link} from "../components"
-import {HTMLContent} from "../components/Content"
+import {Content, Helmet, HTMLContent, Layout, Link} from "../components"
 
 export const BlogPostTemplate = ({
   content,

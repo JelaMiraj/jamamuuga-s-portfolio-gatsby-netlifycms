@@ -1,9 +1,9 @@
 // import React from "react"
-// import {Link} from "gatsby"
+// import {Link} from "."
 // import github from "../img/github-icon.svg"
 // import logo from "../img/logo.svg"
 
-// const Navbar = class extends React.Component {
+// const Navbar = class extends Component {
 //   constructor(props) {
 //     super(props)
 //     this.state = {

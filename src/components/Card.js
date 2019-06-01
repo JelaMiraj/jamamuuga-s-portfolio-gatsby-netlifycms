@@ -1,9 +1,6 @@
 import React from "react"
-import Card from "@material-ui/core/Card"
-import CardHeader from "@material-ui/core/CardHeader"
-import CardContent from "@material-ui/core/CardContent"
-import CardActions from "@material-ui/core/CardActions"
-import withStyles from "@material-ui/styles/withStyles"
+import {Card, CardActions, CardContent, CardHeader} from "@material-ui/core"
+import {withStyles} from "@material-ui/core/styles"
 
 const styles = {
   cardActions: {

@@ -1,6 +1,6 @@
 // import React, {Component} from "react"
 // import {Grid, Typography} from "@material-ui/core"
-// import {withStyles} from "@material-ui/styles"
+// import {withStyles} from "@material-ui/core/styles"
 // import Footer from "./Footer"
 // import Header from "./Header"
 // // import "../css/style.styl"

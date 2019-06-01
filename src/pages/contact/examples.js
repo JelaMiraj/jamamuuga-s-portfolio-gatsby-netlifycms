@@ -1,10 +1,10 @@
-import React from "react"
-// import Link from "gatsby-link"
-import Link from "../../components/Link"
-import Layout from "../../components/Layout"
-import withRoot from "../../tools/withRoot"
+// eslint-disable-next-line
+import {withRoot} from "../../tools"
+// eslint-disable-next-line
+import React, {Component} from "react"
+import {Link} from "../../components"
 
-class Index extends React.Component {
+class Index extends Component {
   render() {
     return (
       <Layout>

@@ -1,4 +1,4 @@
-// import {install} from "@material-ui/styles"
+// import {install} from "@material-ui/core/styles"
 
 // install()
 // // These two lines are in a separate file so that 'install()' call can happen before anything is imported from material-ui libs.

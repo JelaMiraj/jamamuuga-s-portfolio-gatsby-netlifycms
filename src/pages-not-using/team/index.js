@@ -1,14 +1,11 @@
+// // eslint-disable-next-line
+// import {withRoot} from "../../tools"
+// // eslint-disable-next-line
 // import React from "react"
-// import {Link, graphql, withPrefix} from "gatsby"
-// import Typography from "@material-ui/core/Typography"
-// import GridList from "@material-ui/core/GridList"
-// import GridListTile from "@material-ui/core/GridListTile"
-// import GridListTileBar from "@material-ui/core/GridListTileBar"
-// import IconButton from "@material-ui/core/IconButton"
+// import {graphql, withPrefix} from "gatsby"
+// import {GridList, GridListTile, GridListTileBar, IconButton, Typography} from "@material-ui/core"
 // import {Rocket} from "mdi-material-ui"
-// import Page from "../../components/Page"
-// import SEO from "../../components/SEO"
-// import withRoot from "../../utils/withRoot"
+// import {Link, Page, SEO} from "../../components"
 
 // const Team = props => {
 //   const teams = props.data.allMarkdownRemark.edges
