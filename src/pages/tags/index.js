@@ -4,9 +4,9 @@
 import React from "react"
 import {kebabCase} from "lodash"
 import {graphql} from "gatsby"
-import {withStyles} from "@material-ui/core/styles"
+// import {withStyles} from "@material-ui/core/styles"
 import {Helmet, Layout, Link} from "../../components"
-import myTheme from "../../styles/themes/theme"
+// import myTheme from "../../styles/themes/theme"
 
 const TagsPage = ({
   data: {
@@ -61,5 +61,6 @@ const tagPageQuery = graphql`
 // FIXME: Somehow, trying to use withStyles this way fails
 // export default withRoot(withStyles(myTheme)(TagsPage))
 // export default withRoot(TagsPage)
-export default withStyles(myTheme)(TagsPage)
+// export default withStyles(myTheme)(TagsPage)
+export default TagsPage
 export {tagPageQuery}
