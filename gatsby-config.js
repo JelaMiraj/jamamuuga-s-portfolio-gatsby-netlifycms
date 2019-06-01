@@ -38,6 +38,7 @@ module.exports = {
     ],
   },
   plugins: [
+    "gatsby-plugin-top-layout",
     {
       resolve: "gatsby-plugin-compile-es6-packages",
       options: {
