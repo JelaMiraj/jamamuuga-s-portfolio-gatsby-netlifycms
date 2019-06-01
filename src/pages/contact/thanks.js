@@ -1,6 +1,6 @@
-// eslint-disable-next-line
-import {withRoot} from "../../tools"
-// eslint-disable-next-line
+// // eslint-disable-next-line
+// import {withRoot} from "../../tools"
+// // eslint-disable-next-line
 import React from "react"
 import {Layout} from "../../components"
 
@@ -17,4 +17,5 @@ const Thanks = () => (
   </Layout>
 )
 
-export default withRoot(Thanks)
+// export default withRoot(Thanks)
+export default Thanks

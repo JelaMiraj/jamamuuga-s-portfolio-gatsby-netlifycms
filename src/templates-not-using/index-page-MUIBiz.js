@@ -1,6 +1,6 @@
-// // eslint-disable-next-line
-// import {withRoot} from "../tools"
-// // eslint-disable-next-line
+// // // eslint-disable-next-line
+// // import {withRoot} from "../tools"
+// // // eslint-disable-next-line
 // import React from "react"
 // import {graphql, Link} from "gatsby"
 // import PropTypes from "prop-types"
@@ -89,4 +89,5 @@
 //   classes: PropTypes.object.isRequired,
 // }
 
-// export default withRoot(withStyles(styles)(Home))
+// // export default withRoot(withStyles(styles)(Home))
+// export default withStyles(styles)(Home)

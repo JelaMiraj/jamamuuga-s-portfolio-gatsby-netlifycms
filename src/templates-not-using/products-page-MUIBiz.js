@@ -1,6 +1,6 @@
-// // eslint-disable-next-line
-// import {withRoot} from "../tools"
-// // eslint-disable-next-line
+// // // eslint-disable-next-line
+// // import {withRoot} from "../tools"
+// // // eslint-disable-next-line
 // import React from "react"
 // import {graphql} from "gatsby"
 // import {List, Page, SEO} from "../components"
@@ -38,4 +38,5 @@
 //   }
 // `
 
-// export default withRoot(Products)
+// // export default withRoot(Products)
+// export default Products

@@ -1,6 +1,6 @@
-// eslint-disable-next-line
-import {withRoot} from "../tools"
-// eslint-disable-next-line
+// // eslint-disable-next-line
+// import {withRoot} from "../tools"
+// // eslint-disable-next-line
 import React from "react"
 import PropTypes from "prop-types"
 import {graphql} from "gatsby"
@@ -56,7 +56,8 @@ AboutPage.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
-export default withRoot(AboutPage)
+// export default withRoot(AboutPage)
+export default AboutPage
 
 export const aboutPageQuery = graphql`
   query AboutPage($id: String!) {

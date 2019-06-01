@@ -1,6 +1,6 @@
-// eslint-disable-next-line
-import {withRoot} from "../../tools"
-// eslint-disable-next-line
+// // eslint-disable-next-line
+// import {withRoot} from "../../tools"
+// // eslint-disable-next-line
 import React from "react"
 import {kebabCase} from "lodash"
 import {graphql} from "gatsby"
@@ -59,6 +59,7 @@ const tagPageQuery = graphql`
 `
 
 // FIXME: Somehow, trying to use withStyles this way fails
-export default withRoot(withStyles(myTheme)(TagsPage))
+// export default withRoot(withStyles(myTheme)(TagsPage))
 // export default withRoot(TagsPage)
+export default withStyles(myTheme)(TagsPage)
 export {tagPageQuery}

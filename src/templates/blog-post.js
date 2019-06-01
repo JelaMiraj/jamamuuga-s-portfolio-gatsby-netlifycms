@@ -1,7 +1,7 @@
+// // eslint-disable-next-line
+// import {withRoot} from "../tools"
+// // eslint-disable-next-line
 import React from "react"
-// eslint-disable-next-line
-import {withRoot} from "../tools"
-// eslint-disable-next-line
 import PropTypes from "prop-types"
 import {kebabCase} from "lodash"
 import {graphql} from "gatsby"
@@ -86,7 +86,8 @@ BlogPost.propTypes = {
   }),
 }
 
-export default withRoot(BlogPost)
+// export default withRoot(BlogPost)
+export default BlogPost
 
 export const pageQuery = graphql`
   query BlogPostByID($id: String!) {

@@ -1,6 +1,6 @@
-// // eslint-disable-next-line
-// import {withRoot} from "../tools"
-// // eslint-disable-next-line
+// // // eslint-disable-next-line
+// // import {withRoot} from "../tools"
+// // // eslint-disable-next-line
 // import React, {Component} from "react"
 // import {Page} from "../components"
 
@@ -14,4 +14,5 @@
 //   }
 // }
 
-// export default withRoot(NotFoundPage)
+// // export default withRoot(NotFoundPage)
+// export default NotFoundPage

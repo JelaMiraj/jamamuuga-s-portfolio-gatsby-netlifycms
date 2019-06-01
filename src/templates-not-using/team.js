@@ -1,7 +1,6 @@
-// // Another helper tool somehow made it possible to put this at bottom instead of top & need eslint disable line.
-// // eslint-disable-next-line
-// import {withRoot} from "../tools"
-// // eslint-disable-next-line
+// // // eslint-disable-next-line
+// // import {withRoot} from "../tools"
+// // // eslint-disable-next-line
 // import React from "react"
 // import {graphql, withPrefix} from "gatsby"
 // import {Grid, Paper, Typography} from "@material-ui/core"
@@ -72,7 +71,9 @@
 // `
 
 // // const TeamWrapped = withRoot(withStyles(styles)(Team))
+// // const TeamWrapped = withStyles(styles)(Team)
 
 // // export default TeamWrapped
-// export default withRoot(withStyles(styles)(Team))
+// // export default withRoot(withStyles(styles)(Team))
+// export default withStyles(styles)(Team)
 // // export {TeamWrapped as Team}

@@ -1,6 +1,6 @@
-// eslint-disable-next-line
-import {withRoot} from "../../tools"
-// eslint-disable-next-line
+// // eslint-disable-next-line
+// import {withRoot} from "../../tools"
+// // eslint-disable-next-line
 import React, {Component} from "react"
 import {navigate} from "gatsby"
 import {withStyles} from "@material-ui/core/styles"
@@ -68,39 +68,39 @@ class Index extends Component {
                   <div className="control">
                     <input
                       className="input"
-                      type={'text'}
-                      name={'name'}
+                      type={"text"}
+                      name={"name"}
                       onChange={this.handleChange}
-                      id={'name'}
+                      id={"name"}
                       required={true}
                     />
                   </div>
                 </div>
                 <div className="field">
-                  <label className="label" htmlFor={'email'}>
+                  <label className="label" htmlFor={"email"}>
                     Email
                   </label>
                   <div className="control">
                     <input
                       className="input"
-                      type={'email'}
-                      name={'email'}
+                      type={"email"}
+                      name={"email"}
                       onChange={this.handleChange}
-                      id={'email'}
+                      id={"email"}
                       required={true}
                     />
                   </div>
                 </div>
                 <div className="field">
-                  <label className="label" htmlFor={'message'}>
+                  <label className="label" htmlFor={"message"}>
                     Message
                   </label>
                   <div className="control">
                     <textarea
                       className="textarea"
-                      name={'message'}
+                      name={"message"}
                       onChange={this.handleChange}
-                      id={'message'}
+                      id={"message"}
                       required={true}
                     />
                   </div>
@@ -120,5 +120,6 @@ class Index extends Component {
 }
 
 // FIXME: Somehow, trying to use withStyles this way fails
-export default withRoot(withStyles(myTheme)(Index))
+// export default withRoot(withStyles(myTheme)(Index))
 // export default withRoot(Index)
+export default withStyles(myTheme)(Index)

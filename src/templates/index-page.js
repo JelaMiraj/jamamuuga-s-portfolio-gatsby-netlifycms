@@ -1,6 +1,6 @@
-// eslint-disable-next-line
-import {withRoot} from "../tools"
-// eslint-disable-next-line
+// // eslint-disable-next-line
+// import {withRoot} from "../tools"
+// // eslint-disable-next-line
 import React from "react"
 import PropTypes from "prop-types"
 import {graphql} from "gatsby"
@@ -13,20 +13,20 @@ import {
   Paper,
   Typography,
 } from "@material-ui/core"
-import {makeStyles, withStyles} from "@material-ui/core/styles"
-// import {withStyles} from "@material-ui/core/styles"
+// import {makeStyles, withStyles} from "@material-ui/core/styles"
+import {withStyles} from "@material-ui/core/styles"
 import {Card, BlogRoll, Features, Layout, Link} from "../components"
-import myTheme from "../styles/themes/theme"
+// import myTheme from "../styles/themes/theme"
 
 // TODO: Convert everything to use React Hooks (Don't forget the ESLint plugin), Babel-Blade (DRY GraphQL), & functions not classes.
 
 // FIXME: complains about object is not a function....
-const useStyles = makeStyles(theme => ({
-  root: {
-    textAlign: "center",
-    paddingTop: theme.spacing(20),
-  },
-}))
+// const useStyles = makeStyles(theme => ({
+//   root: {
+//     textAlign: "center",
+//     paddingTop: theme.spacing(20),
+//   },
+// }))
 
 const styles = {
   cardMedia: {
@@ -48,7 +48,7 @@ export const IndexPageTemplate = ({
 }) => {
   // TODO: Delete this null variable when eslint stops reformatting and breaking this function.
   const noOp = null
-  const classes = useStyles()
+  // const classes = useStyles()
 
   return (
     <div>
@@ -247,7 +247,8 @@ export const pageQuery = graphql`
 `
 
 // FIXME: Somehow, trying to use withStyles this way fails
-export default withRoot(withStyles(styles)(IndexPage))
+// export default withRoot(withStyles(styles)(IndexPage))
 // export default withRoot(IndexPage)
+export default withStyles(styles)(IndexPage)
 // export {IndexPageTemplate, pageQuery}
 // export {IndexPage}

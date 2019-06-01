@@ -1,6 +1,6 @@
-// // eslint-disable-next-line
-// import {withRoot} from "../../tools"
-// // eslint-disable-next-line
+// // // eslint-disable-next-line
+// // import {withRoot} from "../../tools"
+// // // eslint-disable-next-line
 // import React from "react"
 // import {graphql, withPrefix} from "gatsby"
 // import {GridList, GridListTile, GridListTileBar, IconButton, Typography} from "@material-ui/core"
@@ -83,4 +83,5 @@
 //   }
 // `
 
-// export default withRoot(Team)
+// // export default withRoot(Team)
+// export default Team
