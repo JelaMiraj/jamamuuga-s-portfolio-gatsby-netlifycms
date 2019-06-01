@@ -1,8 +1,8 @@
 module.exports = {
-  presets: ["@babel/preset-env", "@babel/preset-react", "babel-preset-gatsby"],
+  presets: [require.resolve(`@babel/preset-env`), require.resolve(`@babel/preset-react`), require.resolve(`babel-preset-gatsby`)],
   plugins: [
-    "@babel/plugin-proposal-class-properties",
-    "@babel/plugin-syntax-dynamic-import",
+    require.resolve(`@babel/plugin-proposal-class-properties`),
+    require.resolve(`@babel/plugin-syntax-dynamic-import`),
     // [
     //   "named-params",
     //   {
@@ -12,7 +12,7 @@ module.exports = {
     // ],
     // "add-module-exports",
     // "styled-components",
-    // "babel-plugin-add-module-exports",
-    "babel-plugin-styled-components",
+    // require.resolve(`babel-plugin-add-module-exports`),
+    require.resolve(`babel-plugin-styled-components`),
   ],
 }
