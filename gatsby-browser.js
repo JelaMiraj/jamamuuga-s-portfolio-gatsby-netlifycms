@@ -1,6 +1,6 @@
 // import React from "react"
 // import withRoot from "./src/tools/withRoot"
-import ReactDOM from "react-dom"
+// import ReactDOM from "react-dom"
 
 // Begin Mui Gatsby Example Body
 // From: https://github.com/mui-org/material-ui/blob/master/examples/gatsby/gatsby-browser.js
