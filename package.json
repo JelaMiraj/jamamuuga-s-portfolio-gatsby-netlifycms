@@ -160,6 +160,7 @@
     "immutable": "^4.0.0-rc.12",
     "micromatch": "^4.0.2",
     "netlify-cms-lib-util": "^2.3.2",
-    "slash": "^3.0.0"
+    "slash": "^3.0.0",
+    "webpack": "^4.32.2"
   }
 }
