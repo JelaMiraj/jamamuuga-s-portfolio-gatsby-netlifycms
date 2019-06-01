@@ -1,6 +1,6 @@
 // See https://github.com/mui-org/material-ui/tree/master/examples/gatsby
 import {SheetsRegistry} from "jss"
-import {createGenerateClassName} from "@material-ui/core/styles"
+import {createGenerateClassName} from "@material-ui/styles"
 import theme from "../styles/themes/theme"
 
 function createPageContext() {
