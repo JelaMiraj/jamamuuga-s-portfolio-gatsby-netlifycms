@@ -1,5 +1,5 @@
 // eslint-disable-next-line
-import {withRoot} from "../tools"
+import {withRoot} from "../../tools"
 // eslint-disable-next-line
 import React from "react"
 import {kebabCase} from "lodash"
