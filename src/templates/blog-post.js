@@ -1,6 +1,3 @@
-// // eslint-disable-next-line
-// import {withRoot} from "../tools"
-// // eslint-disable-next-line
 import React from "react"
 import PropTypes from "prop-types"
 import {kebabCase} from "lodash"
@@ -86,9 +83,6 @@ BlogPost.propTypes = {
   }),
 }
 
-// export default withRoot(BlogPost)
-export default BlogPost
-
 export const pageQuery = graphql`
   query BlogPostByID($id: String!) {
     markdownRemark(id: {eq: $id}) {
@@ -103,3 +97,5 @@ export const pageQuery = graphql`
     }
   }
 `
+
+export default BlogPost

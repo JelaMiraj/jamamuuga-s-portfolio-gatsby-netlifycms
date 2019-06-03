@@ -1,6 +1,3 @@
-// // // eslint-disable-next-line
-// // import {withRoot} from "../tools"
-// // // eslint-disable-next-line
 // import React from "react"
 // // import PropTypes from "prop-types"
 // import {graphql, withPrefix} from "gatsby"
@@ -55,5 +52,4 @@
 //   }
 // `
 
-// // export default withRoot(withStyles(styles)(Detail))
 // export default withStyles(styles)(Detail)

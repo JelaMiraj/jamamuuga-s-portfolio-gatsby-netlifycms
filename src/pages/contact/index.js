@@ -1,11 +1,6 @@
-// // eslint-disable-next-line
-// import {withRoot} from "../../tools"
-// // eslint-disable-next-line
 import React, {Component} from "react"
 import {navigate} from "gatsby"
-// import {withStyles} from "@material-ui/core/styles"
 import {Layout} from "../../components"
-// import myTheme from "../../styles/themes/theme"
 
 function encode(data) {
   return Object.keys(data)
@@ -119,8 +114,4 @@ class Index extends Component {
   }
 }
 
-// FIXME: Somehow, trying to use withStyles this way fails
-// export default withRoot(withStyles(myTheme)(Index))
-// export default withRoot(Index)
-// export default withStyles(myTheme)(Index)
 export default Index

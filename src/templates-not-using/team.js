@@ -1,6 +1,3 @@
-// // // eslint-disable-next-line
-// // import {withRoot} from "../tools"
-// // // eslint-disable-next-line
 // import React from "react"
 // import {graphql, withPrefix} from "gatsby"
 // import {Grid, Paper, Typography} from "@material-ui/core"
@@ -70,10 +67,5 @@
 //   }
 // `
 
-// // const TeamWrapped = withRoot(withStyles(styles)(Team))
-// // const TeamWrapped = withStyles(styles)(Team)
-
-// // export default TeamWrapped
-// // export default withRoot(withStyles(styles)(Team))
 // export default withStyles(styles)(Team)
-// // export {TeamWrapped as Team}
+// // export {Team}

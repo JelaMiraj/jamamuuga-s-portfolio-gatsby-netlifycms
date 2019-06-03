@@ -1,6 +1,3 @@
-// // eslint-disable-next-line
-// import {withRoot} from "../../tools"
-// // eslint-disable-next-line
 import React, {Component} from "react"
 import {navigate} from "gatsby"
 import {Layout} from "../../components"
@@ -110,5 +107,4 @@ class Contact extends Component {
   }
 }
 
-// export default withRoot(Contact)
 export default Contact

@@ -1,10 +1,5 @@
-// // eslint-disable-next-line
-// import {withRoot} from "../../tools"
-// // eslint-disable-next-line
 import React, {Component} from "react"
-// import {withStyles} from "@material-ui/core/styles"
 import {BlogRoll, Layout} from "../../components"
-// import myTheme from "../../styles/themes/theme"
 
 class BlogIndexPage extends Component {
   render() {
@@ -40,8 +35,4 @@ class BlogIndexPage extends Component {
   }
 }
 
-// FIXME: Somehow, trying to use withStyles this way fails
-// export default withRoot(withStyles(myTheme)(BlogIndexPage))
-// export default withRoot(BlogIndexPage)
-// export default withStyles(myTheme)(BlogIndexPage)
 export default BlogIndexPage

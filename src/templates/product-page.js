@@ -1,6 +1,3 @@
-// // eslint-disable-next-line
-// import {withRoot} from "../tools"
-// // eslint-disable-next-line
 import React from "react"
 import PropTypes from "prop-types"
 import {graphql} from "gatsby"
@@ -178,9 +175,6 @@ ProductPage.propTypes = {
   }),
 }
 
-// export default withRoot(ProductPage)
-export default ProductPage
-
 export const productPageQuery = graphql`
   query ProductPage($id: String!) {
     markdownRemark(id: {eq: $id}) {
@@ -268,3 +262,5 @@ export const productPageQuery = graphql`
     }
   }
 `
+
+export default ProductPage

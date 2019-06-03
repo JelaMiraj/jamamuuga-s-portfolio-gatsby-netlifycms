@@ -1,7 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import {AboutPageTemplate} from "../../templates/about-page"
-// TODO: Does Netlify CMS preview pages need withRoot util too?
 
 const AboutPagePreview = ({entry, widgetFor}) => (
   <AboutPageTemplate

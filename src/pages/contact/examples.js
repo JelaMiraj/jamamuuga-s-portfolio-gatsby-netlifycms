@@ -1,6 +1,3 @@
-// // eslint-disable-next-line
-// import {withRoot} from "../../tools"
-// // eslint-disable-next-line
 import React, {Component} from "react"
 import {Link, Layout} from "../../components"
 
@@ -51,5 +48,4 @@ class Index extends Component {
   }
 }
 
-// export default withRoot(Index)
 export default Index

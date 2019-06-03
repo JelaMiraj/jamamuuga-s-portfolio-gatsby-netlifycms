@@ -1,17 +1,11 @@
-// // // eslint-disable-next-line
-// // import {withRoot} from "../tools"
-// // // eslint-disable-next-line
 // import React, {Component} from "react"
 // import PropTypes from "prop-types"
 // import {graphql} from "gatsby"
 // // import {Avatar, Button, Grid} from "@material-ui/core"
 // // import {Gift} from "mdi-material-ui"
-// // import {withStyles} from "@material-ui/core/styles"
 // import {Layout, Link} from "../components"
 // // import {Card, Carousel} from "../components"
-// // import myTheme from "../styles/themes/theme"
 // // FIXME: Somehow refer to color names from style variables instead of repeating here.
-// // FIXME: Many page links broken using current setup.
 
 // class IndexPage extends Component {
 //   render() {
@@ -87,8 +81,4 @@
 //   }
 // `
 
-// // FIXME: Somehow, trying to use withStyles this way fails
-// // export default withRoot(withStyles(myTheme)(IndexPage))
-// // export default withRoot(IndexPage)
-// // export default withStyles(myTheme)(IndexPage)
 // export default IndexPage
