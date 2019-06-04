@@ -152,7 +152,7 @@
     "stylelint-config-recommended": "^2.2.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.8.0",
-    "webpack": "^4.32.2"
+    "webpack": "^4.33.0"
   },
   "installConfig": {
     "pnp": true
@@ -166,6 +166,6 @@
     "micromatch": "^4.0.2",
     "netlify-cms-lib-util": "^2.3.2",
     "slash": "^3.0.0",
-    "webpack": "^4.32.2"
+    "webpack": "^4.33.0"
   }
 }
