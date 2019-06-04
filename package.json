@@ -2,6 +2,7 @@
   "name": "jamamuuga-s-portfolio-gatsby-netlifycms",
   "description": "Jason Cady's Portfolio in Netlify CMS & Gatsby",
   "version": "0.1.0",
+  "license": "MIT",
   "private": true,
   "author": "Jason Cady <jamamuuga@gmail.com> (https://jasoncadydesigns.netlify.com)",
   "bugs": {
