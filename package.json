@@ -159,6 +159,7 @@
   },
   "optionalDependencies": {
     "@babel/runtime": "^7.4.5",
+    "@oclif/config": "^1.13.0",
     "bluebird": "^3.5.5",
     "debug": "^4.1.1",
     "eslint-plugin-flowtype": "^3.9.1",
