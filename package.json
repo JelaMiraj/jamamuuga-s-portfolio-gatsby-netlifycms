@@ -134,7 +134,7 @@
     "jest": "^24.8.0",
     "jest-environment-enzyme": "^7.0.2",
     "jest-enzyme": "^7.0.2",
-    "netlify-cli": "^2.11.21",
+    "netlify-cli": "^2.11.22",
     "netlify-cms-backend-fs": "^0.4.4",
     "netlify-lambda": "^1.4.13",
     "prettier": "^1.17.1",
