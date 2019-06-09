@@ -29,7 +29,7 @@ const styles = theme => ({
 const HomeFeatures = props => {
   return (
     <Grid
-      spacing={24}
+      spacing={3}
       container
       justify="center"
       className={props.classes.featureGrid}

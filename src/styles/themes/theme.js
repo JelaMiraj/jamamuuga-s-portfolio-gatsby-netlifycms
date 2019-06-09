@@ -60,7 +60,7 @@ const theme = createMuiTheme({
   overrides: {
     // TODO: Refer to MuiGrid & "spacing-xs-16" in a proper modern way & verify the appropriate places.
     // MuiGrid: {
-    //   "spacing-xs-16": {
+    //   "spacing-xs-2": {
     //     margin: "0 -8px",
     //     "& > *[class^=MuiGrid-typeItem]": {
     //       padding: "0 8px",

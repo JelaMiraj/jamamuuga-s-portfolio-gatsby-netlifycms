@@ -20,7 +20,7 @@ const Header = props => {
           container
           justify="space-between"
           alignItems="center"
-          spacing={16}
+          spacing={2}
         >
           <Grid item>
             <Chip

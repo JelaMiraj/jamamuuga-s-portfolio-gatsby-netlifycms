@@ -4,7 +4,7 @@ import {styled} from "@material-ui/core/styles"
 
 const Section = styled(Grid, {
   component: "section",
-  spacing: 16,
+  spacing: 2,
   justify: "center",
   container: true,
 })(theme => ({

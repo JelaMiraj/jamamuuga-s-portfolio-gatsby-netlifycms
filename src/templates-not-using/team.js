@@ -26,7 +26,7 @@
 //       {/* <SEO title={title} /> */}
 //       <Paper className={classes.paper}>
 //         <Grid
-//           spacing={24}
+//           spacing={3}
 //           container
 //           direction="row"
 //           alignItems="flex-start"
