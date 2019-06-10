@@ -42,7 +42,7 @@ class BlogRoll extends Component {
                     >
                       {post.frontmatter.title}
                     </Link>
-                    <Typography inline> &bull; </Typography>
+                    <Typography display="inline"> &bull; </Typography>
                     <Typography
                       variant="h3"
                       className="subtitle is-size-5 is-block"
