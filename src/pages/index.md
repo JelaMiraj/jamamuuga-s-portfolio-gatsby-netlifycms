@@ -21,7 +21,7 @@ intro:
     - image: /img/logo.svg
       text: >
         Blurb 3.
-    - image: /img/meeting-space.png
+    - image: /img/logo.svg
       text: >
         Blurb 4.
   heading: What I offer
