@@ -23,18 +23,18 @@ module.exports = {
         name: "Products",
         link: "/products",
       },
-      {
-        name: "Blog",
-        link: "/blog",
-      },
+      // {
+      //   name: "Blog",
+      //   link: "/blog",
+      // },
       {
         name: "Contact",
         link: "/contact",
       },
-      {
-        name: "Form Examples",
-        link: "/contact/examples",
-      },
+      // {
+      //   name: "Form Examples",
+      //   link: "/contact/examples",
+      // },
     ],
   },
   plugins: [
