@@ -12,16 +12,16 @@ description: >-
   More description here
 intro:
   blurbs:
-    - image: /img/logo.svg
+    - image: /img/favicon-32x32.png
       text: >
         Blurb 1.
-    - image: /img/logo.svg
+    - image: /img/favicon-32x32.png
       text: >
         Blurb 2.
-    - image: /img/logo.svg
+    - image: /img/favicon-32x32.png
       text: >
         Blurb 3.
-    - image: /img/logo.svg
+    - image: /img/favicon-32x32.png
       text: >
         Blurb 4.
   heading: What I offer
