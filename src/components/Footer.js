@@ -67,11 +67,11 @@ const Footer = withStyles(styles)(props => {
                         <ListItemText>Products</ListItemText>
                       </Link>
                     </ListItem>
-                    <ListItem>
+                    {/* <ListItem>
                       <Link className="navbar-item" to="/contact/examples">
                         <ListItemText>Form Examples</ListItemText>
                       </Link>
-                    </ListItem>
+                    </ListItem> */}
                     <ListItem>
                       <LinkExternal
                         className="navbar-item"
@@ -88,11 +88,11 @@ const Footer = withStyles(styles)(props => {
               <Grid item xs={4} className="column is-4">
                 <section>
                   <List component="nav" className="menu-list">
-                    <ListItem>
+                    {/* <ListItem>
                       <Link className="navbar-item" to="/blog">
                         <ListItemText>Latest Stories</ListItemText>
                       </Link>
-                    </ListItem>
+                    </ListItem> */}
                     <ListItem>
                       <Link className="navbar-item" to="/contact">
                         <ListItemText>Contact</ListItemText>
