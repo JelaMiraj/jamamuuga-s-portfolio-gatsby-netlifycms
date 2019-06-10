@@ -146,7 +146,7 @@ export const IndexPageTemplate = ({
                     >
                       Latest stories
                     </Typography>
-                    <BlogRoll />
+                    {/* <BlogRoll /> */}
                     <Grid item xs={12} align="center" className="column">
                       <Button variant="contained" color="secondary">
                         <Link className="btn" to="/blog">
