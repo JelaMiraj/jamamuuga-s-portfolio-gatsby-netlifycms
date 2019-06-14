@@ -163,7 +163,7 @@
     "@oclif/errors": "^1.2.2",
     "bluebird": "^3.5.5",
     "debug": "^4.1.1",
-    "eslint-plugin-flowtype": "^3.9.1",
+    "eslint-plugin-flowtype": "^3.10.3",
     "immutable": "^4.0.0-rc.12",
     "micromatch": "^4.0.2",
     "netlify-cms-lib-util": "^2.3.2",
