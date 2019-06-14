@@ -11231,10 +11231,10 @@ jss@10.0.0-alpha.17:
     is-in-browser "^1.1.3"
     tiny-warning "^1.0.2"
 
-jss@^10.0.0-alpha.16:
-  version "10.0.0-alpha.16"
-  resolved "https://registry.yarnpkg.com/jss/-/jss-10.0.0-alpha.16.tgz#0555e8b667e08dbd2cc94f6125be5a8b8b022833"
-  integrity sha512-HmKNNnr82TR5jkWjBcbrx/uim2ief588pWp7zsf4GQpL125zRkEaWYL1SXv5bR6bBvAoTtvJsTAOxDIlLxUNZg==
+jss@^10.0.0-alpha.18:
+  version "10.0.0-alpha.18"
+  resolved "https://registry.yarnpkg.com/jss/-/jss-10.0.0-alpha.18.tgz#56a84a2e7cf25ce5abfeebae5eba9c5e9a98347d"
+  integrity sha512-QEGbtYJbLZcIFPdCulklxfpRb40isT+loMvAMr6gmcT6PPg8py7PfU5xZOpqRo6CGbBznDsmbCiBPsXyGMpVcQ==
   dependencies:
     "@babel/runtime" "^7.3.1"
     is-in-browser "^1.1.3"
