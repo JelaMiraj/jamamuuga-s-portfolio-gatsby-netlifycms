@@ -3341,12 +3341,12 @@ babel-preset-jest@^24.6.0:
     "@babel/plugin-syntax-object-rest-spread" "^7.0.0"
     babel-plugin-jest-hoist "^24.6.0"
 
-babel-runtime-named-params@^0.9.14:
-  version "0.9.14"
-  resolved "https://registry.yarnpkg.com/babel-runtime-named-params/-/babel-runtime-named-params-0.9.14.tgz#c0efff234959c7f9a32f0824e52616a07a980f93"
-  integrity sha512-PagXQij3UAI4GZHdv20Mu4f5Z/NgKohzXvCVmL4Vxcvd7NoEeiu7K2fPPZ9lXuql/ZD32e5zYf6Jjm7aid5SNQ==
+babel-runtime-named-params@^0.9.16:
+  version "0.9.16"
+  resolved "https://registry.yarnpkg.com/babel-runtime-named-params/-/babel-runtime-named-params-0.9.16.tgz#6eb65c9a672779be1d7859550cf1e100614e8f08"
+  integrity sha512-/yCR+cj2r0/evrNPZqwMOqjGxhOUDk/84tcyuoJSTXxLWJoVD2BUEbJSQqUiMfmeSPObGX/rFzztZKTme+D7sg==
   dependencies:
-    func-params "0.9.14"
+    func-params "0.9.15"
 
 babel-runtime@^6.11.6, babel-runtime@^6.26.0:
   version "6.26.0"
@@ -3910,10 +3910,10 @@ cache-base@^1.0.1:
     union-value "^1.0.0"
     unset-value "^1.0.0"
 
-cache-lru@1.1.6:
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/cache-lru/-/cache-lru-1.1.6.tgz#53dba16d766d3bbc193bf037cee1c4f7eb630099"
-  integrity sha512-FBHhoGcRXjclExSBit8Q5gUY2kKA27HmTkw8oHE/LY1N4rHRcgjJIfKYHlu3aIkNYSwRDAFUlwIla2K9TumIFg==
+cache-lru@1.1.8:
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/cache-lru/-/cache-lru-1.1.8.tgz#9f4845e3a44691528951f70945977f9d3dbcb1a6"
+  integrity sha512-4GW3OXlglyriGmekUV7LGGbkDfiVeVaSJ6s44OY5uobT3L/kGa+w2GpHiyHOIiXCdH5d0er9fzXpXVTEGz4cvg==
 
 cache-manager-fs-hash@^0.0.6:
   version "0.0.6"
@@ -7813,13 +7813,13 @@ fsevents@^1.2.7:
     nan "^2.12.1"
     node-pre-gyp "^0.12.0"
 
-func-params@0.9.14:
-  version "0.9.14"
-  resolved "https://registry.yarnpkg.com/func-params/-/func-params-0.9.14.tgz#42f8b883536da0649d53521f32c3bc89c4493c71"
-  integrity sha512-lhEef+hq6Wf/YkGAJrAt20ZeaCNAN5uQDZs8kTv5Z/fG3oZDE2hJWQANloAO6GFr/CKETaAKBRrvRjnR4TjEQw==
+func-params@0.9.15:
+  version "0.9.15"
+  resolved "https://registry.yarnpkg.com/func-params/-/func-params-0.9.15.tgz#7acd4499dddf1029972d1e282dca804a2a76a789"
+  integrity sha512-Q+iqaYBD5Lnv/07U4HBMuF2Nx9GcH+P/oS3t4PKIQjeVuadSblvtZMw6hzBVvH2jZLRFKQGB59TqBPrMo8fEGA==
   dependencies:
-    cache-lru "1.1.6"
-    tokenizr "1.3.10"
+    cache-lru "1.1.8"
+    tokenizr "1.5.3"
 
 function-bind@^1.0.2, function-bind@^1.1.1:
   version "1.1.1"
@@ -19077,10 +19077,10 @@ toidentifier@1.0.0:
   resolved "https://registry.yarnpkg.com/toidentifier/-/toidentifier-1.0.0.tgz#7e1be3470f1e77948bc43d94a3c8f4d7752ba553"
   integrity sha512-yaOH/Pk/VEhBWWTlhI+qXxDFXlejDGcQipMlyxda9nthulaxLZUNcUqFxokp0vcYnvteJln5FNQDRrxj3YcbVw==
 
-tokenizr@1.3.10:
-  version "1.3.10"
-  resolved "https://registry.yarnpkg.com/tokenizr/-/tokenizr-1.3.10.tgz#40702a76602520273a0dbd269d1a035200020e47"
-  integrity sha512-XlYlczHEQrbmj/JInA9vcsBJlukyTJWvjmQodjlbkul5fZ4o1JDNYAvLlrHZs03CSR8nFjNmTEqN3NrjTjmN+A==
+tokenizr@1.5.3:
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/tokenizr/-/tokenizr-1.5.3.tgz#e7c71a0b1268574cc6ef1e05f67627c7df4c86f8"
+  integrity sha512-/R+SbPZ6P1g5KtDpZrUbH6EFo0w/wN+xh9Ns7CcMdWEcVnSebTV2lJszCX3+roLTMsi64rJfr0UJOKGDMRrItQ==
 
 toml-j0.4@^1.1.1:
   version "1.1.1"
