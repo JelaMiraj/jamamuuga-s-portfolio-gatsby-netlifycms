@@ -3219,10 +3219,10 @@ babel-plugin-macros@^2.0.0, babel-plugin-macros@^2.4.2:
     cosmiconfig "^5.2.0"
     resolve "^1.10.0"
 
-babel-plugin-named-params@^0.9.13:
-  version "0.9.13"
-  resolved "https://registry.yarnpkg.com/babel-plugin-named-params/-/babel-plugin-named-params-0.9.13.tgz#e5b54bb210a29662b7443844e9ebc9f35bea046d"
-  integrity sha512-JSYZk/GcCY1i/Qsmnngnc6iSpyupy+ZWk1q1P245H0UPFjC4hZIWJaEpUToOrRQwwgUPQuhM1/vq1sR4uVjDOg==
+babel-plugin-named-params@^0.9.14:
+  version "0.9.14"
+  resolved "https://registry.yarnpkg.com/babel-plugin-named-params/-/babel-plugin-named-params-0.9.14.tgz#b25f869aac1dbc495b75f611929af72e63e8900c"
+  integrity sha512-m7+XycpAuASrJiW4OI0DFjHQ6mwDeQIETXd5hSADUFNmdBbezaOTGuWX6h8IFBks+S5RIDFhg8jB98dw0nCoIw==
 
 babel-plugin-remove-graphql-queries@^2.7.0:
   version "2.7.0"
