@@ -19,7 +19,8 @@ const PreviewCompatibleImage = ({imageInfo}) => {
   if (!!image && typeof image === "string")
     return <img style={imageStyle} src={image} alt={alt} />
 
-  return null
+    return null
+  }
 }
 
 PreviewCompatibleImage.propTypes = {
