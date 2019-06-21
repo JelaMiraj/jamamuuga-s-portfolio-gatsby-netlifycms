@@ -167,9 +167,13 @@
     "bluebird": "^3.5.5",
     "debug": "^4.1.1",
     "eslint-plugin-flowtype": "^3.10.3",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
     "immutable": "^4.0.0-rc.12",
     "micromatch": "^4.0.2",
     "netlify-cms-lib-util": "^2.3.2",
+    "promise": "^8.0.3",
     "slash": "^3.0.0",
     "webpack": "^4.35.0"
   }
