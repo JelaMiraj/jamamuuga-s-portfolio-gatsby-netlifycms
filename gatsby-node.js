@@ -135,7 +135,7 @@ exports.onCreateWebpackConfig = ({stage, rules, loaders, plugins, actions}) => {
       //   __DEVELOPMENT__: stage === `develop` || stage === `develop-html`,
       // }),
       new BundleAnalyzerPlugin({
-        analyzerMode: "static",
+        analyzerMode: "disabled",
         generateStatsFile: true,
         openAnalyzer: false,
         statsOptions: {source: false},
