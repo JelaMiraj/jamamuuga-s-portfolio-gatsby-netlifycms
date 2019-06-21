@@ -20,8 +20,8 @@ module.exports = {
         link: "/about",
       },
       {
-        name: "Products",
-        link: "/products",
+        name: "Portfolio",
+        link: "/portfolio",
       },
       // {
       //   name: "Blog",

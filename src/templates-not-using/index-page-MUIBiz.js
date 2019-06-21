@@ -13,7 +13,7 @@
 // })
 
 // const Home = props => {
-//   const products = props.data.allMarkdownRemark.edges
+//   const portfolio = props.data.allMarkdownRemark.edges
 
 //   return (
 //     <Page title="Gatsby Material UI Business Starter">
@@ -26,7 +26,7 @@
 
 //       <HomeFeatures />
 //       <Card
-//         title="Our Products"
+//         title="My Portfolio"
 //         avatar={
 //           <Avatar>
 //             <Gift />
@@ -38,14 +38,14 @@
 //             color="secondary"
 //             className={props.classes.root}
 //             component={Link}
-//             to="/products"
+//             to="/portfolio"
 //           >
-//             View All Products
+//             View All Portfolio
 //           </Button>
 //         }
 //         style={{ minHeight: 523 }}
 //       >
-//         <Carousel items={products} />
+//         <Carousel items={portfolio} />
 //       </Card>
 //     </Page>
 //   )
@@ -61,7 +61,7 @@
 //       }
 //     }
 //     allMarkdownRemark(
-//       filter: {fileAbsolutePath: {regex: "/products/"}}
+//       filter: {fileAbsolutePath: {regex: "/portfolio/"}}
 //       sort: {fields: [frontmatter___date], order: DESC}
 //     ) {
 //       edges {

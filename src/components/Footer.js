@@ -63,8 +63,8 @@ const Footer = withStyles(styles)(props => {
                       </Link>
                     </ListItem>
                     <ListItem>
-                      <Link className="navbar-item" to="/products">
-                        <ListItemText>Products</ListItemText>
+                      <Link className="navbar-item" to="/portfolio">
+                        <ListItemText>Portfolio</ListItemText>
                       </Link>
                     </ListItem>
                     {/* <ListItem>

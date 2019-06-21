@@ -2,21 +2,21 @@
 // import {graphql} from "gatsby"
 // import {List, Page, SEO} from "../components"
 
-// const Products = props => {
-//   const products = props.data.allMarkdownRemark.edges
+// const Portfolio = props => {
+//   const portfolio = props.data.allMarkdownRemark.edges
 
 //   return (
-//     <Page title="Products">
-//       <SEO title="Products" />
-//       <List items={products} />
+//     <Page title="Portfolio">
+//       <SEO title="Portfolio" />
+//       <List items={portfolio} />
 //     </Page>
 //   )
 // }
 
 // export const query = graphql`
-//   query ProductsQuery {
+//   query PortfolioQuery {
 //     allMarkdownRemark(
-//       filter: {fileAbsolutePath: {regex: "/products/"}}
+//       filter: {fileAbsolutePath: {regex: "/portfolio/"}}
 //       sort: {fields: [frontmatter___date], order: DESC}
 //     ) {
 //       edges {
@@ -35,4 +35,4 @@
 //   }
 // `
 
-// export default Products
+// export default Portfolio

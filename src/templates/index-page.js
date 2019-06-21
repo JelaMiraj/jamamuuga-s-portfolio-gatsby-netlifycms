@@ -132,8 +132,8 @@ export const IndexPageTemplate = ({
                   <Grid container className="columns">
                     <Grid item xs={12} align="center" className="column">
                       <Button variant="contained" color="secondary">
-                        <Link className="btn" to="/products">
-                          See all products
+                        <Link className="btn" to="/portfolio">
+                          See all portfolio
                         </Link>
                       </Button>
                     </Grid>

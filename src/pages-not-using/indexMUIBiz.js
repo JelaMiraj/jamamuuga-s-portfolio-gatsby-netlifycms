@@ -13,7 +13,7 @@
 // })
 
 // const Home = props => (
-//   // const products = props.data.allMarkdownRemark.edges
+//   // const portfolio = props.data.allMarkdownRemark.edges
 
 //   <Page title="Gatsby Material UI Business Starter">
 //     <SEO title="Home">
@@ -34,7 +34,7 @@
 //       {/*
 //         <Grid item xs={12} md={10} style={{minHeight: "523px"}}>
 //           <Card
-//             title="Our Products"
+//             title="My Portfolio"
 //             avatar={
 //               <Avatar>
 //                 <Gift />
@@ -47,12 +47,12 @@
 //                   color="secondary"
 //                   className={props.classes.root}
 //                 >
-//                   <Link to="/products">View All Products</Link>
+//                   <Link to="/portfolio">View All Portfolio</Link>
 //                 </Button>
 //               </>
 //             }
 //           >
-//             <Carousel items={products} />
+//             <Carousel items={portfolio} />
 //           </Card>
 //         </Grid>
 //         */}
@@ -63,7 +63,7 @@
 // // export const query = graphql`
 // //   query {
 // //     allMarkdownRemark(
-// //       filter: {fileAbsolutePath: {regex: "/products/"}}
+// //       filter: {fileAbsolutePath: {regex: "/portfolio/"}}
 // //       sort: {fields: [frontmatter___date], order: DESC}
 // //     ) {
 // //       edges {
