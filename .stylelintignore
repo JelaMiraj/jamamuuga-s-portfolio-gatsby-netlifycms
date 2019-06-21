@@ -13,5 +13,6 @@
 **/.pnp.js
 **/public/**
 **/static/**
+/stats.json
 **/temp/**
 **/tmp/**
