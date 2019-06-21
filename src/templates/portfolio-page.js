@@ -10,7 +10,7 @@ import {
   Testimonials,
 } from "../components"
 
-export const ProductPageTemplate = ({
+export const PortfolioPageTemplate = ({
   image,
   title,
   heading,
@@ -123,7 +123,7 @@ export const ProductPageTemplate = ({
   </section>
 )
 
-ProductPageTemplate.propTypes = {
+PortfolioPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
@@ -147,12 +147,12 @@ ProductPageTemplate.propTypes = {
   }),
 }
 
-const ProductPage = ({data}) => {
+const PortfolioPage = ({data}) => {
   const {frontmatter} = data.markdownRemark
 
   return (
     <Layout>
-      <ProductPageTemplate
+      <PortfolioPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
@@ -167,7 +167,7 @@ const ProductPage = ({data}) => {
   )
 }
 
-ProductPage.propTypes = {
+PortfolioPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -175,8 +175,8 @@ ProductPage.propTypes = {
   }),
 }
 
-export const productPageQuery = graphql`
-  query ProductPage($id: String!) {
+export const portfolioPageQuery = graphql`
+  query PortfolioPage($id: String!) {
     markdownRemark(id: {eq: $id}) {
       frontmatter {
         title
@@ -263,4 +263,4 @@ export const productPageQuery = graphql`
   }
 `
 
-export default ProductPage
+export default PortfolioPage
