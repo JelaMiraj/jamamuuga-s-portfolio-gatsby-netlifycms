@@ -12,6 +12,9 @@ const PreviewCompatibleImage = ({imageInfo}) => {
     )
   }
 
+  // TODO: Find out if more "!!" instances disappeared over time from linting or auto-formating.
+  // TODO: Find out if "!!" (not not) is really needed.
+  // eslint-disable-next-line
   if (!!childImageSharp) {
     return <Img style={imageStyle} fluid={childImageSharp.fluid} alt={alt} />
   }
