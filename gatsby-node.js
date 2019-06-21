@@ -3,7 +3,7 @@ const path = require("path")
 const {createFilePath} = require("gatsby-source-filesystem")
 const {fmImagesToRelative} = require("gatsby-remark-relative-images")
 const PnpWebpackPlugin = require("pnp-webpack-plugin")
-const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin
+const {BundleAnalyzerPlugin} = require("webpack-bundle-analyzer")
 
 exports.createPages = ({actions, graphql}) => {
   const {createPage} = actions

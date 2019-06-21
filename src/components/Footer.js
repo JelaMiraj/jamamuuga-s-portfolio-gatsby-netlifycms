@@ -1,6 +1,20 @@
 import React, {Component} from "react"
 import {StaticQuery, graphql} from "gatsby"
-import {Chip, Box, Button, Container, Divider, Grid, Hidden, IconButton, List, ListItem, ListItemIcon, ListItemText, Typography} from "@material-ui/core"
+import {
+  Chip,
+  Box,
+  Button,
+  Container,
+  Divider,
+  Grid,
+  Hidden,
+  IconButton,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  Typography,
+} from "@material-ui/core"
 import {withStyles} from "@material-ui/core/styles"
 // import {Facebook as FacebookLogo, Instagram as InstagramLogo, Twitter as TwitterLogo, Vimeo as VimeoLogo} from "mdi-material-ui"
 import {Content, Link, LinkExternal, PreviewCompatibleImage as Image} from "."

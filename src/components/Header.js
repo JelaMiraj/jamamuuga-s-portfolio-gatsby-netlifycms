@@ -12,48 +12,41 @@ import {
 import {MaterialUi} from "mdi-material-ui"
 import {Link, Menu, MenuMobile} from "."
 
-const Header = props => {
-  return (
-    <AppBar id="appBar">
-      <Toolbar>
-        <Grid
-          container
-          justify="space-between"
-          alignItems="center"
-          spacing={2}
-        >
-          <Grid item>
-            <Chip
-              id="logo"
-              variant="outlined"
-              avatar={
-                <Avatar id="logoIcon">
-                  <MaterialUi />
-                </Avatar>
-              }
-              label={
-                <Link to="/">
-                  {props.data.site.siteMetadata.title.toUpperCase()}
-                </Link>
-              }
-            />
-          </Grid>
-          <Grid item>
-            <Hidden smDown>
-              <Typography component="span" variant="caption">
-                <Menu />
-              </Typography>
-            </Hidden>
-            <Hidden mdUp>
-              <MenuMobile />
-            </Hidden>
-          </Grid>
+const Header = props => (
+  <AppBar id="appBar">
+    <Toolbar>
+      <Grid container justify="space-between" alignItems="center" spacing={2}>
+        <Grid item>
+          <Chip
+            id="logo"
+            variant="outlined"
+            avatar={
+              <Avatar id="logoIcon">
+                <MaterialUi />
+              </Avatar>
+            }
+            label={
+              <Link to="/">
+                {props.data.site.siteMetadata.title.toUpperCase()}
+              </Link>
+            }
+          />
         </Grid>
-        <Grid item />
-      </Toolbar>
-    </AppBar>
-  )
-}
+        <Grid item>
+          <Hidden smDown>
+            <Typography component="span" variant="caption">
+              <Menu />
+            </Typography>
+          </Hidden>
+          <Hidden mdUp>
+            <MenuMobile />
+          </Hidden>
+        </Grid>
+      </Grid>
+      <Grid item />
+    </Toolbar>
+  </AppBar>
+)
 
 export default props => (
   <StaticQuery

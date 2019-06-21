@@ -1,6 +1,6 @@
 import red from "@material-ui/core/colors/red"
 import {createMuiTheme} from "@material-ui/core/styles"
-//TODO: Overwrite this with src/styles/theme/theme
+// TODO: Overwrite this with src/styles/theme/theme
 
 // A custom theme for this app
 const theme = createMuiTheme({

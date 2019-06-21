@@ -63,40 +63,40 @@ class Index extends Component {
                   <div className="control">
                     <input
                       className="input"
-                      type={"text"}
-                      name={"name"}
+                      type="text"
+                      name="name"
                       onChange={this.handleChange}
-                      id={"name"}
-                      required={true}
+                      id="name"
+                      required
                     />
                   </div>
                 </div>
                 <div className="field">
-                  <label className="label" htmlFor={"email"}>
+                  <label className="label" htmlFor="email">
                     Email
                   </label>
                   <div className="control">
                     <input
                       className="input"
-                      type={"email"}
-                      name={"email"}
+                      type="email"
+                      name="email"
                       onChange={this.handleChange}
-                      id={"email"}
-                      required={true}
+                      id="email"
+                      required
                     />
                   </div>
                 </div>
                 <div className="field">
-                  <label className="label" htmlFor={"message"}>
+                  <label className="label" htmlFor="message">
                     Message
                   </label>
                   <div className="control">
                     <textarea
                       className="textarea"
-                      name={"message"}
+                      name="message"
                       onChange={this.handleChange}
-                      id={"message"}
-                      required={true}
+                      id="message"
+                      required
                     />
                   </div>
                 </div>

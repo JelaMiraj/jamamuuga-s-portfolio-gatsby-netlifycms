@@ -29,9 +29,7 @@ const Menu = withStyles(styles)(props => {
           <Button className={classes.menuButton}>{link.name}</Button>
         </Link>
       ))}
-      <LinkExternal
-        href="https://github.com/Jamamuuga/jamamuuga-s-portfolio-gatsby-netlifycms"
-      >
+      <LinkExternal href="https://github.com/Jamamuuga/jamamuuga-s-portfolio-gatsby-netlifycms">
         <IconButton className={classes.menuButton}>
           <GithubCircle />
         </IconButton>
