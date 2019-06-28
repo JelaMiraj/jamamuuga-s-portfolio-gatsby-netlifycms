@@ -7950,10 +7950,10 @@ gatsby-plugin-manifest@^2.2.0:
     semver "^5.6.0"
     sharp "^0.22.1"
 
-gatsby-plugin-material-ui@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-material-ui/-/gatsby-plugin-material-ui-2.0.1.tgz#5871534e710fca5ba370dce3a9a6761c99a6f47f"
-  integrity sha512-7pA3ILFGawJWIuAQDh6xscikVtkL6JKn2mfeyex58zswLbGnm46z5rkAr236zChba6V/zoSyledMNxSwcKHAWQ==
+gatsby-plugin-material-ui@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-material-ui/-/gatsby-plugin-material-ui-2.1.1.tgz#025babab20c3f088680df4d6bd40f9e777bfdd07"
+  integrity sha512-MQjrBLMVGWGdosHFKnKl0L5+KxwYY6q4otjncomXfE6x5gBolJpLiEovGZ0/rNg8DM5soIL0IXiUsoewDTYE8A==
   dependencies:
     autoprefixer "^9.5.1"
     clean-css "^4.2.1"
