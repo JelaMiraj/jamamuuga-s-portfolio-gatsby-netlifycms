@@ -18600,10 +18600,10 @@ stylehacks@^4.0.0:
     postcss "^7.0.0"
     postcss-selector-parser "^3.0.0"
 
-stylelint-config-pack@^4.1.2:
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/stylelint-config-pack/-/stylelint-config-pack-4.1.2.tgz#1d92b41715f2e80c08c1c24b61808cc125dc878b"
-  integrity sha512-UlRSJ+TrBXh/K9Rudo4U3SDdSNc5H7p0gRq3Bq5lp5vw95jRI6qefXzsq7FpwHWpo1jU+t++5PvT8mmDgHZRRw==
+stylelint-config-pack@^4.1.3:
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/stylelint-config-pack/-/stylelint-config-pack-4.1.3.tgz#7fccbc4a42a24ae0558a8386efb4d0b5f07a3fdb"
+  integrity sha512-zwkDK/i1tMxHZjliebsEtrqajG7lGQJvwFKrcxH+ekq2Z+mI8SQKaG3QAGE9jssntlvK8eTNAdO9siZ7ozVPAw==
   dependencies:
     stylelint "10.1.0"
     stylelint-config-prettier "5.2.0"
