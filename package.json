@@ -70,7 +70,6 @@
     "netlify-cms",
     "react"
   ],
-  "license": "MIT",
   "main": "n/a",
   "scripts": {
     "clean": "rimraf '.cache/.??*' '.cache/*' 'public/.??*' 'public/*'",
@@ -172,6 +171,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "immutable": "^4.0.0-rc.12",
+    "joi": "^14.3.1",
     "micromatch": "^4.0.2",
     "netlify-cms-lib-util": "^2.3.2",
     "promise": "^8.0.3",
