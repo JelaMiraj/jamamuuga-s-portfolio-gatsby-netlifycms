@@ -7,3 +7,4 @@
   # YARN_VERSION = "1.9.4"
   YARN_VERSION = "1.16.0"
   YARN_FLAGS = "--no-ignore-optional"
+  NODE_OPTIONS = "--max_old_space_size=4096"
