@@ -163,8 +163,12 @@
   "optionalDependencies": {
     "@babel/runtime": "^7.4.5",
     "@hapi/joi": "^15.1.0",
+    "@oclif/command": "^1.5.15",
     "@oclif/config": "^1.13.0",
     "@oclif/errors": "^1.2.2",
+    "@oclif/plugin-help": "^2.2.0",
+    "@oclif/plugin-not-found": "^1.2.2",
+    "@oclif/plugin-plugins": "^1.7.8",
     "bluebird": "^3.5.5",
     "debug": "^4.1.1",
     "eslint-plugin-flowtype": "^3.11.1",
@@ -175,6 +179,7 @@
     "joi": "^14.3.1",
     "micromatch": "^4.0.2",
     "netlify-cms-lib-util": "^2.3.2",
+    "netlify-dev-plugin": "^1.0.22",
     "promise": "^8.0.3",
     "slash": "^3.0.0",
     "webpack": "^4.35.0"
