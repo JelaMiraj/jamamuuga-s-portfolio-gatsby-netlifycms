@@ -1647,6 +1647,16 @@
     debug "^4.1.1"
     semver "^5.6.0"
 
+"@oclif/command@^1.5.15":
+  version "1.5.15"
+  resolved "https://registry.yarnpkg.com/@oclif/command/-/command-1.5.15.tgz#b926a6eb0491636150a256c0797f786c1f0938bc"
+  integrity sha512-bNfXihQ+piSa3WVA3DgSpptFtN2Ex/Xzv16qZt88Kp4P2tFUTcvMhyaisGYy7UjAW6mcjJrxx/141/Kfz5vtxA==
+  dependencies:
+    "@oclif/errors" "^1.2.2"
+    "@oclif/parser" "^3.7.3"
+    debug "^4.1.1"
+    semver "^5.6.0"
+
 "@oclif/config@1.13.0", "@oclif/config@^1", "@oclif/config@^1.12.8", "@oclif/config@^1.13.0", "@oclif/config@^1.6.22":
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/@oclif/config/-/config-1.13.0.tgz#fc2bd82a9cb30a73faf7d2aa5ae937c719492bd1"
@@ -1708,7 +1718,7 @@
     widest-line "^2.0.1"
     wrap-ansi "^4.0.0"
 
-"@oclif/plugin-not-found@1.2.2", "@oclif/plugin-not-found@^1.1.4":
+"@oclif/plugin-not-found@1.2.2", "@oclif/plugin-not-found@^1.1.4", "@oclif/plugin-not-found@^1.2.2":
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/@oclif/plugin-not-found/-/plugin-not-found-1.2.2.tgz#3e601f6e4264d7a0268cd03c152d90aa9c0cec6d"
   integrity sha512-SPlmiJFmTFltQT/owdzQwKgq6eq5AEKVwVK31JqbzK48bRWvEL1Ye60cgztXyZ4bpPn2Fl+KeL3FWFQX41qJuA==
