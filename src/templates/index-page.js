@@ -138,7 +138,7 @@ export const IndexPageTemplate = ({
                       </Button>
                     </Grid>
                   </Grid>
-                  <Grid item xs={12} className="column">
+                  {/* <Grid item xs={12} className="column">
                     <Typography
                       variant="h3"
                       fontWeight="fontWeightSemiBold"
@@ -146,7 +146,7 @@ export const IndexPageTemplate = ({
                     >
                       Latest stories
                     </Typography>
-                    {/* <BlogRoll /> */}
+                      <BlogRoll />
                     <Grid item xs={12} align="center" className="column">
                       <Button variant="contained" color="secondary">
                         <Link className="btn" to="/blog">
@@ -154,7 +154,7 @@ export const IndexPageTemplate = ({
                         </Link>
                       </Button>
                     </Grid>
-                  </Grid>
+                  </Grid> */}
                 </Box>
               </Grid>
             </Grid>
