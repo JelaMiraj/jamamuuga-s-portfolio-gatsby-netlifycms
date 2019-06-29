@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Modern Web Design with Flare
-image: /img/home-jumbotron.jpg
+image: /img/jumbotron-home-placeholder.png
 heading: Modern Web Design with Flare
 subheading: Subheading here.
 mainpitch:
