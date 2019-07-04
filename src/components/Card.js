@@ -1,5 +1,5 @@
 import React from "react"
-import {Card, CardActions, CardContent, CardHeader} from "@material-ui/core"
+import {Card as MuiCard, CardActions, CardContent, CardHeader} from "@material-ui/core"
 import {withStyles} from "@material-ui/core/styles"
 
 const styles = {
@@ -8,7 +8,7 @@ const styles = {
   },
 }
 
-const MyCard = ({
+const Card = ({
   children,
   classes,
   title,
@@ -17,7 +17,7 @@ const MyCard = ({
   action,
   style = {},
 }) => (
-  <Card style={style}>
+  <MuiCard style={style}>
     <CardHeader
       avatar={avatar || null}
       title={title}
@@ -25,11 +25,11 @@ const MyCard = ({
     />
     <CardContent>{children}</CardContent>
     <CardActions className={classes.cardActions}>{action}</CardActions>
-  </Card>
+  </MuiCard>
 )
 
 //     <CardActions style={{float: "right"}}>{action}</CardActions>
 
-// export default MyCard
-export default withStyles(styles)(MyCard)
-// export {MyCard as Card}
+// export default Card
+export default withStyles(styles)(Card)
+// export {Card}
