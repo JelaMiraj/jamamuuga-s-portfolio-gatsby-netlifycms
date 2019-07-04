@@ -9,7 +9,7 @@ import {
   Toolbar,
   Typography,
 } from "@material-ui/core"
-import {MaterialUi} from "mdi-material-ui"
+import {PaletteOutline} from "mdi-material-ui"
 import {Link, Menu, MenuMobile} from "."
 
 const Header = props => (
@@ -19,10 +19,11 @@ const Header = props => (
         <Grid item>
           <Chip
             id="logo"
-            variant="outlined"
+            variant="default"
+            color="secondary"
             avatar={
               <Avatar id="logoIcon">
-                <MaterialUi />
+                <PaletteOutline />
               </Avatar>
             }
             label={
