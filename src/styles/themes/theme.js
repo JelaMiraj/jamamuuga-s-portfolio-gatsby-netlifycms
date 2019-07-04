@@ -1,7 +1,7 @@
 // Setup custom Material-UI theme
 import React from "react"
 import {createMuiTheme} from "@material-ui/core/styles"
-import {green, grey, purple, red} from "@material-ui/core/colors"
+import {green, grey, orange, purple, red} from "@material-ui/core/colors"
 // TODO: Update this Material UI Theme from v1 to v3 & v4 compatible.
 
 const headlineFont = `Merriweather, Georgia, serif`
@@ -11,7 +11,7 @@ const theme = createMuiTheme({
   palette: {
     primary: purple,
     secondary: green,
-    tertiary: grey,
+    tertiary: orange,
     error: red,
   },
   typography: {

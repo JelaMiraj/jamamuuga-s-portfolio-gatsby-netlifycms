@@ -21,9 +21,9 @@ const Header = props => (
           <Chip
             id="logo"
             variant="default"
-            color="primary"
+            color="secondary"
             avatar={
-              <Avatar id="logoIcon" color="secondary">
+              <Avatar id="logoIcon" color="tertiary">
                 <PaletteOutline />
               </Avatar>
             }
