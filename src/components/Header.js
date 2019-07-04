@@ -11,6 +11,7 @@ import {
 } from "@material-ui/core"
 import {PaletteOutline} from "mdi-material-ui"
 import {Link, Menu, MenuMobile} from "."
+// TODO: Put custom styles seperately up top.
 
 const Header = props => (
   <AppBar id="appBar">
@@ -20,9 +21,9 @@ const Header = props => (
           <Chip
             id="logo"
             variant="default"
-            color="secondary"
+            color="primary"
             avatar={
-              <Avatar id="logoIcon">
+              <Avatar id="logoIcon" color="secondary">
                 <PaletteOutline />
               </Avatar>
             }
