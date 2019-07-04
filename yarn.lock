@@ -8073,10 +8073,10 @@ gatsby-plugin-manifest@^2.2.0:
     semver "^5.6.0"
     sharp "^0.22.1"
 
-gatsby-plugin-material-ui@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-material-ui/-/gatsby-plugin-material-ui-2.1.1.tgz#025babab20c3f088680df4d6bd40f9e777bfdd07"
-  integrity sha512-MQjrBLMVGWGdosHFKnKl0L5+KxwYY6q4otjncomXfE6x5gBolJpLiEovGZ0/rNg8DM5soIL0IXiUsoewDTYE8A==
+gatsby-plugin-material-ui@^2.1.4:
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-material-ui/-/gatsby-plugin-material-ui-2.1.4.tgz#21f7ef710ec29896eaa458820a9da25237052dfd"
+  integrity sha512-maiZxW3IHGFls7eukfYkw9x7Y3AU6SFJuBy8D3IGrZhC4JN+PJB+Oy36BSDUBcboBqEr6fVU2HHp73NvdL/ptw==
   dependencies:
     autoprefixer "^9.5.1"
     clean-css "^4.2.1"
