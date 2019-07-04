@@ -9,46 +9,61 @@ import {
   Toolbar,
   Typography,
 } from "@material-ui/core"
+import {makeStyles, useTheme} from "@material-ui/core/styles"
 import {PaletteOutline} from "mdi-material-ui"
 import {Link, Menu, MenuMobile} from "."
 // TODO: Put custom styles seperately up top.
 
-const Header = props => (
-  <AppBar id="appBar">
-    <Toolbar>
-      <Grid container justify="space-between" alignItems="center" spacing={2}>
-        <Grid item>
-          <Chip
-            id="logo"
-            variant="default"
-            color="secondary"
-            avatar={
-              <Avatar id="logoIcon" color="tertiary">
-                <PaletteOutline />
-              </Avatar>
-            }
-            label={
-              <Link to="/">
-                {props.data.site.siteMetadata.title.toUpperCase()}
-              </Link>
-            }
-          />
+const palette = useTheme().palette
+
+const useStyles = makeStyles({
+  avatar: {
+    color: palette.tertiary
+  },
+  chip: {
+    color: palette.secondary
+  },
+})
+
+const Header = props => {
+  const classes = useStyles()
+  return (
+    <AppBar id="appBar">
+      <Toolbar>
+        <Grid container justify="space-between" alignItems="center" spacing={2}>
+          <Grid item>
+            <Chip
+              id="logo"
+              className={classes.chip}
+              variant="default"
+              avatar={
+                <Avatar id="logoIcon" className={classes.avatar}>
+                  <PaletteOutline />
+                </Avatar>
+              }
+              label={
+                <Link to="/">
+                  {props.data.site.siteMetadata.title.toUpperCase()}
+                </Link>
+              }
+            />
+          </Grid>
+          <Grid item>
+            <Hidden smDown>
+              <Typography component="span" variant="caption">
+                <Menu />
+              </Typography>
+            </Hidden>
+            <Hidden mdUp>
+              <MenuMobile />
+            </Hidden>
+          </Grid>
         </Grid>
-        <Grid item>
-          <Hidden smDown>
-            <Typography component="span" variant="caption">
-              <Menu />
-            </Typography>
-          </Hidden>
-          <Hidden mdUp>
-            <MenuMobile />
-          </Hidden>
-        </Grid>
-      </Grid>
-      <Grid item />
-    </Toolbar>
-  </AppBar>
-)
+        <Grid item />
+      </Toolbar>
+    </AppBar>
+  )
+}
 
 export default props => (
   <StaticQuery
