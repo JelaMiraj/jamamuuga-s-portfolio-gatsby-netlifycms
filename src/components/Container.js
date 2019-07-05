@@ -1,46 +1,47 @@
-// import React, {Component} from "react"
+// import React from "react"
 // import PropTypes from "prop-types"
 // import {Box, Container as MuiContainer} from "@material-ui/core"
-// // import styled from "styled-components"
-// // TODO: When Material UI v4 is stable, migrate & use its Container.
+// import {makeStyles} from "@material-ui/core/styles"
 
-// // const Container = styled(Box)`
-// //   max-width: ${props => props.maxWidth};
-// // `
-
-// // Container.propTypes = {
-// //   maxWidth: PropTypes.oneOfType([
-// //     PropTypes.number,
-// //     PropTypes.string,
-// //     PropTypes.array,
-// //   ]),
-// // }
+// const useStyles = makeStyles({
+//   container: {
+//     // FIXME: Evidently, this is the wrong way to do this with the hooks api of Material UI Styles.
+//     // "max-width": ${props => props.maxWidth},
+//   },
+// })
 
 // // Container.defaultProps = {
 // //   mx: "auto",
 // //   maxWidth: "700px",
 // // }
 
-// // const Container = ({children, attributes}) => (
-// //   <Box px={[2, 3, 4]} mx="auto" maxWidth={1280} className="container">
-// //     {children}
-// //   </Box>
-// // )
+// // const Container = ({children, attributes}) => {
+// const Container = props => {
+//   const classes = props.classes
+//   const attributes = props.attributes
+//   const children = props.children
 
-// const Container = ({children, attributes}) => (
-//   <MuiContainer px={[2, 3, 4]} mx="auto" className="container">
-//     {children}
-//   </MuiContainer>
-// )
+//   return (
+//     <MuiContainer px={[2, 3, 4]} mx="auto" className={classes.container}>
+//       {/* Old Version also had maxWidth={1280} Container Attribute */}
+//       {children}
+//     </MuiContainer>
+//   )
+// }
 
 // Container.propTypes = {
-//   children: PropTypes.node,
+//   // children: PropTypes.node,
 //   // FIXME: This next line might be wrong.
-//   attributes: PropTypes.string,
+//   // attributes: PropTypes.string,
+//   // maxWidth: PropTypes.oneOfType([
+//   //   PropTypes.number,
+//   //   PropTypes.string,
+//   //   PropTypes.array,
+//   // ]),
 // }
 
 // // FIXME: This next line might be wrong.
-// Container.propTypes = Box.propTypes
+// // Container.propTypes = MuiContainer.propTypes
 
 // export default Container
-// export {Container}
+// // export {Container}
