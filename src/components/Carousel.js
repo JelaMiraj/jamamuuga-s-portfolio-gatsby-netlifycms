@@ -12,6 +12,7 @@ import SwipeableViews from "react-swipeable-views"
 import {autoPlay} from "react-swipeable-views-utils"
 import {withStyles} from "@material-ui/core/styles"
 import {Card, Link} from "."
+// TODO: Convert from class & withStyle to function constant & makeStyles hooks api. Also this means styles should be changed to a function constant names useStyles.
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews)
 
