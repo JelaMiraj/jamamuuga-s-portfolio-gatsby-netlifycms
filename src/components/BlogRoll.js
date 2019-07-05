@@ -1,70 +1,68 @@
-import React, {Component} from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import {graphql, StaticQuery} from "gatsby"
 import {Button, Grid, Typography} from "@material-ui/core"
 // TODO: Fix card usage so underlying Material UI Card subcomponents like CardAction are actually used.
 import {Card, Link, PreviewCompatibleImage} from "."
 
-class BlogRoll extends Component {
-  render() {
-    const {data} = this.props
-    const {edges: posts} = data.allMarkdownRemark
+const BlogRoll = props => {
+  const {data} = props
+  const {edges: posts} = data.allMarkdownRemark
 
-    return (
-      <Grid container wrap="wrap">
-        {posts &&
-          posts.map(({node: post}) => (
-            <Grid item xs={6} key={post.id}>
-              <Card
-                component="article"
-                className={`blog-list-item tile is-child box notification ${
-                  post.frontmatter.featuredpost ? "is-featured" : ""
-                }`}
-              >
-                <header>
-                  {post.frontmatter.featuredimage ? (
-                    <div className="featured-thumbnail">
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: post.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for post ${post.title}`,
-                        }}
-                      />
-                    </div>
-                  ) : null}
-                  <Typography component="div" paragraph className="post-meta">
-                    <Link
-                      variant="h2"
-                      className="title has-text-primary is-size-4"
-                      to={post.fields.slug}
-                    >
-                      {post.frontmatter.title}
-                    </Link>
-                    <Typography display="inline"> &bull; </Typography>
-                    <Typography
-                      variant="h3"
-                      className="subtitle is-size-5 is-block"
-                    >
-                      {post.frontmatter.date}
-                    </Typography>
-                  </Typography>
-                </header>
-                <Typography paragraph>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link to={post.fields.slug}>
-                    <Button variant="contained" color="secondary">
-                      Keep Reading →
-                    </Button>
+  return (
+    <Grid container wrap="wrap">
+      {posts &&
+        posts.map(({node: post}) => (
+          <Grid item xs={6} key={post.id}>
+            <Card
+              component="article"
+              className={`blog-list-item tile is-child box notification ${
+                post.frontmatter.featuredpost ? "is-featured" : ""
+              }`}
+            >
+              <header>
+                {post.frontmatter.featuredimage ? (
+                  <div className="featured-thumbnail">
+                    <PreviewCompatibleImage
+                      imageInfo={{
+                        image: post.frontmatter.featuredimage,
+                        alt: `featured image thumbnail for post ${post.title}`,
+                      }}
+                    />
+                  </div>
+                ) : null}
+                <Typography component="div" paragraph className="post-meta">
+                  <Link
+                    variant="h2"
+                    className="title has-text-primary is-size-4"
+                    to={post.fields.slug}
+                  >
+                    {post.frontmatter.title}
                   </Link>
+                  <Typography display="inline"> &bull; </Typography>
+                  <Typography
+                    variant="h3"
+                    className="subtitle is-size-5 is-block"
+                  >
+                    {post.frontmatter.date}
+                  </Typography>
                 </Typography>
-              </Card>
-            </Grid>
-          ))}
-      </Grid>
-    )
-  }
+              </header>
+              <Typography paragraph>
+                {post.excerpt}
+                <br />
+                <br />
+                <Link to={post.fields.slug}>
+                  <Button variant="contained" color="secondary">
+                    Keep Reading →
+                  </Button>
+                </Link>
+              </Typography>
+            </Card>
+          </Grid>
+        ))}
+    </Grid>
+  )
 }
 
 BlogRoll.propTypes = {

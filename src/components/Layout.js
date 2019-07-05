@@ -1,8 +1,8 @@
-import React, {Component} from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import {ScrollingProvider} from "react-scroll-section"
 import {Grid, Typography} from "@material-ui/core"
-import {withStyles} from "@material-ui/core/styles"
+import {makeStyles} from "@material-ui/core/styles"
 import GlobalStyle from "../styles/global-style"
 import Footer from "./Footer"
 import Header from "./Header"
@@ -11,7 +11,7 @@ import Helmet from "./Helmet"
 // import Footer from "./FooterHugeNew"
 import useSiteMetadata from "./SiteMetadata"
 
-const styles = {
+const useStyles = makeStyles({
   container: {
     marginTop: 94,
   },
@@ -22,52 +22,46 @@ const styles = {
   title: {
     textAlign: "center",
   },
-}
+})
 
 // TODO: Find out if we need any <GlobalStyle />
 // const Layout = ({children}) => (
-class Layout extends Component {
-  render() {
-    const {classes, title, children} = this.props
+const Layout = props => {
+  const classes = useStyles(props)
+  const {title, children} = props
 
-    return (
-      <>
-        <ScrollingProvider>
-          <div>
-            <Helmet />
-            {/* <GlobalStyle /> */}
-            <Header />
-            <Grid
-              className={classes.container}
-              container
-              direction="row"
-              justify="center"
-            >
-              <Grid className={classes.contentBox} item>
-                {title ? (
-                  <Typography
-                    className={classes.title}
-                    variant="h2"
-                    gutterBottom
-                  >
-                    {title}
-                  </Typography>
-                ) : null}
-                {children}
-                <Footer />
-              </Grid>
+  return (
+    <>
+      <ScrollingProvider>
+        <div>
+          <Helmet />
+          {/* <GlobalStyle /> */}
+          <Header />
+          <Grid
+            className={classes.container}
+            container
+            direction="row"
+            justify="center"
+          >
+            <Grid className={classes.contentBox} item>
+              {title ? (
+                <Typography className={classes.title} variant="h2" gutterBottom>
+                  {title}
+                </Typography>
+              ) : null}
+              {children}
+              <Footer />
             </Grid>
-          </div>
-        </ScrollingProvider>
-      </>
-    )
-  }
+          </Grid>
+        </div>
+      </ScrollingProvider>
+    </>
+  )
 }
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-// export default Layout
-export default withStyles(styles)(Layout)
+export default Layout
 // export {Layout}
