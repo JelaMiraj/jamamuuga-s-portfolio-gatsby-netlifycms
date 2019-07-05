@@ -9,19 +9,21 @@ import {
   Toolbar,
   Typography,
 } from "@material-ui/core"
-import {makeStyles, useTheme} from "@material-ui/core/styles"
+import {makeStyles} from "@material-ui/core/styles"
 import {PaletteOutline} from "mdi-material-ui"
 import {Link, Menu, MenuMobile} from "."
 // TODO: Put custom styles seperately up top.
 
-const {palette} = useTheme()
+// const {palette} = useTheme()
 
 const useStyles = makeStyles({
   avatar: {
-    color: palette.tertiary,
+    // color: palette.tertiary,
+    color: "tertiary",
   },
   chip: {
-    color: palette.secondary,
+    // color: palette.secondary,
+    color: "secondary",
   },
 })
 
