@@ -14,14 +14,14 @@ import {PaletteOutline} from "mdi-material-ui"
 import {Link, Menu, MenuMobile} from "."
 // TODO: Put custom styles seperately up top.
 
-const palette = useTheme().palette
+const {palette} = useTheme()
 
 const useStyles = makeStyles({
   avatar: {
-    color: palette.tertiary
+    color: palette.tertiary,
   },
   chip: {
-    color: palette.secondary
+    color: palette.secondary,
   },
 })
 
