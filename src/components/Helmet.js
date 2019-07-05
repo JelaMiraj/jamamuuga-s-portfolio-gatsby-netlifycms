@@ -1,7 +1,6 @@
 import React from "react"
 import {Helmet as ReactHelmet} from "react-helmet"
 import {StaticQuery, graphql} from "gatsby"
-// import {withStyles} from "@material-ui/core/styles"
 import PropTypes from "prop-types"
 
 // TODO: Maybe use destructuring assignment with properties.
@@ -88,5 +87,4 @@ const detailsQuery = graphql`
   }
 `
 
-// export default withStyles(Helmet)
 export default Helmet
