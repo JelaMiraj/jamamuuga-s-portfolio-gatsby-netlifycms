@@ -26,7 +26,8 @@ const useStyles = makeStyles({
 })
 
 const Header = props => {
-  const classes = useStyles()
+  const classes = useStyles(props)
+
   return (
     <AppBar id="appBar">
       <Toolbar>
