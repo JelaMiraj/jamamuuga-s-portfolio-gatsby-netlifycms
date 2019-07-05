@@ -1,72 +1,81 @@
-import React, {Component} from "react"
+import React from "react"
 import {StaticQuery, graphql} from "gatsby"
-import {ClickAwayListener, IconButton, Menu, MenuItem} from "@material-ui/core"
+import {IconButton, Menu, MenuItem} from "@material-ui/core"
 import {DotsVertical} from "mdi-material-ui"
-import {withStyles} from "@material-ui/core/styles"
+import {makeStyles} from "@material-ui/core/styles"
+import {
+  usePopupState,
+  bindTrigger,
+  bindMenu,
+} from "material-ui-popup-state/hooks"
 import {Link} from "."
 // import logo from "../img/logo.svg"
 
-const styles = {
+const useStyles = makeStyles({
   dotsVerticalIcon: {
     color: "#efefef",
   },
-}
+})
 
-class MenuMobile extends Component {
-  state = {
-    anchorEl: null,
-  }
+const MenuMobile = props => {
+  const popupState = usePopupState({
+    // variant: 'popover',
+    // popupId: 'MenuMobilePopover',
+  })
 
-  handleOpen = event => {
-    this.setState({anchorEl: event.currentTarget})
-  }
+  // const state = {
+  //   anchorEl: null,
+  // }
 
-  handleClose = () => {
-    this.setState({anchorEl: null})
-  }
+  // const handleOpen = event => {
+  //   // Was this.setState
+  //   setState({anchorEl: event.currentTarget})
+  // }
 
-  render() {
-    const {anchorEl} = this.state
-    const {
-      classes,
-      data: {
-        site: {
-          siteMetadata: {menuLinks},
-        },
+  // const handleClose = () => {
+  //   // Was this.setState
+  //   setState({anchorEl: null})
+  // }
+
+  // const {anchorEl} = state
+  const classes = useStyles(props)
+  const {
+    data: {
+      site: {
+        siteMetadata: {menuLinks},
       },
-    } = this.props
+    },
+  } = props
 
-    return (
-      <>
-        <IconButton onClick={this.handleOpen}>
-          <DotsVertical className={classes.dotsVerticalIcon} />
-        </IconButton>
-        <ClickAwayListener onClickAway={this.handleClose}>
-          <Menu
-            anchorEl={anchorEl}
-            open={Boolean(anchorEl)}
-            onClose={this.handleClose}
-          >
-            {menuLinks.map(link => (
-              <Link key={link.name} to={link.link}>
-                <MenuItem>{link.name}</MenuItem>
-              </Link>
-            ))}
-            <a
-              href="https://github.com/Jamamuuga/jamamuuga-s-portfolio-gatsby-netlifycms"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <MenuItem>Github Repository</MenuItem>
-            </a>
-          </Menu>
-        </ClickAwayListener>
-      </>
-    )
-  }
+  return (
+    <>
+      <IconButton {...bindTrigger(popupState)}>
+        <DotsVertical className={classes.dotsVerticalIcon} />
+      </IconButton>
+      {/* <ClickAwayListener onClickAway={popupState.Close}> */}
+      {/* <Menu
+          anchorEl={anchorEl}
+          open={Boolean(anchorEl)}
+          onClose={handleClose}
+        > */}
+      <Menu {...bindMenu(popupState)}>
+        {menuLinks.map(link => (
+          <Link key={link.name} to={link.link}>
+            <MenuItem onClick={popupState.close}>{link.name}</MenuItem>
+          </Link>
+        ))}
+        <a
+          href="https://github.com/Jamamuuga/jamamuuga-s-portfolio-gatsby-netlifycms"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <MenuItem onClick={popupState.close}>Github Repository</MenuItem>
+        </a>
+      </Menu>
+      {/* </ClickAwayListener> */}
+    </>
+  )
 }
-
-const StyledMenuMobile = withStyles(styles)(MenuMobile)
 
 export default props => (
   <StaticQuery
@@ -82,6 +91,6 @@ export default props => (
         }
       }
     `}
-    render={data => <StyledMenuMobile active={props.active} data={data} />}
+    render={data => <MenuMobile active={props.active} data={data} />}
   />
 )
