@@ -1,41 +1,41 @@
-// import React, {Component} from "react"
+// import React from "react"
 // import PropTypes from "prop-types"
 // import {graphql} from "gatsby"
+// import {Container, Typography} from "@material-ui/core"
 // // include NLI ...to init first
 // import netlifyIdentity from "netlify-identity-widget"
 // import BasePage from "../base/BasePage"
-// import {Pagination, PostItem} from "../components"
+// import {Content, Pagination, PostItem} from "../components"
 // import {isLoggedIn} from "../services/auth"
 
 // // Init netlify identity ...
 // // FIX for build test @2018/12/13
 // if (typeof netlifyIdentity.init !== `undefined`) netlifyIdentity.init()
 
-// export default class IndexPage extends Component {
-//   render() {
-//     const posts = this.props.data.allMarkdownRemark.edges
-//     const {currentPage, numPages} = this.props.pageContext
-//     const logged = isLoggedIn()
+// const IndexPage = props => {
+//   const {classes} = props
+//   const posts = this.props.data.allMarkdownRemark.edges
+//   const {currentPage, numPages} = this.props.pageContext
+//   const logged = isLoggedIn()
 
-//     return (
-//       <BasePage location={{pathname: "/"}}>
-//         <section className="section">
-//           <div className="container">
-//             <div className="content hide-in-mobile">
-//               <h1 className="has-text-weight-bold is-size-3">Latest</h1>
-//             </div>
-//             {posts.map(({node: post}) => (
-//               <PostItem post={post} logged={logged} />
-//             ))}
+//   return (
+//     <BasePage location={{pathname: "/"}}>
+//       <section className="section">
+//         <Container className={classes.container}>
+//           <div className="content hide-in-mobile">
+//             <Typography variant="h1" fontWeight="fontWeightBold" className="has-text-weight-bold is-size-3">Latest</Typography>
 //           </div>
-//         </section>
-//         {/** pagination row */}
-//         <section className="section">
-//           <Pagination currentPage={currentPage} numPages={numPages} />
-//         </section>
-//       </BasePage>
-//     )
-//   }
+//           {posts.map(({node: post}) => (
+//             <PostItem post={post} logged={logged} />
+//           ))}
+//         </Container>
+//       </section>
+//       {/** pagination row */}
+//       <section className="section">
+//         <Pagination currentPage={currentPage} numPages={numPages} />
+//       </section>
+//     </BasePage>
+//   )
 // }
 
 // IndexPage.propTypes = {
@@ -79,3 +79,5 @@
 //     }
 //   }
 // `
+
+// export default IndexPage
