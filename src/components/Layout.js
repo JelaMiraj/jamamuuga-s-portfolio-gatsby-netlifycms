@@ -25,7 +25,6 @@ const useStyles = makeStyles({
 })
 
 // TODO: Find out if we need any <GlobalStyle />
-// const Layout = ({children}) => (
 const Layout = props => {
   const classes = useStyles(props)
   const {title, children} = props
