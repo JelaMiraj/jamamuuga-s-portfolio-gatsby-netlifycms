@@ -1,11 +1,10 @@
 // import React, {Component} from "react"
 // import {Grid, Typography} from "@material-ui/core"
-// import {withStyles} from "@material-ui/core/styles"
-// import Footer from "./Footer"
-// import Header from "./Header"
+// import {makeStyles} from "@material-ui/core/styles"
+// import {Footer, Header} from "."
 // // import "../css/style.styl"
 
-// const styles = {
+// const useStyles = makeStyles({
 //   container: {
 //     marginTop: 94,
 //   },
@@ -16,43 +15,41 @@
 //   title: {
 //     textAlign: "center"
 //   }
-// }
+// })
 
-// class Page extends Component {
-//   render() {
-//     const {classes, title, children} = this.props
+// const Page = props => {
+//   const classes = useStyles(props)
+//   const {title, children} = props
 
-//     return (
-//       <>
-//         <Header />
+//   return (
+//     <>
+//       <Header />
+//       <Grid
+//         className={classes.container}
+//         container
+//         direction="row"
+//         justify="center"
+//       >
 //         <Grid
-//           className={classes.container}
-//           container
-//           direction="row"
-//           justify="center"
+//           className={classes.contentBox}
+//           item
 //         >
-//           <Grid
-//             className={classes.contentBox}
-//             item
-//           >
-//             {title ? (
-//               <Typography
-//                 className={classes.title}
-//                 variant="h2"
-//                 gutterBottom
-//               >
-//                 {title}
-//               </Typography>
-//             ) : null}
-//             {children}
-//             <Footer />
-//           </Grid>
+//           {title ? (
+//             <Typography
+//               className={classes.title}
+//               variant="h2"
+//               gutterBottom
+//             >
+//               {title}
+//             </Typography>
+//           ) : null}
+//           {children}
+//           <Footer />
 //         </Grid>
-//       </>
-//     )
-//   }
+//       </Grid>
+//     </>
+//   )
 // }
 
-// // export default Page
-// export default withStyles(styles)(Page)
+// export default Page
 // // export {Page}
