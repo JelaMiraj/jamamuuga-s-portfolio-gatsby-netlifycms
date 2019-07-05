@@ -1,12 +1,13 @@
-import styled from "styled-components"
+// import {makeStyles} from "@material-ui/core/styles"
+import {styled} from "@material-ui/core/styles"
 
-// TODO: Make sure this style will work well with Styled System themes on a Material UI Navbar.
-// FIXME: What is the right constructor?
-const NavbarStyle = styled.div`
-  .navbar .navbar-menu {
-    box-shadow:none !important {
-    }
-  }
-`
+const NavbarStyle = styled("div")({
+  // const NavbarStyle = makeStyles({
+  navbar: {
+    "& navbar-menu": {
+      "box-shadow": "none !important {}",
+    },
+  },
+})
 
 export default NavbarStyle
