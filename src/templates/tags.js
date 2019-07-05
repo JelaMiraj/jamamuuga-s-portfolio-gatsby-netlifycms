@@ -1,48 +1,52 @@
-import React, {Component} from "react"
+import React from "react"
 import {graphql} from "gatsby"
+import {Container, Grid, List, ListItem, ListItemText, Typography} from "@material-ui/core"
 import {Helmet, Layout, Link} from "../components"
 
 // TODO: Find out if withStyles should be used here like Gatsby Material UI Business Starter does.
 
-class TagRoute extends Component {
-  render() {
-    const posts = this.props.data.allMarkdownRemark.edges
-    const postLinks = posts.map(post => (
-      <li key={post.node.fields.slug}>
-        <Link to={post.node.fields.slug}>
-          <h2 className="is-size-2">{post.node.frontmatter.title}</h2>
+const TagRoute = props => {
+  const {classes} = props
+  const posts = this.props.data.allMarkdownRemark.edges
+  const postLinks = posts.map(post => (
+    <ListItem key={post.node.fields.slug}>
+      <ListItemText>
+      <Link to={post.node.fields.slug}>
+        <Typography variant="h2" className="is-size-2">{post.node.frontmatter.title}</Typography>
         </Link>
-      </li>
-    ))
-    const {tag} = this.props.pageContext
-    const {title} = this.props.data.site.siteMetadata
-    const {totalCount} = this.props.data.allMarkdownRemark
-    const tagHeader = `${totalCount} post${
-      totalCount === 1 ? "" : "s"
-    } tagged with “${tag}”`
+      </ListItemText>
+    </ListItem>
+  ))
+  const {tag} = this.props.pageContext
+  const {title} = this.props.data.site.siteMetadata
+  const {totalCount} = this.props.data.allMarkdownRemark
+  const tagHeader = `${totalCount} post${
+    totalCount === 1 ? "" : "s"
+  } tagged with “${tag}”`
 
-    return (
-      <Layout>
-        <section className="section">
-          <Helmet title={`${tag} | ${title}`} />
-          <div className="container content">
-            <div className="columns">
-              <div
+  return (
+    <Layout>
+      <section className="section">
+        <Helmet title={`${tag} | ${title}`} />
+        <Container className="container content">
+          <div className="content">
+            <Grid container className="columns">
+              <Grid item xs={10}
                 className="column is-10 is-offset-1"
                 style={{marginBottom: "6rem"}}
               >
-                <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
-                <ul className="taglist">{postLinks}</ul>
-                <p>
+                <Typography variant="h3" fontWeight="fontWeightSemiBold" className="title is-size-4 is-bold-light">{tagHeader}</Typography>
+                <List className="taglist">{postLinks}</List>
+                <Typography component="p">
                   <Link to="/tags/">Browse all tags</Link>
-                </p>
-              </div>
-            </div>
+                </Typography>
+              </Grid>
+            </Grid>
           </div>
-        </section>
-      </Layout>
-    )
-  }
+        </Container>
+      </section>
+    </Layout>
+  )
 }
 
 export const tagPageQuery = graphql`
