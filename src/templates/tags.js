@@ -7,7 +7,7 @@ import {Helmet, Layout, Link} from "../components"
 
 const TagRoute = props => {
   const {classes} = props
-  const posts = this.props.data.allMarkdownRemark.edges
+  const posts = props.data.allMarkdownRemark.edges
   const postLinks = posts.map(post => (
     <ListItem key={post.node.fields.slug}>
       <ListItemText>
@@ -17,9 +17,9 @@ const TagRoute = props => {
       </ListItemText>
     </ListItem>
   ))
-  const {tag} = this.props.pageContext
-  const {title} = this.props.data.site.siteMetadata
-  const {totalCount} = this.props.data.allMarkdownRemark
+  const {tag} = props.pageContext
+  const {title} = props.data.site.siteMetadata
+  const {totalCount} = props.data.allMarkdownRemark
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? "" : "s"
   } tagged with “${tag}”`
