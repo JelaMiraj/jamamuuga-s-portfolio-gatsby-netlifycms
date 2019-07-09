@@ -8,7 +8,7 @@ import {
   bindTrigger,
   bindMenu,
 } from "material-ui-popup-state/hooks"
-import {Link} from "."
+import {Link, LinkExternal} from "."
 // import logo from "../img/logo.svg"
 
 const useStyles = makeStyles({
@@ -64,13 +64,11 @@ const MenuMobile = props => {
             <MenuItem onClick={popupState.close}>{link.name}</MenuItem>
           </Link>
         ))}
-        <a
+        <LinkExternal
           href="https://github.com/Jamamuuga/jamamuuga-s-portfolio-gatsby-netlifycms"
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <MenuItem onClick={popupState.close}>Github Repository</MenuItem>
-        </a>
+        </LinkExternal>
       </Menu>
       {/* </ClickAwayListener> */}
     </>
