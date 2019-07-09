@@ -1,3 +1,4 @@
+// import React, {useState} from "react"
 import React from "react"
 import {StaticQuery, graphql} from "gatsby"
 import {IconButton, Menu, MenuItem} from "@material-ui/core"
@@ -23,17 +24,15 @@ const MenuMobile = props => {
     // popupId: 'MenuMobilePopover',
   })
 
-  // const state = {
+  // const [state, setState] = useState({
   //   anchorEl: null,
-  // }
+  // })
 
   // const handleOpen = event => {
-  //   // Was this.setState
   //   setState({anchorEl: event.currentTarget})
   // }
 
   // const handleClose = () => {
-  //   // Was this.setState
   //   setState({anchorEl: null})
   // }
 
