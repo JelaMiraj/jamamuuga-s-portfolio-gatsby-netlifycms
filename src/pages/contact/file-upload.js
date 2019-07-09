@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import {navigate} from "gatsby"
 import {Button, Container, Typography} from "@material-ui/core"
 import {Content, Layout, Link} from "../../components"
@@ -18,24 +18,24 @@ const encode = (data) => {
 
 const Contact = props => {
   const {classes} = props
-  const state = {}
+  const [state, setState] = useState({})
 
-  const handleChange = e => {
-    this.setState({[e.target.name]: e.target.value})
+  const handleChange = event => {
+    setState({...state, [event.target.name]: event.target.value})
   }
 
-  const handleAttachment = e => {
-    this.setState({[e.target.name]: e.target.files[0]})
+  const handleAttachment = event => {
+    setState({[event.target.name]: event.target.files[0]})
   }
 
-  const handleSubmit = e => {
-    e.preventDefault()
-    const form = e.target
+  const handleSubmit = event => {
+    event.preventDefault()
+    const form = event.target
     fetch("/", {
       method: "POST",
       body: encode({
         "form-name": form.getAttribute("name"),
-        ...this.state,
+        ...state,
       }),
     })
       .then(() => navigate(form.getAttribute("action")))
@@ -54,14 +54,14 @@ const Contact = props => {
               action="/contact/thanks/"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
-              onSubmit={this.handleSubmit}
+              onSubmit={handleSubmit}
             >
               {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
               <input type="hidden" name="form-name" value="file-upload" />
               <div hidden>
                 <label>
                   Don’t fill this out:{" "}
-                  <input name="bot-field" onChange={this.handleChange} />
+                  <input name="bot-field" onChange={handleChange} />
                 </label>
               </div>
               <div className="field">
@@ -73,7 +73,7 @@ const Contact = props => {
                     className="input"
                     type="text"
                     name="name"
-                    onChange={this.handleChange}
+                    onChange={handleChange}
                     id="name"
                     required
                   />
@@ -86,7 +86,7 @@ const Contact = props => {
                       className="file-input"
                       type="file"
                       name="attachment"
-                      onChange={this.handleAttachment}
+                      onChange={handleAttachment}
                     />
                     <span className="file-cta">
                       <span className="file-label">Choose a file…</span>
