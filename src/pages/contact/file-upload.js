@@ -44,7 +44,7 @@ const Contact = props => {
   return (
     <Layout>
       <section className="section">
-        <Container className={classes.container}>
+        <Container className="container">
           <div className="content">
             <Typography variant="h1">File Upload</Typography>
             <form

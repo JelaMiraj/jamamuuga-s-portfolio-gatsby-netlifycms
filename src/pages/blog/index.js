@@ -18,7 +18,7 @@ const BlogIndexPage = props => {
   return (
     <Layout>
       <section className="section">
-        <Container className={classes.container}>
+        <Container className="container">
           <div className="content">
             <div
               className="full-width-image-container margin-top-0"
