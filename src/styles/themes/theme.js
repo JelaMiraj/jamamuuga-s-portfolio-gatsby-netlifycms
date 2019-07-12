@@ -1,13 +1,13 @@
 // Setup custom Material-UI theme
 import React from "react"
-import {createMuiTheme} from "@material-ui/core/styles"
+import {createMuiTheme, responsiveFontSizes} from "@material-ui/core/styles"
 import {green, grey, orange, purple, red} from "@material-ui/core/colors"
 // TODO: Update this Material UI Theme from v1 to v3 & v4 compatible.
 
 const headlineFont = `Merriweather, Georgia, serif`
 const bodyFont = `"Open Sans", Roboto, "Helvetica Neue", Arial, sans-serif`
 
-const theme = createMuiTheme({
+const theme = responsiveFontSizes (createMuiTheme({
   palette: {
     primary: purple,
     secondary: green,
@@ -68,7 +68,7 @@ const theme = createMuiTheme({
     //   },
     // },
   },
-})
+}))
 
 export default theme
 // export {theme}
