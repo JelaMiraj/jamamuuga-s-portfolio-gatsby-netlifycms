@@ -1,11 +1,12 @@
 import React from "react"
-import {CssBaseline} from "@material-ui/core"
+// CssBaseline is already applied in the custom Gatsby Plugin Top Layout.
+// import {CssBaseline} from "@material-ui/core"
 
 const options = {}
 
 const GlobalStyle = () => (
   <>
-    <CssBaseline />
+    {/* <CssBaseline /> */}
   </>
 )
 
