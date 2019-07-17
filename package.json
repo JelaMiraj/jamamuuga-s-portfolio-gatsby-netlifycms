@@ -164,7 +164,7 @@
     "@babel/runtime": "^7.5.4",
     "@hapi/joi": "^15.1.0",
     "@oclif/command": "^1.5.16",
-    "@oclif/config": "^1.13.1",
+    "@oclif/config": "^1.13.2",
     "@oclif/errors": "^1.2.2",
     "@oclif/plugin-help": "^2.2.0",
     "@oclif/plugin-not-found": "^1.2.2",
