@@ -10,9 +10,15 @@ const bodyFont = `"Open Sans", Roboto, "Helvetica Neue", Arial, sans-serif`
 const theme = responsiveFontSizes (createMuiTheme({
   palette: {
     primary: purple,
+    // primary: "#556cd6",
     secondary: green,
+    // secondary: "#19857b",
     tertiary: orange,
     error: red,
+    // error: red.A400,
+    background: {
+      default: "#fff",
+    },
   },
   typography: {
     // TODO: Stop repeating greys, font weights, & font families.
