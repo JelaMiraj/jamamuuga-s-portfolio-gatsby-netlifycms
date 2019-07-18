@@ -3,12 +3,9 @@ import PropTypes from "prop-types"
 import {ScrollingProvider} from "react-scroll-section"
 import {Grid, Typography} from "@material-ui/core"
 import {makeStyles} from "@material-ui/core/styles"
-import GlobalStyle from "../styles/global-style"
-import Footer from "./Footer"
-import Header from "./Header"
-import Helmet from "./Helmet"
-// import Navbar from "./Navbar"
-// import Footer from "./FooterHugeNew"
+// import GlobalStyle from "../styles/global-style"
+import {Footer, Header} from "."
+// import {Navbar} from "."
 import useSiteMetadata from "./SiteMetadata"
 
 const useStyles = makeStyles({
@@ -33,7 +30,7 @@ const Layout = props => {
     <>
       <ScrollingProvider>
         <div>
-          <Helmet />
+          {/* <Helmet /> */}
           {/* <GlobalStyle /> */}
           <Header />
           <Grid
