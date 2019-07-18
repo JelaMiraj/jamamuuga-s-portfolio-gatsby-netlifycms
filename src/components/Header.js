@@ -17,13 +17,17 @@ import {Link, Menu, MenuMobile} from "."
 // const {palette} = useTheme()
 
 const useStyles = makeStyles({
+  appBar: {
+    backgroundColor: "primary"
+  },
   avatar: {
-    // color: palette.tertiary,
-    color: "tertiary",
+    // backgroundColor: palette.tertiary,
+    // backgroundColor: "tertiary",
+    backgroundColor: "secondary.light"
   },
   chip: {
     // color: palette.secondary,
-    color: "secondary",
+    color: "secondary.light",
   },
 })
 
@@ -31,7 +35,7 @@ const Header = props => {
   const classes = useStyles(props)
 
   return (
-    <AppBar id="appBar">
+    <AppBar id="appBar" className={classes.appBar}>
       <Toolbar>
         <Grid container justify="space-between" alignItems="center" spacing={2}>
           <Grid item>
