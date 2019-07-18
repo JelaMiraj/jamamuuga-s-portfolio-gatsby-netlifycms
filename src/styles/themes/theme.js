@@ -2,7 +2,8 @@
 import React from "react"
 import {createMuiTheme, responsiveFontSizes} from "@material-ui/core/styles"
 import {green, grey, orange, purple, red} from "@material-ui/core/colors"
-// TODO: Update this Material UI Theme from v1 to v3 & v4 compatible.
+// TODO: Make sure theme is fully converted to Material UI v4 compatible.
+// TODO: Learn more about custom variables in Material UI themes.
 
 const headlineFont = `Merriweather, Georgia, serif`
 const bodyFont = `"Open Sans", Roboto, "Helvetica Neue", Arial, sans-serif`
