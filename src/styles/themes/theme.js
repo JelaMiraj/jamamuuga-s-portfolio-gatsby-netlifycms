@@ -1,7 +1,7 @@
 // Setup custom Material-UI theme
 import React from "react"
 import {createMuiTheme, responsiveFontSizes} from "@material-ui/core/styles"
-import {green, grey, orange, purple, red} from "@material-ui/core/colors"
+import {green, grey, deepOrange, pink,purple, red} from "@material-ui/core/colors"
 // TODO: Make sure theme is fully converted to Material UI v4 compatible.
 // TODO: Learn more about custom variables in Material UI themes.
 
@@ -10,16 +10,21 @@ const bodyFont = `"Open Sans", Roboto, "Helvetica Neue", Arial, sans-serif`
 
 const theme = responsiveFontSizes (createMuiTheme({
   palette: {
-    primary: purple,
+    primary: red,
+    // primary: purple,
     // primary: "#556cd6",
-    secondary: green,
+    // secondary: deepOrange,
+    secondary: pink,
+    // secondary: "#ff4400",
     // secondary: "#19857b",
-    tertiary: orange,
-    error: red,
+    // tertiary: "#f50057",
+    tertiary: purple,
+    // error: red,
     // error: red.A400,
-    background: {
-      default: "#fff",
-    },
+    // background: {
+    //   // Default is #fafafa. Paper is #fff in default theme.
+    //   default: "#fff",
+    // },
   },
   typography: {
     // TODO: Stop repeating greys, font weights, & font families.
