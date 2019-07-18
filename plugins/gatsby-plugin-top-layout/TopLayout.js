@@ -2,7 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import {Helmet} from "react-helmet"
 import CssBaseline from "@material-ui/core/CssBaseline"
-import theme from "../../src/styles/themes/theme"
+import {CssBaseline} from "@material-ui/core"
+import {theme} from "../../src/styles/themes"
 import {ThemeProvider} from "@material-ui/styles"
 
 export default function TopLayout(props) {
