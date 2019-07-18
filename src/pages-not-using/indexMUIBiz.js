@@ -1,6 +1,6 @@
 // import React from "react"
 // import {graphql} from "gatsby"
-// import PropTypes from "prop-types"
+// import {PropTypes} from "prop-types"
 // import {Avatar, Button, Grid} from "@material-ui/core"
 // import {Gift} from "mdi-material-ui"
 // import {withStyles} from "@material-ui/core/styles"

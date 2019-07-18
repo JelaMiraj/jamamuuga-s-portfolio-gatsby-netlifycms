@@ -1,5 +1,5 @@
 import React from "react"
-import PropTypes from "prop-types"
+import {PropTypes} from "prop-types"
 import {ScrollingProvider} from "react-scroll-section"
 import {Grid, Typography} from "@material-ui/core"
 import {makeStyles} from "@material-ui/core/styles"

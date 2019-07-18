@@ -1,7 +1,7 @@
 import React from "react"
 import {Helmet as ReactHelmet} from "react-helmet"
 import {StaticQuery, graphql} from "gatsby"
-import PropTypes from "prop-types"
+import {PropTypes} from "prop-types"
 
 // TODO: Maybe use destructuring assignment with properties.
 const Helmet = props => (
