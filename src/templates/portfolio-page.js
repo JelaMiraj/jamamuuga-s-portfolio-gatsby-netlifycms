@@ -18,6 +18,7 @@ import {
   Testimonials,
 } from "../components"
 // TODO: Maybe use Cards, Lists, and/or Grids instead of GridList
+// FIXME: Fix Grid & GridList with images between text grid & testimonial area. That area isn't loading the images & is complaining about duplicate keys named "NA".
 
 const useStyles = makeStyles({
   root: {},
