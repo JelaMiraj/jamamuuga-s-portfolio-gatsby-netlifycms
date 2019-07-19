@@ -63,7 +63,7 @@ const Footer = withStyles(styles)(props => {
         <Box className="content has-text-centered has-background-black has-text-white-ter">
           <Container className="container has-background-black has-text-white-ter">
             <Grid container className="columns">
-              <Grid item xs={4} className="column is-4">
+              <Grid item xs={4}>
                 <section className="menu">
                   <List component="nav" className="menu-list">
                     <ListItem>
@@ -99,7 +99,7 @@ const Footer = withStyles(styles)(props => {
                   </List>
                 </section>
               </Grid>
-              <Grid item xs={4} className="column is-4">
+              <Grid item xs={4}>
                 <section>
                   <List component="nav" className="menu-list">
                     {/* <ListItem>
@@ -115,7 +115,7 @@ const Footer = withStyles(styles)(props => {
                   </List>
                 </section>
               </Grid>
-              <Grid item xs={4} className="column is-4 social">
+              <Grid item xs={4} className="social">
                 <LinkExternal title="facebook" href="https://facebook.com">
                   <img
                     src={facebook}
