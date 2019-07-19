@@ -25,16 +25,17 @@ const Card = ({
   const classes = useStyles()
 
   return (
-  <MuiCard style={style}>
-    <CardHeader
-      avatar={avatar || null}
-      title={title}
-      subheader={subheader || null}
-    />
-    <CardContent>{children}</CardContent>
-    <CardActions className={classes.cardActions}>{action}</CardActions>
-  </MuiCard>
-)
+    <MuiCard style={style}>
+      <CardHeader
+        avatar={avatar || null}
+        title={title}
+        subheader={subheader || null}
+      />
+      <CardContent>{children}</CardContent>
+      <CardActions className={classes.cardActions}>{action}</CardActions>
+    </MuiCard>
+  )
+}
 
 //     <CardActions style={{float: "right"}}>{action}</CardActions>
 
