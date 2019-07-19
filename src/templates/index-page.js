@@ -10,8 +10,8 @@ import {
   Paper,
   Typography,
 } from "@material-ui/core"
-// import {makeStyles, withStyles} from "@material-ui/core/styles"
-import {withStyles} from "@material-ui/core/styles"
+import {makeStyles} from "@material-ui/core/styles"
+// import {withStyles} from "@material-ui/core/styles"
 import {Card, BlogRoll, Features, Layout, Link} from "../components"
 
 // TODO: Convert everything to use React Hooks (Don't forget the ESLint plugin), Babel-Blade (DRY GraphQL), & functions not classes.
@@ -22,13 +22,30 @@ import {Card, BlogRoll, Features, Layout, Link} from "../components"
 //     textAlign: "center",
 //     paddingTop: theme.spacing(20),
 //   },
+//   cardMedia: {
+//     height: "200px",
+//   },
 // }))
 
-const styles = {
+const useStyles = makeStyles({
+  root: {
+    textAlign: "center",
+    paddingTop: theme.spacing(20),
+  },
   cardMedia: {
     height: "200px",
   },
-}
+})
+
+// const styles = {
+//   root: {
+//     textAlign: "center",
+//     paddingTop: theme.spacing(20),
+//   },
+//   cardMedia: {
+//     height: "200px",
+//   },
+// }
 
 export const IndexPageTemplate = ({
   // classes,
@@ -44,7 +61,7 @@ export const IndexPageTemplate = ({
 }) => {
   // TODO: Delete this null variable when eslint stops reformatting and breaking this function.
   const noOp = null
-  // const classes = useStyles()
+  const classes = useStyles()
 
   return (
     <div>
@@ -242,6 +259,7 @@ export const pageQuery = graphql`
   }
 `
 
-export default withStyles(styles)(IndexPage)
+// export default withStyles(styles)(IndexPage)
+export default IndexPage
 // export {IndexPageTemplate, pageQuery}
 // export {IndexPage}
