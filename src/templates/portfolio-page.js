@@ -1,7 +1,14 @@
 import React from "react"
 import {PropTypes} from "prop-types"
 import {graphql} from "gatsby"
-import {Container, Grid, GridList, GridListTile, Paper, Typography} from "@material-ui/core"
+import {
+  Container,
+  Grid,
+  GridList,
+  GridListTile,
+  Paper,
+  Typography,
+} from "@material-ui/core"
 import {makeStyles} from "@material-ui/core/styles"
 import {
   Features,
@@ -59,10 +66,7 @@ export const PortfolioPageTemplate = ({
                 </div>
                 <Grid container>
                   <Grid item xs={7}>
-                    <Typography
-                      variant="h4"
-                      fontWeight="600"
-                    >
+                    <Typography variant="h4" fontWeight="600">
                       {heading}
                     </Typography>
                     <Typography paragraph>{description}</Typography>
@@ -71,10 +75,7 @@ export const PortfolioPageTemplate = ({
                 <Features gridItems={intro.blurbs} />
                 <Grid container className="columns">
                   <Grid item xs={7}>
-                    <Typography
-                      variant="h4"
-                      fontWeight="600"
-                    >
+                    <Typography variant="h4" fontWeight="600">
                       {main.heading}
                     </Typography>
                     <Typography paragraph>{main.description}</Typography>
@@ -83,28 +84,28 @@ export const PortfolioPageTemplate = ({
                 <div className="tile is-ancestor">
                   <Grid container className="tile is-vertical">
                     <Grid item>
-                    <GridList className="tile">
-                      <GridListTile className="tile is-parent is-vertical">
-                        <article className="tile is-child">
-                          <PreviewCompatibleImage imageInfo={main.image1} />
-                        </article>
-                      </GridListTile>
-                      <GridListTile className="tile is-parent">
-                        <article className="tile is-child">
-                          <PreviewCompatibleImage imageInfo={main.image2} />
-                        </article>
-                      </GridListTile>
+                      <GridList className="tile">
+                        <GridListTile className="tile is-parent is-vertical">
+                          <article className="tile is-child">
+                            <PreviewCompatibleImage imageInfo={main.image1} />
+                          </article>
+                        </GridListTile>
+                        <GridListTile className="tile is-parent">
+                          <article className="tile is-child">
+                            <PreviewCompatibleImage imageInfo={main.image2} />
+                          </article>
+                        </GridListTile>
                       </GridList>
                     </Grid>
                     <Grid item>
                       <GridList>
-                    <GridListTile className="tile is-parent">
-                      <article className="tile is-child">
-                        <PreviewCompatibleImage imageInfo={main.image3} />
-                      </article>
+                        <GridListTile className="tile is-parent">
+                          <article className="tile is-child">
+                            <PreviewCompatibleImage imageInfo={main.image3} />
+                          </article>
                         </GridListTile>
-                        </GridList>
-                      </Grid>
+                      </GridList>
+                    </Grid>
                   </Grid>
                 </div>
                 <Testimonials testimonials={testimonials} />
@@ -118,12 +119,10 @@ export const PortfolioPageTemplate = ({
                     })`,
                   }}
                 />
-                <Typography
-                  variant="h3" fontWeight="600"
-                >
+                <Typography variant="h3" fontWeight="600">
                   {pricing.heading}
                 </Typography>
-                <Typography variant="h6" paragraph={true}>
+                <Typography variant="h6" paragraph>
                   {pricing.description}
                 </Typography>
                 <Pricing data={pricing.plans} />
