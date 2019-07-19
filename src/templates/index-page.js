@@ -30,7 +30,6 @@ const useStyles = makeStyles({
   root: {
     textAlign: "center",
     // Spacing can be either called on a imported theme object, or imported from @material-ui/system.
-    // paddingTop: theme.spacing(20),
     paddingTop: "20",
   },
   cardMedia: {

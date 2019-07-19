@@ -23,7 +23,7 @@ const useStyles = makeStyles({
     width: "40px",
     height: "40px",
     color: "#fff",
-    backgroundColor: theme.palette.secondary.light,
+    backgroundColor: "secondary.light",
   },
 })
 
