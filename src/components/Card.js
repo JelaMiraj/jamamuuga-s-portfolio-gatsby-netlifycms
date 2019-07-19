@@ -5,23 +5,26 @@ import {
   CardContent,
   CardHeader,
 } from "@material-ui/core"
-import {withStyles} from "@material-ui/core/styles"
+import {makeStyles} from "@material-ui/core/styles"
 
-const styles = {
+const useStyles = makeStyles({
   cardActions: {
     float: "right",
   },
-}
+})
 
 const Card = ({
   children,
-  classes,
+  // classes,
   title,
   subheader,
   avatar,
   action,
   style = {},
-}) => (
+}) => {
+  const classes = useStyles()
+
+  return (
   <MuiCard style={style}>
     <CardHeader
       avatar={avatar || null}
@@ -35,6 +38,5 @@ const Card = ({
 
 //     <CardActions style={{float: "right"}}>{action}</CardActions>
 
-// export default Card
-export default withStyles(styles)(Card)
+export default Card
 // export {Card}

@@ -15,7 +15,7 @@ import {
   ListItemText,
   Typography,
 } from "@material-ui/core"
-import {withStyles} from "@material-ui/core/styles"
+import {makeStyles} from "@material-ui/core/styles"
 // import {Facebook as FacebookLogo, Instagram as InstagramLogo, Twitter as TwitterLogo, Vimeo as VimeoLogo} from "mdi-material-ui"
 import {Content, Link, LinkExternal, PreviewCompatibleImage as Image} from "."
 
@@ -25,24 +25,24 @@ import instagram from "../img/social/instagram.svg"
 import twitter from "../img/social/twitter.svg"
 import vimeo from "../img/social/vimeo.svg"
 
-const styles = theme => ({
+const useStyles = makeStyles({
   divider: {
-    marginTop: theme.spacing(6),
-    marginBottom: theme.spacing(3),
+    marginTop: "6",
+    marginBottom: "3",
   },
   footer: {
     // Also may need something like "footer has-background-black has-text-white-ter"
-    marginBottom: theme.spacing(3),
+    marginBottom: "3",
     whiteSpace: "nowrap",
   },
   menuButton: {
-    color: theme.palette.primary.contrastText,
+    color: "primary.contrastText",
   },
 })
 
-const Footer = withStyles(styles)(props => {
+const Footer = props => {
   const {
-    classes,
+    // classes,
     data: {
       site: {
         siteMetadata: {
@@ -52,6 +52,7 @@ const Footer = withStyles(styles)(props => {
       },
     },
   } = props
+  const classes = useStyles(props)
 
   return (
     <>
@@ -152,7 +153,7 @@ const Footer = withStyles(styles)(props => {
       </footer>
     </>
   )
-})
+}
 
 export default props => (
   <StaticQuery

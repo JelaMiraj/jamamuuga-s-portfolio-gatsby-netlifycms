@@ -1,19 +1,20 @@
 // import React from "react"
 // import {graphql, withPrefix} from "gatsby"
 // import {Grid, Paper, Typography} from "@material-ui/core"
-// import {withStyles} from "@material-ui/core/styles"
+// import {makeStyles} from "@material-ui/core/styles"
 // import {PreviewCompatibleImage as Image, Layout} from "../components"
 
-// const styles = {
+// const useStyles = makeStyle({
 //   paper: {
 //     padding: "25px",
 //   },
 //   image: {
 //     width: "100%",
 //   },
-// }
+// })
 
-// const Team = ({classes, data}) => {
+// const Team = ({data}) => {
+//   const classes = useStyle()
 //   const {
 //     title,
 //     image: {publicURL},
@@ -67,5 +68,5 @@
 //   }
 // `
 
-// export default withStyles(styles)(Team)
+// export default Team
 // // export {Team}

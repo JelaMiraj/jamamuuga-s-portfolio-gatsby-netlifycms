@@ -1,19 +1,19 @@
 import React from "react"
 import {withPrefix} from "gatsby"
 import {Card, CardContent, CardMedia, Grid, Typography} from "@material-ui/core"
-import {withStyles} from "@material-ui/core/styles"
+import {makeStyles} from "@material-ui/core/styles"
 import Link from "./Link"
 
-const styles = {
+const useStyles = makeStyles({
   cardMedia: {
     height: "200px",
   },
-}
+})
 
 // TODO: If this custom list is not generic like Material UI List, then rename it.
 // TODO: Find out if Material UI List should be used in here.
 const List = props => {
-  const {classes} = props
+  const classes = useStyles(props)
 
   return (
     <Grid
@@ -56,6 +56,5 @@ const List = props => {
   )
 }
 
-// export default List
-export default withStyles(styles)(List)
+export default List
 // export {List}

@@ -1,7 +1,7 @@
 // import React from "react"
 // import {StaticQuery, graphql} from "gatsby"
 // import {Divider, Hidden, Typography} from "@material-ui/core"
-// import {withStyles} from "@material-ui/core/styles"
+// import {makeStyles} from "@material-ui/core/styles"
 
 // import logo from "../img/logo.svg"
 // import facebook from "../img/social/facebook.svg"
@@ -9,20 +9,20 @@
 // import twitter from "../img/social/twitter.svg"
 // import vimeo from "../img/social/vimeo.svg"
 
-// const styles = theme => ({
+// const useStyles = makeStyles({
 //   divider: {
-//     marginTop: theme.spacing(6),
-//     marginBottom: theme.spacing(3),
+//     marginTop: "6",
+//     marginBottom: "3",
 //   },
 //   footer: {
-//     marginBottom: theme.spacing(3),
+//     marginBottom: "3",
 //     whiteSpace: "nowrap",
 //   },
 // })
 
-// const Footer = withStyles(styles)(props => {
+// const Footer = props => {
 //   const {
-//     classes,
+//     // classes,
 //     data: {
 //       site: {
 //         siteMetadata: {
@@ -32,6 +32,7 @@
 //       },
 //     },
 //   } = props
+//   const classes = useStyles(props)
 
 //   return (
 //     <>
@@ -54,7 +55,7 @@
 //       </footer>
 //     </>
 //   )
-// })
+// }
 
 // export default props => (
 //   <StaticQuery

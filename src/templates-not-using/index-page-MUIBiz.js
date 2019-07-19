@@ -3,16 +3,17 @@
 // import {PropTypes} from "prop-types"
 // import {Avatar, Button} from "@material-ui/core"
 // import {Gift} from "mdi-material-ui"
-// import {withStyles} from "@material-ui/core/styles"
+// import {makeStyles} from "@material-ui/core/styles"
 // import {Card, Carousel, HomeFeatures, Page, SEO} from "../components"
 
-// const styles = theme => ({
+// const useStyles = makeStyles({
 //     root: {
 //       fontWeight: "bold",
 //     },
 // })
 
 // const Home = props => {
+//   const classes = useStyles(props)
 //   const portfolio = props.data.allMarkdownRemark.edges
 
 //   return (
@@ -86,4 +87,4 @@
 //   classes: PropTypes.object.isRequired,
 // }
 
-// export default withStyles(styles)(Home)
+// export default Home

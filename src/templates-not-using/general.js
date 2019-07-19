@@ -2,16 +2,17 @@
 // // import {PropTypes} from "prop-types"
 // import {graphql, withPrefix} from "gatsby"
 // import {CardContent, CardMedia, Typography} from "@material-ui/core"
-// import {withStyles} from "@material-ui/core/styles"
+// import {makeStyles} from "@material-ui/core/styles"
 // import {Card, Layout} from "../components"
 
-// const styles = {
+// const useStyles = makeStyles({
 //   cardMedia: {
 //     height: "200px",
 //   },
-// }
+// })
 
-// const Detail = ({classes, data}) => {
+// const Detail = ({data}) => {
+//   const classes = useStyles()
 //   const {
 //     title,
 //     image: {publicURL},
@@ -52,4 +53,4 @@
 //   }
 // `
 
-// export default withStyles(styles)(Detail)
+// export default Detail

@@ -2,25 +2,26 @@ import React from "react"
 import {StaticQuery, graphql} from "gatsby"
 import {Button, IconButton} from "@material-ui/core"
 import {GithubCircle} from "mdi-material-ui"
-import {withStyles} from "@material-ui/core/styles"
+import {makeStyles} from "@material-ui/core/styles"
 import {Link, LinkExternal} from "."
 // import logo from "../img/logo.svg"
 
-const styles = theme => ({
+const useStyles = makeStyles({
   menuButton: {
     color: theme.palette.primary.contrastText,
   },
 })
 
-const Menu = withStyles(styles)(props => {
+const Menu = props => {
   const {
-    classes,
+    // classes,
     data: {
       site: {
         siteMetadata: {menuLinks},
       },
     },
   } = props
+  const classes = useStyles(props)
 
   return (
     <>
@@ -36,7 +37,7 @@ const Menu = withStyles(styles)(props => {
       </LinkExternal>
     </>
   )
-})
+}
 
 export default props => (
   <StaticQuery

@@ -11,7 +11,6 @@ import {
   Typography,
 } from "@material-ui/core"
 import {makeStyles} from "@material-ui/core/styles"
-// import {withStyles} from "@material-ui/core/styles"
 import {Card, BlogRoll, Features, Layout, Link} from "../components"
 
 // TODO: Convert everything to use React Hooks (Don't forget the ESLint plugin), Babel-Blade (DRY GraphQL), & functions not classes.
@@ -261,7 +260,6 @@ export const pageQuery = graphql`
   }
 `
 
-// export default withStyles(styles)(IndexPage)
 export default IndexPage
 // export {IndexPageTemplate, pageQuery}
 // export {IndexPage}
