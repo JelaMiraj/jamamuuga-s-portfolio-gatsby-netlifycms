@@ -20,7 +20,7 @@ import {Card, BlogRoll, Features, Layout, Link} from "../components"
 // const useStyles = makeStyles(theme => ({
 //   root: {
 //     textAlign: "center",
-//     paddingTop: theme.spacing(20),
+//     paddingTop: "20",
 //   },
 //   cardMedia: {
 //     height: "200px",
@@ -30,7 +30,9 @@ import {Card, BlogRoll, Features, Layout, Link} from "../components"
 const useStyles = makeStyles({
   root: {
     textAlign: "center",
-    paddingTop: theme.spacing(20),
+    // Spacing can be either called on a imported theme object, or imported from @material-ui/system.
+    // paddingTop: theme.spacing(20),
+    paddingTop: "20",
   },
   cardMedia: {
     height: "200px",
@@ -40,7 +42,7 @@ const useStyles = makeStyles({
 // const styles = {
 //   root: {
 //     textAlign: "center",
-//     paddingTop: theme.spacing(20),
+//     paddingTop: "20",
 //   },
 //   cardMedia: {
 //     height: "200px",
