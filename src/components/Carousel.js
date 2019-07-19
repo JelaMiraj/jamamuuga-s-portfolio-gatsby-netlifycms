@@ -19,7 +19,6 @@
 // import {Card, Link} from "."
 // // Make sure to use Material UI's Steppers & not just material-ui-popup-state: https://material-ui.com/components/steppers/#mobile-stepper-text-with-carousel-effect
 
-
 // const AutoPlaySwipeableViews = autoPlay(SwipeableViews)
 
 // const useStyles = makeStyles({

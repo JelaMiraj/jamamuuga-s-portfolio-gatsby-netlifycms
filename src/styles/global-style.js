@@ -4,11 +4,7 @@ import React from "react"
 
 const options = {}
 
-const GlobalStyle = () => (
-  <>
-    {/* <CssBaseline /> */}
-  </>
-)
+const GlobalStyle = () => <>{/* <CssBaseline /> */}</>
 
 export default GlobalStyle
 // export {GlobalStyle}

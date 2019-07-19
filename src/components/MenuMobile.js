@@ -63,9 +63,7 @@ const MenuMobile = props => {
             <MenuItem onClick={popupState.close}>{link.name}</MenuItem>
           </Link>
         ))}
-        <LinkExternal
-          href="https://github.com/Jamamuuga/jamamuuga-s-portfolio-gatsby-netlifycms"
-        >
+        <LinkExternal href="https://github.com/Jamamuuga/jamamuuga-s-portfolio-gatsby-netlifycms">
           <MenuItem onClick={popupState.close}>Github Repository</MenuItem>
         </LinkExternal>
       </Menu>

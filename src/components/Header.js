@@ -18,12 +18,12 @@ import {Link, Menu, MenuMobile} from "."
 
 const useStyles = makeStyles({
   appBar: {
-    color: "primary"
+    color: "primary",
   },
   avatar: {
     // backgroundColor: palette.tertiary,
     // backgroundColor: "tertiary",
-    backgroundColor: "secondary.light"
+    backgroundColor: "secondary.light",
   },
   chip: {
     // color: palette.secondary,

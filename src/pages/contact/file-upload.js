@@ -5,7 +5,7 @@ import {Content, Layout, Link} from "../../components"
 // TODO: Port this to material-ui-popup-state
 // TODO: Use proper Material UI form handling.
 
-const encode = (data) => {
+const encode = data => {
   const formData = new FormData()
 
   for (const key of Object.keys(data)) {

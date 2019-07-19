@@ -9,7 +9,7 @@ const useStyles = makeStyles({
     backgroundColor: "#f40",
     color: "white",
     padding: "1rem",
-  }
+  },
 })
 
 const BlogIndexPage = props => {
@@ -33,7 +33,7 @@ const BlogIndexPage = props => {
               >
                 {/*                 className="is-size-1" */}
                 Latest Stories
-            </Typography>
+              </Typography>
             </div>
           </div>
           <BlogRoll />

@@ -6,17 +6,16 @@ import {Content, Layout} from "../../components"
 // TODO: Use proper Material UI form handling.
 // FIXME: Finish porting to hooks/function style from classes.
 
-const encode = data => {
-  return Object.keys(data)
+const encode = data =>
+  Object.keys(data)
     .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
     .join("&")
-}
 
 const Index = props => {
   const {classes} = props
   // Commented out old state variable from the original class version. Have since changed to functions/hooks.
   // const state = {isValidated: false}
-  const [state, setState]  = useState({})
+  const [state, setState] = useState({})
 
   const handleChange = event => {
     setState({...state, [event.target.name]: event.target.value})
