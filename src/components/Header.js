@@ -18,7 +18,7 @@ import {Link, Menu, MenuMobile} from "."
 
 const useStyles = makeStyles({
   appBar: {
-    backgroundColor: "primary"
+    color: "primary"
   },
   avatar: {
     // backgroundColor: palette.tertiary,
