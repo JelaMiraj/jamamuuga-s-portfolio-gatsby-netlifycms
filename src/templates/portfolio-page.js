@@ -17,6 +17,7 @@ import {
   PreviewCompatibleImage,
   Testimonials,
 } from "../components"
+// TODO: Maybe use Cards, Lists, and/or Grids instead of GridList
 
 const useStyles = makeStyles({
   root: {},
