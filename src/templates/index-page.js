@@ -91,8 +91,8 @@ export const IndexPageTemplate = ({
           }}
         >
           <Typography
-            variant="h1"
-            className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+            variant="h1" fontWeight="fontWeightBold"
+            className="is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
             style={{
               boxShadow:
                 "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
@@ -106,7 +106,8 @@ export const IndexPageTemplate = ({
           </Typography>
           <Typography
             variant="h3"
-            className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+            fontWeight="fontWeightBold"
+            className="is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
             style={{
               boxShadow:
                 "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
@@ -121,10 +122,10 @@ export const IndexPageTemplate = ({
         </div>
       </div>
       <section className="section section--gradient">
-        <Container className="container">
+        <Container>
           <section className="section">
-            <Grid container className="columns">
-              <Grid item xs={10} className="column is-10 is-offset-1">
+            <Grid container>
+              <Grid item xs={10} className="is-offset-1">
                 <Box className="content">
                   <Box className="content">
                     <Paper className="tile">
@@ -138,12 +139,11 @@ export const IndexPageTemplate = ({
                       </Typography>
                     </Paper>
                   </Box>
-                  <Grid container className="columns">
-                    <Grid item xs={12} className="column">
+                  <Grid container>
+                    <Grid item xs={12}>
                       <Typography
                         variant="h3"
                         fontWeight="600"
-                        className="is-size-2"
                       >
                         {heading}
                       </Typography>
@@ -164,12 +164,11 @@ export const IndexPageTemplate = ({
                     <Typography
                       variant="h3"
                       fontWeight="600"
-                      className="is-size-2"
                     >
                       Latest stories
                     </Typography>
                       <BlogRoll />
-                    <Grid item xs={12} align="center" className="column">
+                    <Grid item xs={12} align="center">
                       <Button variant="contained" color="secondary">
                         <Link className="btn" to="/blog">
                           Read more
