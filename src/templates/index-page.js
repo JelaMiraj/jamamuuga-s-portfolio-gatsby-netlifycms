@@ -63,104 +63,106 @@ export const IndexPageTemplate = ({
   description,
   intro,
   // main,
-}) => (
-// // TODO: Delete this null variable when eslint stops reformatting and breaking this function.
-// const noOp = null
-// const classes = useStyles()
+// eslint-disable-next-line
+}) => {
+  // TODO: Delete this null variable when eslint stops reformatting and breaking this function.
+  // const noOp = null
+  const classes = useStyles()
 
-  (
+// eslint-disable-next-line
+  return (
     <div>
-    <div
-      className="full-width-image margin-top-0"
-      style={{
-        backgroundImage: `url(${
-          image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
-      }}
-    >
       <div
+        className="full-width-image margin-top-0"
         style={{
-          display: "flex",
-          height: "150px",
-          lineHeight: "1",
-          justifyContent: "space-around",
-          alignItems: "left",
-          flexDirection: "column",
+          backgroundImage: `url(${
+            image.childImageSharp ? image.childImageSharp.fluid.src : image
+            })`,
+          backgroundPosition: `top left`,
+          backgroundAttachment: `fixed`,
         }}
       >
-        <Typography
-          variant="h1"
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+        <div
           style={{
-            boxShadow:
-              "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-            backgroundColor: "rgb(255, 68, 0)",
-            color: "white",
+            display: "flex",
+            height: "150px",
             lineHeight: "1",
-            padding: "0.25em",
+            justifyContent: "space-around",
+            alignItems: "left",
+            flexDirection: "column",
           }}
         >
-          {title}
-        </Typography>
-        <Typography
-          variant="h3"
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            boxShadow:
-              "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-            backgroundColor: "rgb(255, 68, 0)",
-            color: "white",
-            lineHeight: "1",
-            padding: "0.25em",
-          }}
-        >
-          {subheading}
-        </Typography>
+          <Typography
+            variant="h1"
+            className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+            style={{
+              boxShadow:
+                "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
+              backgroundColor: "rgb(255, 68, 0)",
+              color: "white",
+              lineHeight: "1",
+              padding: "0.25em",
+            }}
+          >
+            {title}
+          </Typography>
+          <Typography
+            variant="h3"
+            className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+            style={{
+              boxShadow:
+                "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
+              backgroundColor: "rgb(255, 68, 0)",
+              color: "white",
+              lineHeight: "1",
+              padding: "0.25em",
+            }}
+          >
+            {subheading}
+          </Typography>
+        </div>
       </div>
-    </div>
-    <section className="section section--gradient">
-      <Container className="container">
-        <section className="section">
-          <Grid container className="columns">
-            <Grid item xs={10} className="column is-10 is-offset-1">
-              <Box className="content">
+      <section className="section section--gradient">
+        <Container className="container">
+          <section className="section">
+            <Grid container className="columns">
+              <Grid item xs={10} className="column is-10 is-offset-1">
                 <Box className="content">
-                  <Paper className="tile">
-                    <Typography variant="h1" className="title">
-                      {mainpitch.title}
-                    </Typography>
-                  </Paper>
-                  <Paper className="tile">
-                    <Typography variant="h3" className="subtitle">
-                      {mainpitch.description}
-                    </Typography>
-                  </Paper>
-                </Box>
-                <Grid container className="columns">
-                  <Grid item xs={12} className="column">
-                    <Typography
-                      variant="h3"
-                      fontWeight="fontWeightSemiBold"
-                      className="is-size-2"
-                    >
-                      {heading}
-                    </Typography>
-                    <Typography paragraph>{description}</Typography>
+                  <Box className="content">
+                    <Paper className="tile">
+                      <Typography variant="h1" className="title">
+                        {mainpitch.title}
+                      </Typography>
+                    </Paper>
+                    <Paper className="tile">
+                      <Typography variant="h3" className="subtitle">
+                        {mainpitch.description}
+                      </Typography>
+                    </Paper>
+                  </Box>
+                  <Grid container className="columns">
+                    <Grid item xs={12} className="column">
+                      <Typography
+                        variant="h3"
+                        fontWeight="fontWeightSemiBold"
+                        className="is-size-2"
+                      >
+                        {heading}
+                      </Typography>
+                      <Typography paragraph>{description}</Typography>
+                    </Grid>
                   </Grid>
-                </Grid>
-                <Features gridItems={intro.blurbs} />
-                <Grid container className="columns">
-                  <Grid item xs={12} align="center" className="column">
-                    <Button variant="contained" color="secondary">
-                      <Link className="btn" to="/portfolio">
-                        See all portfolio
+                  <Features gridItems={intro.blurbs} />
+                  <Grid container className="columns">
+                    <Grid item xs={12} align="center" className="column">
+                      <Button variant="contained" color="secondary">
+                        <Link className="btn" to="/portfolio">
+                          See all portfolio
                         </Link>
-                    </Button>
+                      </Button>
+                    </Grid>
                   </Grid>
-                </Grid>
-                {/* <Grid item xs={12} className="column">
+                  {/* <Grid item xs={12} className="column">
                     <Typography
                       variant="h3"
                       fontWeight="fontWeightSemiBold"
@@ -177,14 +179,15 @@ export const IndexPageTemplate = ({
                       </Button>
                     </Grid>
                   </Grid> */}
-              </Box>
+                </Box>
+              </Grid>
             </Grid>
-          </Grid>
-        </section>
-      </Container>
-    </section>
-  </div>
-)
+          </section>
+        </Container>
+      </section>
+    </div>
+  )
+}
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
