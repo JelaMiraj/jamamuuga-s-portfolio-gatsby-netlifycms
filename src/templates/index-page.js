@@ -5,6 +5,7 @@ import {
   Box,
   CardContent,
   CardMedia,
+  Container,
   Button,
   Grid,
   Paper,
@@ -13,7 +14,11 @@ import {
 import {makeStyles} from "@material-ui/core/styles"
 import {Card, BlogRoll, Features, Layout, Link} from "../components"
 
+// TODO: Maybe use Card instead of or around Paper.
+
 // TODO: Convert everything to use React Hooks (Don't forget the ESLint plugin), Babel-Blade (DRY GraphQL), & functions not classes.
+
+// TODO: Delete commented extra style format versions when satifisfied that the uncommented one works.
 
 // FIXME: complains about object is not a function....
 // const useStyles = makeStyles(theme => ({
@@ -58,104 +63,104 @@ export const IndexPageTemplate = ({
   description,
   intro,
   // main,
-}) => {
-  // TODO: Delete this null variable when eslint stops reformatting and breaking this function.
-  const noOp = null
-  const classes = useStyles()
+}) => (
+// // TODO: Delete this null variable when eslint stops reformatting and breaking this function.
+// const noOp = null
+// const classes = useStyles()
 
-  return (
+  (
     <div>
+    <div
+      className="full-width-image margin-top-0"
+      style={{
+        backgroundImage: `url(${
+          image.childImageSharp ? image.childImageSharp.fluid.src : image
+        })`,
+        backgroundPosition: `top left`,
+        backgroundAttachment: `fixed`,
+      }}
+    >
       <div
-        className="full-width-image margin-top-0"
         style={{
-          backgroundImage: `url(${
-            image.childImageSharp ? image.childImageSharp.fluid.src : image
-          })`,
-          backgroundPosition: `top left`,
-          backgroundAttachment: `fixed`,
+          display: "flex",
+          height: "150px",
+          lineHeight: "1",
+          justifyContent: "space-around",
+          alignItems: "left",
+          flexDirection: "column",
         }}
       >
-        <div
+        <Typography
+          variant="h1"
+          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           style={{
-            display: "flex",
-            height: "150px",
+            boxShadow:
+              "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
+            backgroundColor: "rgb(255, 68, 0)",
+            color: "white",
             lineHeight: "1",
-            justifyContent: "space-around",
-            alignItems: "left",
-            flexDirection: "column",
+            padding: "0.25em",
           }}
         >
-          <Typography
-            variant="h1"
-            className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-            style={{
-              boxShadow:
-                "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-              backgroundColor: "rgb(255, 68, 0)",
-              color: "white",
-              lineHeight: "1",
-              padding: "0.25em",
-            }}
-          >
-            {title}
-          </Typography>
-          <Typography
-            variant="h3"
-            className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-            style={{
-              boxShadow:
-                "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-              backgroundColor: "rgb(255, 68, 0)",
-              color: "white",
-              lineHeight: "1",
-              padding: "0.25em",
-            }}
-          >
-            {subheading}
-          </Typography>
-        </div>
+          {title}
+        </Typography>
+        <Typography
+          variant="h3"
+          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+          style={{
+            boxShadow:
+              "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
+            backgroundColor: "rgb(255, 68, 0)",
+            color: "white",
+            lineHeight: "1",
+            padding: "0.25em",
+          }}
+        >
+          {subheading}
+        </Typography>
       </div>
-      <section className="section section--gradient">
-        <Box className="container">
-          <section className="section">
-            <Grid container className="columns">
-              <Grid item xs={10} className="column is-10 is-offset-1">
+    </div>
+    <section className="section section--gradient">
+      <Container className="container">
+        <section className="section">
+          <Grid container className="columns">
+            <Grid item xs={10} className="column is-10 is-offset-1">
+              <Box className="content">
                 <Box className="content">
-                  <Box className="content">
-                    <Paper className="tile">
-                      <Typography variant="h1" className="title">
-                        {mainpitch.title}
-                      </Typography>
-                    </Paper>
-                    <Paper className="tile">
-                      <Typography variant="h3" className="subtitle">
-                        {mainpitch.description}
-                      </Typography>
-                    </Paper>
-                  </Box>
-                  <Grid container className="columns">
-                    <Grid item xs={12} className="column">
-                      <Typography
-                        variant="h3"
-                        fontWeight="fontWeightSemiBold"
-                        className="is-size-2"
-                      >
-                        {heading}
-                      </Typography>
-                      <Typography paragraph>{description}</Typography>
-                    </Grid>
+                  <Paper className="tile">
+                    <Typography variant="h1" className="title">
+                      {mainpitch.title}
+                    </Typography>
+                  </Paper>
+                  <Paper className="tile">
+                    <Typography variant="h3" className="subtitle">
+                      {mainpitch.description}
+                    </Typography>
+                  </Paper>
+                </Box>
+                <Grid container className="columns">
+                  <Grid item xs={12} className="column">
+                    <Typography
+                      variant="h3"
+                      fontWeight="fontWeightSemiBold"
+                      className="is-size-2"
+                    >
+                      {heading}
+                    </Typography>
+                    <Typography paragraph>{description}</Typography>
                   </Grid>
-                  <Features gridItems={intro.blurbs} />
-                  <Grid container className="columns">
-                    <Grid item xs={12} align="center" className="column">
-                      <Button variant="contained" color="secondary">
-                        <Link className="btn" to="/portfolio">
-                          See all portfolio
+                </Grid>
+                <Features gridItems={intro.blurbs} />
+                <Grid container className="columns">
+                  <Grid item xs={12} align="center" className="column">
+                    <Button variant="contained" color="secondary">
+                      <Link className="btn" to="/portfolio">
+                        See all portfolio
                         </Link>
-                      </Button>
-                    </Grid>
+                    </Button>
                   </Grid>
-                  {/* <Grid item xs={12} className="column">
+                </Grid>
+                {/* <Grid item xs={12} className="column">
                     <Typography
                       variant="h3"
                       fontWeight="fontWeightSemiBold"
@@ -172,15 +177,14 @@ export const IndexPageTemplate = ({
                       </Button>
                     </Grid>
                   </Grid> */}
-                </Box>
-              </Grid>
+              </Box>
             </Grid>
-          </section>
-        </Box>
-      </section>
-    </div>
-  )
-}
+          </Grid>
+        </section>
+      </Container>
+    </section>
+  </div>
+)
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -194,7 +198,6 @@ IndexPageTemplate.propTypes = {
   }),
 }
 
-// const IndexPage = ({classes, data}) => {
 const IndexPage = ({data}) => {
   const {frontmatter} = data.markdownRemark
 
