@@ -1,9 +1,8 @@
 import React from "react"
-import {Helmet} from "react-helmet"
 import {kebabCase} from "lodash"
 import {graphql} from "gatsby"
-// import {Helmet, Layout, Link} from "../../components"
-import {Layout, Link} from "../../components"
+import {Container, Grid, List, ListItem, ListItemText, Typography} from "@material-ui/core"
+import {Helmet, Layout, Link} from "../../components"
 // TODO: Use custom helmet instead of React Helmet directly.
 
 const TagsPage = ({
@@ -17,25 +16,25 @@ const TagsPage = ({
   <Layout>
     <section className="section">
       <Helmet title={`Tags | ${title}`} />
-      <div className="container content">
-        <div className="columns">
-          <div
+      <Container className="container content">
+        <Grid container className="columns">
+          <Grid item xs={10}
             className="column is-10 is-offset-1"
             style={{marginBottom: "6rem"}}
           >
-            <h1 className="title is-size-2 is-bold-light">Tags</h1>
-            <ul className="taglist">
+            <Typography variant="h1" className="title is-size-2 is-bold-light">Tags</Typography>
+            <List className="taglist">
               {group.map(tag => (
-                <li key={tag.fieldValue}>
-                  <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-                    {tag.fieldValue} ({tag.totalCount})
+                <ListItem key={tag.fieldValue}>
+                  <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}><ListItemText>
+                    {tag.fieldValue} ({tag.totalCount})</ListItemText>
                   </Link>
-                </li>
+                </ListItem>
               ))}
-            </ul>
-          </div>
-        </div>
-      </div>
+            </List>
+          </Grid>
+        </Grid>
+      </Container>
     </section>
   </Layout>
 )
