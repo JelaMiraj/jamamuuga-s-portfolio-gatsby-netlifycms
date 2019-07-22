@@ -22,7 +22,7 @@ export const AboutPageTemplate = ({title, content, contentComponent}) => {
             <section className="section">
               <Typography
                 variant="h4"
-                fontWeight="fontWeightSemiBold"
+                fontWeight="600"
                 className="title is-size-3 has-text-weight-bold is-bold-light"
               >
                 {title}

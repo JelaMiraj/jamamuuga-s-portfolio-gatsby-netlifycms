@@ -144,7 +144,7 @@ export const IndexPageTemplate = ({
                     <Grid item xs={12} className="column">
                       <Typography
                         variant="h3"
-                        fontWeight="fontWeightSemiBold"
+                        fontWeight="600"
                         className="is-size-2"
                       >
                         {heading}
@@ -165,7 +165,7 @@ export const IndexPageTemplate = ({
                   {/* <Grid item xs={12} className="column">
                     <Typography
                       variant="h3"
-                      fontWeight="fontWeightSemiBold"
+                      fontWeight="600"
                       className="is-size-2"
                     >
                       Latest stories

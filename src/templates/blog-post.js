@@ -30,7 +30,7 @@ export const BlogPostTemplate = ({
           <Grid item xs={10} className="column is-10 is-offset-1">
             <Typography
               variant="h1"
-              fontWeight="fontWeightSemiBold"
+              fontWeight="600"
               className="title is-size-2 has-text-weight-bold is-bold-light"
             >
               {title}

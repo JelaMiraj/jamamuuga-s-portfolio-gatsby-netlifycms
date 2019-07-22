@@ -51,7 +51,7 @@ const TagRoute = props => {
               >
                 <Typography
                   variant="h3"
-                  fontWeight="fontWeightSemiBold"
+                  fontWeight="600"
                   className="title is-size-4 is-bold-light"
                 >
                   {tagHeader}
