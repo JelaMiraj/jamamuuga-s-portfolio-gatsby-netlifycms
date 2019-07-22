@@ -72,7 +72,7 @@
   ],
   "main": "n/a",
   "scripts": {
-    "clean": "rimraf '.cache/.??*' '.cache/*' 'public/.??*' 'public/*'",
+    "clean": "gatsby clean",
     "start:app": "yarn develop",
     "start-old:functions": "echo \"netlify-lambda serve src/functions\"",
     "start-old": "echo \"run-p start:**\"",
