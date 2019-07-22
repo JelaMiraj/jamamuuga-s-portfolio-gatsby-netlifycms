@@ -65,8 +65,6 @@ export const IndexPageTemplate = ({
   // main,
   // eslint-disable-next-line
 }) => {
-  // TODO: Delete this null variable when eslint stops reformatting and breaking this function.
-  // const noOp = null
   const classes = useStyles()
 
   // eslint-disable-next-line
