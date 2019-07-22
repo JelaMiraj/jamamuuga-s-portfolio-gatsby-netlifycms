@@ -2,6 +2,7 @@ import React from "react"
 import {PropTypes} from "prop-types"
 import {kebabCase} from "lodash"
 import {graphql} from "gatsby"
+import {Container, Grid, List, ListItem, ListItemText, Typography} from "@material-ui/core"
 import {Content, Helmet, HTMLContent, Layout, Link} from "../components"
 
 export const BlogPostTemplate = ({
@@ -17,29 +18,29 @@ export const BlogPostTemplate = ({
   return (
     <section className="section">
       {helmet || ""}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+      <Container className="container content">
+        <Grid container className="columns">
+          <Grid item xs={10} className="column is-10 is-offset-1">
+            <Typography variant="h1" fontWeight="fontWeightSemiBold" className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
-            </h1>
-            <p>{description}</p>
+            </Typography>
+            <Typography paragraph={true}>{description}</Typography>
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{marginTop: `4rem`}}>
-                <h4>Tags</h4>
-                <ul className="taglist">
+                <Typography variant="h4">Tags</Typography>
+                <List className="taglist">
                   {tags.map(tag => (
-                    <li key={`${tag}tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
+                    <ListItem key={`${tag}tag`}>
+                      <Link to={`/tags/${kebabCase(tag)}/`}><ListItemText>{tag}</ListItemText></Link>
+                    </ListItem>
                   ))}
-                </ul>
+                </List>
               </div>
             ) : null}
-          </div>
-        </div>
-      </div>
+          </Grid>
+        </Grid>
+      </Container>
     </section>
   )
 }
