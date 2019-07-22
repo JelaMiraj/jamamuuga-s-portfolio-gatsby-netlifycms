@@ -41,7 +41,7 @@
     "gatsby-transformer-remark": "^2.6.7",
     "gatsby-transformer-sharp": "^2.2.4",
     "jest-pnp-resolver": "^1.2.1",
-    "jss": "^10.0.0-alpha.22",
+    "jss": "^10.0.0-alpha.23",
     "lodash": "^4.17.14",
     "lodash-webpack-plugin": "^0.11.5",
     "material-ui-image": "^3.2.0",
