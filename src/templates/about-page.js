@@ -1,7 +1,14 @@
 import React from "react"
 import {PropTypes} from "prop-types"
 import {graphql} from "gatsby"
-import {Box, Container, Button, Grid, Paper, Typography} from "@material-ui/core"
+import {
+  Box,
+  Container,
+  Button,
+  Grid,
+  Paper,
+  Typography,
+} from "@material-ui/core"
 import {Card, Content, HTMLContent, Layout} from "../components"
 
 export const AboutPageTemplate = ({title, content, contentComponent}) => {

@@ -1,7 +1,14 @@
 import React from "react"
 import {kebabCase} from "lodash"
 import {graphql} from "gatsby"
-import {Container, Grid, List, ListItem, ListItemText, Typography} from "@material-ui/core"
+import {
+  Container,
+  Grid,
+  List,
+  ListItem,
+  ListItemText,
+  Typography,
+} from "@material-ui/core"
 import {Helmet, Layout, Link} from "../../components"
 // TODO: Use custom helmet instead of React Helmet directly.
 
@@ -18,16 +25,22 @@ const TagsPage = ({
       <Helmet title={`Tags | ${title}`} />
       <Container className="container content">
         <Grid container className="columns">
-          <Grid item xs={10}
+          <Grid
+            item
+            xs={10}
             className="column is-10 is-offset-1"
             style={{marginBottom: "6rem"}}
           >
-            <Typography variant="h1" className="title is-size-2 is-bold-light">Tags</Typography>
+            <Typography variant="h1" className="title is-size-2 is-bold-light">
+              Tags
+            </Typography>
             <List className="taglist">
               {group.map(tag => (
                 <ListItem key={tag.fieldValue}>
-                  <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}><ListItemText>
-                    {tag.fieldValue} ({tag.totalCount})</ListItemText>
+                  <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+                    <ListItemText>
+                      {tag.fieldValue} ({tag.totalCount})
+                    </ListItemText>
                   </Link>
                 </ListItem>
               ))}

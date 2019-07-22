@@ -63,13 +63,13 @@ export const IndexPageTemplate = ({
   description,
   intro,
   // main,
-// eslint-disable-next-line
+  // eslint-disable-next-line
 }) => {
   // TODO: Delete this null variable when eslint stops reformatting and breaking this function.
   // const noOp = null
   const classes = useStyles()
 
-// eslint-disable-next-line
+  // eslint-disable-next-line
   return (
     <div>
       <div
@@ -77,7 +77,7 @@ export const IndexPageTemplate = ({
         style={{
           backgroundImage: `url(${
             image.childImageSharp ? image.childImageSharp.fluid.src : image
-            })`,
+          })`,
           backgroundPosition: `top left`,
           backgroundAttachment: `fixed`,
         }}

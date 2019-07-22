@@ -2,7 +2,14 @@ import React from "react"
 import {PropTypes} from "prop-types"
 import {kebabCase} from "lodash"
 import {graphql} from "gatsby"
-import {Container, Grid, List, ListItem, ListItemText, Typography} from "@material-ui/core"
+import {
+  Container,
+  Grid,
+  List,
+  ListItem,
+  ListItemText,
+  Typography,
+} from "@material-ui/core"
 import {Content, Helmet, HTMLContent, Layout, Link} from "../components"
 
 export const BlogPostTemplate = ({
@@ -21,10 +28,14 @@ export const BlogPostTemplate = ({
       <Container className="container content">
         <Grid container className="columns">
           <Grid item xs={10} className="column is-10 is-offset-1">
-            <Typography variant="h1" fontWeight="fontWeightSemiBold" className="title is-size-2 has-text-weight-bold is-bold-light">
+            <Typography
+              variant="h1"
+              fontWeight="fontWeightSemiBold"
+              className="title is-size-2 has-text-weight-bold is-bold-light"
+            >
               {title}
             </Typography>
-            <Typography paragraph={true}>{description}</Typography>
+            <Typography paragraph>{description}</Typography>
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{marginTop: `4rem`}}>
@@ -32,7 +43,9 @@ export const BlogPostTemplate = ({
                 <List className="taglist">
                   {tags.map(tag => (
                     <ListItem key={`${tag}tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}><ListItemText>{tag}</ListItemText></Link>
+                      <Link to={`/tags/${kebabCase(tag)}/`}>
+                        <ListItemText>{tag}</ListItemText>
+                      </Link>
                     </ListItem>
                   ))}
                 </List>
