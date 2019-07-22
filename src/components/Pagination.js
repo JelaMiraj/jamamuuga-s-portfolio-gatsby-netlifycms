@@ -1,5 +1,6 @@
 import React from "react"
 import Link from "./Link"
+import {Link} from "."
 // Pagination for posts.
 
 const unorderedListStyle = {
