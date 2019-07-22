@@ -17,26 +17,26 @@ const BlogIndexPage = props => {
 
   return (
     <Layout>
+      <div
+        className="full-width-image-container margin-top-0"
+        style={{
+          backgroundImage: `url("/img/blog-index.jpg")`,
+        }}
+      >
+        <Typography
+          variant="h1"
+          className={classes.typography}
+          fontWeight="fontWeightBold"
+        >
+          {/*                 className="is-size-1" */}
+          Latest Stories
+        </Typography>
+      </div>
       <section className="section">
         <Container className="container">
           <div className="content">
-            <div
-              className="full-width-image-container margin-top-0"
-              style={{
-                backgroundImage: `url("/img/blog-index.jpg")`,
-              }}
-            >
-              <Typography
-                variant="h1"
-                className={classes.typography}
-                fontWeight="fontWeightBold"
-              >
-                {/*                 className="is-size-1" */}
-                Latest Stories
-              </Typography>
-            </div>
+            <BlogRoll />
           </div>
-          <BlogRoll />
         </Container>
       </section>
     </Layout>
