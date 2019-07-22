@@ -3,6 +3,7 @@ import {PropTypes} from "prop-types"
 import {v4} from "uuid"
 import {Grid, Paper, Typography} from "@material-ui/core"
 // TODO: Normalize the component use & hierarchy to best practices so it is less likely to end up hacky.
+// TODO: Maybe use Card instead of or around Paper.
 
 const Testimonials = ({testimonials}) => (
   <Grid container>

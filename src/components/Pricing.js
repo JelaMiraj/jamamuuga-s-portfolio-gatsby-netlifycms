@@ -1,6 +1,7 @@
 import React from "react"
 import {PropTypes} from "prop-types"
 import {Grid, List, ListItem, Paper, Typography} from "@material-ui/core"
+// TODO: Maybe use Card and/or Paper somewhere in Pricing.
 
 const Pricing = ({data}) => (
   <Grid container className="columns">
