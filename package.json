@@ -141,7 +141,7 @@
     "netlify-lambda": "^1.4.13",
     "prettier": "^1.18.2",
     "react-test-renderer": "^16.8.6",
-    "regenerator-runtime": "^0.13.2",
+    "regenerator-runtime": "^0.13.3",
     "remark-cli": "^6.0.1",
     "remark-lint": "^6.0.5",
     "remark-preset-lint-consistent": "^2.0.3",
