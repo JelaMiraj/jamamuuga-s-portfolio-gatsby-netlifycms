@@ -9,7 +9,7 @@ import {Footer, Header} from "."
 import useSiteMetadata from "./SiteMetadata"
 
 const useStyles = makeStyles({
-  container: {
+  gridContainer: {
     marginTop: 94,
   },
   contentBox: {
@@ -34,7 +34,7 @@ const Layout = props => {
           {/* <GlobalStyle /> */}
           <Header />
           <Grid
-            className={classes.container}
+            className={classes.gridContainer}
             container
             direction="row"
             justify="center"
