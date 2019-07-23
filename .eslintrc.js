@@ -14,7 +14,7 @@ module.exports = {
     "prettier/react",
     "eslint-config-with-prettier",
   ],
-  plugins: ["json"],
+  plugins: ["json", "react-hooks"],
   rules: {
     // "func-names": [
     //   "error",
@@ -31,5 +31,9 @@ module.exports = {
       {avoidEscape: true, allowTemplateLiterals: true},
     ],
     semi: ["error", "never", {beforeStatementContinuationChars: "never"}],
+    // Begin: React Hooks
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+    // End: React Hooks
   },
 }
