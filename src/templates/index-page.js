@@ -11,7 +11,6 @@ import {
   Paper,
   Typography,
 } from "@material-ui/core"
-// FIXME: Find out if useTheme is outdated and we have to use something like createMuiTheme instead.
 import {makeStyles} from "@material-ui/core/styles"
 import {Card, BlogRoll, Features, Layout, Link} from "../components"
 
