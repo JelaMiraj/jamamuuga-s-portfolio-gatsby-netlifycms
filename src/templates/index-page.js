@@ -11,25 +11,13 @@ import {
   Paper,
   Typography,
 } from "@material-ui/core"
+// FIXME: Find out if useTheme is outdated and we have to use something like createMuiTheme instead.
 import {makeStyles} from "@material-ui/core/styles"
 import {Card, BlogRoll, Features, Layout, Link} from "../components"
 
 // TODO: Maybe use Card instead of or around Paper.
 
-// TODO: Convert everything to use React Hooks (Don't forget the ESLint plugin), Babel-Blade (DRY GraphQL), & functions not classes.
-
-// TODO: Delete commented extra style format versions when satifisfied that the uncommented one works.
-
-// FIXME: complains about object is not a function....
-// const useStyles = makeStyles(theme => ({
-//   root: {
-//     textAlign: "center",
-//     paddingTop: "20",
-//   },
-//   cardMedia: {
-//     height: "200px",
-//   },
-// }))
+// TODO: Convert everything to use React Hooks (Don't forget the ESLint plugin), Babel-Blade (DRY GraphQL).
 
 const useStyles = makeStyles({
   root: {
@@ -40,17 +28,17 @@ const useStyles = makeStyles({
   cardMedia: {
     height: "200px",
   },
+  pageHeadings: {
+    fontWeight: "fontWeightBold",
+    // TODO: Change everything here to match Material UI's way & organization.
+    boxShadow:
+      "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
+    backgroundColor: "rgb(255, 68, 0)",
+    color: "white",
+    lineHeight: "1",
+    padding: "0.25em",
+  },
 })
-
-// const styles = {
-//   root: {
-//     textAlign: "center",
-//     paddingTop: "20",
-//   },
-//   cardMedia: {
-//     height: "200px",
-//   },
-// }
 
 export const IndexPageTemplate = ({
   // classes,
@@ -91,31 +79,14 @@ export const IndexPageTemplate = ({
           }}
         >
           <Typography
-            variant="h1" fontWeight="fontWeightBold"
-            className="is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-            style={{
-              boxShadow:
-                "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-              backgroundColor: "rgb(255, 68, 0)",
-              color: "white",
-              lineHeight: "1",
-              padding: "0.25em",
-            }}
+            variant="h3"
+            className={classes.pageHeadings}
           >
             {title}
           </Typography>
           <Typography
-            variant="h3"
-            fontWeight="fontWeightBold"
-            className="is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-            style={{
-              boxShadow:
-                "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-              backgroundColor: "rgb(255, 68, 0)",
-              color: "white",
-              lineHeight: "1",
-              padding: "0.25em",
-            }}
+            variant="h5"
+            className={classes.pageHeadings}
           >
             {subheading}
           </Typography>
