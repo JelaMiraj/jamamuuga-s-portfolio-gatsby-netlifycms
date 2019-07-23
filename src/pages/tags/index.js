@@ -4,12 +4,20 @@ import {graphql} from "gatsby"
 import {
   Container,
   Grid,
+  Hidden,
   List,
   ListItem,
   ListItemText,
   Typography,
 } from "@material-ui/core"
+import {makeStyles} from "@material-ui/core/styles"
 import {Helmet, Layout, Link} from "../../components"
+
+const useStyles = makeStyles({
+  contentBox: {
+    marginBottom: "6rem",
+  },
+})
 
 const TagsPage = ({
   data: {
@@ -18,38 +26,42 @@ const TagsPage = ({
       siteMetadata: {title},
     },
   },
-}) => (
-  <Layout>
-    <section className="section">
-      <Helmet title={`Tags | ${title}`} />
-      <Container className="container content">
-        <Grid container className="columns">
-          <Grid
-            item
-            xs={10}
-            className="column is-10 is-offset-1"
-            style={{marginBottom: "6rem"}}
-          >
-            <Typography variant="h1" className="title is-size-2 is-bold-light">
-              Tags
+}) => {
+  const classes = useStyles()
+
+  return (
+    <Layout>
+      <section className="section">
+        <Helmet title={`Tags | ${title}`} />
+        <Container className="content">
+          <Grid container>
+            <Grid item md={1} implementation="css" smDown component={Hidden} />
+            <Grid
+              item
+              xs={10}
+              className={classes.contentBox}
+            >
+              <Typography variant="h3" fontWeight="600" className="title">
+                Tags
             </Typography>
-            <List className="taglist">
-              {group.map(tag => (
-                <ListItem key={tag.fieldValue}>
-                  <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-                    <ListItemText>
-                      {tag.fieldValue} ({tag.totalCount})
+              <List className="taglist">
+                {group.map(tag => (
+                  <ListItem key={tag.fieldValue}>
+                    <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+                      <ListItemText>
+                        {tag.fieldValue} ({tag.totalCount})
                     </ListItemText>
-                  </Link>
-                </ListItem>
-              ))}
-            </List>
+                    </Link>
+                  </ListItem>
+                ))}
+              </List>
+            </Grid>
           </Grid>
-        </Grid>
-      </Container>
-    </section>
-  </Layout>
-)
+        </Container>
+      </section>
+    </Layout>
+  )
+}
 
 export default TagsPage
 
