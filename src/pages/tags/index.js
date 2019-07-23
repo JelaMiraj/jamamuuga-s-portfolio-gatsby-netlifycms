@@ -10,7 +10,6 @@ import {
   Typography,
 } from "@material-ui/core"
 import {Helmet, Layout, Link} from "../../components"
-// TODO: Use custom helmet instead of React Helmet directly.
 
 const TagsPage = ({
   data: {
