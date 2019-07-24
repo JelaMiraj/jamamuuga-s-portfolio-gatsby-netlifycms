@@ -28,7 +28,7 @@ import vimeo from "../img/social/vimeo.svg"
 const useStyles = makeStyles({
   contentGridBox: {
     align: "center",
-    backgroundColor:"black",
+    backgroundColor: "black",
     color: "hsl(0, 0%, 96%)",
   },
   divider: {
@@ -36,13 +36,13 @@ const useStyles = makeStyles({
     marginBottom: "3",
   },
   footer: {
-    backgroundColor:"black",
+    backgroundColor: "black",
     color: "hsl(0, 0%, 96%)",
     marginBottom: "3",
     whiteSpace: "nowrap",
   },
   footerNavContainer: {
-    backgroundColor:"black",
+    backgroundColor: "black",
     color: "hsl(0, 0%, 96%)",
   },
   menuButton: {
