@@ -1,8 +1,10 @@
 import React from "react"
 import {graphql} from "gatsby"
 import {
+  Box,
   Container,
   Grid,
+  Hidden,
   List,
   ListItem,
   ListItemText,
@@ -12,7 +14,11 @@ import {makeStyles} from "@material-ui/core/styles"
 import {Helmet, Layout, Link} from "../components"
 
 const useStyles = makeStyles({
-  root: {},
+  gridContent: {
+    marginBottom: "6rem",
+  },
+  sectionBox: {},
+  sectionBoxGradient: {},
 })
 
 const TagRoute = props => {
@@ -38,33 +44,31 @@ const TagRoute = props => {
 
   return (
     <Layout>
-      <section className="section">
+      <Box component="section" className={classes.sectionBox}>
         <Helmet title={`${tag} | ${title}`} />
-        <Container className="container content">
-          <div className="content">
-            <Grid container className="columns">
+        <Container className="content">
+          <Box className="content">
+            <Grid container>
               <Grid
                 item
-                xs={10}
-                className="column is-10 is-offset-1"
-                style={{marginBottom: "6rem"}}
-              >
-                <Typography
-                  variant="h3"
-                  fontWeight="600"
-                  className="title is-size-4 is-bold-light"
-                >
+                md={1}
+                implementation="css"
+                smDown
+                component={Hidden}
+              />
+              <Grid item xs={10} className={classes.gridContent}>
+                <Typography variant="h5" fontWeight="600">
                   {tagHeader}
                 </Typography>
                 <List className="taglist">{postLinks}</List>
-                <Typography component="p">
+                <Typography paragraph>
                   <Link to="/tags/">Browse all tags</Link>
                 </Typography>
               </Grid>
             </Grid>
-          </div>
+          </Box>
         </Container>
-      </section>
+      </Box>
     </Layout>
   )
 }

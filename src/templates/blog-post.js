@@ -4,7 +4,9 @@ import {kebabCase} from "lodash"
 import {graphql} from "gatsby"
 import {
   Container,
+  Box,
   Grid,
+  Hidden,
   List,
   ListItem,
   ListItemText,
@@ -26,19 +28,16 @@ export const BlogPostTemplate = ({
     <section className="section">
       {helmet || ""}
       <Container className="container content">
-        <Grid container className="columns">
-          <Grid item xs={10} className="column is-10 is-offset-1">
-            <Typography
-              variant="h1"
-              fontWeight="600"
-              className="title is-size-2 has-text-weight-bold is-bold-light"
-            >
+        <Grid container>
+          <Grid item md={1} implementation="css" smDown component={Hidden} />
+          <Grid item xs={10}>
+            <Typography variant="h3" fontWeight="600">
               {title}
             </Typography>
             <Typography paragraph>{description}</Typography>
             <PostContent content={content} />
             {tags && tags.length ? (
-              <div style={{marginTop: `4rem`}}>
+              <Box marginTop="4rem">
                 <Typography variant="h4">Tags</Typography>
                 <List className="taglist">
                   {tags.map(tag => (
@@ -49,7 +48,7 @@ export const BlogPostTemplate = ({
                     </ListItem>
                   ))}
                 </List>
-              </div>
+              </Box>
             ) : null}
           </Grid>
         </Grid>

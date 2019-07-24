@@ -2,10 +2,12 @@ import React from "react"
 import {PropTypes} from "prop-types"
 import {graphql} from "gatsby"
 import {
+  Box,
   Container,
   Grid,
   GridList,
   GridListTile,
+  Hidden,
   Paper,
   Typography,
 } from "@material-ui/core"
@@ -21,7 +23,28 @@ import {
 // FIXME: Fix Grid & GridList with images between text grid & testimonial area. That area isn't loading the images & is complaining about duplicate keys named "NA".
 
 const useStyles = makeStyles({
-  root: {},
+  backgroundImageBox: {
+    // TODO: Add full-width-image from old stylesheet.
+    // TODO: Add margin-top-0 from old stylesheet.
+  },
+  fullWidthImageBox: {
+    // TODO: Add full-width-image-container from old stylesheet.
+  },
+  sectionBox: {
+    paddingTop: "2",
+    paddingBottom: "2",
+  },
+  sectionBoxGradient: {
+    // TODO: Add section--gradient from old stylesheet.
+    paddingTop: "2",
+    paddingBottom: "2",
+  },
+  title: {
+    boxShadow: "0.5rem 0 0 #f40, -0.5rem 0 0 #f40",
+    backgroundColor: "#f40",
+    color: "white",
+    padding: "1rem",
+  },
 })
 export const PortfolioPageTemplate = ({
   image,
@@ -37,14 +60,15 @@ export const PortfolioPageTemplate = ({
   const classes = useStyles()
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <Grid container className="columns">
-            <Grid item xs={10} className="is-offset-1">
-              <div className="content">
-                <div
-                  className="full-width-image-container margin-top-0"
+    <Box component="section" className={classes.sectionBoxGradient}>
+      <Container>
+        <Box component="section" className={classes.sectionBox}>
+          <Grid container>
+            <Grid item md={1} implementation="css" smDown component={Hidden} />
+            <Grid item xs={10}>
+              <Box className="content">
+                <Box
+                  className={classes.backgroundImageBox}
                   style={{
                     backgroundImage: `url(${
                       image.childImageSharp
@@ -56,16 +80,11 @@ export const PortfolioPageTemplate = ({
                   <Typography
                     variant="h3"
                     fontWeight="600"
-                    style={{
-                      boxShadow: "0.5rem 0 0 #f40, -0.5rem 0 0 #f40",
-                      backgroundColor: "#f40",
-                      color: "white",
-                      padding: "1rem",
-                    }}
+                    className={classes.title}
                   >
                     {title}
                   </Typography>
-                </div>
+                </Box>
                 <Grid container>
                   <Grid item xs={7}>
                     <Typography variant="h4" fontWeight="600">
@@ -83,7 +102,7 @@ export const PortfolioPageTemplate = ({
                     <Typography paragraph>{main.description}</Typography>
                   </Grid>
                 </Grid>
-                <div className="tile is-ancestor">
+                <Box className="tile is-ancestor">
                   <Grid container className="tile is-vertical">
                     <Grid item>
                       <GridList className="tile">
@@ -109,10 +128,10 @@ export const PortfolioPageTemplate = ({
                       </GridList>
                     </Grid>
                   </Grid>
-                </div>
+                </Box>
                 <Testimonials testimonials={testimonials} />
-                <div
-                  className="full-width-image-container"
+                <Box
+                  className={classes.fullWidthImageBox}
                   style={{
                     backgroundImage: `url(${
                       fullImage.childImageSharp
@@ -128,12 +147,12 @@ export const PortfolioPageTemplate = ({
                   {pricing.description}
                 </Typography>
                 <Pricing data={pricing.plans} />
-              </div>
+              </Box>
             </Grid>
           </Grid>
-        </div>
-      </div>
-    </section>
+        </Box>
+      </Container>
+    </Box>
   )
 }
 

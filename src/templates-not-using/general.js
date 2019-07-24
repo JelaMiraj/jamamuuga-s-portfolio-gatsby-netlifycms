@@ -3,7 +3,7 @@
 // import {graphql, withPrefix} from "gatsby"
 // import {CardContent, CardMedia, Typography} from "@material-ui/core"
 // import {makeStyles} from "@material-ui/core/styles"
-// import {Card, Layout} from "../components"
+// import {Card, Helmet, Layout} from "../components"
 
 // const useStyles = makeStyles({
 //   cardMedia: {
@@ -21,14 +21,14 @@
 
 //   return (
 //     <Layout>
-//       {/* <SEO title={title} /> */}
+//       <Helmet title={title} />
 //       <Card>
 //         <CardMedia
 //           className={classes.cardMedia}
 //           image={withPrefix(publicURL)}
 //         />
 //         <CardContent>
-//           <Typography gutterBottom variant="h2" component="h2">
+//           <Typography gutterBottom variant="h2">
 //             {title}
 //           </Typography>
 //           <Typography dangerouslySetInnerHTML={{__html: html}} />
