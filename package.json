@@ -179,7 +179,7 @@
     "joi": "^14.3.1",
     "micromatch": "^4.0.2",
     "netlify-cms-lib-util": "^2.3.2",
-    "netlify-dev-plugin": "^1.0.24",
+    "netlify-dev-plugin": "^1.0.25",
     "promise": "^8.0.3",
     "slash": "^3.0.0",
     "webpack": "^4.37.0"
