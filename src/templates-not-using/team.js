@@ -5,7 +5,7 @@
 // import {PreviewCompatibleImage as Image, Layout} from "../components"
 // // TODO: Maybe use Card instead of or around Paper.
 
-// const useStyles = makeStyle({
+// const useStyles = makeStyles({
 //   paper: {
 //     padding: "25px",
 //   },
@@ -15,7 +15,7 @@
 // })
 
 // const Team = ({data}) => {
-//   const classes = useStyle()
+//   const classes = useStyles()
 //   const {
 //     title,
 //     image: {publicURL},
