@@ -3,10 +3,10 @@ import {PropTypes} from "prop-types"
 import {graphql} from "gatsby"
 import {
   Box,
+  Button,
   CardContent,
   CardMedia,
   Container,
-  Button,
   Grid,
   Paper,
   Typography,
