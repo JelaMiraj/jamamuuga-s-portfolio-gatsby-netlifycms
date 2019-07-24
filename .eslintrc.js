@@ -33,7 +33,7 @@ module.exports = {
     semi: ["error", "never", {beforeStatementContinuationChars: "never"}],
     // Begin: React Hooks
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
+    "react-hooks/exhaustive-deps": "warn",
     // End: React Hooks
   },
 }
