@@ -1,7 +1,7 @@
 // import React from 'react'
 // import {Box, Container, Typography} from "@material-ui/core"
 // import {Link, LinkExternal} from "../components"
-// import ProTip from "../components/ProTip"
+// import {ProTip} from "../components"
 
 // function MadeWithLove() {
 //   return (
