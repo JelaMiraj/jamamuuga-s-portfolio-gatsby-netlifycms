@@ -22,11 +22,7 @@ export const AboutPageTemplate = ({title, content, contentComponent}) => {
           <Grid item md={1} implementation="css" smDown component={Hidden} />
           <Grid item xs={10}>
             <section className="section">
-              <Typography
-                variant="h4"
-                fontWeight="600"
-                className="title"
-              >
+              <Typography variant="h4" fontWeight="600" className="title">
                 {title}
               </Typography>
               <PageContent content={content} />
