@@ -2,10 +2,10 @@
 // import {graphql, withPrefix} from "gatsby"
 // import {Grid, Paper, Typography} from "@material-ui/core"
 // import {makeStyles} from "@material-ui/core/styles"
-// import {PreviewCompatibleImage as Image, Layout} from "../components"
+// import {Helmet, PreviewCompatibleImage as Image, Layout} from "../components"
 // // TODO: Maybe use Card instead of or around Paper.
 
-// const useStyles = makeStyle({
+// const useStyles = makeStyles({
 //   paper: {
 //     padding: "25px",
 //   },
@@ -15,7 +15,7 @@
 // })
 
 // const Team = ({data}) => {
-//   const classes = useStyle()
+//   const classes = useStyles()
 //   const {
 //     title,
 //     image: {publicURL},
@@ -25,7 +25,7 @@
 
 //   return (
 //     <Layout>
-//       {/* <SEO title={title} /> */}
+//       <Helmet title={title} />
 //       <Paper className={classes.paper}>
 //         <Grid
 //           spacing={3}
@@ -39,10 +39,10 @@
 //             <img className={classes.image} src={withPrefix(publicURL)} alt="" />
 //           </Grid>
 //           <Grid item xs={12} md={8}>
-//             <Typography gutterBottom variant="h2" component="h2">
+//             <Typography gutterBottom variant="h2">
 //               {title}
 //             </Typography>
-//             <Typography gutterBottom variant="h5" component="h5">
+//             <Typography gutterBottom variant="h5">
 //               {jobtitle}
 //             </Typography>
 //             <Typography dangerouslySetInnerHTML={{__html: html}} />

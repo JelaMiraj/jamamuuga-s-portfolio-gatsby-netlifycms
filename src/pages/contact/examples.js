@@ -17,7 +17,7 @@ const Index = props => {
         <Container className="container">
           <div className="content">
             <Typography variant="h1">Hi people</Typography>
-            <Typography component="p">
+            <Typography paragraph>
               This is an example site integrating Netlify’s form handling with
               Gatsby
             </Typography>
@@ -38,7 +38,7 @@ const Index = props => {
             <Typography variant="h3">
               Forms stop working after upgrading to Gatsby v2
             </Typography>
-            <Typography component="p">
+            <Typography paragraph>
               This can be caused by the offline-plugin.{" "}
               <LinkExternal
                 title="Workaround"
@@ -48,7 +48,7 @@ const Index = props => {
               service worker from handling form submissions
             </Typography>
             <Typography variant="h3">Adding reCAPTCHA</Typography>
-            <Typography component="p">
+            <Typography paragraph>
               If you are planning to add reCAPTCHA please go to{" "}
               <LinkExternal
                 title="imorente/gatsby-netlify-form-example"

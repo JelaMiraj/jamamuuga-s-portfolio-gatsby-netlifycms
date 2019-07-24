@@ -6,6 +6,7 @@ import {
   Container,
   Button,
   Grid,
+  Hidden,
   Paper,
   Typography,
 } from "@material-ui/core"
@@ -16,18 +17,15 @@ export const AboutPageTemplate = ({title, content, contentComponent}) => {
 
   return (
     <section className="section section--gradient">
-      <Container className="container">
-        <Grid className="columns">
-          <Grid item xs={10} className="column is-10 is-offset-1">
+      <Container>
+        <Grid container>
+          <Grid item md={1} implementation="css" smDown component={Hidden} />
+          <Grid item xs={10}>
             <section className="section">
-              <Typography
-                variant="h4"
-                fontWeight="600"
-                className="title is-size-3 has-text-weight-bold is-bold-light"
-              >
+              <Typography variant="h4" fontWeight="600" className="title">
                 {title}
               </Typography>
-              <PageContent className="content" content={content} />
+              <PageContent content={content} />
             </section>
           </Grid>
         </Grid>
