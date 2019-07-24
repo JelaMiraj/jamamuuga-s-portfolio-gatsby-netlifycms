@@ -8,6 +8,7 @@ import {
   CardMedia,
   Container,
   Grid,
+  Hidden,
   Paper,
   Typography,
 } from "@material-ui/core"
@@ -24,8 +25,22 @@ const useStyles = makeStyles({
     // Spacing can be either called on a imported theme object, or imported from @material-ui/system.
     paddingTop: "20",
   },
+  backgroundImageBox: {
+    // TODO: Add full-width-image from old stylesheet.
+    // TODO: Add margin-top-0 from old stylesheet.
+    backgroundPosition: `top left`,
+    backgroundAttachment: `fixed`,
+  },
   cardMedia: {
     height: "200px",
+  },
+  contentBox: {
+    display: "flex",
+    height: "150px",
+    lineHeight: "1",
+    justifyContent: "space-around",
+    alignItems: "left",
+    flexDirection: "column",
   },
   pageHeadings: {
     fontWeight: "fontWeightBold",
@@ -36,6 +51,15 @@ const useStyles = makeStyles({
     color: "white",
     lineHeight: "1",
     padding: "0.25em",
+  },
+  sectionBox: {
+    paddingTop: "2",
+    paddingBottom: "2",
+  },
+  sectionBoxGradient: {
+    // TODO: Add section--gradient from old stylesheet.
+    paddingTop: "2",
+    paddingBottom: "2",
   },
 })
 
@@ -56,73 +80,58 @@ export const IndexPageTemplate = ({
 
   // eslint-disable-next-line
   return (
-    <div>
-      <div
-        className="full-width-image margin-top-0"
+    <Box>
+      <Box
+        className={classes.backgroundImageBox}
         style={{
           backgroundImage: `url(${
             image.childImageSharp ? image.childImageSharp.fluid.src : image
           })`,
-          backgroundPosition: `top left`,
-          backgroundAttachment: `fixed`,
         }}
       >
-        <div
-          style={{
-            display: "flex",
-            height: "150px",
-            lineHeight: "1",
-            justifyContent: "space-around",
-            alignItems: "left",
-            flexDirection: "column",
-          }}
-        >
-          <Typography
-            variant="h3"
-            className={classes.pageHeadings}
-          >
+        <Box className={classes.contentBox}>
+          <Typography variant="h3" className={classes.pageHeadings}>
             {title}
           </Typography>
-          <Typography
-            variant="h5"
-            className={classes.pageHeadings}
-          >
+          <Typography variant="h5" className={classes.pageHeadings}>
             {subheading}
           </Typography>
-        </div>
-      </div>
-      <section className="section section--gradient">
+        </Box>
+      </Box>
+      <Box component="section" className={classes.sectionBoxGradient}>
         <Container>
-          <section className="section">
+          <Box component="section" className={classes.sectionBox}>
             <Grid container>
-              <Grid item xs={10} className="is-offset-1">
+              <Grid
+                item
+                md={1}
+                implementation="css"
+                smDown
+                component={Hidden}
+              />
+              <Grid item xs={10}>
                 <Box className="content">
                   <Box className="content">
                     <Paper className="tile">
-                      <Typography variant="h1" className="title">
-                        {mainpitch.title}
-                      </Typography>
+                      <Typography variant="h2">{mainpitch.title}</Typography>
                     </Paper>
                     <Paper className="tile">
-                      <Typography variant="h3" className="subtitle">
+                      <Typography variant="h3">
                         {mainpitch.description}
                       </Typography>
                     </Paper>
                   </Box>
                   <Grid container>
                     <Grid item xs={12}>
-                      <Typography
-                        variant="h3"
-                        fontWeight="600"
-                      >
+                      <Typography variant="h3" fontWeight="600">
                         {heading}
                       </Typography>
                       <Typography paragraph>{description}</Typography>
                     </Grid>
                   </Grid>
                   <Features gridItems={intro.blurbs} />
-                  <Grid container className="columns">
-                    <Grid item xs={12} align="center" className="column">
+                  <Grid container>
+                    <Grid item xs={12} align="center">
                       <Button variant="contained" color="secondary">
                         <Link className="btn" to="/portfolio">
                           See all portfolio
@@ -130,7 +139,7 @@ export const IndexPageTemplate = ({
                       </Button>
                     </Grid>
                   </Grid>
-                  {/* <Grid item xs={12} className="column">
+                  {/* <Grid item xs={12}>
                     <Typography
                       variant="h3"
                       fontWeight="600"
@@ -149,10 +158,10 @@ export const IndexPageTemplate = ({
                 </Box>
               </Grid>
             </Grid>
-          </section>
+          </Box>
         </Container>
-      </section>
-    </div>
+      </Box>
+    </Box>
   )
 }
 
