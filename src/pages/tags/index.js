@@ -36,21 +36,17 @@ const TagsPage = ({
         <Container className="content">
           <Grid container>
             <Grid item md={1} implementation="css" smDown component={Hidden} />
-            <Grid
-              item
-              xs={10}
-              className={classes.contentBox}
-            >
+            <Grid item xs={10} className={classes.contentBox}>
               <Typography variant="h3" fontWeight="600" className="title">
                 Tags
-            </Typography>
+              </Typography>
               <List className="taglist">
                 {group.map(tag => (
                   <ListItem key={tag.fieldValue}>
                     <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
                       <ListItemText>
                         {tag.fieldValue} ({tag.totalCount})
-                    </ListItemText>
+                      </ListItemText>
                     </Link>
                   </ListItem>
                 ))}
