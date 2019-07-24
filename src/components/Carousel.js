@@ -91,7 +91,7 @@
 //                       image={withPrefix(publicURL)}
 //                     />
 //                     <CardContent>
-//                       <Typography gutterBottom variant="h5" component="h2">
+//                       <Typography gutterBottom variant="h5">
 //                         <Link to={path}>{title}</Link>
 //                       </Typography>
 //                       <Typography paragraph{excerpt}</Typography>
