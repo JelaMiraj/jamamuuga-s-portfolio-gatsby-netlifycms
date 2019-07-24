@@ -1,6 +1,7 @@
 // import React from "react"
 // import {withPrefix} from "gatsby"
 // import {
+//   Box,
 //   CardContent,
 //   CardMedia,
 //   Button,
@@ -62,7 +63,7 @@
 
 //   return (
 //     <Paper elevation={0}>
-//       <div>
+//       <Box>
 //         <Typography>{items[activeStep].title}</Typography>
 //         <AutoPlaySwipeableViews
 //           axis="x"
@@ -125,7 +126,7 @@
 //             </Button>
 //           }
 //         />
-//       </div>
+//       </Box>
 //     </Paper>
 //   )
 // }
