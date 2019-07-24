@@ -2,7 +2,7 @@
 // import {graphql, withPrefix} from "gatsby"
 // import {Grid, Paper, Typography} from "@material-ui/core"
 // import {makeStyles} from "@material-ui/core/styles"
-// import {PreviewCompatibleImage as Image, Layout} from "../components"
+// import {Helmet, PreviewCompatibleImage as Image, Layout} from "../components"
 // // TODO: Maybe use Card instead of or around Paper.
 
 // const useStyles = makeStyles({
@@ -25,7 +25,7 @@
 
 //   return (
 //     <Layout>
-//       {/* <SEO title={title} /> */}
+//       <Helmet title={title} />
 //       <Paper className={classes.paper}>
 //         <Grid
 //           spacing={3}
