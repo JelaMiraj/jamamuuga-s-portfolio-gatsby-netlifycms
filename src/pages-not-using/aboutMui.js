@@ -1,15 +1,15 @@
 // import React from "react"
-// import {Box, Container, Link as MuiLink, Typography} from "@material-ui/core"
-// import {Link} from "../components"
+// import {Box, Container, Typography} from "@material-ui/core"
+// import {Link, LinkExternal} from "../components"
 // import ProTip from "../components/ProTip"
 
 // function MadeWithLove() {
 //   return (
 //     <Typography variant="body2" color="textSecondary" align="center">
 //       {"Built with love by the "}
-//       <MuiLink color="inherit" href="https://material-ui.com/">
+//       <LinkExternal color="inherit" href="https://material-ui.com/">
 //         Material-UI
-//       </MuiLink>
+//       </LinkExternal>
 //       {" team."}
 //     </Typography>
 //   )
