@@ -57,7 +57,7 @@ const TagRoute = props => {
                   {tagHeader}
                 </Typography>
                 <List className="taglist">{postLinks}</List>
-                <Typography component="p">
+                <Typography paragraph>
                   <Link to="/tags/">Browse all tags</Link>
                 </Typography>
               </Grid>
