@@ -39,10 +39,10 @@
 //             <img className={classes.image} src={withPrefix(publicURL)} alt="" />
 //           </Grid>
 //           <Grid item xs={12} md={8}>
-//             <Typography gutterBottom variant="h2" component="h2">
+//             <Typography gutterBottom variant="h2">
 //               {title}
 //             </Typography>
-//             <Typography gutterBottom variant="h5" component="h5">
+//             <Typography gutterBottom variant="h5">
 //               {jobtitle}
 //             </Typography>
 //             <Typography dangerouslySetInnerHTML={{__html: html}} />
