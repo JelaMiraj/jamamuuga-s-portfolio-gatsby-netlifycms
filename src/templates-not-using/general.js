@@ -28,7 +28,7 @@
 //           image={withPrefix(publicURL)}
 //         />
 //         <CardContent>
-//           <Typography gutterBottom variant="h2" component="h2">
+//           <Typography gutterBottom variant="h2">
 //             {title}
 //           </Typography>
 //           <Typography dangerouslySetInnerHTML={{__html: html}} />
