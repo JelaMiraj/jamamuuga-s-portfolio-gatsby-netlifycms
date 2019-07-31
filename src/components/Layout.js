@@ -1,7 +1,7 @@
 import React from "react"
 import {PropTypes} from "prop-types"
 import {ScrollingProvider} from "react-scroll-section"
-import {Grid, Typography} from "@material-ui/core"
+import {Container, Grid, Typography} from "@material-ui/core"
 import {makeStyles} from "@material-ui/core/styles"
 // import GlobalStyle from "../styles/global-style"
 import {Footer, Header} from "."
@@ -29,7 +29,7 @@ const Layout = props => {
   return (
     <>
       <ScrollingProvider>
-        <div>
+        <Container>
           {/* <Helmet /> */}
           {/* <GlobalStyle /> */}
           <Header />
@@ -49,7 +49,7 @@ const Layout = props => {
               <Footer />
             </Grid>
           </Grid>
-        </div>
+        </Container>
       </ScrollingProvider>
     </>
   )
