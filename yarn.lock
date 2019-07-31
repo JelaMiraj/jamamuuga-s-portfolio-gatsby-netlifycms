@@ -1517,7 +1517,7 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@netlify/cli-utils@^1.0.6", "@netlify/cli-utils@^1.0.7":
+"@netlify/cli-utils@^1.0.7":
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/@netlify/cli-utils/-/cli-utils-1.0.7.tgz#67b82743ac25e26904a8a552e1bfc3d6bdc34ad0"
   integrity sha512-Tt7vVjutcuW9a4QxQ9CmJ38uaGqffk1zd6wJg6TMcy6/x/3bW4J1BdEiz7ZZ5OGidvtx5QaLv51ExNHtEFsZ8g==
@@ -12989,12 +12989,12 @@ netlify-cli-logo@^1.0.0:
   dependencies:
     chalk "^2.4.2"
 
-netlify-cli@^2.11.29:
-  version "2.11.29"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.11.29.tgz#4617cb7cb5487ed2925d8ea102f0c97bd0d55076"
-  integrity sha512-osk4GMQ30KccVXwEANK7StcwcaCWMZrZOjEMkjPmVB0iq3EwntcLsvDZHPI3+bGImGCzCPWOhwYUFyKP1R5uxw==
+netlify-cli@^2.12.0:
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.12.0.tgz#6c3ed761fb63f5dd9ebae92a633fedfb0b448977"
+  integrity sha512-RhnThfhFQ62zAV2rk0B6GzhEEqAYSNWSWZ95rCJQ5Sgj9McfQoW/+/ZF8CbeeqA8IaL6aEY57B498tNVCf4sow==
   dependencies:
-    "@netlify/cli-utils" "^1.0.6"
+    "@netlify/cli-utils" "^1.0.7"
     "@oclif/command" "^1.5.14"
     "@oclif/errors" "^1.1.2"
     "@oclif/plugin-help" "^2.2.0"
@@ -13020,8 +13020,8 @@ netlify-cli@^2.11.29:
     lodash.isequal "^4.5.0"
     lodash.sample "^4.2.1"
     log-symbols "^2.2.0"
-    netlify "^2.4.6"
-    netlify-dev-plugin "^1.0.23"
+    netlify "^2.4.7"
+    netlify-dev-plugin "^1.0.28"
     node-fetch "^2.6.0"
     open "^6.4.0"
     ora "^3.4.0"
@@ -13309,10 +13309,10 @@ netlify-cms-widget-text@^2.2.2:
   dependencies:
     react-textarea-autosize "^7.1.0"
 
-netlify-dev-plugin@^1.0.23, netlify-dev-plugin@^1.0.25:
-  version "1.0.25"
-  resolved "https://registry.yarnpkg.com/netlify-dev-plugin/-/netlify-dev-plugin-1.0.25.tgz#4ea156d9a77bd802acdfb10d883b3ae3dcea2500"
-  integrity sha512-yTjgg2kwAMJynAe+VNRtzgFJQE6s9QH533cp1yMHMNGBLCKm3tmwViM1Qt+t+GnmEfoTNphkFSeFdfB+3P+tbw==
+netlify-dev-plugin@^1.0.25, netlify-dev-plugin@^1.0.28:
+  version "1.0.28"
+  resolved "https://registry.yarnpkg.com/netlify-dev-plugin/-/netlify-dev-plugin-1.0.28.tgz#9efea19d13071d942b5e956698f1b3e157b3cdb3"
+  integrity sha512-Tu56grcuKhGJTktryPCXaJktXjsEtcfISPuv9LLDtktRPKsErcMdG28c2L7d3Et6UEewjgwNlPIaJePm4QoUUQ==
   dependencies:
     "@netlify/cli-utils" "^1.0.7"
     "@netlify/rules-proxy" "^0.1.3"
@@ -13419,10 +13419,10 @@ netlify@2.4.1:
     through2-map "^3.0.0"
     util.promisify "^1.0.0"
 
-netlify@^2.2.1, netlify@^2.4.6:
-  version "2.4.6"
-  resolved "https://registry.yarnpkg.com/netlify/-/netlify-2.4.6.tgz#8f974d184e77d30d59fc89e02b7a03711cfc9df3"
-  integrity sha512-p/Uad5WxS6q+QeJwxGT8P2GPL8x7oUYJSaimsmRYHTuP+qMyvS0ff5jufd41WT9P+lyT9CaFjcH5UgPOcW/6CA==
+netlify@^2.2.1, netlify@^2.4.7:
+  version "2.4.8"
+  resolved "https://registry.yarnpkg.com/netlify/-/netlify-2.4.8.tgz#4095c55e1753fff95ea6119d89d9f57072dfaf83"
+  integrity sha512-htYbhZ0+pd6nazyoc874N9i3MiVyxe2Pm2ooZShkaRmf/e9NmgS5cOs+a4hvHGbye7tCnF78RV1i4JYAs0t3mw==
   dependencies:
     "@netlify/open-api" "^0.9.0"
     "@netlify/zip-it-and-ship-it" "^0.3.1"
