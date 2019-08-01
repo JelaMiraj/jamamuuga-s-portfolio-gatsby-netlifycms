@@ -14,7 +14,7 @@ import LinkExternal from "./LinkExternal"
 // import List from "./List"
 import Menu from "./Menu"
 import MenuMobile from "./MenuMobile"
-import Navbar from "./Navbar"
+// import Navbar from "./Navbar"
 // import Page from "./Page"
 import Pagination from "./Pagination"
 import PostItem from "./PostItem"
@@ -41,7 +41,7 @@ export {
   // List,
   Menu,
   MenuMobile,
-  Navbar,
+  // Navbar,
   Layout as Page,
   Pagination,
   PostItem,
