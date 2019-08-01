@@ -29,7 +29,8 @@ const useStyles = makeStyles(theme => ({
   contentGridBox: {
     align: "center",
     // backgroundColor: "black",
-    backgroundColor: theme.palette.tertiary.darker,
+    // backgroundColor: theme.palette.tertiary.darker,
+    backgroundColor: theme.palette.secondary.darker,
     color: "hsl(0, 0%, 96%)",
   },
   divider: {
@@ -38,14 +39,16 @@ const useStyles = makeStyles(theme => ({
   },
   footer: {
     // backgroundColor: "black",
-    backgroundColor: theme.palette.tertiary.darker,
+    // backgroundColor: theme.palette.tertiary.darker,
+    backgroundColor: theme.palette.secondary.darker,
     color: "hsl(0, 0%, 96%)",
     marginBottom: "3",
     whiteSpace: "nowrap",
   },
   footerNavContainer: {
     // backgroundColor: "black",
-    backgroundColor: theme.palette.tertiary.darker,
+    // backgroundColor: theme.palette.tertiary.darker,
+    backgroundColor: theme.palette.secondary.darker,
     color: "hsl(0, 0%, 96%)",
   },
   menuButton: {
