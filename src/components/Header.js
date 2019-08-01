@@ -12,7 +12,6 @@ import {
 import {makeStyles} from "@material-ui/core/styles"
 import {PaletteOutline} from "mdi-material-ui"
 import {Link, Menu, MenuMobile} from "."
-// TODO: Put custom styles separately up top.
 
 const useStyles = makeStyles(theme => ({
   appBar: {
