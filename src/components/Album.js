@@ -16,6 +16,7 @@ import {
   // Link,
 } from "@material-ui/core"
 import {Card, Link, LinkExternal} from "."
+// Use as example to improve portfolio page.
 
 function MadeWithLove() {
   return (
