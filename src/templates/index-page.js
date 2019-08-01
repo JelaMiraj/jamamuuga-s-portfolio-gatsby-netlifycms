@@ -19,7 +19,7 @@ import {Card, BlogRoll, Features, Layout, Link} from "../components"
 
 // TODO: Convert everything to use React Hooks (Don't forget the ESLint plugin), Babel-Blade (DRY GraphQL).
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   root: {
     textAlign: "center",
     // Spacing can be either called on a imported theme object, or imported from @material-ui/system.
@@ -45,9 +45,12 @@ const useStyles = makeStyles({
   pageHeadings: {
     fontWeight: "fontWeightBold",
     // TODO: Change everything here to match Material UI's way & organization.
+    // boxShadow:
+    //   "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
     boxShadow:
-      "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-    backgroundColor: "rgb(255, 68, 0)",
+      `${theme.palette.primary.lighter} 0.5rem 0px 0px, ${theme.palette.primary.lighter} -0.5rem 0px 0px`,
+    // backgroundColor: "rgb(255, 68, 0)",
+    backgroundColor: theme.palette.primary.lighter,
     color: "white",
     lineHeight: "1",
     padding: "0.25em",
@@ -61,7 +64,7 @@ const useStyles = makeStyles({
     paddingTop: "2",
     paddingBottom: "2",
   },
-})
+}))
 
 export const IndexPageTemplate = ({
   // classes,
