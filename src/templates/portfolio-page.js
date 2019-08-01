@@ -22,7 +22,7 @@ import {
 // TODO: Maybe use Cards, Lists, and/or Grids instead of GridList
 // FIXME: Fix Grid & GridList with images between text grid & testimonial area. That area isn't loading the images & is complaining about duplicate keys named "NA".
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   backgroundImageBox: {
     // TODO: Add full-width-image from old stylesheet.
     // TODO: Add margin-top-0 from old stylesheet.
@@ -40,12 +40,14 @@ const useStyles = makeStyles({
     paddingBottom: "2",
   },
   title: {
-    boxShadow: "0.5rem 0 0 #f40, -0.5rem 0 0 #f40",
-    backgroundColor: "#f40",
+    // boxShadow: "0.5rem 0 0 #f40, -0.5rem 0 0 #f40",
+    boxShadow: `0.5rem 0 0 ${theme.palette.primary}, -0.5rem 0 0 ${theme.palette.primary}`,
+    // backgroundColor: "#f40",
+    backgroundColor: theme.palette.primary,
     color: "white",
     padding: "1rem",
   },
-})
+}))
 export const PortfolioPageTemplate = ({
   image,
   title,
