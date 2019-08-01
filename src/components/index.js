@@ -11,7 +11,7 @@ import HomeFeatures from "./HomeFeatures"
 import Layout from "./Layout"
 import Link from "./Link"
 import LinkExternal from "./LinkExternal"
-import List from "./List"
+// import List from "./List"
 import Menu from "./Menu"
 import MenuMobile from "./MenuMobile"
 import Navbar from "./Navbar"
@@ -38,7 +38,7 @@ export {
   Layout,
   Link,
   LinkExternal,
-  List,
+  // List,
   Menu,
   MenuMobile,
   Navbar,
