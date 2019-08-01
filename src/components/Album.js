@@ -66,7 +66,7 @@ export default function Album() {
   const classes = useStyles()
 
   return (
-    <React.Fragment>
+    <>
       <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
@@ -165,6 +165,6 @@ export default function Album() {
         <MadeWithLove />
       </footer>
       {/* End footer */}
-    </React.Fragment>
+    </>
   )
 }
