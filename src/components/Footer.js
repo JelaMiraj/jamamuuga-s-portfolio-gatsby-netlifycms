@@ -45,6 +45,9 @@ const useStyles = makeStyles(theme => ({
     marginBottom: "3",
     whiteSpace: "nowrap",
   },
+  footerButton: {
+    color: theme.palette.secondary.contrastText,
+  },
   footerNavContainer: {
     // backgroundColor: "black",
     // backgroundColor: theme.palette.tertiary.darker,
@@ -134,33 +137,41 @@ const Footer = props => {
               </Grid>
               <Grid item xs={4} className="social">
                 <LinkExternal title="facebook" href="https://facebook.com">
-                  <img
-                    src={facebook}
-                    alt="Facebook"
-                    style={{width: "1em", height: "1em"}}
-                  />
+                  <IconButton className={classes.footerButton}>
+                    <img
+                      src={facebook}
+                      alt="Facebook"
+                      style={{width: "1em", height: "1em"}}
+                    />
+                  </IconButton>
                 </LinkExternal>
                 <LinkExternal title="twitter" href="https://twitter.com">
-                  <img
-                    className="fas fa-lg"
-                    src={twitter}
-                    alt="Twitter"
-                    style={{width: "1em", height: "1em"}}
-                  />
+                  <IconButton className={classes.footerButton}>
+                    <img
+                      className="fas fa-lg"
+                      src={twitter}
+                      alt="Twitter"
+                      style={{width: "1em", height: "1em"}}
+                    />
+                  </IconButton>
                 </LinkExternal>
                 <LinkExternal title="instagram" href="https://instagram.com">
-                  <img
-                    src={instagram}
-                    alt="Instagram"
-                    style={{width: "1em", height: "1em"}}
-                  />
+                  <IconButton className={classes.footerButton}>
+                    <img
+                      src={instagram}
+                      alt="Instagram"
+                      style={{width: "1em", height: "1em"}}
+                    />
+                  </IconButton>
                 </LinkExternal>
                 <LinkExternal title="vimeo" href="https://vimeo.com">
-                  <img
-                    src={vimeo}
-                    alt="Vimeo"
-                    style={{width: "1em", height: "1em"}}
-                  />
+                  <IconButton className={classes.footerButton}>
+                    <img
+                      src={vimeo}
+                      alt="Vimeo"
+                      style={{width: "1em", height: "1em"}}
+                    />
+                  </IconButton>
                 </LinkExternal>
               </Grid>
             </Grid>
