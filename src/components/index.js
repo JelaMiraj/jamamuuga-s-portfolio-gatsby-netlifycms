@@ -7,7 +7,7 @@ import Features from "./Features"
 import Footer from "./Footer"
 import Header from "./Header"
 import Helmet from "./Helmet"
-import HomeFeatures from "./HomeFeatures"
+// import HomeFeatures from "./HomeFeatures"
 import Layout from "./Layout"
 import Link from "./Link"
 import LinkExternal from "./LinkExternal"
@@ -33,7 +33,7 @@ export {
   Footer,
   Header,
   Helmet,
-  HomeFeatures,
+  // HomeFeatures,
   HTMLContent,
   Layout,
   Link,
