@@ -3,7 +3,7 @@ import {PhotoCamera as CameraIcon} from "@material-ui/icons"
 import {
   AppBar,
   Button,
-  Card,
+  // Card,
   CardActions,
   CardContent,
   CardMedia,
@@ -13,16 +13,17 @@ import {
   Typography,
   makeStyles,
   Container,
-  Link,
+  // Link,
 } from "@material-ui/core"
+import {Card, Link, LinkExternal} from "."
 
 function MadeWithLove() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {"Built with love by the "}
-      <Link color="inherit" href="https://material-ui.com/">
+      <LinkExternal color="inherit" href="https://material-ui.com/">
         Material-UI
-      </Link>
+      </LinkExternal>
       {" team."}
     </Typography>
   )
