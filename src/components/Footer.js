@@ -25,7 +25,7 @@ import instagram from "../img/social/instagram.svg"
 import twitter from "../img/social/twitter.svg"
 import vimeo from "../img/social/vimeo.svg"
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme=>({
   contentGridBox: {
     align: "center",
     backgroundColor: "black",
@@ -46,9 +46,9 @@ const useStyles = makeStyles({
     color: "hsl(0, 0%, 96%)",
   },
   menuButton: {
-    color: "primary.contrastText",
+    color: theme.palette.primary.contrastText,
   },
-})
+}))
 
 const Footer = props => {
   const {
