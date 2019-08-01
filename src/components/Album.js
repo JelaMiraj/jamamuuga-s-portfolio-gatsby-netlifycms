@@ -1,5 +1,5 @@
 import React from "react"
-import CameraIcon from "@material-ui/icons/PhotoCamera"
+import {PhotoCamera as CameraIcon} from "@material-ui/icons"
 
 import {
   AppBar,
