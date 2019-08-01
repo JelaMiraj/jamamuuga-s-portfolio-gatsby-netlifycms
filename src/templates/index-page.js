@@ -11,8 +11,8 @@ import {
   Hidden,
   Paper,
   Typography,
+  makeStyles,
 } from "@material-ui/core"
-import {makeStyles} from "@material-ui/core/styles"
 import {Card, BlogRoll, Features, Layout, Link} from "../components"
 
 // TODO: Maybe use Card instead of or around Paper.

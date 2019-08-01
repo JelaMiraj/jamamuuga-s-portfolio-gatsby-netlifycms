@@ -8,8 +8,8 @@ import {
   Hidden,
   Toolbar,
   Typography,
+  makeStyles,
 } from "@material-ui/core"
-import {makeStyles} from "@material-ui/core/styles"
 import {PaletteOutline} from "mdi-material-ui"
 import {Link, Menu, MenuMobile} from "."
 

@@ -1,8 +1,7 @@
 import React from "react"
 import {StaticQuery, graphql} from "gatsby"
-import {Button, IconButton} from "@material-ui/core"
+import {Button, IconButton, makeStyles} from "@material-ui/core"
 import {GithubCircle} from "mdi-material-ui"
-import {makeStyles} from "@material-ui/core/styles"
 import {Link, LinkExternal} from "."
 // import logo from "../img/logo.svg"
 

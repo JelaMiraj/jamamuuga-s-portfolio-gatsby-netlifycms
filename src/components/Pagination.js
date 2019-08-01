@@ -1,6 +1,5 @@
 import React from "react"
-import {List, ListItem, ListItemText} from "@material-ui/core"
-import {makeStyles} from "@material-ui/core/styles"
+import {List, ListItem, ListItemText, makeStyles} from "@material-ui/core"
 import {Link} from "."
 // Pagination for posts.
 

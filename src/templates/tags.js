@@ -9,8 +9,8 @@ import {
   ListItem,
   ListItemText,
   Typography,
+  makeStyles,
 } from "@material-ui/core"
-import {makeStyles} from "@material-ui/core/styles"
 import {Helmet, Layout, Link} from "../components"
 
 const useStyles = makeStyles({

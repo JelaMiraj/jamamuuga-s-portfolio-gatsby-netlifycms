@@ -1,5 +1,4 @@
-// import {makesStyles} from "@material-ui/core/styles"
-import {styled} from "@material-ui/core/styles"
+import {styled} from "@material-ui/core"
 
 const ContentStyle = styled("div")({
   // const ContentStyle = makesStyles({

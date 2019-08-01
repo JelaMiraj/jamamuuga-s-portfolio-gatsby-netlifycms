@@ -1,5 +1,4 @@
-// import {makeStyles} from "@material-ui/core/styles"
-import {styled} from "@material-ui/core/styles"
+import {styled} from "@material-ui/core"
 
 const NavbarStyle = styled("div")({
   // const NavbarStyle = makeStyles({

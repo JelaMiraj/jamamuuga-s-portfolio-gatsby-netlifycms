@@ -1,5 +1,4 @@
-import {Grid} from "@material-ui/core"
-import {makeStyles} from "@material-ui/core/styles"
+import {Grid, makeStyles} from "@material-ui/core"
 // Originally from: https://github.com/danielmahon/gatsby-starter-procyon/blob/netlifycms/src/components/Section.js
 
 const useStyles = makeStyles({

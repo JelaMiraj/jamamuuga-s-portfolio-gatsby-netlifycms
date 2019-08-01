@@ -1,6 +1,5 @@
 import React from "react"
-import {Container, Typography} from "@material-ui/core"
-import {makeStyles} from "@material-ui/core/styles"
+import {Container, Typography, makeStyles} from "@material-ui/core"
 import {BlogRoll, Content, Layout} from "../../components"
 
 const useStyles = makeStyles(theme => ({
