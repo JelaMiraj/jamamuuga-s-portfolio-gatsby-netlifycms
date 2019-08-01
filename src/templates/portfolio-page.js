@@ -41,7 +41,9 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     // boxShadow: "0.5rem 0 0 #f40, -0.5rem 0 0 #f40",
-    boxShadow: `0.5rem 0 0 ${theme.palette.primary[500]}, -0.5rem 0 0 ${theme.palette.primary[500]}`,
+    boxShadow: `0.5rem 0 0 ${theme.palette.primary[500]}, -0.5rem 0 0 ${
+      theme.palette.primary[500]
+    }`,
     // backgroundColor: "#f40",
     backgroundColor: theme.palette.primary[500],
     color: "white",
