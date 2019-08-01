@@ -13,6 +13,7 @@ import {
   ListItem,
   ListItemIcon,
   ListItemText,
+  Toolbar,
   Typography,
 } from "@material-ui/core"
 import {makeStyles} from "@material-ui/core/styles"
@@ -86,27 +87,27 @@ const Footer = props => {
               <Grid item xs={4}>
                 <Box component="section" className="menu">
                   <List component="nav" className="menu-list">
-                    <ListItem>
+                    <ListItem button className={classes.footerButton}>
                       <Link to="/" className="navbar-item">
                         <ListItemText>Home</ListItemText>
                       </Link>
                     </ListItem>
-                    <ListItem>
+                    <ListItem button className={classes.footerButton}>
                       <Link className="navbar-item" to="/about">
                         <ListItemText>About</ListItemText>
                       </Link>
                     </ListItem>
-                    <ListItem>
+                    <ListItem button className={classes.footerButton}>
                       <Link className="navbar-item" to="/portfolio">
                         <ListItemText>Portfolio</ListItemText>
                       </Link>
                     </ListItem>
-                    {/* <ListItem>
+                    {/* <ListItem button className={classes.footerButton}>
                       <Link className="navbar-item" to="/contact/examples">
                         <ListItemText>Form Examples</ListItemText>
                       </Link>
                     </ListItem> */}
-                    <ListItem>
+                    <ListItem button className={classes.footerButton}>
                       <LinkExternal
                         className="navbar-item"
                         href="/admin/"
@@ -122,12 +123,12 @@ const Footer = props => {
               <Grid item xs={4}>
                 <Box component="section">
                   <List component="nav" className="menu-list">
-                    {/* <ListItem>
+                    {/* <ListItem button className={classes.footerButton}>
                       <Link className="navbar-item" to="/blog">
                         <ListItemText>Latest Stories</ListItemText>
                       </Link>
                     </ListItem> */}
-                    <ListItem>
+                    <ListItem button className={classes.footerButton}>
                       <Link className="navbar-item" to="/contact">
                         <ListItemText>Contact</ListItemText>
                       </Link>
