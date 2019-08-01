@@ -3,14 +3,16 @@ import {Container, Typography} from "@material-ui/core"
 import {makeStyles} from "@material-ui/core/styles"
 import {BlogRoll, Content, Layout} from "../../components"
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   typography: {
-    boxShadow: "0.5rem 0 0 #f40, -0.5rem 0 0 #f40",
-    backgroundColor: "#f40",
+    // boxShadow: "0.5rem 0 0 #f40, -0.5rem 0 0 #f40",
+    boxShadow: `0.5rem 0 0 ${theme.palette.primary}, -0.5rem 0 0 ${theme.palette.primary}`,
+    // backgroundColor: "#f40",
+    backgroundColor: theme.palette.primary,
     color: "white",
     padding: "1rem",
   },
-})
+}))
 
 const BlogIndexPage = props => {
   const classes = useStyles(props)
