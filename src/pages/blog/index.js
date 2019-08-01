@@ -6,9 +6,9 @@ import {BlogRoll, Content, Layout} from "../../components"
 const useStyles = makeStyles(theme => ({
   typography: {
     // boxShadow: "0.5rem 0 0 #f40, -0.5rem 0 0 #f40",
-    boxShadow: `0.5rem 0 0 ${theme.palette.primary}, -0.5rem 0 0 ${theme.palette.primary}`,
+    boxShadow: `0.5rem 0 0 ${theme.palette.primary[500]}, -0.5rem 0 0 ${theme.palette.primary[500]}`,
     // backgroundColor: "#f40",
-    backgroundColor: theme.palette.primary,
+    backgroundColor: theme.palette.primary[500],
     color: "white",
     padding: "1rem",
   },
