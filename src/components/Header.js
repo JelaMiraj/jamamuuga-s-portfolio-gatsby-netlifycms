@@ -29,6 +29,10 @@ const useStyles = makeStyles(theme => ({
     // color: "secondary.light",
     color: theme.palette.secondary.light,
   },
+  toolbar: {
+    // color: "primary",
+    color: theme.palette.primary,
+  },
 }))
 
 const Header = props => {
@@ -36,7 +40,7 @@ const Header = props => {
 
   return (
     <AppBar id="appBar" className={classes.appBar}>
-      <Toolbar>
+      <Toolbar className={classes.toolbar}>
         <Grid container justify="space-between" alignItems="center" spacing={2}>
           <Grid item>
             <Chip
