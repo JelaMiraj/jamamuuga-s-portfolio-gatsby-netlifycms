@@ -6,7 +6,7 @@ import {makeStyles} from "@material-ui/core/styles"
 import {Link, LinkExternal} from "."
 // import logo from "../img/logo.svg"
 
-const useStyles = makeStyles(theme=>({
+const useStyles = makeStyles(theme => ({
   menuButton: {
     color: "primary.contrastText",
   },
