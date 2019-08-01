@@ -8,7 +8,8 @@ import {Link, LinkExternal} from "."
 
 const useStyles = makeStyles(theme => ({
   menuButton: {
-    color: "primary.contrastText",
+    // color: "primary.contrastText",
+    color: theme.palette.primary.contrastText,
   },
 }))
 
