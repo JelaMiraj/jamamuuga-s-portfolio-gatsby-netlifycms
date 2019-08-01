@@ -25,7 +25,7 @@ import instagram from "../img/social/instagram.svg"
 import twitter from "../img/social/twitter.svg"
 import vimeo from "../img/social/vimeo.svg"
 
-const useStyles = makeStyles(theme=>({
+const useStyles = makeStyles(theme => ({
   contentGridBox: {
     align: "center",
     backgroundColor: "black",
