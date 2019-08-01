@@ -25,6 +25,7 @@ const theme = responsiveFontSizes(
       secondary: pink,
       // secondary: "#ff4400",
       // secondary: "#19857b",
+      // TODO: Looks like tertiary doesn't actually work without using the specific custom theme variable support.
       // tertiary: "#f50057",
       tertiary: purple,
       // error: red,
