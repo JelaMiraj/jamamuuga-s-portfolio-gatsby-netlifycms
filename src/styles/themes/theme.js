@@ -1,6 +1,5 @@
 // Setup custom Material-UI theme
 import React from "react"
-import {responsiveFontSizes} from "@material-ui/core/styles"
 import {
   green,
   grey,
@@ -9,7 +8,7 @@ import {
   purple,
   red,
 } from "@material-ui/core/colors"
-import {createMuiTheme} from "@material-ui/core"
+import {createMuiTheme, responsiveFontSizes} from "@material-ui/core"
 // TODO: Make sure theme is fully converted to Material UI v4 compatible.
 // TODO: Learn more about custom variables in Material UI themes.
 
