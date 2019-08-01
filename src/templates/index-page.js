@@ -47,8 +47,7 @@ const useStyles = makeStyles(theme => ({
     // TODO: Change everything here to match Material UI's way & organization.
     // boxShadow:
     //   "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-    boxShadow:
-      `${theme.palette.primary.lighter} 0.5rem 0px 0px, ${theme.palette.primary.lighter} -0.5rem 0px 0px`,
+    boxShadow: `${theme.palette.primary.lighter} 0.5rem 0px 0px, ${theme.palette.primary.lighter} -0.5rem 0px 0px`,
     // backgroundColor: "rgb(255, 68, 0)",
     backgroundColor: theme.palette.primary.lighter,
     color: "white",
