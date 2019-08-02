@@ -12,16 +12,16 @@ description: >-
   More description here
 intro:
   blurbs:
-    - image: /img/favicon-32x32.png
+    - image: "/img/Placeholder Picture - Gallery Picture Frame - Skyla Design - bDuh4oK_MCU - Unsplash.jpg"
       text: >
         Blurb 1.
-    - image: /img/favicon-32x32.png
+    - image: "/img/Placeholder Picture - Gallery Picture Frame - Skyla Design - bDuh4oK_MCU - Unsplash.jpg"
       text: >
         Blurb 2.
-    - image: /img/favicon-32x32.png
+    - image: "/img/Placeholder Picture - Gallery Picture Frame - Skyla Design - bDuh4oK_MCU - Unsplash.jpg"
       text: >
         Blurb 3.
-    - image: /img/favicon-32x32.png
+    - image: "/img/Placeholder Picture - Gallery Picture Frame - Skyla Design - bDuh4oK_MCU - Unsplash.jpg"
       text: >
         Blurb 4.
   heading: What I offer
