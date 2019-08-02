@@ -16,7 +16,7 @@ import {
   // Link,
 } from "@material-ui/core"
 import {Card, Link, LinkExternal} from "."
-// Use as example to improve portfolio page.
+// Use as example to improve portfolio page. Original demo here: https://material-ui.com/getting-started/templates/album/
 
 function MadeWithLove() {
   return (
