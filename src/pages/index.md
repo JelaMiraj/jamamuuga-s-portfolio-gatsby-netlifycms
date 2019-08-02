@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Modern Web Design with Flare
-image: "/img/Jumbotron - 1 - Colored Ball Pit - Greyson Joralemon - 9IBqihqhuHc - Unsplash.jpg"
+image: "/img/Jumbotron - Inside Hot Air Balloon - Kyler Nixon - z7pnyucFR5s - Unsplash.jpg"
 heading: Modern Web Design with Flare
 subheading: Subheading here.
 mainpitch:
