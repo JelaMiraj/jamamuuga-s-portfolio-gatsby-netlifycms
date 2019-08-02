@@ -2,7 +2,7 @@
 templateKey: "portfolio-page"
 path: /portfolio
 title: Title
-image: /img/jumbotron-placeholder.png
+image: "/img/Jumbotron - 1 - Colored Ball Pit - Greyson Joralemon - 9IBqihqhuHc - Unsplash.jpg"
 heading: Modern Web Design with Flare
 description: >-
   Description
