@@ -3,8 +3,9 @@ import {List, ListItem, ListItemText, makeStyles} from "@material-ui/core"
 import {Link} from "."
 // Pagination for posts.
 
-// TODO: Convert styling to Material UI Styles
 const useStyles = makeStyles({
+  // link: {
+  // },
   list: {
     display: "flex",
     flexWrap: "wrap",
@@ -12,18 +13,12 @@ const useStyles = makeStyles({
     alignItems: "center",
     listStyle: "none",
   },
-  // link: {
-  // },
+  listItem: {
+    margin: 0,
+  },
 })
 
-// const unorderedListStyle = {
-//   display: "flex",
-//   flexWrap: "wrap",
-//   justifyContent: "space-between",
-//   alignItems: "center",
-//   listStyle: "none",
-// }
-
+// TODO: Convert generated styling to Material UI Styles.
 const linkStyle = (i, currentPage) => ({
   padding: 10,
   textDecoration: "none",
@@ -38,7 +33,6 @@ const Pagination = ({currentPage, numPages}) => {
   const isLast = currentPage === numPages
   const nextPage = (currentPage + 1).toString()
 
-  //    {/* <List style={unorderedListStyle}> */}
   return (
     <List className={classes.list}>
       {!isFirst && (
@@ -49,9 +43,7 @@ const Pagination = ({currentPage, numPages}) => {
       {Array.from({length: numPages}, (_, i) => (
         <ListItem
           key={`pagination-number${i + 1}`}
-          style={{
-            margin: 0,
-          }}
+          className={classes.listItem}
         >
           <Link
             to={`/${i === 0 ? "" : i + 1}`}
