@@ -3,7 +3,7 @@ module.exports = {
     "@babel/preset-env",
     "@babel/preset-react",
     "babel-preset-gatsby",
-  ].map(require.resolve),
+  ], // .map(require.resolve),
   plugins: [
     "@babel/plugin-proposal-class-properties",
     "@babel/plugin-syntax-dynamic-import",
@@ -49,5 +49,5 @@ module.exports = {
       },
     ],
     "babel-plugin-styled-components",
-  ].map(require.resolve),
+  ], // .map(require.resolve),
 }
