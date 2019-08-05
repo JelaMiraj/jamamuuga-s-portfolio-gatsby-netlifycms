@@ -1,12 +1,12 @@
 module.exports = {
   presets: [
-    require.resolve(`@babel/preset-env`),
-    require.resolve(`@babel/preset-react`),
-    require.resolve(`babel-preset-gatsby`),
-  ],
+    "@babel/preset-env",
+    "@babel/preset-react",
+    "babel-preset-gatsby",
+  ].map(require.resolve),
   plugins: [
-    require.resolve(`@babel/plugin-proposal-class-properties`),
-    require.resolve(`@babel/plugin-syntax-dynamic-import`),
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-syntax-dynamic-import",
     // [
     //   "named-params",
     //   {
@@ -14,9 +14,28 @@ module.exports = {
     //     caching: true,
     //   },
     // ],
-    // "add-module-exports",
-    // "styled-components",
-    // require.resolve(`babel-plugin-add-module-exports`),
-    require.resolve(`babel-plugin-styled-components`),
-  ],
+    // "babel-plugin-add-module-exports",
+    "babel-plugin-transform-imports",
+    {
+      "@material-ui/core": {
+        transform: "@material-ui/core/esm/${member}",
+        // for bundlers not supporting ES modules use:
+        // transform: "@material-ui/core/${member}",
+        preventFullImport: true,
+      },
+      "@material-ui/icons": {
+        transform: "@material-ui/icons/esm/${member}",
+        // for bundlers not supporting ES modules use:
+        // transform: "@material-ui/icons/${member}",
+        preventFullImport: true,
+      },
+      "@material-ui/style": {
+        transform: "@material-ui/icons/esm/${member}",
+        // for bundlers not supporting ES modules use:
+        // transform: "@material-ui/icons/${member}",
+        preventFullImport: true,
+      },
+    },
+    "babel-plugin-styled-components",
+  ].map(require.resolve),
 }
