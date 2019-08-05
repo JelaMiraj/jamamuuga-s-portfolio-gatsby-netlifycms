@@ -12,12 +12,13 @@ import {
 } from "@material-ui/core"
 import {PaletteOutline} from "mdi-material-ui"
 import {Link, Menu, MenuMobile} from "."
+// FIXME: Get color assignment issues sorted out so things like hard-coding aren't necessary.
 
 const useStyles = makeStyles(theme => ({
-  appBar: {
-    // color: "primary",
-    color: theme.palette.primary,
-  },
+  // appBar: {
+  //   // color: "primary",
+  //   color: theme.palette.primary,
+  // },
   avatar: {
     // backgroundColor: palette.tertiary,
     // backgroundColor: "tertiary",
@@ -29,18 +30,15 @@ const useStyles = makeStyles(theme => ({
     // color: "secondary.light",
     color: theme.palette.secondary.light,
   },
-  toolbar: {
-    // color: "primary",
-    color: theme.palette.primary,
-  },
 }))
 
 const Header = props => {
   const classes = useStyles(props)
 
+  //     {/* <AppBar id="appBar" className={classes.appBar}> */}
   return (
-    <AppBar id="appBar" className={classes.appBar}>
-      <Toolbar className={classes.toolbar}>
+    <AppBar id="appBar" color="#f44336">
+      <Toolbar>
         <Grid container justify="space-between" alignItems="center" spacing={2}>
           <Grid item>
             <Chip
