@@ -6,9 +6,9 @@ import {
   Chip,
   Grid,
   Hidden,
+  makeStyles,
   Toolbar,
   Typography,
-  makeStyles,
 } from "@material-ui/core"
 import {PaletteOutline} from "mdi-material-ui"
 import {Link, Menu, MenuMobile} from "."

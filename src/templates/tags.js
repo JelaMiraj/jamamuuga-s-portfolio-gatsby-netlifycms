@@ -8,8 +8,8 @@ import {
   List,
   ListItem,
   ListItemText,
-  Typography,
   makeStyles,
+  Typography,
 } from "@material-ui/core"
 import {Helmet, Layout, Link} from "../components"
 

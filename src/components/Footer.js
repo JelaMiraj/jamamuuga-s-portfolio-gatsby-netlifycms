@@ -13,9 +13,9 @@ import {
   ListItem,
   ListItemIcon,
   ListItemText,
+  makeStyles,
   Toolbar,
   Typography,
-  makeStyles,
 } from "@material-ui/core"
 // import {Facebook as FacebookLogo, Instagram as InstagramLogo, Twitter as TwitterLogo, Vimeo as VimeoLogo} from "mdi-material-ui"
 import {Content, Link, LinkExternal, PreviewCompatibleImage as Image} from "."

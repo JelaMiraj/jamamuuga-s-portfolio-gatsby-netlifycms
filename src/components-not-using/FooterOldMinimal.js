@@ -1,7 +1,6 @@
 // import React from "react"
 // import {StaticQuery, graphql} from "gatsby"
-// import {Divider, Hidden, Typography} from "@material-ui/core"
-// import {makeStyles} from "@material-ui/core/styles"
+// import {Divider, Hidden, makeStyles, Typography} from "@material-ui/core"
 
 // import logo from "../img/logo.svg"
 // import facebook from "../img/social/facebook.svg"

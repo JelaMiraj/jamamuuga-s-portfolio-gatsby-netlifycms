@@ -3,17 +3,15 @@ import {PhotoCamera as CameraIcon} from "@material-ui/icons"
 import {
   AppBar,
   Button,
-  // Card,
   CardActions,
   CardContent,
   CardMedia,
+  Container,
   CssBaseline,
   Grid,
+  makeStyles,
   Toolbar,
   Typography,
-  makeStyles,
-  Container,
-  // Link,
 } from "@material-ui/core"
 import {Card, Link, LinkExternal} from "."
 // Use as example to improve portfolio page. Original demo here: https://material-ui.com/getting-started/templates/album/

@@ -1,7 +1,6 @@
 // import React from "react"
 // import {withPrefix} from "gatsby"
-// import {Card, CardContent, CardMedia, Grid, Typography} from "@material-ui/core"
-// import {makeStyles} from "@material-ui/core/styles"
+// import {Card, CardContent, CardMedia, Grid, makeStyles, Typography} from "@material-ui/core"
 // import {Link} from "."
 
 // const useStyles = makeStyles({

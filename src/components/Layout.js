@@ -1,7 +1,7 @@
 import React from "react"
 import {PropTypes} from "prop-types"
 import {ScrollingProvider} from "react-scroll-section"
-import {Container, Grid, Typography, makeStyles} from "@material-ui/core"
+import {Container, Grid, makeStyles, Typography} from "@material-ui/core"
 // import GlobalStyle from "../styles/global-style"
 import {Footer, Header} from "."
 // import {Navbar} from "."

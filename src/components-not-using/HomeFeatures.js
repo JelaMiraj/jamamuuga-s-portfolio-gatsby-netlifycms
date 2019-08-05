@@ -1,7 +1,6 @@
 // import React from "react"
 // import {PropTypes} from "prop-types"
-// import {Avatar, Chip, Grid} from "@material-ui/core"
-// import {makeStyles} from "@material-ui/core/styles"
+// import {Avatar, Chip, Grid, makeStyles} from "@material-ui/core"
 // import {Robot} from "mdi-material-ui"
 
 // const useStyles = makeStyles({

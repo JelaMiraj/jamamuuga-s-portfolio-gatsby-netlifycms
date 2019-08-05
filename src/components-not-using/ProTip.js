@@ -1,8 +1,6 @@
 // import React from "react"
-// import {makeStyles} from "@material-ui/core/styles"
-// import Link from "@material-ui/core/Link"
-// import SvgIcon from "@material-ui/core/SvgIcon"
-// import Typography from "@material-ui/core/Typography"
+// import {makeStyles, SvgIcon, Typography} from "@material-ui/core"
+// import {LinkExternal} from "."
 
 // function LightBulbIcon(props) {
 //   return (
@@ -28,9 +26,9 @@
 //     <Typography className={classes.root} color="textSecondary">
 //       <LightBulbIcon className={classes.lightBulb} />
 //       Pro tip: See more{" "}
-//       <Link href="https://material-ui.com/getting-started/page-layout-examples/">
+//       <LinkExternal href="https://material-ui.com/getting-started/page-layout-examples/">
 //         page layout examples
-//       </Link>{" "}
+//       </LinkExternal>{" "}
 //       on the Material-UI documentation.
 //     </Typography>
 //   )

@@ -1,6 +1,5 @@
 // import React from "react"
-// import {Typography} from "@material-ui/core"
-// import {makeStyles} from "@material-ui/core/styles"
+// import {makeStyles, Typography} from "@material-ui/core"
 // // Originally from: https://github.com/danielmahon/gatsby-starter-procyon/blob/netlifycms/src/components/Content.js
 
 // const useStyles = makeStyles({

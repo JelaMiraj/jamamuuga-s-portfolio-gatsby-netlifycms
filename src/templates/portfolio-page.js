@@ -8,9 +8,9 @@ import {
   GridList,
   GridListTile,
   Hidden,
+  makeStyles,
   Paper,
   Typography,
-  makeStyles,
 } from "@material-ui/core"
 import {
   Features,

@@ -1,9 +1,8 @@
 // import React from "react"
 // import {graphql} from "gatsby"
 // import {PropTypes} from "prop-types"
-// import {Avatar, Button, Grid} from "@material-ui/core"
+// import {Avatar, Button, Grid, makeStyles} from "@material-ui/core"
 // import {Gift} from "mdi-material-ui"
-// import {makeStyles} from "@material-ui/core/styles"
 // import {Card, Carousel, HomeFeatures, Link, Page, SEO} from "../components"
 
 // const useStyles = makeStyles({
