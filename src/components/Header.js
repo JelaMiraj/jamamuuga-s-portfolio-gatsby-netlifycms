@@ -10,6 +10,7 @@ import {
   Toolbar,
   Typography,
 } from "@material-ui/core"
+import {red} from "@material/core/colors"
 import {PaletteOutline} from "mdi-material-ui"
 import {Link, Menu, MenuMobile} from "."
 // FIXME: Get color assignment issues sorted out so things like hard-coding aren't necessary.
@@ -37,7 +38,7 @@ const Header = props => {
 
   //     {/* <AppBar id="appBar" className={classes.appBar}> */}
   return (
-    <AppBar id="appBar" color="#f44336">
+    <AppBar id="appBar" color={red[500]}>
       <Toolbar>
         <Grid container justify="space-between" alignItems="center" spacing={2}>
           <Grid item>
