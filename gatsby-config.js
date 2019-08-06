@@ -45,12 +45,12 @@ module.exports = {
         // modules: ["query-string"],
       },
     },
-    {
-      resolve: "gatsby-plugin-styled-components",
-      options: {
-        // Add any options here
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-styled-components",
+    //   options: {
+    //     // Add any options here
+    //   },
+    // },
     "gatsby-plugin-react-helmet",
     // {
     //   resolve: "gatsby-plugin-sass",
@@ -158,9 +158,9 @@ module.exports = {
       resolve: "gatsby-plugin-material-ui",
       options: {
         // If you want to use styled components you should change the injection order.
-        stylesProvider: {
-          injectFirst: true,
-        },
+        // stylesProvider: {
+        //   injectFirst: true,
+        // },
         // FIXME: Pass external theme object used by rest of project.
         // theme: {
         //   primaryColor: "#9c27b0",

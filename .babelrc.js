@@ -48,6 +48,6 @@ module.exports = {
     //     },
     //   },
     // ],
-    "babel-plugin-styled-components",
+    // "babel-plugin-styled-components",
   ], // .map(require.resolve),
 }
