@@ -86,9 +86,12 @@ module.exports = {
         start_url: "/",
         // background_color: colors.background,
         // FIXME: Go back to DRY when sane. Currently repeating theme color variables here to avoid import issues & extra dependencies. Specifically, @babel/register has cache resolve failure issues on Netlify platform.
+        // TODO: Make Sure these theme color is not messing up Material UI Theme colors.
         background_color: "#D64000",
         // theme_color: colors.primary,
-        theme_color: "white",
+        // theme_color: "white",
+        // FIXME: change this off pink when Material UI Theme Colors start working.
+        theme_color: "pink",
         display: "browser",
         // TODO: Use icon with equal-sided image borders because chrome dev console complains if it is not.
         icon: "src/img/logo.svg",
