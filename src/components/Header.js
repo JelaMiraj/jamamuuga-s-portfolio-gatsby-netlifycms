@@ -36,7 +36,7 @@ const useStyles = makeStyles(theme => ({
 const Header = props => {
   const classes = useStyles(props)
 
-  //     {/* <AppBar id="appBar" className={classes.appBar}> */}
+  // <AppBar id="appBar" className={classes.appBar}>
   return (
     <AppBar id="appBar" color="#f44336">
       <Toolbar>
