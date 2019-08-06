@@ -37,8 +37,9 @@ const Header = props => {
   const classes = useStyles(props)
 
   // <AppBar id="appBar" className={classes.appBar}>
+  // <AppBar id="appBar" color="#f44336">
   return (
-    <AppBar id="appBar" color="#f44336">
+    <AppBar id="appBar" color="primary">
       <Toolbar>
         <Grid container justify="space-between" alignItems="center" spacing={2}>
           <Grid item>
