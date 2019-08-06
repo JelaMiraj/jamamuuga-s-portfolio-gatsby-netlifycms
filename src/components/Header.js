@@ -9,6 +9,7 @@ import {
   makeStyles,
   Toolbar,
   Typography,
+  useTheme,
 } from "@material-ui/core"
 // import {red} from "@material-ui/core/colors"
 import {PaletteOutline} from "mdi-material-ui"
@@ -34,12 +35,14 @@ const useStyles = makeStyles(theme => ({
 }))
 
 const Header = props => {
+  const theme = useTheme()
   const classes = useStyles(props)
 
   // <AppBar id="appBar" className={classes.appBar}>
   // <AppBar id="appBar" color="#f44336">
+  // <AppBar id="appBar" color="primary">
   return (
-    <AppBar id="appBar" color="primary">
+    <AppBar id="appBar" color={theme.palette.primary}>
       <Toolbar>
         <Grid container justify="space-between" alignItems="center" spacing={2}>
           <Grid item>
