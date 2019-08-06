@@ -6,7 +6,7 @@ import {
   CssBaseline,
   responsiveFontSizes,
 } from "@material-ui/core"
-import {red, pink} from "@material/core/colors"
+import {red, pink} from "@material-ui/core/colors"
 import {ThemeProvider} from "@material-ui/styles"
 import {Helmet} from "../../src/components"
 // import {theme} from "../../src/styles/themes"
