@@ -92,6 +92,7 @@ module.exports = {
         // theme_color: "white",
         // FIXME: change this off pink when Material UI Theme Colors start working.
         theme_color: "pink",
+        // theme_color: "orange",
         display: "browser",
         // TODO: Use icon with equal-sided image borders because chrome dev console complains if it is not.
         icon: "src/img/logo.svg",
