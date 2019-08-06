@@ -44,7 +44,6 @@
     "jss": "^10.0.0-alpha.23",
     "lodash": "^4.17.14",
     "lodash-webpack-plugin": "^0.11.5",
-    "material-ui-image": "^3.2.0",
     "material-ui-popup-state": "^1.4.0",
     "mdi-material-ui": "^6.2.0",
     "netlify-cms-app": "^2.9.7",
