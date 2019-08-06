@@ -7,7 +7,7 @@ import {ThemeProvider} from "@material-ui/styles"
 import {Helmet} from "../../src/components"
 // import {theme} from "../../src/styles/themes"
 
-const theme = const theme = responsiveFontSizes(
+const theme = responsiveFontSizes(
   createMuiTheme({
   palette: {
     primary: red,
