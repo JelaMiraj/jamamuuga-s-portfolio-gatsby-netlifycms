@@ -136,7 +136,7 @@
     "eslint-plugin-react-hooks": "^1.6.1",
     "http-proxy-middleware": "^0.19.1",
     "jest": "^24.8.0",
-    "jest-environment-enzyme": "^7.0.2",
+    "jest-environment-enzyme": "^7.1.0",
     "jest-enzyme": "^7.0.2",
     "netlify-cli": "^2.12.0",
     "netlify-cms-backend-fs": "^0.4.4",
