@@ -16,9 +16,8 @@ import {createMuiTheme, responsiveFontSizes} from "@material-ui/core"
 const headlineFont = `Merriweather, Georgia, serif`
 const bodyFont = `"Open Sans", Roboto, "Helvetica Neue", Arial, sans-serif`
 
-// const theme = responsiveFontSizes(
-//   createMuiTheme({
-const theme = createMuiTheme({
+const theme = responsiveFontSizes(
+  createMuiTheme({
   palette: {
     primary: red,
     // primary: purple,
@@ -91,8 +90,8 @@ const theme = createMuiTheme({
     //   },
     // },
   },
-}) // ,
-// )
+}),
+)
 
 export default theme
 // export {theme}
