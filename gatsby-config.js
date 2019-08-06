@@ -89,9 +89,9 @@ module.exports = {
         // TODO: Make Sure these theme color is not messing up Material UI Theme colors.
         background_color: "#D64000",
         // theme_color: colors.primary,
-        // theme_color: "white",
+        theme_color: "white",
         // FIXME: change this off pink when Material UI Theme Colors start working.
-        theme_color: "pink",
+        // theme_color: "pink",
         // theme_color: "orange",
         display: "browser",
         // TODO: Use icon with equal-sided image borders because chrome dev console complains if it is not.
