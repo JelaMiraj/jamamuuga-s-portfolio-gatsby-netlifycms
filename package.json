@@ -141,7 +141,7 @@
     "netlify-cms-backend-fs": "^0.4.4",
     "netlify-lambda": "^1.5.1",
     "prettier": "^1.18.2",
-    "react-test-renderer": "^16.8.6",
+    "react-test-renderer": "^16.9.0",
     "regenerator-runtime": "^0.13.3",
     "remark-cli": "^7.0.0",
     "remark-lint": "^6.0.5",
