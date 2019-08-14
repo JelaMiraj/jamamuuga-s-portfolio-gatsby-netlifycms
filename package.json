@@ -166,7 +166,7 @@
     "@oclif/command": "^1.5.18",
     "@oclif/config": "^1.13.2",
     "@oclif/errors": "^1.2.2",
-    "@oclif/plugin-help": "^2.2.0",
+    "@oclif/plugin-help": "^2.2.1",
     "@oclif/plugin-not-found": "^1.2.2",
     "@oclif/plugin-plugins": "^1.7.8",
     "bluebird": "^3.5.5",
