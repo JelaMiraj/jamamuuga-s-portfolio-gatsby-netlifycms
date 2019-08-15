@@ -7,6 +7,7 @@ import {
   Typography,
 } from "@material-ui/core"
 import {Content, Layout, Link, LinkExternal} from "../../components"
+// FIXME: Use "Reaptcha" on all form submissions (both text & file upload).
 
 const Index = props => {
   const {classes} = props

@@ -2,6 +2,7 @@ import React, {useState} from "react"
 import {navigate} from "gatsby"
 import {Container, Typography} from "@material-ui/core"
 import {Content, Layout} from "../../components"
+// FIXME: Use "Reaptcha" on all form submissions (both text & file upload).
 // TODO: Port this to material-ui-popup-state
 // TODO: Use proper Material UI form handling.
 // FIXME: Finish porting to hooks/function style from classes.
