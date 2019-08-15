@@ -91,6 +91,7 @@
     "develop-old-slow": "netlify dev",
     "serve": "gatsby serve",
     "format": "prettier --write \"**/*.{js,jsx,html,md,mdx,yaml,json,css,scss,less}\"",
+    "optimize:images": "node scripts/optimize-images.js",
     "test": "jest --passWithNoTests",
     "test:changed": "yarn test --onlyChanged --passWithNoTests --silent --runInBand",
     "test:watch": "yarn test --watch",
