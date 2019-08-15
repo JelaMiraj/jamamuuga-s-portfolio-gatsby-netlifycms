@@ -3,7 +3,7 @@ import {StaticQuery, graphql} from "gatsby"
 import {Button, IconButton, makeStyles} from "@material-ui/core"
 import {GithubCircle} from "mdi-material-ui"
 import {Link, LinkExternal} from "."
-// import logo from "../img/logo.svg"
+// import logo from "../images/logo.svg"
 
 const useStyles = makeStyles(theme => ({
   menuButton: {

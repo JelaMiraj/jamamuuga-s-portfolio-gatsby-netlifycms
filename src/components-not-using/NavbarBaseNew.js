@@ -3,7 +3,7 @@
 // import {GithubCircle} from "mdi-material-ui"
 // // TODO: Replace "a" anchor links with LinkExternal.
 // import {Link, LinkExternal} from "."
-// import logo from "../img/logo.svg"
+// import logo from "../images/logo.svg"
 // // TODO: Port anything you want to keep then get rid of this file.
 
 // const Navbar = props => {
