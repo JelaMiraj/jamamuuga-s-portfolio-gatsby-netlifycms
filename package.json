@@ -124,7 +124,7 @@
     "enzyme-react-intl": "^2.0.5",
     "enzyme-to-json": "^3.4.0",
     "eslint": "^6.1.0",
-    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-airbnb": "^18.0.1",
     "eslint-config-gatsby-standard": "^2.2.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-config-with-prettier": "^6.0.0",
