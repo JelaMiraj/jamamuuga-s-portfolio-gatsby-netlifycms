@@ -1700,7 +1700,7 @@
     widest-line "^2.0.1"
     wrap-ansi "^4.0.0"
 
-"@oclif/plugin-not-found@1.2.2", "@oclif/plugin-not-found@^1.1.4", "@oclif/plugin-not-found@^1.2.2":
+"@oclif/plugin-not-found@1.2.2":
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/@oclif/plugin-not-found/-/plugin-not-found-1.2.2.tgz#3e601f6e4264d7a0268cd03c152d90aa9c0cec6d"
   integrity sha512-SPlmiJFmTFltQT/owdzQwKgq6eq5AEKVwVK31JqbzK48bRWvEL1Ye60cgztXyZ4bpPn2Fl+KeL3FWFQX41qJuA==
@@ -1710,6 +1710,17 @@
     cli-ux "^4.9.0"
     fast-levenshtein "^2.0.6"
     lodash "^4.17.11"
+
+"@oclif/plugin-not-found@^1.1.4", "@oclif/plugin-not-found@^1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-not-found/-/plugin-not-found-1.2.3.tgz#00f9e7a0a793a5e2f616d8280075f4592de8f079"
+  integrity sha512-Igbw2T4gLrb/f28Llr730FeMXBSI2PXdky2YvQfsZeQGDsyBZmC4gprJJtmrMWQcjz0B51IInRBnZYERvwfIpw==
+  dependencies:
+    "@oclif/color" "^0.0.0"
+    "@oclif/command" "^1.5.3"
+    cli-ux "^4.9.0"
+    fast-levenshtein "^2.0.6"
+    lodash "^4.17.13"
 
 "@oclif/plugin-plugins@1.7.8", "@oclif/plugin-plugins@^1.7.8":
   version "1.7.8"
