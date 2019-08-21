@@ -8370,14 +8370,14 @@ gatsby-remark-copy-linked-files@^2.1.7:
     probe-image-size "^4.0.0"
     unist-util-visit "^1.3.0"
 
-gatsby-remark-images@^3.1.11:
-  version "3.1.11"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-3.1.11.tgz#0a11d8f11f99a90891f116423a9882e0cee0d3c0"
-  integrity sha512-k3PCnR43RGtar0XTq3g5Sa/rUGV495FF6O9+wkLOj0++LX4jc6jmFURokfBMutGTUOLOeNTKZSFt2C+6dakfeA==
+gatsby-remark-images@^3.1.14:
+  version "3.1.14"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-3.1.14.tgz#13adfb75fc7658b3f1ff411517903d32f94678fd"
+  integrity sha512-7rLi8076HQQXn7SAjvFkDdhw7Pts1RhHvTcV8aANes2aOzJO7RajM9/uY/KMW1r7pdlvoLoV+mrsV22dCP5LUw==
   dependencies:
     "@babel/runtime" "^7.0.0"
     chalk "^2.4.2"
-    cheerio "^1.0.0-rc.2"
+    cheerio "^1.0.0-rc.3"
     is-relative-url "^2.0.0"
     lodash "^4.17.14"
     mdast-util-definitions "^1.2.0"
