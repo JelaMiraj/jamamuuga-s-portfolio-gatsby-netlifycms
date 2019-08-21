@@ -8375,13 +8375,13 @@ gatsby-plugin-netlify-cms@^4.1.6:
     netlify-identity-widget "^1.4.11"
     webpack "^4.16.0"
 
-gatsby-plugin-netlify@^2.1.6:
-  version "2.1.6"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-2.1.6.tgz#11552af8f8594b810ab82e196e2f4e4bb552a943"
-  integrity sha512-c42TamI8ym11OoH9H+Ns/karnJ/wP3k3El77SwRfExEvvxqzM3Aoehzk8WjQ2VkTp+U9WKiiZ6fusTJCA3QeMg==
+gatsby-plugin-netlify@^2.1.7:
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-2.1.7.tgz#a8858941ddf1580a3e43510d25a8537708588f1d"
+  integrity sha512-QKlKeP/89+8+ts2dDmQchhgQJJWGjRGux2/z2MS0j1N9fXNcNgupi/1nmkyJxUt4dKLMGZd5IQm2Tuvr4jtHlA==
   dependencies:
     "@babel/runtime" "^7.0.0"
-    fs-extra "^4.0.2"
+    fs-extra "^4.0.3"
     kebab-hash "^0.1.2"
     lodash "^4.17.14"
     webpack-assets-manifest "^3.0.2"
