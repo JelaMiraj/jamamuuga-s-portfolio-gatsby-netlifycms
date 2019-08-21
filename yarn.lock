@@ -3440,10 +3440,10 @@ babel-plugin-jest-hoist@^24.9.0:
   dependencies:
     "@types/babel__traverse" "^7.0.6"
 
-babel-plugin-macros@^2.0.0, babel-plugin-macros@^2.4.2:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-macros/-/babel-plugin-macros-2.6.0.tgz#1840d0778f27698e5ceaf1a831293b2a57fc26ae"
-  integrity sha512-6hrXm6NIoSp+JiqhHZ6tUemhClnu//vjx9fAU5tkRCztTKxgiUpFpMDBX4yZiJIco7qkf0CPX2u4Ax3x6GCiUg==
+babel-plugin-macros@^2.0.0, babel-plugin-macros@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-macros/-/babel-plugin-macros-2.6.1.tgz#41f7ead616fc36f6a93180e89697f69f51671181"
+  integrity sha512-6W2nwiXme6j1n2erPOnmRiWfObUhWH7Qw1LMi9XZy8cj+KtESu3T6asZvtk5bMQQjX8te35o7CFueiSdL/2NmQ==
   dependencies:
     "@babel/runtime" "^7.4.2"
     cosmiconfig "^5.2.0"
@@ -3552,10 +3552,10 @@ babel-preset-fbjs@^3.1.2:
     "@babel/plugin-transform-template-literals" "^7.0.0"
     babel-plugin-syntax-trailing-function-commas "^7.0.0-beta.0"
 
-babel-preset-gatsby@^0.2.1, babel-preset-gatsby@^0.2.8:
-  version "0.2.8"
-  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-0.2.8.tgz#976adb62bcf73f1a53374deb3a3a37b8880d5745"
-  integrity sha512-Cks3TRbx0CvjwW25noYZwideKp/gH8RJypuwd8gJ/Y1JDXrE7Vnjkvct6QH61XLcX7QIkRoissvOt1QqNWyaIg==
+babel-preset-gatsby@^0.2.10, babel-preset-gatsby@^0.2.8:
+  version "0.2.10"
+  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-0.2.10.tgz#5ea252ee0f87b8d64c8f9321faaf9d5f63c30211"
+  integrity sha512-MQmh2nERGZvxhMSr5M00AK7mCWSIZBazX8vn75oUdbPQ9LI68xj3i1S0q01RJid+yFFI0k+oEAAKkYAa8TRyqA==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.0.0"
     "@babel/plugin-syntax-dynamic-import" "^7.0.0"
@@ -3565,7 +3565,7 @@ babel-preset-gatsby@^0.2.1, babel-preset-gatsby@^0.2.8:
     "@babel/preset-react" "^7.0.0"
     "@babel/runtime" "^7.4.5"
     babel-plugin-dynamic-import-node "^1.2.0"
-    babel-plugin-macros "^2.4.2"
+    babel-plugin-macros "^2.6.1"
     babel-plugin-transform-react-remove-prop-types "^0.4.24"
 
 babel-preset-jest@^24.9.0:
