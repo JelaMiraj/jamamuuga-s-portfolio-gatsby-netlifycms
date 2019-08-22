@@ -8616,7 +8616,7 @@ gatsby-background-image@^0.8.5:
     global "^4.4.0"
     prop-types "^15.7.2"
 
-gatsby-cli@^2.7.28:
+gatsby-cli@^2.7.29:
   version "2.7.36"
   resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.7.36.tgz#b72210801af1104e8ecbf0d8b61344768ef544a4"
   integrity sha512-Oy0IpJ1xl3nkLmkIoxw++WXDgpS6D+qNooBUWTHl8HHULouYJ69ysUEtla16jr2pBcJPWCFdDdKsb5PKALWgwg==
@@ -8966,10 +8966,10 @@ gatsby-transformer-sharp@^2.2.9:
     semver "^5.7.1"
     sharp "^0.23.0"
 
-gatsby@2.13.52:
-  version "2.13.52"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.13.52.tgz#040dbf5a7675f1ea6336a20af0cfe9a3e20998d9"
-  integrity sha512-sTYT7S7E2h47Xw0HvMDRHWTtH6EYYDqlZjMpmrDXRoqj09tacULllhep2s7M9NCN55lusEWIGeCjoSejRG+1Cg==
+gatsby@2.13.57:
+  version "2.13.57"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.13.57.tgz#21fbe58304916fe0bfaba1c823f29bf7adabc12c"
+  integrity sha512-glckm9KFVwghlBQt/5B0NEu1ogMa/K0noe1+M6b/sP535YcbCEm35pApmeBIM1N55rkI2SB2Pd2CjijnqDjTnQ==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -9027,7 +9027,7 @@ gatsby@2.13.52:
     flat "^4.0.0"
     fs-exists-cached "1.0.0"
     fs-extra "^5.0.0"
-    gatsby-cli "^2.7.28"
+    gatsby-cli "^2.7.29"
     gatsby-core-utils "^1.0.4"
     gatsby-graphiql-explorer "^0.2.3"
     gatsby-link "^2.2.4"
@@ -9036,7 +9036,7 @@ gatsby@2.13.52:
     gatsby-telemetry "^1.1.11"
     glob "^7.1.1"
     got "8.0.0"
-    graphql "^14.1.1"
+    graphql "^14.2.0"
     graphql-compose "^6.3.2"
     graphql-playground-middleware-express "^1.7.10"
     invariant "^2.2.4"
@@ -9648,7 +9648,7 @@ graphql-type-json@^0.2.4:
   dependencies:
     iterall "^1.2.2"
 
-graphql@^14.1.1:
+graphql@^14.2.0:
   version "14.4.2"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-14.4.2.tgz#553a7d546d524663eda49ed6df77577be3203ae3"
   integrity sha512-6uQadiRgnpnSS56hdZUSvFrVcQ6OF9y6wkxJfKquFtHlnl7+KSuWwSJsdwiK1vybm1HgcdbpGkCpvhvsVQ0UZQ==
