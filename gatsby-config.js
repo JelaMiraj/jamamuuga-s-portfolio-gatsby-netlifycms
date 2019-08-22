@@ -162,9 +162,9 @@ module.exports = {
       resolve: "gatsby-plugin-material-ui",
       options: {
         // If you want to use styled components you should change the injection order.
-        // stylesProvider: {
-        //   injectFirst: true,
-        // },
+        stylesProvider: {
+          injectFirst: true,
+        },
         // FIXME: Pass external theme object used by rest of project.
         // theme: {
         //   primaryColor: "#9c27b0",
