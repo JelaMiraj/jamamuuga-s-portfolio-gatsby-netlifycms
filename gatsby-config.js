@@ -165,7 +165,6 @@ module.exports = {
         stylesProvider: {
           injectFirst: true,
         },
-        // FIXME: Pass external theme object used by rest of project.
         // theme: {
         //   primaryColor: "#9c27b0",
         // },
