@@ -45,12 +45,14 @@ module.exports = {
         // modules: ["query-string"],
       },
     },
-    // {
-    //   resolve: "gatsby-plugin-styled-components",
-    //   options: {
-    //     // Add any options here
-    //   },
-    // },
+    {
+      resolve: "gatsby-plugin-styled-components",
+      options: {
+        // Add any options here
+        pure: true,
+        transpileTemplateLiterals: true,
+      },
+    },
     "gatsby-plugin-react-helmet",
     // {
     //   resolve: "gatsby-plugin-sass",
