@@ -104,7 +104,8 @@
     "lint:img": "find src -iname *.gif -o -iname *.jpg -o -iname *.png -o -iname *.jpeg -o -iname *.svg | xargs imagemin-lint-staged",
     "lint:md": "remark .",
     "lint:staged": "eslint --fix --max-warnings=0",
-    "lint:style": "stylelint src/**/*.{js,jsx,scss,css}"
+    "lint:style": "stylelint src/**/*.{js,jsx,scss,css}",
+    "version:gatsby": "gatsby --version"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
