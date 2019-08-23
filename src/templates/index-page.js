@@ -11,59 +11,62 @@ import {
   Hidden,
   Paper,
   Typography,
-  makeStyles,
 } from "@material-ui/core"
+import styled from "styled-components"
 import {Card, BlogRoll, Features, Layout, Link} from "../components"
 
 // TODO: Maybe use Card instead of or around Paper.
 
-// TODO: Convert everything to use React Hooks (Don't forget the ESLint plugin), Babel-Blade (DRY GraphQL).
+// TODO: Try Babel-Blade (DRY GraphQL).
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    textAlign: "center",
-    // Spacing can be either called on a imported theme object, or imported from @material-ui/system.
-    paddingTop: "20",
-  },
-  backgroundImageBox: {
-    // TODO: Add full-width-image from old stylesheet.
-    // TODO: Add margin-top-0 from old stylesheet.
-    backgroundPosition: `top left`,
-    backgroundAttachment: `fixed`,
-  },
-  cardMedia: {
-    height: "200px",
-  },
-  contentBox: {
-    display: "flex",
-    height: "150px",
-    lineHeight: "1",
-    justifyContent: "space-around",
-    alignItems: "left",
-    flexDirection: "column",
-  },
-  pageHeadings: {
-    fontWeight: "fontWeightBold",
-    // TODO: Change everything here to match Material UI's way & organization.
-    // boxShadow:
-    //   "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-    boxShadow: `${theme.palette.primary.lighter} 0.5rem 0px 0px, ${theme.palette.primary.lighter} -0.5rem 0px 0px`,
-    // backgroundColor: "rgb(255, 68, 0)",
-    backgroundColor: theme.palette.primary.lighter,
-    color: "white",
-    lineHeight: "1",
-    padding: "0.25em",
-  },
-  sectionBox: {
-    paddingTop: "2",
-    paddingBottom: "2",
-  },
-  sectionBoxGradient: {
-    // TODO: Add section--gradient from old stylesheet.
-    paddingTop: "2",
-    paddingBottom: "2",
-  },
-}))
+// TODO: Figure out where to apply this root wrapper style.
+const StyledWrapperBox = styled(Box)`
+    text-align: center;
+    padding-top: ${props => props.theme.spacing(20)};
+`
+const StyledBackgroundImageBox = styled(Box)`
+  /* backgroundImageBox: */
+    /* TODO: Add full-width-image from old stylesheet. */
+    background-position: top left;
+    background-attachment: fixed;
+    margin-top: 0;
+`
+
+const StyledCardMedia = styled(CardMedia)`
+  height: 200px;
+`
+
+const StyledContentBox = styled(Box)`
+    display: flex;
+    height: 150px;
+    line-height: 1;
+    justify-content: space-around;
+    align-items: left;
+    flex-direction: column;
+`
+
+const StyledPageHeadingsTypography = styled(Typography)`
+    font-weight: ${props => props.theme.typography.fontWeightBold};
+    /* TODO: Change everything here to match Material UI's way & organization. */
+    /* box-shadow: rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px; */
+    box-shadow: ${props => props.theme.palette.primary.lighter} 0.5rem 0px 0px, ${props => props.theme.palette.primary.lighter} -0.5rem 0px 0px;
+    /* background-color: rgb(255, 68, 0); */
+    background-color: ${props => props.theme.palette.primary.lighter};
+    color: white;
+    line-height: 1;
+    padding: 0.25em;
+`
+
+const StyledSectionBox = styled(Box)`
+    padding-top: ${props => props.theme.spacing(2)};
+    padding-bottom: ${props => props.theme.spacing(2)};
+`
+
+const StyledSectionBoxGradient = styled(Box)`
+    /* TODO: Add section--gradient from old stylesheet. */
+    padding-top: ${props => props.theme.spacing(2)};
+    padding-bottom: ${props => props.theme.spacing(2)};
+`
 
 export const IndexPageTemplate = ({
   // classes,
@@ -78,31 +81,28 @@ export const IndexPageTemplate = ({
   // main,
   // eslint-disable-next-line
 }) => {
-  const classes = useStyles()
-
   // eslint-disable-next-line
   return (
-    <Box>
-      <Box
-        className={classes.backgroundImageBox}
+    <StyledBackgroundImageBox>
+      <StyledBackgroundImageBox
         style={{
           backgroundImage: `url(${
             image.childImageSharp ? image.childImageSharp.fluid.src : image
           })`,
         }}
       >
-        <Box className={classes.contentBox}>
-          <Typography variant="h3" className={classes.pageHeadings}>
+        <StyledContentBox>
+          <StyledPageHeadingsTypography variant="h3">
             {title}
-          </Typography>
-          <Typography variant="h5" className={classes.pageHeadings}>
+          </StyledPageHeadingsTypography>
+          <StyledPageHeadingsTypography variant="h5">
             {subheading}
-          </Typography>
-        </Box>
-      </Box>
-      <Box component="section" className={classes.sectionBoxGradient}>
+          </StyledPageHeadingsTypography>
+        </StyledContentBox>
+      </StyledBackgroundImageBox>
+      <StyledSectionBoxGradient component="section">
         <Container>
-          <Box component="section" className={classes.sectionBox}>
+          <StyledSectionBox component="section">
             <Grid container>
               <Grid
                 item
@@ -160,10 +160,10 @@ export const IndexPageTemplate = ({
                 </Box>
               </Grid>
             </Grid>
-          </Box>
+          </StyledSectionBox>
         </Container>
-      </Box>
-    </Box>
+      </StyledSectionBoxGradient>
+    </StyledBackgroundImageBox>
   )
 }
 
