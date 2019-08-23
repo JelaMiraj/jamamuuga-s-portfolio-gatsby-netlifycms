@@ -6,10 +6,8 @@ import {
   Chip,
   Grid,
   Hidden,
-  makeStyles,
   Toolbar,
   Typography,
-  // useTheme,
 } from "@material-ui/core"
 // import {red} from "@material-ui/core/colors"
 import styled from "styled-components"
@@ -17,38 +15,18 @@ import {PaletteOutline} from "mdi-material-ui"
 import {Link, Menu, MenuMobile} from "."
 // FIXME: Get color assignment issues sorted out so things like hard-coding aren't necessary.
 
-// const useStyles = makeStyles(theme => ({
-//   // // appBar: {
-//   // //   color: "primary",
-//   // //   // color: theme.palette.primary,
-//   // // },
-//   // avatar: {
-//   //   // backgroundColor: palette.tertiary,
-//   //   // backgroundColor: "tertiary",
-//   //   // backgroundColor: "secondary.light",
-//   //   backgroundColor: theme.palette.secondary.light,
-//   // },
-//   // chip: {
-//   //   // color: palette.secondary,
-//   //   // color: "secondary.light",
-//   //   color: theme.palette.secondary.light,
-//   // },
-// }))
+const StyledAppBar = styled(AppBar)`
+  color: ${props => props.color || "#f44336"};
+  /* color: ${props => props.color || props.theme.palette.primary.main}; */
+`
 
-const StyledAppBar = styled(AppBar)(props => ({
-  color: "#f44336",
-  // color: props.theme.palette.primary.main,
-}))
+const StyledAvatar = styled(Avatar)`
+  background-color: ${props => props.backgroundColor || props.theme.palette.secondary.light};
+`
 
-const StyledAvatar = styled(Avatar)(props => ({
-    // backgroundColor: "secondary.light",
-    backgroundColor: props.theme.palette.secondary.light,
-}))
-
-const StyledChip = styled(Chip)(props => ({
-    // color: "secondary.light",
-    color: props.theme.palette.secondary.light,
-}))
+const StyledChip = styled(Chip)`
+    color: ${props => props.color || props.theme.palette.secondary.light};
+`
 
 const Header = props => {
   // const theme = useTheme()
