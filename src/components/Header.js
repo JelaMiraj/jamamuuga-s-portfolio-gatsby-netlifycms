@@ -20,50 +20,49 @@ const StyledAppBar = styled(AppBar)`
 `
 
 const StyledAvatar = styled(Avatar)`
-  background-color: ${props => props.backgroundColor || props.theme.palette.secondary.light};
+  background-color: ${props =>
+    props.backgroundColor || props.theme.palette.secondary.light};
 `
 
 const StyledChip = styled(Chip)`
-    color: ${props => props.color || props.theme.palette.secondary.light};
+  color: ${props => props.color || props.theme.palette.secondary.light};
 `
 
-const Header = props => {
-  return (
-    <StyledAppBar id="appBar">
-      <Toolbar>
-        <Grid container justify="space-between" alignItems="center" spacing={2}>
-          <Grid item>
-            <StyledChip
-              id="logo"
-              variant="default"
-              avatar={
-                <StyledAvatar id="logoIcon">
-                  <PaletteOutline />
-                </StyledAvatar>
-              }
-              label={
-                <Link to="/">
-                  {props.data.site.siteMetadata.title.toUpperCase()}
-                </Link>
-              }
-            />
-          </Grid>
-          <Grid item>
-            <Hidden smDown>
-              <Typography component="span" variant="caption">
-                <Menu />
-              </Typography>
-            </Hidden>
-            <Hidden mdUp>
-              <MenuMobile />
-            </Hidden>
-          </Grid>
+const Header = props => (
+  <StyledAppBar id="appBar">
+    <Toolbar>
+      <Grid container justify="space-between" alignItems="center" spacing={2}>
+        <Grid item>
+          <StyledChip
+            id="logo"
+            variant="default"
+            avatar={
+              <StyledAvatar id="logoIcon">
+                <PaletteOutline />
+              </StyledAvatar>
+            }
+            label={
+              <Link to="/">
+                {props.data.site.siteMetadata.title.toUpperCase()}
+              </Link>
+            }
+          />
         </Grid>
-        <Grid item />
-      </Toolbar>
-    </StyledAppBar>
-  )
-}
+        <Grid item>
+          <Hidden smDown>
+            <Typography component="span" variant="caption">
+              <Menu />
+            </Typography>
+          </Hidden>
+          <Hidden mdUp>
+            <MenuMobile />
+          </Hidden>
+        </Grid>
+      </Grid>
+      <Grid item />
+    </Toolbar>
+  </StyledAppBar>
+)
 
 export default props => (
   <StaticQuery
