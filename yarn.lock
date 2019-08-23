@@ -8407,12 +8407,12 @@ gatsby-plugin-netlify-cms@^4.1.11:
     netlify-identity-widget "^1.5.5"
     webpack "^4.39.2"
 
-gatsby-plugin-netlify@^2.1.8:
-  version "2.1.8"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-2.1.8.tgz#dfae418f6248bff9135a57cb472b1e4f288d5a2b"
-  integrity sha512-8mlHvONRXlusF4GVYkgA74WD3/3Br0Qt3OVa+2DB1AwJuJlvX1Cs0Xx6qga8isNM3AjwHiZym5n+Xn7ARM0Fpw==
+gatsby-plugin-netlify@^2.1.9:
+  version "2.1.9"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-2.1.9.tgz#62aff932dae6abf6f9deab732156906503f50cf5"
+  integrity sha512-TX9MJU72dozbVDSSmDhmLra/z9X7slcoqVEdStdIJNBTPpfQXxi3UxE8Zvz8GHkM3+JhNfNXPTDYmAqKc4PUpw==
   dependencies:
-    "@babel/runtime" "^7.0.0"
+    "@babel/runtime" "^7.5.5"
     fs-extra "^4.0.3"
     kebab-hash "^0.1.2"
     lodash "^4.17.15"
@@ -8452,12 +8452,12 @@ gatsby-plugin-purgecss@^4.0.0:
     loader-utils "^1.1.0"
     purgecss "^1.3.0"
 
-gatsby-plugin-react-helmet@^3.1.4:
-  version "3.1.4"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-3.1.4.tgz#cea67aa21721c82e6066c04f71aa0cecfebec0ce"
-  integrity sha512-L+nP4cv6zdxjKXN9eJJdni7JpPCCSN1V+KWBgID0FELKawFGegkI6zdvKhtBZHz5F+WHh+ak/qfOAYIuLO0eHA==
+gatsby-plugin-react-helmet@^3.1.5:
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-3.1.5.tgz#009eebab0797880457bc3ba464a6e5e8a056d67a"
+  integrity sha512-ApDQjtqfW0rzYpem9NHwff8lWZlDKLeuyMaaP1QKoLkiGJkussJ7n1X5BJJ4lK32g6rDb3aZ+zik08ohtG7QgQ==
   dependencies:
-    "@babel/runtime" "^7.0.0"
+    "@babel/runtime" "^7.5.5"
 
 gatsby-plugin-sharp@^2.2.17:
   version "2.2.17"
@@ -8483,12 +8483,12 @@ gatsby-plugin-sharp@^2.2.17:
     sharp "^0.23.0"
     svgo "^1.3.0"
 
-gatsby-plugin-styled-components@^3.1.2:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-3.1.2.tgz#1f8ab130e2fdc02fbc8b158b237e7f620d15c2a9"
-  integrity sha512-9MjGXl5ddN2L7jKlSjrobtxbR1gIIpBOmFcfkmNPdL/7rMUkWR6bLmAQ6fUPGCIwTLyvYsNjBZhtAwhUY+NTBw==
+gatsby-plugin-styled-components@^3.1.3:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-3.1.3.tgz#b97d8810c0ca1462d55eed5ba4f97750d5d1f166"
+  integrity sha512-631vcDQE8lnqeySX/uEdnfxGiintos9mxoKV9T0zZsphyYC/GcK6PTObClRTpGtNmg9i4+qRSb8qUJuVDpb/9Q==
   dependencies:
-    "@babel/runtime" "^7.0.0"
+    "@babel/runtime" "^7.5.5"
 
 gatsby-react-router-scroll@^2.1.5:
   version "2.1.5"
@@ -8499,12 +8499,12 @@ gatsby-react-router-scroll@^2.1.5:
     scroll-behavior "^0.9.10"
     warning "^3.0.0"
 
-gatsby-remark-copy-linked-files@^2.1.9:
-  version "2.1.9"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-copy-linked-files/-/gatsby-remark-copy-linked-files-2.1.9.tgz#5983287bb385e9c0c8928cc53de4c0fe7d1794b0"
-  integrity sha512-jXEd1epr8Wi1Wltu3f4Smu/naD3SCa2wdvXmiJyCRJbeNFJnQYo7mHdtKf5gNVjjgCTdV0Xu9tQHb05DIEZsZw==
+gatsby-remark-copy-linked-files@^2.1.10:
+  version "2.1.10"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-copy-linked-files/-/gatsby-remark-copy-linked-files-2.1.10.tgz#a27bb914c7d3699457054114c9cbdd1812cba67a"
+  integrity sha512-w6xe3OeJwDkBHQfcs2Ek9Dahu6z15yITVHh+vvRmeoJL2x6DjlwTdm+pmF3j2P+zxKtn46+sFrPoOlQdW/C5Zw==
   dependencies:
-    "@babel/runtime" "^7.0.0"
+    "@babel/runtime" "^7.5.5"
     cheerio "^1.0.0-rc.3"
     fs-extra "^4.0.3"
     is-relative-url "^2.0.0"
@@ -8614,12 +8614,12 @@ gatsby-transformer-remark@^2.6.18:
     unist-util-select "^1.5.0"
     unist-util-visit "^1.4.1"
 
-gatsby-transformer-sharp@^2.2.10:
-  version "2.2.10"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-2.2.10.tgz#2a62d9251da843aac5acf1d80d474166200473f1"
-  integrity sha512-Go2A4VdlgTEE4oMp7CagQgM5bdSmdGYus4S9Vf4/4vz8d1AJ/z3nab5X0rBSeEEnsF9jBps7OZEOhhIvqN5WHw==
+gatsby-transformer-sharp@^2.2.11:
+  version "2.2.11"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-2.2.11.tgz#0d6f7048ce15e8d4f071fd2966165b33deed5e64"
+  integrity sha512-1adi3HGG3vNAjBY9gfVxPXeD/dMo2NZ+pgeosD+5BvnUT9+UKGoAFz1cU67RghO4Z35jFicueR/4a3CjHckNYQ==
   dependencies:
-    "@babel/runtime" "^7.0.0"
+    "@babel/runtime" "^7.5.5"
     bluebird "^3.5.5"
     fs-extra "^7.0.1"
     potrace "^2.1.2"
