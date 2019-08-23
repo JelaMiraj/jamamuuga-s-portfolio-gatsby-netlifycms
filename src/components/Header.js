@@ -9,7 +9,6 @@ import {
   Toolbar,
   Typography,
 } from "@material-ui/core"
-// import {red} from "@material-ui/core/colors"
 import styled from "styled-components"
 import {PaletteOutline} from "mdi-material-ui"
 import {Link, Menu, MenuMobile} from "."
@@ -29,12 +28,6 @@ const StyledChip = styled(Chip)`
 `
 
 const Header = props => {
-  // const theme = useTheme()
-  // const classes = useStyles(props)
-
-  // <AppBar id="appBar" className={classes.appBar}>
-  // <AppBar id="appBar" color="#f44336">
-  // <AppBar id="appBar" color="primary">
   return (
     <StyledAppBar id="appBar">
       <Toolbar>
