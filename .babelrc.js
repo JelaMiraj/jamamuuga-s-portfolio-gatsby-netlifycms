@@ -1,5 +1,10 @@
 module.exports = {
-  presets: ["@babel/preset-env", "@babel/preset-react", "babel-preset-gatsby"], // .map(require.resolve),
+  presets: [
+    "regenerator-preset",
+    "@babel/preset-env",
+    "@babel/preset-react",
+    "babel-preset-gatsby",
+  ], // .map(require.resolve),
   plugins: [
     "@babel/plugin-proposal-class-properties",
     "@babel/plugin-syntax-dynamic-import",
