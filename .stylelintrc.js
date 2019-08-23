@@ -11,6 +11,6 @@ module.exports = {
     // NOTE: stylelint-config-airbnb removed because of unfixed security advisories of dependencies.
     // "stylelint-config-airbnb",
     // "stylelint-config-idiomatic-sass",
-    // "stylelint-config-pack",
+    // "@giotramu/stylelint-config",
   ],
 }
