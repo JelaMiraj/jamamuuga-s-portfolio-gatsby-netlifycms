@@ -9,10 +9,10 @@ import {
   Container,
   CssBaseline,
   Grid,
-  makeStyles,
   Toolbar,
   Typography,
 } from "@material-ui/core"
+import styled from "styled-components"
 import {Card, Link, LinkExternal} from "."
 // Use as example to improve portfolio page. Original demo here: https://material-ui.com/getting-started/templates/album/
 
@@ -27,49 +27,53 @@ function MadeWithLove() {
     </Typography>
   )
 }
-const useStyles = makeStyles(theme => ({
-  icon: {
-    marginRight: theme.spacing(2),
-  },
-  heroContent: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(8, 0, 6),
-  },
-  heroButtons: {
-    marginTop: theme.spacing(4),
-  },
-  cardGrid: {
-    paddingTop: theme.spacing(8),
-    paddingBottom: theme.spacing(8),
-  },
-  card: {
-    height: "100%",
-    display: "flex",
-    flexDirection: "column",
-  },
-  cardMedia: {
-    paddingTop: "56.25%", // 16:9
-  },
-  cardContent: {
-    flexGrow: 1,
-  },
-  footer: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(6),
-  },
-}))
+
+const StyledCameraIcon = styled(CameraIcon)`
+  margin-right: ${props => props.theme.spacing(2)};
+`
+
+const StyledHeroContent = styled.div`
+  background-color: ${props => props.theme.palette.background.paper};
+  padding: ${props => props.theme.spacing(8, 0, 6)};
+`
+
+const StyledHeroButtons = styled.div`
+  margin-top: ${props => props.theme.spacing(4)};
+`
+
+const StyledCardGridContainer = styled(Container)`
+  padding-top: ${props => props.theme.spacing(8)};
+  padding-bottom: ${props => props.theme.spacing(8)};
+`
+
+const StyledCard = styled(Card)`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+`
+
+const StyledCardMedia = styled(CardMedia)`
+  padding-top: 56.25%; /* 16:9 */
+`
+
+const StyledCardContent = styled(CardContent)`
+    flex-grow: 1;
+`
+
+const StyledFooter = styled.footer`
+    background-color: ${props => props.theme.palette.background.paper};
+    padding: ${props => props.theme.spacing(6)};
+`
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 export default function Album() {
-  const classes = useStyles()
-
   return (
     <>
       <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
-          <CameraIcon className={classes.icon} />
+          <StyledCameraIcon/>
           <Typography variant="h6" color="inherit" noWrap>
             Album layout
           </Typography>
@@ -77,7 +81,7 @@ export default function Album() {
       </AppBar>
       <main>
         {/* Hero unit */}
-        <div className={classes.heroContent}>
+        <StyledHeroContent>
           <Container maxWidth="sm">
             <Typography
               component="h1"
@@ -98,7 +102,7 @@ export default function Album() {
               contents, the creator, etc. Make it short and sweet, but not too
               short so folks don&apos;t simply skip over it entirely.
             </Typography>
-            <div className={classes.heroButtons}>
+            <StyledHeroButtons>
               <Grid container spacing={2} justify="center">
                 <Grid item>
                   <Button variant="contained" color="primary">
@@ -111,21 +115,20 @@ export default function Album() {
                   </Button>
                 </Grid>
               </Grid>
-            </div>
+            </StyledHeroButtons>
           </Container>
-        </div>
-        <Container className={classes.cardGrid} maxWidth="md">
+        </StyledHeroContent>
+        <StyledCardGridContainer maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
             {cards.map(card => (
               <Grid item key={card} xs={12} sm={6} md={4}>
-                <Card className={classes.card}>
-                  <CardMedia
-                    className={classes.cardMedia}
+                <StyledCard>
+                  <StyledCardMedia
                     image="https://source.unsplash.com/random"
                     title="Image title"
                   />
-                  <CardContent className={classes.cardContent}>
+                  <StyledCardContent>
                     <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>
@@ -133,7 +136,7 @@ export default function Album() {
                       This is a media card. You can use this section to describe
                       the content.
                     </Typography>
-                  </CardContent>
+                  </StyledCardContent>
                   <CardActions>
                     <Button size="small" color="primary">
                       View
@@ -142,14 +145,14 @@ export default function Album() {
                       Edit
                     </Button>
                   </CardActions>
-                </Card>
+                </StyledCard>
               </Grid>
             ))}
           </Grid>
-        </Container>
+        </StyledCardGridContainer>
       </main>
       {/* Footer */}
-      <footer className={classes.footer}>
+      <StyledFooter>
         <Typography variant="h6" align="center" gutterBottom>
           Footer
         </Typography>
@@ -162,7 +165,7 @@ export default function Album() {
           Something here to give the footer a purpose!
         </Typography>
         <MadeWithLove />
-      </footer>
+      </StyledFooter>
       {/* End footer */}
     </>
   )
