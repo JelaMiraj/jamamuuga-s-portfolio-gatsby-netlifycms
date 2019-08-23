@@ -12,6 +12,7 @@ import {
   // useTheme,
 } from "@material-ui/core"
 // import {red} from "@material-ui/core/colors"
+import styled from "styled-components"
 import {PaletteOutline} from "mdi-material-ui"
 import {Link, Menu, MenuMobile} from "."
 // FIXME: Get color assignment issues sorted out so things like hard-coding aren't necessary.
@@ -34,6 +35,11 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
+const StyledAppBar = styled(AppBar)(props => ({
+  // color: "#f44336",
+  color: props.theme.palette.primary.main,
+}))
+
 const Header = props => {
   // const theme = useTheme()
   const classes = useStyles(props)
@@ -42,7 +48,7 @@ const Header = props => {
   // <AppBar id="appBar" color="#f44336">
   // <AppBar id="appBar" color="primary">
   return (
-    <AppBar id="appBar" color="primary">
+    <StyledAppBar id="appBar">
       <Toolbar>
         <Grid container justify="space-between" alignItems="center" spacing={2}>
           <Grid item>
@@ -75,7 +81,7 @@ const Header = props => {
         </Grid>
         <Grid item />
       </Toolbar>
-    </AppBar>
+    </StyledAppBar>
   )
 }
 
