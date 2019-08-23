@@ -17,9 +17,6 @@ import {Card, BlogRoll, Features, Layout, Link} from "../components"
 
 // TODO: Maybe use Card instead of or around Paper.
 
-// TODO: Try Babel-Blade (DRY GraphQL).
-
-// TODO: Figure out where to apply this root wrapper style.
 const StyledWrapperBox = styled(Box)`
     text-align: center;
     padding-top: ${props => props.theme.spacing(20)};
