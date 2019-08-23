@@ -16,8 +16,8 @@ import {Link, Menu, MenuMobile} from "."
 // FIXME: Get color assignment issues sorted out so things like hard-coding aren't necessary.
 
 const StyledAppBar = styled(AppBar)`
-  color: ${props => props.color || "#f44336"};
-  /* color: ${props => props.color || props.theme.palette.primary.main}; */
+  /* color: ${props => props.color || "#f44336"}; */
+  color: ${props => props.color || props.theme.palette.primary.main};
 `
 
 const StyledAvatar = styled(Avatar)`
