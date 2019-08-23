@@ -1,6 +1,6 @@
 module.exports = {
   presets: [
-    "regenerator-preset",
+    // "regenerator-preset",
     "@babel/preset-env",
     "@babel/preset-react",
     "babel-preset-gatsby",
