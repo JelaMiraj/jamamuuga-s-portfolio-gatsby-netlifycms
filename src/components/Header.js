@@ -17,32 +17,42 @@ import {PaletteOutline} from "mdi-material-ui"
 import {Link, Menu, MenuMobile} from "."
 // FIXME: Get color assignment issues sorted out so things like hard-coding aren't necessary.
 
-const useStyles = makeStyles(theme => ({
-  // appBar: {
-  //   color: "primary",
-  //   // color: theme.palette.primary,
-  // },
-  avatar: {
-    // backgroundColor: palette.tertiary,
-    // backgroundColor: "tertiary",
-    // backgroundColor: "secondary.light",
-    backgroundColor: theme.palette.secondary.light,
-  },
-  chip: {
-    // color: palette.secondary,
-    // color: "secondary.light",
-    color: theme.palette.secondary.light,
-  },
-}))
+// const useStyles = makeStyles(theme => ({
+//   // // appBar: {
+//   // //   color: "primary",
+//   // //   // color: theme.palette.primary,
+//   // // },
+//   // avatar: {
+//   //   // backgroundColor: palette.tertiary,
+//   //   // backgroundColor: "tertiary",
+//   //   // backgroundColor: "secondary.light",
+//   //   backgroundColor: theme.palette.secondary.light,
+//   // },
+//   // chip: {
+//   //   // color: palette.secondary,
+//   //   // color: "secondary.light",
+//   //   color: theme.palette.secondary.light,
+//   // },
+// }))
 
 const StyledAppBar = styled(AppBar)(props => ({
   color: "#f44336",
   // color: props.theme.palette.primary.main,
 }))
 
+const StyledAvatar = styled(Avatar)(props => ({
+    // backgroundColor: "secondary.light",
+    backgroundColor: props.theme.palette.secondary.light,
+}))
+
+const StyledChip = styled(Chip)(props => ({
+    // color: "secondary.light",
+    color: props.theme.palette.secondary.light,
+}))
+
 const Header = props => {
   // const theme = useTheme()
-  const classes = useStyles(props)
+  // const classes = useStyles(props)
 
   // <AppBar id="appBar" className={classes.appBar}>
   // <AppBar id="appBar" color="#f44336">
@@ -52,14 +62,13 @@ const Header = props => {
       <Toolbar>
         <Grid container justify="space-between" alignItems="center" spacing={2}>
           <Grid item>
-            <Chip
+            <StyledChip
               id="logo"
-              className={classes.chip}
               variant="default"
               avatar={
-                <Avatar id="logoIcon" className={classes.avatar}>
+                <StyledAvatar id="logoIcon">
                   <PaletteOutline />
-                </Avatar>
+                </StyledAvatar>
               }
               label={
                 <Link to="/">
