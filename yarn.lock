@@ -8287,13 +8287,13 @@ gatsby-background-image@^0.8.5:
     global "^4.4.0"
     prop-types "^15.7.2"
 
-gatsby-cli@^2.7.37, gatsby-cli@^2.7.38:
-  version "2.7.38"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.7.38.tgz#cd19cf21929aa4f3f0db64a7e83fea757104c936"
-  integrity sha512-l0rQFp0Y7bQzS0crb+fsZout48HpvvU4ub8IvQjWRDNYF7+LRmYiFzJVX2hDGYB83FdvanIzA7a3oZSw7A9enQ==
+gatsby-cli@^2.7.37, gatsby-cli@^2.7.39:
+  version "2.7.39"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.7.39.tgz#3984285adf8f4cc3b8b2a13662598a69ec2bf08c"
+  integrity sha512-tkZIafUw2ngNd+6uXH9R4eeW5uxhMP/0y+OtIw7XhYPDvEDpaFZOo/ZfjLYn2mMd1kRbNvbRnoU4ONA+94OL5A==
   dependencies:
-    "@babel/code-frame" "^7.0.0"
-    "@babel/runtime" "^7.0.0"
+    "@babel/code-frame" "^7.5.5"
+    "@babel/runtime" "^7.5.5"
     "@hapi/joi" "^15.1.1"
     better-opn "^0.1.4"
     bluebird "^3.5.5"
@@ -8308,7 +8308,7 @@ gatsby-cli@^2.7.37, gatsby-cli@^2.7.38:
     execa "^0.11.0"
     fs-exists-cached "^1.0.0"
     fs-extra "^4.0.3"
-    gatsby-telemetry "^1.1.17"
+    gatsby-telemetry "^1.1.18"
     hosted-git-info "^2.8.4"
     is-valid-path "^0.1.1"
     lodash "^4.17.15"
@@ -8574,13 +8574,13 @@ gatsby-source-filesystem@^2.1.14:
     valid-url "^1.0.9"
     xstate "^3.3.3"
 
-gatsby-telemetry@^1.1.17:
-  version "1.1.17"
-  resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-1.1.17.tgz#9ab6212b7dcbfc0b105ab3a341a53b3190995789"
-  integrity sha512-EkmkVVh9c9RDdiYOK0NlM/HbYuPTyqZv5Lsd4KdNMGcxzeQSmx8eglRuJxqOLWbAyeVG4vMkZVVZRz6oANwInA==
+gatsby-telemetry@^1.1.17, gatsby-telemetry@^1.1.18:
+  version "1.1.18"
+  resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-1.1.18.tgz#06ac76f247cc8e781614cfcb55b6cc970f016d97"
+  integrity sha512-FUVOwIrqqmAFtTAxdYVKlBP9UKPvSsP60sBBApuLPShzZI5OLsi5rfKXDT4SXgd1DZZz5igVhJfK694U6klvPA==
   dependencies:
-    "@babel/code-frame" "^7.0.0"
-    "@babel/runtime" "^7.0.0"
+    "@babel/code-frame" "^7.5.5"
+    "@babel/runtime" "^7.5.5"
     bluebird "^3.5.5"
     boxen "^3.2.0"
     ci-info "2.0.0"
