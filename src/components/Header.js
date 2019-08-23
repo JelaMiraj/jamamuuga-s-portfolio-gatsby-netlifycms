@@ -36,8 +36,8 @@ const useStyles = makeStyles(theme => ({
 }))
 
 const StyledAppBar = styled(AppBar)(props => ({
-  // color: "#f44336",
-  color: props.theme.palette.primary.main,
+  color: "#f44336",
+  // color: props.theme.palette.primary.main,
 }))
 
 const Header = props => {
