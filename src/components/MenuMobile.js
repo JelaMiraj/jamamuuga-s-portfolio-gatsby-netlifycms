@@ -1,7 +1,8 @@
 // import React, {useState} from "react"
 import React from "react"
 import {StaticQuery, graphql} from "gatsby"
-import {IconButton, makeStyles, Menu, MenuItem} from "@material-ui/core"
+import {IconButton, Menu, MenuItem} from "@material-ui/core"
+import styled from "styled-components"
 import {DotsVertical} from "mdi-material-ui"
 import {
   usePopupState,
@@ -11,11 +12,9 @@ import {
 import {Link, LinkExternal} from "."
 // import logo from "../images/logo.svg"
 
-const useStyles = makeStyles({
-  dotsVerticalIcon: {
-    color: "#efefef",
-  },
-})
+const StyledDotsVerticalIcon = styled(DotsVertical)`
+  color: #efefef;
+`
 
 const MenuMobile = props => {
   const popupState = usePopupState({
@@ -36,7 +35,6 @@ const MenuMobile = props => {
   // }
 
   // const {anchorEl} = state
-  const classes = useStyles(props)
   const {
     data: {
       site: {
@@ -48,7 +46,7 @@ const MenuMobile = props => {
   return (
     <>
       <IconButton {...bindTrigger(popupState)}>
-        <DotsVertical className={classes.dotsVerticalIcon} />
+        <StyledDotsVerticalIcon />
       </IconButton>
       {/* <ClickAwayListener onClickAway={popupState.Close}> */}
       {/* <Menu

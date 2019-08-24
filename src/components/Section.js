@@ -1,25 +1,24 @@
-import {Grid, makeStyles} from "@material-ui/core"
+import React from "react"
+import {Grid} from "@material-ui/core"
+import styled from "styled-components"
 // Originally from: https://github.com/danielmahon/gatsby-starter-procyon/blob/netlifycms/src/components/Section.js
 
-const useStyles = makeStyles({
-  grid: {
-    padding: "2em 0 4em 0",
-  },
-})
+const StyledSectionGrid = styled(Grid)`
+  padding: 2em 0 4em 0;
+`
 
 const Section = props => {
   const {children, classes} = props
 
   return (
-    <Grid
+    <StyledSectionGrid
       component="section"
-      className={classes.grid}
       spacing="2"
       justify="center"
-      container="true"
+      container
     >
       {children}
-    </Grid>
+    </StyledSectionGrid>
   )
 }
 

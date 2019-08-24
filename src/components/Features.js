@@ -8,14 +8,14 @@ const FeatureGrid = ({gridItems}) => (
     {gridItems.map(item => (
       <Grid item xs={6} key={item.text}>
         <Paper>
-          <section className="section">
+          <Box component="section" className="section">
             <Typography component="div" paragraph align="center">
               <Box width="240px" display="inline-block">
                 <PreviewCompatibleImage imageInfo={item} />
               </Box>
             </Typography>
             <Typography paragraph>{item.text}</Typography>
-          </section>
+          </Box>
         </Paper>
       </Grid>
     ))}

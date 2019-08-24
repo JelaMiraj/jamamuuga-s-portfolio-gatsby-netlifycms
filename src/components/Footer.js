@@ -13,10 +13,10 @@ import {
   ListItem,
   ListItemIcon,
   ListItemText,
-  makeStyles,
   Toolbar,
   Typography,
 } from "@material-ui/core"
+import styled from "styled-components"
 // import {Facebook as FacebookLogo, Instagram as InstagramLogo, Twitter as TwitterLogo, Vimeo as VimeoLogo} from "mdi-material-ui"
 import {Content, Link, LinkExternal, PreviewCompatibleImage as Image} from "."
 
@@ -26,39 +26,40 @@ import instagram from "../images/social/instagram.svg"
 import twitter from "../images/social/twitter.svg"
 import vimeo from "../images/social/vimeo.svg"
 
-const useStyles = makeStyles(theme => ({
-  contentGridBox: {
-    align: "center",
-    // backgroundColor: "black",
-    // backgroundColor: theme.palette.tertiary.darker,
-    backgroundColor: theme.palette.secondary.darker,
-    color: "hsl(0, 0%, 96%)",
-  },
-  divider: {
-    marginTop: "6",
-    marginBottom: "3",
-  },
-  footer: {
-    // backgroundColor: "black",
-    // backgroundColor: theme.palette.tertiary.darker,
-    backgroundColor: theme.palette.secondary.darker,
-    color: "hsl(0, 0%, 96%)",
-    marginBottom: "3",
-    whiteSpace: "nowrap",
-  },
-  footerButton: {
-    color: theme.palette.secondary.contrastText,
-  },
-  footerNavContainer: {
-    // backgroundColor: "black",
-    // backgroundColor: theme.palette.tertiary.darker,
-    backgroundColor: theme.palette.secondary.darker,
-    color: "hsl(0, 0%, 96%)",
-  },
-  menuButton: {
-    color: theme.palette.primary.contrastText,
-  },
-}))
+const StyledContentGridBox = styled(Box)`
+  align: center;
+  /* background-color: black; */
+  background-color: ${props => props.theme.palette.secondary.darker};
+  color: hsl(0, 0%, 96%);
+`
+
+const StyledDivider = styled(Divider)`
+  margin-top: 6;
+  margin-bottom: 3;
+`
+
+const StyledFooter = styled.footer`
+  /* background-color: black; */
+  background-color: ${props => props.theme.palette.secondary.darker};
+  color: hsl(0, 0%, 96%);
+  margin-bottom: 3;
+  white-space: nowrap;
+`
+
+// Make sure the button attribute passed later actually gets used.
+const StyledFooterButtonListItem = styled(ListItem)`
+  color: ${props => props.theme.palette.secondary.contrastText};
+`
+
+const StyledFooterNavContainer = styled(Container)`
+  /* background-color: black; */
+  background-color: ${props => props.theme.palette.secondary.darker};
+  color: hsl(0, 0%, 96%);
+`
+
+const StyledFooterIconButton = styled(IconButton)`
+  color: ${props => props.theme.palette.primary.contrastText};
+`
 
 const Footer = props => {
   const {
@@ -72,42 +73,42 @@ const Footer = props => {
       },
     },
   } = props
-  const classes = useStyles(props)
+  // const classes = useStyles(props)
 
   return (
     <>
-      <Divider className={classes.divider} />
-      <footer className={classes.footer} id="footer">
+      <StyledDivider />
+      <StyledFooter id="footer">
         <Box align="center" className="content">
           <img src={logo} alt="Kaldi" style={{width: "14em", height: "10em"}} />
         </Box>
-        <Box className={classes.contentGridBox}>
-          <Container className={classes.footerNavContainer}>
+        <StyledContentGridBox>
+          <StyledFooterNavContainer>
             <Grid container>
               <Grid item xs={4}>
                 <Box component="section" className="menu">
                   <List component="nav" className="menu-list">
-                    <ListItem button className={classes.footerButton}>
+                    <StyledFooterButtonListItem button>
                       <Link to="/" className="navbar-item">
                         <ListItemText>Home</ListItemText>
                       </Link>
-                    </ListItem>
-                    <ListItem button className={classes.footerButton}>
+                    </StyledFooterButtonListItem>
+                    <StyledFooterButtonListItem button>
                       <Link className="navbar-item" to="/about">
                         <ListItemText>About</ListItemText>
                       </Link>
-                    </ListItem>
-                    <ListItem button className={classes.footerButton}>
+                    </StyledFooterButtonListItem>
+                    <StyledFooterButtonListItem button>
                       <Link className="navbar-item" to="/portfolio">
                         <ListItemText>Portfolio</ListItemText>
                       </Link>
-                    </ListItem>
-                    {/* <ListItem button className={classes.footerButton}>
+                    </StyledFooterButtonListItem>
+                    {/* <StyledFooterButtonListItem button>
                       <Link className="navbar-item" to="/contact/examples">
                         <ListItemText>Form Examples</ListItemText>
                       </Link>
-                    </ListItem> */}
-                    <ListItem button className={classes.footerButton}>
+                    </StyledFooterButtonListItem> */}
+                    <StyledFooterButtonListItem button>
                       <LinkExternal
                         className="navbar-item"
                         href="/admin/"
@@ -116,69 +117,69 @@ const Footer = props => {
                       >
                         <ListItemText>Admin</ListItemText>
                       </LinkExternal>
-                    </ListItem>
+                    </StyledFooterButtonListItem>
                   </List>
                 </Box>
               </Grid>
               <Grid item xs={4}>
                 <Box component="section">
                   <List component="nav" className="menu-list">
-                    {/* <ListItem button className={classes.footerButton}>
+                    {/* <StyledFooterButtonListItem button>
                       <Link className="navbar-item" to="/blog">
                         <ListItemText>Latest Stories</ListItemText>
                       </Link>
-                    </ListItem> */}
-                    <ListItem button className={classes.footerButton}>
+                    </StyledFooterButtonListItem> */}
+                    <StyledFooterButtonListItem button>
                       <Link className="navbar-item" to="/contact">
                         <ListItemText>Contact</ListItemText>
                       </Link>
-                    </ListItem>
+                    </StyledFooterButtonListItem>
                   </List>
                 </Box>
               </Grid>
               <Grid item xs={4} className="social">
                 <LinkExternal title="facebook" href="https://facebook.com">
-                  <IconButton className={classes.footerButton}>
+                  <StyledFooterIconButton>
                     <img
                       src={facebook}
                       alt="Facebook"
                       style={{width: "1em", height: "1em"}}
                     />
-                  </IconButton>
+                  </StyledFooterIconButton>
                 </LinkExternal>
                 <LinkExternal title="twitter" href="https://twitter.com">
-                  <IconButton className={classes.footerButton}>
+                  <StyledFooterIconButton>
                     <img
                       className="fas fa-lg"
                       src={twitter}
                       alt="Twitter"
                       style={{width: "1em", height: "1em"}}
                     />
-                  </IconButton>
+                  </StyledFooterIconButton>
                 </LinkExternal>
                 <LinkExternal title="instagram" href="https://instagram.com">
-                  <IconButton className={classes.footerButton}>
+                  <StyledFooterIconButton>
                     <img
                       src={instagram}
                       alt="Instagram"
                       style={{width: "1em", height: "1em"}}
                     />
-                  </IconButton>
+                  </StyledFooterIconButton>
                 </LinkExternal>
                 <LinkExternal title="vimeo" href="https://vimeo.com">
-                  <IconButton className={classes.footerButton}>
+                  <StyledFooterIconButton>
                     <img
                       src={vimeo}
                       alt="Vimeo"
                       style={{width: "1em", height: "1em"}}
                     />
-                  </IconButton>
+                  </StyledFooterIconButton>
                 </LinkExternal>
               </Grid>
             </Grid>
-          </Container>
-        </Box>
-      </footer>
+          </StyledFooterNavContainer>
+        </StyledContentGridBox>
+      </StyledFooter>
     </>
   )
 }

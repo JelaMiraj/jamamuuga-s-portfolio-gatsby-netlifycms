@@ -1,47 +1,68 @@
 import React from "react"
-import {Container, makeStyles, Typography} from "@material-ui/core"
+import {Box, Container, Typography} from "@material-ui/core"
+import styled from "styled-components"
 import {BlogRoll, Content, Layout} from "../../components"
 
-const useStyles = makeStyles(theme => ({
-  typography: {
-    // boxShadow: "0.5rem 0 0 #f40, -0.5rem 0 0 #f40",
-    boxShadow: `0.5rem 0 0 ${theme.palette.primary[500]}, -0.5rem 0 0 ${
-      theme.palette.primary[500]
-    }`,
-    // backgroundColor: "#f40",
-    backgroundColor: theme.palette.primary[500],
-    color: "white",
-    padding: "1rem",
-  },
-}))
+// TODO: import more inline styling to here.
+const StyledBackgroundImageBox = styled(Box)`
+  width: 100vw;
+  height: 400px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin: 5em -50vw;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0 !important;
+`
+
+const StyledTypography = styled(Typography)`
+  /* Contains .full-width-image-container and .margin-top-0 */
+  /* box-shadow: 0.5rem 0 0 #f40, -0.5rem 0 0 #f40; */
+  box-shadow: 0.5rem 0 0 ${props => props.theme.palette.primary.main}, -0.5rem 0 0 ${props => props.theme.palette.primary.main};
+  /* background-color: #f40; */
+  background-color: ${props => props.theme.palette.primary.main};
+  color: white;
+  padding: 1rem;
+  width: 100vw;
+  height: 400px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin: 5em -50vw;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0 !important;
+`
 
 const BlogIndexPage = props => {
-  const classes = useStyles(props)
-
   return (
     <Layout>
-      <div
-        className="full-width-image-container margin-top-0"
+      <StyledBackgroundImageBox
         style={{
           backgroundImage: `url("/images/blog-index.jpg")`,
         }}
       >
-        <Typography
-          variant="h1"
-          className={classes.typography}
+        <StyledTypography
+          variant="h3"
           fontWeight="fontWeightBold"
         >
-          {/*                 className="is-size-1" */}
           Latest Stories
-        </Typography>
-      </div>
-      <section className="section">
+        </StyledTypography>
+      </StyledBackgroundImageBox>
+      <Box component="section">
         <Container className="container">
-          <div className="content">
+          <Box className="content">
             <BlogRoll />
-          </div>
+          </Box>
         </Container>
-      </section>
+      </Box>
     </Layout>
   )
 }

@@ -2,22 +2,21 @@ import React from "react"
 import {kebabCase} from "lodash"
 import {graphql} from "gatsby"
 import {
+  Box,
   Container,
   Grid,
   Hidden,
   List,
   ListItem,
   ListItemText,
-  makeStyles,
   Typography,
 } from "@material-ui/core"
+import styled from "styled-components"
 import {Helmet, Layout, Link} from "../../components"
 
-const useStyles = makeStyles({
-  contentBox: {
-    marginBottom: "6rem",
-  },
-})
+const StyledContentBoxGridItem = styled(Grid)`
+  margin-bottom: 6rem;
+`
 
 const TagsPage = ({
   data: {
@@ -27,16 +26,14 @@ const TagsPage = ({
     },
   },
 }) => {
-  const classes = useStyles()
-
   return (
     <Layout>
-      <section className="section">
+      <Box component="section" className="section">
         <Helmet title={`Tags | ${title}`} />
         <Container className="content">
           <Grid container>
             <Grid item md={1} implementation="css" smDown component={Hidden} />
-            <Grid item xs={10} className={classes.contentBox}>
+            <StyledContentBoxGridItem item xs={10}>
               <Typography variant="h3" fontWeight="600" className="title">
                 Tags
               </Typography>
@@ -51,10 +48,10 @@ const TagsPage = ({
                   </ListItem>
                 ))}
               </List>
-            </Grid>
+            </StyledContentBoxGridItem>
           </Grid>
         </Container>
-      </section>
+      </Box>
     </Layout>
   )
 }

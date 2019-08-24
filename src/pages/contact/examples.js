@@ -1,5 +1,6 @@
 import React from "react"
 import {
+  Box,
   Container,
   List,
   ListItem,
@@ -14,9 +15,9 @@ const Index = props => {
 
   return (
     <Layout>
-      <section className="section">
+      <Box component="section" className="section">
         <Container className="container">
-          <div className="content">
+          <Box className="content">
             <Typography variant="h1">Hi people</Typography>
             <Typography paragraph>
               This is an example site integrating Netlify’s form handling with
@@ -57,9 +58,9 @@ const Index = props => {
               />{" "}
               for a working example.
             </Typography>
-          </div>
+          </Box>
         </Container>
-      </section>
+      </Box>
     </Layout>
   )
 }

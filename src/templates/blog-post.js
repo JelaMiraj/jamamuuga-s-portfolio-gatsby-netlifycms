@@ -25,7 +25,7 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
-    <section className="section">
+    <Box component="section" className="section">
       {helmet || ""}
       <Container className="container content">
         <Grid container>
@@ -53,7 +53,7 @@ export const BlogPostTemplate = ({
           </Grid>
         </Grid>
       </Container>
-    </section>
+    </Box>
   )
 }
 

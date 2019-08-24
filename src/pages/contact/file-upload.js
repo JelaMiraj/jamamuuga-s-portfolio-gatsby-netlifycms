@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import {navigate} from "gatsby"
-import {Button, Container, Typography} from "@material-ui/core"
+import {Box, Button, Container, Hidden, Typography} from "@material-ui/core"
 import {Content, Layout, Link} from "../../components"
 // FIXME: Use "Reaptcha" on all form submissions (both text & file upload).
 // TODO: Port this to material-ui-popup-state
@@ -17,7 +17,7 @@ const encode = data => {
 }
 
 const Contact = props => {
-  const {classes} = props
+  // const {classes} = props
   const [state, setState] = useState({})
 
   const handleChange = event => {
@@ -44,9 +44,9 @@ const Contact = props => {
 
   return (
     <Layout>
-      <section className="section">
+      <Box component="section" className="section">
         <Container className="container">
-          <div className="content">
+          <Box className="content">
             <Typography variant="h1">File Upload</Typography>
             <form
               name="file-upload"
@@ -100,9 +100,9 @@ const Contact = props => {
                 </button>
               </div>
             </form>
-          </div>
+          </Box>
         </Container>
-      </section>
+      </Box>
     </Layout>
   )
 }

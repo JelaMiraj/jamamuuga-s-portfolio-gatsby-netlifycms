@@ -4,14 +4,12 @@ import {
   CardActions,
   CardContent,
   CardHeader,
-  makeStyles,
 } from "@material-ui/core"
+import styled from "styled-components"
 
-const useStyles = makeStyles({
-  cardActions: {
-    float: "right",
-  },
-})
+const StyledCardActions = styled(CardActions)`
+    float: right;
+`
 
 const Card = ({
   children,
@@ -22,8 +20,6 @@ const Card = ({
   action,
   style = {},
 }) => {
-  const classes = useStyles()
-
   return (
     <MuiCard style={style}>
       <CardHeader
@@ -32,12 +28,10 @@ const Card = ({
         subheader={subheader || null}
       />
       <CardContent>{children}</CardContent>
-      <CardActions className={classes.cardActions}>{action}</CardActions>
+      <StyledCardActions>{action}</StyledCardActions>
     </MuiCard>
   )
 }
-
-//     <CardActions style={{float: "right"}}>{action}</CardActions>
 
 export default Card
 // export {Card}

@@ -5,39 +5,36 @@ import {
   Grid,
   List,
   ListItem,
-  makeStyles,
   Paper,
   Typography,
 } from "@material-ui/core"
+import styled from "styled-components"
 // TODO: Maybe use Card and/or Paper somewhere in Pricing.
 
-const useStyles = makeStyles(theme => ({
-  priceText: {
-    fontWeight: "fontWeightBold",
-    color: theme.palette.primary,
-  },
-  sectionBox: {},
-}))
+const StyledPriceTextTypography = styled(Typography)`
+  font-weight: ${props => props.theme.typography.fontWeightBold};
+  color: ${props => props.theme.palette.primary};
+`
+
+// Don't forget to use component="section"
+// const StyledSectionBox = styled(Box)`
+// `
 
 const Pricing = ({data}) => {
-  const classes = useStyles()
-  // const theme = useTheme()
-
   return (
     <Grid container>
       {data.map(price => (
         <Grid item xs={4} key={price.plan}>
-          <Box component="section" className={classes.sectionBox}>
+          <Box component="section">
             <Typography variant="h4" align="center" fontWeight="600">
               {price.plan}
             </Typography>
-            <Typography
+            <StyledPriceTextTypography
               variant="h2"
               align="center"
-              className={classes.priceText}
             >
               ${price.price}
-            </Typography>
+            </StyledPriceTextTypography>
             <Typography paragraph fontWeight="600">
               {price.description}
             </Typography>

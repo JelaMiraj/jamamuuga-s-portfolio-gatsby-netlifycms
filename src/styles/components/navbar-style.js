@@ -1,12 +1,9 @@
-import {styled} from "@material-ui/core"
+import styled from "styled-components"
 
-const NavbarStyle = styled("div")({
-  // const NavbarStyle = makeStyles({
-  navbar: {
-    "& navbar-menu": {
-      "box-shadow": "none !important {}",
-    },
-  },
-})
+const NavbarStyle = styled.div`
+  & .navbar-menu {
+    box-shadow: none !important
+  }
+`
 
 export default NavbarStyle

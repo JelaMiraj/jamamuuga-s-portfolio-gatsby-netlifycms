@@ -16,21 +16,21 @@ export const AboutPageTemplate = ({title, content, contentComponent}) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section--gradient">
+    <Box component="section" className="section section--gradient">
       <Container>
         <Grid container>
           <Grid item md={1} implementation="css" smDown component={Hidden} />
           <Grid item xs={10}>
-            <section className="section">
+            <Box component="section" className="section">
               <Typography variant="h4" fontWeight="600" className="title">
                 {title}
               </Typography>
               <PageContent content={content} />
-            </section>
+            </Box>
           </Grid>
         </Grid>
       </Container>
-    </section>
+    </Box>
   )
 }
 

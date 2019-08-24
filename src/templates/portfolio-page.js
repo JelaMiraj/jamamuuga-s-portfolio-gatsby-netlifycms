@@ -8,10 +8,10 @@ import {
   GridList,
   GridListTile,
   Hidden,
-  makeStyles,
   Paper,
   Typography,
 } from "@material-ui/core"
+import styled from "styled-components"
 import {
   Features,
   Layout,
@@ -22,34 +22,57 @@ import {
 // TODO: Maybe use Cards, Lists, and/or Grids instead of GridList
 // FIXME: Fix Grid & GridList with images between text grid & testimonial area. That area isn't loading the images & is complaining about duplicate keys named "NA".
 
-const useStyles = makeStyles(theme => ({
-  backgroundImageBox: {
-    // TODO: Add full-width-image from old stylesheet.
-    // TODO: Add margin-top-0 from old stylesheet.
-  },
-  fullWidthImageBox: {
-    // TODO: Add full-width-image-container from old stylesheet.
-  },
-  sectionBox: {
-    paddingTop: "2",
-    paddingBottom: "2",
-  },
-  sectionBoxGradient: {
-    // TODO: Add section--gradient from old stylesheet.
-    paddingTop: "2",
-    paddingBottom: "2",
-  },
-  title: {
-    // boxShadow: "0.5rem 0 0 #f40, -0.5rem 0 0 #f40",
-    boxShadow: `0.5rem 0 0 ${theme.palette.primary[500]}, -0.5rem 0 0 ${
-      theme.palette.primary[500]
-    }`,
-    // backgroundColor: "#f40",
-    backgroundColor: theme.palette.primary[500],
-    color: "white",
-    padding: "1rem",
-  },
-}))
+const StyledBackgroundImageBox = styled(Box)`
+  /* Contains .full-width-image-container and .margin-top-0 */
+  width: 100vw;
+  height: 400px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin: 5em -50vw;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0 !important;
+  `
+
+const StyledFullWidthImageBox = styled(Box)`
+  /* Contains .full-width-image-container */
+  width: 100vw;
+  height: 400px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin: 5em -50vw;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+const StyledSectionBox = styled(Box)`
+  padding-top: 2;
+  padding-bottom: 2;
+`
+
+const StyledSectionBoxGradient = styled(Box)`
+  /* TODO: Add section--gradient from old stylesheet. */
+  padding-top: 2;
+  padding-bottom: 2;
+`
+
+const StyledTitleTypography = styled(Typography)`
+  /* box-shadow: 0.5rem 0 0 #f40, -0.5rem 0 0 #f40; */
+  box-shadow: 0.5rem 0 0 ${props => props.theme.palette.primary.main}, -0.5rem 0 0 ${props => props.theme.palette.primary.main};
+  /* background-color: #f40; */
+  background-color: ${props => props.theme.palette.primary.main};
+  color: white;
+  padding: 1rem;
+`
+
 export const PortfolioPageTemplate = ({
   image,
   title,
@@ -61,18 +84,15 @@ export const PortfolioPageTemplate = ({
   fullImage,
   pricing,
 }) => {
-  const classes = useStyles()
-
   return (
-    <Box component="section" className={classes.sectionBoxGradient}>
+    <StyledSectionBoxGradient component="section">
       <Container>
-        <Box component="section" className={classes.sectionBox}>
+        <StyledSectionBox component="section">
           <Grid container>
             <Grid item md={1} implementation="css" smDown component={Hidden} />
             <Grid item xs={10}>
               <Box className="content">
-                <Box
-                  className={classes.backgroundImageBox}
+                <StyledBackgroundImageBox
                   style={{
                     backgroundImage: `url(${
                       image.childImageSharp
@@ -81,14 +101,13 @@ export const PortfolioPageTemplate = ({
                     })`,
                   }}
                 >
-                  <Typography
+                  <StyledTitleTypography
                     variant="h3"
                     fontWeight="600"
-                    className={classes.title}
                   >
                     {title}
-                  </Typography>
-                </Box>
+                  </StyledTitleTypography>
+                </StyledBackgroundImageBox>
                 <Grid container>
                   <Grid item xs={7}>
                     <Typography variant="h4" fontWeight="600">
@@ -134,8 +153,7 @@ export const PortfolioPageTemplate = ({
                   </Grid>
                 </Box>
                 <Testimonials testimonials={testimonials} />
-                <Box
-                  className={classes.fullWidthImageBox}
+                <StyledFullWidthImageBox
                   style={{
                     backgroundImage: `url(${
                       fullImage.childImageSharp
@@ -154,9 +172,9 @@ export const PortfolioPageTemplate = ({
               </Box>
             </Grid>
           </Grid>
-        </Box>
+        </StyledSectionBox>
       </Container>
-    </Box>
+    </StyledSectionBoxGradient>
   )
 }
 

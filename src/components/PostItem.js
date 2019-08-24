@@ -1,5 +1,5 @@
 import React from "react"
-import {Typography} from "@material-ui/core"
+import {Box, Typography} from "@material-ui/core"
 import Link from "./Link"
 // Intended for use in site or blog index page.
 
@@ -14,7 +14,7 @@ const PostItem = ({post, logged}) => {
   }
 
   return (
-    <div className="content" style={cntBorder} key={post.id}>
+    <Box className="content" style={cntBorder} key={post.id}>
       {/** @2018/12/17 */}
       <img
         src={post.frontmatter.image.childImageSharp.fluid.src}
@@ -29,8 +29,8 @@ const PostItem = ({post, logged}) => {
           >
             {post.frontmatter.title}
           </Link>
-          <span> &bull; </span>
-          <small>{post.frontmatter.date}</small>
+          <Typography component="span"> &bull; </Typography>
+          <Typography component="small">{post.frontmatter.date}</Typography>
         </Typography>
         <Typography paragraph>
           <span className="post-excerpt">{post.excerpt}</span>
@@ -42,7 +42,7 @@ const PostItem = ({post, logged}) => {
           </Link>
         </Typography>
       </div>
-    </div>
+    </Box>
   )
 }
 

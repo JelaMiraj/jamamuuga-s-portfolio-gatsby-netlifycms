@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import {navigate} from "gatsby"
-import {Container, Typography} from "@material-ui/core"
+import {Box, Container, Typography} from "@material-ui/core"
 import {Content, Layout} from "../../components"
 // FIXME: Use "Reaptcha" on all form submissions (both text & file upload).
 // TODO: Port this to material-ui-popup-state
@@ -13,7 +13,7 @@ const encode = data =>
     .join("&")
 
 const Index = props => {
-  const {classes} = props
+  // const {classes} = props
   // Commented out old state variable from the original class version. Have since changed to functions/hooks.
   // const state = {isValidated: false}
   const [state, setState] = useState({})
@@ -39,9 +39,9 @@ const Index = props => {
 
   return (
     <Layout>
-      <section className="section">
+      <Box component="section" className="section">
         <Container className="container">
-          <div className="content">
+          <Box className="content">
             <Typography variant="h1">Contact</Typography>
             <form
               name="contact"
@@ -109,9 +109,9 @@ const Index = props => {
                 </button>
               </div>
             </form>
-          </div>
+          </Box>
         </Container>
-      </section>
+      </Box>
     </Layout>
   )
 }

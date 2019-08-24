@@ -1,28 +1,28 @@
 import React from "react"
 import {PropTypes} from "prop-types"
 import {ScrollingProvider} from "react-scroll-section"
-import {Container, Grid, makeStyles, Typography} from "@material-ui/core"
+import {Container, Grid, Typography} from "@material-ui/core"
+import styled from "styled-components"
 // import GlobalStyle from "../styles/global-style"
 import {Footer, Header} from "."
 // import {Navbar} from "."
 import useSiteMetadata from "./SiteMetadata"
 
-const useStyles = makeStyles({
-  gridContainer: {
-    marginTop: 94,
-  },
-  contentBox: {
-    maxWidth: "calc(1136px - 60px)",
-    width: "calc(100% - 60px)",
-  },
-  title: {
-    textAlign: "center",
-  },
-})
+const StyledGridContainer = styled(Grid)`
+  margin-top: 94;
+`
+
+const StyledContentBoxGridItem = styled(Grid)`
+  max-width: calc(1136px - 60px);
+  width: calc(100% - 60px);
+`
+
+const StyledTitleTypography = styled(Typography)`
+  text-align: center;
+`
 
 // TODO: Find out if we need any <GlobalStyle />
 const Layout = props => {
-  const classes = useStyles(props)
   const {title, children} = props
 
   return (
@@ -32,22 +32,21 @@ const Layout = props => {
           {/* <Helmet /> */}
           {/* <GlobalStyle /> */}
           <Header />
-          <Grid
-            className={classes.gridContainer}
+          <StyledGridContainer
             container
             direction="row"
             justify="center"
           >
-            <Grid className={classes.contentBox} item>
+            <StyledContentBoxGridItem item>
               {title ? (
-                <Typography className={classes.title} variant="h2" gutterBottom>
+                <StyledTitleTypography variant="h2" gutterBottom>
                   {title}
-                </Typography>
+                </StyledTitleTypography>
               ) : null}
               {children}
               <Footer />
-            </Grid>
-          </Grid>
+            </StyledContentBoxGridItem>
+          </StyledGridContainer>
         </Container>
       </ScrollingProvider>
     </>

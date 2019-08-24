@@ -33,16 +33,16 @@ const BlogRoll = props => {
                 ) : null}
                 <Typography component="div" paragraph className="post-meta">
                   <Link
-                    variant="h2"
-                    className="title has-text-primary is-size-4"
+                    variant="h5"
+                    className="title has-text-primary"
                     to={post.fields.slug}
                   >
                     {post.frontmatter.title}
                   </Link>
                   <Typography display="inline"> &bull; </Typography>
                   <Typography
-                    variant="h3"
-                    className="subtitle is-size-5 is-block"
+                    variant="h6"
+                    className="subtitle is-block"
                   >
                     {post.frontmatter.date}
                   </Typography>
