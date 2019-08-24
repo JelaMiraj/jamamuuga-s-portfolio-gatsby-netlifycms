@@ -8,7 +8,7 @@ import {
 import styled from "styled-components"
 
 const StyledCardActions = styled(CardActions)`
-    float: right;
+  float: right;
 `
 
 const Card = ({
@@ -19,19 +19,17 @@ const Card = ({
   avatar,
   action,
   style = {},
-}) => {
-  return (
-    <MuiCard style={style}>
-      <CardHeader
-        avatar={avatar || null}
-        title={title}
-        subheader={subheader || null}
-      />
-      <CardContent>{children}</CardContent>
-      <StyledCardActions>{action}</StyledCardActions>
-    </MuiCard>
-  )
-}
+}) => (
+  <MuiCard style={style}>
+    <CardHeader
+      avatar={avatar || null}
+      title={title}
+      subheader={subheader || null}
+    />
+    <CardContent>{children}</CardContent>
+    <StyledCardActions>{action}</StyledCardActions>
+  </MuiCard>
+)
 
 export default Card
 // export {Card}

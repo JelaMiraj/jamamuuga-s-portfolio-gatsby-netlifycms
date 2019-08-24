@@ -32,11 +32,7 @@ const Layout = props => {
           {/* <Helmet /> */}
           {/* <GlobalStyle /> */}
           <Header />
-          <StyledGridContainer
-            container
-            direction="row"
-            justify="center"
-          >
+          <StyledGridContainer container direction="row" justify="center">
             <StyledContentBoxGridItem item>
               {title ? (
                 <StyledTitleTypography variant="h2" gutterBottom>

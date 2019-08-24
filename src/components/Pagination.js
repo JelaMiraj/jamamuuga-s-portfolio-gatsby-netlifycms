@@ -41,9 +41,7 @@ const Pagination = ({currentPage, numPages}) => {
         </Link>
       )}
       {Array.from({length: numPages}, (_, i) => (
-        <StyledListItem
-          key={`pagination-number${i + 1}`}
-        >
+        <StyledListItem key={`pagination-number${i + 1}`}>
           <Link
             to={`/${i === 0 ? "" : i + 1}`}
             style={linkStyle(i, currentPage)}

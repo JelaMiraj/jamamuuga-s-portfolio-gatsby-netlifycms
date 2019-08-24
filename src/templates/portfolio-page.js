@@ -36,7 +36,7 @@ const StyledBackgroundImageBox = styled(Box)`
   justify-content: center;
   align-items: center;
   margin-top: 0 !important;
-  `
+`
 
 const StyledFullWidthImageBox = styled(Box)`
   /* Contains .full-width-image-container */
@@ -66,7 +66,8 @@ const StyledSectionBoxGradient = styled(Box)`
 
 const StyledTitleTypography = styled(Typography)`
   /* box-shadow: 0.5rem 0 0 #f40, -0.5rem 0 0 #f40; */
-  box-shadow: 0.5rem 0 0 ${props => props.theme.palette.primary.main}, -0.5rem 0 0 ${props => props.theme.palette.primary.main};
+  box-shadow: 0.5rem 0 0 ${props => props.theme.palette.primary.main},
+    -0.5rem 0 0 ${props => props.theme.palette.primary.main};
   /* background-color: #f40; */
   background-color: ${props => props.theme.palette.primary.main};
   color: white;
@@ -83,100 +84,95 @@ export const PortfolioPageTemplate = ({
   testimonials,
   fullImage,
   pricing,
-}) => {
-  return (
-    <StyledSectionBoxGradient component="section">
-      <Container>
-        <StyledSectionBox component="section">
-          <Grid container>
-            <Grid item md={1} implementation="css" smDown component={Hidden} />
-            <Grid item xs={10}>
-              <Box className="content">
-                <StyledBackgroundImageBox
-                  style={{
-                    backgroundImage: `url(${
-                      image.childImageSharp
-                        ? image.childImageSharp.fluid.src
-                        : image
-                    })`,
-                  }}
-                >
-                  <StyledTitleTypography
-                    variant="h3"
-                    fontWeight="600"
-                  >
-                    {title}
-                  </StyledTitleTypography>
-                </StyledBackgroundImageBox>
-                <Grid container>
-                  <Grid item xs={7}>
-                    <Typography variant="h4" fontWeight="600">
-                      {heading}
-                    </Typography>
-                    <Typography paragraph>{description}</Typography>
+}) => (
+  <StyledSectionBoxGradient component="section">
+    <Container>
+      <StyledSectionBox component="section">
+        <Grid container>
+          <Grid item md={1} implementation="css" smDown component={Hidden} />
+          <Grid item xs={10}>
+            <Box className="content">
+              <StyledBackgroundImageBox
+                style={{
+                  backgroundImage: `url(${
+                    image.childImageSharp
+                      ? image.childImageSharp.fluid.src
+                      : image
+                  })`,
+                }}
+              >
+                <StyledTitleTypography variant="h3" fontWeight="600">
+                  {title}
+                </StyledTitleTypography>
+              </StyledBackgroundImageBox>
+              <Grid container>
+                <Grid item xs={7}>
+                  <Typography variant="h4" fontWeight="600">
+                    {heading}
+                  </Typography>
+                  <Typography paragraph>{description}</Typography>
+                </Grid>
+              </Grid>
+              <Features gridItems={intro.blurbs} />
+              <Grid container className="columns">
+                <Grid item xs={7}>
+                  <Typography variant="h4" fontWeight="600">
+                    {main.heading}
+                  </Typography>
+                  <Typography paragraph>{main.description}</Typography>
+                </Grid>
+              </Grid>
+              <Box className="tile is-ancestor">
+                <Grid container className="tile is-vertical">
+                  <Grid item>
+                    <GridList className="tile">
+                      <GridListTile className="tile is-parent is-vertical">
+                        <article className="tile is-child">
+                          <PreviewCompatibleImage imageInfo={main.image1} />
+                        </article>
+                      </GridListTile>
+                      <GridListTile className="tile is-parent">
+                        <article className="tile is-child">
+                          <PreviewCompatibleImage imageInfo={main.image2} />
+                        </article>
+                      </GridListTile>
+                    </GridList>
+                  </Grid>
+                  <Grid item>
+                    <GridList>
+                      <GridListTile className="tile is-parent">
+                        <article className="tile is-child">
+                          <PreviewCompatibleImage imageInfo={main.image3} />
+                        </article>
+                      </GridListTile>
+                    </GridList>
                   </Grid>
                 </Grid>
-                <Features gridItems={intro.blurbs} />
-                <Grid container className="columns">
-                  <Grid item xs={7}>
-                    <Typography variant="h4" fontWeight="600">
-                      {main.heading}
-                    </Typography>
-                    <Typography paragraph>{main.description}</Typography>
-                  </Grid>
-                </Grid>
-                <Box className="tile is-ancestor">
-                  <Grid container className="tile is-vertical">
-                    <Grid item>
-                      <GridList className="tile">
-                        <GridListTile className="tile is-parent is-vertical">
-                          <article className="tile is-child">
-                            <PreviewCompatibleImage imageInfo={main.image1} />
-                          </article>
-                        </GridListTile>
-                        <GridListTile className="tile is-parent">
-                          <article className="tile is-child">
-                            <PreviewCompatibleImage imageInfo={main.image2} />
-                          </article>
-                        </GridListTile>
-                      </GridList>
-                    </Grid>
-                    <Grid item>
-                      <GridList>
-                        <GridListTile className="tile is-parent">
-                          <article className="tile is-child">
-                            <PreviewCompatibleImage imageInfo={main.image3} />
-                          </article>
-                        </GridListTile>
-                      </GridList>
-                    </Grid>
-                  </Grid>
-                </Box>
-                <Testimonials testimonials={testimonials} />
-                <StyledFullWidthImageBox
-                  style={{
-                    backgroundImage: `url(${
-                      fullImage.childImageSharp
-                        ? fullImage.childImageSharp.fluid.src
-                        : fullImage
-                    })`,
-                  }}
-                />
-                <Typography variant="h3" fontWeight="600">
-                  {pricing.heading}
-                </Typography>
-                <Typography variant="h6" paragraph>
-                  {pricing.description}
-                </Typography>
-                <Pricing data={pricing.plans} />
               </Box>
-            </Grid>
+              <Testimonials testimonials={testimonials} />
+              <StyledFullWidthImageBox
+                style={{
+                  backgroundImage: `url(${
+                    fullImage.childImageSharp
+                      ? fullImage.childImageSharp.fluid.src
+                      : fullImage
+                  })`,
+                }}
+              />
+              <Typography variant="h3" fontWeight="600">
+                {pricing.heading}
+              </Typography>
+              <Typography variant="h6" paragraph>
+                {pricing.description}
+              </Typography>
+              <Pricing data={pricing.plans} />
+            </Box>
           </Grid>
-        </StyledSectionBox>
-      </Container>
-    </StyledSectionBoxGradient>
-  )
-}
+        </Grid>
+      </StyledSectionBox>
+    </Container>
+  </StyledSectionBoxGradient>
+)
 
 PortfolioPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),

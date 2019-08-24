@@ -57,12 +57,12 @@ const StyledCardMedia = styled(CardMedia)`
 `
 
 const StyledCardContent = styled(CardContent)`
-    flex-grow: 1;
+  flex-grow: 1;
 `
 
 const StyledFooter = styled.footer`
-    background-color: ${props => props.theme.palette.background.paper};
-    padding: ${props => props.theme.spacing(6)};
+  background-color: ${props => props.theme.palette.background.paper};
+  padding: ${props => props.theme.spacing(6)};
 `
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -73,7 +73,7 @@ export default function Album() {
       <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
-          <StyledCameraIcon/>
+          <StyledCameraIcon />
           <Typography variant="h6" color="inherit" noWrap>
             Album layout
           </Typography>

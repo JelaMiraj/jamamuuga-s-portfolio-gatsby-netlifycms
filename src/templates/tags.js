@@ -17,8 +17,7 @@ const StyledGridItemContent = styled(Grid)`
   margin-bottom: 6rem;
 `
 
-const StyledSectionBox = styled(Box)`
-`
+const StyledSectionBox = styled(Box)``
 
 const StyledSectionBoxGradient = styled(Box)`
   /* TODO: Import section--gradient from old stylesheet. */
@@ -30,9 +29,7 @@ const TagRoute = props => {
     <ListItem key={post.node.fields.slug}>
       <ListItemText>
         <Link to={post.node.fields.slug}>
-          <Typography variant="h4">
-            {post.node.frontmatter.title}
-          </Typography>
+          <Typography variant="h4">{post.node.frontmatter.title}</Typography>
         </Link>
       </ListItemText>
     </ListItem>

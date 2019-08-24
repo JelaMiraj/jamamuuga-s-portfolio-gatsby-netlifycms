@@ -22,7 +22,8 @@ const StyledBackgroundImageBox = styled(Box)`
 const StyledTypography = styled(Typography)`
   /* Contains .full-width-image-container and .margin-top-0 */
   /* box-shadow: 0.5rem 0 0 #f40, -0.5rem 0 0 #f40; */
-  box-shadow: 0.5rem 0 0 ${props => props.theme.palette.primary.main}, -0.5rem 0 0 ${props => props.theme.palette.primary.main};
+  box-shadow: 0.5rem 0 0 ${props => props.theme.palette.primary.main},
+    -0.5rem 0 0 ${props => props.theme.palette.primary.main};
   /* background-color: #f40; */
   background-color: ${props => props.theme.palette.primary.main};
   color: white;
@@ -41,30 +42,25 @@ const StyledTypography = styled(Typography)`
   margin-top: 0 !important;
 `
 
-const BlogIndexPage = props => {
-  return (
-    <Layout>
-      <StyledBackgroundImageBox
-        style={{
-          backgroundImage: `url("/images/blog-index.jpg")`,
-        }}
-      >
-        <StyledTypography
-          variant="h3"
-          fontWeight="fontWeightBold"
-        >
-          Latest Stories
-        </StyledTypography>
-      </StyledBackgroundImageBox>
-      <Box component="section">
-        <Container className="container">
-          <Box className="content">
-            <BlogRoll />
-          </Box>
-        </Container>
-      </Box>
-    </Layout>
-  )
-}
+const BlogIndexPage = props => (
+  <Layout>
+    <StyledBackgroundImageBox
+      style={{
+        backgroundImage: `url("/images/blog-index.jpg")`,
+      }}
+    >
+      <StyledTypography variant="h3" fontWeight="fontWeightBold">
+        Latest Stories
+      </StyledTypography>
+    </StyledBackgroundImageBox>
+    <Box component="section">
+      <Container className="container">
+        <Box className="content">
+          <BlogRoll />
+        </Box>
+      </Container>
+    </Box>
+  </Layout>
+)
 
 export default BlogIndexPage

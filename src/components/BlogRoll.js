@@ -40,10 +40,7 @@ const BlogRoll = props => {
                     {post.frontmatter.title}
                   </Link>
                   <Typography display="inline"> &bull; </Typography>
-                  <Typography
-                    variant="h6"
-                    className="subtitle is-block"
-                  >
+                  <Typography variant="h6" className="subtitle is-block">
                     {post.frontmatter.date}
                   </Typography>
                 </Typography>

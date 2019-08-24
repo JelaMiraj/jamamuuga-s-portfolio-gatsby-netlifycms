@@ -25,36 +25,34 @@ const TagsPage = ({
       siteMetadata: {title},
     },
   },
-}) => {
-  return (
-    <Layout>
-      <Box component="section" className="section">
-        <Helmet title={`Tags | ${title}`} />
-        <Container className="content">
-          <Grid container>
-            <Grid item md={1} implementation="css" smDown component={Hidden} />
-            <StyledContentBoxGridItem item xs={10}>
-              <Typography variant="h3" fontWeight="600" className="title">
-                Tags
-              </Typography>
-              <List className="taglist">
-                {group.map(tag => (
-                  <ListItem key={tag.fieldValue}>
-                    <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-                      <ListItemText>
-                        {tag.fieldValue} ({tag.totalCount})
-                      </ListItemText>
-                    </Link>
-                  </ListItem>
-                ))}
-              </List>
-            </StyledContentBoxGridItem>
-          </Grid>
-        </Container>
-      </Box>
-    </Layout>
-  )
-}
+}) => (
+  <Layout>
+    <Box component="section" className="section">
+      <Helmet title={`Tags | ${title}`} />
+      <Container className="content">
+        <Grid container>
+          <Grid item md={1} implementation="css" smDown component={Hidden} />
+          <StyledContentBoxGridItem item xs={10}>
+            <Typography variant="h3" fontWeight="600" className="title">
+              Tags
+            </Typography>
+            <List className="taglist">
+              {group.map(tag => (
+                <ListItem key={tag.fieldValue}>
+                  <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+                    <ListItemText>
+                      {tag.fieldValue} ({tag.totalCount})
+                    </ListItemText>
+                  </Link>
+                </ListItem>
+              ))}
+            </List>
+          </StyledContentBoxGridItem>
+        </Grid>
+      </Container>
+    </Box>
+  </Layout>
+)
 
 export default TagsPage
 
