@@ -3,7 +3,7 @@ const path = require("path")
 const {createFilePath} = require("gatsby-source-filesystem")
 const {fmImagesToRelative} = require("gatsby-remark-relative-images")
 const PnpWebpackPlugin = require("pnp-webpack-plugin")
-const {BundleAnalyzerPlugin} = require("webpack-bundle-analyzer")
+// const {BundleAnalyzerPlugin} = require("webpack-bundle-analyzer")
 
 exports.createPages = ({actions, graphql}) => {
   const {createPage} = actions
@@ -134,13 +134,13 @@ exports.onCreateWebpackConfig = ({stage, rules, loaders, plugins, actions}) => {
       // plugins.define({
       //   __DEVELOPMENT__: stage === `develop` || stage === `develop-html`,
       // }),
-      new BundleAnalyzerPlugin({
-        // FIXME: Even disabled, Wepback Bundle Analyzer still generates for serving stats.json & sw.js in production...
-        analyzerMode: "disabled",
-        generateStatsFile: true,
-        openAnalyzer: false,
-        statsOptions: {source: false},
-      }),
+      // new BundleAnalyzerPlugin({
+      //   // FIXME: Even disabled, Wepback Bundle Analyzer still generates for serving stats.json & sw.js in production...
+      //   analyzerMode: "disabled",
+      //   generateStatsFile: true,
+      //   openAnalyzer: false,
+      //   statsOptions: {source: false},
+      // }),
     ],
   })
 }
