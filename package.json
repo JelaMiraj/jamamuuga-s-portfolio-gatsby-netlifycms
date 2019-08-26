@@ -40,7 +40,7 @@
     "gatsby-remark-relative-images": "^0.2.3",
     "gatsby-source-filesystem": "^2.1.16",
     "gatsby-transformer-remark": "^2.6.19",
-    "gatsby-transformer-sharp": "^2.2.11",
+    "gatsby-transformer-sharp": "^2.2.12",
     "jest-pnp-resolver": "^1.2.1",
     "jss": "^9.8.7",
     "lodash": "^4.17.15",
