@@ -131,7 +131,7 @@
     "eslint-config-with-prettier": "^6.0.0",
     "eslint-plugin-dollar-sign": "^1.0.2",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^22.15.2",
+    "eslint-plugin-jest": "^22.16.0",
     "eslint-plugin-json": "^1.4.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.0",
