@@ -14,6 +14,7 @@ import {PaletteOutline} from "mdi-material-ui"
 import {Link, Menu, MenuMobile} from "."
 // FIXME: Get color assignment issues sorted out so things like hard-coding aren't necessary.
 // TODO: Use color: inherit where it works & lines up right.
+// TODO: Use Material UI AppBar API Docs to sort out style propagation issues. https://material-ui.com/api/app-bar/#appbar-api
 
 // TODO: Hopefully explicit props passing isn't really needed.
 // eslint-disable-next-line
