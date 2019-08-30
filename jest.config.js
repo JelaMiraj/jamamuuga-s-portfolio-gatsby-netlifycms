@@ -15,7 +15,7 @@ module.exports = {
     // "raf/polyfill",
   ],
   setupFilesAfterEnv: [
-    // "<rootDir>/scripts/setupTests.js",
+    "<rootDir>/scripts/setupTests.js",
     // "<rootDir>/scripts/jest.setup.js",
     "jest-enzyme",
   ],
