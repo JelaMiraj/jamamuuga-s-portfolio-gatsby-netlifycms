@@ -14,6 +14,7 @@ import {Helmet} from "../../src/components"
 // import {theme as myTheme} from "../../src/styles/themes"
 // TODO: Avoid the need to wrap multiple providers.
 
+// TODO: Use external theme instead.
 const myTheme = responsiveFontSizes(
   createMuiTheme({
     palette: {
