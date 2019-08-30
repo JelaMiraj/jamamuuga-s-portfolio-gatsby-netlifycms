@@ -20,12 +20,11 @@ import {Link, Menu, MenuMobile} from "."
 // const StyledAppBar = styled(({color, ...other}) => <AppBar {...other} />)`
 // eslint-disable-next-line
 const StyledAppBar = styled(AppBar)`
-  // color: ${props => props.color || "#f44336"};
+  // "#f44336"
   color: ${props => props.color || props.theme.palette.primary.main};
 
   /* & .MuiAppBar-colorPrimary {
     // TODO: Set color: to get color of textPrimary from passed theme object.
-    // background-color: ${props.backgroundColor || props.theme.palette.secondary.main};
     background-color: ${props.color || props.theme.palette.primary.main};
   } */
 `
