@@ -107,27 +107,27 @@ exports.onCreateWebpackConfig = ({stage, rules, loaders, plugins, actions}) => {
     },
     module: {
       rules: [
-        {
-          test: /\.runtime(\.module)?\.scss$/,
-          use: [
-            // We don't need to add the matching ExtractText plugin
-            // because gatsby already includes it and makes sure its only
-            // run at the appropriate stages, e.g. not in development
-            loaders.miniCssExtract(),
-            loaders.css({importLoaders: 1}),
-            // the postcss loader comes with some nice defaults
-            // including autoprefixer for our configured browsers
-            loaders.postcss(),
-            // In theory it might only need this one & the rest can be commented out.
-            {
-              loader: "sass-extract-loader",
-              options: {
-                includePaths: "./src/styles",
-                plugins: ["sass-extract-js"],
-              },
-            },
-          ],
-        },
+        // {
+        //   test: /\.runtime(\.module)?\.scss$/,
+        //   use: [
+        //     // We don't need to add the matching ExtractText plugin
+        //     // because gatsby already includes it and makes sure its only
+        //     // run at the appropriate stages, e.g. not in development
+        //     loaders.miniCssExtract(),
+        //     loaders.css({importLoaders: 1}),
+        //     // the postcss loader comes with some nice defaults
+        //     // including autoprefixer for our configured browsers
+        //     loaders.postcss(),
+        //     // In theory it might only need this one & the rest can be commented out.
+        //     {
+        //       loader: "sass-extract-loader",
+        //       options: {
+        //         includePaths: "./src/styles",
+        //         plugins: ["sass-extract-js"],
+        //       },
+        //     },
+        //   ],
+        // },
         // {
         //   test: /\.js$/,
         //   loader: require.resolve('babel-loader'),
