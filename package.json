@@ -145,6 +145,7 @@
     "jest-environment-enzyme": "^7.1.0",
     "jest-enzyme": "^7.1.0",
     "jest-pnp-resolver": "^1.2.1",
+    "jest-styled-components": "^6.3.3",
     "netlify-cms-backend-fs": "^0.4.4",
     "netlify-lambda": "^1.6.3",
     "prettier": "^1.18.2",
