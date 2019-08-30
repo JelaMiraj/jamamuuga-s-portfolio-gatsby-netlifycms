@@ -4,6 +4,7 @@ import {Link as MuiLink} from "@material-ui/core"
 import {Link as GatsbyLink} from "gatsby"
 
 function Link(props) {
+  // eslint-disable-next-line
   return <MuiLink component={GatsbyLink} {...props} />
 }
 
