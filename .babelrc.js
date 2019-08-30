@@ -7,6 +7,7 @@ module.exports = {
     "babel-preset-gatsby",
   ].map(require.resolve),
   plugins: [
+    require.resolve("babel-plugin-macros"),
     require.resolve("@babel/plugin-proposal-class-properties"),
     require.resolve("@babel/plugin-syntax-dynamic-import"),
     // [
