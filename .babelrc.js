@@ -1,5 +1,6 @@
 module.exports = {
   presets: [
+    // If any presets need options, then require.resolve just package names individually instead of using map.
     // "regenerator-preset",
     "@babel/preset-env",
     "@babel/preset-react",
