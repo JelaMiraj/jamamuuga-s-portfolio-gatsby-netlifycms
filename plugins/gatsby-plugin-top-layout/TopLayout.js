@@ -5,12 +5,14 @@ import {
   createMuiTheme,
   CssBaseline,
   responsiveFontSizes,
+  StylesProvider,
 } from "@material-ui/core"
 import {red, pink} from "@material-ui/core/colors"
 // import {ThemeProvider} from "@material-ui/styles"
 import styled, {ThemeProvider} from "styled-components"
 import {Helmet} from "../../src/components"
 // import {theme as myTheme} from "../../src/styles/themes"
+// TODO: Avoid the need to wrap multiple providers.
 
 const myTheme = responsiveFontSizes(
   createMuiTheme({
@@ -25,13 +27,15 @@ export default function TopLayout(props) {
   return (
     <>
       <Helmet />
-      <ThemeProvider theme={myTheme}>
-        <div>
-          {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-          <CssBaseline />
-          {props.children}
-        </div>
-      </ThemeProvider>
+      <StylesProvider injectFirst>
+        <ThemeProvider theme={myTheme}>
+          <div>
+            {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+            <CssBaseline />
+            {props.children}
+          </div>
+        </ThemeProvider>
+      </StylesProvider>
     </>
   )
 }
