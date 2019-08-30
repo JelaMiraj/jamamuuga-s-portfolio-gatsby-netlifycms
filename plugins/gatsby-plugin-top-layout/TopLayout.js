@@ -13,18 +13,18 @@ import {
 } from "@material-ui/styles"
 import styled, {ThemeProvider} from "styled-components"
 import {Helmet} from "../../src/components"
-// import {theme as myTheme} from "../../src/styles/themes"
+import {theme as myTheme} from "../../src/styles/themes"
 // TODO: Avoid the need to wrap multiple providers.
 
 // TODO: Use external theme instead.
-const myTheme = responsiveFontSizes(
-  createMuiTheme({
-    palette: {
-      primary: red,
-      secondary: pink,
-    },
-  }),
-)
+// const myTheme = responsiveFontSizes(
+//   createMuiTheme({
+//     palette: {
+//       primary: red,
+//       secondary: pink,
+//     },
+//   }),
+// )
 
 export default function TopLayout({children}) {
   return (
