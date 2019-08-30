@@ -18,9 +18,15 @@ import {Link, Menu, MenuMobile} from "."
 
 // TODO: Hopefully explicit props passing isn't really needed.
 // eslint-disable-next-line
-const StyledAppBar = styled(({...other}) => <AppBar {...other} />)`
-  /* color: ${props => props.color || "#f44336"}; */
-  color: ${props => props.color || props.theme.palette.primary.main};
+const StyledAppBar = styled(({color, ...other}) => <AppBar {...other} />)`
+  // color: ${other => other.color || "#f44336"};
+  color: ${other => other.color || other.theme.palette.primary.main};
+
+  & .MuiAppBar-colorPrimary {
+    // TODO: Set color: to get color of textPrimary from passed theme object.
+    // background-color: ${other.backgroundColor || other.theme.palette.secondary.main};
+    background-color: ${other.color || other.theme.palette.primary.main};
+  }
 `
 
 const StyledAvatar = styled(Avatar)`
