@@ -5,8 +5,8 @@ import {
   createMuiTheme,
   CssBaseline,
   responsiveFontSizes,
-  StylesProvider,
 } from "@material-ui/core"
+import {StylesProvider} from "@material-ui/styles"
 import {red, pink} from "@material-ui/core/colors"
 // import {ThemeProvider} from "@material-ui/styles"
 import styled, {ThemeProvider} from "styled-components"
