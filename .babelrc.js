@@ -4,20 +4,20 @@ module.exports = {
     "@babel/preset-env",
     "@babel/preset-react",
     "babel-preset-gatsby",
-  ], // .map(require.resolve),
+  ].map(require.resolve),
   plugins: [
-    "@babel/plugin-proposal-class-properties",
-    "@babel/plugin-syntax-dynamic-import",
+    require.resolve("@babel/plugin-proposal-class-properties"),
+    require.resolve("@babel/plugin-syntax-dynamic-import"),
     // [
-    //   "named-params",
+    //   require.resolve("babel-plugin-named-params"),
     //   {
     //     options: true,
     //     caching: true,
     //   },
     // ],
-    // "babel-plugin-add-module-exports",
+    // require.resolve("babel-plugin-add-module-exports"),
     // [
-    //   "babel-plugin-transform-imports",
+    //   require.resolve("babel-plugin-transform-imports"),
     //   {
     //     lodash: {
     //       transform: "lodash/${member}",
@@ -49,6 +49,6 @@ module.exports = {
     //     },
     //   },
     // ],
-    // "babel-plugin-styled-components",
-  ], // .map(require.resolve),
+    // require.resolve("babel-plugin-styled-components"),
+  ],
 }
