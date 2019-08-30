@@ -23,7 +23,7 @@ const myTheme = responsiveFontSizes(
   }),
 )
 
-export default function TopLayout(props) {
+export default function TopLayout({children}) {
   return (
     <>
       <Helmet />
@@ -32,7 +32,7 @@ export default function TopLayout(props) {
           <div>
             {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
             <CssBaseline />
-            {props.children}
+            {children}
           </div>
         </ThemeProvider>
       </StylesProvider>
