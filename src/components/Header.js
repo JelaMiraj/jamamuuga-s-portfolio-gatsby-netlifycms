@@ -17,8 +17,9 @@ import {Link, Menu, MenuMobile} from "."
 // TODO: Use Material UI AppBar API Docs to sort out style propagation issues. https://material-ui.com/api/app-bar/#appbar-api
 
 // TODO: Hopefully explicit props passing isn't really needed.
+// const StyledAppBar = styled(({color, ...other}) => <AppBar {...other} />)`
 // eslint-disable-next-line
-const StyledAppBar = styled(({color, ...other}) => <AppBar {...other} />)`
+const StyledAppBar = styled(AppBar)`
   // color: ${props => props.color || "#f44336"};
   color: ${props => props.color || props.theme.palette.primary.main};
 
