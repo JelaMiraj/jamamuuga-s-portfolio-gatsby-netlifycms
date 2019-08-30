@@ -128,6 +128,19 @@ exports.onCreateWebpackConfig = ({stage, rules, loaders, plugins, actions}) => {
             },
           ],
         },
+        {
+          test: /\.js$/,
+          loader: require.resolve('babel-loader'),
+        },
+        {
+          // TODO: Maybe remove explicit TypeScript loader.
+          // In case there are any ts sub dependencies that attempt to recompile their TypeScript.
+          test: /\.ts$/,
+          loader: require.resolve('ts-loader'),
+          options: PnpWebpackPlugin.tsLoaderOptions({
+            // ... regular options go there ...
+          }),
+        },
       ],
     },
     plugins: [
