@@ -8183,10 +8183,10 @@ gatsby-background-image@^0.8.5:
     global "^4.4.0"
     prop-types "^15.7.2"
 
-gatsby-cli@^2.7.40:
-  version "2.7.40"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.7.40.tgz#6405809caad7a1a6812815103d6b0663b94dbd24"
-  integrity sha512-7VCQZZtUxjPIhSitiZbcUqkbZ6gKuUezLPRMAJIZjp4H6jAAplV3esqFu1He0qR6oRDiWQE6lZbLiwmIx4b0Mg==
+gatsby-cli@^2.7.40, gatsby-cli@^2.7.41:
+  version "2.7.41"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.7.41.tgz#be84afab70afe5f6acab1312185cf821280127d9"
+  integrity sha512-gndPflsy9NGpMt61o+PMndu4+rQUK4NYE5+Q1ohV12Hhk+XjBvAoqeoHiygxc7Yq/E2J6Se0m7mFjaLiw+2GQg==
   dependencies:
     "@babel/code-frame" "^7.5.5"
     "@babel/runtime" "^7.5.5"
@@ -8204,7 +8204,7 @@ gatsby-cli@^2.7.40:
     execa "^0.11.0"
     fs-exists-cached "^1.0.0"
     fs-extra "^8.1.0"
-    gatsby-telemetry "^1.1.19"
+    gatsby-telemetry "^1.1.20"
     hosted-git-info "^3.0.0"
     is-valid-path "^0.1.1"
     lodash "^4.17.15"
@@ -8470,10 +8470,10 @@ gatsby-source-filesystem@^2.1.18:
     valid-url "^1.0.9"
     xstate "^3.3.3"
 
-gatsby-telemetry@^1.1.19:
-  version "1.1.19"
-  resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-1.1.19.tgz#ebf81ec66ff5b20dd3a1d61f1a9a57fb7bc2c790"
-  integrity sha512-taqReysOukM1GHhuHQ+ltcsPzUHWF7M8hfSZNeGOfFUckMwiUZeoc6kF+4kGd7xR/VkVubpiVlHIVpmm8l6Meg==
+gatsby-telemetry@^1.1.19, gatsby-telemetry@^1.1.20:
+  version "1.1.20"
+  resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-1.1.20.tgz#291b64b79b6c036bbd81061ea9342ea0d4cb490a"
+  integrity sha512-9cqyuL0Wtn7/Nipy8WdLxpstydCKRCVtPvE5LoPN9FDWuru++1mV6hQrK7E2WG/GpEPUcKzeY9KVfoseEmUzUw==
   dependencies:
     "@babel/code-frame" "^7.5.5"
     "@babel/runtime" "^7.5.5"
