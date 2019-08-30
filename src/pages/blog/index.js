@@ -1,6 +1,6 @@
 import React from "react"
 import {Box, Container, Typography} from "@material-ui/core"
-import styled from "styled-components"
+import styled from "styled-components/macro"
 import {BlogRoll, Content, Layout} from "../../components"
 
 // TODO: import more inline styling to here.

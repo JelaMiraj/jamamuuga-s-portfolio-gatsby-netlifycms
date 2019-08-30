@@ -2,7 +2,7 @@
 import React from "react"
 import {StaticQuery, graphql} from "gatsby"
 import {IconButton, Menu, MenuItem} from "@material-ui/core"
-import styled from "styled-components"
+import styled from "styled-components/macro"
 import {DotsVertical} from "mdi-material-ui"
 import {
   usePopupState,

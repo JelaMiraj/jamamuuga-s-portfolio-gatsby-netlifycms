@@ -9,7 +9,7 @@ import {
   Toolbar,
   Typography,
 } from "@material-ui/core"
-import styled from "styled-components"
+import styled from "styled-components/macro"
 import {PaletteOutline} from "mdi-material-ui"
 import {Link, Menu, MenuMobile} from "."
 // FIXME: Get color assignment issues sorted out so things like hard-coding aren't necessary.

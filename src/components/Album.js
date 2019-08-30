@@ -12,7 +12,7 @@ import {
   Toolbar,
   Typography,
 } from "@material-ui/core"
-import styled from "styled-components"
+import styled from "styled-components/macro"
 import {Card, Link, LinkExternal} from "."
 // Use as example to improve portfolio page. Original demo here: https://material-ui.com/getting-started/templates/album/
 

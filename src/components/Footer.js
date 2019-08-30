@@ -16,7 +16,7 @@ import {
   Toolbar,
   Typography,
 } from "@material-ui/core"
-import styled from "styled-components"
+import styled from "styled-components/macro"
 // import {Facebook as FacebookLogo, Instagram as InstagramLogo, Twitter as TwitterLogo, Vimeo as VimeoLogo} from "mdi-material-ui"
 import {Content, Link, LinkExternal, PreviewCompatibleImage as Image} from "."
 

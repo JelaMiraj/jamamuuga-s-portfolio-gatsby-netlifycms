@@ -10,7 +10,7 @@ import {
   ListItemText,
   Typography,
 } from "@material-ui/core"
-import styled from "styled-components"
+import styled from "styled-components/macro"
 import {Helmet, Layout, Link} from "../components"
 
 const StyledGridItemContent = styled(Grid)`

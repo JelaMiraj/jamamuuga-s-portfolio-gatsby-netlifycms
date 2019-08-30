@@ -11,7 +11,7 @@ import {
   StylesProvider,
   ThemeProvider as MuiThemeProvider,
 } from "@material-ui/styles"
-import styled, {ThemeProvider} from "styled-components"
+import styled, {ThemeProvider} from "styled-components/macro"
 import {Helmet} from "../../src/components"
 import {theme as myTheme} from "../../src/styles/themes"
 // TODO: Avoid the need to wrap multiple providers.

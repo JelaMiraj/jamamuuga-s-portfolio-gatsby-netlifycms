@@ -1,6 +1,6 @@
 import React from "react"
 import {List, ListItem, ListItemText} from "@material-ui/core"
-import styled from "styled-components"
+import styled from "styled-components/macro"
 import {Link} from "."
 // Pagination for posts.
 

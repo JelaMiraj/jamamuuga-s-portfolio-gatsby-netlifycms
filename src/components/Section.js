@@ -1,6 +1,6 @@
 import React from "react"
 import {Grid} from "@material-ui/core"
-import styled from "styled-components"
+import styled from "styled-components/macro"
 // Originally from: https://github.com/danielmahon/gatsby-starter-procyon/blob/netlifycms/src/components/Section.js
 
 const StyledSectionGrid = styled(Grid)`
