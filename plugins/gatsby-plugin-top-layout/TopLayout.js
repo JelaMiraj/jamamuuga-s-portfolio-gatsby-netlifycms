@@ -5,6 +5,7 @@ import {
   createMuiTheme,
   CssBaseline,
   responsiveFontSizes,
+  ThemeProvider as MuiThemeProvider,
 } from "@material-ui/core"
 import {StylesProvider} from "@material-ui/styles"
 import {red, pink} from "@material-ui/core/colors"
@@ -29,13 +30,15 @@ export default function TopLayout({children}) {
     <>
       <Helmet />
       <StylesProvider injectFirst>
-        <ThemeProvider theme={myTheme}>
-          <div>
-            {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-            <CssBaseline />
-            {children}
-          </div>
-        </ThemeProvider>
+        <MuiThemeProvider theme={myTheme}>
+          <ThemeProvider theme={myTheme}>
+            <div>
+              {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+              <CssBaseline />
+              {children}
+            </div>
+          </ThemeProvider>
+        </MuiThemeProvider>
       </StylesProvider>
     </>
   )
