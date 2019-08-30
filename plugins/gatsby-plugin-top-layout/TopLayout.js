@@ -15,6 +15,7 @@ import styled, {ThemeProvider} from "styled-components/macro"
 import {Helmet} from "../../src/components"
 import {theme as myTheme} from "../../src/styles/themes"
 // TODO: Avoid the need to wrap multiple providers.
+// TODO: Convert website & local Gatsby plugin into a monorepo using Lerna & Yarn Workspaces to help guard against things like Yarn PnP issues.
 
 // TODO: Use external theme instead.
 // const myTheme = responsiveFontSizes(
