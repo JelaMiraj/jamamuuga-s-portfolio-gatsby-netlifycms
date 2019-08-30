@@ -26,7 +26,7 @@ import {theme as myTheme} from "../../src/styles/themes"
 //   }),
 // )
 
-export default function TopLayout({children}) {
+export default function TopLayout(props) {
   return (
     <>
       <Helmet />
@@ -36,7 +36,7 @@ export default function TopLayout({children}) {
             <div>
               {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
               <CssBaseline />
-              {children}
+              {props.children}
             </div>
           </ThemeProvider>
         </MuiThemeProvider>
