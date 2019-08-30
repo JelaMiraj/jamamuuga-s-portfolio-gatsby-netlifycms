@@ -128,10 +128,10 @@ exports.onCreateWebpackConfig = ({stage, rules, loaders, plugins, actions}) => {
             },
           ],
         },
-        {
-          test: /\.js$/,
-          loader: require.resolve('babel-loader'),
-        },
+        // {
+        //   test: /\.js$/,
+        //   loader: require.resolve('babel-loader'),
+        // },
         // {
         //   // TODO: Maybe remove explicit TypeScript loader.
         //   // In case there are any ts sub dependencies that attempt to recompile their TypeScript.
