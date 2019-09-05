@@ -1193,15 +1193,15 @@
     signedsource "^1.0.0"
     yargs "^9.0.0"
 
-"@giotramu/stylelint-config@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@giotramu/stylelint-config/-/stylelint-config-0.1.1.tgz#ac9801cad501099bcf49cc4d53ff1434d4ca1dae"
-  integrity sha512-ZaKpVl2o8/cVxguDJtg8IqsAXd3md7SXt7SNz1oaYe50QGpIGD8ujRWQrOgPtPSWCZnWnThbbGTs7QAyMCfNSw==
+"@giotramu/stylelint-config@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@giotramu/stylelint-config/-/stylelint-config-0.1.2.tgz#ec6136a21530c1a63901ab7dd51a3de6a33831e4"
+  integrity sha512-G9N9RQNESJ3D9GXQ8SKYkTNBIdMOHI0AMd/vQcifQniljM/1S6SCxoDwjgiO5mf8goo09Qfe1wusHHJWbEUsHQ==
   dependencies:
     stylelint "10.1.0"
     stylelint-config-prettier "5.2.0"
     stylelint-declaration-block-no-ignored-properties "2.1.0"
-    stylelint-order "3.0.1"
+    stylelint-order "3.1.0"
 
 "@hapi/address@2.x.x":
   version "2.0.0"
@@ -19188,12 +19188,12 @@ stylelint-declaration-block-no-ignored-properties@2.1.0:
   dependencies:
     postcss "^7.0.14"
 
-stylelint-order@3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/stylelint-order/-/stylelint-order-3.0.1.tgz#f1dd5e39345d04b684a6f04f1133cafa28606175"
-  integrity sha512-isVEJ1oUoVB7bb5pYop96KYOac4c+tLOqa5dPtAEwAwQUVSbi7OPFbfaCclcTjOlXicymasLpwhRirhFWh93yw==
+stylelint-order@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/stylelint-order/-/stylelint-order-3.1.0.tgz#e35fce453ae9ed71a2185af36b2bb45e62a9ce75"
+  integrity sha512-0BGQhRWOcdPi4oDVuInOHiXWzgCB9vEwJt5fvBre/I/brXLIumC9uiiAc3E6xUiUdWEmU2OLzAop8LK8UY0X0A==
   dependencies:
-    lodash "^4.17.14"
+    lodash "^4.17.15"
     postcss "^7.0.17"
     postcss-sorting "^5.0.1"
 
