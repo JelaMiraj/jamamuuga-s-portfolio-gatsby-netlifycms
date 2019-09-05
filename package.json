@@ -141,7 +141,7 @@
     "fs-extra": "^8.1.0",
     "gatsby-cli": "^2.7.44",
     "glob": "^7.1.4",
-    "http-proxy-middleware": "^0.19.1",
+    "http-proxy-middleware": "^0.20.0",
     "jest": "^24.9.0",
     "jest-environment-enzyme": "^7.1.0",
     "jest-enzyme": "^7.1.1",
