@@ -99,6 +99,7 @@
     "test:update": "yarn test --update",
     "test:coverage": "yarn test --coverage --verbose --silent --runInBand --passWithNoTests",
     "lint": "eslint --cache .",
+    "lint:debug": "eslint --cache --debug .",
     "lint:fix": "eslint --cache --fix .",
     "lint:img": "find src -iname *.gif -o -iname *.jpg -o -iname *.png -o -iname *.jpeg -o -iname *.svg | xargs imagemin-lint-staged",
     "lint:md": "remark .",
