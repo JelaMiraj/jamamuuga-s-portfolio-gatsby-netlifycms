@@ -192,6 +192,7 @@
     "micromatch": "^4.0.2",
     "netlify-cms-lib-util": "^2.3.3",
     "netlify-dev-plugin": "^1.0.28",
+    "postcss-scss": "^2.0.0",
     "promise": "^8.0.3",
     "react-intl": "^3.2.0",
     "react-is": "^16.9.0",
