@@ -22,8 +22,11 @@ import {Helmet} from "../../src/components"
 const myTheme = responsiveFontSizes(
   createMuiTheme({
     palette: {
-      primary: red,
-      secondary: pink,
+      primary: {
+        main: "#f44335",
+        contrastText: "#212121",
+      },
+      secondary: {main: "#FF4081"},
     },
   }),
 )

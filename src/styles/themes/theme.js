@@ -19,22 +19,11 @@ const bodyFont = `"Open Sans", Roboto, "Helvetica Neue", Arial, sans-serif`
 const theme = responsiveFontSizes(
   createMuiTheme({
     palette: {
-      primary: red,
-      // primary: purple,
-      // primary: "#556cd6",
-      // secondary: deepOrange,
-      secondary: pink,
-      // secondary: "#ff4400",
-      // secondary: "#19857b",
-      // TODO: Looks like tertiary doesn't actually work without using the specific custom theme variable support.
-      // tertiary: "#f50057",
-      // tertiary: purple,
-      // error: red,
-      // error: red.A400,
-      // background: {
-      //   // Default is #fafafa. Paper is #fff in default theme.
-      //   default: "#fff",
-      // },
+      primary: {
+        main: "#f44335",
+        contrastText: "#212121",
+      },
+      secondary: {main: "#FF4081"},
     },
     // typography: {
     //   // TODO: Stop repeating greys, font weights, & font families.
