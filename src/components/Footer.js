@@ -19,7 +19,6 @@ import {
 import styled from "styled-components/macro"
 // import {Facebook as FacebookLogo, Instagram as InstagramLogo, Twitter as TwitterLogo, Vimeo as VimeoLogo} from "mdi-material-ui"
 import {Content, Link, LinkExternal, PreviewCompatibleImage as Image} from "."
-
 import logo from "../images/logo.svg"
 import facebook from "../images/social/facebook.svg"
 import instagram from "../images/social/instagram.svg"
