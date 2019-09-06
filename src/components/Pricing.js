@@ -28,16 +28,12 @@ const Pricing = ({data}) => (
             ${price.price}
           </StyledPriceTextTypography>
           <Typography paragraph>
-            <Box fontWeight={600}>
-              {price.description}
-            </Box>
+            <Box fontWeight={600}>{price.description}</Box>
           </Typography>
           <List>
             {price.items.map(item => (
               <ListItem key={item}>
-                <Typography variant="h6">
-                  {item}
-                </Typography>
+                <Typography variant="h6">{item}</Typography>
               </ListItem>
             ))}
           </List>

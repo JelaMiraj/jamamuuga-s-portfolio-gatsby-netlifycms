@@ -40,9 +40,9 @@ module.exports = {
   plugins: [
     "gatsby-theme-material-ui",
     {
-      resolve: 'gatsby-theme-netlify-cms',
+      resolve: "gatsby-theme-netlify-cms",
       options: {
-        //...
+        // ...
       },
     },
     "gatsby-plugin-top-layout",
