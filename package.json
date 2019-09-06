@@ -107,6 +107,7 @@
     "lint:md": "remark .",
     "lint:staged": "eslint --fix --max-warnings=0",
     "lint:style": "stylelint src/**/*.{js,jsx,scss,css}",
+    "pnpify:sdk": "pnpify --sdk",
     "version:gatsby": "gatsby --version"
   },
   "devDependencies": {
