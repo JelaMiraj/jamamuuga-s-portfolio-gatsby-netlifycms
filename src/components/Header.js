@@ -22,7 +22,8 @@ import {Link, Menu, MenuMobile} from "."
 const StyledAppBar = styled(AppBar)`
   /* "#f44336" */
   /* color: ${props => props.color || props.theme.palette.primary.main}; */
-  /* background: ${props => props.background || props.theme.palette.primary.main}; */
+  /* background: ${props =>
+    props.background || props.theme.palette.primary.main}; */
   background: #f44336;
 
   /* & .MuiAppBar-colorPrimary {
@@ -34,11 +35,13 @@ const StyledAppBar = styled(AppBar)`
 const StyledAvatar = styled(Avatar)`
   /* background-color: ${props =>
     props.backgroundColor || props.theme.palette.secondary.light}; */
-  background: ${props.theme.palette.secondary.light};
+  /* background: ${props.theme.palette.secondary.light}; */
+  background: rgb(255, 102, 154);
 `
 
 const StyledChip = styled(Chip)`
-  color: ${props => props.color || props.theme.palette.secondary.light};
+  /* color: ${props => props.color || props.theme.palette.secondary.light}; */
+  color: rgb(255, 102, 154);
 `
 
 const Header = props => (
