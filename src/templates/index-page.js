@@ -4,6 +4,7 @@ import {graphql} from "gatsby"
 import {
   Box,
   Button,
+  Card,
   CardContent,
   CardMedia,
   Container,
@@ -13,7 +14,7 @@ import {
   Typography,
 } from "@material-ui/core"
 import styled from "styled-components/macro"
-import {Card, BlogRoll, Features, Layout, Link} from "../components"
+import {BlogRoll, Features, Layout, Link} from "../components"
 // TODO: Decide between Typography align="center" & Box textAlign="center".
 // TODO: Maybe use Card instead of or around Paper.
 

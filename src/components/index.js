@@ -1,5 +1,5 @@
 import BlogRoll from "./BlogRoll"
-import Card from "./Card"
+// import Card from "./Card"
 // import Carousel from "./Carousel"
 // import Container from "./Container"
 import Content, {HTMLContent} from "./Content"
@@ -25,7 +25,7 @@ import Testimonials from "./Testimonials"
 
 export {
   BlogRoll,
-  Card,
+  // Card,
   // Carousel,
   // Container,
   Content,

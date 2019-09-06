@@ -3,6 +3,7 @@ import {PropTypes} from "prop-types"
 import {graphql} from "gatsby"
 import {
   Box,
+  Card,
   Container,
   Button,
   Grid,
@@ -10,7 +11,7 @@ import {
   Paper,
   Typography,
 } from "@material-ui/core"
-import {Card, Content, HTMLContent, Layout} from "../components"
+import {Content, HTMLContent, Layout} from "../components"
 
 export const AboutPageTemplate = ({title, content, contentComponent}) => {
   const PageContent = contentComponent || Content

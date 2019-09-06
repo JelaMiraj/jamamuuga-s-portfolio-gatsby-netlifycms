@@ -3,6 +3,7 @@ import {PhotoCamera as CameraIcon} from "@material-ui/icons"
 import {
   AppBar,
   Button,
+  Card,
   CardActions,
   CardContent,
   CardMedia,
@@ -13,7 +14,7 @@ import {
   Typography,
 } from "@material-ui/core"
 import styled from "styled-components/macro"
-import {Card, Link, LinkExternal} from "."
+import {Link, LinkExternal} from "."
 // Use as example to improve portfolio page. Original demo here: https://material-ui.com/getting-started/templates/album/
 // TODO: Decide between Typography align="center" & Box textAlign="center".
 
