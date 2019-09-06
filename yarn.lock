@@ -8573,6 +8573,13 @@ gatsby-telemetry@^1.1.22:
     stack-utils "1.0.2"
     uuid "3.3.3"
 
+gatsby-theme-material-ui-layout@^0.0.14:
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-material-ui-layout/-/gatsby-theme-material-ui-layout-0.0.14.tgz#f2a3506d5b8c6a05f7874662c986a28557c8ea00"
+  integrity sha512-GDlpnW01JnHKJvx/k7NanMLym6TsWUlmFW/beyd69TDC/H8elw7rOkYRfjbVdupq8erihNSxeurMZdcAAdu4/Q==
+  dependencies:
+    nprogress "^0.2.0"
+
 gatsby-theme-material-ui-top-layout@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/gatsby-theme-material-ui-top-layout/-/gatsby-theme-material-ui-top-layout-1.0.1.tgz#bcd47312d5230690ce1b2c411229fbe0cd1d9f25"
@@ -14029,6 +14036,11 @@ npmlog@^4.0.1, npmlog@^4.0.2, npmlog@^4.1.2:
     console-control-strings "~1.1.0"
     gauge "~2.7.3"
     set-blocking "~2.0.0"
+
+nprogress@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/nprogress/-/nprogress-0.2.0.tgz#cb8f34c53213d895723fcbab907e9422adbcafb1"
+  integrity sha1-y480xTIT2JVyP8urkH6UIq28r7E=
 
 nth-check@^1.0.1, nth-check@^1.0.2, nth-check@~1.0.1:
   version "1.0.2"
