@@ -79,8 +79,10 @@ const Footer = props => {
     <>
       <StyledDivider />
       <StyledFooter id="footer">
-        <Box align="center" className="content">
-          <img src={logo} alt="Kaldi" style={{width: "14em", height: "10em"}} />
+        <Box className="content">
+          <Typography align="center">
+            <img src={logo} alt="Kaldi" style={{width: "14em", height: "10em"}} />
+          </Typography>
         </Box>
         <StyledContentGridBox>
           <StyledFooterNavContainer>

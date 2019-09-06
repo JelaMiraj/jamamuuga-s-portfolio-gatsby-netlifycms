@@ -19,19 +19,25 @@ const Pricing = ({data}) => (
     {data.map(price => (
       <Grid item xs={4} key={price.plan}>
         <Box component="section">
-          <Typography variant="h4" align="center" fontWeight="600">
-            {price.plan}
+          <Typography variant="h4">
+            <Box textAlign="center" fontWeight={600}>
+              {price.plan}
+            </Box>
           </Typography>
           <StyledPriceTextTypography variant="h2" align="center">
             ${price.price}
           </StyledPriceTextTypography>
-          <Typography paragraph fontWeight="600">
-            {price.description}
+          <Typography paragraph>
+            <Box fontWeight={600}>
+              {price.description}
+            </Box>
           </Typography>
           <List>
             {price.items.map(item => (
-              <ListItem key={item} xs={5}>
-                {item}
+              <ListItem key={item}>
+                <Typography variant="h6">
+                  {item}
+                </Typography>
               </ListItem>
             ))}
           </List>

@@ -132,12 +132,14 @@ export const IndexPageTemplate = ({
                     </Grid>
                     <Features gridItems={intro.blurbs} />
                     <Grid container>
-                      <Grid item xs={12} align="center">
+                      <Grid item xs={12}>
+                        <Typography align="center">
                         <Button variant="contained" color="secondary">
                           <Link className="btn" to="/portfolio">
                             See all portfolio
                           </Link>
-                        </Button>
+                          </Button>
+                          </Typography>
                       </Grid>
                     </Grid>
                     {/* <Grid item xs={12}>
