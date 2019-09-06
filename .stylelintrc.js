@@ -13,4 +13,8 @@ module.exports = {
     // "stylelint-config-idiomatic-sass",
     // "@giotramu/stylelint-config",
   ],
+  plugins: ["stylelint-prettier"],
+  rules: {
+    "prettier/prettier": true,
+  },
 }
