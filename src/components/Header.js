@@ -20,8 +20,10 @@ import {Link, Menu, MenuMobile} from "."
 // const StyledAppBar = styled(({color, ...other}) => <AppBar {...other} />)`
 // eslint-disable-next-line
 const StyledAppBar = styled(AppBar)`
-  // "#f44336"
-  color: ${props => props.color || props.theme.palette.primary.main};
+  /* "#f44336" */
+  /* color: ${props => props.color || props.theme.palette.primary.main}; */
+  /* background: ${props => props.background || props.theme.palette.primary.main}; */
+  background: #f44336;
 
   /* & .MuiAppBar-colorPrimary {
     // TODO: Set color: to get color of textPrimary from passed theme object.
@@ -30,8 +32,9 @@ const StyledAppBar = styled(AppBar)`
 `
 
 const StyledAvatar = styled(Avatar)`
-  background-color: ${props =>
-    props.backgroundColor || props.theme.palette.secondary.light};
+  /* background-color: ${props =>
+    props.backgroundColor || props.theme.palette.secondary.light}; */
+  background: ${props.theme.palette.secondary.light};
 `
 
 const StyledChip = styled(Chip)`
