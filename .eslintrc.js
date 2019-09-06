@@ -7,7 +7,7 @@ module.exports = {
   },
   extends: [
     "eslint:recommended",
-    "airbnb",
+    "airbnb/hooks",
     "eslint-config-gatsby-standard",
     "plugin:jest/recommended",
     "plugin:prettier/recommended",
