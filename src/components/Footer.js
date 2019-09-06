@@ -25,6 +25,7 @@ import facebook from "../images/social/facebook.svg"
 import instagram from "../images/social/instagram.svg"
 import twitter from "../images/social/twitter.svg"
 import vimeo from "../images/social/vimeo.svg"
+// TODO: Decide between Typography align="center" & Box textAlign="center".
 
 const StyledContentGridBox = styled(Box)`
   align: center;

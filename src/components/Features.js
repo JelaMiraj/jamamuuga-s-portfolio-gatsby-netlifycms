@@ -2,6 +2,7 @@ import React from "react"
 import {PropTypes} from "prop-types"
 import {Box, Grid, Paper, Typography} from "@material-ui/core"
 import PreviewCompatibleImage from "./PreviewCompatibleImage"
+// TODO: Decide between Typography align="center" & Box textAlign="center".
 
 const FeatureGrid = ({gridItems}) => (
   <Grid container wrap="wrap">

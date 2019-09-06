@@ -15,6 +15,7 @@ import {
 import styled from "styled-components/macro"
 import {Card, Link, LinkExternal} from "."
 // Use as example to improve portfolio page. Original demo here: https://material-ui.com/getting-started/templates/album/
+// TODO: Decide between Typography align="center" & Box textAlign="center".
 
 function MadeWithLove() {
   return (

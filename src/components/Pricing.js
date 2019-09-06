@@ -3,6 +3,7 @@ import {PropTypes} from "prop-types"
 import {Box, Grid, List, ListItem, Paper, Typography} from "@material-ui/core"
 import styled from "styled-components/macro"
 // TODO: Maybe use Card and/or Paper somewhere in Pricing.
+// TODO: Decide between Typography align="center" & Box textAlign="center".
 
 const StyledPriceTextTypography = styled(Typography)`
   font-weight: ${props => props.theme.typography.fontWeightBold};
