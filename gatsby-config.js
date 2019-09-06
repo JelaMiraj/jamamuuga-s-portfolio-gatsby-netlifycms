@@ -38,6 +38,14 @@ module.exports = {
     ],
   },
   plugins: [
+    {
+      resolve: 'gatsby-theme-netlify-cms',
+      options: {
+        //...
+      },
+    },
+    "gatsby-theme-material-ui",
+    "gatsby-theme-superstylin",
     "gatsby-plugin-top-layout",
     {
       resolve: "gatsby-plugin-compile-es6-packages",
