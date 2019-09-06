@@ -41,7 +41,6 @@
     "gatsby-source-filesystem": "^2.1.21",
     "gatsby-theme-material-ui": "^1.0.4",
     "gatsby-theme-netlify-cms": "^1.0.2",
-    "gatsby-theme-superstylin": "^0.1.1",
     "gatsby-transformer-remark": "^2.6.21",
     "gatsby-transformer-sharp": "^2.2.13",
     "jss": "^9.8.7",

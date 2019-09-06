@@ -38,7 +38,6 @@ module.exports = {
     ],
   },
   plugins: [
-    "gatsby-theme-superstylin",
     "gatsby-theme-material-ui",
     {
       resolve: 'gatsby-theme-netlify-cms',
