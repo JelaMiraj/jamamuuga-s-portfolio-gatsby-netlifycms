@@ -115,6 +115,7 @@
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.5.5",
+    "@berry/pnpify": "^0.1.0",
     "@emotion/core": "^10.0.17",
     "@giotramu/stylelint-config": "^0.1.2",
     "@types/material-ui": "^0.21.7",

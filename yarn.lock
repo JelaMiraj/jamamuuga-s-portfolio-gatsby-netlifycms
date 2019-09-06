@@ -990,6 +990,26 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@berry/fslib@0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@berry/fslib/-/fslib-0.1.0.tgz#a1bee7ceda37bfb5d70498f6f46dc36bd9fe9fdb"
+  integrity sha512-OJyXyCVL6BH3YOKKxjwX7hNsELzSpcCIYCCNFiyK1F6cmnJMHW8D5WJ1C7WeHvUVBgYGr8OfU46TMWCH1N7z1Q==
+  dependencies:
+    "@berry/libzip" "0.1.0"
+
+"@berry/libzip@0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@berry/libzip/-/libzip-0.1.0.tgz#8a8e604420e18bdf899ce20c4a6eb54b0f8d9780"
+  integrity sha512-8QoqGoZBbin0ivDRSk+EZD/Bg3mUI8W7TSDs7DGG1qe6b87oG/G78lxqNqWcSpypbL5QXQMrQr9Hw4RDxd1gWA==
+
+"@berry/pnpify@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@berry/pnpify/-/pnpify-0.1.0.tgz#0d5421ea40cc52ed8e178fbbb77865f61da66016"
+  integrity sha512-aYmjtJ2XrOgo2uG0YuZr8tdmXmskByyMEHa+jjglKEipD8kd2z3d7KUf9908URMXjOa4d9RJmC8HtrXBjcY0Ww==
+  dependencies:
+    "@berry/fslib" "0.1.0"
+    cross-spawn "^6.0.5"
+
 "@cnakazawa/watch@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@cnakazawa/watch/-/watch-1.0.3.tgz#099139eaec7ebf07a27c1786a3ff64f39464d2ef"
