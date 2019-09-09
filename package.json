@@ -145,7 +145,7 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^2.0.1",
     "fs-extra": "^8.1.0",
-    "gatsby-cli": "^2.7.44",
+    "gatsby-cli": "^2.7.46",
     "glob": "^7.1.4",
     "http-proxy-middleware": "^0.20.0",
     "jest": "^24.9.0",
