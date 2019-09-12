@@ -8625,22 +8625,22 @@ gatsby-telemetry@^1.1.23:
     stack-utils "1.0.2"
     uuid "3.3.3"
 
-gatsby-theme-material-ui-top-layout@^1.0.1, gatsby-theme-material-ui-top-layout@^1.0.2:
+gatsby-theme-material-ui-top-layout@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/gatsby-theme-material-ui-top-layout/-/gatsby-theme-material-ui-top-layout-1.0.2.tgz#fdbb1b00af1a6e322fac76c1f99162f15970cb95"
   integrity sha512-EY4kiJRYa+Hj2EbusfZUNIBLYvli64zW6WdyjPWuJuL32UotGJlQafX+HiOx/f4jNcqNphCIVNAasQnn93Mn6g==
   dependencies:
     gatsby-plugin-react-helmet "^3.1.2"
 
-gatsby-theme-material-ui@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-material-ui/-/gatsby-theme-material-ui-1.0.4.tgz#56ca2d645745c7d5c2f59c66718cfd676fce605f"
-  integrity sha512-kDaIq+5SPogr+s0gmZk5zsIwjci0H0YeNuwKCs91SClfXeWKJiuserlYJieWV3EFnoqmFtJlzDjWG7RRe3kvCg==
+gatsby-theme-material-ui@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-material-ui/-/gatsby-theme-material-ui-1.0.5.tgz#fdffccca9f4d7cba9dd2f7799f84a51b07572361"
+  integrity sha512-pa4RWApUjG2EjrBx2HM56Uu5plC5C2fpHamwO0aNNIjXFUSFnRG6fbC9focAKSxNqcbEGLCtlY4qM8/80pwYeA==
   dependencies:
     gatsby-plugin-compile-es6-packages "^2.1.0"
     gatsby-plugin-material-ui "^2.1.4"
     gatsby-plugin-webfonts "^1.1.0"
-    gatsby-theme-material-ui-top-layout "^1.0.1"
+    gatsby-theme-material-ui-top-layout "^1.0.2"
 
 gatsby-theme-netlify-cms@^1.0.2:
   version "1.0.2"
