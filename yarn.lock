@@ -8625,10 +8625,10 @@ gatsby-telemetry@^1.1.23:
     stack-utils "1.0.2"
     uuid "3.3.3"
 
-gatsby-theme-material-ui-top-layout@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-material-ui-top-layout/-/gatsby-theme-material-ui-top-layout-1.0.1.tgz#bcd47312d5230690ce1b2c411229fbe0cd1d9f25"
-  integrity sha512-/mRVHzCbHIEWnQdM5XGOU7ckKHDZKHyNihDrAt+XS4mOn9WCQboHL2+L7aF9We7e/dNEpgkCWexSdA8DrFRZFQ==
+gatsby-theme-material-ui-top-layout@^1.0.1, gatsby-theme-material-ui-top-layout@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-material-ui-top-layout/-/gatsby-theme-material-ui-top-layout-1.0.2.tgz#fdbb1b00af1a6e322fac76c1f99162f15970cb95"
+  integrity sha512-EY4kiJRYa+Hj2EbusfZUNIBLYvli64zW6WdyjPWuJuL32UotGJlQafX+HiOx/f4jNcqNphCIVNAasQnn93Mn6g==
   dependencies:
     gatsby-plugin-react-helmet "^3.1.2"
 
