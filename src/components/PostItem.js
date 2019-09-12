@@ -1,7 +1,9 @@
 import React from "react"
 import {Box, Typography} from "@material-ui/core"
+import {Button} from "gatsby-theme-material-ui"
 import Link from "./Link"
 // Intended for use in site or blog index page.
+// TODO: Convert Button to Material UI from Bulma.
 
 const PostItem = ({post, logged}) => {
   const cntBorder = {

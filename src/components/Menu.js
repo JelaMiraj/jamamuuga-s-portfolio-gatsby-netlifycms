@@ -1,6 +1,6 @@
 import React from "react"
 import {StaticQuery, graphql} from "gatsby"
-import {Button, IconButton} from "@material-ui/core"
+import {Button, IconButton} from "gatsby-theme-material-ui"
 import styled from "styled-components/macro"
 import {GithubCircle} from "mdi-material-ui"
 import {Link, LinkExternal} from "."

@@ -1,7 +1,8 @@
 // import React, {useState} from "react"
 import React from "react"
 import {StaticQuery, graphql} from "gatsby"
-import {IconButton, Menu, MenuItem} from "@material-ui/core"
+import {Menu, MenuItem} from "@material-ui/core"
+import {IconButton} from "gatsby-theme-material-ui"
 import styled from "styled-components/macro"
 import {DotsVertical} from "mdi-material-ui"
 import {

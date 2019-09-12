@@ -2,7 +2,6 @@ import React from "react"
 import {PhotoCamera as CameraIcon} from "@material-ui/icons"
 import {
   AppBar,
-  Button,
   Card,
   CardActions,
   CardContent,
@@ -13,6 +12,7 @@ import {
   Toolbar,
   Typography,
 } from "@material-ui/core"
+import {Button} from "gatsby-theme-material-ui"
 import styled from "styled-components/macro"
 import {Link, LinkExternal} from "."
 // Use as example to improve portfolio page. Original demo here: https://material-ui.com/getting-started/templates/album/

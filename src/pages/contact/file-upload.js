@@ -1,6 +1,7 @@
 import React, {useState} from "react"
 import {navigate} from "gatsby"
-import {Box, Button, Container, Hidden, Typography} from "@material-ui/core"
+import {Box, Container, Hidden, Typography} from "@material-ui/core"
+import {Button} from "gatsby-theme-material-ui"
 import {Content, Layout, Link} from "../../components"
 // FIXME: Use "Reaptcha" on all form submissions (both text & file upload).
 // TODO: Port this to material-ui-popup-state

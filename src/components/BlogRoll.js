@@ -1,7 +1,8 @@
 import React from "react"
 import {PropTypes} from "prop-types"
 import {graphql, StaticQuery} from "gatsby"
-import {Button, Card, Grid, Typography} from "@material-ui/core"
+import {Card, Grid, Typography} from "@material-ui/core"
+import {Button} from "gatsby-theme-material-ui"
 // TODO: Fix card usage so underlying Material UI Card subcomponents like CardAction are actually used.
 import {Link, PreviewCompatibleImage} from "."
 

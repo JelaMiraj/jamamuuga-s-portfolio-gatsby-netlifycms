@@ -5,12 +5,12 @@ import {
   Box,
   Card,
   Container,
-  Button,
   Grid,
   Hidden,
   Paper,
   Typography,
 } from "@material-ui/core"
+import {Button} from "gatsby-theme-material-ui"
 import {Content, HTMLContent, Layout} from "../components"
 
 export const AboutPageTemplate = ({title, content, contentComponent}) => {

@@ -3,7 +3,6 @@ import {PropTypes} from "prop-types"
 import {graphql} from "gatsby"
 import {
   Box,
-  Button,
   Card,
   CardContent,
   CardMedia,
@@ -13,6 +12,7 @@ import {
   Paper,
   Typography,
 } from "@material-ui/core"
+import {Button} from "gatsby-theme-material-ui"
 import styled from "styled-components/macro"
 import {BlogRoll, Features, Layout, Link} from "../components"
 // TODO: Decide between Typography align="center" & Box textAlign="center".
