@@ -170,7 +170,7 @@
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-prettier": "^1.1.1",
     "stylelint-processor-styled-components": "^1.8.0",
-    "webpack": "^4.39.3",
+    "webpack": "^4.40.0",
     "webpack-bundle-analyzer": "^3.5.0"
   },
   "installConfig": {
@@ -208,6 +208,6 @@
     "slate-schema-violations": "^0.1.39",
     "stylis": "^3.5.4",
     "typescript": "^3.6.3",
-    "webpack": "^4.39.3"
+    "webpack": "^4.40.0"
   }
 }
