@@ -1,5 +1,34 @@
 {
   "compilerOptions": {
-    "sourceMap": true
-  }
+    "allowJs": true,
+    "diagnostics": true,
+    "jsx": "preserve",
+    "watch": true,
+    "sourceMap": true,
+    "checkJs": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["src/*"],
+      "~/*": ["src/*"],
+      "__tests__/*": ["__tests__/*"],
+      "__mocks__/*": ["__mocks__/*"],
+      "underscore": ["lodash"]
+    }
+  },
+  "exclude": [
+    "build",
+    ".cache",
+    "coverage",
+    "dist",
+    "docs",
+    "node_modules",
+    "**/node_modules/*",
+    ".pnp",
+    "**/.pnp/*",
+    ".pnp.js",
+    "**/.pnp.js",
+    "public",
+    "tmp",
+    "temp"
+  ]
 }
