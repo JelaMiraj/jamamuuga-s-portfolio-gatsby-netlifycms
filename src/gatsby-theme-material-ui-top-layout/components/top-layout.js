@@ -1,7 +1,7 @@
 import React from "react"
 import {PropTypes} from "prop-types"
 import {Box, CssBaseline} from "@material-ui/core"
-import {StylesProvider, ThemeProvider} from "@material-ui/styles"
+import {ThemeProvider} from "@material-ui/styles"
 import styled, {
   ThemeProvider as StyledThemeProvider,
 } from "styled-components/macro"
@@ -14,7 +14,6 @@ export default function TopLayout({children, theme = myTheme}, ...props) {
   return (
     <>
       <Helmet />
-      <StylesProvider injectFirst>
         <ThemeProvider theme={theme}>
           <StyledThemeProvider theme={theme}>
             <Box
@@ -34,7 +33,6 @@ export default function TopLayout({children, theme = myTheme}, ...props) {
             </Box>
           </StyledThemeProvider>
         </ThemeProvider>
-      </StylesProvider>
     </>
   )
 }
