@@ -2,7 +2,9 @@ import React from "react"
 import {PropTypes} from "prop-types"
 import {Box, CssBaseline} from "@material-ui/core"
 import {StylesProvider, ThemeProvider} from "@material-ui/styles"
-import styled, {ThemeProvider as StyledThemeProvider} from "styled-components/macro"
+import styled, {
+  ThemeProvider as StyledThemeProvider,
+} from "styled-components/macro"
 import {Helmet} from "."
 import myTheme from "../theme"
 // TODO: Avoid the need to wrap multiple providers.
