@@ -121,6 +121,7 @@
     "@giotramu/stylelint-config": "^0.1.2",
     "@types/material-ui": "^0.21.7",
     "@types/react-helmet": "^5.0.10",
+    "@types/styled-components": "^4.1.19",
     "apollo": "^2.18.2",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^24.9.0",
