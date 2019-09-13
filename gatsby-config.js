@@ -167,19 +167,19 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
-    {
-      resolve: "gatsby-plugin-material-ui",
-      options: {
-        // If you want to use styled components you should change the injection order.
-        stylesProvider: {
-          injectFirst: true,
-        },
-        // theme: {
-        //   primaryColor: "#9c27b0",
-        // },
-        pathToTheme: "src/gatsby-theme-material-ui-top-layout/theme.js",
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-material-ui",
+    //   options: {
+    //     // If you want to use styled components you should change the injection order.
+    //     stylesProvider: {
+    //       injectFirst: true,
+    //     },
+    //     // theme: {
+    //     //   primaryColor: "#9c27b0",
+    //     // },
+    //     pathToTheme: "src/gatsby-theme-material-ui-top-layout/theme.js",
+    //   },
+    // },
     "gatsby-plugin-offline",
     // {
     //   resolve: "gatsby-plugin-purgecss", // purges all unused/unreferenced css rules
