@@ -28,7 +28,7 @@ const StyledAppBar = styled(AppBar)`
   /* Text Color */
   color: #fff;
 
-  & .MuiAppBar-colorPrimary {
+  .MuiAppBar-colorPrimary {
     /* TODO: Set color: to get color of textPrimary from passed theme object. */
     /* background-color: ${props.color || props.theme.palette.primary.main}; */
     background-color: #f44336;
@@ -44,7 +44,7 @@ const StyledAvatar = styled(Avatar)`
   background: rgb(255, 102, 154);
   background-color: rgb(255, 102, 154);
 
-  & .MuiAvatar-colorDefault {
+  .MuiAvatar-colorDefault {
     background-color: rgb(255, 102, 154);
   }
 `
