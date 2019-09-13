@@ -9,7 +9,7 @@ module.exports = {
   //   ".+\\.(css|styl|less|sass|scss)$": "identity-obj-proxy",
   //   ".+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
   // },
-  resolver: require.resolve("jest-pnp-resolver"),
+  // resolver: require.resolve("jest-pnp-resolver"),
   setupFiles: [
     // "<rootDir>/scripts/loader-shim.js",
     // "raf/polyfill",

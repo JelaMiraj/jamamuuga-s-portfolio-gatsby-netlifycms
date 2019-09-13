@@ -181,7 +181,7 @@
     "webpack-bundle-analyzer": "^3.5.0"
   },
   "installConfig": {
-    "pnp": true
+    "pnp": false
   },
   "optionalDependencies": {
     "@babel/runtime": "^7.5.5",

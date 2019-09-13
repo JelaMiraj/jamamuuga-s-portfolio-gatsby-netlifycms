@@ -2,7 +2,7 @@ const _ = require("lodash")
 const path = require("path")
 const {createFilePath} = require("gatsby-source-filesystem")
 const {fmImagesToRelative} = require("gatsby-remark-relative-images")
-const PnpWebpackPlugin = require("pnp-webpack-plugin")
+// const PnpWebpackPlugin = require("pnp-webpack-plugin")
 // const {BundleAnalyzerPlugin} = require("webpack-bundle-analyzer")
 
 exports.createPages = ({actions, graphql}) => {
@@ -95,24 +95,24 @@ exports.onCreateNode = ({node, actions, getNode}) => {
 
 exports.onCreateWebpackConfig = ({stage, rules, loaders, plugins, actions}) => {
   actions.setWebpackConfig({
-    resolveLoader: {
-      plugins: [PnpWebpackPlugin.moduleLoader(module)],
-    },
-    resolve: {
-      // alias: {
-      //   // TODO: Replace "appFolder" with the real folder name.
-      //   "@material-ui/styles": path.resolve(
-      //     appFolder,
-      //     "node_modules",
-      //     "@material-ui/styles",
-      //   ),
-      // },
-      plugins: [
-        PnpWebpackPlugin.bind(`${__dirname}/.cache`, module, `gatsby`),
-        PnpWebpackPlugin.bind(`${__dirname}/public`, module, `gatsby`),
-        PnpWebpackPlugin,
-      ],
-    },
+    // resolveLoader: {
+    //   plugins: [PnpWebpackPlugin.moduleLoader(module)],
+    // },
+    // resolve: {
+    //   // alias: {
+    //   //   // TODO: Replace "appFolder" with the real folder name.
+    //   //   "@material-ui/styles": path.resolve(
+    //   //     appFolder,
+    //   //     "node_modules",
+    //   //     "@material-ui/styles",
+    //   //   ),
+    //   // },
+    //   plugins: [
+    //     PnpWebpackPlugin.bind(`${__dirname}/.cache`, module, `gatsby`),
+    //     PnpWebpackPlugin.bind(`${__dirname}/public`, module, `gatsby`),
+    //     PnpWebpackPlugin,
+    //   ],
+    // },
     module: {
       rules: [
         // {
