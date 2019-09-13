@@ -108,6 +108,8 @@
     "lint:staged": "eslint --fix --max-warnings=0",
     "lint:style": "stylelint src/**/*.{js,jsx,scss,css}",
     "pnpify:sdk": "pnpify --sdk",
+    "which:gatsby": "which gatsby",
+    "which:pnpify": "which pnpify",
     "version:gatsby": "gatsby --version"
   },
   "devDependencies": {
