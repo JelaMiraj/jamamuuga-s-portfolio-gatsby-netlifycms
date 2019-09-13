@@ -2364,6 +2364,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-helmet@^5.0.10":
+  version "5.0.10"
+  resolved "https://registry.yarnpkg.com/@types/react-helmet/-/react-helmet-5.0.10.tgz#f47fdda88fe750880089904fde4446612f79b63d"
+  integrity sha512-wGr0J7yncqwOS4ae+yYeMd4L3Gh43CgYcbq9bXEeSozB4d/+Z/XLT9wyMUwfWImWtOLCFLP6Xnt7w5P6+02gZg==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-transition-group@^4.2.0":
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/@types/react-transition-group/-/react-transition-group-4.2.2.tgz#8c851c4598a23a3a34173069fb4c5c9e41c02e3f"
