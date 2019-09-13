@@ -22,7 +22,7 @@ import {Link, Menu, MenuMobile} from "."
 const StyledAppBar = styled(AppBar)`
   /* "#f44336" */
   /* background: ${props =>
-  props.background || props.theme.palette.primary.main}; */
+    props.background || props.theme.palette.primary.main}; */
   background: #f44336;
   background-color: #f44336;
   /* Text Color */

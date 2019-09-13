@@ -99,6 +99,13 @@ exports.onCreateWebpackConfig = ({stage, rules, loaders, plugins, actions}) => {
       plugins: [PnpWebpackPlugin.moduleLoader(module)],
     },
     resolve: {
+      alias: {
+        "@material-ui/styles": path.resolve(
+          appFolder,
+          "node_modules",
+          "@material-ui/styles",
+        ),
+      },
       plugins: [
         PnpWebpackPlugin.bind(`${__dirname}/.cache`, module, `gatsby`),
         PnpWebpackPlugin.bind(`${__dirname}/public`, module, `gatsby`),
