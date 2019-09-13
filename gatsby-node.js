@@ -148,7 +148,7 @@ exports.onCreateWebpackConfig = ({stage, rules, loaders, plugins, actions}) => {
       //   __DEVELOPMENT__: stage === `develop` || stage === `develop-html`,
       // }),
       // new BundleAnalyzerPlugin({
-      //   // FIXME: Even disabled, Wepback Bundle Analyzer still generates for serving stats.json & sw.js in production...
+      //   // FIXME: Even disabled, Webpack Bundle Analyzer still generates for serving stats.json & sw.js in production...
       //   analyzerMode: "disabled",
       //   generateStatsFile: true,
       //   openAnalyzer: false,
