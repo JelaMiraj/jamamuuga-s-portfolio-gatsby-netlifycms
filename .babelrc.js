@@ -51,6 +51,11 @@ module.exports = {
     //     },
     //   },
     // ],
-    // require.resolve("babel-plugin-styled-components"),
+    // [
+    //   require.resolve("babel-plugin-styled-components"),
+    //   {
+    //     pure: true,
+    //   },
+    // ],
   ],
 }

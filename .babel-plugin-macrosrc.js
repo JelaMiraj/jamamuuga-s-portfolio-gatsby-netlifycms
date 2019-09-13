@@ -1,3 +1,5 @@
 module.exports = {
-  styledComponents: {},
+  styledComponents: {
+    pure: true,
+  },
 }
