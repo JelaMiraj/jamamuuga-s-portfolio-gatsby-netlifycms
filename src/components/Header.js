@@ -21,15 +21,20 @@ import {Link, Menu, MenuMobile} from "."
 // eslint-disable-next-line
 const StyledAppBar = styled(AppBar)`
   /* "#f44336" */
-  /* color: ${props => props.color || props.theme.palette.primary.main}; */
   /* background: ${props =>
-    props.background || props.theme.palette.primary.main}; */
+  props.background || props.theme.palette.primary.main}; */
   background: #f44336;
+  background-color: #f44336;
+  /* Text Color */
+  color: #fff;
 
-  /* & .MuiAppBar-colorPrimary {
-    // TODO: Set color: to get color of textPrimary from passed theme object.
-    background-color: ${props.color || props.theme.palette.primary.main};
-  } */
+  & .MuiAppBar-colorPrimary {
+    /* TODO: Set color: to get color of textPrimary from passed theme object. */
+    /* background-color: ${props.color || props.theme.palette.primary.main}; */
+    background-color: #f44336;
+    /* Text Color */
+    color: #fff;
+  }
 `
 
 const StyledAvatar = styled(Avatar)`
@@ -37,6 +42,11 @@ const StyledAvatar = styled(Avatar)`
     props.backgroundColor || props.theme.palette.secondary.light}; */
   /* background: ${props.theme.palette.secondary.light}; */
   background: rgb(255, 102, 154);
+  background-color: rgb(255, 102, 154);
+
+  & .MuiAvatar-colorDefault {
+    background-color: rgb(255, 102, 154);
+  }
 `
 
 const StyledChip = styled(Chip)`
