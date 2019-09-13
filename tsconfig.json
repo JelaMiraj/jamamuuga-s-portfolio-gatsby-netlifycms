@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "allowJs": true,
+    "noEmit": true,
     "diagnostics": true,
     "jsx": "preserve",
     "watch": true,
