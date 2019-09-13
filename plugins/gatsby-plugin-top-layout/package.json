@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-top-layout",
   "installConfig": {
-    "pnp": true
+    "pnp": false
   }
 }
