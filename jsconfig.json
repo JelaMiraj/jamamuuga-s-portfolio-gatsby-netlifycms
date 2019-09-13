@@ -5,6 +5,7 @@
     "module": "commonjs",
     "target": "es2015",
     "watch": true,
+    "sourceMap": true,
     "checkJs": true,
     "baseUrl": ".",
     "paths": {
