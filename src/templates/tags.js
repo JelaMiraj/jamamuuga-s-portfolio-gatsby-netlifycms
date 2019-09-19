@@ -23,8 +23,8 @@ const StyledSectionBoxGradient = styled(Box)`
   /* TODO: Import section--gradient from old stylesheet. */
 `
 
-const TagRoute = props => {
-  const posts = props.data.allMarkdownRemark.edges
+const TagRoute = ({data, pageContext}) => {
+  const posts = data.allMarkdownRemark.edges
   const postLinks = posts.map(post => (
     <ListItem key={post.node.fields.slug}>
       <ListItemText>
@@ -34,9 +34,9 @@ const TagRoute = props => {
       </ListItemText>
     </ListItem>
   ))
-  const {tag} = props.pageContext
-  const {title} = props.data.site.siteMetadata
-  const {totalCount} = props.data.allMarkdownRemark
+  const {tag} = pageContext
+  const {title} = data.site.siteMetadata
+  const {totalCount} = data.allMarkdownRemark
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? "" : "s"
   } tagged with “${tag}”`
