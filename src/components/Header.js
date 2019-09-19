@@ -45,7 +45,7 @@ const StyledAvatar = styled(Avatar)`
   // TODO: Use indirect "secondary.light" or refer to theme object instead of hard coding color.
   background: rgb(255, 102, 154);
   // background-color: rgb(255, 102, 154);
-  color: blue;
+  color: white;
 
   // .MuiAvatar-colorDefault {
   //   background-color: rgb(255, 102, 154);
