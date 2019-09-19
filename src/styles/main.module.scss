@@ -1,24 +1,24 @@
-@charset "UTF-8";
+// @charset "UTF-8";
 
-// 1. Configuration and helpers
-@import "abstracts/variables.module", "abstracts/functions.module",
-  "abstracts/mixins.module";
+// // 1. Configuration and helpers
+// @import "abstracts/variables.module", "abstracts/functions.module",
+//   "abstracts/mixins.module";
 
-// 2. Vendors
-@import "vendor/vendor.module";
+// // 2. Vendors
+// @import "vendor/vendor.module";
 
-// 3. Base stuff
-@import "base/base.module", "base/fonts.module", "base/typography.module",
-  "base/helpers.module";
+// // 3. Base stuff
+// @import "base/base.module", "base/fonts.module", "base/typography.module",
+//   "base/helpers.module";
 
-// 4. Layout-related sections
-@import "layout/header.module", "layout/footer.module";
+// // 4. Layout-related sections
+// @import "layout/header.module", "layout/footer.module";
 
-// 5. Components
-@import "components/navbar.module", "components/content.module";
+// // 5. Components
+// @import "components/navbar.module", "components/content.module";
 
-// 6. Page-specific styles
-// @import "pages/index.module";
+// // 6. Page-specific styles
+// // @import "pages/index.module";
 
-// 7. Themes
-// @import "themes/default.module";
+// // 7. Themes
+// // @import "themes/default.module";
