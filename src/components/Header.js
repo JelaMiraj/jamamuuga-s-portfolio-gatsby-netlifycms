@@ -54,7 +54,7 @@ const StyledChip = styled(Chip)`
   color: rgb(255, 102, 154);
 `
 
-const Header = props => (
+const Header = ({data}) => (
   <StyledAppBar id="appBar">
     <Toolbar>
       <Grid container justify="space-between" alignItems="center" spacing={2}>
@@ -68,9 +68,7 @@ const Header = props => (
               </StyledAvatar>
             }
             label={
-              <Link to="/">
-                {props.data.site.siteMetadata.title.toUpperCase()}
-              </Link>
+              <Link to="/">{data.site.siteMetadata.title.toUpperCase()}</Link>
             }
           />
         </Grid>
