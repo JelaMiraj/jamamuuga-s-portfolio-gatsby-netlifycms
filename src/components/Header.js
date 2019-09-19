@@ -38,6 +38,7 @@ const StyledAppBar = styled(AppBar)`
 `
 
 const StyledAvatar = styled(Avatar)`
+  // TODO: Work on accessibility of colors & color combos.
   /* background-color: ${props =>
     props.backgroundColor || props.theme.palette.secondary.light}; */
   /* background: ${props.theme.palette.secondary.light}; */
