@@ -21,26 +21,26 @@ import {Link, Menu, MenuMobile} from "."
 // eslint-disable-next-line
 const StyledAppBar = styled(AppBar)`
   // "#f44336"
-  // background: ${props =>
-  //   props.background || props.theme.palette.primary.main};
+  /* background: ${props =>
+    props.background || props.theme.palette.primary.main}; */
   // background: #f44336;
   // background-color: #f44336;
   // Text Color
   // color: #fff;
 
   /* .MuiAppBar-colorPrimary {
-    // TODO: Set color: to get color of textPrimary from passed theme object.
-    // background-color: ${props.color || props.theme.palette.primary.main};
-    background-color: #f44336;
+    // TODO: Set color: to get color of textPrimary from passed theme object. */
+    /* background-color: ${props.color || props.theme.palette.primary.main}; */
+    /* background-color: #f44336;
     // Text Color
     color: #fff;
   } */
 `
 
 const StyledAvatar = styled(Avatar)`
-  // background-color: ${props =>
-  //  props.backgroundColor || props.theme.palette.secondary.light};
-  // background: ${props.theme.palette.secondary.light};
+  /* background-color: ${props =>
+    props.backgroundColor || props.theme.palette.secondary.light}; */
+  /* background: ${props.theme.palette.secondary.light}; */
   // TODO: Use indirect "secondary.light" or refer to theme object instead of hard coding color.
   background: rgb(255, 102, 154);
   // background-color: rgb(255, 102, 154);
@@ -51,7 +51,7 @@ const StyledAvatar = styled(Avatar)`
 `
 
 const StyledChip = styled(Chip)`
-  // color: ${props => props.color || props.theme.palette.secondary.light};
+  /* color: ${props => props.color || props.theme.palette.secondary.light}; */
   // color: rgb(255, 102, 154);
 `
 
