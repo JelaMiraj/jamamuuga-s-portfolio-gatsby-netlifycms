@@ -111,8 +111,10 @@
     "pnpify:sdk": "pnpify --sdk",
     "which:eslint": "which eslint",
     "which:gatsby": "which gatsby",
+    "which:jest": "which jest",
     "which:pnpify": "which pnpify",
     "which:prettier": "which prettier",
+    "which:stylelint": "which stylelint",
     "version:gatsby": "gatsby --version"
   },
   "devDependencies": {
