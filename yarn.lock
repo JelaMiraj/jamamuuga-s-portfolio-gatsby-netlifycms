@@ -1725,14 +1725,14 @@
   dependencies:
     core-js "^2.5.7"
 
-"@material-ui/core@^4.4.2":
-  version "4.4.2"
-  resolved "https://registry.yarnpkg.com/@material-ui/core/-/core-4.4.2.tgz#66a9423e533833d2867827e6fdf526adbdceb7c0"
-  integrity sha512-hnZ4SP/hWJ9sUoNMkStz/y/CL2c7j4JpVIB2py3+vpBFU9TgHL3noBk3Fr0gltRvvlYA9ekpiGsGZ2ukk1R7Eg==
+"@material-ui/core@^4.4.3":
+  version "4.4.3"
+  resolved "https://registry.yarnpkg.com/@material-ui/core/-/core-4.4.3.tgz#65665d2c4e9cb84e018774e1471f6d0417f4535e"
+  integrity sha512-Lz8sMFeCrtq5/pbhqClWFHpveL0huixjca0tw7uvh9xKKB7VyyYOyTu7RamSZLxb34UCSMPlobR+KK25Nqzkqw==
   dependencies:
     "@babel/runtime" "^7.4.4"
-    "@material-ui/styles" "^4.4.1"
-    "@material-ui/system" "^4.3.3"
+    "@material-ui/styles" "^4.4.3"
+    "@material-ui/system" "^4.4.3"
     "@material-ui/types" "^4.1.1"
     "@material-ui/utils" "^4.4.0"
     "@types/react-transition-group" "^4.2.0"
@@ -1744,8 +1744,7 @@
     normalize-scroll-left "^0.2.0"
     popper.js "^1.14.1"
     prop-types "^15.7.2"
-    react-transition-group "^4.0.0"
-    warning "^4.0.1"
+    react-transition-group "^4.3.0"
 
 "@material-ui/icons@^4.4.1":
   version "4.4.1"
@@ -1754,7 +1753,7 @@
   dependencies:
     "@babel/runtime" "^7.4.4"
 
-"@material-ui/styles@^4.4.1", "@material-ui/styles@^4.4.3":
+"@material-ui/styles@^4.4.3":
   version "4.4.3"
   resolved "https://registry.yarnpkg.com/@material-ui/styles/-/styles-4.4.3.tgz#78239177723660093cc9a277db5759c01c693c2a"
   integrity sha512-kNUdHFWsrvWKIEPx8Xy2/qayqsGMrYmCMq+FIiJiYczVZl5hiS8j5+KayonnpVta/O+Dktk+cxWkVcgwtxMrHg==
@@ -1777,15 +1776,14 @@
     jss-plugin-vendor-prefixer "10.0.0-alpha.25"
     prop-types "^15.7.2"
 
-"@material-ui/system@^4.3.3":
-  version "4.3.3"
-  resolved "https://registry.yarnpkg.com/@material-ui/system/-/system-4.3.3.tgz#8534fe76adbd3938a8dea833e69d84a7a143ecff"
-  integrity sha512-j7JyvlhcTdc1wV6HzrDTU7XXlarxYXEUyzyHawOA0kCGmYVN2uFHENQRARLUdl+mEmuXO4TsAhNAiqiKakkFMg==
+"@material-ui/system@^4.4.3":
+  version "4.4.3"
+  resolved "https://registry.yarnpkg.com/@material-ui/system/-/system-4.4.3.tgz#68ca8cf83614255fcd5b9d3a72ce8ee58a43a5c7"
+  integrity sha512-Cb05vLXsaCzssXD/iZKa0/qC6YOwbFWnYdnOEdkXZ3Fn2Ytz7rsnMgFejUSQV1luVhUBlEIm8DVz40N25WwW7w==
   dependencies:
     "@babel/runtime" "^7.4.4"
     deepmerge "^4.0.0"
     prop-types "^15.7.2"
-    warning "^4.0.1"
 
 "@material-ui/types@^4.1.1":
   version "4.1.1"
@@ -5760,7 +5758,7 @@ cssstyle@^1.0.0, cssstyle@^1.2.2:
   dependencies:
     cssom "0.3.x"
 
-csstype@^2.2.0, csstype@^2.5.2, csstype@^2.5.7, csstype@^2.6.5:
+csstype@^2.2.0, csstype@^2.5.2, csstype@^2.5.7, csstype@^2.6.5, csstype@^2.6.6:
   version "2.6.6"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.6.tgz#c34f8226a94bbb10c32cc0d714afdf942291fc41"
   integrity sha512-RpFbQGUE74iyPgvr46U9t1xoQBM8T4BL8SxrN66Le2xYAPSaDJJKeztV3awugusb3g3G9iL8StmkBBXhcbbXhg==
@@ -6348,6 +6346,14 @@ dom-helpers@^3.2.0, dom-helpers@^3.2.1, dom-helpers@^3.4.0:
   integrity sha512-LnuPJ+dwqKDIyotW1VzmOZ5TONUN7CwkCR5hrgawTUbkBGYdeoNLZo6nNfGkCrjtE1nXXaj7iMMpDa8/d9WoIA==
   dependencies:
     "@babel/runtime" "^7.1.2"
+
+dom-helpers@^5.0.1:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/dom-helpers/-/dom-helpers-5.1.0.tgz#57a726de04abcc2a8bbfe664b3e21c584bde514e"
+  integrity sha512-zRRYDhpiKuAJHasOqCm7lBnsd22nrM4+OYI4ASWCxen+ocTMl7BIAKgGag97TlLiTl6rrau5aPe1VGUm9jQBng==
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+    csstype "^2.6.6"
 
 dom-serializer@0:
   version "0.2.1"
@@ -16587,13 +16593,13 @@ react-transition-group@^2.2.1, react-transition-group@^2.6.0:
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
-react-transition-group@^4.0.0:
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-4.2.2.tgz#8b5252410180c27fd7eebf50b185256b41799b16"
-  integrity sha512-uP0tjqewtvjb7kGZFpZYPoD/NlVZmIgts9eTt1w35pAaEApPxQGv94lD3VkqyXf2aMqrSGwhs6EV/DLaoKbLSw==
+react-transition-group@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-4.3.0.tgz#fea832e386cf8796c58b61874a3319704f5ce683"
+  integrity sha512-1qRV1ZuVSdxPlPf4O8t7inxUGpdyO5zG9IoNfJxSO0ImU2A1YWkEQvFPuIPZmMLkg5hYs7vv5mMOyfgSkvAwvw==
   dependencies:
-    "@babel/runtime" "^7.4.5"
-    dom-helpers "^3.4.0"
+    "@babel/runtime" "^7.5.5"
+    dom-helpers "^5.0.1"
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
