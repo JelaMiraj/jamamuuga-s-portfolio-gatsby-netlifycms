@@ -186,7 +186,7 @@
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-prettier": "^1.1.1",
     "stylelint-processor-styled-components": "^1.8.0",
-    "stylelint-scss": "^3.11.0",
+    "stylelint-scss": "^3.11.1",
     "webpack": "^4.40.2",
     "webpack-bundle-analyzer": "^3.5.1"
   },
