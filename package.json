@@ -129,7 +129,7 @@
     "@giotramu/stylelint-config": "^0.1.2",
     "@types/material-ui": "^0.21.7",
     "@types/node": "^12.7.6",
-    "@types/react-dom": "^16.9.0",
+    "@types/react-dom": "^16.9.1",
     "@types/react-helmet": "^5.0.10",
     "@types/styled-components": "^4.1.19",
     "apollo": "^2.18.3",
