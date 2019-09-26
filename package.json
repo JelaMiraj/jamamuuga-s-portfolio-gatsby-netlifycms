@@ -126,7 +126,7 @@
     "@babel/register": "^7.6.2",
     "@berry/pnpify": "^0.1.0",
     "@emotion/core": "^10.0.17",
-    "@giotramu/stylelint-config": "^0.1.2",
+    "@giotramu/stylelint-config": "^1.0.0",
     "@types/material-ui": "^0.21.7",
     "@types/node": "^12.7.8",
     "@types/react-dom": "^16.9.1",
