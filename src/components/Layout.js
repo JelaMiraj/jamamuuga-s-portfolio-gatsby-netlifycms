@@ -7,6 +7,7 @@ import styled from "styled-components/macro"
 import {Footer, Header} from "."
 // import {Navbar} from "."
 import useSiteMetadata from "./SiteMetadata"
+// TODO: Use Skeleton components as loading placeholders.
 
 const StyledGridContainer = styled(Grid)`
   margin-top: 94;

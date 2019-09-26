@@ -17,6 +17,7 @@ import styled from "styled-components/macro"
 import {BlogRoll, Features, Layout, Link} from "../components"
 // TODO: Decide between Typography align="center" & Box textAlign="center".
 // TODO: Maybe use Card instead of or around Paper.
+// TODO: Use Skeleton components as loading placeholders.
 
 const StyledWrapperBox = styled(Box)`
   text-align: center;

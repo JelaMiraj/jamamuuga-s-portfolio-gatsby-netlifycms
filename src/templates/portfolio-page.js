@@ -21,6 +21,7 @@ import {
 } from "../components"
 // TODO: Maybe use Cards, Lists, and/or Grids instead of GridList
 // FIXME: Fix Grid & GridList with images between text grid & testimonial area. That area isn't loading the images & is complaining about duplicate keys named "NA".
+// TODO: Use Skeleton components as loading placeholders.
 
 const StyledBackgroundImageBox = styled(Box)`
   /* Contains .full-width-image-container and .margin-top-0 */

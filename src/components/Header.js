@@ -15,6 +15,7 @@ import {Link, Menu, MenuMobile} from "."
 // FIXME: Get color assignment issues sorted out so things like hard-coding aren't necessary.
 // TODO: Use color: inherit where it works & lines up right.
 // TODO: Use Material UI Docs (especially AppBar API Docs: https://material-ui.com/api/app-bar/#appbar-api) to sort out style propagation issues. Also check out Chrome DevTools, and other Styled Components & Material UI Docs.
+// TODO: Use Skeleton components as loading placeholders.
 
 // TODO: Hopefully explicit props passing isn't really needed.
 // const StyledAppBar = styled(({color, ...other}) => <AppBar {...other} />)`
