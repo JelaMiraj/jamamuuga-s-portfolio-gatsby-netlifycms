@@ -18,6 +18,7 @@ import {BlogRoll, Features, Layout, Link} from "../components"
 // TODO: Decide between Typography align="center" & Box textAlign="center".
 // TODO: Maybe use Card instead of or around Paper.
 // TODO: Use Skeleton components as loading placeholders.
+// TODO: Find Free Headless Ghost Hosting & convert to that unless Netlify CMS has themes & a super friendly editor.
 
 const StyledWrapperBox = styled(Box)`
   text-align: center;

@@ -8,6 +8,7 @@ import {Footer, Header} from "."
 // import {Navbar} from "."
 import useSiteMetadata from "./SiteMetadata"
 // TODO: Use Skeleton components as loading placeholders.
+// TODO: Find Free Headless Ghost Hosting & convert to that unless Netlify CMS has themes & a super friendly editor.
 
 const StyledGridContainer = styled(Grid)`
   margin-top: 94;
