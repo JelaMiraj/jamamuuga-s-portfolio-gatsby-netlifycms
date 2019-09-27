@@ -145,6 +145,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sharp",
       options: {
+        // NOTE: MozJpeg take significantly longer than the default, but gives better optimized results.
         useMozJpeg: true,
       },
     },
