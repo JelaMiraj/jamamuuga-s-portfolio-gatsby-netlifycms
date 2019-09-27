@@ -142,7 +142,12 @@ module.exports = {
         name: "images",
       },
     },
-    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-plugin-sharp",
+      options: {
+        useMozJpeg: true,
+      },
+    },
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-transformer-remark",
@@ -161,6 +166,8 @@ module.exports = {
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
               maxWidth: 2048,
+              withWebp: true,
+              tracedSVG: true,
             },
           },
           {
