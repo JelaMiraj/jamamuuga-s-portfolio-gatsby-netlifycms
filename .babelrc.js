@@ -51,6 +51,7 @@ module.exports = {
     //     },
     //   },
     // ],
+    require.resolve("react-hot-loader/babel"),
     // [
     //   require.resolve("babel-plugin-styled-components"),
     //   {
