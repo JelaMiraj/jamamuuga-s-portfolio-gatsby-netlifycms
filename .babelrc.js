@@ -92,64 +92,64 @@ module.exports = {
     //     },
     //   },
     // ],
-    [
-      require.resolve("babel-plugin-transform-imports"),
-      {
-        lodash: {
-          transform: "lodash/${member}",
-          preventFullImport: true,
-        },
-      },
-      "babel-plugin-transform-imports-material-ui-lodash",
-    ],
-    [
-      require.resolve("babel-plugin-transform-imports"),
-      {
-        "@material-ui/core": {
-          // transform: "@material-ui/core/esm/${member}",
-          // for bundlers not supporting ES modules use:
-          transform: "@material-ui/core/${member}",
-          preventFullImport: true,
-        },
-      },
-      "babel-plugin-transform-imports-material-ui-core",
-    ],
-    [
-      require.resolve("babel-plugin-transform-imports"),
-      {
-        "@material-ui/icons": {
-          // transform: "@material-ui/icons/esm/${member}",
-          // for bundlers not supporting ES modules use:
-          transform: "@material-ui/icons/${member}",
-          preventFullImport: true,
-        },
-      },
-      "babel-plugin-transform-imports-material-ui-icons",
-    ],
-    [
-      require.resolve("babel-plugin-transform-imports"),
-      {
-        "@material-ui/styles": {
-          // transform: "@material-ui/styles/esm/${member}",
-          // for bundlers not supporting ES modules use:
-          transform: "@material-ui/styles/${member}",
-          preventFullImport: true,
-        },
-      },
-      "babel-plugin-transform-imports-material-ui-styles",
-    ],
-    [
-      require.resolve("babel-plugin-transform-imports"),
-      {
-        "@material-ui/system": {
-          // transform: "@material-ui/system/esm/${member}",
-          // for bundlers not supporting ES modules use:
-          transform: "@material-ui/system/${member}",
-          preventFullImport: true,
-        },
-      },
-      "babel-plugin-transform-imports-material-ui-system",
-    ],
+    // [
+    //   require.resolve("babel-plugin-transform-imports"),
+    //   {
+    //     lodash: {
+    //       transform: "lodash/${member}",
+    //       preventFullImport: true,
+    //     },
+    //   },
+    //   "babel-plugin-transform-imports-material-ui-lodash",
+    // ],
+    // [
+    //   require.resolve("babel-plugin-transform-imports"),
+    //   {
+    //     "@material-ui/core": {
+    //       // transform: "@material-ui/core/esm/${member}",
+    //       // for bundlers not supporting ES modules use:
+    //       transform: "@material-ui/core/${member}",
+    //       preventFullImport: true,
+    //     },
+    //   },
+    //   "babel-plugin-transform-imports-material-ui-core",
+    // ],
+    // [
+    //   require.resolve("babel-plugin-transform-imports"),
+    //   {
+    //     "@material-ui/icons": {
+    //       // transform: "@material-ui/icons/esm/${member}",
+    //       // for bundlers not supporting ES modules use:
+    //       transform: "@material-ui/icons/${member}",
+    //       preventFullImport: true,
+    //     },
+    //   },
+    //   "babel-plugin-transform-imports-material-ui-icons",
+    // ],
+    // [
+    //   require.resolve("babel-plugin-transform-imports"),
+    //   {
+    //     "@material-ui/styles": {
+    //       // transform: "@material-ui/styles/esm/${member}",
+    //       // for bundlers not supporting ES modules use:
+    //       transform: "@material-ui/styles/${member}",
+    //       preventFullImport: true,
+    //     },
+    //   },
+    //   "babel-plugin-transform-imports-material-ui-styles",
+    // ],
+    // [
+    //   require.resolve("babel-plugin-transform-imports"),
+    //   {
+    //     "@material-ui/system": {
+    //       // transform: "@material-ui/system/esm/${member}",
+    //       // for bundlers not supporting ES modules use:
+    //       transform: "@material-ui/system/${member}",
+    //       preventFullImport: true,
+    //     },
+    //   },
+    //   "babel-plugin-transform-imports-material-ui-system",
+    // ],
     require.resolve("react-hot-loader/babel"),
     // [
     //   require.resolve("babel-plugin-styled-components"),
