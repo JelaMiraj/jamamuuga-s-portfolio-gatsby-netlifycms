@@ -42,6 +42,8 @@ module.exports = {
     //   resolve: "gatsby-plugin-import",
     //   options: {
     //     libraryName: "lodash",
+    //     libraryDirectory: "",
+    //     camel2DashComponentName: false, // default: true
     //   },
     // },
     // {
@@ -54,18 +56,24 @@ module.exports = {
     //   resolve: "gatsby-plugin-import",
     //   options: {
     //     libraryName: "@material-ui/core",
+    //     libraryDirectory: "components", // default: lib
+    //     camel2DashComponentName: false, // default: true
     //   },
     // },
     // {
     //   resolve: "gatsby-plugin-import",
     //   options: {
     //     libraryName: "@material-ui/styles",
+    //     libraryDirectory: "components", // default: lib
+    //     camel2DashComponentName: false, // default: true
     //   },
     // },
     // {
     //   resolve: "gatsby-plugin-import",
     //   options: {
     //     libraryName: "@material-ui/icons",
+    //     libraryDirectory: "components", // default: lib
+    //     camel2DashComponentName: false, // default: true
     //   },
     // },
     "gatsby-theme-material-ui",
