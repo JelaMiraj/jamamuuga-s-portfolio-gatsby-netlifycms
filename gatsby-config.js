@@ -76,6 +76,34 @@ module.exports = {
     //     camel2DashComponentName: false, // default: true
     //   },
     // },
+    {
+      resolve: "gatsby-plugin-transform-imports",
+      options: {
+        lodash: {
+          transform: "lodash/${member}",
+          preventFullImport: true,
+        },
+        // "material-ui": {
+        //   transform: "material-ui/${member}",
+        //   preventFullImport: true,
+        // },
+        "@material-ui/core": {
+          // Use "transform: '@material-ui/core/${member}'," if your bundler does not support ES modules
+          transform: "@material-ui/core/esm/${member}",
+          preventFullImport: true,
+        },
+        "@material-ui/styles": {
+          // Use "transform: '@material-ui/styles/${member}'," if your bundler does not support ES modules
+          transform: "@material-ui/styles/esm/${member}",
+          preventFullImport: true,
+        },
+        "@material-ui/icons": {
+          // Use "transform: '@material-ui/icons/${member}'," if your bundler does not support ES modules
+          transform: "@material-ui/icons/esm/${member}",
+          preventFullImport: true,
+        },
+      },
+    },
     "gatsby-theme-material-ui",
     {
       resolve: "gatsby-theme-netlify-cms",
