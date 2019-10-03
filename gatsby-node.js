@@ -98,22 +98,22 @@ exports.onCreateWebpackConfig = ({stage, rules, loaders, plugins, actions}) => {
     // resolveLoader: {
     //   plugins: [PnpWebpackPlugin.moduleLoader(module)],
     // },
-    resolve: {
-      alias: {
-        "react-dom": "@hot-loader/react-dom",
-        // // TODO: Replace "appFolder" with the real folder name.
-        // "@material-ui/styles": path.resolve(
-        //   appFolder,
-        //   "node_modules",
-        //   "@material-ui/styles",
-        // ),
-      },
-      // plugins: [
-      //   PnpWebpackPlugin.bind(`${__dirname}/.cache`, module, `gatsby`),
-      //   PnpWebpackPlugin.bind(`${__dirname}/public`, module, `gatsby`),
-      //   PnpWebpackPlugin,
-      // ],
-    },
+    // resolve: {
+    //   // alias: {
+    //   //   // "react-dom": "@hot-loader/react-dom",
+    //   //   // // TODO: Replace "appFolder" with the real folder name.
+    //   //   // "@material-ui/styles": path.resolve(
+    //   //   //   appFolder,
+    //   //   //   "node_modules",
+    //   //   //   "@material-ui/styles",
+    //   //   // ),
+    //   // },
+    //   // plugins: [
+    //   //   PnpWebpackPlugin.bind(`${__dirname}/.cache`, module, `gatsby`),
+    //   //   PnpWebpackPlugin.bind(`${__dirname}/public`, module, `gatsby`),
+    //   //   PnpWebpackPlugin,
+    //   // ],
+    // },
     module: {
       rules: [
         // {
