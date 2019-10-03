@@ -1,5 +1,5 @@
 import React from "react"
-import {createMuiTheme, responsiveFontSizes} from "@material-ui/core"
+import {createMuiTheme, responsiveFontSizes} from "@material-ui/core/styles"
 // Material UI Theme
 // TODO: Learn more about custom variables in Material UI themes.
 
