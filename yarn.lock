@@ -8568,6 +8568,11 @@ gatsby-plugin-compile-es6-packages@^2.1.0:
     "@babel/runtime" "^7.0.0"
     regex-escape "^3.4.8"
 
+gatsby-plugin-import@^2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-import/-/gatsby-plugin-import-2.1.5.tgz#6d1a6fbf6566f236db52584672e1d26de2f19480"
+  integrity sha512-KvaSHprTGsZCT9gFCRau3u400hNdDUJG53OpCYSbuBDYRpqX18sq6qok0bzcGk2CVAJVvQugHIYpo774B2vNNw==
+
 gatsby-plugin-manifest@^2.2.20:
   version "2.2.20"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.20.tgz#67fa1d6335846097364c2eceece5a4bdc326706e"
