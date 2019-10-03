@@ -17,7 +17,7 @@ module.exports = {
     //     caching: true,
     //   },
     // ],
-    require.resolve("react-hot-loader/babel"),
+    // require.resolve("react-hot-loader/babel"),
     // require.resolve("babel-plugin-add-module-exports"),
     // [
     //   require.resolve("babel-plugin-import"),
