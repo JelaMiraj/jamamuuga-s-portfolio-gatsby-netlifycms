@@ -18,6 +18,23 @@ module.exports = {
     //   },
     // ],
     // require.resolve("babel-plugin-add-module-exports"),
+    [require.resolve("babel-plugin-import"), {libraryName: "lodash"}],
+    [
+      require.resolve("babel-plugin-import"),
+      {libraryName: "styled-components"},
+    ],
+    [
+      require.resolve("babel-plugin-import"),
+      {libraryName: "@material-ui/core"},
+    ],
+    [
+      require.resolve("babel-plugin-import"),
+      {libraryName: "@material-ui/styles"},
+    ],
+    [
+      require.resolve("babel-plugin-import"),
+      {libraryName: "@material-ui/icons"},
+    ],
     // [
     //   require.resolve("babel-plugin-transform-imports"),
     //   {
