@@ -150,6 +150,11 @@ exports.onCreateWebpackConfig = ({stage, rules, loaders, plugins, actions}) => {
         //     // ... regular options go there ...
         //   }),
         // },
+        // {
+        //   test: /\.(js|jsx)$/,
+        //   use: "react-hot-loader/webpack",
+        //   include: /node_modules/,
+        // },
       ],
     },
     plugins: [
