@@ -38,6 +38,36 @@ module.exports = {
     ],
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-import",
+      options: {
+        libraryName: "lodash",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-import",
+      options: {
+        libraryName: "styled-components",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-import",
+      options: {
+        libraryName: "@material-ui/core",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-import",
+      options: {
+        libraryName: "@material-ui/styles",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-import",
+      options: {
+        libraryName: "@material-ui/icons",
+      },
+    },
     "gatsby-theme-material-ui",
     {
       resolve: "gatsby-theme-netlify-cms",
