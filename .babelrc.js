@@ -18,22 +18,30 @@ module.exports = {
     //   },
     // ],
     // require.resolve("babel-plugin-add-module-exports"),
-    [require.resolve("babel-plugin-import"), {libraryName: "lodash"}],
+    [
+      require.resolve("babel-plugin-import"),
+      {libraryName: "lodash"},
+      "babel-plugin-import-lodash",
+    ],
     [
       require.resolve("babel-plugin-import"),
       {libraryName: "styled-components"},
+      "babel-plugin-import-styled-components",
     ],
     [
       require.resolve("babel-plugin-import"),
       {libraryName: "@material-ui/core"},
+      "babel-plugin-import-material-ui-core",
     ],
     [
       require.resolve("babel-plugin-import"),
       {libraryName: "@material-ui/styles"},
+      "babel-plugin-import-material-ui-styles",
     ],
     [
       require.resolve("babel-plugin-import"),
       {libraryName: "@material-ui/icons"},
+      "babel-plugin-import-material-ui-icons",
     ],
     // [
     //   require.resolve("babel-plugin-transform-imports"),
