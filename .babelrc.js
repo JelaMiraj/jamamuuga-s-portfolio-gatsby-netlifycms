@@ -17,6 +17,7 @@ module.exports = {
     //     caching: true,
     //   },
     // ],
+    require.resolve("react-hot-loader/babel"),
     // require.resolve("babel-plugin-add-module-exports"),
     // [
     //   require.resolve("babel-plugin-import"),
@@ -150,7 +151,6 @@ module.exports = {
     //   },
     //   "babel-plugin-transform-imports-material-ui-system",
     // ],
-    require.resolve("react-hot-loader/babel"),
     // [
     //   require.resolve("babel-plugin-styled-components"),
     //   {
