@@ -42,7 +42,7 @@
     "gatsby-source-filesystem": "^2.1.29",
     "gatsby-theme-material-ui": "^1.0.5",
     "gatsby-theme-netlify-cms": "^1.0.2",
-    "gatsby-transformer-remark": "^2.6.26",
+    "gatsby-transformer-remark": "^2.6.27",
     "gatsby-transformer-sharp": "^2.2.20",
     "jss": "^10.0.0",
     "lodash": "^4.17.15",
