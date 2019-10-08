@@ -174,7 +174,7 @@
     "postcss-styled": "^0.34.0",
     "postcss-syntax": "^0.36.2",
     "prettier": "^1.18.2",
-    "react-test-renderer": "^16.10.1",
+    "react-test-renderer": "^16.10.2",
     "regenerator-runtime": "^0.13.3",
     "remark-cli": "^7.0.0",
     "remark-lint": "^6.0.5",
