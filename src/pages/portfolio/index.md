@@ -54,20 +54,20 @@ pricing:
         - Item 1
         - Item 2
         - Item 3
-      plan: NA
+      plan: NA 1
       price: number
     - description: description
       items:
         - Item 1
         - Item 2
         - Item 3
-      plan: NA
+      plan: NA 2
       price: number
     - description: description
       items:
         - Item 1
         - Item 2
         - Item 3
-      plan: NA
+      plan: NA 3
       price: number
 ---
