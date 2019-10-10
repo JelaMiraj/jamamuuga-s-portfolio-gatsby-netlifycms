@@ -8481,10 +8481,10 @@ gatsby-plugin-material-ui@^2.1.4, gatsby-plugin-material-ui@^2.1.6:
     clean-css "^4.2.1"
     postcss "^7.0.17"
 
-gatsby-plugin-netlify-cms@^4.1.22, gatsby-plugin-netlify-cms@^4.1.6:
-  version "4.1.22"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-4.1.22.tgz#105e3f2aebe4a1610375b6de6cbd2a9a9ed799e3"
-  integrity sha512-9v016hMa/t4klpHr/fNwk8FLBM1cmKRHZMByvuH1WSLki0hbGMm2FkIUWwwGazUww04MfaOWGyLVpxD8eQIbyQ==
+gatsby-plugin-netlify-cms@^4.1.23, gatsby-plugin-netlify-cms@^4.1.6:
+  version "4.1.23"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-4.1.23.tgz#dc88955a853bd16e4b56e159e1895ffb3bcd784a"
+  integrity sha512-FZkFGp2LAsXlzr4zJ3yXrlb6O6CTzLMr2uCD8CO8m6m1lRojyZa/I1Zn7Bh0WgamMDtgk9wO2MxCSzmB99QchA==
   dependencies:
     "@pieh/friendly-errors-webpack-plugin" "1.7.0-chalk-2"
     html-webpack-exclude-assets-plugin "^0.0.7"
