@@ -14449,7 +14449,7 @@ npm-prefix@^1.2.0:
     shellsubstitute "^1.1.0"
     untildify "^2.1.0"
 
-npm-run-path@^2.0.0:
+npm-run-path@^2.0.0, npm-run-path@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/npm-run-path/-/npm-run-path-2.0.2.tgz#35a9232dfa35d7067b4cb2ddf2357b1871536c5f"
   integrity sha1-NakjLfo11wZ7TLLd8jV7GHFTbF8=
@@ -22433,6 +22433,13 @@ yarn-run-all@^3.1.1:
     read-pkg-up "^1.0.1"
     shell-quote "^1.6.1"
     string.prototype.padend "^3.0.0"
+
+yarn-run@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/yarn-run/-/yarn-run-1.1.0.tgz#7eb1d656eeae20db617a7459f4b3b6ae1dc7cd5e"
+  integrity sha1-frHWVu6uINthenRZ9LO2rh3HzV4=
+  dependencies:
+    npm-run-path "^2.0.2"
 
 yarn@^1.15.0:
   version "1.17.3"
