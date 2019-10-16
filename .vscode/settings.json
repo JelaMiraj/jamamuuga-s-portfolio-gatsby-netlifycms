@@ -5,7 +5,12 @@
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
-  "cSpell.words": ["featuredimage", "featuredpost", "mainpitch"]
+"cSpell.words": [
+   "featuredimage",
+   "featuredpost",
+   "mainpitch"
+],
+"typescript.tsdk": "node_modules/typescript/lib"
 
   // Using Prettier for JS is unnecessary as ESLint already handles formatting
   // "prettier.disableLanguages": ["javascript", "javascriptreact"],
