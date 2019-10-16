@@ -64,6 +64,7 @@
     "reaptcha": "^1.6.0",
     "styled-components": "^4.4.0",
     "uuid": "^3.3.3",
+    "yarn-run": "^1.1.0",
     "yarn-run-all": "^3.1.1"
   },
   "keywords": [
