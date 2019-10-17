@@ -1108,10 +1108,10 @@
     signedsource "^1.0.0"
     yargs "^9.0.0"
 
-"@giotramu/stylelint-config@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@giotramu/stylelint-config/-/stylelint-config-1.0.0.tgz#02e74d507a90e6279aeebe1b2562a36790bb2273"
-  integrity sha512-Iosiptqhm4Rlt8j8QKdW3RHFjc4NlsXUlYe3GDCve2e+JoknVoSfBe72CB5pqm49AWxSCyu4RBPUHOVT0UYm6w==
+"@giotramu/stylelint-config@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@giotramu/stylelint-config/-/stylelint-config-1.0.1.tgz#7ff630a69433fe8c6807690879084c3d4f1045ed"
+  integrity sha512-L0WUPrY1NTxJAdZw2nPNY/B3xUeLj0146eqQisDdn1M3WfAPZZcZXawCMI8ocZlNaW7FFZCqEBDq4J77+RieuQ==
   dependencies:
     stylelint "10.1.0"
     stylelint-config-prettier "6.0.0"
