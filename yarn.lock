@@ -17257,10 +17257,10 @@ realpath-native@^1.1.0:
   dependencies:
     util.promisify "^1.0.0"
 
-reaptcha@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/reaptcha/-/reaptcha-1.6.0.tgz#a15e82fe7bc69265d69486fd58431bb8327aec85"
-  integrity sha512-dDLC1pgBNJr+X/yaj3evo0pVLhv26znoxQ6/zX6wuTD2GTP00mhqmmViDnlWcvD1x7MNcbQpmxoo/u87MVs1ZQ==
+reaptcha@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/reaptcha/-/reaptcha-1.7.0.tgz#33d987f7e149ab42af84213df653be14a85ed802"
+  integrity sha512-TKi4nipPTWuBwkYYpV3kb4/Kk83N8cYT4Z21eO4/f71uI78PXsdfVlGgZCYOAxELsU8JXwNWtwLefUkxUbPi5w==
 
 recast@^0.18.0:
   version "0.18.2"
