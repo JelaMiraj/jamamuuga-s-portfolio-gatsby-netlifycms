@@ -1,31 +1,38 @@
 // import React from "react"
 // import PropTypes from "prop-types"
-// import {graphql} from "gatsby"
-// import {Container, Typography} from "@material-ui/core"
+// import { graphql } from "gatsby"
+// import { Container, Typography } from "@material-ui/core"
+// import styled from "styled-components/macro"
 // // include NLI ...to init first
 // import netlifyIdentity from "netlify-identity-widget"
 // import BasePage from "../base/BasePage"
-// import {Content, Pagination, PostItem} from "../components"
-// import {isLoggedIn} from "../services/auth"
+// import { Content, Pagination, PostItem } from "../components"
+// import { isLoggedIn } from "../services/auth"
+
+// const StyledTypography = styled(Typography)`
+//   font-weight: ${props => props.theme.typography.fontWeightBold};
+// `
 
 // // Init netlify identity ...
 // // FIX for build test @2018/12/13
 // if (typeof netlifyIdentity.init !== `undefined`) netlifyIdentity.init()
 
 // const IndexPage = props => {
-//   const {classes} = props
+//   const { classes } = props
 //   const posts = this.props.data.allMarkdownRemark.edges
-//   const {currentPage, numPages} = this.props.pageContext
+//   const { currentPage, numPages } = this.props.pageContext
 //   const logged = isLoggedIn()
 
 //   return (
-//     <BasePage location={{pathname: "/"}}>
+//     <BasePage location={{ pathname: "/" }}>
 //       <section className="section">
 //         <Container className={classes.container}>
 //           <div className="content hide-in-mobile">
-//             <Typography variant="h1" fontWeight="fontWeightBold" className="has-text-weight-bold is-size-3">Latest</Typography>
+//             <StyledTypography variant="h4">
+//               Latest
+//             </StyledTypography>
 //           </div>
-//           {posts.map(({node: post}) => (
+//           {posts.map(({ node: post }) => (
 //             <PostItem post={post} logged={logged} />
 //           ))}
 //         </Container>
