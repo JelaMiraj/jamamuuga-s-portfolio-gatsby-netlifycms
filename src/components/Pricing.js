@@ -1,5 +1,5 @@
 import React from "react"
-import {PropTypes} from "prop-types"
+import PropTypes from "prop-types"
 import {Box, Grid, List, ListItem, Paper, Typography} from "@material-ui/core"
 import styled from "styled-components/macro"
 // TODO: Maybe use Card and/or Paper somewhere in Pricing.

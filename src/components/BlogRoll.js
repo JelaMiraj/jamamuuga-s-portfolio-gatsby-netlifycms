@@ -1,25 +1,25 @@
 import React from "react"
-import {PropTypes} from "prop-types"
-import {graphql, StaticQuery} from "gatsby"
-import {Card, Grid, Typography} from "@material-ui/core"
-import {Button} from "gatsby-theme-material-ui"
+import PropTypes from "prop-types"
+import { graphql, StaticQuery } from "gatsby"
+import { Card, Grid, Typography } from "@material-ui/core"
+import { Button } from "gatsby-theme-material-ui"
 // TODO: Fix card usage so underlying Material UI Card subcomponents like CardAction are actually used.
-import {Link, PreviewCompatibleImage} from "."
+import { Link, PreviewCompatibleImage } from "."
 
 const BlogRoll = props => {
-  const {data} = props
-  const {edges: posts} = data.allMarkdownRemark
+  const { data } = props
+  const { edges: posts } = data.allMarkdownRemark
 
   return (
     <Grid container wrap="wrap">
       {posts &&
-        posts.map(({node: post}) => (
+        posts.map(({ node: post }) => (
           <Grid item xs={6} key={post.id}>
             <Card
               component="article"
               className={`blog-list-item tile is-child box notification ${
                 post.frontmatter.featuredpost ? "is-featured" : ""
-              }`}
+                }`}
             >
               <header>
                 {post.frontmatter.featuredimage ? (

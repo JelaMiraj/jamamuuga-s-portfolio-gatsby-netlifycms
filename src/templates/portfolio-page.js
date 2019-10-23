@@ -1,5 +1,5 @@
 import React from "react"
-import { PropTypes } from "prop-types"
+import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 import {
   Box,
@@ -16,7 +16,7 @@ import {
   Paper,
   Typography,
 } from "@material-ui/core"
-import {PhotoCamera as CameraIcon} from "@material-ui/icons"
+import { PhotoCamera as CameraIcon } from "@material-ui/icons"
 import styled from "styled-components/macro"
 import {
   Features,

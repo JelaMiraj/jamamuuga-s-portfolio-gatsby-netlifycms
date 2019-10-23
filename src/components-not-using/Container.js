@@ -1,5 +1,5 @@
 // import React from "react"
-// import {PropTypes} from "prop-types"
+// import PropTypes from "prop-types"
 // import {Box, Container as MuiContainer, makeStyles} from "@material-ui/core"
 
 // const useStyles = makeStyles({

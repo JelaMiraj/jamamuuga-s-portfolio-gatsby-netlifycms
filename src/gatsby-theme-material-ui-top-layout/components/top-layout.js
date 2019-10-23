@@ -1,5 +1,5 @@
 import React from "react"
-import { PropTypes } from "prop-types"
+import PropTypes from "prop-types"
 import { Box, CssBaseline } from "@material-ui/core"
 import { ThemeProvider } from "@material-ui/core/styles"
 import styled, {

@@ -1,6 +1,6 @@
 // import React from "react"
 // import {graphql} from "gatsby"
-// import {PropTypes} from "prop-types"
+// import PropTypes from "prop-types"
 // import {Avatar, Button, Grid, makeStyles} from "@material-ui/core"
 // import {Gift} from "mdi-material-ui"
 // import {Card, Carousel, HomeFeatures, Link, Page, SEO} from "../components"

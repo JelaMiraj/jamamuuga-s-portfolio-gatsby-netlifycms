@@ -1,20 +1,20 @@
 import React from "react"
-import {PropTypes} from "prop-types"
-import {Box} from "@material-ui/core"
+import PropTypes from "prop-types"
+import { Box } from "@material-ui/core"
 import ContentStyle from "../styles/components/content-style"
 
 // TODO: Should we use an alternative to dangerouslySetInnerHTML?
-const HTMLContent = ({content, className}) => (
+const HTMLContent = ({ content, className }) => (
   <ContentStyle>
     <Box
       component="div"
       className={className}
-      dangerouslySetInnerHTML={{__html: content}}
+      dangerouslySetInnerHTML={{ __html: content }}
     />
   </ContentStyle>
 )
 
-const Content = ({content, className}) => (
+const Content = ({ content, className }) => (
   <ContentStyle>
     <Box component="div" className={className}>
       {content}
@@ -31,4 +31,4 @@ HTMLContent.propTypes = Content.propTypes
 
 export default Content
 // export {Content, HTMLContent}
-export {HTMLContent}
+export { HTMLContent }
