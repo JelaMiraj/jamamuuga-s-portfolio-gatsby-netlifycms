@@ -133,7 +133,7 @@
     "@types/material-ui": "^0.21.7",
     "@types/node": "^12.11.2",
     "@types/react-dom": "^16.9.2",
-    "@types/react-helmet": "^5.0.12",
+    "@types/react-helmet": "^5.0.13",
     "@types/styled-components": "^4.1.19",
     "apollo": "^2.21.0",
     "babel-core": "^7.0.0-bridge.0",
