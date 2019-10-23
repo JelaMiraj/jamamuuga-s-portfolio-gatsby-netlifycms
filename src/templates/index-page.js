@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import {graphql} from "gatsby"
+import { graphql } from "gatsby"
 import {
   Box,
   Card,
@@ -12,9 +12,9 @@ import {
   Paper,
   Typography,
 } from "@material-ui/core"
-import {Button} from "gatsby-theme-material-ui"
+import { Button } from "gatsby-theme-material-ui"
 import styled from "styled-components/macro"
-import {BlogRoll, Features, Layout, Link} from "../components"
+import { BlogRoll, Features, Layout, Link } from "../components"
 // TODO: Decide between Typography align="center" & Box textAlign="center".
 // TODO: Maybe use Card instead of or around Paper.
 // TODO: Use Skeleton components as loading placeholders.
@@ -90,7 +90,7 @@ export const IndexPageTemplate = ({
           style={{
             backgroundImage: `url(${
               image.childImageSharp ? image.childImageSharp.fluid.src : image
-            })`,
+              })`,
           }}
         >
           <StyledContentBox>
@@ -146,14 +146,14 @@ export const IndexPageTemplate = ({
                       </Grid>
                     </Grid>
                     {/* <Grid item xs={12}>
-                      <Typography
-                        variant="h3"
-                        fontWeight="600"
-                      >
-                        Latest stories
-                      </Typography>
-                        <BlogRoll />
-                      <Grid item xs={12} align="center">
+                      <Box fontWeight="600">
+                        <Typography variant="h3"
+                        >
+                          Latest stories
+                        </Typography>
+                      </Box>
+                      <BlogRoll />
+                      <Grid item xs={12} justify="center">
                         <Button variant="contained" color="secondary">
                           <Link className="btn" to="/blog">
                             Read more
@@ -184,8 +184,8 @@ IndexPageTemplate.propTypes = {
   }),
 }
 
-const IndexPage = ({data}) => {
-  const {frontmatter} = data.markdownRemark
+const IndexPage = ({ data }) => {
+  const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
