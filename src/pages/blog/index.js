@@ -1,7 +1,7 @@
 import React from "react"
-import {Box, Container, Typography} from "@material-ui/core"
+import { Box, Container, Typography } from "@material-ui/core"
 import styled from "styled-components/macro"
-import {BlogRoll, Content, Layout} from "../../components"
+import { BlogRoll, Content, Layout } from "../../components"
 
 // TODO: import more inline styling to here.
 const StyledBackgroundImageBox = styled(Box)`
@@ -21,6 +21,7 @@ const StyledBackgroundImageBox = styled(Box)`
 
 const StyledTypography = styled(Typography)`
   /* Contains .full-width-image-container and .margin-top-0 */
+  font-weight: ${props => props.theme.typography.fontWeightBold}
   /* box-shadow: 0.5rem 0 0 #f40, -0.5rem 0 0 #f40; */
   box-shadow: 0.5rem 0 0 ${props => props.theme.palette.primary.main},
     -0.5rem 0 0 ${props => props.theme.palette.primary.main};
@@ -49,7 +50,7 @@ const BlogIndexPage = props => (
         backgroundImage: `url("/images/blog-index.jpg")`,
       }}
     >
-      <StyledTypography variant="h3" fontWeight="fontWeightBold">
+      <StyledTypography variant="h3">
         Latest Stories
       </StyledTypography>
     </StyledBackgroundImageBox>

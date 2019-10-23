@@ -1,5 +1,5 @@
 import React from "react"
-import {graphql} from "gatsby"
+import { graphql } from "gatsby"
 import {
   Box,
   Container,
@@ -11,7 +11,7 @@ import {
   Typography,
 } from "@material-ui/core"
 import styled from "styled-components/macro"
-import {Helmet, Layout, Link} from "../components"
+import { Helmet, Layout, Link } from "../components"
 
 const StyledGridItemContent = styled(Grid)`
   margin-bottom: 6rem;
@@ -23,7 +23,7 @@ const StyledSectionBoxGradient = styled(Box)`
   /* TODO: Import section--gradient from old stylesheet. */
 `
 
-const TagRoute = ({data, pageContext}) => {
+const TagRoute = ({ data, pageContext }) => {
   const posts = data.allMarkdownRemark.edges
   const postLinks = posts.map(post => (
     <ListItem key={post.node.fields.slug}>
@@ -34,12 +34,12 @@ const TagRoute = ({data, pageContext}) => {
       </ListItemText>
     </ListItem>
   ))
-  const {tag} = pageContext
-  const {title} = data.site.siteMetadata
-  const {totalCount} = data.allMarkdownRemark
+  const { tag } = pageContext
+  const { title } = data.site.siteMetadata
+  const { totalCount } = data.allMarkdownRemark
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? "" : "s"
-  } tagged with “${tag}”`
+    } tagged with “${tag}”`
 
   return (
     <Layout>
@@ -56,9 +56,11 @@ const TagRoute = ({data, pageContext}) => {
                 component={Hidden}
               />
               <StyledGridItemContent item xs={10}>
-                <Typography variant="h5" fontWeight="600">
-                  {tagHeader}
-                </Typography>
+                <Box fontWeight="600">
+                  <Typography variant="h5">
+                    {tagHeader}
+                  </Typography>
+                </Box>
                 <List className="taglist">{postLinks}</List>
                 <Typography paragraph>
                   <Link to="/tags/">Browse all tags</Link>

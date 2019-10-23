@@ -1,6 +1,6 @@
 import React from "react"
-import {kebabCase} from "lodash"
-import {graphql} from "gatsby"
+import { kebabCase } from "lodash"
+import { graphql } from "gatsby"
 import {
   Box,
   Container,
@@ -12,7 +12,7 @@ import {
   Typography,
 } from "@material-ui/core"
 import styled from "styled-components/macro"
-import {Helmet, Layout, Link} from "../../components"
+import { Helmet, Layout, Link } from "../../components"
 
 const StyledContentBoxGridItem = styled(Grid)`
   margin-bottom: 6rem;
@@ -20,39 +20,41 @@ const StyledContentBoxGridItem = styled(Grid)`
 
 const TagsPage = ({
   data: {
-    allMarkdownRemark: {group},
+    allMarkdownRemark: { group },
     site: {
-      siteMetadata: {title},
+      siteMetadata: { title },
     },
   },
 }) => (
-  <Layout>
-    <Box component="section" className="section">
-      <Helmet title={`Tags | ${title}`} />
-      <Container className="content">
-        <Grid container>
-          <Grid item md={1} implementation="css" smDown component={Hidden} />
-          <StyledContentBoxGridItem item xs={10}>
-            <Typography variant="h3" fontWeight="600" className="title">
-              Tags
-            </Typography>
-            <List className="taglist">
-              {group.map(tag => (
-                <ListItem key={tag.fieldValue}>
-                  <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-                    <ListItemText>
-                      {tag.fieldValue} ({tag.totalCount})
+    <Layout>
+      <Box component="section" className="section">
+        <Helmet title={`Tags | ${title}`} />
+        <Container className="content">
+          <Grid container>
+            <Grid item md={1} implementation="css" smDown component={Hidden} />
+            <StyledContentBoxGridItem item xs={10}>
+              <Box fontWeight="600">
+                <Typography variant="h3" className="title">
+                  Tags
+                </Typography>
+              </Box>
+              <List className="taglist">
+                {group.map(tag => (
+                  <ListItem key={tag.fieldValue}>
+                    <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+                      <ListItemText>
+                        {tag.fieldValue} ({tag.totalCount})
                     </ListItemText>
-                  </Link>
-                </ListItem>
-              ))}
-            </List>
-          </StyledContentBoxGridItem>
-        </Grid>
-      </Container>
-    </Box>
-  </Layout>
-)
+                    </Link>
+                  </ListItem>
+                ))}
+              </List>
+            </StyledContentBoxGridItem>
+          </Grid>
+        </Container>
+      </Box>
+    </Layout>
+  )
 
 export default TagsPage
 

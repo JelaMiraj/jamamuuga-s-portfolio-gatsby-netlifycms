@@ -146,24 +146,30 @@ export const PortfolioPageTemplate = ({
                       })`,
                   }}
                 >
-                  <StyledTitleTypography variant="h3" fontWeight="600">
-                    {title}
-                  </StyledTitleTypography>
+                  <Box fontWeight="600">
+                    <StyledTitleTypography variant="h3">
+                      {title}
+                    </StyledTitleTypography>
+                  </Box>
                 </StyledBackgroundImageBox>
                 <Grid container>
                   <Grid item xs={7}>
-                    <Typography variant="h4" fontWeight="600">
-                      {heading}
-                    </Typography>
+                    <Box fontWeight="600">
+                      <Typography variant="h4">
+                        {heading}
+                      </Typography>
+                    </Box>
                     <Typography paragraph>{description}</Typography>
                   </Grid>
                 </Grid>
                 <Features gridItems={intro.blurbs} />
                 <Grid container className="columns">
                   <Grid item xs={7}>
-                    <Typography variant="h4" fontWeight="600">
-                      {main.heading}
-                    </Typography>
+                    <Box fontWeight="600">
+                      <Typography variant="h4">
+                        {main.heading}
+                      </Typography>
+                    </Box>
                     <Typography paragraph>{main.description}</Typography>
                   </Grid>
                 </Grid>
@@ -204,9 +210,11 @@ export const PortfolioPageTemplate = ({
                       })`,
                   }}
                 />
-                <Typography variant="h3" fontWeight="600">
-                  {pricing.heading}
-                </Typography>
+                <Box fontWeight="600">
+                  <Typography variant="h3">
+                    {pricing.heading}
+                  </Typography>
+                </Box>
                 <Typography variant="h6" paragraph>
                   {pricing.description}
                 </Typography>

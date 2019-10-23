@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
-import {kebabCase} from "lodash"
-import {graphql} from "gatsby"
+import { kebabCase } from "lodash"
+import { graphql } from "gatsby"
 import {
   Container,
   Box,
@@ -12,7 +12,7 @@ import {
   ListItemText,
   Typography,
 } from "@material-ui/core"
-import {Content, Helmet, HTMLContent, Layout, Link} from "../components"
+import { Content, Helmet, HTMLContent, Layout, Link } from "../components"
 
 export const BlogPostTemplate = ({
   content,
@@ -31,9 +31,11 @@ export const BlogPostTemplate = ({
         <Grid container>
           <Grid item md={1} implementation="css" smDown component={Hidden} />
           <Grid item xs={10}>
-            <Typography variant="h3" fontWeight="600">
-              {title}
-            </Typography>
+            <Box fontWeight="600">
+              <Typography variant="h3">
+                {title}
+              </Typography>
+            </Box>
             <Typography paragraph>{description}</Typography>
             <PostContent content={content} />
             {tags && tags.length ? (
@@ -65,8 +67,8 @@ BlogPostTemplate.propTypes = {
   helmet: PropTypes.object,
 }
 
-const BlogPost = ({data}) => {
-  const {markdownRemark: post} = data
+const BlogPost = ({ data }) => {
+  const { markdownRemark: post } = data
 
   return (
     <Layout>

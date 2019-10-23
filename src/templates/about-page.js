@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import {graphql} from "gatsby"
+import { graphql } from "gatsby"
 import {
   Box,
   Card,
@@ -10,10 +10,10 @@ import {
   Paper,
   Typography,
 } from "@material-ui/core"
-import {Button} from "gatsby-theme-material-ui"
-import {Content, HTMLContent, Layout} from "../components"
+import { Button } from "gatsby-theme-material-ui"
+import { Content, HTMLContent, Layout } from "../components"
 
-export const AboutPageTemplate = ({title, content, contentComponent}) => {
+export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -23,9 +23,11 @@ export const AboutPageTemplate = ({title, content, contentComponent}) => {
           <Grid item md={1} implementation="css" smDown component={Hidden} />
           <Grid item xs={10}>
             <Box component="section" className="section">
-              <Typography variant="h4" fontWeight="600" className="title">
-                {title}
-              </Typography>
+              <Box fontWeight="600">
+                <Typography variant="h4" className="title">
+                  {title}
+                </Typography>
+              </Box>
               <PageContent content={content} />
             </Box>
           </Grid>
@@ -41,8 +43,8 @@ AboutPageTemplate.propTypes = {
   contentComponent: PropTypes.func,
 }
 
-const AboutPage = ({data}) => {
-  const {markdownRemark: post} = data
+const AboutPage = ({ data }) => {
+  const { markdownRemark: post } = data
 
   return (
     <Layout>
