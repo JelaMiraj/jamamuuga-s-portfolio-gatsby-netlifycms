@@ -25,6 +25,7 @@ import {
   PreviewCompatibleImage,
   Testimonials,
 } from "../components"
+// Partly based on Material UI Album Example.
 // TODO: Maybe use Cards, Lists, and/or Grids instead of GridList
 // FIXME: Fix Grid & GridList with images between text grid & testimonial area. That area isn't loading the images & is complaining about duplicate keys named "NA".
 // TODO: Use Skeleton components as loading placeholders.
@@ -79,6 +80,43 @@ const StyledTitleTypography = styled(Typography)`
   background-color: ${props => props.theme.palette.primary.main};
   color: white;
   padding: 1rem;
+`
+
+const StyledCameraIcon = styled(CameraIcon)`
+  margin-right: ${props => props.theme.spacing(2)};
+`
+
+const StyledHeroContent = styled.div`
+  background-color: ${props => props.theme.palette.background.paper};
+  padding: ${props => props.theme.spacing(8, 0, 6)};
+`
+
+const StyledHeroButtons = styled(Button)`
+  margin-top: ${props => props.theme.spacing(4)};
+`
+
+const StyledCardGrid = styled(Grid)`
+  padding-top: ${props => props.theme.spacing(8)};
+  padding-bottom: ${props => props.theme.spacing(8)};
+`
+
+const StyledAlbumCard = styled(Card)`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+`
+
+const StyledCardMedia = styled(CardMedia)`
+  padding-top: 56.25%; /* 16:9 */
+`
+
+const StyledCardContent = styled(CardContent)`
+  flex-grow: 1;
+`
+
+const StyledFooter = styled.footer`
+  background-color: ${props => props.theme.palette.background.paper};
+  padding: ${props => props.theme.spacing(6)};
 `
 
 export const PortfolioPageTemplate = ({
