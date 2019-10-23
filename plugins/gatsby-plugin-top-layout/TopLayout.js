@@ -5,15 +5,13 @@
 //   Box,
 //   CssBaseline,
 // } from "@material-ui/core"
-// // import {
-// //   createMuiTheme,
-// //   responsiveFontSizes,
-// // } from "@material-ui/core/styles"
-// // import {red, pink} from "@material-ui/core/colors"
 // import {
+//   // createMuiTheme,
+//   // responsiveFontSizes,
 //   StylesProvider,
 //   ThemeProvider,
-// } from "@material-ui/styles"
+// } from "@material-ui/core/styles"
+// // import {red, pink} from "@material-ui/core/colors"
 // import styled, {ThemeProvider as StyledThemeProvider} from "styled-components/macro"
 // import {Helmet} from "../../src/components"
 // // import {theme as myTheme} from "../../src/styles/themes"
