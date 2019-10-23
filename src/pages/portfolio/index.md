@@ -1,7 +1,7 @@
 ---
 templateKey: "portfolio-page"
 path: /portfolio
-title: Title
+title: Portfolio
 image: "/images/Jumbotron - Inside Hot Air Balloon - Kyler Nixon - z7pnyucFR5s - Unsplash.jpg"
 heading: Modern Web Design with Flare
 description: >-
