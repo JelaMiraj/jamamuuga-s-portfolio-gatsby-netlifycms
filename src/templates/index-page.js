@@ -146,12 +146,12 @@ export const IndexPageTemplate = ({
                       </Grid>
                     </Grid>
                     {/* <Grid item xs={12}>
-                      <Box fontWeight="600">
-                        <Typography variant="h3"
-                        >
+                      <Typography variant="h3"
+                      >
+                        <Box fontWeight="600">
                           Latest stories
-                        </Typography>
-                      </Box>
+                        </Box>
+                      </Typography>
                       <BlogRoll />
                       <Grid item xs={12} justify="center">
                         <Button variant="contained" color="secondary">
