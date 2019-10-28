@@ -1099,16 +1099,16 @@
     signedsource "^1.0.0"
     yargs "^9.0.0"
 
-"@giotramu/stylelint-config@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@giotramu/stylelint-config/-/stylelint-config-1.0.1.tgz#7ff630a69433fe8c6807690879084c3d4f1045ed"
-  integrity sha512-L0WUPrY1NTxJAdZw2nPNY/B3xUeLj0146eqQisDdn1M3WfAPZZcZXawCMI8ocZlNaW7FFZCqEBDq4J77+RieuQ==
+"@giotramu/stylelint-config@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@giotramu/stylelint-config/-/stylelint-config-1.0.2.tgz#01ec46fff5917f05c2879a0f9aa2312c4e20eda1"
+  integrity sha512-hdFqd8W9iM6TDHureAnePNeyn9pxzdWKjvWAXjDEkpNrwH5M/Exlo+m0hewAeMkJGJAQkhjSZ9ecwYpRbJBEfw==
   dependencies:
     stylelint "10.1.0"
     stylelint-config-prettier "6.0.0"
     stylelint-declaration-block-no-ignored-properties "2.1.0"
     stylelint-order "3.1.1"
-    stylelint-scss "3.11.1"
+    stylelint-scss "3.12.0"
 
 "@hapi/address@2.x.x", "@hapi/address@^2.1.2":
   version "2.1.2"
@@ -20186,18 +20186,7 @@ stylelint-processor-styled-components@^1.8.0:
     micromatch "^4.0.2"
     postcss "^7.0.0"
 
-stylelint-scss@3.11.1:
-  version "3.11.1"
-  resolved "https://registry.yarnpkg.com/stylelint-scss/-/stylelint-scss-3.11.1.tgz#016a6c1a6e051faed0a186b3698fcf24b0e90b0d"
-  integrity sha512-0FZNSfy5X2Or4VRA3Abwfrw1NHrI6jHT8ji9xSwP8Re2Kno0i90qbHwm8ohPO0kRB1RP9x1vCYBh4Tij+SZjIg==
-  dependencies:
-    lodash "^4.17.15"
-    postcss-media-query-parser "^0.2.3"
-    postcss-resolve-nested-selector "^0.1.1"
-    postcss-selector-parser "^6.0.2"
-    postcss-value-parser "^4.0.2"
-
-stylelint-scss@^3.12.0:
+stylelint-scss@3.12.0, stylelint-scss@^3.12.0:
   version "3.12.0"
   resolved "https://registry.yarnpkg.com/stylelint-scss/-/stylelint-scss-3.12.0.tgz#8b4e4b365eaa90da99d7fd5256fd9092d3344a8c"
   integrity sha512-RvZqmCnILJ0etFBjSGTXQKOspYjF+jjtFdUGoqjuis2YILy/3LCtgSdBP2I+LUOfRT+eJFCrb8g+j3ZND4FaNA==
