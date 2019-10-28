@@ -149,7 +149,7 @@
     "eslint": "^6.6.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-gatsby-standard": "^2.2.0",
-    "eslint-config-prettier": "^6.4.0",
+    "eslint-config-prettier": "^6.5.0",
     "eslint-config-with-prettier": "^6.0.0",
     "eslint-plugin-dollar-sign": "^1.0.2",
     "eslint-plugin-import": "^2.18.2",
