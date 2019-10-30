@@ -1654,12 +1654,12 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@netlify/build@^0.0.34":
-  version "0.0.34"
-  resolved "https://registry.yarnpkg.com/@netlify/build/-/build-0.0.34.tgz#d805b60c49ca71014997f6284f2fdc31dd0c0b86"
-  integrity sha512-1GIJCFtoQEP5cIXtNGAR6Or8kj5Pko+QdtuaHnGt3sw3TJltfVTDpXiKVvKqL1LFu0sRXAJoRh+7ZOXQjl2vdQ==
+"@netlify/build@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@netlify/build/-/build-0.1.2.tgz#801f9840ac1a273796d0b5b908cc566234062c40"
+  integrity sha512-pHjYUXPmPjFNHVQG/l2yIeDyD+8ZPlUWlLxLb5BAkVLuKtTaLOrs13PyMjb9mDP3oA1YoI9eh4edtIitsdV6Kg==
   dependencies:
-    "@netlify/config" "^0.0.5"
+    "@netlify/config" "^0.1.1"
     "@netlify/zip-it-and-ship-it" "0.4.0-5"
     analytics "^0.2.5"
     array-flat-polyfill "^1.0.1"
@@ -1720,10 +1720,10 @@
     uuid "^3.3.2"
     write-file-atomic "^2.3.0"
 
-"@netlify/config@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@netlify/config/-/config-0.0.5.tgz#9c63177757f657877f26c49f2c1663aec1d610bf"
-  integrity sha512-ZfKLq09RlzpVnI3ru2VSXGJTjgljRPLwSyfKyozbS0vCrL6HhvTe8cj5xUxc6XFYxfxOJbjchNDHI3szsB1Tvw==
+"@netlify/config@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@netlify/config/-/config-0.1.1.tgz#8afaff13b78935de46b3575a9cc2f108fea48627"
+  integrity sha512-LMywGz02K9K/NmKyDFN7AlevNzpGAjj5xF1q3Bw7AYQ9HVgvtCktHQGBQJkQKvbj8F+igJBgStOBouwJoP4EHA==
   dependencies:
     configorama "^0.3.6"
     find-up "^4.1.0"
@@ -13762,14 +13762,14 @@ netlify-cli-logo@^1.0.0:
   dependencies:
     chalk "^2.4.2"
 
-netlify-cli@^2.20.0:
-  version "2.20.0"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.20.0.tgz#b7f0aae8474ff1334e4a5f8add7f6e361d618a26"
-  integrity sha512-DjNQad4lj4a//tVAKSUoLXhft5RxRy6pGbDGNRFyprqcIfKYlT4nrgJesmJWVO+wV/dzAAgTNif2II4G22wE5A==
+netlify-cli@^2.20.1:
+  version "2.20.1"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.20.1.tgz#a0325a86276471a3b289d514731f9fd6903fef26"
+  integrity sha512-Q/zxBhIogeN7Cn9QqAfZLCL7RQx28+ckFwfO5Z+qR9zYIKbYr6hPMTq2amBfe43A+1pDmDjlh0lV6zClXaDYyQ==
   dependencies:
     "@iarna/toml" "^2.2.3"
-    "@netlify/build" "^0.0.34"
-    "@netlify/cli-utils" "^1.0.7"
+    "@netlify/build" "^0.1.2"
+    "@netlify/config" "^0.1.1"
     "@netlify/zip-it-and-ship-it" "^0.3.1"
     "@oclif/command" "^1.5.18"
     "@oclif/config" "^1.13.2"
