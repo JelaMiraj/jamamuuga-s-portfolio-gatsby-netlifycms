@@ -1654,12 +1654,12 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@netlify/build@^0.0.34":
-  version "0.0.34"
-  resolved "https://registry.yarnpkg.com/@netlify/build/-/build-0.0.34.tgz#d805b60c49ca71014997f6284f2fdc31dd0c0b86"
-  integrity sha512-1GIJCFtoQEP5cIXtNGAR6Or8kj5Pko+QdtuaHnGt3sw3TJltfVTDpXiKVvKqL1LFu0sRXAJoRh+7ZOXQjl2vdQ==
+"@netlify/build@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@netlify/build/-/build-0.1.2.tgz#801f9840ac1a273796d0b5b908cc566234062c40"
+  integrity sha512-pHjYUXPmPjFNHVQG/l2yIeDyD+8ZPlUWlLxLb5BAkVLuKtTaLOrs13PyMjb9mDP3oA1YoI9eh4edtIitsdV6Kg==
   dependencies:
-    "@netlify/config" "^0.0.5"
+    "@netlify/config" "^0.1.1"
     "@netlify/zip-it-and-ship-it" "0.4.0-5"
     analytics "^0.2.5"
     array-flat-polyfill "^1.0.1"
@@ -1720,10 +1720,10 @@
     uuid "^3.3.2"
     write-file-atomic "^2.3.0"
 
-"@netlify/config@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@netlify/config/-/config-0.0.5.tgz#9c63177757f657877f26c49f2c1663aec1d610bf"
-  integrity sha512-ZfKLq09RlzpVnI3ru2VSXGJTjgljRPLwSyfKyozbS0vCrL6HhvTe8cj5xUxc6XFYxfxOJbjchNDHI3szsB1Tvw==
+"@netlify/config@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@netlify/config/-/config-0.1.1.tgz#8afaff13b78935de46b3575a9cc2f108fea48627"
+  integrity sha512-LMywGz02K9K/NmKyDFN7AlevNzpGAjj5xF1q3Bw7AYQ9HVgvtCktHQGBQJkQKvbj8F+igJBgStOBouwJoP4EHA==
   dependencies:
     configorama "^0.3.6"
     find-up "^4.1.0"
@@ -4028,7 +4028,7 @@ blob@0.0.5:
   resolved "https://registry.yarnpkg.com/blob/-/blob-0.0.5.tgz#d680eeef25f8cd91ad533f5b01eed48e64caf683"
   integrity sha512-gaqbzQPqOoamawKg0LGVd7SzLgXS+JH61oWprSLH+P+abTczqJbhTR8CmJ2u9/bUYNmHTGJx/UEmn6doAvvuig==
 
-bluebird@^3.5.5, bluebird@^3.7.0, bluebird@^3.7.1:
+bluebird@^3.5.5, bluebird@^3.7.1:
   version "3.7.1"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.1.tgz#df70e302b471d7473489acf26a93d63b53f874de"
   integrity sha512-DdmyoGCleJnkbp3nkbxTLJ18rjDsE4yCggEwKNXkeV123sPNfOCYeDoeuOY+F2FrSjO1YXcTU+dsy96KMy+gcg==
@@ -4707,21 +4707,6 @@ cheerio@^1.0.0-rc.2, cheerio@^1.0.0-rc.3:
     htmlparser2 "^3.9.1"
     lodash "^4.15.0"
     parse5 "^3.0.1"
-
-chokidar@3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.2.1.tgz#4634772a1924512d990d4505957bf3a510611387"
-  integrity sha512-/j5PPkb5Feyps9e+jo07jUZGvkB5Aj953NrI4s8xSVScrAo/RHeILrtdb4uzR7N6aaFFxxJ+gt8mA8HfNpw76w==
-  dependencies:
-    anymatch "~3.1.1"
-    braces "~3.0.2"
-    glob-parent "~5.1.0"
-    is-binary-path "~2.1.0"
-    is-glob "~4.0.1"
-    normalize-path "~3.0.0"
-    readdirp "~3.1.3"
-  optionalDependencies:
-    fsevents "~2.1.0"
 
 chokidar@3.2.3, chokidar@^3.0.0, chokidar@^3.0.2:
   version "3.2.3"
@@ -8558,11 +8543,6 @@ fsevents@^1.2.7:
     nan "^2.12.1"
     node-pre-gyp "^0.12.0"
 
-fsevents@~2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.1.0.tgz#ce1a5f9ac71c6d75278b0c5bd236d7dfece4cbaa"
-  integrity sha512-+iXhW3LuDQsno8dOIrCIT/CBjeBWuP7PXe8w9shnj9Lebny/Gx1ZjVBYwexLz36Ri2jKuXMNpV6CYNh8lHHgrQ==
-
 fsevents@~2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.1.1.tgz#74c64e21df71721845d0c44fe54b7f56b82995a9"
@@ -8665,7 +8645,7 @@ gatsby-cli@^2.8.7:
     ink "^2.5.0"
     ink-spinner "^3.0.1"
 
-gatsby-core-utils@^1.0.15, gatsby-core-utils@^1.0.17:
+gatsby-core-utils@^1.0.17:
   version "1.0.17"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.0.17.tgz#f8a4d5d9b1d83c5799f187dca5ff86654cdfc4d8"
   integrity sha512-5LOderWqZFGaTwwLgqDgad/5Hbf/WFD44ZmodqSJLYUOG8K0wv4PctlQ2/1UO+LZuKYanthYi3jAVgk4OooeSQ==
@@ -13763,14 +13743,14 @@ netlify-cli-logo@^1.0.0:
   dependencies:
     chalk "^2.4.2"
 
-netlify-cli@^2.20.0:
-  version "2.20.0"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.20.0.tgz#b7f0aae8474ff1334e4a5f8add7f6e361d618a26"
-  integrity sha512-DjNQad4lj4a//tVAKSUoLXhft5RxRy6pGbDGNRFyprqcIfKYlT4nrgJesmJWVO+wV/dzAAgTNif2II4G22wE5A==
+netlify-cli@^2.20.1:
+  version "2.20.1"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.20.1.tgz#a0325a86276471a3b289d514731f9fd6903fef26"
+  integrity sha512-Q/zxBhIogeN7Cn9QqAfZLCL7RQx28+ckFwfO5Z+qR9zYIKbYr6hPMTq2amBfe43A+1pDmDjlh0lV6zClXaDYyQ==
   dependencies:
     "@iarna/toml" "^2.2.3"
-    "@netlify/build" "^0.0.34"
-    "@netlify/cli-utils" "^1.0.7"
+    "@netlify/build" "^0.1.2"
+    "@netlify/config" "^0.1.1"
     "@netlify/zip-it-and-ship-it" "^0.3.1"
     "@oclif/command" "^1.5.18"
     "@oclif/config" "^1.13.2"
@@ -17366,13 +17346,6 @@ readdirp@^3.1.3, readdirp@~3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/readdirp/-/readdirp-3.2.0.tgz#c30c33352b12c96dfb4b895421a49fd5a9593839"
   integrity sha512-crk4Qu3pmXwgxdSgGhgA/eXiJAPQiX4GMOZZMXnqKxHX7TaoL+3gQVo/WeuAiogr07DpnfjIMpXXa+PAIvwPGQ==
-  dependencies:
-    picomatch "^2.0.4"
-
-readdirp@~3.1.3:
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/readdirp/-/readdirp-3.1.3.tgz#d6e011ed5b9240a92f08651eeb40f7942ceb6cc1"
-  integrity sha512-ZOsfTGkjO2kqeR5Mzr5RYDbTGYneSkdNKX2fOX2P5jF7vMrd/GNnIAUtDldeHHumHUCQ3V05YfWUdxMPAsRu9Q==
   dependencies:
     picomatch "^2.0.4"
 
