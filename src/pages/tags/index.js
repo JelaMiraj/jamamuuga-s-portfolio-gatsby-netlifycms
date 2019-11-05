@@ -33,11 +33,11 @@ const TagsPage = ({
           <Grid container>
             <Grid item md={1} implementation="css" smDown component={Hidden} />
             <StyledContentBoxGridItem item xs={10}>
-              <Box fontWeight="600">
-                <Typography variant="h3" className="title">
+              <Typography variant="h3" className="title">
+                <Box fontWeight="600">
                   Tags
-                </Typography>
-              </Box>
+                </Box>
+              </Typography>
               <List className="taglist">
                 {group.map(tag => (
                   <ListItem key={tag.fieldValue}>
@@ -52,8 +52,8 @@ const TagsPage = ({
             </StyledContentBoxGridItem>
           </Grid>
         </Container>
-      </Box>
-    </Layout>
+      </Box >
+    </Layout >
   )
 
 export default TagsPage

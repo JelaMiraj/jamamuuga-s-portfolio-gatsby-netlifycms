@@ -56,11 +56,11 @@ const TagRoute = ({ data, pageContext }) => {
                 component={Hidden}
               />
               <StyledGridItemContent item xs={10}>
-                <Box fontWeight="600">
-                  <Typography variant="h5">
+                <Typography variant="h5">
+                  <Box fontWeight="600">
                     {tagHeader}
-                  </Typography>
-                </Box>
+                  </Box>
+                </Typography>
                 <List className="taglist">{postLinks}</List>
                 <Typography paragraph>
                   <Link to="/tags/">Browse all tags</Link>

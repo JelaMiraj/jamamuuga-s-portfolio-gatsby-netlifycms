@@ -31,11 +31,11 @@ export const BlogPostTemplate = ({
         <Grid container>
           <Grid item md={1} implementation="css" smDown component={Hidden} />
           <Grid item xs={10}>
-            <Box fontWeight="600">
-              <Typography variant="h3">
+            <Typography variant="h3">
+              <Box fontWeight="600">
                 {title}
-              </Typography>
-            </Box>
+              </Box>
+            </Typography>
             <Typography paragraph>{description}</Typography>
             <PostContent content={content} />
             {tags && tags.length ? (
