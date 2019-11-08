@@ -198,7 +198,7 @@
     "pnp": false
   },
   "optionalDependencies": {
-    "@babel/runtime": "^7.7.1",
+    "@babel/runtime": "^7.7.2",
     "@hapi/joi": "^16.1.7",
     "@oclif/command": "^1.5.19",
     "@oclif/config": "^1.13.3",
