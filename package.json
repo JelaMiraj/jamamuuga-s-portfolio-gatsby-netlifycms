@@ -134,7 +134,7 @@
     "@types/node": "^12.12.6",
     "@types/react-dom": "^16.9.4",
     "@types/react-helmet": "^5.0.14",
-    "@types/styled-components": "^4.1.22",
+    "@types/styled-components": "^4.4.0",
     "apollo": "^2.21.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^24.9.0",
