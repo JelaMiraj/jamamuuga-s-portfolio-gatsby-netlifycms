@@ -26,7 +26,7 @@
     "gatsby-background-image": "^0.8.18",
     "gatsby-image": "^2.2.33",
     "gatsby-plugin-compile-es6-packages": "^2.1.0",
-    "gatsby-plugin-manifest": "^2.2.28",
+    "gatsby-plugin-manifest": "^2.2.29",
     "gatsby-plugin-material-ui": "^2.1.6",
     "gatsby-plugin-netlify": "^2.1.25",
     "gatsby-plugin-netlify-cms": "^4.1.27",
