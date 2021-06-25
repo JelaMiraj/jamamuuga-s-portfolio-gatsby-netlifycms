@@ -1,0 +1,62 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "13:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: react-intl
+    versions:
+    - 5.10.18
+    - 5.12.0
+    - 5.12.1
+    - 5.12.2
+    - 5.12.5
+    - 5.13.1
+    - 5.13.2
+    - 5.13.4
+    - 5.15.5
+    - 5.15.7
+    - 5.15.8
+  - dependency-name: sharp
+    versions:
+    - 0.27.0
+    - 0.27.1
+    - 0.27.2
+    - 0.28.0
+  - dependency-name: gatsby-background-image
+    versions:
+    - 1.4.0
+    - 1.4.1
+    - 1.5.0
+  - dependency-name: typescript
+    versions:
+    - 4.1.3
+    - 4.1.5
+    - 4.2.2
+    - 4.2.3
+  - dependency-name: gatsby
+    versions:
+    - 2.31.1
+    - 2.32.0
+    - 2.32.1
+    - 2.32.2
+    - 2.32.3
+    - 2.32.8
+  - dependency-name: "@material-ui/core"
+    versions:
+    - 4.11.3
+  - dependency-name: react-is
+    versions:
+    - 17.0.1
+  - dependency-name: netlify-cms-media-library-uploadcare
+    versions:
+    - 0.5.9
+  - dependency-name: jquery
+    versions:
+    - 3.5.1
+  - dependency-name: handlebars
+    versions:
+    - 4.7.6
